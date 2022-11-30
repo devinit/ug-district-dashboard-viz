@@ -4,7 +4,7 @@ import { fetchData } from '../utils/data';
 import { addFilterWrapper } from '../widgets/filters';
 import Select from './Select';
 import ChartFilters from './ChartFilters';
-import dataFile from '../utils/counties.json';
+import dataFile from '../utils/numberOfSchools.json';
 
 const DATAFILE = dataFile;
 
@@ -25,7 +25,7 @@ const init = (className) => {
            * const chart = window.echarts.init(chartNode);
            */
           fetchData(DATAFILE).then((data) => {
-            console.log(data);
+            const processedData = Array.from(new Set(data.map((d) => d.SubCounty)));
             const selectorFilterWrapper = addFilterWrapper(chartNode);
 
             // Create dropdowns
@@ -34,10 +34,10 @@ const init = (className) => {
               <ChartFilters selectErrorMessage={selectErrorMessage}>
                 <Select
                   label="Select Subcounty"
-                  options={data.map((d) => ({ value: d.Donors, label: d.Donors }))}
+                  options={processedData.map((d) => ({ value: d, label: d }))}
                   classNamePrefix="subcounty-filter sticky-top"
                   isClearable={false}
-                  defaultValue={[{ value: 'United States', label: 'United States', isCloseable: true }]}
+                  defaultValue={[{ value: 'Wakiso', label: 'Wakiso', isCloseable: true }]}
                   onChange={(item) => {
                     window.DIState.setState({ subCounty: item.value });
                   }}
