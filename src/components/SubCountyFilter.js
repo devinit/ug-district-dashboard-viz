@@ -1,5 +1,9 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import fetchCSVData from '../utils/data';
-import { addFilter, addFilterWrapper } from '../widgets/filters';
+import { addFilterWrapper } from '../widgets/filters';
+import Select from './Select';
+import ChartFilters from './ChartFilters';
 
 const init = (className) => {
   window.DICharts.handler.addChart({
@@ -7,6 +11,7 @@ const init = (className) => {
     d3: {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {
+          const selectErrorMessage = 'You can compare two donors. Please remove one before adding another.';
           const dichart = new window.DICharts.Chart(chartNode.parentElement);
           dichart.showLoading();
 
@@ -19,25 +24,28 @@ const init = (className) => {
           const csv = 'https://raw.githubusercontent.com/devinit/di-website-data/main/2022/rh-and-fp-dropdowns.csv';
           fetchCSVData(csv).then((data) => {
             const filterWrapper = addFilterWrapper(chartNode);
-            const countryFilter = addFilter({
-              wrapper: filterWrapper,
-              options: data.map((d) => d.Donors),
-              defaultOption: 'United States',
-              className: 'subcounty-filter',
-              label: 'Select Subcounty',
-            });
 
+            // Create dropdowns
+            const root = createRoot(filterWrapper);
+            root.render(
+              <ChartFilters selectErrorMessage={selectErrorMessage}>
+                <Select
+                  label="Select Subcounty"
+                  options={data.map((d) => ({ value: d.Donors, label: d.Donors }))}
+                  classNamePrefix="subcounty-filter"
+                  isClearable={false}
+                  defaultValue={[{ value: 'United States', label: 'United States', isCloseable: true }]}
+                  onChange={(item) => {
+                    window.DIState.setState({ subCounty: item.value });
+                    window.console.log(item.value);
+                  }}
+                  css={{ minWidth: '100px' }}
+                />
+              </ChartFilters>
+            );
             if (window.DIState) {
               window.DIState.setState({ subCounty: 'United States' });
             }
-
-            // add event listeners
-            countryFilter.addEventListener('change', (event) => {
-              const { value } = event.currentTarget;
-              if (window.DIState) {
-                window.DIState.setState({ country: value });
-              }
-            });
 
             dichart.hideLoading();
             chartNode.parentElement.classList.add('auto-height');
