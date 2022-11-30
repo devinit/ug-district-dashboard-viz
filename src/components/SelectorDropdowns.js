@@ -41,10 +41,26 @@ const init = (className) => {
                   }}
                   css={{ minWidth: '100px' }}
                 />
+                <Select
+                  label="Select School Level"
+                  options={[
+                    { value: 'primary', label: 'Primary' },
+                    { value: 'secondary', label: 'Secondary' },
+                  ]}
+                  classNamePrefix="level-filter"
+                  isClearable={false}
+                  defaultValue={[{ value: 'primary', label: 'Primary', isCloseable: true }]}
+                  onChange={(item) => {
+                    window.DIState.setState({ level: item.value });
+                    window.console.log(item.value);
+                  }}
+                  css={{ minWidth: '100px' }}
+                />
               </ChartFilters>
             );
             if (window.DIState) {
               window.DIState.setState({ subCounty: 'United States' });
+              window.DIState.setState({ level: 'primary' });
             }
 
             dichart.hideLoading();
