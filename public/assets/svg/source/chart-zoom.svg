@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#000000" fill-rule="nonzero">
+            <path d="M25,3.125 L18.75,9.4 C19.75,10.975 20.325,12.85 20.325,14.85 C20.325,20.45 15.775,25 10.15,25 C4.55,25 0,20.45 0,14.85 C0,9.25 4.575,4.7 10.175,4.7 C12.175,4.7 14.05,5.25 15.625,6.25 L21.875,-1.11022302e-16 L25,3.125 Z M4.7,9.375 L4.7,20.325 L15.625,20.325 L15.625,9.375 L4.7,9.375 Z M6.25,18.75 L14.075,18.75 L14.075,10.95 L6.25,10.95 L6.25,18.75 Z" id="Shape" transform="translate(12.500000, 12.500000) scale(-1, 1) rotate(-180.000000) translate(-12.500000, -12.500000) "></path>
+        </g>
+    </g>
+</svg>

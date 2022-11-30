@@ -1,0 +1,6419 @@
+{
+    "data": [
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Afghanistan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:61a87f",
+            "y": [
+                "9%",
+                "9%",
+                "11%",
+                "7%",
+                "10%",
+                "10%",
+                "10%",
+                "11%",
+                "11%",
+                "12%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Albania"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:58cb01",
+            "y": [
+                "0%",
+                "1%",
+                "0%",
+                "1%",
+                "2%",
+                "1%",
+                "2%",
+                "2%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Algeria"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:93d028",
+            "y": [
+                "9%",
+                "9%",
+                "11%",
+                "13%",
+                "13%",
+                "8%",
+                "16%",
+                "12%",
+                "13%",
+                "10%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Angola"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:30321b",
+            "y": [
+                "1%",
+                "1%",
+                "4%",
+                "4%",
+                "3%",
+                "5%",
+                "2%",
+                "6%",
+                "5%",
+                "7%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Antigua and Barbuda"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:c91728",
+            "y": [
+                "2%",
+                "0%",
+                "0%",
+                "0%",
+                "9%",
+                "3%",
+                "4%",
+                "0%",
+                "71%",
+                "21%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Argentina"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e8f88f",
+            "y": [
+                "3%",
+                "1%",
+                "3%",
+                "0%",
+                "2%",
+                "1%",
+                "1%",
+                "4%",
+                "3%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Armenia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:0fead2",
+            "y": [
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "1%",
+                "2%",
+                "3%",
+                "1%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Azerbaijan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:bca747",
+            "y": [
+                "1%",
+                "2%",
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Bangladesh"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:9613ca",
+            "y": [
+                "7%",
+                "6%",
+                "5%",
+                "4%",
+                "3%",
+                "4%",
+                "4%",
+                "4%",
+                "8%",
+                "12%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Belarus"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:20167b",
+            "y": [
+                "2%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Belize"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:b397cc",
+            "y": [
+                "2%",
+                "3%",
+                "2%",
+                "1%",
+                "6%",
+                "2%",
+                "0%",
+                "3%",
+                "3%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Benin"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:2d48ab",
+            "y": [
+                "0%",
+                "2%",
+                "1%",
+                "1%",
+                "2%",
+                "1%",
+                "0%",
+                "5%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Bhutan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:18ce31",
+            "y": [
+                "1%",
+                "2%",
+                "5%",
+                "3%",
+                "2%",
+                "2%",
+                "5%",
+                "5%",
+                "19%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Bolivia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:b18b95",
+            "y": [
+                "2%",
+                "2%",
+                "3%",
+                "1%",
+                "2%",
+                "1%",
+                "27%",
+                "14%",
+                "1%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Bosnia and Herzegovina"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:164113",
+            "y": [
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "11%",
+                "5%",
+                "10%",
+                "9%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Botswana"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:3b779a",
+            "y": [
+                "0%",
+                "1%",
+                "2%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "2%",
+                "2%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Brazil"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:d6f3dc",
+            "y": [
+                "1%",
+                "0%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Burkina Faso"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:7c7eff",
+            "y": [
+                "2%",
+                "4%",
+                "3%",
+                "8%",
+                "6%",
+                "4%",
+                "4%",
+                "3%",
+                "2%",
+                "11%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Burundi"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:6b036d",
+            "y": [
+                "9%",
+                "10%",
+                "9%",
+                "7%",
+                "9%",
+                "7%",
+                "9%",
+                "53%",
+                "16%",
+                "14%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Cabo Verde"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:1de83a",
+            "y": [
+                "1%",
+                "1%",
+                "0%",
+                "1%",
+                "0%",
+                "1%",
+                "1%",
+                "0%",
+                "1%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Cambodia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e5449f",
+            "y": [
+                "2%",
+                "1%",
+                "2%",
+                "2%",
+                "1%",
+                "3%",
+                "0%",
+                "0%",
+                "1%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Cameroon"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:9471c3",
+            "y": [
+                "4%",
+                "3%",
+                "3%",
+                "6%",
+                "4%",
+                "6%",
+                "14%",
+                "8%",
+                "6%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Central African Republic"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:7a2ddd",
+            "y": [
+                "10%",
+                "19%",
+                "25%",
+                "28%",
+                "58%",
+                "49%",
+                "47%",
+                "49%",
+                "43%",
+                "37%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Chad"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:de9eb1",
+            "y": [
+                "53%",
+                "52%",
+                "52%",
+                "57%",
+                "42%",
+                "41%",
+                "15%",
+                "27%",
+                "21%",
+                "25%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "China (People&amp;#39;s Republic of)"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:3ffac6",
+            "y": [
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Colombia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5daa67",
+            "y": [
+                "8%",
+                "10%",
+                "8%",
+                "9%",
+                "8%",
+                "5%",
+                "5%",
+                "6%",
+                "6%",
+                "5%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Comoros"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f2e901",
+            "y": [
+                "1%",
+                "2%",
+                "0%",
+                "3%",
+                "0%",
+                "0%",
+                "1%",
+                "2%",
+                "2%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Congo"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:08dbca",
+            "y": [
+                "1%",
+                "2%",
+                "3%",
+                "10%",
+                "5%",
+                "9%",
+                "6%",
+                "7%",
+                "10%",
+                "8%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Cook Islands"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e6bdad",
+            "y": [
+                "1%",
+                "24%",
+                "29%",
+                "5%",
+                "2%",
+                "4%",
+                "5%",
+                "7%",
+                "2%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Costa Rica"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:14aeb1",
+            "y": [
+                "2%",
+                "1%",
+                "2%",
+                "1%",
+                "0%",
+                "3%",
+                "1%",
+                "2%",
+                "2%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "CÃ´te d&amp;#39;Ivoire"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:40ce01",
+            "y": [
+                "1%",
+                "2%",
+                "15%",
+                "4%",
+                "3%",
+                "5%",
+                "4%",
+                "1%",
+                "1%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Cuba"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:1b9231",
+            "y": [
+                "13%",
+                "5%",
+                "2%",
+                "15%",
+                "7%",
+                "6%",
+                "3%",
+                "0%",
+                "5%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Democratic People&amp;#39;s Republic of Korea"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:edae31",
+            "y": [
+                "47%",
+                "42%",
+                "73%",
+                "60%",
+                "50%",
+                "28%",
+                "35%",
+                "54%",
+                "39%",
+                "49%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Democratic Republic of the Congo"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f26f64",
+            "y": [
+                "22%",
+                "11%",
+                "6%",
+                "15%",
+                "18%",
+                "17%",
+                "31%",
+                "16%",
+                "20%",
+                "23%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Djibouti"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:b890ca",
+            "y": [
+                "6%",
+                "14%",
+                "25%",
+                "13%",
+                "18%",
+                "21%",
+                "9%",
+                "10%",
+                "7%",
+                "6%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Dominica"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:ecbe88",
+            "y": [
+                "2%",
+                "0%",
+                "3%",
+                "0%",
+                "2%",
+                "0%",
+                "8%",
+                "14%",
+                "27%",
+                "35%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Dominican Republic"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5d598b",
+            "y": [
+                "3%",
+                "3%",
+                "4%",
+                "1%",
+                "4%",
+                "1%",
+                "2%",
+                "3%",
+                "2%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Ecuador"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:a5880d",
+            "y": [
+                "4%",
+                "4%",
+                "5%",
+                "4%",
+                "6%",
+                "8%",
+                "6%",
+                "19%",
+                "24%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Egypt"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:06e210",
+            "y": [
+                "0%",
+                "1%",
+                "2%",
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "1%",
+                "1%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "El Salvador"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:a99fde",
+            "y": [
+                "5%",
+                "6%",
+                "3%",
+                "3%",
+                "7%",
+                "9%",
+                "9%",
+                "6%",
+                "1%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Equatorial Guinea"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:605bac",
+            "y": [
+                "3%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "0%",
+                "4%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Eritrea"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8d406a",
+            "y": [
+                "25%",
+                "16%",
+                "9%",
+                "21%",
+                "14%",
+                "16%",
+                "9%",
+                "11%",
+                "5%",
+                "13%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Eswatini"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:92bc4e",
+            "y": [
+                "2%",
+                "3%",
+                "2%",
+                "3%",
+                "2%",
+                "3%",
+                "2%",
+                "5%",
+                "7%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Ethiopia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:d8ff49",
+            "y": [
+                "18%",
+                "18%",
+                "19%",
+                "15%",
+                "13%",
+                "13%",
+                "17%",
+                "19%",
+                "19%",
+                "13%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Fiji"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:927eee",
+            "y": [
+                "4%",
+                "18%",
+                "2%",
+                "15%",
+                "5%",
+                "3%",
+                "4%",
+                "33%",
+                "16%",
+                "5%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Gabon"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:a1ff43",
+            "y": [
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Gambia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f90427",
+            "y": [
+                "1%",
+                "1%",
+                "0%",
+                "4%",
+                "3%",
+                "5%",
+                "2%",
+                "0%",
+                "5%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Georgia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:90b51d",
+            "y": [
+                "18%",
+                "9%",
+                "10%",
+                "5%",
+                "9%",
+                "7%",
+                "3%",
+                "5%",
+                "5%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Ghana"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8aa87d",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Grenada"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:af2f2f",
+            "y": [
+                "2%",
+                "0%",
+                "0%",
+                "3%",
+                "15%",
+                "15%",
+                "7%",
+                "17%",
+                "0%",
+                "8%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Guatemala"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:c6ab19",
+            "y": [
+                "1%",
+                "10%",
+                "8%",
+                "5%",
+                "2%",
+                "5%",
+                "2%",
+                "7%",
+                "5%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Guinea"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f7431f",
+            "y": [
+                "4%",
+                "4%",
+                "2%",
+                "1%",
+                "3%",
+                "6%",
+                "17%",
+                "11%",
+                "3%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Guinea-Bissau"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:a3e7b2",
+            "y": [
+                "1%",
+                "0%",
+                "1%",
+                "3%",
+                "4%",
+                "4%",
+                "2%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Guyana"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:2eb2b7",
+            "y": [
+                "0%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Haiti"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:df004e",
+            "y": [
+                "15%",
+                "50%",
+                "35%",
+                "21%",
+                "20%",
+                "13%",
+                "12%",
+                "16%",
+                "18%",
+                "12%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Honduras"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:bf79f3",
+            "y": [
+                "3%",
+                "2%",
+                "2%",
+                "3%",
+                "2%",
+                "3%",
+                "2%",
+                "2%",
+                "2%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "India"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5311e4",
+            "y": [
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "1%",
+                "2%",
+                "2%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Indonesia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5da417",
+            "y": [
+                "8%",
+                "4%",
+                "8%",
+                "2%",
+                "2%",
+                "2%",
+                "2%",
+                "2%",
+                "1%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Indus Basin"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:a2f5ef",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Iran"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:efa4c4",
+            "y": [
+                "11%",
+                "17%",
+                "11%",
+                "12%",
+                "10%",
+                "12%",
+                "9%",
+                "26%",
+                "16%",
+                "18%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Iraq"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:05da9e",
+            "y": [
+                "17%",
+                "8%",
+                "17%",
+                "8%",
+                "11%",
+                "43%",
+                "57%",
+                "61%",
+                "48%",
+                "51%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Jamaica"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e94629",
+            "y": [
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "1%",
+                "1%",
+                "2%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Jordan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:95939f",
+            "y": [
+                "14%",
+                "15%",
+                "15%",
+                "18%",
+                "31%",
+                "34%",
+                "37%",
+                "24%",
+                "20%",
+                "24%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Kazakhstan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:edc35a",
+            "y": [
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "1%",
+                "0%",
+                "2%",
+                "3%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Kenya"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:0fcf01",
+            "y": [
+                "19%",
+                "15%",
+                "18%",
+                "12%",
+                "11%",
+                "12%",
+                "9%",
+                "9%",
+                "9%",
+                "7%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Kiribati"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:208658",
+            "y": [
+                "0%",
+                "26%",
+                "2%",
+                "2%",
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Kosovo"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:af62c1",
+            "y": [
+                "2%",
+                "2%",
+                "2%",
+                "2%",
+                "4%",
+                "2%",
+                "2%",
+                "2%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Kyrgyzstan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8f4469",
+            "y": [
+                "4%",
+                "22%",
+                "9%",
+                "4%",
+                "3%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Lao People&amp;#39;s Democratic Republic"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:669d91",
+            "y": [
+                "3%",
+                "4%",
+                "4%",
+                "2%",
+                "2%",
+                "2%",
+                "2%",
+                "2%",
+                "3%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Lebanon"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5a7b11",
+            "y": [
+                "23%",
+                "27%",
+                "24%",
+                "49%",
+                "43%",
+                "46%",
+                "63%",
+                "43%",
+                "47%",
+                "52%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Lesotho"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e366c7",
+            "y": [
+                "1%",
+                "3%",
+                "2%",
+                "4%",
+                "3%",
+                "4%",
+                "1%",
+                "9%",
+                "6%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Liberia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5b06ff",
+            "y": [
+                "8%",
+                "2%",
+                "11%",
+                "12%",
+                "8%",
+                "13%",
+                "31%",
+                "15%",
+                "3%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Libya"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:abe522",
+            "y": [
+                "4%",
+                "2%",
+                "91%",
+                "23%",
+                "6%",
+                "10%",
+                "27%",
+                "41%",
+                "24%",
+                "37%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Madagascar"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:6bd783",
+            "y": [
+                "3%",
+                "7%",
+                "5%",
+                "7%",
+                "3%",
+                "3%",
+                "2%",
+                "9%",
+                "7%",
+                "7%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Malawi"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:ecd3dc",
+            "y": [
+                "1%",
+                "1%",
+                "2%",
+                "5%",
+                "8%",
+                "4%",
+                "8%",
+                "12%",
+                "4%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Malaysia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:fd8695",
+            "y": [
+                "1%",
+                "2%",
+                "8%",
+                "1%",
+                "3%",
+                "5%",
+                "2%",
+                "3%",
+                "15%",
+                "11%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Maldives"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:bb7800",
+            "y": [
+                "19%",
+                "20%",
+                "4%",
+                "1%",
+                "1%",
+                "2%",
+                "0%",
+                "0%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Mali"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:c245c8",
+            "y": [
+                "1%",
+                "2%",
+                "1%",
+                "25%",
+                "17%",
+                "18%",
+                "12%",
+                "13%",
+                "10%",
+                "12%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Marshall Islands"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:85d94c",
+            "y": [
+                "1%",
+                "0%",
+                "0%",
+                "1%",
+                "4%",
+                "3%",
+                "4%",
+                "21%",
+                "2%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Mauritania"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:fb63dc",
+            "y": [
+                "3%",
+                "3%",
+                "3%",
+                "16%",
+                "21%",
+                "15%",
+                "13%",
+                "12%",
+                "9%",
+                "13%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Mauritius"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f633e9",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "2%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Mexico"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:54bdf4",
+            "y": [
+                "2%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Micronesia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5208e9",
+            "y": [
+                "1%",
+                "0%",
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "8%",
+                "34%",
+                "22%",
+                "12%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Moldova"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8ab3ac",
+            "y": [
+                "1%",
+                "0%",
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Mongolia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:b3d5f6",
+            "y": [
+                "0%",
+                "3%",
+                "0%",
+                "0%",
+                "3%",
+                "1%",
+                "0%",
+                "1%",
+                "1%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Montenegro"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:325b44",
+            "y": [
+                "3%",
+                "4%",
+                "3%",
+                "3%",
+                "2%",
+                "0%",
+                "2%",
+                "2%",
+                "2%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Montserrat"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:1a221e",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Morocco"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:98f399",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Mozambique"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e40a7b",
+            "y": [
+                "2%",
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "1%",
+                "2%",
+                "4%",
+                "2%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Myanmar"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8d8ae3",
+            "y": [
+                "41%",
+                "27%",
+                "25%",
+                "25%",
+                "3%",
+                "9%",
+                "16%",
+                "12%",
+                "13%",
+                "11%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Namibia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:6ad486",
+            "y": [
+                "1%",
+                "1%",
+                "2%",
+                "2%",
+                "2%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Nauru"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:120fb9",
+            "y": [
+                "1%",
+                "3%",
+                "0%",
+                "5%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Nepal"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:fdd818",
+            "y": [
+                "9%",
+                "3%",
+                "6%",
+                "5%",
+                "3%",
+                "2%",
+                "19%",
+                "12%",
+                "10%",
+                "11%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Nicaragua"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8ed071",
+            "y": [
+                "2%",
+                "3%",
+                "3%",
+                "3%",
+                "3%",
+                "3%",
+                "2%",
+                "2%",
+                "1%",
+                "4%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Niger"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e5581e",
+            "y": [
+                "8%",
+                "31%",
+                "28%",
+                "31%",
+                "26%",
+                "20%",
+                "21%",
+                "16%",
+                "13%",
+                "18%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Nigeria"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:116bd3",
+            "y": [
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "4%",
+                "11%",
+                "21%",
+                "23%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Niue"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:b5c312",
+            "y": [
+                "0%",
+                "5%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "3%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "North Macedonia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e494e9",
+            "y": [
+                "1%",
+                "0%",
+                "0%",
+                "1%",
+                "1%",
+                "0%",
+                "3%",
+                "7%",
+                "3%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Pakistan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:6c44d4",
+            "y": [
+                "16%",
+                "40%",
+                "43%",
+                "20%",
+                "14%",
+                "8%",
+                "6%",
+                "6%",
+                "7%",
+                "7%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Palau"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:4cabf3",
+            "y": [
+                "1%",
+                "0%",
+                "0%",
+                "24%",
+                "1%",
+                "1%",
+                "1%",
+                "3%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Panama"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5072f5",
+            "y": [
+                "3%",
+                "2%",
+                "3%",
+                "6%",
+                "8%",
+                "2%",
+                "5%",
+                "19%",
+                "21%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Papua New Guinea"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:7db9f7",
+            "y": [
+                "2%",
+                "6%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "3%",
+                "1%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Paraguay"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:ed74ea",
+            "y": [
+                "1%",
+                "0%",
+                "1%",
+                "3%",
+                "2%",
+                "3%",
+                "2%",
+                "2%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Peru"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:4ce1c3",
+            "y": [
+                "2%",
+                "2%",
+                "3%",
+                "2%",
+                "3%",
+                "2%",
+                "2%",
+                "2%",
+                "3%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Philippines"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:c39710",
+            "y": [
+                "6%",
+                "7%",
+                "13%",
+                "13%",
+                "36%",
+                "36%",
+                "24%",
+                "6%",
+                "7%",
+                "7%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Rwanda"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:685c4f",
+            "y": [
+                "2%",
+                "1%",
+                "2%",
+                "3%",
+                "4%",
+                "2%",
+                "3%",
+                "4%",
+                "4%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Saint Helena"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:0ce947",
+            "y": [
+                "11%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Saint Lucia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8f504b",
+            "y": [
+                "2%",
+                "5%",
+                "10%",
+                "1%",
+                "3%",
+                "6%",
+                "4%",
+                "20%",
+                "12%",
+                "5%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Saint Vincent and the Grenadines"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:9fbe46",
+            "y": [
+                "1%",
+                "1%",
+                "3%",
+                "10%",
+                "29%",
+                "27%",
+                "17%",
+                "32%",
+                "13%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Samoa"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:852dbb",
+            "y": [
+                "4%",
+                "12%",
+                "1%",
+                "1%",
+                "13%",
+                "10%",
+                "3%",
+                "5%",
+                "6%",
+                "6%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Sao Tome and Principe"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:98c405",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "3%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Senegal"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:9cf085",
+            "y": [
+                "1%",
+                "1%",
+                "1%",
+                "5%",
+                "5%",
+                "2%",
+                "4%",
+                "2%",
+                "1%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Serbia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:46e0a1",
+            "y": [
+                "3%",
+                "2%",
+                "2%",
+                "1%",
+                "1%",
+                "7%",
+                "3%",
+                "4%",
+                "3%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Sierra Leone"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:2eca70",
+            "y": [
+                "2%",
+                "2%",
+                "4%",
+                "5%",
+                "2%",
+                "36%",
+                "39%",
+                "21%",
+                "8%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Solomon Islands"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:268d98",
+            "y": [
+                "0%",
+                "4%",
+                "1%",
+                "0%",
+                "3%",
+                "5%",
+                "1%",
+                "2%",
+                "1%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Somalia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:535c07",
+            "y": [
+                "71%",
+                "50%",
+                "78%",
+                "57%",
+                "58%",
+                "49%",
+                "43%",
+                "44%",
+                "61%",
+                "49%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "South Africa"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f5e317",
+            "y": [
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "1%",
+                "1%",
+                "2%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Sri Lanka"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:8e0968",
+            "y": [
+                "22%",
+                "25%",
+                "15%",
+                "10%",
+                "9%",
+                "4%",
+                "3%",
+                "5%",
+                "6%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "States Ex-Yugoslavia unspecified"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:5e6113",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "20%",
+                "2%",
+                "5%",
+                "5%",
+                "8%",
+                "1%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Sudan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:0c61f4",
+            "y": [
+                "56%",
+                "46%",
+                "51%",
+                "51%",
+                "68%",
+                "55%",
+                "52%",
+                "50%",
+                "45%",
+                "40%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Suriname"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:7ca1fc",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Syrian Arab Republic"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:ad6363",
+            "y": [
+                "27%",
+                "35%",
+                "32%",
+                "85%",
+                "87%",
+                "85%",
+                "87%",
+                "81%",
+                "72%",
+                "68%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Tajikistan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:1a33e5",
+            "y": [
+                "6%",
+                "5%",
+                "3%",
+                "3%",
+                "1%",
+                "2%",
+                "1%",
+                "2%",
+                "2%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Tanzania"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:c4ee92",
+            "y": [
+                "2%",
+                "1%",
+                "2%",
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "4%",
+                "3%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Thailand"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e58411",
+            "y": [
+                "12%",
+                "14%",
+                "15%",
+                "19%",
+                "8%",
+                "9%",
+                "20%",
+                "8%",
+                "7%",
+                "7%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Timor-Leste"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:55203c",
+            "y": [
+                "2%",
+                "8%",
+                "3%",
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "2%",
+                "2%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Togo"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:7582b2",
+            "y": [
+                "0%",
+                "1%",
+                "0%",
+                "4%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Tokelau"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:d331a6",
+            "y": [
+                "0%",
+                "0%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Tonga"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:af9646",
+            "y": [
+                "5%",
+                "1%",
+                "1%",
+                "5%",
+                "2%",
+                "7%",
+                "10%",
+                "5%",
+                "4%",
+                "16%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Tunisia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:92b7e9",
+            "y": [
+                "0%",
+                "0%",
+                "3%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Turkey"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:aa72e4",
+            "y": [
+                "1%",
+                "2%",
+                "4%",
+                "3%",
+                "5%",
+                "5%",
+                "8%",
+                "18%",
+                "15%",
+                "17%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Turkmenistan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:60dcc5",
+            "y": [
+                "1%",
+                "1%",
+                "2%",
+                "4%",
+                "0%",
+                "2%",
+                "2%",
+                "1%",
+                "7%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Tuvalu"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:130a8f",
+            "y": [
+                "4%",
+                "12%",
+                "30%",
+                "6%",
+                "2%",
+                "1%",
+                "2%",
+                "1%",
+                "0%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Uganda"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:951019",
+            "y": [
+                "8%",
+                "5%",
+                "4%",
+                "4%",
+                "4%",
+                "5%",
+                "5%",
+                "8%",
+                "16%",
+                "11%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Ukraine"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:291e90",
+            "y": [
+                "0%",
+                "0%",
+                "1%",
+                "1%",
+                "0%",
+                "4%",
+                "19%",
+                "12%",
+                "14%",
+                "12%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Uzbekistan"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:1d492b",
+            "y": [
+                "0%",
+                "3%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Vanuatu"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:0620f0",
+            "y": [
+                "0%",
+                "3%",
+                "2%",
+                "4%",
+                "2%",
+                "2%",
+                "43%",
+                "6%",
+                "10%",
+                "17%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Venezuela"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:89b39e",
+            "y": [
+                "4%",
+                "4%",
+                "9%",
+                "8%",
+                "4%",
+                "6%",
+                "17%",
+                "16%",
+                "12%",
+                "28%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Viet Nam"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:df5347",
+            "y": [
+                "2%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "0%",
+                "1%",
+                "1%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Wallis and Futuna"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:77fa58",
+            "y": [
+                "0%",
+                "0%",
+                "0%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "West Bank and Gaza Strip"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:2608a6",
+            "y": [
+                "37%",
+                "25%",
+                "36%",
+                "36%",
+                "32%",
+                "39%",
+                "45%",
+                "48%",
+                "38%",
+                "42%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Yemen"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:4b2dd3",
+            "y": [
+                "10%",
+                "15%",
+                "32%",
+                "36%",
+                "36%",
+                "28%",
+                "62%",
+                "74%",
+                "63%",
+                "63%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Zambia"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e5de0b",
+            "y": [
+                "2%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Zimbabwe"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:348892",
+            "y": [
+                "51%",
+                "25%",
+                "24%",
+                "14%",
+                "14%",
+                "8%",
+                "6%",
+                "17%",
+                "9%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Europe, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:2b272c",
+            "y": [
+                "8%",
+                "6%",
+                "7%",
+                "4%",
+                "10%",
+                "15%",
+                "9%",
+                "13%",
+                "7%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "North of Sahara, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:64b848",
+            "y": [
+                "6%",
+                "2%",
+                "8%",
+                "4%",
+                "26%",
+                "34%",
+                "22%",
+                "6%",
+                "4%",
+                "0%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "South of Sahara, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:544d2d",
+            "y": [
+                "16%",
+                "19%",
+                "12%",
+                "21%",
+                "16%",
+                "40%",
+                "14%",
+                "13%",
+                "24%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "South America, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:f547a4",
+            "y": [
+                "6%",
+                "8%",
+                "9%",
+                "2%",
+                "1%",
+                "1%",
+                "0%",
+                "0%",
+                "1%",
+                "5%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Far East Asia, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:776ba2",
+            "y": [
+                "20%",
+                "11%",
+                "35%",
+                "13%",
+                "17%",
+                "22%",
+                "21%",
+                "23%",
+                "34%",
+                "5%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Central Asia, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:01b53a",
+            "y": [
+                "1%",
+                "2%",
+                "2%",
+                "2%",
+                "1%",
+                "5%",
+                "2%",
+                "1%",
+                "5%",
+                "2%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "South Asia, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:888531",
+            "y": [
+                "59%",
+                "37%",
+                "39%",
+                "69%",
+                "28%",
+                "33%",
+                "51%",
+                "36%",
+                "6%",
+                "10%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Oceania, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:7dc806",
+            "y": [
+                "2%",
+                "3%",
+                "4%",
+                "3%",
+                "5%",
+                "3%",
+                "6%",
+                "5%",
+                "5%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Developing Countries, unspecified"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:21633f",
+            "y": [
+                "5%",
+                "6%",
+                "5%",
+                "5%",
+                "5%",
+                "8%",
+                "7%",
+                "5%",
+                "7%",
+                "9%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Africa, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:e6d496",
+            "y": [
+                "2%",
+                "7%",
+                "8%",
+                "4%",
+                "3%",
+                "6%",
+                "4%",
+                "3%",
+                "5%",
+                "3%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "America, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:4ef60d",
+            "y": [
+                "6%",
+                "7%",
+                "10%",
+                "6%",
+                "4%",
+                "5%",
+                "5%",
+                "11%",
+                "8%",
+                "6%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "South &amp;amp; Central Asia, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:122243",
+            "y": [
+                "3%",
+                "4%",
+                "1%",
+                "17%",
+                "1%",
+                "1%",
+                "3%",
+                "0%",
+                "0%",
+                "1%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Middle East, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:db1678",
+            "y": [
+                "45%",
+                "4%",
+                "4%",
+                "24%",
+                "50%",
+                "44%",
+                "28%",
+                "24%",
+                "29%",
+                "25%"
+            ],
+            "orientation": "v"
+        },
+        {
+            "meta": {
+                "columnNames": {
+                    "x": "Year",
+                    "y": "Asia, regional"
+                }
+            },
+            "name": "%{meta.columnNames.y}",
+            "type": "bar",
+            "xsrc": "urlsangel:54:a38fc4",
+            "x": [
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "ysrc": "urlsangel:54:b5821f",
+            "y": [
+                "2%",
+                "5%",
+                "4%",
+                "3%",
+                "3%",
+                "3%",
+                "3%",
+                "4%",
+                "2%",
+                "2%"
+            ],
+            "orientation": "v"
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": ""
+        },
+        "xaxis": {
+            "type": "linear",
+            "range": [
+                2008.5,
+                2018.5
+            ],
+            "title": {
+                "text": "Year"
+            },
+            "autorange": true
+        },
+        "yaxis": {
+            "range": [
+                0,
+                1680
+            ],
+            "title": {
+                "text": "Percent"
+            },
+            "autorange": true
+        },
+        "legend": {
+            "traceorder": "normal"
+        },
+        "barmode": "stack",
+        "autosize": true,
+        "template": {
+            "data": {
+                "bar": [
+                    {
+                        "type": "bar",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "table": [
+                    {
+                        "type": "table",
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "type": "carpet",
+                        "aaxis": {
+                            "gridcolor": "#C8D4E3",
+                            "linecolor": "#C8D4E3",
+                            "endlinecolor": "#2a3f5f",
+                            "minorgridcolor": "#C8D4E3",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "gridcolor": "#C8D4E3",
+                            "linecolor": "#C8D4E3",
+                            "endlinecolor": "#2a3f5f",
+                            "minorgridcolor": "#C8D4E3",
+                            "startlinecolor": "#2a3f5f"
+                        }
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ],
+                "scatter": [
+                    {
+                        "type": "scatter",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "heatmapgl": [
+                    {
+                        "type": "heatmapgl",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "type": "histogram",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "line": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        },
+                        "type": "parcoords"
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ]
+            },
+            "layout": {
+                "geo": {
+                    "bgcolor": "white",
+                    "showland": true,
+                    "lakecolor": "white",
+                    "landcolor": "white",
+                    "showlakes": true,
+                    "subunitcolor": "#C8D4E3"
+                },
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "polar": {
+                    "bgcolor": "white",
+                    "radialaxis": {
+                        "ticks": "",
+                        "gridcolor": "#EBF0F8",
+                        "linecolor": "#EBF0F8"
+                    },
+                    "angularaxis": {
+                        "ticks": "",
+                        "gridcolor": "#EBF0F8",
+                        "linecolor": "#EBF0F8"
+                    }
+                },
+                "scene": {
+                    "xaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "zerolinecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "backgroundcolor": "white"
+                    },
+                    "yaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "zerolinecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "backgroundcolor": "white"
+                    },
+                    "zaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "zerolinecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "backgroundcolor": "white"
+                    }
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "xaxis": {
+                    "ticks": "",
+                    "gridcolor": "#EBF0F8",
+                    "linecolor": "#EBF0F8",
+                    "automargin": true,
+                    "zerolinecolor": "#EBF0F8",
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "ticks": "",
+                    "gridcolor": "#EBF0F8",
+                    "linecolor": "#EBF0F8",
+                    "automargin": true,
+                    "zerolinecolor": "#EBF0F8",
+                    "zerolinewidth": 2
+                },
+                "ternary": {
+                    "aaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6"
+                    },
+                    "baxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6"
+                    },
+                    "caxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6"
+                    },
+                    "bgcolor": "white"
+                },
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#19d3f3",
+                    "#e763fa",
+                    "#fecb52",
+                    "#ffa15a",
+                    "#ff6692",
+                    "#b6e880"
+                ],
+                "hovermode": "closest",
+                "colorscale": {
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ],
+                    "sequential": [
+                        [
+                            0,
+                            "#0508b8"
+                        ],
+                        [
+                            0.0893854748603352,
+                            "#1910d8"
+                        ],
+                        [
+                            0.1787709497206704,
+                            "#3c19f0"
+                        ],
+                        [
+                            0.2681564245810056,
+                            "#6b1cfb"
+                        ],
+                        [
+                            0.3575418994413408,
+                            "#981cfd"
+                        ],
+                        [
+                            0.44692737430167595,
+                            "#bf1cfd"
+                        ],
+                        [
+                            0.5363128491620112,
+                            "#dd2bfd"
+                        ],
+                        [
+                            0.6256983240223464,
+                            "#f246fe"
+                        ],
+                        [
+                            0.7150837988826816,
+                            "#fc67fd"
+                        ],
+                        [
+                            0.8044692737430168,
+                            "#fe88fc"
+                        ],
+                        [
+                            0.8938547486033519,
+                            "#fea5fd"
+                        ],
+                        [
+                            0.9832402234636871,
+                            "#febefe"
+                        ],
+                        [
+                            1,
+                            "#fec3fe"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0,
+                            "#0508b8"
+                        ],
+                        [
+                            0.0893854748603352,
+                            "#1910d8"
+                        ],
+                        [
+                            0.1787709497206704,
+                            "#3c19f0"
+                        ],
+                        [
+                            0.2681564245810056,
+                            "#6b1cfb"
+                        ],
+                        [
+                            0.3575418994413408,
+                            "#981cfd"
+                        ],
+                        [
+                            0.44692737430167595,
+                            "#bf1cfd"
+                        ],
+                        [
+                            0.5363128491620112,
+                            "#dd2bfd"
+                        ],
+                        [
+                            0.6256983240223464,
+                            "#f246fe"
+                        ],
+                        [
+                            0.7150837988826816,
+                            "#fc67fd"
+                        ],
+                        [
+                            0.8044692737430168,
+                            "#fe88fc"
+                        ],
+                        [
+                            0.8938547486033519,
+                            "#fea5fd"
+                        ],
+                        [
+                            0.9832402234636871,
+                            "#febefe"
+                        ],
+                        [
+                            1,
+                            "#fec3fe"
+                        ]
+                    ]
+                },
+                "plot_bgcolor": "white",
+                "paper_bgcolor": "white",
+                "shapedefaults": {
+                    "line": {
+                        "width": 0
+                    },
+                    "opacity": 0.4,
+                    "fillcolor": "#506784"
+                },
+                "annotationdefaults": {
+                    "arrowhead": 0,
+                    "arrowcolor": "#506784",
+                    "arrowwidth": 1
+                }
+            },
+            "themeRef": "PLOTLY_WHITE"
+        }
+    },
+    "frames": []
+}

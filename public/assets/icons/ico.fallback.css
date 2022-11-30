@@ -1,0 +1,665 @@
+
+.ico-arrow-blank {
+	background-image: url('png/arrow-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-down-blank {
+	background-image: url('png/arrow-down-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-down-slate {
+	background-image: url('png/arrow-down-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-left-blank {
+	background-image: url('png/arrow-left-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-left-slate {
+	background-image: url('png/arrow-left-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-poppy {
+	background-image: url('png/arrow-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-poppydark {
+	background-image: url('png/arrow-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-right-blank {
+	background-image: url('png/arrow-right-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-right-slate {
+	background-image: url('png/arrow-right-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-slate {
+	background-image: url('png/arrow-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-up-blank {
+	background-image: url('png/arrow-up-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-up-slate {
+	background-image: url('png/arrow-up-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-blank {
+	background-image: url('png/calendar-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-poppy {
+	background-image: url('png/calendar-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-poppydark {
+	background-image: url('png/calendar-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-slate {
+	background-image: url('png/calendar-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-clock-blank {
+	background-image: url('png/clock-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-clock-poppy {
+	background-image: url('png/clock-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-clock-poppydark {
+	background-image: url('png/clock-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-clock-slate {
+	background-image: url('png/clock-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-clock-warning {
+	background-image: url('png/clock-warning.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-blank {
+	background-image: url('png/cross-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-poppy {
+	background-image: url('png/cross-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-poppydark {
+	background-image: url('png/cross-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-slate {
+	background-image: url('png/cross-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-data-blank {
+	background-image: url('png/data-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-data-poppy {
+	background-image: url('png/data-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-data-poppydark {
+	background-image: url('png/data-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-data-slate {
+	background-image: url('png/data-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-document-blank {
+	background-image: url('png/document-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-document-poppy {
+	background-image: url('png/document-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-document-poppydark {
+	background-image: url('png/document-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-document-slate {
+	background-image: url('png/document-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-download-blank {
+	background-image: url('png/download-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-download-poppy {
+	background-image: url('png/download-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-download-poppydark {
+	background-image: url('png/download-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-download-slate {
+	background-image: url('png/download-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-email {
+	background-image: url('png/email.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-error-error {
+	background-image: url('png/error-error.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-focus-blank {
+	background-image: url('png/focus-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-focus-poppy {
+	background-image: url('png/focus-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-focus-poppydark {
+	background-image: url('png/focus-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-focus-slate {
+	background-image: url('png/focus-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-info-blank {
+	background-image: url('png/info-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-info-poppy {
+	background-image: url('png/info-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-info-poppydark {
+	background-image: url('png/info-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-info-slate {
+	background-image: url('png/info-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-blank {
+	background-image: url('png/link-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-bluebell {
+	background-image: url('png/link-bluebell.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-lavendar {
+	background-image: url('png/link-lavendar.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-leaf {
+	background-image: url('png/link-leaf.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-marigold {
+	background-image: url('png/link-marigold.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-poppy {
+	background-image: url('png/link-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-rose {
+	background-image: url('png/link-rose.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-slate {
+	background-image: url('png/link-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-link-sunflower {
+	background-image: url('png/link-sunflower.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-list-blank {
+	background-image: url('png/list-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-list-poppy {
+	background-image: url('png/list-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-list-poppydark {
+	background-image: url('png/list-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-list-slate {
+	background-image: url('png/list-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-blank {
+	background-image: url('png/location-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-poppy {
+	background-image: url('png/location-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-poppydark {
+	background-image: url('png/location-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-slate {
+	background-image: url('png/location-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-mail-blank {
+	background-image: url('png/mail-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-mail-poppy {
+	background-image: url('png/mail-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-mail-poppydark {
+	background-image: url('png/mail-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-mail-slate {
+	background-image: url('png/mail-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-phone-blank {
+	background-image: url('png/phone-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-phone-poppy {
+	background-image: url('png/phone-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-phone-poppydark {
+	background-image: url('png/phone-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-phone-slate {
+	background-image: url('png/phone-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-blank {
+	background-image: url('png/play-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-poppy {
+	background-image: url('png/play-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-poppydark {
+	background-image: url('png/play-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-slate {
+	background-image: url('png/play-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-plus-blank {
+	background-image: url('png/plus-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-plus-poppy {
+	background-image: url('png/plus-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-plus-poppydark {
+	background-image: url('png/plus-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-plus-slate {
+	background-image: url('png/plus-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-share-blank {
+	background-image: url('png/share-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-share-poppy {
+	background-image: url('png/share-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-share-poppydark {
+	background-image: url('png/share-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-share-slate {
+	background-image: url('png/share-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-star-blank {
+	background-image: url('png/star-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-star-poppy {
+	background-image: url('png/star-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-star-poppydark {
+	background-image: url('png/star-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-star-slate {
+	background-image: url('png/star-slate.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-success-success {
+	background-image: url('png/success-success.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-test {
+	background-image: url('png/test.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-warning-warning {
+	background-image: url('png/warning-warning.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-zoom-blank {
+	background-image: url('png/zoom-blank.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-zoom-poppy {
+	background-image: url('png/zoom-poppy.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-zoom-poppydark {
+	background-image: url('png/zoom-poppydark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-zoom-slate {
+	background-image: url('png/zoom-slate.png');
+	background-repeat: no-repeat;
+}
+
+

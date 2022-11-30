@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#000000" fill-rule="nonzero">
+            <path d="M0,20 L0,17.14 L2.86,17.14 L2.86,20 L0,20 Z M5.72,20 L5.72,17.14 L8.58,17.14 L8.58,20 L5.72,20 Z M11.42,20 L11.42,17.14 L14.28,17.14 L14.28,20 L11.42,20 Z M17.14,20 L17.14,17.14 L20,17.14 L20,20 L17.14,20 Z M0,14.28 L0,11.42 L2.86,11.42 L2.86,14.28 L0,14.28 Z M17.14,14.28 L17.14,11.42 L20,11.42 L20,14.28 L17.14,14.28 Z M0,8.58 L0,5.72 L2.86,5.72 L2.86,8.58 L0,8.58 Z M17.14,8.58 L17.14,5.72 L20,5.72 L20,8.58 L17.14,8.58 Z M0,2.86 L0,-1.11022302e-16 L2.86,-1.11022302e-16 L2.86,2.86 L0,2.86 Z M5.72,2.86 L5.72,-1.11022302e-16 L8.58,-1.11022302e-16 L8.58,2.86 L5.72,2.86 Z M11.42,2.86 L11.42,-1.11022302e-16 L14.28,-1.11022302e-16 L14.28,2.86 L11.42,2.86 Z M17.14,2.86 L17.14,-1.11022302e-16 L20,-1.11022302e-16 L20,2.86 L17.14,2.86 Z" id="Shape" transform="translate(10.000000, 10.000000) scale(-1, 1) rotate(-180.000000) translate(-10.000000, -10.000000) "></path>
+        </g>
+    </g>
+</svg>
