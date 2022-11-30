@@ -39,4 +39,14 @@ export const getYearsFromRange = (range) => {
   return count.map((key) => range[0] + key);
 };
 
+export const fetchData = (dataFile) => {
+  if (dataFile.includes('csv')) {
+    return fetchCSVData(dataFile);
+  }
+
+  return new Promise((resolve) => {
+    resolve(dataFile);
+  });
+};
+
 export default fetchCSVData;

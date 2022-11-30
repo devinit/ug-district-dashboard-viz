@@ -1,9 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import fetchCSVData from '../utils/data';
+import { fetchData } from '../utils/data';
 import { addFilterWrapper } from '../widgets/filters';
 import Select from './Select';
 import ChartFilters from './ChartFilters';
+import dataFile from '../utils/counties.json';
+
+const DATAFILE = dataFile;
 
 const init = (className) => {
   window.DICharts.handler.addChart({
@@ -21,25 +24,24 @@ const init = (className) => {
            *
            * const chart = window.echarts.init(chartNode);
            */
-          const csv = 'https://raw.githubusercontent.com/devinit/di-website-data/main/2022/rh-and-fp-dropdowns.csv';
-          fetchCSVData(csv).then((data) => {
-            const filterWrapper = addFilterWrapper(chartNode);
+          fetchData(DATAFILE).then((data) => {
+            console.log(data);
+            const selectorFilterWrapper = addFilterWrapper(chartNode);
 
             // Create dropdowns
-            const root = createRoot(filterWrapper);
-            root.render(
+            const rootElement = createRoot(selectorFilterWrapper);
+            rootElement.render(
               <ChartFilters selectErrorMessage={selectErrorMessage}>
                 <Select
                   label="Select Subcounty"
                   options={data.map((d) => ({ value: d.Donors, label: d.Donors }))}
-                  classNamePrefix="subcounty-filter"
+                  classNamePrefix="subcounty-filter sticky-top"
                   isClearable={false}
                   defaultValue={[{ value: 'United States', label: 'United States', isCloseable: true }]}
                   onChange={(item) => {
                     window.DIState.setState({ subCounty: item.value });
-                    window.console.log(item.value);
                   }}
-                  css={{ minWidth: '100px' }}
+                  css={{ minWidth: '200px' }}
                 />
                 <Select
                   label="Select School Level"
@@ -47,14 +49,13 @@ const init = (className) => {
                     { value: 'primary', label: 'Primary' },
                     { value: 'secondary', label: 'Secondary' },
                   ]}
-                  classNamePrefix="level-filter"
+                  classNamePrefix="level-filter sticky-top"
                   isClearable={false}
                   defaultValue={[{ value: 'primary', label: 'Primary', isCloseable: true }]}
                   onChange={(item) => {
                     window.DIState.setState({ level: item.value });
-                    window.console.log(item.value);
                   }}
-                  css={{ minWidth: '100px' }}
+                  css={{ minWidth: '200px' }}
                 />
               </ChartFilters>
             );
