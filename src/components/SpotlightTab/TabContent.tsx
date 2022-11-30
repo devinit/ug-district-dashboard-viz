@@ -1,12 +1,15 @@
-import React, { FunctionComponent } from 'react';
+import { FC, ReactNode } from 'react';
+import { css } from '@emotion/react';
 
-const TabContent: FunctionComponent = ({ children }) => {
+const TabContent: FC<{ children?: ReactNode }> = ({ children }) => {
   return (
-    <article className="tabs__content">
-      {children}
-      <style jsx>{`
+    <article
+      className="tabs__content"
+      css={css`
         z-index: 200;
-      `}</style>
+      `}
+    >
+      {children}
     </article>
   );
 };

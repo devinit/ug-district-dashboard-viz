@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react';
+import { FC, ReactNode } from 'react';
 
-const TabContentHeader: FunctionComponent<{ onClick?: () => void }> = ({ children, onClick }) => {
+const TabContentHeader: FC<{ onClick?: () => void; children?: ReactNode }> = ({ children, onClick }) => {
   return (
     <div className="tabs__content__header" onClick={onClick}>
       {children}

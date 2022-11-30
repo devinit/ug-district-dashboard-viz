@@ -1,4 +1,4 @@
-import React, { Children, FunctionComponent, isValidElement, ReactNode } from 'react';
+import { Children, FC, isValidElement, ReactNode } from 'react';
 import { TabContent } from './TabContent';
 
 interface TabContainerProps {
@@ -6,9 +6,10 @@ interface TabContainerProps {
   label: string;
   active?: boolean;
   onActivate?: () => void;
+  children?: ReactNode;
 }
 
-const TabContainer: FunctionComponent<TabContainerProps> = ({ id, active, label, children, onActivate }) => {
+const TabContainer: FC<TabContainerProps> = ({ id, active, label, children, onActivate }) => {
   const renderContent = (): ReactNode =>
     Children.map(children, (child) => (isValidElement(child) && child.type === TabContent ? child : null));
 

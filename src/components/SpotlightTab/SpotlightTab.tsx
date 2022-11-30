@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import { FC, ReactNode } from 'react';
 
-const SpotlightTab: FunctionComponent = ({ children }) => <div className="tabs">{children}</div>;
+const SpotlightTab: FC<{ children: ReactNode }> = ({ children }) => <div className="tabs">{children}</div>;
 
 export { SpotlightTab };
