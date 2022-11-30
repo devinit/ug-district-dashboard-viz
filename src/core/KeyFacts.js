@@ -1,8 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import TabContainer from '../components/SpotlightTab/TabContainer';
-import TabContent from '../components/SpotlightTab/TabContent';
-import TabContentHeader from '../components/SpotlightTab/TabContentHeader';
+import KeyFacts from './components/KeyFacts';
 
 /**
  * Run your code after the page has loaded
@@ -18,22 +16,7 @@ const renderViz = (className) => {
 
           // create dropdowns
           const root = createRoot(chartNode);
-          root.render(
-            <div className="tabs">
-              <TabContainer id={'tab1'} label="Overview" active={true}>
-                <TabContent>
-                  <TabContentHeader>Header Goes Here</TabContentHeader>
-                  <div className="l-2up-3up">Content Goes Here</div>
-                </TabContent>
-              </TabContainer>
-              <TabContainer id={'tab2'} label="Education">
-                <TabContent>
-                  <TabContentHeader>Education Header Goes Here</TabContentHeader>
-                  <div className="l-2up-3up">Education Content Goes Here</div>
-                </TabContent>
-              </TabContainer>
-            </div>
-          );
+          root.render(<KeyFacts />);
 
           dichart.hideLoading();
         });
