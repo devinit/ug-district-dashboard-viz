@@ -15,7 +15,10 @@ const IndicatorStat = ({ meta = {}, heading, children }) => (
 IndicatorStat.defaultProps = { meta: {} };
 IndicatorStat.propTypes = {
   heading: PropTypes.string,
-  meta: PropTypes.object,
+  meta: PropTypes.shape({
+    description: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+    source: PropTypes.string,
+  }),
   children: PropTypes.any,
 };
 

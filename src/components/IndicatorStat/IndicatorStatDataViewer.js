@@ -23,7 +23,7 @@ const IndicatorStatDataViewer = ({ value, note }) => (
 );
 
 IndicatorStatDataViewer.propTypes = {
-  note: PropTypes.obj,
+  note: PropTypes.object,
   value: PropTypes.string,
 };
 

@@ -83,7 +83,7 @@ const SpotlightPopupContent = ({ close, description, source }) => {
 };
 
 SpotlightPopupContent.propTypes = {
-  description: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   source: PropTypes.string,
   close: PropTypes.func.isRequired,
 };
