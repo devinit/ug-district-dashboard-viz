@@ -50,6 +50,8 @@ const renderViz = (className) => {
                       root.render(<NoDataCentered />);
                     });
                 }
+              } else if (keyFacts && keyFacts.data) {
+                root.render(<KeyFacts data={keyFacts.data} options={keyFacts} location={location} />);
               } else {
                 root.render(<NoDataCentered />);
               }
