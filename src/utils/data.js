@@ -19,7 +19,7 @@ export const formatNumber = (value, defaultForNan = '') => {
     return defaultForNan;
   }
 
-  return new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 }).format(formattedNumber);
+  return new Intl.NumberFormat('en-GB', { maximumFractionDigits: 2 }).format(formattedNumber);
 };
 
 export const parseValuesToNumbers = (data, valueField) =>
