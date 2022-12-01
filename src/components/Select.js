@@ -75,7 +75,7 @@ const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelect
         {...props}
         value={values}
         onChange={onChange}
-        css={{ marginRight: '10px' }}
+        css={{ marginRight: '20px' }}
         styles={selectStyles}
         isClearable={props.isClearable !== 'undefined' ? props.isClearable : values.length > 1}
       />
