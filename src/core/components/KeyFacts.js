@@ -6,6 +6,7 @@ import TabContainer from '../../components/SpotlightTab/TabContainer';
 import TabContent from '../../components/SpotlightTab/TabContent';
 import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
 import { KeyFactsContext } from '../context';
+import EducationTab from './EducationTab';
 import OverviewTab from './OverviewTab';
 
 const formatData = (data) => {
@@ -46,14 +47,7 @@ const KeyFacts = (props) => {
     <KeyFactsContext.Provider value={{ ...props, data }}>
       <div className="tabs">
         <OverviewTab />
-        <TabContainer id="education" label="Education">
-          <TabContent>
-            <TabContentHeader>
-              <label>Education Header Goes Here</label>
-            </TabContentHeader>
-            <div className="l-2up-3up">Education Content Goes Here</div>
-          </TabContent>
-        </TabContainer>
+        <EducationTab />
         <TabContainer id="production" label="Production">
           <TabContent>
             <TabContentHeader>
