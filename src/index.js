@@ -1,6 +1,5 @@
 import './state';
 import renderEChart from './core/ExampleChart';
-import renderTable from './core/ExampleTable';
 import initSelectors from './components/SelectorDropdowns';
 import './styles/styles.css';
 
@@ -10,5 +9,4 @@ import './styles/styles.css';
 window.addEventListener('load', () => {
   initSelectors('district-selectors');
   renderEChart();
-  // renderTable('dicharts--table-example');
 });
