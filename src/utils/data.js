@@ -1,6 +1,6 @@
 import { parse } from 'papaparse';
 
-export const ACTIVE_BRANCH = 'feature/selector-dropdowns';
+export const ACTIVE_BRANCH = 'dev';
 
 const fetchCSVData = (url) =>
   new Promise((resolve) => {
