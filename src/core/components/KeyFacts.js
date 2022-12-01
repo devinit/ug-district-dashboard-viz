@@ -9,16 +9,21 @@ import { KeyFactsContext } from '../context';
 import OverviewTab from './OverviewTab';
 
 const formatData = (data) => {
+  // console.log(data);
   const formattedData = {};
 
+  const format = (item) => ({ caption: item.Item, value: item.Value, lastUpdated: item['Last Updated'] });
+
+  const POPULATION_KEY = 'Total Population';
   // extract population data
-  const popData = data.find((item) => item.Item === 'Total Population');
+  const popData = data.find((item) => item.Item === POPULATION_KEY);
   if (popData) {
-    formattedData.population = {
-      value: popData.Value,
-      lastUpdated: popData['Last Updated'],
-    };
+    formattedData.population = format(popData);
   }
+  // extract and format administration data
+  formattedData.administration = data
+    .filter((item) => item.Item !== POPULATION_KEY && item.Department === 'Administration')
+    .map(format);
 
   return formattedData;
 };
