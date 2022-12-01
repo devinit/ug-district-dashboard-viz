@@ -16,6 +16,13 @@ const ProductionTab = () => {
   const HEADING_CAPTION = '';
   const heading = data && data.production ? data.production.find((item) => item.caption === HEADING_CAPTION) : null;
 
+  const renderDashboardButton = () =>
+    options.dashboardURL ? (
+      <a href={options.dashboardURL} className="button button--secondary--fill">
+        {options.dashboardButtonCaption || 'View Full Dashboard'}
+      </a>
+    ) : null;
+
   return (
     <TabContainer id="production" label="Production">
       <TabContent>
@@ -47,14 +54,12 @@ const ProductionTab = () => {
                 </b>
                 <SpotlightPopup description={`Last updated: ${heading.lastUpdated}`} />
               </div>
-              {options.dashboardURL ? (
-                <a href={options.dashboardURL} className="button button--secondary--fill">
-                  {options.dashboardButtonCaption || 'View Full Dashboard'}
-                </a>
-              ) : null}
+              {renderDashboardButton()}
             </div>
           </TabContentHeader>
-        ) : null}
+        ) : (
+          renderDashboardButton()
+        )}
         {data && data.production && data.production.length ? (
           <div className="l-2up">
             {data.production
