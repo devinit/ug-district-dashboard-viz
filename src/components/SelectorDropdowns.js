@@ -40,7 +40,7 @@ const init = (className) => {
               rootElement.render(
                 <ChartFilters selectErrorMessage={selectErrorMessage}>
                   <Select
-                    label="Select Subcounty"
+                    label="Select subcounty"
                     options={processedData.map((d) => ({ value: d, label: d }))}
                     classNamePrefix="subcounty-filter sticky-top"
                     isClearable={false}
@@ -51,7 +51,7 @@ const init = (className) => {
                     css={{ minWidth: '200px' }}
                   />
                   <Select
-                    label="Select School Level"
+                    label="Select level"
                     options={[
                       { value: 'primary', label: 'Primary' },
                       { value: 'secondary', label: 'Secondary' },
