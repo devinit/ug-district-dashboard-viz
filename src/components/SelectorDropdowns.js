@@ -18,6 +18,10 @@ const init = (className) => {
           const dichart = new window.DICharts.Chart(chartNode.parentElement);
           dichart.showLoading();
 
+          // Chart parent section
+          const chartParentSection = chartNode.closest('.section');
+          chartParentSection.classList.add('sticky');
+
           /**
            * ECharts - prefix all browsers global with window
            * i.e window.echarts - echarts won't work without it
