@@ -33,7 +33,7 @@ const KeyFacts = (props) => {
   }, [props.data]);
 
   return (
-    <KeyFactsContext.Provider value={{ data, location: props.location }}>
+    <KeyFactsContext.Provider value={{ ...props, data }}>
       <div className="tabs">
         <OverviewTab />
         <TabContainer id="education" label="Education">
@@ -60,6 +60,7 @@ const KeyFacts = (props) => {
 KeyFacts.propTypes = {
   data: PropTypes.array.isRequired,
   location: PropTypes.object.isRequired,
+  options: PropTypes.object.isRequired,
 };
 
 export default KeyFacts;

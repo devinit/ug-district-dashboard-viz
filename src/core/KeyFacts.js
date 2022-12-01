@@ -25,7 +25,7 @@ const renderViz = (className) => {
               if (keyFacts && keyFacts.url) {
                 if (keyFacts.url.endsWith('.csv')) {
                   fetchCSVData(keyFacts.url).then((data) => {
-                    root.render(<KeyFacts data={data} location={location} />);
+                    root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
                   });
                 } else {
                   window
@@ -34,9 +34,9 @@ const renderViz = (className) => {
                     .then((data) => {
                       if (Array.isArray(data)) {
                         window.console.log(data);
-                        root.render(<KeyFacts data={data} location={location} />);
+                        root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
                       } else if (data.results) {
-                        root.render(<KeyFacts data={data.results} location={location} />);
+                        root.render(<KeyFacts data={data.results} options={keyFacts} location={location} />);
                       } else {
                         window.console.error(
                           'Invalid data shape. Expected an array or an object with a results property.',

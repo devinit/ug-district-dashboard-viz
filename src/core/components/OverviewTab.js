@@ -8,7 +8,7 @@ import { formatNumber } from '../../utils/data';
 import { KeyFactsContext } from '../context';
 
 const OverviewTab = () => {
-  const { data, location } = useContext(KeyFactsContext);
+  const { data, location, options } = useContext(KeyFactsContext);
 
   return (
     <TabContainer id="overview" label="Overview" active={true}>
@@ -40,7 +40,11 @@ const OverviewTab = () => {
                   {formatNumber(data.population.value)}
                 </b>
               </div>
-              <div className="button button--secondary--fill">View Full Dashboard</div>
+              {options.dashboardURL ? (
+                <a href={options.dashboardURL} className="button button--secondary--fill">
+                  View Full Dashboard
+                </a>
+              ) : null}
             </div>
           ) : null}
         </TabContentHeader>
