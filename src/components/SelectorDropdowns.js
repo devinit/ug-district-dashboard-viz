@@ -40,7 +40,7 @@ const init = (className) => {
               rootElement.render(
                 <ChartFilters selectErrorMessage={selectErrorMessage}>
                   <Select
-                    label="Select subcounty"
+                    label="Select sub-county"
                     options={processedData.map((d) => ({ value: d, label: d }))}
                     classNamePrefix="subcounty-filter sticky-top"
                     isClearable={false}
