@@ -22,9 +22,19 @@ const SpotlightPopup = (props) => {
     border: 0,
     borderRadius: '0.28571429rem',
     boxShadow: '0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15)',
+    padding: '5px',
   };
   const customArrowStyle = {
-    left: '155px',
+    height: '10px',
+    width: '10px',
+    position: 'absolute',
+    background: 'rgb(255, 255, 255)',
+    transform: 'rotate(225deg)',
+    margin: '-5px',
+    zIndex: -1,
+    boxShadow: 'rgb(0 0 0 / 20%) 1px 1px 1px',
+    bottom: '0%',
+    left: '82px',
   };
 
   return (
@@ -33,9 +43,10 @@ const SpotlightPopup = (props) => {
         <span
           className="spotlight__stat-icon"
           css={css`
-            display: inline-block;
+            display: inline-flex;
             margin-left: 2px;
             cursor: pointer;
+            padding: 8px;
           `}
         >
           <i

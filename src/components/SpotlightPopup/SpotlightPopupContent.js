@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const SpotlightPopupContent = ({ close, description, source }) => {
   const renderSourceText = () => {
     if (source) {
       return (
-        <>
+        <React.Fragment>
           <b
             css={css`
               font-family: Geomanist Bold, sans-serif;
@@ -15,7 +16,7 @@ const SpotlightPopupContent = ({ close, description, source }) => {
             Source:{' '}
           </b>
           {source}
-        </>
+        </React.Fragment>
       );
     }
 
@@ -52,7 +53,7 @@ const SpotlightPopupContent = ({ close, description, source }) => {
         className="content"
         css={css`
           width: 100%;
-          padding: 20px 5px 5px 5px;
+          padding: 10px 5px 10px 5px;
         `}
       >
         <p
@@ -63,15 +64,19 @@ const SpotlightPopupContent = ({ close, description, source }) => {
         >
           {description}
         </p>
-        <br />
-        <p
-          className="source"
-          css={css`
-            text-align: left;
-          `}
-        >
-          {renderSourceText()}
-        </p>
+        {source ? (
+          <React.Fragment>
+            <br />
+            <p
+              className="source"
+              css={css`
+                text-align: left;
+              `}
+            >
+              {renderSourceText()}
+            </p>{' '}
+          </React.Fragment>
+        ) : null}
       </div>
     </div>
   );
