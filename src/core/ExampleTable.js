@@ -8,7 +8,7 @@ export const YEARS = [2011, 2020];
 // Your Code Goes Here i.e. functions
 const COLUMN_CAPTIONS = ['Caption One', 'Caption Two'];
 
-const renderTable = (tableNode) => {
+const renderTable = (reactRoot) => {
   const years = getYearsFromRange(YEARS);
   const headerRow = ['Caption Column'].concat(years);
   const count = [];
@@ -38,8 +38,7 @@ const renderTable = (tableNode) => {
 
   const rows = [headerRow].concat(formattedDataRow, [totalsRow]);
 
-  const root = createRoot(tableNode);
-  root.render(createElement(ExampleTable, { rows }));
+  reactRoot.render(createElement(ExampleTable, { rows }));
 };
 
 /**
@@ -54,13 +53,14 @@ const init = (className) => {
           const dichart = new window.DICharts.Chart(tableNode.parentElement);
           dichart.showLoading();
 
+          const root = createRoot(tableNode);
           if (window.DIState) {
             window.DIState.addListener(() => {
               dichart.showLoading();
               const state = window.DIState.getState;
               window.console.log(state);
               // TODO: get and store data in state object
-              renderTable(tableNode);
+              renderTable(root);
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
             });
