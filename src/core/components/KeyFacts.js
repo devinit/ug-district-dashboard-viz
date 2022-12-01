@@ -6,6 +6,7 @@ import { KeyFactsContext } from '../context';
 import EducationTab from './EducationTab';
 import OverviewTab from './OverviewTab';
 import ProductionTab from './ProductionTab';
+import SpotlightTab from '../../components/SpotlightTab';
 
 const formatData = (data) => {
   // console.log(data);
@@ -48,11 +49,11 @@ const KeyFacts = (props) => {
 
   return (
     <KeyFactsContext.Provider value={{ ...props, data }}>
-      <div className="tabs">
+      <SpotlightTab>
         <OverviewTab />
         <EducationTab />
         <ProductionTab />
-      </div>
+      </SpotlightTab>
     </KeyFactsContext.Provider>
   );
 };
