@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 import { useContext } from 'react';
+import SpotlightPopup from '../../components/SpotlightPopup';
 import TabContainer from '../../components/SpotlightTab/TabContainer';
 import TabContent from '../../components/SpotlightTab/TabContent';
 import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
@@ -39,6 +40,7 @@ const OverviewTab = () => {
                 >
                   {formatNumber(data.population.value)}
                 </b>
+                <SpotlightPopup description={`Last updated: ${data.population.lastUpdated}`} />
               </div>
               {options.dashboardURL ? (
                 <a href={options.dashboardURL} className="button button--secondary--fill">
