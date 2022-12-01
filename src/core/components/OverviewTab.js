@@ -42,7 +42,7 @@ const OverviewTab = () => {
               </div>
               {options.dashboardURL ? (
                 <a href={options.dashboardURL} className="button button--secondary--fill">
-                  View Full Dashboard
+                  {options.dashboardButtonCaption || 'View Full Dashboard'}
                 </a>
               ) : null}
             </div>
