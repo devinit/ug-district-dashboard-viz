@@ -1,17 +1,39 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
 import TabContainer from '../../components/SpotlightTab/TabContainer';
 import TabContent from '../../components/SpotlightTab/TabContent';
 import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
 import { KeyFactsContext } from '../context';
 import OverviewTab from './OverviewTab';
 
+const formatData = (data) => {
+  const formattedData = {};
+
+  // extract population data
+  const popData = data.find((item) => item.Item === 'Total Population');
+  if (popData) {
+    formattedData.population = {
+      value: popData.Value,
+      lastUpdated: popData['Last Updated'],
+    };
+  }
+
+  return formattedData;
+};
+
 const KeyFacts = (props) => {
-  window.console.log(props);
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    if (props.data) {
+      setData(formatData(props.data));
+    }
+  }, [props.data]);
 
   return (
-    <KeyFactsContext.Provider value={{ ...props }}>
+    <KeyFactsContext.Provider value={{ data, location: props.location }}>
       <div className="tabs">
         <OverviewTab />
         <TabContainer id="education" label="Education">

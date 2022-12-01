@@ -4,43 +4,45 @@ import { useContext } from 'react';
 import TabContainer from '../../components/SpotlightTab/TabContainer';
 import TabContent from '../../components/SpotlightTab/TabContent';
 import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
+import { formatNumber } from '../../utils/data';
 import { KeyFactsContext } from '../context';
 
 const OverviewTab = () => {
   const { data, location } = useContext(KeyFactsContext);
-  window.console.log(data, location);
 
   return (
     <TabContainer id="overview" label="Overview" active={true}>
       <TabContent>
         <TabContentHeader>
-          <div
-            css={css`
-              display: flex;
-            `}
-          >
+          {data && data.population ? (
             <div
               css={css`
-                margin-right: 1rem;
+                display: flex;
               `}
             >
-              <span
+              <div
                 css={css`
-                  font-size: 2.5rem;
+                  margin-right: 1rem;
                 `}
               >
-                Total Population in Masindi is{' '}
-              </span>
-              <b
-                css={css`
-                  font-size: 3rem;
-                `}
-              >
-                7,151,502
-              </b>
+                <span
+                  css={css`
+                    font-size: 2.5rem;
+                  `}
+                >
+                  Total Population in {location.name} is{' '}
+                </span>
+                <b
+                  css={css`
+                    font-size: 3rem;
+                  `}
+                >
+                  {formatNumber(data.population.value)}
+                </b>
+              </div>
+              <div className="button button--secondary--fill">View Full Dashboard</div>
             </div>
-            <div className="button button--secondary--fill">View Full Dashboard</div>
-          </div>
+          ) : null}
         </TabContentHeader>
         <div className="l-2up-3up">Content Goes Here</div>
       </TabContent>
