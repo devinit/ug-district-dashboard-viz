@@ -3,11 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { addFilterWrapper } from '../widgets/filters';
 import Select from './Select';
 import ChartFilters from './ChartFilters';
-import dataFile from '../utils/numberOfSchools.json';
+import dataFile from '../../public/assets/data/numberOfSchools.json';
 
 const DATAFILE = dataFile;
 const DEFAULTSUBCOUNTY = 'Wakiso';
 const DEFAULTSCHOOLLEVEL = 'Primary';
+const dataUrl = `https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/${ACTIVE_BRANCH}/public/assets/data/numberOfSchools.json`;
 
 const init = (className) => {
   window.DICharts.handler.addChart({
@@ -29,6 +30,9 @@ const init = (className) => {
            *
            * const chart = window.echarts.init(chartNode);
            */
+          fetch(dataUrl)
+            .then((response) => response.json())
+            .then((data) => window.console.log(data));
           const processedData = Array.from(new Set(DATAFILE.map((d) => d.SubCounty)));
           const selectorFilterWrapper = addFilterWrapper(chartNode);
 
