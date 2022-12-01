@@ -2,12 +2,10 @@
 import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import TabContainer from '../../components/SpotlightTab/TabContainer';
-import TabContent from '../../components/SpotlightTab/TabContent';
-import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
 import { KeyFactsContext } from '../context';
 import EducationTab from './EducationTab';
 import OverviewTab from './OverviewTab';
+import ProductionTab from './ProductionTab';
 
 const formatData = (data) => {
   // console.log(data);
@@ -31,11 +29,16 @@ const formatData = (data) => {
     .filter((item) => item.Item !== POPULATION_KEY && item.Department === 'Education')
     .map(format);
 
+  // extract and format production data
+  formattedData.production = data
+    .filter((item) => item.Item !== POPULATION_KEY && item.Department === 'Production')
+    .map(format);
+
   return formattedData;
 };
 
 const KeyFacts = (props) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
 
   useEffect(() => {
     if (props.data) {
@@ -48,14 +51,7 @@ const KeyFacts = (props) => {
       <div className="tabs">
         <OverviewTab />
         <EducationTab />
-        <TabContainer id="production" label="Production">
-          <TabContent>
-            <TabContentHeader>
-              <label>Production Header Goes Here</label>
-            </TabContentHeader>
-            <div className="l-2up-3up">Production Content Goes Here</div>
-          </TabContent>
-        </TabContainer>
+        <ProductionTab />
       </div>
     </KeyFactsContext.Provider>
   );

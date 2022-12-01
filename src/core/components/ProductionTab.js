@@ -10,17 +10,17 @@ import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
 import { formatNumber } from '../../utils/data';
 import { KeyFactsContext } from '../context';
 
-const EducationTab = () => {
+const ProductionTab = () => {
   const { data, location, options } = useContext(KeyFactsContext);
 
-  const HEADING_CAPTION = 'Number of Schools';
-  const heading = data && data.education ? data.education.find((item) => item.caption === HEADING_CAPTION) : null;
+  const HEADING_CAPTION = '';
+  const heading = data && data.production ? data.production.find((item) => item.caption === HEADING_CAPTION) : null;
 
   return (
-    <TabContainer id="education" label="Education">
+    <TabContainer id="production" label="Production">
       <TabContent>
-        <TabContentHeader>
-          {heading ? (
+        {heading ? (
+          <TabContentHeader>
             <div
               css={css`
                 display: flex;
@@ -53,36 +53,47 @@ const EducationTab = () => {
                 </a>
               ) : null}
             </div>
-          ) : null}
-        </TabContentHeader>
-        <div className="l-2up">
-          {data && data.education
-            ? data.education
-                .filter((item) => item.caption !== HEADING_CAPTION)
-                .map((item) => (
-                  <div className="l-2up__col" key={item.caption}>
-                    <IndicatorStat
-                      heading={item.caption}
-                      meta={{
-                        description: (
-                          <span
-                            css={css`
-                              display: flex;
-                              justify-content: center;
-                            `}
-                          >{`Last updated: ${item.lastUpdated}`}</span>
-                        ),
-                      }}
-                    >
-                      <IndicatorStatDataViewer value={item.value} />
-                    </IndicatorStat>
-                  </div>
-                ))
-            : null}
-        </div>
+          </TabContentHeader>
+        ) : null}
+        {data && data.production && data.production.length ? (
+          <div className="l-2up">
+            {data.production
+              .filter((item) => item.caption !== HEADING_CAPTION)
+              .map((item) => (
+                <div className="l-2up__col" key={item.caption}>
+                  <IndicatorStat
+                    heading={item.caption}
+                    meta={{
+                      description: (
+                        <span
+                          css={css`
+                            display: flex;
+                            justify-content: center;
+                          `}
+                        >{`Last updated: ${item.lastUpdated}`}</span>
+                      ),
+                    }}
+                  >
+                    <IndicatorStatDataViewer value={item.value} />
+                  </IndicatorStat>
+                </div>
+              ))}
+          </div>
+        ) : (
+          <div
+            css={css`
+              font-size: 16px;
+              display: flex;
+              justify-content: center;
+              width: 100%;
+            `}
+          >
+            No Production Data
+          </div>
+        )}
       </TabContent>
     </TabContainer>
   );
 };
 
-export default EducationTab;
+export default ProductionTab;
