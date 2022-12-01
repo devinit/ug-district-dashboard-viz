@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 import { useContext } from 'react';
+import IndicatorStat from '../../components/IndicatorStat';
+import IndicatorStatDataViewer from '../../components/IndicatorStat/IndicatorStatDataViewer';
 import SpotlightPopup from '../../components/SpotlightPopup';
 import TabContainer from '../../components/SpotlightTab/TabContainer';
 import TabContent from '../../components/SpotlightTab/TabContent';
@@ -50,7 +52,29 @@ const OverviewTab = () => {
             </div>
           ) : null}
         </TabContentHeader>
-        <div className="l-2up-3up">Content Goes Here</div>
+        <div className="l-2up">
+          {data && data.administration
+            ? data.administration.map((item) => (
+                <div className="l-2up__col" key={item.caption}>
+                  <IndicatorStat
+                    heading={item.caption}
+                    meta={{
+                      description: (
+                        <span
+                          css={css`
+                            display: flex;
+                            justify-content: center;
+                          `}
+                        >{`Last updated: ${item.lastUpdated}`}</span>
+                      ),
+                    }}
+                  >
+                    <IndicatorStatDataViewer value={item.value} />
+                  </IndicatorStat>
+                </div>
+              ))
+            : null}
+        </div>
       </TabContent>
     </TabContainer>
   );
