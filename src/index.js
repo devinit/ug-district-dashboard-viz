@@ -10,5 +10,5 @@ import './styles/styles.css';
 window.addEventListener('load', () => {
   initSelectors('district-selectors');
   renderEChart();
-  renderTable('dicharts--table-example');
+  // renderTable('dicharts--table-example');
 });
