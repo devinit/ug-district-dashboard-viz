@@ -1,6 +1,6 @@
 import { parse } from 'papaparse';
 
-export const ACTIVE_BRANCH = 'main';
+export const ACTIVE_BRANCH = 'feature/selector-dropdowns';
 
 const fetchCSVData = (url) =>
   new Promise((resolve) => {
@@ -37,6 +37,16 @@ export const getYearsFromRange = (range) => {
   }
 
   return count.map((key) => range[0] + key);
+};
+
+export const fetchData = (dataFile) => {
+  if (dataFile.includes('csv')) {
+    return fetchCSVData(dataFile);
+  }
+
+  return new Promise((resolve) => {
+    resolve(dataFile);
+  });
 };
 
 export default fetchCSVData;
