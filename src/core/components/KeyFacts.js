@@ -25,6 +25,11 @@ const formatData = (data) => {
     .filter((item) => item.Item !== POPULATION_KEY && item.Department === 'Administration')
     .map(format);
 
+  // extract and format education data
+  formattedData.education = data
+    .filter((item) => item.Item !== POPULATION_KEY && item.Department === 'Education')
+    .map(format);
+
   return formattedData;
 };
 
