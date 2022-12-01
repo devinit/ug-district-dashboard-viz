@@ -6,6 +6,8 @@ import ChartFilters from './ChartFilters';
 import dataFile from '../utils/numberOfSchools.json';
 
 const DATAFILE = dataFile;
+const DEFAULTSUBCOUNTY = 'Wakiso';
+const DEFAULTSCHOOLLEVEL = 'Primary';
 
 const init = (className) => {
   window.DICharts.handler.addChart({
@@ -39,7 +41,7 @@ const init = (className) => {
                 options={processedData.map((d) => ({ value: d, label: d }))}
                 classNamePrefix="subcounty-filter sticky-top"
                 isClearable={false}
-                defaultValue={[{ value: 'Wakiso', label: 'Wakiso', isCloseable: true }]}
+                defaultValue={[{ value: DEFAULTSUBCOUNTY, label: DEFAULTSUBCOUNTY, isCloseable: true }]}
                 onChange={(item) => {
                   window.DIState.setState({ subCounty: item.value });
                 }}
@@ -53,7 +55,7 @@ const init = (className) => {
                 ]}
                 classNamePrefix="level-filter sticky-top"
                 isClearable={false}
-                defaultValue={[{ value: 'primary', label: 'Primary', isCloseable: true }]}
+                defaultValue={[{ value: DEFAULTSCHOOLLEVEL, label: DEFAULTSCHOOLLEVEL, isCloseable: true }]}
                 onChange={(item) => {
                   window.DIState.setState({ level: item.value });
                 }}
@@ -62,8 +64,8 @@ const init = (className) => {
             </ChartFilters>
           );
           if (window.DIState) {
-            window.DIState.setState({ subCounty: 'United States' });
-            window.DIState.setState({ level: 'primary' });
+            window.DIState.setState({ subCounty: DEFAULTSUBCOUNTY });
+            window.DIState.setState({ level: DEFAULTSCHOOLLEVEL });
           }
 
           dichart.hideLoading();
