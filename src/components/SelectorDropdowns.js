@@ -14,7 +14,7 @@ const init = (className) => {
     d3: {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {
-          const selectErrorMessage = 'You can compare two donors. Please remove one before adding another.';
+          const selectErrorMessage = '';
           const dichart = new window.DICharts.Chart(chartNode.parentElement);
           dichart.showLoading();
 
