@@ -121,6 +121,17 @@
             valueProperty: 'Name',
             labelProperty: 'Name',
           },
+          {
+            label: 'Select level',
+            defaultValue: { value: 'all', label: 'Primary and Secondary' },
+            stateProperty: 'level',
+            valueProperty: 'value',
+            labelProperty: 'label',
+            data: [
+              { value: 'primary', label: 'Primary' },
+              { value: 'secondary', label: 'Secondary' },
+            ],
+          },
         ],
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/key-facts/public/assets/data/masindi/District%20Profile.csv',

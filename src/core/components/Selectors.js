@@ -19,7 +19,10 @@ const Selectors = (props) => {
             stateProperty: selector.stateProperty,
           };
           item.options = selector.defaultValue ? [selector.defaultValue] : [];
-          const data = await fetchData(selector.url);
+          let data = selector.data || [];
+          if (selector.url) {
+            data = await fetchData(selector.url);
+          }
           item.options = item.options.concat(
             data.reduce((options, curr) => {
               if (!options.find((i) => i[selector.valueProperty] === curr[selector.valueProperty])) {
