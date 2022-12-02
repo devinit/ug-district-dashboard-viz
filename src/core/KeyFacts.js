@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import fetchCSVData from '../utils/data';
+import fetchData from '../utils/data';
 import KeyFacts from './components/KeyFacts';
 import NoDataCentered from './components/NoDataCentered';
 
@@ -23,33 +23,24 @@ const renderViz = (className) => {
               const { keyFacts, location } = window.DIState.getState;
 
               if (keyFacts && keyFacts.url) {
-                if (keyFacts.url.endsWith('.csv')) {
-                  fetchCSVData(keyFacts.url).then((data) => {
-                    root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
-                  });
-                } else {
-                  window
-                    .fetch(keyFacts.url)
-                    .then((response) => response.json())
-                    .then((data) => {
-                      if (Array.isArray(data)) {
-                        window.console.log(data);
-                        root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
-                      } else if (data.results) {
-                        root.render(<KeyFacts data={data.results} options={keyFacts} location={location} />);
-                      } else {
-                        window.console.error(
-                          'Invalid data shape. Expected an array or an object with a results property.',
-                          data
-                        );
-                        root.render(<NoDataCentered />);
-                      }
-                    })
-                    .catch((error) => {
-                      window.console.log(error);
+                fetchData(keyFacts.url)
+                  .then((data) => {
+                    if (Array.isArray(data)) {
+                      root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
+                    } else if (data.results) {
+                      root.render(<KeyFacts data={data.results} options={keyFacts} location={location} />);
+                    } else {
+                      window.console.error(
+                        'Invalid data shape. Expected an array or an object with a results property.',
+                        data
+                      );
                       root.render(<NoDataCentered />);
-                    });
-                }
+                    }
+                  })
+                  .catch((error) => {
+                    window.console.log(error);
+                    root.render(<NoDataCentered />);
+                  });
               } else if (keyFacts && keyFacts.data) {
                 root.render(<KeyFacts data={keyFacts.data} options={keyFacts} location={location} />);
               } else {
