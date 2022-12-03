@@ -1,7 +1,5 @@
 import { parse } from 'papaparse';
 
-export const ACTIVE_BRANCH = 'feature/selector-dropdowns';
-
 const fetchCSVData = (url) =>
   new Promise((resolve) => {
     parse(url, {
@@ -19,7 +17,7 @@ export const formatNumber = (value, defaultForNan = '') => {
     return defaultForNan;
   }
 
-  return new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 }).format(formattedNumber);
+  return new Intl.NumberFormat('en-GB', { maximumFractionDigits: 2 }).format(formattedNumber);
 };
 
 export const parseValuesToNumbers = (data, valueField) =>
@@ -39,14 +37,12 @@ export const getYearsFromRange = (range) => {
   return count.map((key) => range[0] + key);
 };
 
-export const fetchData = (dataFile) => {
-  if (dataFile.includes('csv')) {
-    return fetchCSVData(dataFile);
+const fetchData = (url) => {
+  if (url.endsWith('csv')) {
+    return fetchCSVData(url);
   }
 
-  return new Promise((resolve) => {
-    resolve(dataFile);
-  });
+  return window.fetch(url).then((response) => response.json());
 };
 
-export default fetchCSVData;
+export default fetchData;

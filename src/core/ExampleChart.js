@@ -1,4 +1,5 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import { createRoot } from 'react-dom/client';
 import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize } from '../charts/echarts/index';

@@ -3,6 +3,10 @@
     height: 400px;
 }
 
+.dicharts--keyfacts {
+  background: #fceae9;
+}
+
 .spotlight-banner.data-selector--wrapper {
   padding: 1em 2em 3rem 2em;
 }
@@ -124,4 +128,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.tabs .tabs__content {
+  height: 100%;
 }

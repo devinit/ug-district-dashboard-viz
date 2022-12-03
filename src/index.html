@@ -39,6 +39,28 @@
 
         <section class="section">
           <div class="row row--narrow">
+            <h3 class="type-l type-l--trailer">Key Facts</h3>
+            <div class="chart-container chart-container--full">
+              <div class="charts__chart">
+                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+                <div class="dicharts--keyfacts"></div>
+                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+                <div class="chart-loading">
+                  <div class="chart-loading__block">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="row row--narrow">
             <h3 class="type-l type-l--trailer">E-Charts</h3>
             <div class="chart-container chart-container--full">
               <div class="charts__chart">
@@ -87,5 +109,46 @@
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
     <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
+    <script>
+      const state = {
+        location: { name: 'Masindi', fullName: 'Masindi District' },
+        selectors: [
+          {
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/key-facts/public/assets/data/masindi/sub-counties.csv',
+            label: 'Select sub-county',
+            defaultValue: { value: 'all', label: 'All sub-counties' },
+            stateProperty: 'subCounty',
+            valueProperty: 'Name',
+            labelProperty: 'Name',
+          },
+          {
+            label: 'Select level',
+            defaultValue: { value: 'all', label: 'Primary and Secondary' },
+            stateProperty: 'level',
+            valueProperty: 'value',
+            labelProperty: 'label',
+            data: [
+              { value: 'primary', label: 'Primary' },
+              { value: 'secondary', label: 'Secondary' },
+            ],
+          },
+        ],
+        keyFacts: {
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/key-facts/public/assets/data/masindi/District%20Profile.csv',
+          dashboardURL: 'https://google.com/',
+          dashboardButtonCaption: 'View Dashboard',
+        },
+      };
+      if (window.DIState) {
+        window.DIState.setState(state);
+      } else {
+        const intervalID = window.setInterval(() => {
+          if (window.DIState) {
+            window.DIState.setState(state);
+            window.clearInterval(intervalID);
+          }
+        }, 500);
+      }
+    </script>
   </body>
 </html>
