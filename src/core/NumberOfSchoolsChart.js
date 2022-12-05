@@ -2,6 +2,29 @@ import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize } from '../charts/echarts/index';
 import fetchData from '../utils/data';
 
+const getSeries = (dataArray, subCounty, years) => {
+  const schoolTypes = ['Government', 'Private'];
+  const series = schoolTypes.map((type) => ({
+    name: type,
+    type: 'bar',
+    stack: 'School type',
+    emphasis: {
+      focus: 'series',
+    },
+    data: years.map((year) => {
+      const yearList = [];
+      dataArray.forEach((item) => {
+        if (item.Year === year && item.Type === type) {
+          yearList.push(Number(item.Value));
+        }
+      });
+      
+return yearList.reduce((accumulator, currentValue) => accumulator + currentValue);
+    }),
+  }));
+  
+return series;
+};
 const renderNumberOfSchoolsChart = () => {
   window.DICharts.handler.addChart({
     className: 'number-of-schools-chart',
@@ -16,7 +39,7 @@ const renderNumberOfSchoolsChart = () => {
           if (window.DIState) {
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { numberOfSchools: schoolData } = window.DIState.getState;
+              const { numberOfSchools: schoolData, subCounty } = window.DIState.getState;
 
               if (!schoolData) {
                 window.console.log('Waiting on state update ...');
@@ -25,49 +48,28 @@ const renderNumberOfSchoolsChart = () => {
               }
               fetchData(schoolData.url).then((data) => {
                 const years = Array.from(new Set(data.map((item) => item.Year)));
-                window.console.log(years);
+                const option = {
+                  responsive: false,
+                  xAxis: [
+                    {
+                      data: years,
+                    },
+                  ],
+                  yAxis: [
+                    {
+                      type: 'value',
+                    },
+                  ],
+                  series: getSeries(data, subCounty, years),
+                };
+                chart.setOption(deepMerge(defaultOptions, option));
+
+                dichart.hideLoading();
               });
             });
           } else {
             window.console.log('State is not defined');
           }
-          const option = {
-            responsive: false,
-            xAxis: [
-              {
-                data: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
-              },
-            ],
-            yAxis: [
-              {
-                type: 'value',
-              },
-            ],
-            series: [
-              {
-                name: 'Primary',
-                type: 'bar',
-                stack: 'School type',
-                emphasis: {
-                  focus: 'series',
-                },
-                data: [120, 132, 101, 134, 90, 230, 210],
-              },
-
-              {
-                name: 'Secondary',
-                type: 'bar',
-                stack: 'School type',
-                emphasis: {
-                  focus: 'series',
-                },
-                data: [150, 232, 201, 154, 190, 330, 410],
-              },
-            ],
-          };
-          chart.setOption(deepMerge(defaultOptions, option));
-
-          dichart.hideLoading();
 
           // add responsiveness
           handleResize(chart, chartNode);
