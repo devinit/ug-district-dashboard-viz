@@ -1,8 +1,9 @@
-import { handleResize } from '../charts/echarts/index';
+import deepMerge from 'deepmerge';
+import defaultOptions, { handleResize } from '../charts/echarts/index';
 
 const renderNumberOfSchoolsChart = () => {
   window.DICharts.handler.addChart({
-    className: 'number-of-schools',
+    className: 'number-of-schools-chart',
     echarts: {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {
@@ -10,6 +11,41 @@ const renderNumberOfSchoolsChart = () => {
 
           // Render echarts coding here
           const chart = window.echarts.init(chartNode);
+          const option = {
+            responsive: false,
+            xAxis: [
+              {
+                data: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+              },
+            ],
+            yAxis: [
+              {
+                type: 'value',
+              },
+            ],
+            series: [
+              {
+                name: 'Primary',
+                type: 'bar',
+                stack: 'School type',
+                emphasis: {
+                  focus: 'series',
+                },
+                data: [120, 132, 101, 134, 90, 230, 210],
+              },
+
+              {
+                name: 'Secondary',
+                type: 'bar',
+                stack: 'School type',
+                emphasis: {
+                  focus: 'series',
+                },
+                data: [150, 232, 201, 154, 190, 330, 410],
+              },
+            ],
+          };
+          chart.setOption(deepMerge(defaultOptions, option));
 
           dichart.hideLoading();
 
