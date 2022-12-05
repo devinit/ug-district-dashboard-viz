@@ -3,14 +3,27 @@ import defaultOptions, { handleResize } from '../charts/echarts/index';
 import fetchData from '../utils/data';
 
 const getSeries = (dataArray, subCounty, years) => {
+  window.console.log(subCounty);
   const filteredData = dataArray.filter((item) => item.SubCounty === subCounty);
   const schoolTypes = ['Government', 'Private'];
-  const series = schoolTypes.map((type) => ({
+  const series = schoolTypes.map((type, index) => ({
     name: type,
     type: 'bar',
     stack: 'School type',
     emphasis: {
       focus: 'series',
+    },
+    label: {
+      show: index === schoolTypes.length - 1,
+      position: 'top',
+      formatter: (params) => {
+        let total = 0;
+        series.forEach((serie) => {
+          total += serie.data[params.dataIndex];
+        });
+        
+return total;
+      },
     },
     data: years.map((year) => {
       const yearList = [];
@@ -28,7 +41,7 @@ const getSeries = (dataArray, subCounty, years) => {
         });
       }
 
-      return yearList.reduce((accumulator, currentValue) => accumulator + currentValue);
+      return yearList.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     }),
   }));
 
@@ -46,6 +59,7 @@ const renderNumberOfSchoolsChart = () => {
           const chart = window.echarts.init(chartNode);
 
           if (window.DIState) {
+            window.DIState.setState({ subCounty: 'all' });
             window.DIState.addListener(() => {
               dichart.showLoading();
               const { numberOfSchools: schoolData, subCounty } = window.DIState.getState;
