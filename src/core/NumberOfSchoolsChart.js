@@ -3,6 +3,7 @@ import defaultOptions, { handleResize } from '../charts/echarts/index';
 import fetchData from '../utils/data';
 
 const getSeries = (dataArray, subCounty, years) => {
+  const filteredData = dataArray.filter((item) => item.SubCounty === subCounty);
   const schoolTypes = ['Government', 'Private'];
   const series = schoolTypes.map((type) => ({
     name: type,
@@ -13,17 +14,25 @@ const getSeries = (dataArray, subCounty, years) => {
     },
     data: years.map((year) => {
       const yearList = [];
-      dataArray.forEach((item) => {
-        if (item.Year === year && item.Type === type) {
-          yearList.push(Number(item.Value));
-        }
-      });
-      
-return yearList.reduce((accumulator, currentValue) => accumulator + currentValue);
+      if (subCounty === 'all') {
+        dataArray.forEach((item) => {
+          if (item.Year === year && item.Type === type) {
+            yearList.push(Number(item.Value));
+          }
+        });
+      } else {
+        filteredData.forEach((item) => {
+          if (item.Year === year && item.Type === type) {
+            yearList.push(Number(item.Value));
+          }
+        });
+      }
+
+      return yearList.reduce((accumulator, currentValue) => accumulator + currentValue);
     }),
   }));
-  
-return series;
+
+  return series;
 };
 const renderNumberOfSchoolsChart = () => {
   window.DICharts.handler.addChart({
