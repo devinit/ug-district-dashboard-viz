@@ -1,5 +1,6 @@
 import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize } from '../charts/echarts/index';
+import fetchData from '../utils/data';
 
 const renderNumberOfSchoolsChart = () => {
   window.DICharts.handler.addChart({
@@ -11,6 +12,25 @@ const renderNumberOfSchoolsChart = () => {
 
           // Render echarts coding here
           const chart = window.echarts.init(chartNode);
+
+          if (window.DIState) {
+            window.DIState.addListener(() => {
+              dichart.showLoading();
+              const { numberOfSchools: schoolData } = window.DIState.getState;
+
+              if (!schoolData) {
+                window.console.log('Waiting on state update ...');
+
+                return;
+              }
+              fetchData(schoolData.url).then((data) => {
+                const years = Array.from(new Set(data.map((item) => item.Year)));
+                window.console.log(years);
+              });
+            });
+          } else {
+            window.console.log('State is not defined');
+          }
           const option = {
             responsive: false,
             xAxis: [
