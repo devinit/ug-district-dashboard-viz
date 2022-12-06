@@ -160,9 +160,12 @@
           dashboardURL: 'https://google.com/',
           dashboardButtonCaption: 'View Dashboard',
         },
-        numberOfSchools: {
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/schools-chart/public/assets/data/masindi/numberOfSchools.json',
-        },
+        charts: [
+          {
+            className: 'dicharts--number-of-schools',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/schools-chart/public/assets/data/masindi/numberOfSchools.json',
+          },
+        ],
       };
       if (window.DIState) {
         window.DIState.setState(state);

@@ -70,9 +70,11 @@ const getSeries = (dataArray, subCounty, years, level) => {
 
   return series;
 };
-const renderCharts = (className) => {
+const renderChart = (config) => {
+  if (!config.className) return;
+
   window.DICharts.handler.addChart({
-    className,
+    className: config.className,
     echarts: {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {
@@ -84,14 +86,9 @@ const renderCharts = (className) => {
           if (window.DIState) {
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { numberOfSchools: schoolData, subCounty, level } = window.DIState.getState;
+              const { subCounty, level } = window.DIState.getState;
 
-              if (!schoolData) {
-                window.console.log('Waiting on state update ...');
-
-                return;
-              }
-              fetchData(schoolData.url).then((data) => {
+              fetchData(config.url).then((data) => {
                 const option = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
@@ -138,4 +135,21 @@ const renderCharts = (className) => {
   });
 };
 
-export default renderCharts;
+const initCharts = () => {
+  if (window.DIState) {
+    let configs = [];
+    window.DIState.addListener(() => {
+      const { charts: chartConfigs } = window.DIState.getState;
+
+      if (chartConfigs && configs.length !== chartConfigs.length) {
+        configs = chartConfigs;
+
+        configs.forEach(renderChart);
+      }
+    });
+  } else {
+    window.console.log('State is not defined');
+  }
+};
+
+export default initCharts;
