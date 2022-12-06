@@ -94,6 +94,9 @@ const renderNumberOfSchoolsChart = () => {
               fetchData(schoolData.url).then((data) => {
                 const option = {
                   responsive: false,
+                  legend: {
+                    selectedMode: false,
+                  },
                   xAxis: [
                     {
                       data: getYears(data),
