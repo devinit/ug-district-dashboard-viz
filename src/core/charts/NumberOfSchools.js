@@ -120,7 +120,7 @@ const renderNumberOfSchoolsChart = (className) => {
                   },
                   series: getSeries(data, subCounty, getYears(data), level),
                 });
-                option.color = colorways.default;
+                option.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(option);
 
                 dichart.hideLoading();
