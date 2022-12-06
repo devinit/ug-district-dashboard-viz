@@ -83,12 +83,12 @@ const renderChart = (config) => {
           // Render echarts coding here
           const chart = window.echarts.init(chartNode);
 
-          if (window.DIState) {
-            window.DIState.addListener(() => {
-              dichart.showLoading();
-              const { subCounty, level } = window.DIState.getState;
+          fetchData(config.url).then((data) => {
+            if (window.DIState) {
+              window.DIState.addListener(() => {
+                dichart.showLoading();
+                const { subCounty, level } = window.DIState.getState;
 
-              fetchData(config.url).then((data) => {
                 const option = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
@@ -122,10 +122,10 @@ const renderChart = (config) => {
 
                 dichart.hideLoading();
               });
-            });
-          } else {
-            window.console.log('State is not defined');
-          }
+            } else {
+              window.console.log('State is not defined');
+            }
+          });
 
           // add responsiveness
           handleResize(chart, chartNode);
@@ -141,6 +141,7 @@ const initCharts = () => {
     window.DIState.addListener(() => {
       const { charts: chartConfigs } = window.DIState.getState;
 
+      // ensures that the state update that renders the charts only runs once
       if (chartConfigs && configs.length !== chartConfigs.length) {
         configs = chartConfigs;
 
