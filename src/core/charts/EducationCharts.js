@@ -85,9 +85,16 @@ const renderChart = (config) => {
 
           fetchData(config.url).then((data) => {
             if (window.DIState) {
+              let subCounty = 'all';
+              let level = 'all';
               window.DIState.addListener(() => {
                 dichart.showLoading();
-                const { subCounty, level } = window.DIState.getState;
+                const { subCounty: selectedSubCounty, level: selectedLevel } = window.DIState.getState;
+
+                if (subCounty === selectedSubCounty && level === selectedLevel) return;
+
+                subCounty = selectedSubCounty;
+                level = selectedLevel;
 
                 const option = deepMerge(defaultOptions, {
                   responsive: false,
