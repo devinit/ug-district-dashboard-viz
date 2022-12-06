@@ -2,8 +2,7 @@ import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize } from '../charts/echarts/index';
 import fetchData from '../utils/data';
 
-const getSeries = (dataArray, subCounty, years) => {
-  const filteredData = dataArray.filter((item) => item.SubCounty === subCounty);
+const getSeries = (dataArray, subCounty, years, level) => {
   const schoolTypes = ['Government', 'Private'];
   const series = schoolTypes.map((type, index) => ({
     name: type,
@@ -26,18 +25,36 @@ const getSeries = (dataArray, subCounty, years) => {
     },
     data: years.map((year) => {
       const yearList = [];
-      if (!subCounty || subCounty === 'all') {
+      if ((!subCounty && !level) || (subCounty === 'all' && level === 'all')) {
         dataArray.forEach((item) => {
           if (item.year === year && item.Type === type) {
             yearList.push(Number(item.Value));
           }
         });
+      } else if (subCounty && (!level || level === 'all')) {
+        dataArray
+          .filter((item) => item.SubCounty === subCounty)
+          .forEach((item) => {
+            if (item.year === year && item.Type === type) {
+              yearList.push(Number(item.Value));
+            }
+          });
+      } else if (level && (!subCounty || subCounty === 'all')) {
+        dataArray
+          .filter((item) => item.level === level)
+          .forEach((item) => {
+            if (item.year === year && item.Type === type) {
+              yearList.push(Number(item.Value));
+            }
+          });
       } else {
-        filteredData.forEach((item) => {
-          if (item.year === year && item.Type === type) {
-            yearList.push(Number(item.Value));
-          }
-        });
+        dataArray
+          .filter((item) => item.SubCounty === subCounty && item.level === level)
+          .forEach((item) => {
+            if (item.year === year && item.Type === type) {
+              yearList.push(Number(item.Value));
+            }
+          });
       }
 
       return yearList.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
@@ -60,7 +77,7 @@ const renderNumberOfSchoolsChart = () => {
           if (window.DIState) {
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { numberOfSchools: schoolData, subCounty } = window.DIState.getState;
+              const { numberOfSchools: schoolData, subCounty, level } = window.DIState.getState;
 
               if (!schoolData) {
                 window.console.log('Waiting on state update ...');
@@ -69,7 +86,7 @@ const renderNumberOfSchoolsChart = () => {
               }
               fetchData(schoolData.url).then((data) => {
                 const years = Array.from(new Set(data.map((item) => item.year)));
-                window.console.log(years);
+
                 const option = {
                   responsive: false,
                   xAxis: [
@@ -82,7 +99,7 @@ const renderNumberOfSchoolsChart = () => {
                       type: 'value',
                     },
                   ],
-                  series: getSeries(data, subCounty, years),
+                  series: getSeries(data, subCounty, years, level),
                 };
                 chart.setOption(deepMerge(defaultOptions, option));
 
