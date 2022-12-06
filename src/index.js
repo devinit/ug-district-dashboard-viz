@@ -2,7 +2,7 @@ import './state';
 import renderSelectors from './core/SelectorDropdowns';
 // import renderEChart from './core/charts/ExampleChart';
 // import renderTable from './core/tables/ExampleTable';
-import renderNumberOfSchoolsChart from './core/charts/NumberOfSchoolsChart';
+import renderNumberOfSchoolsChart from './core/charts/NumberOfSchools';
 import './styles/styles.css';
 import renderKeyFacts from './core/KeyFacts';
 
