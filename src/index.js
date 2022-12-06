@@ -1,8 +1,8 @@
 import './state';
 import renderSelectors from './core/SelectorDropdowns';
-// import renderEChart from './core/ExampleChart';
-// import renderTable from './core/ExampleTable';
-import renderNumberOfSchoolsChart from './core/NumberOfSchoolsChart';
+// import renderEChart from './core/charts/ExampleChart';
+// import renderTable from './core/tables/ExampleTable';
+import renderNumberOfSchoolsChart from './core/charts/NumberOfSchoolsChart';
 import './styles/styles.css';
 import renderKeyFacts from './core/KeyFacts';
 

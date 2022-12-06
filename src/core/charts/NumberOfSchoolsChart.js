@@ -1,6 +1,6 @@
 import deepMerge from 'deepmerge';
-import defaultOptions, { handleResize } from '../charts/echarts/index';
-import fetchData from '../utils/data';
+import defaultOptions, { handleResize } from '../../charts/echarts/index';
+import fetchData from '../../utils/data';
 
 const getYears = (data) => {
   const yearList = Array.from(new Set(data.map((item) => Number(item.year))));

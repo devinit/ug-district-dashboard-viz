@@ -1,7 +1,7 @@
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
-import ExampleTable from './components/ExampleTable';
-import { formatNumber, getYearsFromRange } from '../utils/data';
+import ExampleTable from '../components/ExampleTable';
+import { formatNumber, getYearsFromRange } from '../../utils/data';
 
 export const YEARS = [2011, 2020];
 
