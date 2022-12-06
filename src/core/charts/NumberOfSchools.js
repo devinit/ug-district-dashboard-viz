@@ -70,9 +70,9 @@ const getSeries = (dataArray, subCounty, years, level) => {
 
   return series;
 };
-const renderNumberOfSchoolsChart = () => {
+const renderNumberOfSchoolsChart = (className) => {
   window.DICharts.handler.addChart({
-    className: 'number-of-schools-chart',
+    className,
     echarts: {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {

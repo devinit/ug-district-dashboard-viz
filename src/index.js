@@ -14,5 +14,5 @@ window.addEventListener('load', () => {
   // renderEChart();
   // renderTable('dicharts--table-example');
   renderKeyFacts('dicharts--keyfacts');
-  renderNumberOfSchoolsChart();
+  renderNumberOfSchoolsChart('dicharts--number-of-schools');
 });
