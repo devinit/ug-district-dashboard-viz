@@ -11,17 +11,17 @@ const getYears = (data, yearRange) => {
 
   return sortedStringYears;
 };
-const getSeries = (dataArray, subCounty, years, level) => {
-  const schoolTypes = ['Government', 'Private'];
-  const series = schoolTypes.map((type, index) => ({
-    name: type,
+const getSeries = (config, dataArray, subCounty, years, level) => {
+  const seriesNames = config.series;
+  const series = seriesNames.map((seriesName, index) => ({
+    name: seriesName,
     type: 'bar',
     stack: 'School Type',
     emphasis: {
       focus: 'series',
     },
     label: {
-      show: index === schoolTypes.length - 1,
+      show: index === seriesNames.length - 1,
       position: 'top',
       formatter: (params) => {
         let total = 0;
@@ -36,7 +36,7 @@ const getSeries = (dataArray, subCounty, years, level) => {
       const yearList = [];
       if ((!subCounty && !level) || (subCounty === 'all' && level === 'all')) {
         dataArray.forEach((item) => {
-          if (item.year === year && item.Type === type) {
+          if (item.year === year && item[config.seriesProperty] === seriesName) {
             yearList.push(Number(item.Value));
           }
         });
@@ -44,7 +44,7 @@ const getSeries = (dataArray, subCounty, years, level) => {
         dataArray
           .filter((item) => item.SubCounty === subCounty)
           .forEach((item) => {
-            if (item.year === year && item.Type === type) {
+            if (item.year === year && item[config.seriesProperty] === seriesName) {
               yearList.push(Number(item.Value));
             }
           });
@@ -52,7 +52,7 @@ const getSeries = (dataArray, subCounty, years, level) => {
         dataArray
           .filter((item) => item.level === level)
           .forEach((item) => {
-            if (item.year === year && item.Type === type) {
+            if (item.year === year && item[config.seriesProperty] === seriesName) {
               yearList.push(Number(item.Value));
             }
           });
@@ -60,7 +60,7 @@ const getSeries = (dataArray, subCounty, years, level) => {
         dataArray
           .filter((item) => item.SubCounty === subCounty && item.level === level)
           .forEach((item) => {
-            if (item.year === year && item.Type === type) {
+            if (item.year === year && item[config.seriesProperty] === seriesName) {
               yearList.push(Number(item.Value));
             }
           });
@@ -102,7 +102,7 @@ const renderChart = (config) => {
                 level = selectedLevel || defaultLevel;
 
                 const years = getYears(data, config.yearRange);
-                const option = deepMerge(defaultOptions, {
+                const options = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
                     selectedMode: false,
@@ -128,10 +128,10 @@ const renderChart = (config) => {
                       },
                     },
                   },
-                  series: getSeries(data, subCounty, years, level),
+                  series: getSeries(config, data, subCounty, years, level),
                 });
-                option.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
-                chart.setOption(option);
+                options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
+                chart.setOption(deepMerge(options, config.options || {}));
 
                 dichart.hideLoading();
               });
