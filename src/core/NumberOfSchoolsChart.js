@@ -3,7 +3,6 @@ import defaultOptions, { handleResize } from '../charts/echarts/index';
 import fetchData from '../utils/data';
 
 const getSeries = (dataArray, subCounty, years) => {
-  window.console.log(subCounty);
   const filteredData = dataArray.filter((item) => item.SubCounty === subCounty);
   const schoolTypes = ['Government', 'Private'];
   const series = schoolTypes.map((type, index) => ({
