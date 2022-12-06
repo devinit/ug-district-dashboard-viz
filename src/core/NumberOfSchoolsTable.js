@@ -9,25 +9,28 @@ export const YEARS = [2012, 2021];
 const COLUMN_CAPTIONS = ['Government', 'Private'];
 
 const parseTableData = () => {
+  const { subCounty } = window.DIState.getState;
   const years = getYearsFromRange(YEARS);
   const headerRow = ['Years'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((purpose) => {
     const schoolNumberByYear = {};
-    numberOfSchools.forEach((school) => {
-      if (!schoolNumberByYear[school.Year] && purpose === school.Type) {
-        schoolNumberByYear[school.Year] = [];
-        schoolNumberByYear[school.Year] = [...schoolNumberByYear[school.Year], parseInt(school.Value, 10)];
-      } else if (purpose === school.Type) {
-        schoolNumberByYear[school.Year] = [...schoolNumberByYear[school.Year], parseInt(school.Value, 10)];
-      }
-    });
+    numberOfSchools
+      .filter((school) => (subCounty && subCounty !== 'all' ? school.SubCounty === subCounty : true))
+      .forEach((school) => {
+        if (!schoolNumberByYear[school.Year] && purpose === school.Type) {
+          schoolNumberByYear[school.Year] = [];
+          schoolNumberByYear[school.Year] = [...schoolNumberByYear[school.Year], parseInt(school.Value, 10)];
+        } else if (purpose === school.Type) {
+          schoolNumberByYear[school.Year] = [...schoolNumberByYear[school.Year], parseInt(school.Value, 10)];
+        }
+      });
 
     const schoolSumsByYear = {};
     Object.keys(schoolNumberByYear).forEach((year) => {
       schoolSumsByYear[year] = schoolNumberByYear[year].reduce((partialSum, a) => partialSum + a, 0);
     });
 
-    const relevantYears = years.map((year) => schoolSumsByYear[year]);
+    const relevantYears = years.map((year) => (schoolSumsByYear[year] ? schoolSumsByYear[year] : 0));
 
     return [purpose].concat(relevantYears);
   });
@@ -73,8 +76,6 @@ const init = (className) => {
           if (window.DIState) {
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const state = window.DIState.getState;
-              window.console.log(state);
               // TODO: get and store data in state object
               renderTable(root);
               dichart.hideLoading();
