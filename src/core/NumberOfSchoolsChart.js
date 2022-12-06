@@ -99,7 +99,6 @@ const renderNumberOfSchoolsChart = () => {
                   },
                   grid: {
                     top: '25%',
-                    left: '5%',
                   },
                   xAxis: {
                     data: getYears(data),
@@ -107,6 +106,8 @@ const renderNumberOfSchoolsChart = () => {
                   yAxis: {
                     type: 'value',
                     name: 'Number of schools',
+                    nameLocation: 'middle',
+                    nameGap: 35,
                   },
                   series: getSeries(data, subCounty, getYears(data), level),
                 };
