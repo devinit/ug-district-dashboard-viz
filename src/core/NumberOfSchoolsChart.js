@@ -28,13 +28,13 @@ const getSeries = (dataArray, subCounty, years) => {
       const yearList = [];
       if (!subCounty || subCounty === 'all') {
         dataArray.forEach((item) => {
-          if (item.Year === year && item.Type === type) {
+          if (item.year === year && item.Type === type) {
             yearList.push(Number(item.Value));
           }
         });
       } else {
         filteredData.forEach((item) => {
-          if (item.Year === year && item.Type === type) {
+          if (item.year === year && item.Type === type) {
             yearList.push(Number(item.Value));
           }
         });
@@ -68,7 +68,8 @@ const renderNumberOfSchoolsChart = () => {
                 return;
               }
               fetchData(schoolData.url).then((data) => {
-                const years = Array.from(new Set(data.map((item) => item.Year)));
+                const years = Array.from(new Set(data.map((item) => item.year)));
+                window.console.log(years);
                 const option = {
                   responsive: false,
                   xAxis: [

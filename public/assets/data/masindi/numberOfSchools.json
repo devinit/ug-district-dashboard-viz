@@ -232,7 +232,7 @@
   {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "21", "SubCounty": "Masindi Tc", "level": "primary"},
   {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "21", "SubCounty": "Masindi Tc", "level": "secondary"},
   {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "31", "SubCounty": "Miirya", "level": "primary"},
-  {"ear": "2013", "Quarter": "One", "Type": "Private", "Value": "31", "SubCounty": "Miirya", "level": "secondary"},
+  {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "31", "SubCounty": "Miirya", "level": "secondary"},
   {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Nyangahya", "level": "primary"},
   {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Nyangahya", "level": "secondary"},
   {"year": "2013", "Quarter": "One", "Type": "Private", "Value": "17", "SubCounty": "Pakanyi", "level": "primary"},
