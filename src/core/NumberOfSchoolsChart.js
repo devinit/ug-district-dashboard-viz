@@ -2,6 +2,13 @@ import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize } from '../charts/echarts/index';
 import fetchData from '../utils/data';
 
+const getYears = (data) => {
+  const yearList = Array.from(new Set(data.map((item) => Number(item.year))));
+  const sortedYears = yearList.sort((a, b) => a - b);
+  const sortedStringYears = sortedYears.map((year) => year.toString());
+
+  return sortedStringYears;
+};
 const getSeries = (dataArray, subCounty, years, level) => {
   const schoolTypes = ['Government', 'Private'];
   const series = schoolTypes.map((type, index) => ({
@@ -85,13 +92,11 @@ const renderNumberOfSchoolsChart = () => {
                 return;
               }
               fetchData(schoolData.url).then((data) => {
-                const years = Array.from(new Set(data.map((item) => item.year)));
-
                 const option = {
                   responsive: false,
                   xAxis: [
                     {
-                      data: years,
+                      data: getYears(data),
                     },
                   ],
                   yAxis: [
@@ -99,7 +104,7 @@ const renderNumberOfSchoolsChart = () => {
                       type: 'value',
                     },
                   ],
-                  series: getSeries(data, subCounty, years, level),
+                  series: getSeries(data, subCounty, getYears(data), level),
                 };
                 chart.setOption(deepMerge(defaultOptions, option));
 
