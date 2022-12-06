@@ -5,6 +5,10 @@
     height: 400px;
 }
 
+.dicharts--number-of-schools {
+  padding-top: 30px;
+}
+
 .dicharts--keyfacts {
   background: #fceae9;
 }

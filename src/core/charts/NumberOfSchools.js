@@ -1,5 +1,5 @@
 import deepMerge from 'deepmerge';
-import defaultOptions, { handleResize } from '../../charts/echarts/index';
+import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
 import fetchData from '../../utils/data';
 
 const getYears = (data) => {
@@ -92,13 +92,14 @@ const renderNumberOfSchoolsChart = (className) => {
                 return;
               }
               fetchData(schoolData.url).then((data) => {
-                const option = {
+                const option = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
                     selectedMode: false,
                   },
                   grid: {
-                    top: '25%',
+                    top: 60,
+                    bottom: 20,
                   },
                   xAxis: {
                     data: getYears(data),
@@ -107,11 +108,20 @@ const renderNumberOfSchoolsChart = (className) => {
                     type: 'value',
                     name: 'Number of schools',
                     nameLocation: 'middle',
-                    nameGap: 35,
+                    nameGap: 50,
+                  },
+                  toolbox: {
+                    showTitle: false,
+                    feature: {
+                      saveAsImage: {
+                        show: false,
+                      },
+                    },
                   },
                   series: getSeries(data, subCounty, getYears(data), level),
-                };
-                chart.setOption(deepMerge(defaultOptions, option));
+                });
+                option.color = colorways.default;
+                chart.setOption(option);
 
                 dichart.hideLoading();
               });
