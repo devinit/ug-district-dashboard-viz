@@ -72,8 +72,33 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
 
   return series;
 };
+const validConfigs = (config) => {
+  if (!config.className) {
+    window.console.error('Invalid chart config: className is required!');
+
+    return false;
+  }
+
+  if (!config.series || !Array.isArray(config.series)) {
+    window.console.error(
+      !config.series
+        ? 'Invalid chart config: Series is required!'
+        : 'Invalid chart config: Invalid series config - expected an array!'
+    );
+
+    return false;
+  }
+
+  if (!config.seriesProperty) {
+    window.console.error('Invalid chart config: seriesProperty is required!');
+
+    return false;
+  }
+
+  return true;
+};
 const renderChart = (config) => {
-  if (!config.className) return;
+  if (!validConfigs(config)) return;
 
   window.DICharts.handler.addChart({
     className: config.className,
