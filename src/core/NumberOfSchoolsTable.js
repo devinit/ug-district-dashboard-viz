@@ -5,12 +5,10 @@ import { formatNumber, getYearsFromRange } from '../utils/data';
 import numberOfSchools from '../../public/assets/data/numberOfSchools.json';
 
 export const YEARS = [2012, 2021];
-
+const years = getYearsFromRange(YEARS);
 const COLUMN_CAPTIONS = ['Government', 'Private'];
 
-const parseTableData = () => {
-  const { subCounty } = window.DIState.getState;
-  const years = getYearsFromRange(YEARS);
+const parseTableData = (subCounty) => {
   const headerRow = ['Years'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((purpose) => {
     const schoolNumberByYear = {};
@@ -55,8 +53,8 @@ const parseTableData = () => {
 };
 
 const renderTable = (reactRoot) => {
-  const rows = parseTableData();
-
+  const { subCounty } = window.DIState.getState;
+  const rows = parseTableData(subCounty);
   reactRoot.render(createElement(DistrictTable, { rows }));
 };
 
