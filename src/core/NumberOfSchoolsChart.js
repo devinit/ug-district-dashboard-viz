@@ -21,13 +21,13 @@ const getSeries = (dataArray, subCounty, years) => {
         series.forEach((serie) => {
           total += serie.data[params.dataIndex];
         });
-        
-return total;
+
+        return total;
       },
     },
     data: years.map((year) => {
       const yearList = [];
-      if (subCounty === 'all') {
+      if (!subCounty || subCounty === 'all') {
         dataArray.forEach((item) => {
           if (item.Year === year && item.Type === type) {
             yearList.push(Number(item.Value));
@@ -59,7 +59,6 @@ const renderNumberOfSchoolsChart = () => {
           const chart = window.echarts.init(chartNode);
 
           if (window.DIState) {
-            window.DIState.setState({ subCounty: 'all' });
             window.DIState.addListener(() => {
               dichart.showLoading();
               const { numberOfSchools: schoolData, subCounty } = window.DIState.getState;
