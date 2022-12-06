@@ -82,19 +82,22 @@ const renderChart = (config) => {
 
           // Render echarts coding here
           const chart = window.echarts.init(chartNode);
+          const defaultSubCounty = 'all';
+          const defaultLevel = 'all';
 
           fetchData(config.url).then((data) => {
             if (window.DIState) {
-              let subCounty = 'all';
-              let level = 'all';
+              let subCounty = defaultSubCounty;
+              let level = defaultLevel;
               window.DIState.addListener(() => {
                 dichart.showLoading();
                 const { subCounty: selectedSubCounty, level: selectedLevel } = window.DIState.getState;
 
+                // only update if subcounty or level have changed
                 if (subCounty === selectedSubCounty && level === selectedLevel) return;
 
-                subCounty = selectedSubCounty;
-                level = selectedLevel;
+                subCounty = selectedSubCounty || defaultSubCounty;
+                level = selectedLevel || defaultLevel;
 
                 const option = deepMerge(defaultOptions, {
                   responsive: false,
