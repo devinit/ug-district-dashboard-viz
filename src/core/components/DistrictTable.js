@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Table from '../../components/Table';
 
-const ExampleTable = (props) => {
+const DistrictTable = (props) => {
   const renderRows = (rows, header = false) =>
     rows.map((row, index) => (
       <tr key={index}>{row.map((cell, key) => (header ? <th key={key}>{cell}</th> : <td key={key}>{cell}</td>))}</tr>
@@ -21,8 +21,8 @@ const ExampleTable = (props) => {
   );
 };
 
-ExampleTable.propTypes = {
+DistrictTable.propTypes = {
   rows: PropTypes.arrayOf(PropTypes.array),
 };
 
-export default ExampleTable;
+export default DistrictTable;
