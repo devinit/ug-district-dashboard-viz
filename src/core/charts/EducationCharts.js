@@ -1,8 +1,10 @@
 import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
-import fetchData from '../../utils/data';
+import fetchData, { getYearsFromRange } from '../../utils/data';
 
-const getYears = (data) => {
+const getYears = (data, yearRange) => {
+  if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
+
   const yearList = Array.from(new Set(data.map((item) => Number(item.year))));
   const sortedYears = yearList.sort((a, b) => a - b);
   const sortedStringYears = sortedYears.map((year) => year.toString());
@@ -14,7 +16,7 @@ const getSeries = (dataArray, subCounty, years, level) => {
   const series = schoolTypes.map((type, index) => ({
     name: type,
     type: 'bar',
-    stack: 'School type',
+    stack: 'School Type',
     emphasis: {
       focus: 'series',
     },
@@ -99,6 +101,7 @@ const renderChart = (config) => {
                 subCounty = selectedSubCounty || defaultSubCounty;
                 level = selectedLevel || defaultLevel;
 
+                const years = getYears(data, config.yearRange);
                 const option = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
@@ -109,7 +112,7 @@ const renderChart = (config) => {
                     bottom: 20,
                   },
                   xAxis: {
-                    data: getYears(data),
+                    data: years,
                   },
                   yAxis: {
                     type: 'value',
@@ -125,7 +128,7 @@ const renderChart = (config) => {
                       },
                     },
                   },
-                  series: getSeries(data, subCounty, getYears(data), level),
+                  series: getSeries(data, subCounty, years, level),
                 });
                 option.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(option);
