@@ -97,16 +97,15 @@ const renderNumberOfSchoolsChart = () => {
                   legend: {
                     selectedMode: false,
                   },
-                  xAxis: [
-                    {
-                      data: getYears(data),
-                    },
-                  ],
-                  yAxis: [
-                    {
-                      type: 'value',
-                    },
-                  ],
+                  grid: {
+                    top: '25%',
+                  },
+                  xAxis: {
+                    data: getYears(data),
+                  },
+                  yAxis: {
+                    type: 'value',
+                  },
                   series: getSeries(data, subCounty, getYears(data), level),
                 };
                 chart.setOption(deepMerge(defaultOptions, option));
