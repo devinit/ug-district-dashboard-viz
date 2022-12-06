@@ -70,7 +70,7 @@ const getSeries = (dataArray, subCounty, years, level) => {
 
   return series;
 };
-const renderNumberOfSchoolsChart = (className) => {
+const renderCharts = (className) => {
   window.DICharts.handler.addChart({
     className,
     echarts: {
@@ -138,4 +138,4 @@ const renderNumberOfSchoolsChart = (className) => {
   });
 };
 
-export default renderNumberOfSchoolsChart;
+export default renderCharts;
