@@ -138,6 +138,10 @@ const renderChart = (config) => {
             if (window.DIState) {
               let subCounty = defaultSubCounty;
               let level = defaultLevel;
+              const filteredData =
+                config.filters && config.filters.subCounties
+                  ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
+                  : data;
               window.DIState.addListener(() => {
                 dichart.showLoading();
                 const { subCounty: selectedSubCounty, level: selectedLevel } = window.DIState.getState;
@@ -148,7 +152,7 @@ const renderChart = (config) => {
                 subCounty = selectedSubCounty || defaultSubCounty;
                 level = selectedLevel || defaultLevel;
 
-                const years = getYears(data, config.yearRange);
+                const years = getYears(filteredData, config.yearRange);
                 const options = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
@@ -175,7 +179,7 @@ const renderChart = (config) => {
                       },
                     },
                   },
-                  series: getSeries(config, data, subCounty, years, level),
+                  series: getSeries(config, filteredData, subCounty, years, level),
                 });
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(deepMerge(options, config.options || {}));

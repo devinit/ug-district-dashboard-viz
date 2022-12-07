@@ -132,6 +132,7 @@
     <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
     <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
     <script>
+      const subCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
       const state = {
         location: { name: 'Masindi', fullName: 'Masindi District' },
         selectors: [
@@ -173,6 +174,9 @@
               subCounty: 'SubCounty',
               level: 'level',
             },
+            filters: {
+              subCounties: subCounties,
+            },
             options: {
               legend: { show: true },
             },
@@ -188,6 +192,9 @@
               value: 'value',
               subCounty: 'subcounty',
               level: 'level',
+            },
+            filters: {
+              subCounties: subCounties,
             },
           },
         ],
