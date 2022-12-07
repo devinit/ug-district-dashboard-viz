@@ -12,7 +12,7 @@ const getYears = (data, yearRange) => {
   return sortedStringYears;
 };
 const getSeries = (config, dataArray, subCounty, years, level) => {
-  const seriesNames = config.series;
+  const { series: seriesNames, mapping } = config;
   const series = seriesNames.map((seriesName, index) => ({
     name: seriesName,
     type: 'bar',
@@ -36,32 +36,32 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
       const yearList = [];
       if ((!subCounty && !level) || (subCounty === 'all' && level === 'all')) {
         dataArray.forEach((item) => {
-          if (item.year === year && item[config.seriesProperty] === seriesName) {
-            yearList.push(Number(item.Value));
+          if (item[mapping.year] === year && item[mapping.series] === seriesName) {
+            yearList.push(Number(item[mapping.value]));
           }
         });
       } else if (subCounty && (!level || level === 'all')) {
         dataArray
-          .filter((item) => item.SubCounty === subCounty)
+          .filter((item) => item[mapping.subCounty] === subCounty)
           .forEach((item) => {
-            if (item.year === year && item[config.seriesProperty] === seriesName) {
-              yearList.push(Number(item.Value));
+            if (item[mapping.year] === year && item[mapping.series] === seriesName) {
+              yearList.push(Number(item[mapping.value]));
             }
           });
       } else if (level && (!subCounty || subCounty === 'all')) {
         dataArray
-          .filter((item) => item.level === level)
+          .filter((item) => item[mapping.level] === level)
           .forEach((item) => {
-            if (item.year === year && item[config.seriesProperty] === seriesName) {
-              yearList.push(Number(item.Value));
+            if (item[mapping.year] === year && item[mapping.series] === seriesName) {
+              yearList.push(Number(item[mapping.value]));
             }
           });
       } else {
         dataArray
-          .filter((item) => item.SubCounty === subCounty && item.level === level)
+          .filter((item) => item[mapping.subCounty] === subCounty && item[mapping.level] === level)
           .forEach((item) => {
-            if (item.year === year && item[config.seriesProperty] === seriesName) {
-              yearList.push(Number(item.Value));
+            if (item[mapping.year] === year && item[mapping.series] === seriesName) {
+              yearList.push(Number(item[mapping.value]));
             }
           });
       }
@@ -89,8 +89,38 @@ const validConfigs = (config) => {
     return false;
   }
 
-  if (!config.seriesProperty) {
-    window.console.error('Invalid chart config: seriesProperty is required!');
+  if (!config.mapping) {
+    window.console.error('Invalid chart config: mapping is required!');
+
+    return false;
+  }
+
+  if (!config.mapping.series) {
+    window.console.error('Invalid chart config: mapping.series is required!');
+
+    return false;
+  }
+
+  if (!config.mapping.year) {
+    window.console.error('Invalid chart config: mapping.year is required!');
+
+    return false;
+  }
+
+  if (!config.mapping.value) {
+    window.console.error('Invalid chart config: mapping.value is required!');
+
+    return false;
+  }
+
+  if (!config.mapping.subCounty) {
+    window.console.error('Invalid chart config: mapping.subCounty is required!');
+
+    return false;
+  }
+
+  if (!config.mapping.level) {
+    window.console.error('Invalid chart config: mapping[mapping.level] is required!');
 
     return false;
   }
