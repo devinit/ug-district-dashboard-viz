@@ -1,6 +1,6 @@
 import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
-import fetchData, { getYearsFromRange } from '../../utils/data';
+import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
 const defaultSubCounty = 'all';
 const defaultLevel = 'all';
@@ -31,7 +31,7 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
           total += serie.data[params.dataIndex];
         });
 
-        return total;
+        return formatNumber(total);
       },
     },
     data: years.map((year) => {
