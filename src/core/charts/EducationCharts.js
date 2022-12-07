@@ -207,7 +207,7 @@ const initCharts = () => {
 
       // ensures that the state update that renders the charts only runs once
       if (chartConfigs && configs.length !== chartConfigs.length) {
-        configs = chartConfigs;
+        configs = chartConfigs.filter((config) => config.target === 'education');
 
         configs.forEach(renderChart);
       }
