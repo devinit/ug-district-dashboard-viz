@@ -83,11 +83,11 @@
 
         <section class="section">
           <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">E-Charts</h3>
+            <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
             <div class="chart-container chart-container--full">
               <div class="charts__chart">
                 <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--echarts-boilerplate-chart"></div>
+                <div class="dicharts--learners-enrolment"></div>
                 <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
                 <div class="chart-loading">
@@ -175,6 +175,19 @@
             },
             options: {
               legend: { show: true },
+            },
+          },
+          {
+            className: 'dicharts--learners-enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/schools-chart/public/assets/data/masindi/learner_enrollment.csv',
+            yearRange: [2018, 2021],
+            series: ['Government', 'Private'],
+            mapping: {
+              series: 'type',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+              level: 'level',
             },
           },
         ],
