@@ -2,10 +2,10 @@
 import { jsx } from '@emotion/react';
 import { createRoot } from 'react-dom/client';
 import deepMerge from 'deepmerge';
-import defaultOptions, { handleResize } from '../charts/echarts/index';
-import { addFilterWrapper } from '../widgets/filters';
-import Select from '../components/Select';
-import ChartFilters from '../components/ChartFilters';
+import defaultOptions, { handleResize } from '../../charts/echarts/index';
+import { addFilterWrapper } from '../../widgets/filters';
+import Select from '../../components/Select';
+import ChartFilters from '../../components/ChartFilters';
 
 const updateChart = (chart, data) => {
   const option = {

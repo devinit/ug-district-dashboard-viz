@@ -26,59 +26,56 @@ export const colorways = {
   orange: ['#973915', '#d85b31', '#eb642b', '#f18e5e', '#f4a57c', '#f6bb9d'],
 };
 
-export const mixedColourWay = () => {
-  const themes = Object.keys(colorways).filter((key) => key !== 'rainbow');
+export const getThematicColoursMix = (exclude = ['rainbow']) => {
+  const numberOfThematicColours = colorways.default.length;
+  const themes = Object.keys(colorways).filter((theme) => !exclude.includes(theme));
+  const colours = [];
 
-  return colorways.rainbow.reduce((colours, hex, index) => [hex].concat(
-    themes.reduce((_themed, theme) => {
-      if (colorways[theme].length > index) {
-        return _themed.concat(colorways[theme][index]);
-      }
+  // eslint-disable-next-line no-restricted-syntax
+  for (const iterator of Array(numberOfThematicColours - 1).keys()) {
+    const randomIndex = Math.floor(Math.random() * 7 + 1);
+    colours.push(colorways[themes[iterator]][randomIndex]);
+  }
 
-      return _themed;
-    }, colours),
-    [],
-  ));
+  return colours;
 };
 
 // default echart options for DI charts
 const defaultOptions = {
-  color: colorways.default.concat(colorways.rainbow),
   legend: {
-    left: '10%',
     top: 10,
     textStyle: {
       fontFamily: 'Geomanist Regular,sans-serif',
     },
   },
   tooltip: {
-    show: true,
-    trigger: 'item',
-    showContent: true,
+    trigger: 'axis',
     textStyle: {
       fontFamily: 'Geomanist Regular,sans-serif',
     },
+    axisPointer: { type: 'none' },
   },
   toolbox: {
-    show: true,
     showTitle: false,
     feature: {
       saveAsImage: {
-        title: 'Save as PNG',
+        show: true,
+        title: 'Save as image',
         pixelRatio: 2,
       },
     },
     right: 20,
     tooltip: {
       show: true,
-      formatter(param) {
-        return `<div>${param.title}</div>`; // user-defined DOM structure
-      },
       textStyle: {
         fontFamily: 'Geomanist Regular,sans-serif',
+        formatter(param) {
+          return `<div>${param.title}</div>`; // user-defined DOM structure
+        },
       },
     },
   },
+  color: colorways.rainbow,
   xAxis: {
     axisLabel: {
       fontFamily: 'Geomanist Regular,sans-serif',
@@ -96,16 +93,10 @@ const defaultOptions = {
     splitLine: {
       show: false,
     },
-    nameLocation: 'end',
-    nameTextStyle: {
-      padding: [0, 50, 0, 0],
-    },
   },
+  axisPointer: { type: 'none' },
   grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true,
+    top: 10,
   },
 };
 
@@ -115,7 +106,7 @@ export const handleResize = (chart, chartNode) => {
     () => {
       chart.resize({ width: `${chartNode.clientWidth}px`, height: `${chartNode.clientHeight}px` });
     },
-    true,
+    true
   );
 };
 
@@ -123,7 +114,7 @@ export const getYAxisNamePositionFromSeries = (series) => {
   const isStack = series.some((item) => item.stack);
   const seriesCount = Array.from(new Set(series.map((d) => d.name))).length;
   const max = Math.max(
-    ...series.reduce((allData, { data }) => allData.concat(data.map((item) => item.value || 0)), []),
+    ...series.reduce((allData, { data }) => allData.concat(data.map((item) => item.value || 0)), [])
   );
   if (max === 0) {
     return 'blank';

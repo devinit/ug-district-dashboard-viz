@@ -44,6 +44,28 @@
               <div class="charts__chart">
                 <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
                 <div class="dicharts--keyfacts"></div>
+                <div class="number-of-schools"></div>
+                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+                <div class="chart-loading">
+                  <div class="chart-loading__block">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="row row--narrow">
+            <h3 class="type-l type-l--trailer">Number of schools</h3>
+            <div class="chart-container chart-container--full">
+              <div class="charts__chart">
+                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+                <div class="dicharts--number-of-schools"></div>
                 <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
                 <div class="chart-loading">
@@ -61,11 +83,11 @@
 
         <section class="section">
           <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">E-Charts</h3>
+            <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
             <div class="chart-container chart-container--full">
               <div class="charts__chart">
                 <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--echarts-boilerplate-chart"></div>
+                <div class="dicharts--learners-enrolment"></div>
                 <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
                 <div class="chart-loading">
@@ -110,6 +132,7 @@
     <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
     <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
     <script>
+      const subCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
       const state = {
         location: { name: 'Masindi', fullName: 'Masindi District' },
         selectors: [
@@ -138,6 +161,43 @@
           dashboardURL: 'https://google.com/',
           dashboardButtonCaption: 'View Dashboard',
         },
+        charts: [
+          {
+            className: 'dicharts--number-of-schools',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            yearRange: [2016, 2021],
+            series: ['Government', 'Private'],
+            mapping: {
+              series: 'Type',
+              year: 'year',
+              value: 'Value',
+              subCounty: 'SubCounty',
+              level: 'level',
+            },
+            filters: {
+              subCounties: subCounties,
+            },
+            options: {
+              legend: { show: true },
+            },
+          },
+          {
+            className: 'dicharts--learners-enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            yearRange: [2018, 2021],
+            series: ['Government', 'Private'],
+            mapping: {
+              series: 'type',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+              level: 'level',
+            },
+            filters: {
+              subCounties: subCounties,
+            },
+          },
+        ],
       };
       if (window.DIState) {
         window.DIState.setState(state);

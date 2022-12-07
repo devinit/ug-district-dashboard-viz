@@ -1,7 +1,8 @@
 import './state';
 import renderSelectors from './core/SelectorDropdowns';
-// import renderEChart from './core/ExampleChart';
-// import renderTable from './core/ExampleTable';
+// import renderEChart from './core/charts/ExampleChart';
+// import renderTable from './core/tables/ExampleTable';
+import renderEducationCharts from './core/charts/EducationCharts';
 import './styles/styles.css';
 import renderKeyFacts from './core/KeyFacts';
 
@@ -13,4 +14,5 @@ window.addEventListener('load', () => {
   // renderEChart();
   // renderTable('dicharts--table-example');
   renderKeyFacts('dicharts--keyfacts');
+  renderEducationCharts();
 });
