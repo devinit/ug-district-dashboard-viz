@@ -128,6 +128,7 @@ const renderChart = (config) => {
     echarts: {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {
+          chartNode.classList.add('dicharts--dimensions', 'dicharts--padding-top');
           const dichart = new window.DICharts.Chart(chartNode.parentElement);
 
           // Render echarts coding here
