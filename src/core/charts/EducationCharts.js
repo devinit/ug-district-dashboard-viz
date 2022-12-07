@@ -2,6 +2,8 @@ import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
 import fetchData, { getYearsFromRange } from '../../utils/data';
 
+const defaultSubCounty = 'all';
+const defaultLevel = 'all';
 const getYears = (data, yearRange) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
 
@@ -34,37 +36,28 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
     },
     data: years.map((year) => {
       const yearList = [];
-      if ((!subCounty && !level) || (subCounty === 'all' && level === 'all')) {
-        dataArray.forEach((item) => {
-          if (item[mapping.year] === year && item[mapping.series] === seriesName) {
+      dataArray
+        .filter((item) => {
+          if ((!subCounty && !level) || (subCounty === defaultSubCounty && level === defaultLevel)) {
+            return true;
+          }
+          if (subCounty && (!level || level === defaultLevel)) {
+            return item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase();
+          }
+          if (level && (!subCounty || subCounty === defaultSubCounty)) {
+            return item[mapping.level].toLowerCase() === level.toLowerCase();
+          }
+
+          return (
+            item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() &&
+            item[mapping.level].toLowerCase() === level.toLowerCase()
+          );
+        })
+        .forEach((item) => {
+          if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
             yearList.push(Number(item[mapping.value]));
           }
         });
-      } else if (subCounty && (!level || level === 'all')) {
-        dataArray
-          .filter((item) => item[mapping.subCounty] === subCounty)
-          .forEach((item) => {
-            if (item[mapping.year] === year && item[mapping.series] === seriesName) {
-              yearList.push(Number(item[mapping.value]));
-            }
-          });
-      } else if (level && (!subCounty || subCounty === 'all')) {
-        dataArray
-          .filter((item) => item[mapping.level] === level)
-          .forEach((item) => {
-            if (item[mapping.year] === year && item[mapping.series] === seriesName) {
-              yearList.push(Number(item[mapping.value]));
-            }
-          });
-      } else {
-        dataArray
-          .filter((item) => item[mapping.subCounty] === subCounty && item[mapping.level] === level)
-          .forEach((item) => {
-            if (item[mapping.year] === year && item[mapping.series] === seriesName) {
-              yearList.push(Number(item[mapping.value]));
-            }
-          });
-      }
 
       return yearList.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     }),
@@ -139,8 +132,6 @@ const renderChart = (config) => {
 
           // Render echarts coding here
           const chart = window.echarts.init(chartNode);
-          const defaultSubCounty = 'all';
-          const defaultLevel = 'all';
 
           fetchData(config.url).then((data) => {
             if (window.DIState) {
