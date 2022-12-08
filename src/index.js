@@ -13,7 +13,7 @@ import renderKeyFacts from './core/KeyFacts';
 window.addEventListener('load', () => {
   renderSelectors('district-selectors');
   // renderEChart();
-  renderTable('dicharts--table-example');
+  renderTable('dicharts--table--number-of-schools');
   renderKeyFacts('dicharts--keyfacts');
   renderEducationCharts();
 });
