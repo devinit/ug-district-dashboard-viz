@@ -117,7 +117,11 @@ const renderTable = (config) => {
             window.DIState.addListener(() => {
               dichart.showLoading();
               const { subCounty = defaultSubCounty, level = defaultLevel } = window.DIState.getState;
-              const rows = parseTableData(config, data, subCounty, level);
+              const filteredData =
+                config.filters && config.filters.subCounties
+                  ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
+                  : data;
+              const rows = parseTableData(config, filteredData, subCounty, level);
               root.render(createElement(DistrictTable, { rows }));
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
