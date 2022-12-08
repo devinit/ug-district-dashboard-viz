@@ -1,0 +1,1001 @@
+,year,level,type,value,subcounty
+0,2018,Secondary,Private,2,Masindi Town Council
+1,2021,Primary,Government,12,Nyangahaya
+2,2021,Secondary,Private,10,Karujubu
+3,2021,Primary,Private,43,Nyangahaya
+4,2022,Secondary,Private,9,Bwinjanga
+5,2018,Secondary,Private,55,Miirya
+6,2020,Primary,Private,8,Masindi Town Council
+7,2019,Secondary,Government,12,Nyangahaya
+8,2021,Primary,Government,40,Bwinjanga
+9,2018,Secondary,Private,20,Karujubu
+10,2021,Secondary,Government,2,Miirya
+11,2021,Primary,Private,34,Masindi Town Council
+12,2019,Secondary,Government,9,Pakanyi
+13,2021,Secondary,Government,20,Nyangahaya
+14,2021,Primary,Government,50,Bwinjanga
+15,2020,Primary,Government,12,Nyangahaya
+16,2022,Secondary,Private,30,Bwinjanga
+17,2018,Secondary,Private,34,Kimengo
+18,2019,Secondary,Private,36,Pakanyi
+19,2021,Secondary,Government,40,Bwinjanga
+20,2022,Primary,Private,40,Miirya
+21,2018,Primary,Government,55,Karujubu
+22,2021,Secondary,Private,18,Masindi Town Council
+23,2018,Primary,Private,50,Kimengo
+24,2021,Primary,Private,12,Nyangahaya
+25,2021,Primary,Private,36,Miirya
+26,2021,Secondary,Private,34,Miirya
+27,2019,Primary,Private,2,Masindi Town Council
+28,2018,Secondary,Government,18,Kimengo
+29,2021,Secondary,Private,2,Kimengo
+30,2020,Secondary,Government,21,Bwinjanga
+31,2021,Primary,Government,15,Kimengo
+32,2019,Primary,Government,33,Nyangahaya
+33,2022,Primary,Government,21,Pakanyi
+34,2021,Primary,Government,55,Bwinjanga
+35,2019,Secondary,Government,33,Karujubu
+36,2018,Primary,Private,2,Karujubu
+37,2021,Secondary,Government,43,Bwinjanga
+38,2019,Primary,Government,10,Karujubu
+39,2018,Secondary,Government,40,Kimengo
+40,2021,Secondary,Government,15,Kimengo
+41,2022,Secondary,Private,30,Nyangahaya
+42,2018,Secondary,Private,5,Miirya
+43,2019,Primary,Government,34,Masindi Town Council
+44,2018,Primary,Private,19,Masindi Town Council
+45,2019,Primary,Government,21,Pakanyi
+46,2021,Secondary,Government,40,Bwinjanga
+47,2020,Secondary,Government,30,Miirya
+48,2021,Primary,Private,10,Kimengo
+49,2022,Primary,Private,33,Masindi Town Council
+50,2022,Primary,Government,33,Miirya
+51,2021,Primary,Private,18,Karujubu
+52,2020,Secondary,Private,55,Masindi Town Council
+53,2019,Primary,Government,13,Karujubu
+54,2018,Secondary,Private,33,Miirya
+55,2018,Primary,Government,55,Karujubu
+56,2018,Secondary,Government,19,Miirya
+57,2018,Secondary,Government,13,Bwinjanga
+58,2018,Primary,Private,10,Kimengo
+59,2022,Secondary,Government,43,Kimengo
+60,2020,Primary,Government,55,Bwinjanga
+61,2022,Primary,Private,21,Nyangahaya
+62,2019,Secondary,Private,34,Miirya
+63,2019,Primary,Government,9,Nyangahaya
+64,2021,Secondary,Government,18,Kimengo
+65,2022,Secondary,Private,18,Nyangahaya
+66,2021,Primary,Government,33,Karujubu
+67,2020,Secondary,Private,50,Masindi Town Council
+68,2020,Primary,Government,13,Miirya
+69,2020,Secondary,Government,40,Masindi Town Council
+70,2022,Secondary,Private,21,Karujubu
+71,2021,Primary,Government,30,Bwinjanga
+72,2022,Secondary,Government,55,Pakanyi
+73,2020,Secondary,Private,55,Masindi Town Council
+74,2020,Primary,Government,40,Karujubu
+75,2022,Primary,Private,10,Pakanyi
+76,2021,Primary,Private,21,Kimengo
+77,2019,Primary,Government,41,Kimengo
+78,2020,Secondary,Private,10,Karujubu
+79,2020,Primary,Government,5,Masindi Town Council
+80,2022,Primary,Government,34,Kimengo
+81,2020,Secondary,Private,15,Pakanyi
+82,2021,Secondary,Government,15,Nyangahaya
+83,2019,Secondary,Government,30,Pakanyi
+84,2022,Secondary,Government,15,Kimengo
+85,2019,Primary,Government,41,Karujubu
+86,2021,Secondary,Government,9,Masindi Town Council
+87,2020,Primary,Government,38,Bwinjanga
+88,2018,Primary,Private,12,Miirya
+89,2020,Primary,Private,43,Kimengo
+90,2019,Secondary,Private,40,Masindi Town Council
+91,2021,Primary,Private,36,Bwinjanga
+92,2020,Primary,Government,12,Nyangahaya
+93,2018,Secondary,Private,13,Pakanyi
+94,2022,Secondary,Government,30,Masindi Town Council
+95,2018,Secondary,Private,40,Masindi Town Council
+96,2022,Primary,Government,36,Pakanyi
+97,2021,Secondary,Government,10,Pakanyi
+98,2020,Secondary,Government,41,Masindi Town Council
+99,2020,Secondary,Private,19,Bwinjanga
+100,2018,Secondary,Private,38,Pakanyi
+101,2019,Secondary,Government,36,Kimengo
+102,2019,Secondary,Government,5,Karujubu
+103,2022,Secondary,Government,34,Pakanyi
+104,2020,Secondary,Government,43,Masindi Town Council
+105,2021,Primary,Government,9,Masindi Town Council
+106,2021,Secondary,Private,55,Kimengo
+107,2018,Secondary,Government,9,Bwinjanga
+108,2020,Primary,Government,33,Pakanyi
+109,2021,Secondary,Government,34,Bwinjanga
+110,2020,Primary,Private,18,Miirya
+111,2022,Primary,Government,43,Bwinjanga
+112,2019,Secondary,Government,11,Pakanyi
+113,2018,Primary,Government,38,Kimengo
+114,2020,Primary,Government,2,Masindi Town Council
+115,2018,Primary,Government,50,Masindi Town Council
+116,2019,Primary,Private,8,Kimengo
+117,2018,Secondary,Private,10,Karujubu
+118,2018,Secondary,Private,2,Karujubu
+119,2020,Secondary,Private,36,Kimengo
+120,2022,Secondary,Government,12,Kimengo
+121,2019,Secondary,Private,30,Karujubu
+122,2020,Secondary,Government,36,Nyangahaya
+123,2021,Primary,Government,43,Nyangahaya
+124,2019,Secondary,Government,13,Kimengo
+125,2020,Primary,Private,2,Pakanyi
+126,2021,Secondary,Government,9,Karujubu
+127,2022,Secondary,Private,12,Miirya
+128,2021,Primary,Private,19,Pakanyi
+129,2020,Primary,Private,36,Miirya
+130,2022,Primary,Government,13,Pakanyi
+131,2018,Secondary,Government,34,Masindi Town Council
+132,2018,Primary,Government,30,Kimengo
+133,2022,Primary,Government,13,Nyangahaya
+134,2022,Secondary,Private,10,Miirya
+135,2019,Secondary,Government,11,Nyangahaya
+136,2021,Secondary,Government,36,Pakanyi
+137,2021,Secondary,Private,5,Kimengo
+138,2019,Secondary,Private,43,Nyangahaya
+139,2022,Secondary,Private,10,Bwinjanga
+140,2018,Primary,Government,12,Nyangahaya
+141,2019,Primary,Government,38,Karujubu
+142,2018,Primary,Government,33,Bwinjanga
+143,2021,Primary,Private,13,Kimengo
+144,2021,Primary,Private,41,Karujubu
+145,2021,Primary,Government,11,Pakanyi
+146,2020,Primary,Government,12,Nyangahaya
+147,2022,Primary,Private,15,Karujubu
+148,2019,Secondary,Government,36,Miirya
+149,2021,Primary,Government,33,Pakanyi
+150,2020,Primary,Government,15,Kimengo
+151,2021,Primary,Private,33,Kimengo
+152,2019,Secondary,Government,43,Karujubu
+153,2019,Primary,Government,30,Kimengo
+154,2021,Secondary,Private,38,Nyangahaya
+155,2020,Secondary,Private,20,Pakanyi
+156,2019,Secondary,Private,36,Karujubu
+157,2020,Secondary,Private,50,Karujubu
+158,2022,Secondary,Private,19,Bwinjanga
+159,2020,Primary,Government,9,Nyangahaya
+160,2020,Secondary,Government,10,Miirya
+161,2018,Secondary,Government,5,Miirya
+162,2021,Primary,Private,8,Miirya
+163,2018,Secondary,Private,36,Kimengo
+164,2020,Primary,Government,13,Karujubu
+165,2022,Primary,Government,2,Bwinjanga
+166,2019,Primary,Government,41,Bwinjanga
+167,2021,Primary,Private,38,Kimengo
+168,2021,Secondary,Private,13,Miirya
+169,2021,Primary,Government,41,Pakanyi
+170,2020,Primary,Government,13,Masindi Town Council
+171,2022,Primary,Government,55,Miirya
+172,2019,Secondary,Private,33,Bwinjanga
+173,2020,Secondary,Private,19,Karujubu
+174,2019,Primary,Private,30,Karujubu
+175,2020,Secondary,Government,55,Masindi Town Council
+176,2021,Secondary,Government,38,Bwinjanga
+177,2021,Secondary,Private,50,Kimengo
+178,2022,Secondary,Government,15,Miirya
+179,2020,Secondary,Private,9,Miirya
+180,2019,Secondary,Government,38,Kimengo
+181,2020,Secondary,Private,19,Bwinjanga
+182,2022,Secondary,Government,40,Masindi Town Council
+183,2019,Primary,Private,18,Masindi Town Council
+184,2022,Secondary,Private,38,Karujubu
+185,2018,Secondary,Government,38,Miirya
+186,2018,Secondary,Private,15,Bwinjanga
+187,2022,Secondary,Government,50,Nyangahaya
+188,2018,Secondary,Government,50,Nyangahaya
+189,2020,Secondary,Government,15,Pakanyi
+190,2020,Primary,Private,11,Miirya
+191,2018,Secondary,Government,43,Pakanyi
+192,2020,Primary,Private,10,Karujubu
+193,2018,Secondary,Government,8,Bwinjanga
+194,2019,Secondary,Government,5,Bwinjanga
+195,2019,Secondary,Government,43,Nyangahaya
+196,2018,Secondary,Private,33,Nyangahaya
+197,2019,Secondary,Private,8,Kimengo
+198,2018,Secondary,Private,55,Kimengo
+199,2019,Secondary,Government,36,Pakanyi
+200,2019,Secondary,Private,13,Kimengo
+201,2020,Secondary,Private,10,Bwinjanga
+202,2020,Primary,Private,55,Miirya
+203,2020,Secondary,Government,13,Miirya
+204,2022,Primary,Government,36,Kimengo
+205,2020,Secondary,Private,20,Nyangahaya
+206,2019,Primary,Private,2,Karujubu
+207,2022,Secondary,Government,33,Miirya
+208,2021,Secondary,Government,38,Kimengo
+209,2020,Secondary,Private,50,Nyangahaya
+210,2018,Primary,Government,18,Bwinjanga
+211,2020,Primary,Private,55,Pakanyi
+212,2022,Primary,Government,12,Bwinjanga
+213,2022,Primary,Government,8,Miirya
+214,2019,Primary,Private,5,Pakanyi
+215,2021,Secondary,Government,12,Nyangahaya
+216,2018,Primary,Government,15,Nyangahaya
+217,2021,Secondary,Government,50,Bwinjanga
+218,2020,Secondary,Private,10,Karujubu
+219,2022,Primary,Private,18,Miirya
+220,2020,Secondary,Private,38,Karujubu
+221,2019,Secondary,Government,11,Kimengo
+222,2021,Primary,Government,36,Masindi Town Council
+223,2020,Primary,Private,30,Karujubu
+224,2018,Secondary,Government,9,Pakanyi
+225,2019,Secondary,Government,18,Pakanyi
+226,2018,Primary,Private,38,Pakanyi
+227,2020,Primary,Private,15,Bwinjanga
+228,2020,Secondary,Government,12,Nyangahaya
+229,2022,Secondary,Private,30,Karujubu
+230,2022,Primary,Private,5,Bwinjanga
+231,2021,Primary,Government,5,Masindi Town Council
+232,2019,Secondary,Government,18,Nyangahaya
+233,2020,Primary,Private,11,Masindi Town Council
+234,2021,Primary,Private,8,Bwinjanga
+235,2019,Secondary,Government,34,Nyangahaya
+236,2022,Primary,Private,30,Nyangahaya
+237,2022,Primary,Private,19,Miirya
+238,2022,Secondary,Private,13,Masindi Town Council
+239,2020,Primary,Government,10,Pakanyi
+240,2022,Secondary,Government,2,Bwinjanga
+241,2019,Secondary,Government,34,Nyangahaya
+242,2021,Primary,Government,21,Miirya
+243,2022,Primary,Private,55,Pakanyi
+244,2020,Primary,Private,40,Masindi Town Council
+245,2022,Secondary,Government,11,Pakanyi
+246,2022,Secondary,Government,34,Kimengo
+247,2020,Primary,Government,33,Miirya
+248,2021,Primary,Government,8,Kimengo
+249,2021,Primary,Government,55,Kimengo
+250,2021,Primary,Government,13,Pakanyi
+251,2021,Primary,Private,15,Bwinjanga
+252,2021,Primary,Private,15,Kimengo
+253,2022,Primary,Private,36,Nyangahaya
+254,2019,Primary,Government,13,Nyangahaya
+255,2019,Secondary,Government,10,Karujubu
+256,2022,Primary,Government,18,Pakanyi
+257,2018,Secondary,Government,50,Miirya
+258,2021,Secondary,Private,34,Nyangahaya
+259,2022,Primary,Private,8,Bwinjanga
+260,2021,Secondary,Private,5,Nyangahaya
+261,2022,Primary,Government,30,Miirya
+262,2022,Secondary,Private,41,Bwinjanga
+263,2022,Primary,Government,36,Pakanyi
+264,2021,Secondary,Private,13,Bwinjanga
+265,2020,Primary,Private,50,Kimengo
+266,2022,Secondary,Private,10,Nyangahaya
+267,2020,Secondary,Private,40,Nyangahaya
+268,2021,Secondary,Government,55,Pakanyi
+269,2019,Primary,Government,15,Nyangahaya
+270,2022,Primary,Private,5,Masindi Town Council
+271,2021,Secondary,Government,11,Masindi Town Council
+272,2022,Primary,Government,34,Karujubu
+273,2020,Secondary,Government,13,Nyangahaya
+274,2018,Primary,Private,38,Masindi Town Council
+275,2018,Secondary,Government,40,Pakanyi
+276,2018,Primary,Private,55,Miirya
+277,2021,Primary,Private,36,Masindi Town Council
+278,2018,Secondary,Private,55,Bwinjanga
+279,2019,Primary,Private,40,Miirya
+280,2019,Primary,Private,10,Karujubu
+281,2019,Primary,Government,33,Bwinjanga
+282,2020,Secondary,Private,13,Miirya
+283,2019,Primary,Private,36,Bwinjanga
+284,2021,Secondary,Government,20,Kimengo
+285,2019,Secondary,Government,34,Pakanyi
+286,2021,Secondary,Private,19,Miirya
+287,2018,Primary,Private,9,Karujubu
+288,2020,Primary,Private,38,Miirya
+289,2020,Secondary,Government,30,Bwinjanga
+290,2021,Primary,Private,13,Kimengo
+291,2019,Primary,Private,21,Masindi Town Council
+292,2022,Primary,Private,21,Kimengo
+293,2022,Secondary,Private,9,Pakanyi
+294,2021,Primary,Government,36,Pakanyi
+295,2021,Primary,Private,20,Pakanyi
+296,2021,Primary,Private,30,Karujubu
+297,2018,Primary,Government,10,Bwinjanga
+298,2018,Secondary,Private,5,Bwinjanga
+299,2018,Secondary,Government,40,Kimengo
+300,2022,Primary,Private,10,Karujubu
+301,2022,Primary,Government,13,Masindi Town Council
+302,2021,Secondary,Government,5,Karujubu
+303,2022,Secondary,Private,9,Miirya
+304,2018,Primary,Government,30,Kimengo
+305,2021,Secondary,Private,8,Masindi Town Council
+306,2019,Secondary,Government,40,Masindi Town Council
+307,2020,Secondary,Private,41,Nyangahaya
+308,2019,Primary,Private,18,Pakanyi
+309,2022,Primary,Private,30,Miirya
+310,2019,Primary,Private,9,Miirya
+311,2022,Primary,Government,30,Pakanyi
+312,2020,Primary,Private,36,Nyangahaya
+313,2018,Secondary,Private,9,Bwinjanga
+314,2018,Primary,Government,2,Nyangahaya
+315,2020,Secondary,Government,34,Karujubu
+316,2022,Primary,Government,36,Masindi Town Council
+317,2019,Primary,Private,40,Masindi Town Council
+318,2018,Secondary,Government,10,Pakanyi
+319,2018,Primary,Government,11,Masindi Town Council
+320,2018,Primary,Private,20,Nyangahaya
+321,2020,Secondary,Government,34,Masindi Town Council
+322,2022,Secondary,Private,34,Masindi Town Council
+323,2018,Secondary,Private,9,Bwinjanga
+324,2019,Primary,Government,2,Karujubu
+325,2020,Secondary,Government,10,Kimengo
+326,2020,Primary,Government,34,Nyangahaya
+327,2021,Secondary,Private,33,Miirya
+328,2019,Secondary,Government,19,Pakanyi
+329,2019,Secondary,Private,18,Karujubu
+330,2022,Primary,Government,20,Pakanyi
+331,2019,Secondary,Private,33,Pakanyi
+332,2018,Secondary,Government,10,Nyangahaya
+333,2021,Primary,Private,43,Karujubu
+334,2019,Primary,Private,40,Miirya
+335,2018,Primary,Government,13,Nyangahaya
+336,2019,Secondary,Private,33,Miirya
+337,2018,Secondary,Government,30,Pakanyi
+338,2020,Primary,Government,50,Kimengo
+339,2018,Secondary,Private,21,Miirya
+340,2019,Secondary,Government,8,Miirya
+341,2021,Primary,Government,40,Masindi Town Council
+342,2021,Secondary,Government,8,Kimengo
+343,2018,Secondary,Private,55,Bwinjanga
+344,2019,Secondary,Government,18,Nyangahaya
+345,2022,Secondary,Private,9,Miirya
+346,2020,Primary,Private,30,Karujubu
+347,2020,Secondary,Private,40,Karujubu
+348,2018,Primary,Private,9,Karujubu
+349,2022,Secondary,Government,50,Pakanyi
+350,2018,Secondary,Government,38,Kimengo
+351,2020,Secondary,Private,12,Masindi Town Council
+352,2018,Secondary,Government,55,Pakanyi
+353,2022,Secondary,Government,12,Pakanyi
+354,2021,Primary,Government,2,Karujubu
+355,2019,Secondary,Government,8,Bwinjanga
+356,2019,Primary,Government,30,Miirya
+357,2018,Primary,Government,9,Masindi Town Council
+358,2020,Primary,Private,50,Kimengo
+359,2018,Secondary,Private,36,Kimengo
+360,2020,Primary,Government,30,Karujubu
+361,2020,Primary,Government,2,Pakanyi
+362,2022,Primary,Government,34,Karujubu
+363,2022,Primary,Private,36,Kimengo
+364,2019,Secondary,Government,33,Nyangahaya
+365,2020,Primary,Private,20,Miirya
+366,2020,Primary,Private,15,Miirya
+367,2021,Primary,Private,12,Bwinjanga
+368,2022,Primary,Private,30,Kimengo
+369,2020,Primary,Private,18,Bwinjanga
+370,2021,Primary,Government,33,Pakanyi
+371,2022,Primary,Private,18,Karujubu
+372,2019,Secondary,Private,11,Karujubu
+373,2019,Primary,Private,36,Kimengo
+374,2020,Primary,Private,34,Nyangahaya
+375,2020,Primary,Government,9,Karujubu
+376,2019,Secondary,Government,20,Karujubu
+377,2020,Secondary,Government,30,Kimengo
+378,2021,Secondary,Government,33,Pakanyi
+379,2019,Primary,Government,36,Masindi Town Council
+380,2020,Secondary,Government,8,Nyangahaya
+381,2018,Secondary,Private,20,Nyangahaya
+382,2019,Primary,Government,8,Kimengo
+383,2018,Secondary,Private,5,Bwinjanga
+384,2021,Primary,Government,10,Masindi Town Council
+385,2019,Secondary,Government,55,Bwinjanga
+386,2018,Primary,Private,13,Kimengo
+387,2018,Primary,Private,30,Bwinjanga
+388,2019,Secondary,Government,20,Bwinjanga
+389,2020,Secondary,Private,10,Nyangahaya
+390,2022,Secondary,Government,21,Pakanyi
+391,2019,Secondary,Private,30,Bwinjanga
+392,2020,Primary,Government,18,Kimengo
+393,2022,Secondary,Private,19,Miirya
+394,2021,Primary,Private,55,Masindi Town Council
+395,2018,Secondary,Government,9,Masindi Town Council
+396,2019,Primary,Private,19,Karujubu
+397,2021,Secondary,Private,36,Karujubu
+398,2022,Primary,Private,12,Miirya
+399,2021,Secondary,Government,55,Bwinjanga
+400,2019,Secondary,Private,11,Bwinjanga
+401,2018,Secondary,Private,18,Bwinjanga
+402,2021,Primary,Government,9,Pakanyi
+403,2021,Primary,Government,5,Bwinjanga
+404,2022,Secondary,Government,10,Bwinjanga
+405,2020,Primary,Government,41,Karujubu
+406,2022,Secondary,Private,5,Miirya
+407,2018,Secondary,Government,38,Karujubu
+408,2019,Secondary,Government,11,Masindi Town Council
+409,2020,Secondary,Government,36,Bwinjanga
+410,2021,Secondary,Government,15,Karujubu
+411,2022,Primary,Private,33,Bwinjanga
+412,2021,Secondary,Private,19,Bwinjanga
+413,2018,Secondary,Private,11,Karujubu
+414,2021,Primary,Government,50,Bwinjanga
+415,2019,Secondary,Private,20,Miirya
+416,2022,Secondary,Private,5,Pakanyi
+417,2018,Primary,Government,20,Masindi Town Council
+418,2018,Secondary,Government,33,Kimengo
+419,2021,Secondary,Private,8,Miirya
+420,2018,Primary,Private,2,Nyangahaya
+421,2022,Secondary,Government,5,Bwinjanga
+422,2022,Secondary,Government,9,Pakanyi
+423,2021,Secondary,Government,43,Bwinjanga
+424,2020,Secondary,Government,38,Miirya
+425,2022,Secondary,Government,55,Pakanyi
+426,2020,Primary,Government,15,Kimengo
+427,2018,Secondary,Private,34,Kimengo
+428,2019,Secondary,Private,5,Bwinjanga
+429,2022,Primary,Government,10,Kimengo
+430,2018,Primary,Private,36,Nyangahaya
+431,2020,Secondary,Private,20,Pakanyi
+432,2020,Secondary,Government,9,Pakanyi
+433,2020,Primary,Private,41,Miirya
+434,2018,Secondary,Government,21,Karujubu
+435,2020,Primary,Government,12,Miirya
+436,2021,Secondary,Private,34,Kimengo
+437,2022,Primary,Government,19,Miirya
+438,2020,Primary,Private,15,Pakanyi
+439,2018,Secondary,Private,2,Kimengo
+440,2019,Secondary,Private,5,Pakanyi
+441,2019,Primary,Private,43,Nyangahaya
+442,2022,Primary,Government,41,Bwinjanga
+443,2022,Primary,Government,21,Bwinjanga
+444,2022,Primary,Government,10,Karujubu
+445,2018,Primary,Private,34,Nyangahaya
+446,2022,Secondary,Government,18,Kimengo
+447,2021,Secondary,Private,12,Kimengo
+448,2021,Secondary,Private,8,Kimengo
+449,2021,Secondary,Private,19,Karujubu
+450,2022,Primary,Private,9,Kimengo
+451,2019,Primary,Private,40,Bwinjanga
+452,2021,Primary,Government,13,Nyangahaya
+453,2019,Secondary,Private,11,Miirya
+454,2020,Primary,Private,18,Bwinjanga
+455,2018,Primary,Private,38,Masindi Town Council
+456,2022,Primary,Government,5,Miirya
+457,2019,Primary,Government,30,Miirya
+458,2020,Secondary,Private,50,Kimengo
+459,2020,Secondary,Government,30,Kimengo
+460,2019,Primary,Government,34,Miirya
+461,2022,Secondary,Government,21,Nyangahaya
+462,2022,Primary,Private,2,Karujubu
+463,2019,Secondary,Government,55,Bwinjanga
+464,2018,Secondary,Government,43,Bwinjanga
+465,2019,Primary,Government,20,Miirya
+466,2018,Primary,Private,55,Bwinjanga
+467,2021,Secondary,Private,8,Miirya
+468,2019,Secondary,Private,21,Masindi Town Council
+469,2021,Primary,Private,18,Masindi Town Council
+470,2019,Primary,Private,50,Kimengo
+471,2019,Primary,Private,50,Kimengo
+472,2021,Secondary,Government,55,Bwinjanga
+473,2021,Secondary,Private,18,Nyangahaya
+474,2021,Secondary,Private,43,Bwinjanga
+475,2021,Secondary,Government,41,Karujubu
+476,2021,Secondary,Government,36,Miirya
+477,2019,Secondary,Private,8,Kimengo
+478,2020,Secondary,Private,12,Nyangahaya
+479,2018,Primary,Government,50,Karujubu
+480,2018,Primary,Private,2,Nyangahaya
+481,2022,Primary,Private,2,Kimengo
+482,2020,Primary,Private,41,Masindi Town Council
+483,2022,Primary,Private,40,Bwinjanga
+484,2020,Secondary,Government,15,Kimengo
+485,2021,Secondary,Government,21,Nyangahaya
+486,2022,Primary,Government,11,Nyangahaya
+487,2018,Primary,Private,20,Miirya
+488,2019,Primary,Government,43,Bwinjanga
+489,2020,Secondary,Government,36,Kimengo
+490,2021,Primary,Government,13,Kimengo
+491,2020,Primary,Government,33,Karujubu
+492,2020,Secondary,Government,50,Karujubu
+493,2019,Primary,Private,55,Miirya
+494,2019,Primary,Private,11,Nyangahaya
+495,2021,Primary,Private,2,Kimengo
+496,2019,Secondary,Government,30,Pakanyi
+497,2019,Primary,Private,21,Kimengo
+498,2020,Secondary,Government,8,Masindi Town Council
+499,2019,Primary,Government,12,Masindi Town Council
+500,2018,Primary,Private,40,Masindi Town Council
+501,2022,Primary,Private,33,Masindi Town Council
+502,2021,Secondary,Private,19,Pakanyi
+503,2020,Primary,Government,43,Kimengo
+504,2021,Secondary,Private,12,Masindi Town Council
+505,2022,Primary,Private,15,Bwinjanga
+506,2019,Secondary,Government,34,Kimengo
+507,2018,Secondary,Private,36,Kimengo
+508,2019,Primary,Private,13,Karujubu
+509,2020,Primary,Government,43,Masindi Town Council
+510,2022,Secondary,Private,2,Miirya
+511,2020,Primary,Government,18,Nyangahaya
+512,2018,Primary,Government,13,Kimengo
+513,2018,Primary,Private,55,Karujubu
+514,2022,Secondary,Private,20,Masindi Town Council
+515,2022,Secondary,Government,5,Pakanyi
+516,2019,Primary,Private,10,Karujubu
+517,2018,Secondary,Private,50,Kimengo
+518,2022,Secondary,Government,36,Miirya
+519,2022,Primary,Private,33,Nyangahaya
+520,2019,Secondary,Government,8,Miirya
+521,2020,Primary,Government,50,Kimengo
+522,2021,Secondary,Government,36,Karujubu
+523,2022,Primary,Government,40,Pakanyi
+524,2019,Secondary,Government,21,Karujubu
+525,2020,Secondary,Private,33,Masindi Town Council
+526,2022,Primary,Government,2,Karujubu
+527,2022,Primary,Government,10,Miirya
+528,2019,Primary,Private,13,Nyangahaya
+529,2022,Secondary,Government,9,Kimengo
+530,2022,Primary,Government,36,Masindi Town Council
+531,2020,Secondary,Government,12,Pakanyi
+532,2018,Secondary,Government,40,Pakanyi
+533,2018,Secondary,Private,10,Pakanyi
+534,2018,Secondary,Government,30,Masindi Town Council
+535,2019,Primary,Private,20,Bwinjanga
+536,2021,Secondary,Government,33,Nyangahaya
+537,2018,Primary,Government,36,Nyangahaya
+538,2020,Secondary,Private,20,Karujubu
+539,2022,Secondary,Private,50,Miirya
+540,2018,Secondary,Government,9,Nyangahaya
+541,2021,Secondary,Government,20,Miirya
+542,2021,Primary,Government,36,Masindi Town Council
+543,2022,Secondary,Government,33,Nyangahaya
+544,2018,Secondary,Government,20,Bwinjanga
+545,2018,Secondary,Private,34,Kimengo
+546,2020,Secondary,Private,34,Kimengo
+547,2019,Secondary,Government,13,Miirya
+548,2022,Secondary,Government,33,Miirya
+549,2018,Secondary,Government,36,Bwinjanga
+550,2022,Secondary,Government,9,Bwinjanga
+551,2021,Secondary,Private,20,Nyangahaya
+552,2018,Primary,Private,33,Kimengo
+553,2020,Secondary,Government,38,Pakanyi
+554,2021,Secondary,Private,50,Miirya
+555,2020,Primary,Private,12,Pakanyi
+556,2022,Primary,Government,8,Miirya
+557,2020,Primary,Private,40,Karujubu
+558,2020,Secondary,Private,2,Bwinjanga
+559,2022,Secondary,Government,9,Karujubu
+560,2020,Primary,Government,20,Karujubu
+561,2022,Primary,Government,38,Miirya
+562,2021,Secondary,Government,40,Bwinjanga
+563,2020,Secondary,Private,38,Kimengo
+564,2020,Secondary,Private,19,Pakanyi
+565,2021,Primary,Government,20,Karujubu
+566,2018,Secondary,Government,33,Bwinjanga
+567,2019,Secondary,Private,21,Kimengo
+568,2021,Secondary,Private,40,Kimengo
+569,2019,Primary,Private,43,Miirya
+570,2022,Primary,Government,30,Nyangahaya
+571,2020,Secondary,Private,41,Miirya
+572,2019,Secondary,Private,18,Masindi Town Council
+573,2019,Secondary,Private,8,Masindi Town Council
+574,2018,Secondary,Private,8,Masindi Town Council
+575,2020,Secondary,Private,15,Miirya
+576,2018,Secondary,Private,21,Bwinjanga
+577,2020,Primary,Government,9,Bwinjanga
+578,2021,Secondary,Government,41,Masindi Town Council
+579,2019,Primary,Government,5,Masindi Town Council
+580,2020,Secondary,Private,11,Pakanyi
+581,2021,Primary,Government,15,Kimengo
+582,2018,Secondary,Private,55,Nyangahaya
+583,2022,Primary,Government,13,Kimengo
+584,2020,Secondary,Private,2,Miirya
+585,2019,Primary,Government,13,Pakanyi
+586,2018,Primary,Government,20,Miirya
+587,2020,Secondary,Private,20,Karujubu
+588,2022,Primary,Private,9,Pakanyi
+589,2021,Primary,Government,19,Masindi Town Council
+590,2021,Primary,Government,18,Masindi Town Council
+591,2021,Primary,Government,15,Kimengo
+592,2020,Secondary,Private,19,Masindi Town Council
+593,2019,Primary,Private,18,Bwinjanga
+594,2021,Secondary,Government,15,Nyangahaya
+595,2020,Primary,Private,43,Kimengo
+596,2022,Secondary,Private,18,Miirya
+597,2020,Secondary,Government,43,Kimengo
+598,2020,Primary,Private,12,Masindi Town Council
+599,2020,Primary,Private,13,Masindi Town Council
+600,2022,Secondary,Private,18,Nyangahaya
+601,2020,Primary,Government,40,Bwinjanga
+602,2022,Secondary,Government,13,Nyangahaya
+603,2019,Secondary,Private,11,Miirya
+604,2020,Primary,Government,9,Bwinjanga
+605,2021,Primary,Government,11,Miirya
+606,2022,Primary,Private,38,Pakanyi
+607,2018,Primary,Private,38,Nyangahaya
+608,2021,Primary,Private,43,Nyangahaya
+609,2018,Secondary,Government,41,Karujubu
+610,2020,Primary,Private,11,Miirya
+611,2022,Primary,Government,38,Nyangahaya
+612,2019,Secondary,Government,8,Pakanyi
+613,2021,Secondary,Government,43,Bwinjanga
+614,2019,Secondary,Government,5,Kimengo
+615,2022,Secondary,Government,12,Pakanyi
+616,2021,Primary,Government,19,Nyangahaya
+617,2021,Primary,Government,11,Kimengo
+618,2019,Primary,Private,18,Karujubu
+619,2020,Secondary,Government,19,Pakanyi
+620,2020,Secondary,Private,40,Nyangahaya
+621,2019,Primary,Private,50,Bwinjanga
+622,2019,Primary,Private,15,Kimengo
+623,2018,Secondary,Government,9,Karujubu
+624,2021,Secondary,Private,8,Nyangahaya
+625,2022,Primary,Private,5,Pakanyi
+626,2018,Primary,Private,13,Bwinjanga
+627,2018,Secondary,Government,21,Miirya
+628,2021,Primary,Government,11,Kimengo
+629,2020,Secondary,Private,18,Masindi Town Council
+630,2018,Secondary,Government,55,Karujubu
+631,2020,Secondary,Government,15,Karujubu
+632,2022,Primary,Private,18,Masindi Town Council
+633,2018,Primary,Private,36,Karujubu
+634,2022,Secondary,Private,34,Masindi Town Council
+635,2019,Primary,Private,40,Bwinjanga
+636,2021,Secondary,Government,21,Pakanyi
+637,2018,Secondary,Private,20,Pakanyi
+638,2021,Primary,Private,36,Nyangahaya
+639,2018,Primary,Private,18,Nyangahaya
+640,2020,Primary,Government,55,Kimengo
+641,2020,Primary,Private,36,Nyangahaya
+642,2018,Primary,Government,8,Bwinjanga
+643,2021,Primary,Private,40,Masindi Town Council
+644,2019,Primary,Government,40,Karujubu
+645,2022,Secondary,Government,30,Miirya
+646,2019,Secondary,Government,38,Karujubu
+647,2021,Primary,Government,12,Pakanyi
+648,2019,Primary,Government,50,Karujubu
+649,2019,Secondary,Government,43,Pakanyi
+650,2021,Secondary,Government,41,Miirya
+651,2022,Primary,Government,34,Kimengo
+652,2021,Primary,Government,9,Nyangahaya
+653,2020,Secondary,Government,50,Masindi Town Council
+654,2022,Secondary,Government,34,Masindi Town Council
+655,2022,Primary,Private,12,Bwinjanga
+656,2020,Secondary,Private,15,Bwinjanga
+657,2020,Primary,Government,19,Nyangahaya
+658,2022,Primary,Private,43,Masindi Town Council
+659,2020,Secondary,Private,34,Bwinjanga
+660,2022,Primary,Government,15,Nyangahaya
+661,2022,Secondary,Private,18,Karujubu
+662,2022,Secondary,Government,2,Nyangahaya
+663,2021,Secondary,Government,18,Masindi Town Council
+664,2020,Secondary,Private,43,Bwinjanga
+665,2019,Primary,Government,5,Masindi Town Council
+666,2021,Secondary,Private,13,Bwinjanga
+667,2019,Secondary,Private,36,Pakanyi
+668,2021,Primary,Private,13,Karujubu
+669,2018,Secondary,Government,18,Bwinjanga
+670,2021,Primary,Government,19,Bwinjanga
+671,2018,Secondary,Private,36,Nyangahaya
+672,2021,Secondary,Private,5,Karujubu
+673,2022,Secondary,Government,36,Masindi Town Council
+674,2019,Primary,Private,38,Masindi Town Council
+675,2020,Secondary,Private,21,Kimengo
+676,2019,Primary,Government,41,Miirya
+677,2022,Primary,Government,15,Karujubu
+678,2021,Primary,Government,5,Masindi Town Council
+679,2021,Secondary,Government,10,Pakanyi
+680,2020,Primary,Private,18,Karujubu
+681,2022,Primary,Private,5,Nyangahaya
+682,2019,Secondary,Government,18,Pakanyi
+683,2022,Primary,Private,41,Kimengo
+684,2022,Primary,Private,30,Miirya
+685,2019,Primary,Government,41,Kimengo
+686,2022,Secondary,Government,2,Bwinjanga
+687,2019,Primary,Private,13,Nyangahaya
+688,2022,Secondary,Government,15,Masindi Town Council
+689,2018,Secondary,Private,50,Bwinjanga
+690,2020,Secondary,Government,13,Karujubu
+691,2022,Primary,Government,13,Bwinjanga
+692,2021,Secondary,Government,55,Miirya
+693,2020,Secondary,Private,11,Karujubu
+694,2020,Secondary,Private,9,Kimengo
+695,2018,Secondary,Government,2,Miirya
+696,2018,Primary,Private,18,Kimengo
+697,2018,Secondary,Private,38,Bwinjanga
+698,2019,Primary,Private,9,Masindi Town Council
+699,2018,Secondary,Private,9,Miirya
+700,2021,Secondary,Private,33,Bwinjanga
+701,2021,Primary,Government,13,Nyangahaya
+702,2020,Primary,Government,11,Kimengo
+703,2020,Primary,Government,10,Nyangahaya
+704,2022,Secondary,Private,12,Karujubu
+705,2021,Secondary,Government,50,Miirya
+706,2019,Primary,Private,5,Kimengo
+707,2022,Primary,Private,40,Masindi Town Council
+708,2022,Primary,Private,15,Bwinjanga
+709,2020,Secondary,Private,2,Kimengo
+710,2020,Secondary,Private,55,Bwinjanga
+711,2021,Secondary,Private,36,Miirya
+712,2018,Secondary,Private,34,Miirya
+713,2021,Secondary,Private,40,Kimengo
+714,2020,Secondary,Private,8,Pakanyi
+715,2018,Secondary,Government,38,Miirya
+716,2020,Primary,Private,15,Kimengo
+717,2022,Primary,Private,8,Miirya
+718,2020,Secondary,Private,43,Pakanyi
+719,2020,Primary,Private,38,Masindi Town Council
+720,2022,Secondary,Government,5,Miirya
+721,2021,Primary,Government,40,Kimengo
+722,2018,Secondary,Private,55,Pakanyi
+723,2021,Secondary,Government,50,Bwinjanga
+724,2021,Secondary,Government,55,Miirya
+725,2020,Secondary,Private,9,Karujubu
+726,2020,Secondary,Private,43,Bwinjanga
+727,2021,Secondary,Government,12,Miirya
+728,2021,Secondary,Government,38,Pakanyi
+729,2019,Primary,Government,38,Bwinjanga
+730,2021,Primary,Private,11,Kimengo
+731,2019,Primary,Government,8,Masindi Town Council
+732,2022,Primary,Private,33,Nyangahaya
+733,2020,Primary,Government,11,Nyangahaya
+734,2018,Secondary,Private,8,Bwinjanga
+735,2019,Secondary,Government,19,Pakanyi
+736,2022,Secondary,Government,18,Pakanyi
+737,2022,Primary,Private,2,Karujubu
+738,2022,Secondary,Government,13,Nyangahaya
+739,2022,Secondary,Government,5,Masindi Town Council
+740,2022,Primary,Private,41,Kimengo
+741,2018,Primary,Private,9,Masindi Town Council
+742,2021,Primary,Private,18,Nyangahaya
+743,2019,Secondary,Private,11,Pakanyi
+744,2019,Primary,Private,50,Miirya
+745,2021,Secondary,Government,8,Kimengo
+746,2018,Primary,Private,40,Kimengo
+747,2019,Secondary,Private,10,Nyangahaya
+748,2022,Secondary,Government,55,Bwinjanga
+749,2022,Primary,Government,55,Kimengo
+750,2021,Primary,Government,18,Karujubu
+751,2019,Secondary,Government,2,Miirya
+752,2022,Secondary,Private,36,Pakanyi
+753,2019,Primary,Private,9,Bwinjanga
+754,2020,Primary,Private,10,Kimengo
+755,2019,Secondary,Private,12,Nyangahaya
+756,2019,Primary,Private,10,Bwinjanga
+757,2020,Secondary,Private,19,Bwinjanga
+758,2022,Primary,Private,38,Pakanyi
+759,2022,Secondary,Government,43,Masindi Town Council
+760,2020,Secondary,Private,34,Miirya
+761,2020,Primary,Private,21,Masindi Town Council
+762,2021,Secondary,Private,10,Nyangahaya
+763,2019,Secondary,Government,15,Miirya
+764,2020,Primary,Private,20,Masindi Town Council
+765,2019,Primary,Private,36,Nyangahaya
+766,2018,Primary,Government,9,Pakanyi
+767,2021,Secondary,Private,15,Masindi Town Council
+768,2018,Secondary,Private,55,Karujubu
+769,2018,Primary,Private,33,Kimengo
+770,2020,Primary,Government,10,Nyangahaya
+771,2022,Secondary,Government,50,Karujubu
+772,2018,Primary,Government,18,Karujubu
+773,2019,Primary,Private,41,Masindi Town Council
+774,2019,Secondary,Government,41,Kimengo
+775,2019,Primary,Government,10,Miirya
+776,2018,Primary,Government,20,Miirya
+777,2018,Secondary,Government,5,Masindi Town Council
+778,2022,Primary,Private,19,Miirya
+779,2020,Secondary,Government,21,Karujubu
+780,2019,Secondary,Government,20,Pakanyi
+781,2018,Primary,Government,21,Kimengo
+782,2020,Primary,Government,43,Pakanyi
+783,2019,Secondary,Private,30,Kimengo
+784,2019,Secondary,Private,40,Masindi Town Council
+785,2022,Primary,Government,9,Masindi Town Council
+786,2018,Secondary,Private,33,Nyangahaya
+787,2020,Secondary,Government,33,Kimengo
+788,2018,Primary,Government,55,Bwinjanga
+789,2022,Primary,Private,11,Miirya
+790,2020,Primary,Private,41,Miirya
+791,2018,Primary,Government,43,Masindi Town Council
+792,2022,Secondary,Private,50,Masindi Town Council
+793,2021,Primary,Government,30,Masindi Town Council
+794,2021,Primary,Private,20,Miirya
+795,2019,Secondary,Government,36,Miirya
+796,2018,Primary,Government,5,Karujubu
+797,2019,Primary,Private,38,Kimengo
+798,2022,Secondary,Government,55,Bwinjanga
+799,2021,Primary,Government,41,Kimengo
+800,2021,Secondary,Private,18,Karujubu
+801,2020,Primary,Private,50,Karujubu
+802,2018,Primary,Private,11,Miirya
+803,2019,Primary,Government,13,Nyangahaya
+804,2021,Primary,Private,10,Karujubu
+805,2018,Primary,Government,19,Masindi Town Council
+806,2021,Primary,Private,36,Karujubu
+807,2020,Secondary,Government,5,Nyangahaya
+808,2022,Secondary,Private,50,Masindi Town Council
+809,2020,Secondary,Private,18,Nyangahaya
+810,2019,Secondary,Government,12,Masindi Town Council
+811,2019,Primary,Government,10,Bwinjanga
+812,2021,Primary,Government,43,Nyangahaya
+813,2018,Secondary,Private,50,Miirya
+814,2020,Primary,Private,5,Masindi Town Council
+815,2021,Secondary,Government,19,Karujubu
+816,2021,Primary,Government,20,Nyangahaya
+817,2021,Secondary,Government,10,Nyangahaya
+818,2020,Secondary,Private,34,Karujubu
+819,2019,Secondary,Government,19,Bwinjanga
+820,2018,Secondary,Private,38,Masindi Town Council
+821,2018,Primary,Private,12,Masindi Town Council
+822,2020,Secondary,Government,55,Bwinjanga
+823,2018,Secondary,Private,40,Bwinjanga
+824,2018,Secondary,Private,9,Pakanyi
+825,2019,Primary,Private,41,Pakanyi
+826,2019,Primary,Government,30,Karujubu
+827,2022,Secondary,Government,43,Pakanyi
+828,2020,Secondary,Private,50,Miirya
+829,2022,Secondary,Government,2,Nyangahaya
+830,2018,Primary,Private,10,Karujubu
+831,2021,Secondary,Private,33,Pakanyi
+832,2021,Secondary,Government,36,Karujubu
+833,2022,Primary,Private,10,Miirya
+834,2018,Primary,Government,15,Masindi Town Council
+835,2019,Primary,Government,13,Masindi Town Council
+836,2022,Primary,Government,41,Masindi Town Council
+837,2019,Primary,Government,18,Kimengo
+838,2022,Secondary,Private,5,Pakanyi
+839,2021,Secondary,Private,13,Kimengo
+840,2021,Secondary,Government,41,Miirya
+841,2020,Primary,Government,36,Bwinjanga
+842,2020,Primary,Private,38,Masindi Town Council
+843,2019,Secondary,Government,5,Pakanyi
+844,2021,Primary,Private,50,Karujubu
+845,2021,Secondary,Private,20,Kimengo
+846,2022,Primary,Government,33,Nyangahaya
+847,2021,Primary,Private,50,Nyangahaya
+848,2020,Secondary,Government,8,Nyangahaya
+849,2018,Secondary,Government,12,Miirya
+850,2021,Secondary,Private,50,Karujubu
+851,2018,Primary,Private,33,Nyangahaya
+852,2020,Secondary,Private,2,Bwinjanga
+853,2021,Secondary,Government,18,Pakanyi
+854,2021,Secondary,Government,38,Kimengo
+855,2021,Secondary,Government,9,Bwinjanga
+856,2019,Primary,Government,10,Kimengo
+857,2021,Primary,Private,36,Pakanyi
+858,2020,Secondary,Government,2,Nyangahaya
+859,2019,Secondary,Private,21,Kimengo
+860,2020,Secondary,Government,8,Nyangahaya
+861,2019,Primary,Government,15,Bwinjanga
+862,2021,Secondary,Private,15,Karujubu
+863,2022,Secondary,Government,20,Bwinjanga
+864,2020,Secondary,Government,18,Nyangahaya
+865,2020,Secondary,Private,55,Miirya
+866,2022,Primary,Government,8,Karujubu
+867,2021,Primary,Private,8,Masindi Town Council
+868,2018,Secondary,Private,38,Masindi Town Council
+869,2021,Secondary,Private,21,Masindi Town Council
+870,2021,Secondary,Government,30,Bwinjanga
+871,2022,Primary,Government,38,Pakanyi
+872,2020,Primary,Private,34,Bwinjanga
+873,2022,Secondary,Government,2,Miirya
+874,2020,Secondary,Private,15,Miirya
+875,2020,Primary,Government,40,Kimengo
+876,2021,Secondary,Private,50,Karujubu
+877,2022,Primary,Private,36,Nyangahaya
+878,2021,Primary,Private,12,Miirya
+879,2022,Primary,Government,11,Karujubu
+880,2018,Primary,Government,30,Masindi Town Council
+881,2019,Secondary,Government,18,Karujubu
+882,2019,Primary,Private,50,Kimengo
+883,2019,Secondary,Private,11,Kimengo
+884,2022,Secondary,Government,10,Masindi Town Council
+885,2019,Primary,Private,38,Karujubu
+886,2021,Primary,Private,34,Masindi Town Council
+887,2021,Secondary,Private,10,Nyangahaya
+888,2018,Secondary,Private,43,Kimengo
+889,2018,Primary,Government,11,Miirya
+890,2018,Secondary,Private,15,Nyangahaya
+891,2021,Secondary,Government,40,Karujubu
+892,2022,Secondary,Private,21,Kimengo
+893,2019,Secondary,Private,40,Nyangahaya
+894,2020,Secondary,Government,50,Masindi Town Council
+895,2019,Primary,Government,15,Nyangahaya
+896,2022,Secondary,Private,21,Pakanyi
+897,2021,Secondary,Government,43,Nyangahaya
+898,2021,Secondary,Government,20,Kimengo
+899,2020,Primary,Private,20,Pakanyi
+900,2021,Primary,Government,30,Nyangahaya
+901,2022,Primary,Government,30,Nyangahaya
+902,2022,Primary,Government,20,Nyangahaya
+903,2019,Primary,Government,19,Nyangahaya
+904,2020,Primary,Government,19,Masindi Town Council
+905,2021,Secondary,Government,12,Nyangahaya
+906,2022,Secondary,Government,50,Masindi Town Council
+907,2020,Primary,Government,11,Miirya
+908,2021,Primary,Government,10,Pakanyi
+909,2021,Primary,Private,33,Nyangahaya
+910,2019,Secondary,Government,20,Nyangahaya
+911,2019,Secondary,Government,12,Karujubu
+912,2019,Primary,Private,11,Pakanyi
+913,2020,Secondary,Government,9,Bwinjanga
+914,2022,Secondary,Government,21,Masindi Town Council
+915,2022,Secondary,Private,11,Nyangahaya
+916,2020,Primary,Private,55,Nyangahaya
+917,2019,Secondary,Government,11,Nyangahaya
+918,2020,Secondary,Private,8,Miirya
+919,2019,Secondary,Government,40,Miirya
+920,2021,Primary,Government,8,Masindi Town Council
+921,2020,Primary,Government,11,Pakanyi
+922,2019,Secondary,Government,33,Masindi Town Council
+923,2022,Secondary,Government,34,Nyangahaya
+924,2018,Secondary,Government,18,Bwinjanga
+925,2020,Primary,Private,30,Miirya
+926,2020,Secondary,Government,19,Masindi Town Council
+927,2022,Secondary,Private,13,Miirya
+928,2020,Primary,Private,33,Karujubu
+929,2019,Secondary,Government,5,Masindi Town Council
+930,2019,Secondary,Private,30,Bwinjanga
+931,2022,Primary,Government,5,Pakanyi
+932,2018,Secondary,Private,18,Pakanyi
+933,2018,Primary,Private,50,Pakanyi
+934,2019,Secondary,Government,10,Miirya
+935,2018,Secondary,Private,12,Miirya
+936,2018,Primary,Government,55,Pakanyi
+937,2020,Primary,Government,21,Nyangahaya
+938,2018,Secondary,Private,18,Karujubu
+939,2020,Primary,Government,18,Nyangahaya
+940,2021,Primary,Government,55,Miirya
+941,2020,Secondary,Private,33,Nyangahaya
+942,2019,Primary,Government,18,Miirya
+943,2018,Primary,Private,2,Masindi Town Council
+944,2021,Secondary,Government,50,Pakanyi
+945,2018,Secondary,Government,33,Masindi Town Council
+946,2020,Primary,Government,18,Miirya
+947,2020,Primary,Private,30,Bwinjanga
+948,2019,Secondary,Private,21,Masindi Town Council
+949,2018,Primary,Government,33,Pakanyi
+950,2021,Primary,Private,13,Bwinjanga
+951,2018,Primary,Private,12,Nyangahaya
+952,2022,Primary,Private,19,Masindi Town Council
+953,2021,Primary,Private,8,Karujubu
+954,2019,Secondary,Private,21,Kimengo
+955,2019,Primary,Private,18,Bwinjanga
+956,2021,Secondary,Private,2,Miirya
+957,2019,Primary,Private,34,Nyangahaya
+958,2020,Secondary,Private,20,Pakanyi
+959,2018,Secondary,Private,41,Masindi Town Council
+960,2022,Primary,Private,55,Bwinjanga
+961,2022,Secondary,Private,13,Nyangahaya
+962,2020,Primary,Private,38,Pakanyi
+963,2018,Secondary,Government,15,Miirya
+964,2022,Secondary,Government,38,Miirya
+965,2022,Secondary,Private,8,Bwinjanga
+966,2022,Primary,Government,21,Kimengo
+967,2020,Primary,Government,50,Masindi Town Council
+968,2019,Primary,Private,9,Pakanyi
+969,2019,Secondary,Government,36,Karujubu
+970,2018,Primary,Private,10,Karujubu
+971,2021,Secondary,Private,40,Karujubu
+972,2020,Secondary,Private,13,Karujubu
+973,2019,Primary,Government,41,Pakanyi
+974,2018,Secondary,Private,18,Karujubu
+975,2022,Primary,Government,8,Karujubu
+976,2022,Secondary,Private,55,Kimengo
+977,2020,Secondary,Government,36,Masindi Town Council
+978,2018,Secondary,Private,36,Masindi Town Council
+979,2022,Primary,Private,2,Bwinjanga
+980,2019,Secondary,Private,8,Pakanyi
+981,2022,Primary,Private,40,Kimengo
+982,2019,Secondary,Private,55,Miirya
+983,2018,Primary,Government,13,Pakanyi
+984,2022,Secondary,Private,15,Pakanyi
+985,2020,Primary,Government,21,Pakanyi
+986,2022,Primary,Government,18,Miirya
+987,2020,Secondary,Government,30,Masindi Town Council
+988,2019,Secondary,Private,20,Miirya
+989,2021,Secondary,Private,19,Nyangahaya
+990,2019,Secondary,Private,11,Pakanyi
+991,2019,Primary,Government,5,Masindi Town Council
+992,2022,Secondary,Government,8,Miirya
+993,2018,Primary,Private,41,Miirya
+994,2020,Primary,Private,38,Karujubu
+995,2019,Primary,Private,41,Pakanyi
+996,2022,Primary,Government,12,Miirya
+997,2021,Secondary,Private,20,Kimengo
+998,2018,Primary,Government,19,Pakanyi
+999,2018,Secondary,Private,13,Karujubu
