@@ -3,7 +3,7 @@ import renderSelectors from './core/SelectorDropdowns';
 // import renderEChart from './core/charts/ExampleChart';
 // import renderTable from './core/tables/ExampleTable';
 import renderEducationCharts from './core/charts/EducationCharts';
-import renderTable from './core/NumberOfSchoolsTable';
+import renderTable from './core/tables/NumberOfSchoolsTable';
 import './styles/styles.css';
 import renderKeyFacts from './core/KeyFacts';
 

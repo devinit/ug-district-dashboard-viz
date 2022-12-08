@@ -1,8 +1,8 @@
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
-import DistrictTable from './components/DistrictTable';
-import { formatNumber, getYearsFromRange } from '../utils/data';
-import masindiSchoolData from '../../public/assets/data/masindi/numberOfSchools.json';
+import DistrictTable from '../components/DistrictTable';
+import { formatNumber, getYearsFromRange } from '../../utils/data';
+import masindiSchoolData from '../../../public/assets/data/masindi/numberOfSchools.json';
 
 const parseTableData = (subCounty, level) => {
   const years = getYearsFromRange([2012, 2021]);
