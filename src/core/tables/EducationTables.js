@@ -52,19 +52,56 @@ const parseTableData = (subCounty, level) => {
 
   return [headerRow].concat(formattedDataRow, [totalsRow]);
 };
+const validConfigs = (config) => {
+  if (!config.className) {
+    window.console.error('Invalid table config: className is required!');
 
-const renderTable = (reactRoot) => {
-  const { subCounty, level } = window.DIState.getState;
-  const rows = parseTableData(subCounty, level);
-  reactRoot.render(createElement(DistrictTable, { rows }));
+    return false;
+  }
+
+  // if (!config.mapping) {
+  //   window.console.error('Invalid chart config: mapping is required!');
+
+  //   return false;
+  // // }
+
+  // if (!config.mapping.series) {
+  //   window.console.error('Invalid chart config: mapping.series is required!');
+
+  //   return false;
+  // }
+
+  // if (!config.mapping.year) {
+  //   window.console.error('Invalid chart config: mapping.year is required!');
+
+  //   return false;
+  // }
+
+  // if (!config.mapping.value) {
+  //   window.console.error('Invalid chart config: mapping.value is required!');
+
+  //   return false;
+  // }
+
+  // if (!config.mapping.subCounty) {
+  //   window.console.error('Invalid chart config: mapping.subCounty is required!');
+
+  //   return false;
+  // }
+
+  // if (!config.mapping.level) {
+  //   window.console.error('Invalid chart config: mapping[mapping.level] is required!');
+
+  //   return false;
+  // }
+
+  return true;
 };
+const renderTable = (config) => {
+  if (!validConfigs(config)) return;
 
-/**
- * Run your code after the page has loaded
- */
-const init = (className) => {
   window.DICharts.handler.addChart({
-    className,
+    className: config.className,
     d3: {
       onAdd: (tableNodes) => {
         Array.prototype.forEach.call(tableNodes, (tableNode) => {
@@ -76,7 +113,9 @@ const init = (className) => {
             window.DIState.addListener(() => {
               dichart.showLoading();
               // TODO: get and store data in state object
-              renderTable(root);
+              const { subCounty, level } = window.DIState.getState;
+              const rows = parseTableData(subCounty, level);
+              root.render(createElement(DistrictTable, { rows }));
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
             });
@@ -89,4 +128,22 @@ const init = (className) => {
   });
 };
 
-export default init;
+const initTables = () => {
+  if (window.DIState) {
+    let configs = [];
+    window.DIState.addListener(() => {
+      const { tables: tableConfigs } = window.DIState.getState;
+
+      // ensures that the state update that renders the charts only runs once
+      if (tableConfigs && configs.length !== tableConfigs.length) {
+        configs = tableConfigs.filter((config) => config.target === 'education');
+
+        configs.forEach(renderTable);
+      }
+    });
+  } else {
+    window.console.log('State is not defined');
+  }
+};
+
+export default initTables;

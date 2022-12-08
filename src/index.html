@@ -203,6 +203,17 @@
             },
           },
         ],
+        tables: [
+          {
+            target: 'education',
+            className: 'dicharts--table--number-of-schools',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            yearRange: [2016, 2021],
+            filters: {
+              subCounties: subCounties,
+            },
+          },
+        ],
       };
       if (window.DIState) {
         window.DIState.setState(state);
