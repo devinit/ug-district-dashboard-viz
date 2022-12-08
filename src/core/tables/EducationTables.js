@@ -6,7 +6,7 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 const parseTableData = (config, data, subCounty, level) => {
   const { rows: COLUMN_CAPTIONS, mapping } = config;
   const years = getYearsFromRange(config.yearRange);
-  const headerRow = ['Years'].concat(years);
+  const headerRow = ['School Type'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((item) => {
     const numberOfSchoolsByYear = {};
     data
