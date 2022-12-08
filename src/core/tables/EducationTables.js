@@ -3,23 +3,26 @@ import { createRoot } from 'react-dom/client';
 import DistrictTable from '../components/DistrictTable';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
-const parseTableData = (data, subCounty, level) => {
+const parseTableData = (config, data, subCounty, level) => {
+  const { rows: COLUMN_CAPTIONS, mapping } = config;
   const years = getYearsFromRange([2012, 2021]);
-  const COLUMN_CAPTIONS = ['Government', 'Private'];
   const headerRow = ['Years'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((purpose) => {
     const numberOfSchoolsByYear = {};
     data
-      .filter((school) =>
-        subCounty && subCounty !== 'all' ? school.SubCounty.toLowerCase() === subCounty.toLowerCase() : true
-      )
-      .filter((school) => (level && level !== 'all' ? school.level.toLowerCase() === level.toLowerCase() : true))
-      .forEach((school) => {
-        if (!numberOfSchoolsByYear[school.year] && purpose === school.Type) {
-          numberOfSchoolsByYear[school.year] = [];
-          numberOfSchoolsByYear[school.year] = [...numberOfSchoolsByYear[school.year], parseInt(school.Value, 10)];
-        } else if (purpose === school.Type) {
-          numberOfSchoolsByYear[school.year] = [...numberOfSchoolsByYear[school.year], parseInt(school.Value, 10)];
+      .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
+      .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
+      .forEach((row) => {
+        if (!numberOfSchoolsByYear[row[mapping.year]] && purpose === row.Type) {
+          numberOfSchoolsByYear[row[mapping.year]] = [
+            ...(numberOfSchoolsByYear[row[mapping.year]] || []),
+            parseInt(row[mapping.value], 10),
+          ];
+        } else if (purpose === row.Type) {
+          numberOfSchoolsByYear[row[mapping.year]] = [
+            ...numberOfSchoolsByYear[row[mapping.year]],
+            parseInt(row[mapping.value], 10),
+          ];
         }
       });
 
@@ -58,41 +61,41 @@ const validConfigs = (config) => {
     return false;
   }
 
-  // if (!config.mapping) {
-  //   window.console.error('Invalid chart config: mapping is required!');
+  if (!config.mapping) {
+    window.console.error('Invalid table config: mapping is required!');
 
-  //   return false;
-  // // }
+    return false;
+  }
 
-  // if (!config.mapping.series) {
-  //   window.console.error('Invalid chart config: mapping.series is required!');
+  if (!config.mapping.rows) {
+    window.console.error('Invalid table config: mapping.series is required!');
 
-  //   return false;
-  // }
+    return false;
+  }
 
-  // if (!config.mapping.year) {
-  //   window.console.error('Invalid chart config: mapping.year is required!');
+  if (!config.mapping.year) {
+    window.console.error('Invalid table config: mapping.year is required!');
 
-  //   return false;
-  // }
+    return false;
+  }
 
-  // if (!config.mapping.value) {
-  //   window.console.error('Invalid chart config: mapping.value is required!');
+  if (!config.mapping.value) {
+    window.console.error('Invalid table config: mapping.value is required!');
 
-  //   return false;
-  // }
+    return false;
+  }
 
-  // if (!config.mapping.subCounty) {
-  //   window.console.error('Invalid chart config: mapping.subCounty is required!');
+  if (!config.mapping.subCounty) {
+    window.console.error('Invalid table config: mapping.subCounty is required!');
 
-  //   return false;
-  // }
+    return false;
+  }
 
-  // if (!config.mapping.level) {
-  //   window.console.error('Invalid chart config: mapping[mapping.level] is required!');
+  if (!config.mapping.level) {
+    window.console.error('Invalid table config: mapping[mapping.level] is required!');
 
-  //   return false;
-  // }
+    return false;
+  }
 
   return true;
 };
@@ -108,11 +111,13 @@ const renderTable = (config) => {
             const dichart = new window.DICharts.Chart(tableNode.parentElement);
             dichart.showLoading();
 
+            const defaultSubCounty = 'all';
+            const defaultLevel = 'all';
             const root = createRoot(tableNode);
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { subCounty, level } = window.DIState.getState;
-              const rows = parseTableData(data, subCounty, level);
+              const { subCounty = defaultSubCounty, level = defaultLevel } = window.DIState.getState;
+              const rows = parseTableData(config, data, subCounty, level);
               root.render(createElement(DistrictTable, { rows }));
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');

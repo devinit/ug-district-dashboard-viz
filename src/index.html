@@ -209,6 +209,14 @@
             className: 'dicharts--table--number-of-schools',
             url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
             yearRange: [2016, 2021],
+            rows: ['Government', 'Private'],
+            mapping: {
+              rows: 'Type',
+              year: 'year',
+              value: 'Value',
+              subCounty: 'SubCounty',
+              level: 'level',
+            },
             filters: {
               subCounties: subCounties,
             },
