@@ -3,6 +3,7 @@ import renderSelectors from './core/SelectorDropdowns';
 // import renderEChart from './core/charts/ExampleChart';
 // import renderTable from './core/tables/ExampleTable';
 import renderEducationCharts from './core/charts/EducationCharts';
+import renderEducationTables from './core/tables/EducationTables';
 import './styles/styles.css';
 import renderKeyFacts from './core/KeyFacts';
 
@@ -12,7 +13,7 @@ import renderKeyFacts from './core/KeyFacts';
 window.addEventListener('load', () => {
   renderSelectors('district-selectors');
   // renderEChart();
-  // renderTable('dicharts--table-example');
+  renderEducationTables();
   renderKeyFacts('dicharts--keyfacts');
   renderEducationCharts();
 });

@@ -4,7 +4,7 @@
   "description": "A Starting Point for Creating DI's Charts",
   "private": true,
   "scripts": {
-    "build": "nwb build-web-app",
+    "build": "nwb build-web-app && gulp",
     "clean": "nwb clean-app",
     "start": "nwb serve-web-app --reload",
     "test": "nwb test",
