@@ -1,16 +1,15 @@
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
 import DistrictTable from '../components/DistrictTable';
-import { formatNumber, getYearsFromRange } from '../../utils/data';
-import masindiSchoolData from '../../../public/assets/data/masindi/numberOfSchools.json';
+import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
-const parseTableData = (subCounty, level) => {
+const parseTableData = (data, subCounty, level) => {
   const years = getYearsFromRange([2012, 2021]);
   const COLUMN_CAPTIONS = ['Government', 'Private'];
   const headerRow = ['Years'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((purpose) => {
     const numberOfSchoolsByYear = {};
-    masindiSchoolData
+    data
       .filter((school) =>
         subCounty && subCounty !== 'all' ? school.SubCounty.toLowerCase() === subCounty.toLowerCase() : true
       )
@@ -104,24 +103,21 @@ const renderTable = (config) => {
     className: config.className,
     d3: {
       onAdd: (tableNodes) => {
-        Array.prototype.forEach.call(tableNodes, (tableNode) => {
-          const dichart = new window.DICharts.Chart(tableNode.parentElement);
-          dichart.showLoading();
+        fetchData(config.url).then((data) => {
+          Array.prototype.forEach.call(tableNodes, (tableNode) => {
+            const dichart = new window.DICharts.Chart(tableNode.parentElement);
+            dichart.showLoading();
 
-          const root = createRoot(tableNode);
-          if (window.DIState) {
+            const root = createRoot(tableNode);
             window.DIState.addListener(() => {
               dichart.showLoading();
-              // TODO: get and store data in state object
               const { subCounty, level } = window.DIState.getState;
-              const rows = parseTableData(subCounty, level);
+              const rows = parseTableData(data, subCounty, level);
               root.render(createElement(DistrictTable, { rows }));
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
             });
-          } else {
-            window.console.log('State is not defined');
-          }
+          });
         });
       },
     },
