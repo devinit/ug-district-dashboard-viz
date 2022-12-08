@@ -5,20 +5,20 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
 const parseTableData = (config, data, subCounty, level) => {
   const { rows: COLUMN_CAPTIONS, mapping } = config;
-  const years = getYearsFromRange([2012, 2021]);
+  const years = getYearsFromRange(config.yearRange);
   const headerRow = ['Years'].concat(years);
-  const dataRows = COLUMN_CAPTIONS.map((purpose) => {
+  const dataRows = COLUMN_CAPTIONS.map((item) => {
     const numberOfSchoolsByYear = {};
     data
       .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
       .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
       .forEach((row) => {
-        if (!numberOfSchoolsByYear[row[mapping.year]] && purpose === row.Type) {
+        if (!numberOfSchoolsByYear[row[mapping.year]] && item === row[mapping.rows]) {
           numberOfSchoolsByYear[row[mapping.year]] = [
             ...(numberOfSchoolsByYear[row[mapping.year]] || []),
             parseInt(row[mapping.value], 10),
           ];
-        } else if (purpose === row.Type) {
+        } else if (item === row[mapping.rows]) {
           numberOfSchoolsByYear[row[mapping.year]] = [
             ...numberOfSchoolsByYear[row[mapping.year]],
             parseInt(row[mapping.value], 10),
@@ -33,7 +33,7 @@ const parseTableData = (config, data, subCounty, level) => {
 
     const relevantYears = years.map((year) => (schoolSumsByYear[year] ? schoolSumsByYear[year] : 0));
 
-    return [purpose].concat(relevantYears);
+    return [item].concat(relevantYears);
   });
 
   const totalsRowCaption = 'Total';

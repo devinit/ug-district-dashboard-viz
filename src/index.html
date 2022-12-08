@@ -124,6 +124,28 @@
             </div>
           </div>
         </section>
+
+        <section class="section">
+          <div class="row row--narrow">
+            <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+            <div class="chart-container chart-container--full">
+              <div class="charts__chart">
+                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+                <div class="dicharts--table--learners-enrolment"></div>
+                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+                <div class="chart-loading">
+                  <div class="chart-loading__block">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
@@ -215,6 +237,23 @@
               year: 'year',
               value: 'Value',
               subCounty: 'SubCounty',
+              level: 'level',
+            },
+            filters: {
+              subCounties: subCounties,
+            },
+          },
+          {
+            target: 'education',
+            className: 'dicharts--table--learners-enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            yearRange: [2018, 2021],
+            rows: ['Government', 'Private'],
+            mapping: {
+              rows: 'type',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
               level: 'level',
             },
             filters: {
