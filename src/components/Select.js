@@ -13,7 +13,17 @@ const selectStyles = {
     ':hover': { borderColor: '#8f1b13' },
     ':active': { borderColor: '#8f1b13' },
   }),
-  option: (styles) => ({ ...styles, fontSize: '14px' }),
+  menu: (styles) => ({
+    ...styles,
+    color: '#443e42',
+    backgroundColor: '#FFFFFF',
+  }),
+  option: (styles, state) => ({
+    ...styles,
+    fontSize: '14px',
+    ':hover': { backgroundColor: '#f0826d' },
+    backgroundColor: state.isSelected ? '#8f1b13' : 'transparent',
+  }),
   singleValue: (styles) => ({ ...styles, fontSize: '14px' }),
   multiValue: (styles) => ({ ...styles, fontSize: '14px' }),
   multiValueLabel: (base, state) => (!state.data.isCloseable ? { ...base, paddingRight: 6 } : base),
