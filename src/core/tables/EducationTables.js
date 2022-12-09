@@ -8,30 +8,26 @@ const parseTableData = (config, data, subCounty, level) => {
   const years = getYearsFromRange(config.yearRange);
   const headerRow = ['School Type'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((item) => {
-    const numberOfSchoolsByYear = {};
+    const valuesByYear = {};
     data
+      .filter((row) => years.includes(Number(row[mapping.year])))
       .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
       .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
       .forEach((row) => {
-        if (!numberOfSchoolsByYear[row[mapping.year]] && item === row[mapping.rows]) {
-          numberOfSchoolsByYear[row[mapping.year]] = [
-            ...(numberOfSchoolsByYear[row[mapping.year]] || []),
-            parseInt(row[mapping.value], 10),
-          ];
+        const yearValues = valuesByYear[row[mapping.year]];
+        if (!yearValues && item === row[mapping.rows]) {
+          valuesByYear[row[mapping.year]] = [...(yearValues || []), Number(row[mapping.value])];
         } else if (item === row[mapping.rows]) {
-          numberOfSchoolsByYear[row[mapping.year]] = [
-            ...numberOfSchoolsByYear[row[mapping.year]],
-            parseInt(row[mapping.value], 10),
-          ];
+          valuesByYear[row[mapping.year]] = [...yearValues, Number(row[mapping.value])];
         }
       });
 
-    const schoolSumsByYear = {};
-    Object.keys(numberOfSchoolsByYear).forEach((year) => {
-      schoolSumsByYear[year] = numberOfSchoolsByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+    const aggregatedValuesByYear = {};
+    Object.keys(valuesByYear).forEach((year) => {
+      aggregatedValuesByYear[year] = valuesByYear[year].reduce((partialSum, a) => partialSum + a, 0);
     });
 
-    const relevantYears = years.map((year) => (schoolSumsByYear[year] ? schoolSumsByYear[year] : 0));
+    const relevantYears = years.map((year) => (aggregatedValuesByYear[year] ? aggregatedValuesByYear[year] : 0));
 
     return [item].concat(relevantYears);
   });
