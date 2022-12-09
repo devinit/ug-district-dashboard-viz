@@ -10,7 +10,7 @@ const parseTableData = (config, data, subCounty, level) => {
   const dataRows = COLUMN_CAPTIONS.map((item) => {
     const valuesByYear = {};
     data
-      .filter((row) => years.includes(Number(row[mapping.year])))
+      .filter((row) => years.includes(Number(row[mapping.year])) && row[mapping.rows] === item)
       .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
       .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
       .forEach((row) => {
@@ -24,7 +24,12 @@ const parseTableData = (config, data, subCounty, level) => {
 
     const aggregatedValuesByYear = {};
     Object.keys(valuesByYear).forEach((year) => {
-      aggregatedValuesByYear[year] = valuesByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+      if (!config.aggregator || config.aggregator === 'sum') {
+        aggregatedValuesByYear[year] = valuesByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+      } else if (config.aggregator && config.aggregator === 'avg') {
+        const sum = valuesByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+        aggregatedValuesByYear[year] = sum / valuesByYear[year].length;
+      }
     });
 
     const relevantYears = years.map((year) => (aggregatedValuesByYear[year] ? aggregatedValuesByYear[year] : 0));
@@ -110,14 +115,20 @@ const renderTable = (config) => {
             const defaultSubCounty = 'all';
             const defaultLevel = 'all';
             const root = createRoot(tableNode);
+            let selectedLevel = defaultLevel;
+            let selectedSubCounty = defaultSubCounty;
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { subCounty = defaultSubCounty, level = defaultLevel } = window.DIState.getState;
+              const { subCounty, level } = window.DIState.getState;
+              if (subCounty === selectedSubCounty && level === selectedLevel) return;
+
+              selectedSubCounty = subCounty || defaultSubCounty;
+              selectedLevel = level || defaultLevel;
               const filteredData =
                 config.filters && config.filters.subCounties
                   ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
                   : data;
-              const rows = parseTableData(config, filteredData, subCounty, level);
+              const rows = parseTableData(config, filteredData, selectedSubCounty, selectedLevel);
               root.render(createElement(DistrictTable, { rows }));
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
