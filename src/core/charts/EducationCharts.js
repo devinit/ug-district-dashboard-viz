@@ -75,7 +75,7 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
       if (config.aggregator === 'avg') {
         const sum = yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-        return sum / yearValues.length;
+        return formatNumber(sum / yearValues.length);
       }
 
       throw new Error('Invalid aggregator: ', config.aggregator);
