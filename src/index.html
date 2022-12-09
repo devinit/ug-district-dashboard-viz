@@ -232,6 +232,7 @@
             target: 'education',
             className: 'dicharts--number-of-schools',
             url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            type: 'bar',
             yearRange: [2016, 2021],
             series: ['Government', 'Private'],
             mapping: {
@@ -272,6 +273,7 @@
             target: 'education',
             className: 'dicharts--classroom-learners-ratio',
             url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/classroom_to_pupil_ratio.csv',
+            type: 'area',
             yearRange: [2018, 2021],
             series: ['Government', 'Private'],
             mapping: {
@@ -285,6 +287,12 @@
               subCounties: subCounties,
             },
             aggregator: 'avg',
+            options: {
+              xAxis: {
+                boundaryGap: false,
+              },
+              series: [{ label: { show: false } }, { label: { show: false } }],
+            },
           },
         ],
         tables: [
