@@ -1,5 +1,6 @@
 import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
+import { combineMerge } from '../../utils';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
 const defaultSubCounty = 'all';
@@ -13,12 +14,21 @@ const getYears = (data, yearRange) => {
 
   return sortedStringYears;
 };
+const getChartType = (type) => {
+  if (!type) return 'bar';
+
+  if (type === 'area') return 'line';
+
+  return type;
+};
 const getSeries = (config, dataArray, subCounty, years, level) => {
   const { series: seriesNames, mapping } = config;
   const series = seriesNames.map((seriesName, index) => ({
     name: seriesName,
-    type: 'bar',
-    stack: 'School Type',
+    type: getChartType(config.type),
+    stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'School Type' : undefined,
+    areaStyle: config.type === 'area' ? {} : undefined,
+    smooth: true,
     emphasis: {
       focus: 'series',
     },
@@ -191,7 +201,7 @@ const renderChart = (config) => {
                   series: getSeries(config, filteredData, subCounty, years, level),
                 });
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
-                chart.setOption(deepMerge(options, config.options || {}));
+                chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 
                 dichart.hideLoading();
               });
