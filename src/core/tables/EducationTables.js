@@ -14,12 +14,8 @@ const parseTableData = (config, data, subCounty, level) => {
       .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
       .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
       .forEach((row) => {
-        const yearValues = valuesByYear[row[mapping.year]];
-        if (!yearValues && item === row[mapping.rows]) {
-          valuesByYear[row[mapping.year]] = [...(yearValues || []), Number(row[mapping.value])];
-        } else if (item === row[mapping.rows]) {
-          valuesByYear[row[mapping.year]] = [...yearValues, Number(row[mapping.value])];
-        }
+        const yearValues = valuesByYear[row[mapping.year]] || [];
+        valuesByYear[row[mapping.year]] = [...yearValues, Number(row[mapping.value])];
       });
 
     const aggregatedValuesByYear = {};
