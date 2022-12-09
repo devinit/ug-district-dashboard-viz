@@ -168,6 +168,28 @@
             </div>
           </div>
         </section>
+
+        <section class="section">
+          <div class="row row--narrow">
+            <h3 class="type-l type-l--trailer">Classroom to learner's ratio</h3>
+            <div class="chart-container chart-container--full">
+              <div class="charts__chart">
+                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+                <div class="dicharts--classroom-learners-ratio"></div>
+                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+                <div class="chart-loading">
+                  <div class="chart-loading__block">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
@@ -245,6 +267,24 @@
             options: {
               yAxis: { name: 'Learners enrolled' },
             },
+          },
+          {
+            target: 'education',
+            className: 'dicharts--classroom-learners-ratio',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/classroom_to_pupil_ratio.csv',
+            yearRange: [2018, 2021],
+            series: ['Government', 'Private'],
+            mapping: {
+              series: 'type',
+              year: 'year',
+              value: 'classroom_capacity',
+              subCounty: 'subcounty',
+              level: 'level',
+            },
+            filters: {
+              subCounties: subCounties,
+            },
+            aggregator: 'avg',
           },
         ],
         tables: [
