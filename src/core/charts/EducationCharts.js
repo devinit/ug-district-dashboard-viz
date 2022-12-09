@@ -35,7 +35,7 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
       },
     },
     data: years.map((year) => {
-      const yearList = [];
+      const yearValues = [];
       dataArray
         .filter((item) => {
           if ((!subCounty && !level) || (subCounty === defaultSubCounty && level === defaultLevel)) {
@@ -55,11 +55,20 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
         })
         .forEach((item) => {
           if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
-            yearList.push(Number(item[mapping.value]));
+            yearValues.push(Number(item[mapping.value]));
           }
         });
 
-      return yearList.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+      if (!config.aggregator || config.aggregator === 'sum') {
+        return yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+      }
+      if (config.aggregator === 'avg') {
+        const sum = yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+        return sum / yearValues.length;
+      }
+
+      throw new Error('Invalid aggregator: ', config.aggregator);
     }),
   }));
 
