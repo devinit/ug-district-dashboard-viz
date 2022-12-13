@@ -9,7 +9,6 @@ import ProductionTab from './ProductionTab';
 import SpotlightTab from '../../components/SpotlightTab';
 
 const formatData = (data) => {
-  // console.log(data);
   const formattedData = {};
 
   const format = (item) => ({ caption: item.Item, value: item.Value, lastUpdated: item['Last Updated'] });
@@ -50,7 +49,7 @@ const KeyFacts = (props) => {
   return (
     <KeyFactsContext.Provider value={{ ...props, data }}>
       <SpotlightTab>
-        <OverviewTab />
+        <OverviewTab active />
         <EducationTab />
         <ProductionTab />
       </SpotlightTab>

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
+import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import IndicatorStat from '../../components/IndicatorStat';
 import IndicatorStatDataViewer from '../../components/IndicatorStat/IndicatorStatDataViewer';
@@ -9,22 +10,27 @@ import SpotlightPopup from '../../components/SpotlightPopup';
 import TabContentHeader from '../../components/SpotlightTab/TabContentHeader';
 import { formatNumber } from '../../utils/data';
 import { KeyFactsContext } from '../context';
+import { getTabOptions } from '../utils';
 
-const ProductionTab = () => {
+const ProductionTab = (props) => {
   const { data, location, options } = useContext(KeyFactsContext);
+  const id = 'production';
+  const tabOptions = getTabOptions(options.tabs, id);
+
+  if (tabOptions.show !== undefined && !tabOptions.show) return null;
 
   const HEADING_CAPTION = '';
   const heading = data && data.production ? data.production.find((item) => item.caption === HEADING_CAPTION) : null;
 
   const renderDashboardButton = () =>
-    options.dashboardURL ? (
-      <a href={options.dashboardURL} className="button button--secondary--fill">
-        {options.dashboardButtonCaption || 'View Full Dashboard'}
+    tabOptions.dashboardURL ? (
+      <a href={tabOptions.dashboardURL} className="button button--secondary--fill">
+        {tabOptions.dashboardButtonCaption || 'View Full Dashboard'}
       </a>
     ) : null;
 
   return (
-    <TabContainer id="production" label="Production">
+    <TabContainer id={id} label={tabOptions.label || 'Production'} active={!!props.active || tabOptions.active}>
       <TabContent>
         {heading ? (
           <TabContentHeader>
@@ -99,6 +105,10 @@ const ProductionTab = () => {
       </TabContent>
     </TabContainer>
   );
+};
+
+ProductionTab.propTypes = {
+  active: PropTypes.bool,
 };
 
 export default ProductionTab;
