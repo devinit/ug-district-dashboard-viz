@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   type: 'web-app',
   webpack: {
@@ -7,7 +5,7 @@ module.exports = {
       css: [
         // Create a rule which uses CSS modules for CSS imported from src/components
         {
-          include: path.resolve('src/styles'),
+          test: '*.css',
           // Configuration options for css-loader
           css: {
             modules: false,
