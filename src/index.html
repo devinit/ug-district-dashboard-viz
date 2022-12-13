@@ -219,6 +219,28 @@
     <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
     <script>
       const subCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+      const topics = [
+        {
+          id: 'education',
+          name: 'Education',
+          yearRange: [2016, 2021],
+          dashboardUrl: 'https://google.com',
+          dashboardButtonCaption: 'View Education Dashboard',
+          indicators: [
+            {
+              id: 'numberOfSchools',
+              name: 'Number of schools',
+              description: 'Description Goes Here!',
+              legend: [50, 55, 60, 65],
+              colour: '#333',
+            },
+            {
+              id: 'learnersEnrolment',
+              name: 'Learners Enrolment',
+            },
+          ],
+        },
+      ];
       const state = {
         location: { name: 'Masindi', fullName: 'Masindi District' },
         selectors: [
@@ -242,6 +264,14 @@
             ],
           },
         ],
+        map: {
+          filters: {
+            topicLabel: 'Select a topic to explore',
+            indicatorLabel: 'Choose an indicator',
+            yearLabel: 'Choose a year',
+            data: topics,
+          },
+        },
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
           tabs: [
