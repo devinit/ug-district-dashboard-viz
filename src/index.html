@@ -224,8 +224,23 @@
         ],
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
-          dashboardURL: 'https://google.com/',
-          dashboardButtonCaption: 'View Dashboard',
+          tabs: [
+            {
+              id: 'overview',
+              show: true, // defaults to true
+              label: 'Overview Tab',
+            },
+            {
+              id: 'education',
+              dashboardURL: 'https://google.com/', // when undefined, button is not shown
+              dashboardButtonCaption: 'View Education Dashboard',
+            },
+            {
+              id: 'production',
+              dashboardURL: 'https://google.com/',
+              dashboardButtonCaption: 'View Production Dashboard',
+            },
+          ],
         },
         charts: [
           {
