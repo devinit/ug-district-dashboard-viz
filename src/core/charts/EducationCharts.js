@@ -1,5 +1,6 @@
 import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
+import { combineMerge } from '../../utils';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
 const defaultSubCounty = 'all';
@@ -13,12 +14,21 @@ const getYears = (data, yearRange) => {
 
   return sortedStringYears;
 };
+const getChartType = (type) => {
+  if (!type) return 'bar';
+
+  if (type === 'area') return 'line';
+
+  return type;
+};
 const getSeries = (config, dataArray, subCounty, years, level) => {
   const { series: seriesNames, mapping } = config;
   const series = seriesNames.map((seriesName, index) => ({
     name: seriesName,
-    type: 'bar',
-    stack: 'School Type',
+    type: getChartType(config.type),
+    stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'School Type' : undefined,
+    areaStyle: config.type === 'area' ? {} : undefined,
+    smooth: true,
     emphasis: {
       focus: 'series',
     },
@@ -35,7 +45,7 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
       },
     },
     data: years.map((year) => {
-      const yearList = [];
+      const yearValues = [];
       dataArray
         .filter((item) => {
           if ((!subCounty && !level) || (subCounty === defaultSubCounty && level === defaultLevel)) {
@@ -55,11 +65,20 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
         })
         .forEach((item) => {
           if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
-            yearList.push(Number(item[mapping.value]));
+            yearValues.push(Number(item[mapping.value]));
           }
         });
 
-      return yearList.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+      if (!config.aggregator || config.aggregator === 'sum') {
+        return yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+      }
+      if (config.aggregator === 'avg') {
+        const sum = yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+        return formatNumber(sum / yearValues.length);
+      }
+
+      throw new Error('Invalid aggregator: ', config.aggregator);
     }),
   }));
 
@@ -182,7 +201,7 @@ const renderChart = (config) => {
                   series: getSeries(config, filteredData, subCounty, years, level),
                 });
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
-                chart.setOption(deepMerge(options, config.options || {}));
+                chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 
                 dichart.hideLoading();
               });

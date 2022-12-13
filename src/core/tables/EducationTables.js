@@ -8,30 +8,27 @@ const parseTableData = (config, data, subCounty, level) => {
   const years = getYearsFromRange(config.yearRange);
   const headerRow = ['School Type'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((item) => {
-    const numberOfSchoolsByYear = {};
+    const valuesByYear = {};
     data
+      .filter((row) => years.includes(Number(row[mapping.year])) && row[mapping.rows] === item)
       .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
       .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
       .forEach((row) => {
-        if (!numberOfSchoolsByYear[row[mapping.year]] && item === row[mapping.rows]) {
-          numberOfSchoolsByYear[row[mapping.year]] = [
-            ...(numberOfSchoolsByYear[row[mapping.year]] || []),
-            parseInt(row[mapping.value], 10),
-          ];
-        } else if (item === row[mapping.rows]) {
-          numberOfSchoolsByYear[row[mapping.year]] = [
-            ...numberOfSchoolsByYear[row[mapping.year]],
-            parseInt(row[mapping.value], 10),
-          ];
-        }
+        const yearValues = valuesByYear[row[mapping.year]] || [];
+        valuesByYear[row[mapping.year]] = [...yearValues, Number(row[mapping.value])];
       });
 
-    const schoolSumsByYear = {};
-    Object.keys(numberOfSchoolsByYear).forEach((year) => {
-      schoolSumsByYear[year] = numberOfSchoolsByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+    const aggregatedValuesByYear = {};
+    Object.keys(valuesByYear).forEach((year) => {
+      if (!config.aggregator || config.aggregator === 'sum') {
+        aggregatedValuesByYear[year] = valuesByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+      } else if (config.aggregator && config.aggregator === 'avg') {
+        const sum = valuesByYear[year].reduce((partialSum, a) => partialSum + a, 0);
+        aggregatedValuesByYear[year] = sum / valuesByYear[year].length;
+      }
     });
 
-    const relevantYears = years.map((year) => (schoolSumsByYear[year] ? schoolSumsByYear[year] : 0));
+    const relevantYears = years.map((year) => (aggregatedValuesByYear[year] ? aggregatedValuesByYear[year] : 0));
 
     return [item].concat(relevantYears);
   });
@@ -114,14 +111,20 @@ const renderTable = (config) => {
             const defaultSubCounty = 'all';
             const defaultLevel = 'all';
             const root = createRoot(tableNode);
+            let selectedLevel = defaultLevel;
+            let selectedSubCounty = defaultSubCounty;
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { subCounty = defaultSubCounty, level = defaultLevel } = window.DIState.getState;
+              const { subCounty, level } = window.DIState.getState;
+              if (subCounty === selectedSubCounty && level === selectedLevel) return;
+
+              selectedSubCounty = subCounty || defaultSubCounty;
+              selectedLevel = level || defaultLevel;
               const filteredData =
                 config.filters && config.filters.subCounties
                   ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
                   : data;
-              const rows = parseTableData(config, filteredData, subCounty, level);
+              const rows = parseTableData(config, filteredData, selectedSubCounty, selectedLevel);
               root.render(createElement(DistrictTable, { rows }));
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
