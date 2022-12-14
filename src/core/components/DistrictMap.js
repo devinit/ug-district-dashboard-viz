@@ -13,7 +13,7 @@ const layers = [
     center: [32.655221, 1.344666],
     zoom: 5.5,
     minZoom: 5,
-    maxZoom: 8,
+    maxZoom: 8.5,
     nameProperty: 'DName2019',
     codeProperty: 'dc2018',
     formatter: (value, target = 'map') => {
@@ -93,7 +93,7 @@ const renderLayers = () => {
 
 const DistrictMap = () => (
   <div className="spotlight">
-    <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '450px' }}>
+    <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '500px' }}>
       Sidebar Goes Here
     </div>
     <div className="spotlight__main spotlight__main--map">
