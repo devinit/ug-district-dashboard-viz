@@ -1,7 +1,8 @@
 .dicharts--d3-boilerplate-chart,
 .dicharts--echarts-boilerplate-chart,
 .dicharts--number-of-schools,
-.dicharts--dimensions {
+.dicharts--dimensions,
+.dicharts--district-map {
     width: 100%;
     height: 400px;
 }
