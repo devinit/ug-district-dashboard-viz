@@ -4,42 +4,40 @@ import PropTypes from 'prop-types';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
 
 export const COLOURED_LAYER = 'highlight';
-const layers = [
-  {
-    type: 'shapefile',
-    style: 'mapbox://styles/edwinmp/ck6an0ra90nob1ikvysfmbg15',
-    sourceLayer: 'uganda_districts_2019_i-9qg3nj',
-    layerName: 'uganda-districts-2019-i-9qg3nj',
-    center: [32.655221, 1.344666],
-    zoom: 5.5,
-    minZoom: 5,
-    maxZoom: 8.5,
-    nameProperty: 'DName2019',
-    codeProperty: 'dc2018',
-    formatter: (value, target = 'map') => {
-      if (target === 'map') {
-        if (value.toLowerCase() === 'sembabule') {
-          return 'SSEMBABULE';
-        }
-        if (value.toLowerCase() === 'kasanda') {
-          return 'KASSANDA';
-        }
+const coreLayer = {
+  type: 'shapefile',
+  style: 'mapbox://styles/edwinmp/ck6an0ra90nob1ikvysfmbg15',
+  sourceLayer: 'uganda_districts_2019_i-9qg3nj',
+  layerName: 'uganda-districts-2019-i-9qg3nj',
+  center: [32.655221, 1.344666],
+  zoom: 5.5,
+  minZoom: 5,
+  maxZoom: 8.5,
+  nameProperty: 'DName2019',
+  codeProperty: 'dc2018',
+  formatter: (value, target = 'map') => {
+    if (target === 'map') {
+      if (value.toLowerCase() === 'sembabule') {
+        return 'SSEMBABULE';
       }
-      if (target === 'tooltip') {
-        if (value.toLowerCase() === 'ssembabule') {
-          return 'SEMBABULE';
-        }
-        if (value.toLowerCase() === 'kassanda') {
-          return 'KASANDA';
-        }
+      if (value.toLowerCase() === 'kasanda') {
+        return 'KASSANDA';
       }
+    }
+    if (target === 'tooltip') {
+      if (value.toLowerCase() === 'ssembabule') {
+        return 'SEMBABULE';
+      }
+      if (value.toLowerCase() === 'kassanda') {
+        return 'KASANDA';
+      }
+    }
 
-      return value.toUpperCase();
-    },
+    return value.toUpperCase();
   },
-];
+};
 const renderLayers = () => {
-  const hiddenLayers = layers.map((layer, index) => (
+  const hiddenLayers = [coreLayer].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
       id={layer.layerName}
@@ -100,11 +98,11 @@ const DistrictMap = () => (
       <BaseMap
         accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
         options={{
-          style: layers[0].style,
-          center: layers[0].center,
-          minZoom: layers[0].minZoom || 6,
-          zoom: layers[0].zoom || 6.1,
-          maxZoom: layers[0].maxZoom || 7,
+          style: coreLayer.style,
+          center: coreLayer.center,
+          minZoom: coreLayer.minZoom || 6,
+          zoom: coreLayer.zoom || 6.1,
+          maxZoom: coreLayer.maxZoom || 7,
           scrollZoom: false,
         }}
         style={{ width: '100%', background: '#ffffff' }}
