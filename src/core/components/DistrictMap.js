@@ -18,13 +18,10 @@ const coreLayer = {
   maxZoom: 8.5,
   nameProperty: 'ADM3_EN', // 'ADM1_EN',
   codeProperty: 'ADM3_PCODE',
-  formatter: (value, target = 'map') => {
-    console.log(value, target);
-
-    return value.toUpperCase();
-  },
+  // eslint-disable-next-line no-unused-vars
+  formatter: (value, target = 'map') => value.toUpperCase(),
 };
-const renderLayers = () => {
+const renderLayers = (loading, data) => {
   const hiddenLayers = [coreLayer].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
@@ -35,29 +32,29 @@ const renderLayers = () => {
     />
   ));
 
-  //   if (!dataLoading && locationData.length) {
-  //     return hiddenLayers.concat(
-  //       <BaseMapLayer
-  //         key={COLOURED_LAYER}
-  //         id={COLOURED_LAYER}
-  //         source="composite"
-  //         source-layer={'uganda_districts_2019_i-9qg3nj'}
-  //         // maxzoom={options.maxZoom && options.maxZoom + 1}
-  //         type="fill"
-  //         paint={{
-  //           'fill-color': {
-  //             property: 'DName2019',
-  //             type: 'categorical',
-  //             default: '#D1CBCF',
-  //             // stops: getLocationStyles(locationData, range, colours, options.formatter),
-  //           },
-  //           'fill-opacity': 0.75,
-  //           'fill-outline-color': '#ffffff',
-  //         }}
-  //         // onAdd={onAddLayer}
-  //       />
-  //     );
-  //   }
+  if (!loading && data.length) {
+    return hiddenLayers.concat(
+      <BaseMapLayer
+        key={COLOURED_LAYER}
+        id={COLOURED_LAYER}
+        source="composite"
+        source-layer={'uganda_districts_2019_i-9qg3nj'}
+        // maxzoom={options.maxZoom && options.maxZoom + 1}
+        type="fill"
+        paint={{
+          'fill-color': {
+            property: coreLayer.nameProperty,
+            type: 'categorical',
+            default: '#D1CBCF',
+            // stops: getLocationStyles(locationData, range, colours, options.formatter),
+          },
+          'fill-opacity': 0.75,
+          'fill-outline-color': '#ffffff',
+        }}
+        // onAdd={onAddLayer}
+      />
+    );
+  }
 
   return hiddenLayers.concat(
     <BaseMapLayer
@@ -77,7 +74,7 @@ const renderLayers = () => {
   );
 };
 
-const DistrictMap = () => {
+const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [map, setMap] = useState(undefined);
   useMap(map, '', coreLayer);
@@ -113,15 +110,20 @@ const DistrictMap = () => {
           style={{ width: '100%', background: '#ffffff' }}
           onLoad={onLoad}
         >
-          {renderLayers()}
+          {renderLayers(loading, props.data)}
         </BaseMap>
       </div>
     </div>
   );
 };
 
+DistrictMap.defaultProps = {
+  data: [],
+};
+
 DistrictMap.propTypes = {
   configs: PropTypes.object,
+  data: PropTypes.array,
 };
 
 export default DistrictMap;
