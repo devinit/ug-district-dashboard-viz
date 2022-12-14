@@ -158,7 +158,7 @@ export const renderPopup = (map, popup, position, locationName, value) =>
           <div style="font-size:1.6rem;padding-bottom:5px;font-weight:700;text-align:center;text-transform:capitalize;">
             ${locationName.toLowerCase()}
           </div>
-          <em style="font-size:1.4rem;">${value}</em>
+          ${value ? `<em style="font-size:1.4rem;">${value}</em>` : ''}
         </div>
       `
     )
@@ -176,8 +176,12 @@ export const renderTooltipFromEvent = (map, event, options) => {
   const locationName = getLocationNameFromEvent(event, nameProperty);
   if (locationName) {
     const boundaryName = formatter ? formatter(locationName, 'tooltip') : locationName;
-    const location = findLocationData(boundaryName, data);
-    renderPopup(map, popup, event.lngLat, boundaryName, getTooltipValue(options, location));
+    if (data) {
+      const location = findLocationData(boundaryName, data);
+      renderPopup(map, popup, event.lngLat, boundaryName, getTooltipValue(options, location));
+    } else {
+      renderPopup(map, popup, event.lngLat, boundaryName, '');
+    }
   }
 };
 
