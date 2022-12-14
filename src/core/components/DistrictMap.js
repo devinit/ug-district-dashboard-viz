@@ -1,37 +1,24 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
+import { setZoomByContainerWidth } from '../../components/BaseMap/utils';
 
 export const COLOURED_LAYER = 'highlight';
 const coreLayer = {
   type: 'shapefile',
-  style: 'mapbox://styles/edwinmp/ck6an0ra90nob1ikvysfmbg15',
-  sourceLayer: 'uganda_districts_2019_i-9qg3nj',
-  layerName: 'uganda-districts-2019-i-9qg3nj',
+  style: 'mapbox://styles/edwinmp/ck42rrx240t8p1cqpkhgy2g0m',
+  sourceLayer: 'uga_admbnda_adm3_ubos_v5-9li2ca',
+  layerName: 'uga-admbnda-adm3-ubos-v5-9li2ca',
   center: [32.655221, 1.344666],
-  zoom: 5.5,
-  minZoom: 5,
+  zoom: 8,
+  minZoom: 8,
   maxZoom: 8.5,
-  nameProperty: 'DName2019',
-  codeProperty: 'dc2018',
+  nameProperty: 'ADM1_EN', // 'ADM3_EN',
+  codeProperty: 'ADM1_PCODE',
   formatter: (value, target = 'map') => {
-    if (target === 'map') {
-      if (value.toLowerCase() === 'sembabule') {
-        return 'SSEMBABULE';
-      }
-      if (value.toLowerCase() === 'kasanda') {
-        return 'KASSANDA';
-      }
-    }
-    if (target === 'tooltip') {
-      if (value.toLowerCase() === 'ssembabule') {
-        return 'SEMBABULE';
-      }
-      if (value.toLowerCase() === 'kassanda') {
-        return 'KASANDA';
-      }
-    }
+    console.log(value, target);
 
     return value.toUpperCase();
   },
@@ -76,7 +63,7 @@ const renderLayers = () => {
       key={COLOURED_LAYER}
       id={COLOURED_LAYER}
       source="composite"
-      source-layer={'uganda_districts_2019_i-9qg3nj'}
+      source-layer={coreLayer.sourceLayer}
       //   maxzoom={options.maxZoom && options.maxZoom + 1}
       type="fill"
       paint={{
@@ -89,30 +76,47 @@ const renderLayers = () => {
   );
 };
 
-const DistrictMap = () => (
-  <div className="spotlight">
-    <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '500px' }}>
-      Sidebar Goes Here
+const DistrictMap = () => {
+  const [loading, setLoading] = useState(true);
+  const [map, setMap] = useState(undefined);
+
+  useEffect(() => {
+    if (map) {
+      setZoomByContainerWidth(map, map.getContainer(), coreLayer);
+    }
+  }, [map]);
+
+  const onLoad = (_map) => {
+    setLoading(false);
+    setMap(_map);
+  };
+
+  return (
+    <div className="spotlight">
+      <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '500px' }}>
+        Sidebar Goes Here
+      </div>
+      <div className="spotlight__main spotlight__main--map">
+        {loading ? <div>Loading ...</div> : null}
+        <BaseMap
+          accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
+          options={{
+            style: coreLayer.style,
+            center: coreLayer.center,
+            minZoom: coreLayer.minZoom || 6,
+            zoom: coreLayer.zoom || 6.1,
+            maxZoom: coreLayer.maxZoom || 7,
+            scrollZoom: false,
+          }}
+          style={{ width: '100%', background: '#ffffff' }}
+          onLoad={onLoad}
+        >
+          {renderLayers()}
+        </BaseMap>
+      </div>
     </div>
-    <div className="spotlight__main spotlight__main--map">
-      <BaseMap
-        accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
-        options={{
-          style: coreLayer.style,
-          center: coreLayer.center,
-          minZoom: coreLayer.minZoom || 6,
-          zoom: coreLayer.zoom || 6.1,
-          maxZoom: coreLayer.maxZoom || 7,
-          scrollZoom: false,
-        }}
-        style={{ width: '100%', background: '#ffffff' }}
-        // onLoad={onLoad}
-      >
-        {renderLayers()}
-      </BaseMap>
-    </div>
-  </div>
-);
+  );
+};
 
 DistrictMap.propTypes = {
   configs: PropTypes.object,
