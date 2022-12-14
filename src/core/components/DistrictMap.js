@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
+import PropTypes from 'prop-types';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
 
 export const COLOURED_LAYER = 'highlight';
@@ -114,5 +115,9 @@ const DistrictMap = () => (
     </div>
   </div>
 );
+
+DistrictMap.propTypes = {
+  configs: PropTypes.object,
+};
 
 export default DistrictMap;

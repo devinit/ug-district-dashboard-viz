@@ -18,7 +18,7 @@ const renderViz = (className) => {
               const { map } = window.DIState.getState;
 
               if (map) {
-                root.render(<DistrictMap />);
+                root.render(<DistrictMap configs={map} />);
               } else {
                 root.render(<NoDataCentered />);
               }
