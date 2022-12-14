@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
 import { setZoomByContainerWidth } from '../../components/BaseMap/utils';
+import useMap from './hooks/DistrictMap';
 
 export const COLOURED_LAYER = 'highlight';
 const coreLayer = {
@@ -15,8 +16,8 @@ const coreLayer = {
   zoom: 8,
   minZoom: 8,
   maxZoom: 8.5,
-  nameProperty: 'ADM1_EN', // 'ADM3_EN',
-  codeProperty: 'ADM1_PCODE',
+  nameProperty: 'ADM3_EN', // 'ADM1_EN',
+  codeProperty: 'ADM3_PCODE',
   formatter: (value, target = 'map') => {
     console.log(value, target);
 
@@ -79,6 +80,7 @@ const renderLayers = () => {
 const DistrictMap = () => {
   const [loading, setLoading] = useState(true);
   const [map, setMap] = useState(undefined);
+  useMap(map, '', coreLayer);
 
   useEffect(() => {
     if (map) {
