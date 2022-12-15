@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
-import { flyToLocation, getProperLocationName, setZoomByContainerWidth } from '../../components/BaseMap/utils';
+import { flyToLocation, getProperLocationName } from '../../components/BaseMap/utils';
 import useMap from './hooks/DistrictMap';
 
 export const COLOURED_LAYER = 'highlight';
@@ -99,14 +99,7 @@ const renderLayers = (loading, data, location) => {
 
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
-  const [map, setMap] = useState(undefined);
-  useMap(map, '', coreLayer);
-
-  useEffect(() => {
-    if (map) {
-      setZoomByContainerWidth(map, map.getContainer(), coreLayer);
-    }
-  }, [map]);
+  const { setMap } = useMap(props.location, coreLayer);
 
   const onLoad = (_map) => {
     setLoading(false);
