@@ -15,10 +15,10 @@ const renderViz = (className) => {
             const root = createRoot(chartNode);
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { map } = window.DIState.getState;
+              const { map, location } = window.DIState.getState;
 
               if (map) {
-                root.render(<DistrictMap configs={map} />);
+                root.render(<DistrictMap configs={map} location={location} />);
               } else {
                 root.render(<NoDataCentered />);
               }

@@ -124,6 +124,10 @@ DistrictMap.defaultProps = {
 DistrictMap.propTypes = {
   configs: PropTypes.object,
   data: PropTypes.array,
+  location: PropTypes.shape({
+    name: PropTypes.string,
+    fullName: PropTypes.string,
+  }),
 };
 
 export default DistrictMap;
