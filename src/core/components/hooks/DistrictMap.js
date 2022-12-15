@@ -11,7 +11,14 @@ const useMap = (location, layer, data) => {
 
   useEffect(() => {
     if (map) {
+      // hide secondary layers
+      map.getStyle().layers.forEach((_layer) => {
+        if (_layer['source-layer'] !== layer.sourceLayer && !['background', 'highlight'].includes(_layer.id)) {
+          map.setLayoutProperty(_layer.id, 'visibility', 'none');
+        }
+      });
       setZoomByContainerWidth(map, map.getContainer(), layer);
+      // add tooltip
       const popup = new Popup({ offset: 5 });
       const canvas = map.getCanvas();
       const onHover = (event) => {
