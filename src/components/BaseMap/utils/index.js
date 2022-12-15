@@ -1,5 +1,5 @@
-import center from '@turf/center';
-import { featureCollection, point } from '@turf/helpers';
+import centerOfMass from '@turf/center-of-mass';
+import { polygon } from '@turf/helpers';
 import { LngLat } from 'mapbox-gl';
 
 const formatNumber = (value, decimals = 1) => {
@@ -88,34 +88,25 @@ export const getLocationNameFromEvent = (event, nameProperty) => {
   return null;
 };
 
-const getCoordinatesCenter = (coordinates) => {
-  const features = featureCollection(coordinates.map((position) => point(position)));
-
-  return center(features);
-};
-
 const getLngLatFromFeature = (feature) => {
   const position = feature.geometry && feature.geometry.coordinates;
 
   return position ? new LngLat(position[0], position[1]) : null;
 };
 
-const getPosition = ({ geometry }) => {
-  if (geometry) {
-    if (geometry.type === 'Polygon') {
-      const feature = getCoordinatesCenter(geometry.coordinates[0]);
+export const getPosition = (feature) => {
+  if (Array.isArray(feature)) {
+    const coordinates = feature.map((item) => {
+      const center = centerOfMass(item.geometry);
 
-      return getLngLatFromFeature(feature);
-    }
-    if (geometry.type === 'MultiPolygon') {
-      const positions = geometry.coordinates[0][0];
-      const feature = getCoordinatesCenter(positions);
+      return center.geometry.coordinates;
+    });
+    coordinates.push(coordinates[0]);
 
-      return getLngLatFromFeature(feature);
-    }
+    return getLngLatFromFeature(centerOfMass(polygon([coordinates])));
   }
 
-  return null;
+  return getLngLatFromFeature(centerOfMass(feature));
 };
 
 export const getPositionFromLocationName = (map, locationName, options) => {
@@ -124,7 +115,7 @@ export const getPositionFromLocationName = (map, locationName, options) => {
     filter: ['in', options.nameProperty, getProperLocationName(locationName, options.formatter)],
   });
 
-  return features && features.length ? getPosition(features[0]) : null;
+  return features && features.length ? getPosition(features) : null;
 };
 
 export const flyToLocation = (map, locationName, options, recenter = true) =>

@@ -15,7 +15,7 @@ const coreLayer = {
   center: [32.655221, 1.344666],
   zoom: 8,
   minZoom: 8,
-  maxZoom: 8.5,
+  maxZoom: 9,
   districtNameProperty: 'ADM1_EN',
   nameProperty: 'ADM3_EN', // 'ADM1_EN',
   codeProperty: 'ADM3_PCODE',
@@ -32,13 +32,17 @@ const onAddLayer = (map, layerID, location, layerConfig) => {
     ]);
     map.setPaintProperty(layerID, 'fill-color', '#d1d1d1');
     setTimeout(() => {
-      const locationName = layerConfig.formatter ? layerConfig.formatter(location.name) : location.name;
-      flyToLocation(map, locationName, layerConfig);
+      if (location.coordinates) {
+        map.flyTo({ center: location.coordinates, zoom: 8.5 });
+      } else {
+        const locationName = layerConfig.formatter ? layerConfig.formatter(location.name) : location.name;
+        flyToLocation(map, locationName, layerConfig);
+      }
     }, 500);
   }
 };
-const renderLayers = (loading, data, location) => {
-  const hiddenLayers = [coreLayer].map((layer, index) => (
+const renderLayers = (loading, data, location, layerConfig) => {
+  const hiddenLayers = [layerConfig].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
       id={layer.layerName}
@@ -51,8 +55,8 @@ const renderLayers = (loading, data, location) => {
   // eslint-disable-next-line no-underscore-dangle
   const addLayerCallback = (map, layerID) =>
     onAddLayer(map, layerID, location, {
-      ...coreLayer,
-      nameProperty: coreLayer.districtNameProperty, // since we want to highlight the district at this point
+      ...layerConfig,
+      nameProperty: layerConfig.districtNameProperty, // since we want to highlight the district at this point
     });
 
   if (!loading && data.length) {
@@ -61,12 +65,12 @@ const renderLayers = (loading, data, location) => {
         key={COLOURED_LAYER}
         id={COLOURED_LAYER}
         source="composite"
-        source-layer={coreLayer.sourceLayer}
-        maxzoom={coreLayer.maxZoom && coreLayer.maxZoom + 1}
+        source-layer={layerConfig.sourceLayer}
+        maxzoom={layerConfig.maxZoom && layerConfig.maxZoom + 1}
         type="fill"
         paint={{
           'fill-color': {
-            property: coreLayer.nameProperty,
+            property: layerConfig.nameProperty,
             type: 'categorical',
             default: '#D1CBCF',
             // stops: getLocationStyles(locationData, range, colours, options.formatter),
@@ -84,8 +88,8 @@ const renderLayers = (loading, data, location) => {
       key={COLOURED_LAYER}
       id={COLOURED_LAYER}
       source="composite"
-      source-layer={coreLayer.sourceLayer}
-      maxzoom={coreLayer.maxZoom && coreLayer.maxZoom + 1}
+      source-layer={layerConfig.sourceLayer}
+      maxzoom={layerConfig.maxZoom && layerConfig.maxZoom + 1}
       type="fill"
       paint={{
         'fill-color': '#D1CBCF',
@@ -108,7 +112,7 @@ const DistrictMap = (props) => {
 
   return (
     <div className="spotlight">
-      <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '500px' }}>
+      <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
         Sidebar Goes Here
       </div>
       <div className="spotlight__main spotlight__main--map">
@@ -126,7 +130,7 @@ const DistrictMap = (props) => {
           style={{ width: '100%', background: '#ffffff' }}
           onLoad={onLoad}
         >
-          {renderLayers(loading, props.data, props.location)}
+          {renderLayers(loading, props.data, props.location, coreLayer)}
         </BaseMap>
       </div>
     </div>
@@ -143,6 +147,7 @@ DistrictMap.propTypes = {
   location: PropTypes.shape({
     name: PropTypes.string,
     fullName: PropTypes.string,
+    coordinates: PropTypes.array,
   }),
 };
 
