@@ -3,25 +3,41 @@ import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
-import { setZoomByContainerWidth } from '../../components/BaseMap/utils';
+import { flyToLocation, getProperLocationName, setZoomByContainerWidth } from '../../components/BaseMap/utils';
 import useMap from './hooks/DistrictMap';
 
 export const COLOURED_LAYER = 'highlight';
 const coreLayer = {
   type: 'shapefile',
-  style: 'mapbox://styles/edwinmp/ck42rrx240t8p1cqpkhgy2g0m',
+  style: 'mapbox://styles/edwinmp/ck42rrx240t8p1cqpkhgy2g0m/draft',
   sourceLayer: 'uga_admbnda_adm3_ubos_v5-9li2ca',
   layerName: 'uga-admbnda-adm3-ubos-v5-9li2ca',
   center: [32.655221, 1.344666],
   zoom: 8,
   minZoom: 8,
   maxZoom: 8.5,
+  districtNameProperty: 'ADM1_EN',
   nameProperty: 'ADM3_EN', // 'ADM1_EN',
   codeProperty: 'ADM3_PCODE',
   // eslint-disable-next-line no-unused-vars
   formatter: (value, target = 'map') => value.toUpperCase(),
 };
-const renderLayers = (loading, data) => {
+
+const onAddLayer = (map, layerID, location, layerConfig) => {
+  if (location) {
+    map.setFilter(layerID, [
+      '==',
+      layerConfig.nameProperty,
+      getProperLocationName(location.name, layerConfig.formatter),
+    ]);
+    map.setPaintProperty(layerID, 'fill-color', '#d1d1d1');
+    setTimeout(() => {
+      const locationName = layerConfig.formatter ? layerConfig.formatter(location.name) : location.name;
+      flyToLocation(map, locationName, layerConfig);
+    }, 500);
+  }
+};
+const renderLayers = (loading, data, location) => {
   const hiddenLayers = [coreLayer].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
@@ -32,14 +48,21 @@ const renderLayers = (loading, data) => {
     />
   ));
 
+  // eslint-disable-next-line no-underscore-dangle
+  const addLayerCallback = (map, layerID) =>
+    onAddLayer(map, layerID, location, {
+      ...coreLayer,
+      nameProperty: coreLayer.districtNameProperty, // since we want to highlight the district at this point
+    });
+
   if (!loading && data.length) {
     return hiddenLayers.concat(
       <BaseMapLayer
         key={COLOURED_LAYER}
         id={COLOURED_LAYER}
         source="composite"
-        source-layer={'uganda_districts_2019_i-9qg3nj'}
-        // maxzoom={options.maxZoom && options.maxZoom + 1}
+        source-layer={coreLayer.sourceLayer}
+        maxzoom={coreLayer.maxZoom && coreLayer.maxZoom + 1}
         type="fill"
         paint={{
           'fill-color': {
@@ -51,7 +74,7 @@ const renderLayers = (loading, data) => {
           'fill-opacity': 0.75,
           'fill-outline-color': '#ffffff',
         }}
-        // onAdd={onAddLayer}
+        onAdd={addLayerCallback}
       />
     );
   }
@@ -62,14 +85,14 @@ const renderLayers = (loading, data) => {
       id={COLOURED_LAYER}
       source="composite"
       source-layer={coreLayer.sourceLayer}
-      //   maxzoom={options.maxZoom && options.maxZoom + 1}
+      maxzoom={coreLayer.maxZoom && coreLayer.maxZoom + 1}
       type="fill"
       paint={{
         'fill-color': '#D1CBCF',
         'fill-opacity': 0.75,
         'fill-outline-color': '#ffffff',
       }}
-      //   onAdd={onAddLayer}
+      onAdd={addLayerCallback}
     />
   );
 };
@@ -110,7 +133,7 @@ const DistrictMap = (props) => {
           style={{ width: '100%', background: '#ffffff' }}
           onLoad={onLoad}
         >
-          {renderLayers(loading, props.data)}
+          {renderLayers(loading, props.data, props.location)}
         </BaseMap>
       </div>
     </div>
