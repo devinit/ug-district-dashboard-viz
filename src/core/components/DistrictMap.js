@@ -3,22 +3,22 @@ import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
-import { flyToLocation, getProperLocationName } from '../../components/BaseMap/utils';
+import { flyToLocation, getLocationStyles, getProperLocationName } from '../../components/BaseMap/utils';
 import useMap from './hooks/DistrictMap';
 
 export const COLOURED_LAYER = 'highlight';
 const coreLayer = {
   type: 'shapefile',
   style: 'mapbox://styles/edwinmp/ck42rrx240t8p1cqpkhgy2g0m/draft',
-  sourceLayer: 'uga_admbnda_adm3_ubos_v5-9li2ca',
-  layerName: 'uga-admbnda-adm3-ubos-v5-9li2ca',
+  sourceLayer: 'Uganda_Sub-Counties_2019-8w0zb5',
+  layerName: 'uganda-Sub-counties-2019-8w0zb5',
   center: [32.655221, 1.344666],
   zoom: 8,
   minZoom: 8,
   maxZoom: 9,
-  districtNameProperty: 'ADM1_EN',
-  nameProperty: 'ADM3_EN', // 'ADM1_EN',
-  codeProperty: 'ADM3_PCODE',
+  districtNameProperty: 'District',
+  nameProperty: 'Subcounty', // 'ADM1_EN',
+  codeProperty: 'scode2019',
   // eslint-disable-next-line no-unused-vars
   formatter: (value, target = 'map') => value.toUpperCase(),
 };
@@ -30,7 +30,7 @@ const onAddLayer = (map, layerID, location, layerConfig) => {
       layerConfig.nameProperty,
       getProperLocationName(location.name, layerConfig.formatter),
     ]);
-    map.setPaintProperty(layerID, 'fill-color', '#d1d1d1');
+    // map.setPaintProperty(layerID, 'fill-color', '#d1d1d1');
     setTimeout(() => {
       if (location.coordinates) {
         map.flyTo({ center: location.coordinates, zoom: 8.5 });
@@ -53,7 +53,7 @@ const renderLayers = (loading, data, location, layerConfig) => {
   ));
 
   // eslint-disable-next-line no-underscore-dangle
-  const addLayerCallback = (map, layerID) =>
+  const onAddHighlightLayer = (map, layerID) =>
     onAddLayer(map, layerID, location, {
       ...layerConfig,
       nameProperty: layerConfig.districtNameProperty, // since we want to highlight the district at this point
@@ -73,12 +73,13 @@ const renderLayers = (loading, data, location, layerConfig) => {
             property: layerConfig.nameProperty,
             type: 'categorical',
             default: '#D1CBCF',
-            // stops: getLocationStyles(locationData, range, colours, options.formatter),
+            // TODO: replace range and colours with proper values taken from state
+            stops: getLocationStyles(data, [10, 20, 30], ['#443e42', '#8f1b13', '#fceae9'], layerConfig.formatter),
           },
           'fill-opacity': 0.75,
           'fill-outline-color': '#ffffff',
         }}
-        onAdd={addLayerCallback}
+        onAdd={onAddHighlightLayer}
       />
     );
   }
@@ -96,7 +97,7 @@ const renderLayers = (loading, data, location, layerConfig) => {
         'fill-opacity': 0.75,
         'fill-outline-color': '#ffffff',
       }}
-      onAdd={addLayerCallback}
+      onAdd={onAddHighlightLayer}
     />
   );
 };

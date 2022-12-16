@@ -231,8 +231,8 @@
               id: 'numberOfSchools',
               name: 'Number of schools',
               description: 'Description Goes Here!',
-              legend: [50, 55, 60, 65],
-              colour: '#333',
+              range: [10, 20, 30],
+              colours: ['#443e42', '#8f1b13', '#fceae9'],
             },
             {
               id: 'learnersEnrolment',
@@ -274,8 +274,8 @@
             topicLabel: 'Select a topic to explore',
             indicatorLabel: 'Choose an indicator',
             yearLabel: 'Choose a year',
-            data: topics,
           },
+          data: topics,
         },
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
