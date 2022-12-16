@@ -4,9 +4,11 @@ import classNames from 'classnames';
 import { useContext } from 'react';
 import Select from '../../components/Select';
 import { DistrictMapContext } from '../context';
+import useData from './hooks/DistrictMapFilters';
 
 const DistrictMapFilters = () => {
-  const { filters } = useContext(DistrictMapContext);
+  const { filters, topics } = useContext(DistrictMapContext);
+  const { topicOptions } = useData(topics);
 
   return (
     <form className="form">
@@ -19,7 +21,7 @@ const DistrictMapFilters = () => {
       >
         <Select
           label={filters.topicLabel}
-          // options={options}
+          options={topicOptions}
           classNamePrefix="topic-selector"
           isClearable={false}
           css={{ minWidth: '100%' }}
