@@ -7,8 +7,8 @@ import { DistrictMapContext } from '../context';
 import useData from './hooks/DistrictMapFilters';
 
 const DistrictMapFilters = () => {
-  const { filters, topics } = useContext(DistrictMapContext);
-  const { topicOptions, setSelectedTopic } = useData(topics);
+  const { filters, topics, updateFilterOptions } = useContext(DistrictMapContext);
+  const { topicOptions } = useData(topics);
 
   return (
     <form className="form">
@@ -25,7 +25,7 @@ const DistrictMapFilters = () => {
           classNamePrefix="topic-selector"
           isClearable={false}
           css={{ minWidth: '100%' }}
-          onChange={(item) => setSelectedTopic(item && item.value)}
+          onChange={(item) => updateFilterOptions({ topic: item && item.value })}
         />
       </div>
     </form>
