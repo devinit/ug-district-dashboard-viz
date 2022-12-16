@@ -26,7 +26,7 @@ const renderViz = (className) => {
                 { name: 'Miirya', value: 18 },
               ];
               if (map) {
-                root.render(<DistrictMap configs={map} location={location} data={data} />);
+                root.render(<DistrictMap configs={map} location={location} filters={map.filters} data={data} />);
               } else {
                 root.render(<NoDataCentered />);
               }
