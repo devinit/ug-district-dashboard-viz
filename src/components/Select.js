@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import ReactSelect from 'react-select';
@@ -32,7 +33,7 @@ const selectStyles = {
   indicatorsContainer: (styles) => ({ ...styles, pointerEvents: 'none' }), // activates select to mobile touch events
 };
 
-const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelectOptions, ...props }) => {
+const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelectOptions, className, ...props }) => {
   const [values, setValues] = useState(defaultValue);
   useEffect(() => {
     if (props.onChange) props.onChange(values);
@@ -77,7 +78,7 @@ const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelect
   };
 
   return (
-    <div className="labelled-data-selector--wrapper">
+    <div className={classNames('labelled-data-selector--wrapper', className)}>
       <label>
         <b>{label}</b>
       </label>
@@ -103,6 +104,7 @@ Select.propTypes = {
   singleSelectOptions: PropTypes.array,
   isMulti: PropTypes.bool,
   isClearable: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 Select.defaultProps = { maxSelectedOptions: 2, singleSelectOptions: [] };
