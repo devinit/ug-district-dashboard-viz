@@ -13,7 +13,7 @@ const useMap = (location, layer, data) => {
     if (map) {
       // hide secondary layers
       map.getStyle().layers.forEach((_layer) => {
-        if (_layer['source-layer'] !== layer.sourceLayer && !['background', 'highlight'].includes(_layer.id)) {
+        if (!['background', 'highlight'].includes(_layer.id)) {
           map.setLayoutProperty(_layer.id, 'visibility', 'none');
         }
       });
