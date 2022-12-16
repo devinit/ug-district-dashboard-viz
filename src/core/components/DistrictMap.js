@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
 import { flyToLocation, getLocationStyles, getProperLocationName } from '../../components/BaseMap/utils';
+import { DistrictMapContext } from '../context';
+import DistrictMapSidebar from './DistrictMapSidebar';
 import useMap from './hooks/DistrictMap';
 
 export const COLOURED_LAYER = 'highlight';
@@ -112,29 +114,31 @@ const DistrictMap = (props) => {
   };
 
   return (
-    <div className="spotlight">
-      <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
-        Sidebar Goes Here
+    <DistrictMapContext.Provider value={{ filters: props.filters, data: props.data }}>
+      <div className="spotlight">
+        <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
+          <DistrictMapSidebar />
+        </div>
+        <div className="spotlight__main spotlight__main--map">
+          {loading ? <div>Loading ...</div> : null}
+          <BaseMap
+            accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
+            options={{
+              style: coreLayer.style,
+              center: coreLayer.center,
+              minZoom: coreLayer.minZoom || 6,
+              zoom: coreLayer.zoom || 6.1,
+              maxZoom: coreLayer.maxZoom || 7,
+              scrollZoom: false,
+            }}
+            style={{ width: '100%', background: '#ffffff' }}
+            onLoad={onLoad}
+          >
+            {renderLayers(loading, props.data, props.location, coreLayer)}
+          </BaseMap>
+        </div>
       </div>
-      <div className="spotlight__main spotlight__main--map">
-        {loading ? <div>Loading ...</div> : null}
-        <BaseMap
-          accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
-          options={{
-            style: coreLayer.style,
-            center: coreLayer.center,
-            minZoom: coreLayer.minZoom || 6,
-            zoom: coreLayer.zoom || 6.1,
-            maxZoom: coreLayer.maxZoom || 7,
-            scrollZoom: false,
-          }}
-          style={{ width: '100%', background: '#ffffff' }}
-          onLoad={onLoad}
-        >
-          {renderLayers(loading, props.data, props.location, coreLayer)}
-        </BaseMap>
-      </div>
-    </div>
+    </DistrictMapContext.Provider>
   );
 };
 
@@ -144,6 +148,7 @@ DistrictMap.defaultProps = {
 
 DistrictMap.propTypes = {
   configs: PropTypes.object,
+  filters: PropTypes.object,
   data: PropTypes.array,
   location: PropTypes.shape({
     name: PropTypes.string,
