@@ -17,8 +17,16 @@ const renderViz = (className) => {
               dichart.showLoading();
               const { map, location } = window.DIState.getState;
 
+              // TODO: replace sample data
+              const data = [
+                { name: 'Budongo', value: 15 },
+                { name: 'Pakanyi', value: 31 },
+                { name: 'Central Division', value: 2 },
+                { name: 'Bwijanga', value: 21 },
+                { name: 'Miirya', value: 18 },
+              ];
               if (map) {
-                root.render(<DistrictMap configs={map} location={location} />);
+                root.render(<DistrictMap configs={map} location={location} data={data} />);
               } else {
                 root.render(<NoDataCentered />);
               }
