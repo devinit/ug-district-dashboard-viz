@@ -12,7 +12,8 @@
     "test:watch": "nwb test --server",
     "lint": "eslint 'src/**/*.js' --quiet",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "nvm": "bash ./nvm.sh"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
