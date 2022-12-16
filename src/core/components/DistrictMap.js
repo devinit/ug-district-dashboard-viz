@@ -104,17 +104,25 @@ const renderLayers = (loading, data, location, layerConfig) => {
   );
 };
 
+const defaultFilterOptions = { topic: null, indicator: null, year: null };
+
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
+  const [filterOptions, setFilterOptions] = useState(defaultFilterOptions);
   const { setMap } = useMap(props.location, coreLayer);
 
   const onLoad = (_map) => {
     setLoading(false);
     setMap(_map);
   };
+  const updateFilterOptions = (options, merge = true) => {
+    setFilterOptions(merge ? { ...filterOptions, ...options } : options);
+  };
 
   return (
-    <DistrictMapContext.Provider value={{ filters: props.filters, topics: props.configs.data }}>
+    <DistrictMapContext.Provider
+      value={{ filters: props.filters, topics: props.configs.data, filterOptions, updateFilterOptions }}
+    >
       <div className="spotlight">
         <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
           <DistrictMapSidebar />
