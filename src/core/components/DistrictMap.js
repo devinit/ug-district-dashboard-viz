@@ -114,7 +114,7 @@ const DistrictMap = (props) => {
   };
 
   return (
-    <DistrictMapContext.Provider value={{ filters: props.filters, data: props.data }}>
+    <DistrictMapContext.Provider value={{ filters: props.filters, topics: props.configs.data }}>
       <div className="spotlight">
         <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
           <DistrictMapSidebar />
