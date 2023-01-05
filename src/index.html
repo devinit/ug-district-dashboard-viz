@@ -233,6 +233,16 @@
               description: 'Description Goes Here!',
               range: [10, 20, 30],
               colours: ['#443e42', '#8f1b13', '#fceae9'],
+              url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+              yearRange: [2016, 2021],
+              // series: ['Government', 'Private'],
+              mapping: {
+                series: 'Type',
+                year: 'year',
+                value: 'Value',
+                subCounty: 'SubCounty',
+                level: 'level',
+              },
             },
             {
               id: 'learnersEnrolment',
