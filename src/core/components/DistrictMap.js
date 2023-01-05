@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
@@ -105,6 +106,14 @@ const renderLayers = (loading, data, location, layerConfig) => {
 };
 
 const defaultFilterOptions = { topic: null, indicator: null, year: null };
+const MapActionsRow = styled.div`
+  position: absolute;
+  top: 1.75em;
+  z-index: 20;
+  left: 1.4em;
+`;
+
+const getTopicById = (topics, topic) => topics.find((_topic) => _topic.id === topic);
 
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
@@ -118,6 +127,16 @@ const DistrictMap = (props) => {
   const updateFilterOptions = (options, merge = true) => {
     setFilterOptions(merge ? { ...filterOptions, ...options } : options);
   };
+  const activeTopicOptions = getTopicById(props.configs.data, filterOptions.topic);
+
+  const renderDashboardButton = () =>
+    activeTopicOptions && activeTopicOptions.dashboardUrl ? (
+      <MapActionsRow>
+        <a href={activeTopicOptions.dashboardUrl} className="button button--secondary--fill">
+          {activeTopicOptions.dashboardButtonCaption}
+        </a>
+      </MapActionsRow>
+    ) : null;
 
   return (
     <DistrictMapContext.Provider
@@ -129,6 +148,7 @@ const DistrictMap = (props) => {
         </div>
         <div className="spotlight__main spotlight__main--map">
           {loading ? <div>Loading ...</div> : null}
+          {renderDashboardButton()}
           <BaseMap
             accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
             options={{
