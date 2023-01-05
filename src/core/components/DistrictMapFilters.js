@@ -22,6 +22,7 @@ const DistrictMapFilters = () => {
         <Select
           label={filters.topicLabel}
           options={topicOptions}
+          defaultValue={topicOptions[0]}
           classNamePrefix="topic-selector"
           isClearable={false}
           css={{ minWidth: '100%' }}
