@@ -109,7 +109,7 @@ const defaultFilterOptions = { topic: null, indicator: null, year: null };
 const MapActionsRow = styled.div`
   position: absolute;
   top: 1.75em;
-  z-index: 20;
+  z-index: 1;
   left: 1.4em;
 `;
 
