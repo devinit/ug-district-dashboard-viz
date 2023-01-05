@@ -8,7 +8,7 @@ import useData from './hooks/DistrictMapFilters';
 
 const DistrictMapFilters = () => {
   const { filters, topics, updateFilterOptions } = useContext(DistrictMapContext);
-  const { topicOptions, indicatorOptions } = useData(topics);
+  const { topicOptions, indicatorOptions, yearOptions } = useData(topics);
 
   return (
     <form className="form">
@@ -37,6 +37,17 @@ const DistrictMapFilters = () => {
             isClearable={false}
             css={{ minWidth: '100%', marginTop: '1em' }}
             onChange={(item) => updateFilterOptions({ indicator: item && item.value })}
+          />
+        ) : null}
+        {yearOptions && yearOptions.length ? (
+          <Select
+            label={filters.yearLabel}
+            options={yearOptions}
+            defaultValue={[yearOptions[0]]}
+            classNamePrefix="year-selector"
+            isClearable={false}
+            css={{ minWidth: '100%', marginTop: '1em' }}
+            onChange={(item) => updateFilterOptions({ year: item && item.value })}
           />
         ) : null}
       </div>
