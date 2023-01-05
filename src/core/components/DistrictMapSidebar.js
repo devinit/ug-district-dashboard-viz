@@ -1,9 +1,12 @@
 import React from 'react';
+import ErrorBoundary from '../../components/ErrorBoundary';
 import DistrictMapFilters from './DistrictMapFilters';
 
 const DistrictMapSidebar = () => (
   <div className="spotlight__content">
-    <DistrictMapFilters />
+    <ErrorBoundary>
+      <DistrictMapFilters />
+    </ErrorBoundary>
   </div>
 );
 
