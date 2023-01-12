@@ -2,6 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import DistrictMap from './components/DistrictMap';
 import NoDataCentered from './components/NoDataCentered';
+import schools from '../../public/assets/data/masindi/numberOfSchools.json';
+import { aggregateValues } from './utils/index';
 
 const renderViz = (className) => {
   window.DICharts.handler.addChart({
@@ -17,14 +19,10 @@ const renderViz = (className) => {
               dichart.showLoading();
               const { map, location } = window.DIState.getState;
 
-              // TODO: replace sample data
-              const data = [
-                { name: 'Budongo', value: 15 },
-                { name: 'Pakanyi', value: 31 },
-                { name: 'Central Division', value: 2 },
-                { name: 'Bwijanga', value: 21 },
-                { name: 'Miirya', value: 18 },
-              ];
+              const data = aggregateValues(schools, map.aggregator);
+              // const avgs = aggregateValues(schools, 'avg');
+              console.log(JSON.stringify(data));
+              console.log(JSON.stringify(map));
               if (map) {
                 root.render(<DistrictMap configs={map} location={location} filters={map.filters} data={data} />);
               } else {

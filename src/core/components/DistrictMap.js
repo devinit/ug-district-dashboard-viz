@@ -23,7 +23,7 @@ const coreLayer = {
   nameProperty: 'Subcounty', // 'ADM1_EN',
   codeProperty: 'scode2019',
   // eslint-disable-next-line no-unused-vars
-  formatter: (value, target = 'map') => value.toUpperCase(),
+  formatter: (Value, target = 'map') => Value.toUpperCase(),
 };
 
 const onAddLayer = (map, layerID, location, layerConfig) => {
@@ -77,7 +77,12 @@ const renderLayers = (loading, data, location, layerConfig) => {
             type: 'categorical',
             default: '#D1CBCF',
             // TODO: replace range and colours with proper values taken from state
-            stops: getLocationStyles(data, [10, 20, 30], ['#443e42', '#8f1b13', '#fceae9'], layerConfig.formatter),
+            stops: getLocationStyles(
+              data,
+              [5, 10, 15, 20],
+              ['#faa2c1', '#f06595', '#d6336c', '#a61e4d'],
+              layerConfig.formatter
+            ),
           },
           'fill-opacity': 0.75,
           'fill-outline-color': '#ffffff',
