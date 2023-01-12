@@ -17,7 +17,7 @@ module.exports = {
     eqeqeq: ['error', 'always'],
     'prefer-template': 'error',
     '@emotion/jsx-import': 'error',
-    'react/no-unknown-property': ['error', { ignore: ['css'] }],
+    'react/no-unknown-property': ['error', { ignore: ['css', 'jsx'] }],
   },
   env: {
     browser: true,
