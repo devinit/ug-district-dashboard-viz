@@ -71,9 +71,9 @@ export const getLocationStyles = (data, range, colours, format) => {
 };
 
 const getTooltipValue = (options, location) =>
-  location && typeof location.value === 'number'
+  location && typeof location.Value === 'number'
     ? `${options.dataPrefix || ''}<span style="font-size: 1em; font-weight: 700; color:#EA7600">${formatNumber(
-        location.value
+        location.Value
       )}</span>${options.dataSuffix || ''}`
     : 'No Data';
 
@@ -159,7 +159,7 @@ export const renderPopup = (map, popup, position, locationName, value) =>
 
 const findLocationData = (locationName, data, formatter) =>
   data.find((location) => {
-    const name = formatter ? formatter(location.name) : location.name;
+    const name = formatter ? formatter(location.SubCounty) : location.SubCounty;
 
     return locationName.toLowerCase() === `${name}`.toLowerCase();
   });
@@ -191,7 +191,7 @@ export const renderLegendItems = (range, colours) => {
   if (range && colours) {
     return range
       .map((rnge, index) => (
-        <LegendItem className={`item${rnge}`} bgColor={colours[index]} key={index}>
+        <LegendItem className={`item-${rnge}`} bgColor={colours[index]} key={index}>
           {index === 0 ? `< ${range[0]}` : `${range[index - 1]}-${rnge}`}
         </LegendItem>
       ))
