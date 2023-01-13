@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const LegendItem = ({ children, className, bgColor, textColor }) => (
   <span className={className} data-testid="spotlight-legend-item">
     {children}
-    <style jsx>{`
+    <style>{`
       span.${className} {
         background-color: ${bgColor || '#D1CBCF'} !important;
         color: ${textColor || 'inherit'};
