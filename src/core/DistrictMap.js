@@ -18,11 +18,8 @@ const renderViz = (className) => {
             window.DIState.addListener(() => {
               dichart.showLoading();
               const { map, location } = window.DIState.getState;
+              const data = map && map.aggregator ? aggregateValues(schools, map.aggregator) : [];
 
-              const data = aggregateValues(schools, map.aggregator);
-              // const avgs = aggregateValues(schools, 'avg');
-              console.log(JSON.stringify(data));
-              console.log(JSON.stringify(map));
               if (map) {
                 root.render(<DistrictMap configs={map} location={location} filters={map.filters} data={data} />);
               } else {
