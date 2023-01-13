@@ -44,7 +44,8 @@ const onAddLayer = (map, layerID, location, layerConfig) => {
     }, 500);
   }
 };
-const renderLayers = (loading, data, location, layerConfig) => {
+const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
+  const mapRange = mapConfig.aggregator === 'sum' ? mapConfig.rangeSum : mapConfig.rangeAvg;
   const hiddenLayers = [layerConfig].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
@@ -77,12 +78,7 @@ const renderLayers = (loading, data, location, layerConfig) => {
             type: 'categorical',
             default: '#D1CBCF',
             // TODO: replace range and colours with proper values taken from state
-            stops: getLocationStyles(
-              data,
-              [5, 10, 15, 20],
-              ['#faa2c1', '#f06595', '#d6336c', '#a61e4d'],
-              layerConfig.formatter
-            ),
+            stops: getLocationStyles(data, mapRange, mapConfig.colours, layerConfig.formatter),
           },
           'fill-opacity': 0.75,
           'fill-outline-color': '#ffffff',
@@ -123,7 +119,7 @@ const getTopicById = (topics, topic) => topics.find((_topic) => _topic.id === to
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [filterOptions, setFilterOptions] = useState(defaultFilterOptions);
-  const { setMap } = useMap(props.location, coreLayer);
+  const { setMap } = useMap(props.location, coreLayer, props.data);
 
   const onLoad = (_map) => {
     setLoading(false);
@@ -167,7 +163,7 @@ const DistrictMap = (props) => {
             style={{ width: '100%', background: '#ffffff' }}
             onLoad={onLoad}
           >
-            {renderLayers(loading, props.data, props.location, coreLayer)}
+            {renderLayers(loading, props.data, props.location, coreLayer, props.configs)}
           </BaseMap>
         </div>
       </div>

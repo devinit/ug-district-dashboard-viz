@@ -5,16 +5,21 @@ import Legend from './Legend/Legend';
 import LegendItem from './Legend/LegendItem';
 import { renderLegendItems } from '../../components/BaseMap/utils';
 
-const DistrictMapSidebar = () => (
-  <div className="spotlight__content">
-    <ErrorBoundary>
-      <DistrictMapFilters />
-    </ErrorBoundary>
-    <Legend>
-      {renderLegendItems([5, 10, 15, 20], ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'])}
-      <LegendItem>no data / not applicable</LegendItem>
-    </Legend>
-  </div>
-);
+const DistrictMapSidebar = () => {
+  const { map } = window.DIState.getState;
+  const range = map.aggregator === 'sum' ? map.rangeSum : map.rangeAvg;
+
+  return (
+    <div className="spotlight__content">
+      <ErrorBoundary>
+        <DistrictMapFilters />
+      </ErrorBoundary>
+      <Legend>
+        {renderLegendItems(range, map.colours)}
+        <LegendItem>no data / not applicable</LegendItem>
+      </Legend>
+    </div>
+  );
+};
 
 export default DistrictMapSidebar;
