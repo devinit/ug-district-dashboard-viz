@@ -46,6 +46,7 @@ const onAddLayer = (map, layerID, location, layerConfig) => {
 };
 const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
   const mapRange = mapConfig.aggregator === 'sum' ? mapConfig.rangeSum : mapConfig.rangeAvg;
+  const { subCounty } = window.DIState.getState;
   const hiddenLayers = [layerConfig].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
@@ -78,7 +79,12 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
             type: 'categorical',
             default: '#D1CBCF',
             // TODO: replace range and colours with proper values taken from state
-            stops: getLocationStyles(data, mapRange, mapConfig.colours, layerConfig.formatter),
+            stops: getLocationStyles(
+              subCounty && subCounty !== 'all' ? data.filter((item) => item.SubCounty === subCounty) : data,
+              mapRange,
+              mapConfig.colours,
+              layerConfig.formatter
+            ),
           },
           'fill-opacity': 0.75,
           'fill-outline-color': '#ffffff',
