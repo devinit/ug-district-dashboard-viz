@@ -250,6 +250,7 @@
             },
           ],
         },
+        /*
         {
           id: 'production',
           name: 'Production',
@@ -258,6 +259,7 @@
           dashboardButtonCaption: 'View Production Dashboard',
           indicators: [],
         },
+        */
       ];
       const state = {
         location: {
@@ -297,7 +299,7 @@
           aggregator: 'avg', //either sum, avg
           colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
           rangeSum: [200, 300, 400, 600],
-          rangeAvg: [5, 10, 15, 20]
+          rangeAvg: [5, 10, 15, 20],
         },
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
