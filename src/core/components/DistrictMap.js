@@ -45,7 +45,6 @@ const onAddLayer = (map, layerID, location, layerConfig) => {
   }
 };
 const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
-  const mapRange = mapConfig.aggregator === 'sum' ? mapConfig.rangeSum : mapConfig.rangeAvg;
   const hiddenLayers = [layerConfig].map((layer, index) => (
     <BaseMapLayer
       key={`${COLOURED_LAYER}-${index}`}
@@ -78,7 +77,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
             type: 'categorical',
             default: '#D1CBCF',
             // TODO: replace range and colours with proper values taken from state
-            stops: getLocationStyles(data, mapRange, mapConfig.colours, layerConfig.formatter),
+            stops: getLocationStyles(data, mapConfig.range, mapConfig.colours, layerConfig.formatter),
           },
           'fill-opacity': 0.75,
           'fill-outline-color': '#ffffff',
@@ -222,7 +221,13 @@ const DistrictMap = (props) => {
             style={{ width: '100%', background: '#ffffff' }}
             onLoad={onLoad}
           >
-            {renderLayers(loading, props.data, props.location, coreLayer, props.configs)}
+            {renderLayers(
+              loading,
+              props.data,
+              props.location,
+              coreLayer,
+              activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {}
+            )}
           </BaseMap>
         </div>
       </div>
