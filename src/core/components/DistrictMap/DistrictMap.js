@@ -2,48 +2,14 @@
 import { jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { useEffect, useState, useReducer } from 'react';
-import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
-import { flyToLocation, getLocationStyles, getProperLocationName } from '../../components/BaseMap/utils';
-import { DistrictMapContext } from '../context';
-import DistrictMapSidebar from './DistrictMapSidebar';
-import useMap from './hooks/DistrictMap';
+import { useEffect, useReducer, useState } from 'react';
+import { BaseMap, BaseMapLayer } from '../../../components/BaseMap';
+import { getLocationStyles } from '../../../components/BaseMap/utils';
+import { DistrictMapContext } from '../../context';
+import DistrictMapSidebar from '../DistrictMapSidebar';
+import useMap from '../hooks/DistrictMap';
+import { COLOURED_LAYER, coreLayer, getRawFilterOptions, getTopicById, onAddLayer } from './utils/index';
 
-export const COLOURED_LAYER = 'highlight';
-const coreLayer = {
-  type: 'shapefile',
-  style: 'mapbox://styles/edwinmp/ck42rrx240t8p1cqpkhgy2g0m/draft',
-  sourceLayer: 'Uganda_Sub-Counties_2019-8w0zb5',
-  layerName: 'uganda-Sub-counties-2019-8w0zb5',
-  center: [32.655221, 1.344666],
-  zoom: 8,
-  minZoom: 8,
-  maxZoom: 9,
-  districtNameProperty: 'District',
-  nameProperty: 'Subcounty', // 'ADM1_EN',
-  codeProperty: 'scode2019',
-  // eslint-disable-next-line no-unused-vars
-  formatter: (Value, target = 'map') => Value.toUpperCase(),
-};
-
-const onAddLayer = (map, layerID, location, layerConfig) => {
-  if (location) {
-    map.setFilter(layerID, [
-      '==',
-      layerConfig.nameProperty,
-      getProperLocationName(location.name, layerConfig.formatter),
-    ]);
-    // map.setPaintProperty(layerID, 'fill-color', '#d1d1d1');
-    setTimeout(() => {
-      if (location.coordinates) {
-        map.flyTo({ center: location.coordinates, zoom: 8.5 });
-      } else {
-        const locationName = layerConfig.formatter ? layerConfig.formatter(location.name) : location.name;
-        flyToLocation(map, locationName, layerConfig);
-      }
-    }, 500);
-  }
-};
 const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
   const hiddenLayers = [layerConfig].map((layer, index) => (
     <BaseMapLayer
@@ -112,25 +78,6 @@ const MapActionsRow = styled.div`
   z-index: 1;
   left: 1.4em;
 `;
-
-const getTopicById = (topics, topic) => topics.find((_topic) => _topic.id === topic);
-
-const getRawFilterOptions = (topics, options) => {
-  const { topic, indicator, year } = options;
-  if (topic) {
-    const selectedTopic = topics.find((t) => t.id === topic);
-    if (selectedTopic && indicator) {
-      const selectedIndicator = selectedTopic.indicators.find((i) => i.id === indicator);
-      if (selectedIndicator) {
-        return { topic: selectedTopic, indicator: selectedIndicator, year };
-      }
-    }
-
-    return { topic: selectedTopic };
-  }
-
-  return {};
-};
 
 function mapReducer(state, action) {
   switch (action.type) {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import DistrictMap from './components/DistrictMap';
-import NoDataCentered from './components/NoDataCentered';
 import schools from '../../public/assets/data/masindi/numberOfSchools.json';
+import DistrictMap from './components/DistrictMap/DistrictMap';
+import NoDataCentered from './components/NoDataCentered';
 import { aggregateValues } from './utils/index';
 
 const renderViz = (className) => {
