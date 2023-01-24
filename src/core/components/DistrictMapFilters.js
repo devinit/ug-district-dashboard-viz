@@ -47,7 +47,13 @@ const DistrictMapFilters = () => {
             classNamePrefix="year-selector"
             isClearable={false}
             css={{ minWidth: '100%', marginTop: '1em' }}
-            onChange={(item) => updateFilterOptions({ year: item && item.value })}
+            onChange={(item) => {
+              if (Array.isArray(item) && item.length) {
+                updateFilterOptions({ year: item[0].value });
+              } else if (item && !Array.isArray(item)) {
+                updateFilterOptions({ year: item.value });
+              }
+            }}
           />
         ) : null}
       </div>
