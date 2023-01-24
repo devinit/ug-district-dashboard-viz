@@ -235,14 +235,12 @@
               range: [5, 10, 15, 20],
               url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
               yearRange: [2016, 2021],
-              // series: ['Government', 'Private'],
               mapping: {
-                series: 'Type',
-                year: 'year',
+                location: 'SubCounty',
                 value: 'Value',
-                subCounty: 'SubCounty',
-                level: 'level',
+                year: 'year',
               },
+              aggregator: 'avg', //either sum, avg
             },
             {
               id: 'learnersEnrolment',

@@ -1,14 +1,17 @@
 import { Popup } from 'mapbox-gl';
 import { useEffect, useState } from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
+import fetchData from '../../../utils/data';
+import { processData } from '../DistrictMap/utils';
 
 const showPopup = (popup, map, event, options) => {
   renderTooltipFromEvent(map, event, { ...options, popup });
 };
 
-const useMap = (location, layer, data, defaultOptions = {}) => {
+const useMap = (location, layer, defaultOptions = {}) => {
   const [map, setMap] = useState();
   const [options, setOptions] = useState(defaultOptions);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     if (map) {
@@ -36,9 +39,18 @@ const useMap = (location, layer, data, defaultOptions = {}) => {
       map.on('mousemove', COLOURED_LAYER, onHover);
       map.on('mouseleave', COLOURED_LAYER, onBlur);
     }
-  }, [map, location, options]);
+  }, [map, location, options, data]);
+  useEffect(() => {
+    const fetchIndicatorData = async (url) => {
+      const indicatorData = await fetchData(url);
+      setData(processData(indicatorData, options.indicator, options.year));
+    };
+    if (options.indicator && options.year) {
+      fetchIndicatorData(options.indicator.url);
+    }
+  }, [options.indicator, options.year]);
 
-  return { map, setMap, setOptions };
+  return { map, data, setData, setMap, setOptions };
 };
 
 export default useMap;

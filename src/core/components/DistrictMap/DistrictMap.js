@@ -88,6 +88,8 @@ function mapReducer(state, action) {
         activeTopic: action.activeTopic,
         activeIndicator: action.activeIndicator,
       };
+    case 'SET_DATA':
+      return { ...state, data: action.data };
     case 'RESET_FILTERS':
       return { ...state, filterOptions: defaultFilterOptions };
     default:
@@ -102,13 +104,18 @@ const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [state, dispatch] = useReducer(mapReducer, initialState);
   const { filterOptions, activeIndicator, activeTopic } = state;
-  const { setMap, setOptions } = useMap(props.location, coreLayer, props.data);
+  const { data, setMap, setOptions } = useMap(props.location, coreLayer);
 
   useEffect(() => {
     // set map options using their caption values
     if (activeIndicator) {
       const { year } = filterOptions;
-      setOptions({ dataPrefix: `${activeIndicator.name}: `, dataSuffix: year && ` in ${year}` });
+      setOptions({
+        dataPrefix: `${activeIndicator.name}: `,
+        dataSuffix: year && ` in ${year}`,
+        indicator: activeIndicator,
+        year,
+      });
     }
   }, [activeIndicator, filterOptions.year]);
 
@@ -170,7 +177,7 @@ const DistrictMap = (props) => {
           >
             {renderLayers(
               loading,
-              props.data,
+              data,
               props.location,
               coreLayer,
               activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {}
