@@ -1,9 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import schools from '../../public/assets/data/masindi/numberOfSchools.json';
 import DistrictMap from './components/DistrictMap/DistrictMap';
 import NoDataCentered from './components/NoDataCentered';
-import { aggregateValues } from './utils/index';
 
 const renderViz = (className) => {
   window.DICharts.handler.addChart({
@@ -18,10 +16,9 @@ const renderViz = (className) => {
             window.DIState.addListener(() => {
               dichart.showLoading();
               const { map, location } = window.DIState.getState;
-              const data = map && map.aggregator ? aggregateValues(schools, map.aggregator) : [];
 
               if (map) {
-                root.render(<DistrictMap configs={map} location={location} filters={map.filters} data={data} />);
+                root.render(<DistrictMap configs={map} location={location} filters={map.filters} />);
               } else {
                 root.render(<NoDataCentered />);
               }

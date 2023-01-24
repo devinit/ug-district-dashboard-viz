@@ -1,3 +1,4 @@
+import { groupBy } from 'lodash';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
 
 export const COLOURED_LAYER = 'highlight';
@@ -53,4 +54,37 @@ export const getRawFilterOptions = (topics, options) => {
   }
 
   return {};
+};
+
+export const aggregateValues = (data, aggregate) => {
+  const groupedData = groupBy(data, (item) => item.name);
+
+  return Object.keys(groupedData).map((key) => {
+    const sum = groupedData[key].reduce((partialSum, a) => partialSum + a.value, 0);
+    const avg = sum / groupedData[key].length;
+
+    return {
+      name: key,
+      value: aggregate === 'sum' ? sum : avg,
+    };
+  });
+};
+
+export const processData = (data, indicator, year) => {
+  if (!indicator) return [];
+  if (!indicator.mapping) {
+    throw new Error(`Mapping is required for indicator ${indicator.id}`);
+  }
+  const { location, value, year: yearField } = indicator.mapping;
+
+  const filteredData = year
+    ? data
+        .filter((item) => item[yearField] === `${year}`)
+        .map((item) => ({ name: item[location], value: Number(item[value]) }))
+    : data.map((item) => ({ name: item[location], value: Number(item[value]) }));
+  if (indicator.aggregator) {
+    return aggregateValues(filteredData, indicator.aggregator);
+  }
+
+  return filteredData;
 };

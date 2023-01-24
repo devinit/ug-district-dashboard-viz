@@ -1,8 +1,6 @@
-import React from 'react';
 import centerOfMass from '@turf/center-of-mass';
 import { polygon } from '@turf/helpers';
 import { LngLat } from 'mapbox-gl';
-import LegendItem from '../../../core/components/Legend/LegendItem';
 
 const formatNumber = (value, decimals = 1) => {
   if (value >= 1000000000000) {
@@ -53,8 +51,8 @@ export const getProperLocationName = (locationName, formatter) => (formatter ? f
 export const getLocationStyles = (data, range, colours, format) => {
   if (data && range && colours) {
     return data.map((location) => {
-      const locationID = getProperLocationName(location.SubCounty, format);
-      const matchingRange = range.find((rng) => location.Value !== null && location.Value <= parseFloat(rng));
+      const locationID = getProperLocationName(location.name, format);
+      const matchingRange = range.find((rng) => location.value !== null && location.value <= parseFloat(rng));
 
       if (matchingRange) {
         return [locationID, colours[range.indexOf(matchingRange)]];
@@ -71,9 +69,9 @@ export const getLocationStyles = (data, range, colours, format) => {
 };
 
 const getTooltipValue = (options, location) =>
-  location && typeof location.Value === 'number'
+  location && typeof location.value === 'number'
     ? `${options.dataPrefix || ''}<span style="font-size: 1em; font-weight: 700; color:#EA7600">${formatNumber(
-        location.Value
+        location.value
       )}</span>${options.dataSuffix || ''}`
     : 'No Data';
 
@@ -159,7 +157,7 @@ export const renderPopup = (map, popup, position, locationName, value) =>
 
 const findLocationData = (locationName, data, formatter) =>
   data.find((location) => {
-    const name = formatter ? formatter(location.SubCounty) : location.SubCounty;
+    const name = formatter ? formatter(location.name) : location.name;
 
     return locationName.toLowerCase() === `${name}`.toLowerCase();
   });
@@ -185,22 +183,4 @@ export const renderTooltipFromLocation = (map, locationName, config, options) =>
     const location = findLocationData(locationName, data);
     renderPopup(map, popup, position, locationName, getTooltipValue(options, location));
   }
-};
-
-export const renderLegendItems = (range, colours) => {
-  if (range && colours) {
-    return range
-      .map((rnge, index) => (
-        <LegendItem className={`item-${rnge}`} bgColor={colours[index]} key={index}>
-          {index === 0 ? `< ${range[0]}` : `${range[index - 1]}-${rnge}`}
-        </LegendItem>
-      ))
-      .concat([
-        <LegendItem className={`item-last`} bgColor={colours[colours.length - 1]} key={range.length}>
-          {`> ${range[range.length - 1]}`}
-        </LegendItem>,
-      ]);
-  }
-
-  return null;
 };
