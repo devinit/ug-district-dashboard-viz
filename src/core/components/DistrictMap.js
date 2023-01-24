@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
 import { flyToLocation, getLocationStyles, getProperLocationName } from '../../components/BaseMap/utils';
 import { DistrictMapContext } from '../context';
@@ -116,32 +116,69 @@ const MapActionsRow = styled.div`
 
 const getTopicById = (topics, topic) => topics.find((_topic) => _topic.id === topic);
 
+const getRawFilterOptions = (topics, options) => {
+  const { topic, indicator, year } = options;
+  if (topic) {
+    const selectedTopic = topics.find((t) => t.id === topic);
+    if (selectedTopic && indicator) {
+      const selectedIndicator = selectedTopic.indicators.find((i) => i.id === indicator);
+      if (selectedIndicator) {
+        return { topic: selectedTopic, indicator: selectedIndicator, year };
+      }
+    }
+
+    return { topic: selectedTopic };
+  }
+
+  return {};
+};
+
+function mapReducer(state, action) {
+  switch (action.type) {
+    case 'UPDATE_FILTERS':
+      return {
+        ...state,
+        filterOptions: action.merge ? { ...state.filterOptions, ...action.filterOptions } : action.filterOptions,
+        activeTopic: action.activeTopic,
+        activeIndicator: action.activeIndicator,
+      };
+    case 'RESET_FILTERS':
+      return { ...state, filterOptions: defaultFilterOptions };
+    default:
+      throw new Error();
+  }
+}
+const initialState = {
+  filterOptions: defaultFilterOptions,
+};
+
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
-  const [filterOptions, setFilterOptions] = useState(defaultFilterOptions);
+  const [state, dispatch] = useReducer(mapReducer, initialState);
+  const { filterOptions, activeIndicator, activeTopic } = state;
   const { setMap, setOptions } = useMap(props.location, coreLayer, props.data);
 
   useEffect(() => {
     // set map options using their caption values
-    const topics = props.configs.data;
-    const { topic, indicator, year } = filterOptions;
-    if (topic) {
-      const selectedTopic = topics.find((t) => t.id === topic);
-      if (indicator) {
-        const selectedIndicator = selectedTopic.indicators.find((i) => i.id === indicator);
-        if (selectedIndicator) {
-          setOptions({ dataPrefix: `${selectedIndicator.name}: `, dataSuffix: year && ` in ${year}` });
-        }
-      }
+    if (activeIndicator) {
+      const { year } = filterOptions;
+      setOptions({ dataPrefix: `${activeIndicator.name}: `, dataSuffix: year && ` in ${year}` });
     }
-  }, [filterOptions]);
+  }, [activeIndicator, filterOptions.year]);
 
   const onLoad = (_map) => {
     setLoading(false);
     setMap(_map);
   };
   const updateFilterOptions = (options, merge = true) => {
-    setFilterOptions(merge ? { ...filterOptions, ...options } : options);
+    const { topic, indicator } = getRawFilterOptions(props.configs.data, { ...filterOptions, ...options });
+    dispatch({
+      type: 'UPDATE_FILTERS',
+      merge,
+      filterOptions: options,
+      activeTopic: topic,
+      activeIndicator: indicator,
+    });
   };
   const activeTopicOptions = getTopicById(props.configs.data, filterOptions.topic);
 
@@ -156,7 +193,14 @@ const DistrictMap = (props) => {
 
   return (
     <DistrictMapContext.Provider
-      value={{ filters: props.filters, topics: props.configs.data, filterOptions, updateFilterOptions }}
+      value={{
+        filters: props.filters,
+        topics: props.configs.data,
+        filterOptions,
+        updateFilterOptions,
+        activeTopic,
+        activeIndicator,
+      }}
     >
       <div className="spotlight">
         <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
