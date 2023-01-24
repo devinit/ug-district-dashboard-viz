@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../components/BaseMap';
 import { flyToLocation, getLocationStyles, getProperLocationName } from '../../components/BaseMap/utils';
 import { DistrictMapContext } from '../context';
@@ -119,7 +119,21 @@ const getTopicById = (topics, topic) => topics.find((_topic) => _topic.id === to
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [filterOptions, setFilterOptions] = useState(defaultFilterOptions);
-  const { setMap } = useMap(props.location, coreLayer, props.data);
+  const { setMap, setOptions } = useMap(props.location, coreLayer, props.data);
+
+  useEffect(() => {
+    // set map options using their caption values
+    const topics = props.configs.data;
+    if (filterOptions.topic) {
+      const selectedTopic = topics.find((t) => t.id === filterOptions.topic);
+      if (filterOptions.indicator) {
+        const selectedIndicator = selectedTopic.indicators.find((i) => i.id === filterOptions.indicator);
+        if (selectedIndicator) {
+          setOptions({ dataPrefix: `${selectedIndicator.name}: `, dataSuffix: filterOptions.year });
+        }
+      }
+    }
+  }, [filterOptions]);
 
   const onLoad = (_map) => {
     setLoading(false);

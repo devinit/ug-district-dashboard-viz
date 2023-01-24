@@ -6,8 +6,9 @@ const showPopup = (popup, map, event, options) => {
   renderTooltipFromEvent(map, event, { ...options, popup });
 };
 
-const useMap = (location, layer, data) => {
+const useMap = (location, layer, data, defaultOptions = {}) => {
   const [map, setMap] = useState();
+  const [options, setOptions] = useState(defaultOptions);
 
   useEffect(() => {
     if (map) {
@@ -23,7 +24,7 @@ const useMap = (location, layer, data) => {
       const canvas = map.getCanvas();
       const onHover = (event) => {
         canvas.style.cursor = 'pointer';
-        showPopup(popup, map, event, { ...layer, data });
+        showPopup(popup, map, event, { ...layer, data, ...options });
       };
       const onBlur = () => {
         canvas.style.cursor = '';
@@ -37,7 +38,7 @@ const useMap = (location, layer, data) => {
     }
   }, [map, location]);
 
-  return { map, setMap };
+  return { map, setMap, setOptions };
 };
 
 export default useMap;
