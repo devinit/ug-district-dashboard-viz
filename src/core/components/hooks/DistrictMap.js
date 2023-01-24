@@ -36,7 +36,7 @@ const useMap = (location, layer, data, defaultOptions = {}) => {
       map.on('mousemove', COLOURED_LAYER, onHover);
       map.on('mouseleave', COLOURED_LAYER, onBlur);
     }
-  }, [map, location]);
+  }, [map, location, options]);
 
   return { map, setMap, setOptions };
 };

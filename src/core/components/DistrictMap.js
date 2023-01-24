@@ -124,12 +124,13 @@ const DistrictMap = (props) => {
   useEffect(() => {
     // set map options using their caption values
     const topics = props.configs.data;
-    if (filterOptions.topic) {
-      const selectedTopic = topics.find((t) => t.id === filterOptions.topic);
-      if (filterOptions.indicator) {
-        const selectedIndicator = selectedTopic.indicators.find((i) => i.id === filterOptions.indicator);
+    const { topic, indicator, year } = filterOptions;
+    if (topic) {
+      const selectedTopic = topics.find((t) => t.id === topic);
+      if (indicator) {
+        const selectedIndicator = selectedTopic.indicators.find((i) => i.id === indicator);
         if (selectedIndicator) {
-          setOptions({ dataPrefix: `${selectedIndicator.name}: `, dataSuffix: filterOptions.year });
+          setOptions({ dataPrefix: `${selectedIndicator.name}: `, dataSuffix: year && ` in ${year}` });
         }
       }
     }
