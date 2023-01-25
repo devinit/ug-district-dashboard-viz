@@ -15,7 +15,7 @@ export const coreLayer = {
   nameProperty: 'Subcounty', // 'ADM1_EN',
   codeProperty: 'scode2019',
   // eslint-disable-next-line no-unused-vars
-  formatter: (Value, target = 'map') => Value.toUpperCase(),
+  formatter: (value, target = 'map') => value.toUpperCase(),
 };
 
 export const onAddLayer = (map, layerID, location, layerConfig) => {
@@ -25,7 +25,6 @@ export const onAddLayer = (map, layerID, location, layerConfig) => {
       layerConfig.nameProperty,
       getProperLocationName(location.name, layerConfig.formatter),
     ]);
-    // map.setPaintProperty(layerID, 'fill-color', '#d1d1d1');
     setTimeout(() => {
       if (location.coordinates) {
         map.flyTo({ center: location.coordinates, zoom: 8.5 });

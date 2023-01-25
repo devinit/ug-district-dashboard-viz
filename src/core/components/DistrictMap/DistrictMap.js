@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useMemo, useReducer, useState } from 'react';
 import { BaseMap, BaseMapLayer } from '../../../components/BaseMap';
 import { getLocationStyles } from '../../../components/BaseMap/utils';
 import { DistrictMapContext } from '../../context';
@@ -11,9 +11,9 @@ import useMap from '../hooks/DistrictMap';
 import { COLOURED_LAYER, coreLayer, getRawFilterOptions, getTopicById, onAddLayer } from './utils/index';
 
 const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
-  const hiddenLayers = [layerConfig].map((layer, index) => (
+  const hiddenLayers = [layerConfig].map((layer) => (
     <BaseMapLayer
-      key={`${COLOURED_LAYER}-${index}`}
+      key={`${COLOURED_LAYER}-hidden`}
       id={layer.layerName}
       source="composite"
       source-layer={layer.sourceLayer}
@@ -21,12 +21,12 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
     />
   ));
 
-  // eslint-disable-next-line no-underscore-dangle
-  const onAddHighlightLayer = (map, layerID) =>
+  function onAddHighlightLayer(map, layerID) {
     onAddLayer(map, layerID, location, {
       ...layerConfig,
       nameProperty: layerConfig.districtNameProperty, // since we want to highlight the district at this point
     });
+  }
 
   if (!loading && data.length) {
     return hiddenLayers.concat(
@@ -42,7 +42,6 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
             property: layerConfig.nameProperty,
             type: 'categorical',
             default: '#D1CBCF',
-            // TODO: replace range and colours with proper values taken from state
             stops: getLocationStyles(data, mapConfig.range, mapConfig.colours, layerConfig.formatter),
           },
           'fill-opacity': 0.75,
@@ -119,10 +118,10 @@ const DistrictMap = (props) => {
     }
   }, [activeIndicator, filterOptions.year]);
 
-  const onLoad = (_map) => {
+  function onLoad(_map) {
     setLoading(false);
     setMap(_map);
-  };
+  }
   const updateFilterOptions = (options, merge = true) => {
     const { topic, indicator } = getRawFilterOptions(props.configs.data, { ...filterOptions, ...options });
     dispatch({
@@ -144,17 +143,17 @@ const DistrictMap = (props) => {
       </MapActionsRow>
     ) : null;
 
+  const contextValue = useMemo(() => ({
+    filters: props.filters,
+    topics: props.configs.data,
+    filterOptions,
+    updateFilterOptions,
+    activeTopic,
+    activeIndicator,
+  }));
+
   return (
-    <DistrictMapContext.Provider
-      value={{
-        filters: props.filters,
-        topics: props.configs.data,
-        filterOptions,
-        updateFilterOptions,
-        activeTopic,
-        activeIndicator,
-      }}
-    >
+    <DistrictMapContext.Provider value={contextValue}>
       <div className="spotlight">
         <div className="spotlight__aside spotlight__aside--no-margin" css={{ minHeight: '600px' }}>
           <DistrictMapSidebar />
