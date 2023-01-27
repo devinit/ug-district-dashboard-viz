@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { css, Global, jsx } from '@emotion/react';
 import mapbox from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import PropTypes from 'prop-types';
 import { Children, cloneElement, isValidElement, useEffect, useRef, useState } from 'react';
 import { BaseMapLayer } from './BaseMapLayer';
