@@ -170,6 +170,7 @@ const DistrictMap = (props) => {
               zoom: coreLayer.zoom || 6.1,
               maxZoom: coreLayer.maxZoom || 7,
               scrollZoom: false,
+              ...props.configs.options,
             }}
             style={{ width: '100%', background: '#ffffff' }}
             onLoad={onLoad}

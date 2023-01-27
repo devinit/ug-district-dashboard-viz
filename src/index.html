@@ -297,7 +297,10 @@
             yearLabel: 'Choose a year',
           },
           data: topics,
-          aggregator: 'avg', //either sum, avg
+          options: {
+            zoom: 10,
+            maxZoom: 12,
+          },
         },
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
