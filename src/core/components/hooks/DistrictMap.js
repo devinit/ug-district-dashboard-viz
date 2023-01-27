@@ -1,5 +1,5 @@
 import { Popup } from 'mapbox-gl';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
 import fetchData from '../../../utils/data';
 import { processData } from '../DistrictMap/utils';
@@ -8,10 +8,26 @@ const showPopup = (popup, map, event, options) => {
   renderTooltipFromEvent(map, event, { ...options, popup });
 };
 
+const popup = new Popup({ offset: 5 });
 const useMap = (location, layer, defaultOptions = {}) => {
   const [map, setMap] = useState();
   const [options, setOptions] = useState(defaultOptions);
   const [data, setData] = useState([]);
+
+  const onHover = useCallback(
+    (event) => {
+      const canvas = map.getCanvas();
+      canvas.style.cursor = 'pointer';
+      showPopup(popup, map, event, { ...layer, data, ...options });
+    },
+    [map, data, options]
+  );
+
+  const onBlur = useCallback(() => {
+    const canvas = map.getCanvas();
+    canvas.style.cursor = '';
+    popup.remove();
+  }, [map, location]);
 
   useEffect(() => {
     if (map) {
@@ -22,20 +38,10 @@ const useMap = (location, layer, defaultOptions = {}) => {
         }
       });
       setZoomByContainerWidth(map, map.getContainer(), layer);
-      // add tooltip
-      const popup = new Popup({ offset: 5 });
-      const canvas = map.getCanvas();
-      const onHover = (event) => {
-        canvas.style.cursor = 'pointer';
-        showPopup(popup, map, event, { ...layer, data, ...options });
-      };
-      const onBlur = () => {
-        canvas.style.cursor = '';
-        if (!location) {
-          popup.remove();
-        }
-      };
-
+      // remove any existing listners
+      map.off('mouseleave', COLOURED_LAYER, onBlur);
+      map.off('mousemove', COLOURED_LAYER, onHover);
+      // add even listeners to show tooltip
       map.on('mousemove', COLOURED_LAYER, onHover);
       map.on('mouseleave', COLOURED_LAYER, onBlur);
     }
