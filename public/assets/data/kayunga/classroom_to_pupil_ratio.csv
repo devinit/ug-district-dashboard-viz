@@ -1,0 +1,1019 @@
+,year,level,type,classroom_capacity,pupil_value,subcounty
+0,2020,Secondary,Private,60,90,Galiraya
+1,2022,Secondary,Private,70,75,Bbaale
+2,2018,Secondary,Government,11,80,Kangulumira
+3,2020,Primary,Government,34,167,Galiraya
+4,2018,Secondary,Government,10,500,Kitimbwa
+5,2022,Primary,Government,31,300,Bbaale
+6,2020,Secondary,Private,40,55,Busaana
+7,2019,Primary,Private,100,345,Kayunga
+8,2018,Secondary,Government,28,102,Kangulumira
+9,2020,Secondary,Government,22,378,Bbaale
+10,2018,Primary,Government,21,194,Kayunga
+11,2019,Primary,Private,20,260,Kayunga
+12,2018,Primary,Government,29,45,Kayunga
+13,2018,Secondary,Private,90,300,Kayunga Town Council
+14,2019,Secondary,Government,25,35,Kangulumira
+15,2019,Secondary,Private,40,60,Kayunga
+16,2022,Primary,Private,80,85,Kangulumira
+17,2022,Secondary,Private,40,400,Kangulumira
+18,2020,Primary,Government,36,45,Kangulumira
+19,2021,Secondary,Private,20,95,Kayunga Town Council
+20,2021,Secondary,Government,36,300,Galiraya
+21,2020,Primary,Private,70,500,Kayunga Town Council
+22,2018,Secondary,Private,50,400,Kitimbwa
+23,2018,Primary,Private,40,300,Kitimbwa
+24,2018,Primary,Government,43,30,Kayunga
+25,2018,Secondary,Private,30,456,Kayunga Town Council
+26,2018,Secondary,Private,20,213,Bbaale
+27,2020,Primary,Government,17,75,Kayunga
+28,2022,Primary,Private,90,197,Galiraya
+29,2020,Primary,Government,49,199,Kayunga Town Council
+30,2022,Secondary,Private,30,197,Kitimbwa
+31,2020,Primary,Private,100,456,Kayunga Town Council
+32,2022,Primary,Private,60,378,Busaana
+33,2021,Primary,Government,40,90,Kitimbwa
+34,2022,Secondary,Government,13,85,Kangulumira
+35,2022,Primary,Government,44,150,Bbaale
+36,2021,Primary,Private,70,150,Kitimbwa
+37,2021,Secondary,Private,30,30,Busaana
+38,2022,Secondary,Private,20,197,Bbaale
+39,2020,Primary,Government,14,55,Kangulumira
+40,2020,Primary,Private,20,80,Kitimbwa
+41,2019,Primary,Government,48,213,Busaana
+42,2019,Secondary,Government,33,80,Kayunga Town Council
+43,2018,Secondary,Government,10,194,Kayunga
+44,2021,Primary,Government,49,378,Kitimbwa
+45,2018,Secondary,Private,100,197,Busaana
+46,2021,Primary,Private,70,278,Busaana
+47,2020,Secondary,Private,70,55,Kangulumira
+48,2020,Secondary,Government,41,70,Kayunga Town Council
+49,2022,Primary,Private,60,278,Kangulumira
+50,2022,Primary,Government,20,95,Kayunga Town Council
+51,2019,Secondary,Government,42,378,Kitimbwa
+52,2022,Secondary,Private,80,180,Galiraya
+53,2020,Secondary,Private,60,102,Kitimbwa
+54,2022,Secondary,Government,44,65,Kitimbwa
+55,2019,Secondary,Private,100,150,Busaana
+56,2018,Secondary,Government,49,75,Galiraya
+57,2022,Primary,Private,40,65,Kayunga
+58,2021,Primary,Private,60,260,Kitimbwa
+59,2019,Primary,Private,40,80,Kangulumira
+60,2020,Secondary,Private,50,200,Kayunga
+61,2020,Secondary,Private,100,240,Bbaale
+62,2020,Primary,Government,49,55,Kitimbwa
+63,2019,Primary,Private,20,456,Kangulumira
+64,2019,Primary,Government,12,180,Galiraya
+65,2020,Primary,Government,15,150,Kayunga Town Council
+66,2018,Primary,Private,40,150,Bbaale
+67,2021,Secondary,Private,60,150,Kangulumira
+68,2020,Primary,Private,100,180,Galiraya
+69,2022,Secondary,Government,30,20,Bbaale
+70,2020,Secondary,Private,40,55,Kitimbwa
+71,2021,Secondary,Government,42,85,Bbaale
+72,2020,Secondary,Government,16,110,Kayunga Town Council
+73,2018,Primary,Government,32,345,Galiraya
+74,2020,Primary,Government,36,30,Kangulumira
+75,2021,Secondary,Government,28,55,Kangulumira
+76,2018,Secondary,Government,19,378,Busaana
+77,2018,Primary,Private,50,75,Busaana
+78,2019,Secondary,Government,17,75,Kitimbwa
+79,2022,Secondary,Government,49,100,Kitimbwa
+80,2021,Primary,Private,70,25,Galiraya
+81,2019,Primary,Government,49,240,Galiraya
+82,2022,Primary,Private,90,60,Galiraya
+83,2021,Secondary,Private,90,55,Kayunga Town Council
+84,2020,Primary,Private,100,197,Bbaale
+85,2022,Primary,Private,50,70,Galiraya
+86,2020,Secondary,Government,23,500,Busaana
+87,2019,Secondary,Private,50,30,Kitimbwa
+88,2019,Primary,Private,100,260,Kangulumira
+89,2019,Primary,Private,40,300,Kayunga
+90,2022,Primary,Government,44,100,Busaana
+91,2019,Primary,Private,80,90,Busaana
+92,2022,Secondary,Private,60,300,Kitimbwa
+93,2021,Primary,Government,40,278,Kayunga Town Council
+94,2022,Secondary,Government,12,500,Busaana
+95,2022,Secondary,Private,50,10,Kangulumira
+96,2018,Secondary,Government,36,10,Bbaale
+97,2020,Primary,Government,23,55,Galiraya
+98,2020,Secondary,Private,30,150,Busaana
+99,2022,Primary,Government,49,95,Kayunga Town Council
+100,2019,Primary,Private,60,167,Kayunga
+101,2022,Secondary,Private,50,75,Bbaale
+102,2019,Primary,Government,30,50,Bbaale
+103,2020,Secondary,Government,35,45,Kayunga
+104,2019,Secondary,Private,20,194,Galiraya
+105,2019,Primary,Government,40,102,Kayunga
+106,2018,Secondary,Private,90,378,Galiraya
+107,2021,Secondary,Private,20,95,Kangulumira
+108,2021,Secondary,Private,40,85,Bbaale
+109,2020,Secondary,Private,20,95,Galiraya
+110,2018,Primary,Private,70,25,Kayunga Town Council
+111,2020,Primary,Private,80,199,Bbaale
+112,2019,Primary,Government,13,150,Kayunga Town Council
+113,2021,Primary,Private,60,456,Kangulumira
+114,2018,Primary,Private,70,50,Galiraya
+115,2019,Secondary,Government,18,199,Kangulumira
+116,2022,Secondary,Government,11,102,Kayunga
+117,2020,Primary,Private,80,20,Galiraya
+118,2020,Primary,Private,40,345,Bbaale
+119,2021,Primary,Government,41,199,Kangulumira
+120,2018,Secondary,Private,80,203,Kangulumira
+121,2019,Primary,Private,70,240,Kayunga Town Council
+122,2022,Primary,Private,50,194,Busaana
+123,2022,Secondary,Private,100,85,Busaana
+124,2022,Secondary,Private,60,25,Kangulumira
+125,2021,Primary,Private,20,40,Galiraya
+126,2022,Primary,Government,40,278,Galiraya
+127,2021,Secondary,Private,90,95,Kangulumira
+128,2021,Primary,Private,80,80,Busaana
+129,2021,Primary,Government,47,180,Kitimbwa
+130,2021,Primary,Government,31,102,Bbaale
+131,2018,Secondary,Government,26,80,Busaana
+132,2019,Primary,Government,19,110,Kangulumira
+133,2020,Secondary,Government,13,345,Bbaale
+134,2022,Secondary,Government,32,500,Galiraya
+135,2019,Primary,Private,50,203,Kayunga Town Council
+136,2022,Secondary,Government,17,167,Kayunga Town Council
+137,2021,Secondary,Private,20,50,Kitimbwa
+138,2018,Primary,Private,100,178,Kangulumira
+139,2021,Primary,Private,20,250,Kitimbwa
+140,2021,Primary,Private,20,213,Kayunga Town Council
+141,2019,Primary,Government,26,75,Kayunga
+142,2018,Primary,Government,27,195,Bbaale
+143,2022,Primary,Government,13,50,Kangulumira
+144,2020,Secondary,Private,20,203,Kayunga
+145,2019,Primary,Government,24,345,Kayunga
+146,2021,Secondary,Government,11,25,Kitimbwa
+147,2019,Primary,Private,50,45,Kangulumira
+148,2018,Primary,Government,26,10,Kangulumira
+149,2019,Secondary,Private,20,500,Galiraya
+150,2021,Primary,Private,90,120,Kayunga
+151,2018,Primary,Government,42,167,Kayunga Town Council
+152,2020,Primary,Government,37,30,Galiraya
+153,2021,Secondary,Government,25,278,Busaana
+154,2021,Primary,Government,30,250,Galiraya
+155,2018,Primary,Government,36,85,Kitimbwa
+156,2019,Secondary,Private,40,10,Kangulumira
+157,2018,Secondary,Private,50,75,Galiraya
+158,2019,Primary,Government,47,378,Busaana
+159,2019,Secondary,Private,40,195,Galiraya
+160,2018,Primary,Private,20,50,Kitimbwa
+161,2020,Primary,Private,90,20,Kitimbwa
+162,2020,Primary,Private,100,178,Kayunga
+163,2018,Primary,Government,49,85,Kayunga Town Council
+164,2020,Secondary,Private,50,194,Bbaale
+165,2019,Primary,Private,40,199,Galiraya
+166,2020,Primary,Government,26,199,Kayunga Town Council
+167,2021,Secondary,Private,80,167,Kitimbwa
+168,2021,Secondary,Private,40,30,Galiraya
+169,2020,Secondary,Private,50,110,Galiraya
+170,2021,Secondary,Private,100,102,Kangulumira
+171,2019,Primary,Private,80,213,Galiraya
+172,2018,Secondary,Government,15,120,Kayunga
+173,2021,Primary,Government,45,55,Kayunga
+174,2019,Secondary,Private,20,240,Kangulumira
+175,2019,Secondary,Government,11,150,Galiraya
+176,2020,Primary,Government,46,195,Kayunga
+177,2018,Primary,Government,44,300,Busaana
+178,2018,Primary,Private,100,90,Kayunga
+179,2019,Primary,Government,12,50,Kayunga Town Council
+180,2022,Primary,Private,40,178,Kitimbwa
+181,2022,Primary,Private,50,180,Kangulumira
+182,2020,Primary,Private,50,10,Kayunga Town Council
+183,2021,Secondary,Private,30,500,Kayunga Town Council
+184,2019,Secondary,Government,37,35,Bbaale
+185,2019,Primary,Private,70,150,Kayunga
+186,2019,Secondary,Government,28,378,Bbaale
+187,2019,Secondary,Government,18,178,Kayunga Town Council
+188,2021,Primary,Government,17,110,Bbaale
+189,2019,Secondary,Government,39,250,Kayunga
+190,2019,Secondary,Government,37,60,Bbaale
+191,2020,Primary,Government,44,85,Kitimbwa
+192,2021,Secondary,Private,20,100,Busaana
+193,2021,Primary,Private,40,30,Busaana
+194,2018,Secondary,Government,38,197,Kangulumira
+195,2018,Primary,Private,70,240,Kayunga
+196,2022,Primary,Private,20,75,Galiraya
+197,2021,Primary,Government,33,65,Kayunga Town Council
+198,2018,Primary,Private,70,120,Kayunga Town Council
+199,2020,Primary,Private,100,95,Kayunga
+200,2018,Secondary,Government,34,260,Kayunga Town Council
+201,2020,Secondary,Private,20,102,Kitimbwa
+202,2021,Secondary,Government,33,197,Kayunga
+203,2019,Primary,Government,21,213,Kitimbwa
+204,2022,Secondary,Government,30,90,Kitimbwa
+205,2022,Secondary,Private,80,167,Kitimbwa
+206,2021,Secondary,Private,20,105,Kayunga
+207,2019,Secondary,Private,40,100,Bbaale
+208,2018,Secondary,Government,32,167,Kangulumira
+209,2020,Primary,Private,90,378,Kitimbwa
+210,2019,Secondary,Private,30,120,Kayunga
+211,2020,Secondary,Private,70,197,Kayunga Town Council
+212,2018,Primary,Government,45,85,Kangulumira
+213,2018,Primary,Private,80,378,Kayunga
+214,2019,Primary,Government,44,50,Galiraya
+215,2018,Secondary,Government,18,100,Busaana
+216,2020,Secondary,Government,45,203,Kitimbwa
+217,2021,Secondary,Government,45,167,Bbaale
+218,2021,Secondary,Private,80,178,Kayunga
+219,2018,Secondary,Private,20,300,Busaana
+220,2020,Secondary,Government,32,250,Kayunga
+221,2018,Secondary,Government,20,45,Galiraya
+222,2020,Secondary,Government,31,200,Kangulumira
+223,2021,Primary,Government,44,500,Kitimbwa
+224,2022,Secondary,Government,15,180,Bbaale
+225,2019,Primary,Private,50,456,Kitimbwa
+226,2022,Secondary,Private,60,55,Kangulumira
+227,2018,Secondary,Private,60,345,Kayunga Town Council
+228,2018,Primary,Private,90,45,Kitimbwa
+229,2021,Secondary,Government,35,199,Kitimbwa
+230,2020,Secondary,Government,47,30,Kangulumira
+231,2019,Primary,Private,100,500,Galiraya
+232,2021,Secondary,Private,30,150,Bbaale
+233,2019,Secondary,Government,41,50,Busaana
+234,2020,Primary,Private,20,150,Kitimbwa
+235,2021,Secondary,Government,21,456,Kayunga
+236,2021,Primary,Government,33,240,Kitimbwa
+237,2022,Primary,Government,37,250,Kangulumira
+238,2018,Primary,Private,50,75,Busaana
+239,2021,Primary,Private,90,50,Kayunga
+240,2022,Primary,Government,11,194,Kayunga Town Council
+241,2020,Secondary,Private,90,55,Kangulumira
+242,2022,Secondary,Private,90,50,Kayunga
+243,2019,Primary,Private,50,167,Bbaale
+244,2021,Primary,Private,70,260,Kangulumira
+245,2021,Secondary,Private,70,95,Galiraya
+246,2021,Primary,Government,13,45,Bbaale
+247,2018,Primary,Private,90,203,Kangulumira
+248,2022,Primary,Private,60,90,Busaana
+249,2019,Secondary,Private,30,95,Galiraya
+250,2019,Secondary,Government,26,197,Kangulumira
+251,2018,Secondary,Private,100,200,Busaana
+252,2022,Primary,Private,50,10,Kayunga
+253,2018,Secondary,Government,34,199,Bbaale
+254,2018,Secondary,Government,47,203,Kangulumira
+255,2019,Primary,Private,30,199,Busaana
+256,2022,Primary,Private,50,70,Kitimbwa
+257,2020,Secondary,Government,41,20,Bbaale
+258,2020,Secondary,Government,25,65,Kitimbwa
+259,2020,Secondary,Private,80,35,Busaana
+260,2022,Primary,Government,23,167,Kayunga
+261,2020,Secondary,Private,20,25,Busaana
+262,2022,Primary,Private,50,213,Bbaale
+263,2019,Primary,Government,34,167,Galiraya
+264,2020,Secondary,Private,40,200,Kangulumira
+265,2022,Primary,Private,80,95,Galiraya
+266,2022,Primary,Private,90,278,Galiraya
+267,2019,Secondary,Private,70,45,Kayunga Town Council
+268,2018,Primary,Private,70,50,Kayunga Town Council
+269,2020,Secondary,Government,29,278,Bbaale
+270,2020,Secondary,Private,50,20,Kitimbwa
+271,2019,Secondary,Private,50,180,Kitimbwa
+272,2019,Primary,Private,60,80,Kayunga
+273,2019,Secondary,Government,42,213,Busaana
+274,2020,Secondary,Government,45,30,Kangulumira
+275,2018,Primary,Government,10,194,Busaana
+276,2021,Secondary,Government,38,203,Busaana
+277,2018,Primary,Government,21,105,Kangulumira
+278,2018,Secondary,Private,80,50,Galiraya
+279,2019,Secondary,Private,40,50,Galiraya
+280,2021,Secondary,Private,100,102,Galiraya
+281,2019,Primary,Government,11,197,Bbaale
+282,2019,Secondary,Private,40,70,Kangulumira
+283,2020,Primary,Private,30,260,Kayunga Town Council
+284,2020,Primary,Government,36,95,Kangulumira
+285,2022,Secondary,Government,17,85,Busaana
+286,2022,Secondary,Government,24,260,Galiraya
+287,2020,Primary,Private,20,25,Kayunga
+288,2018,Secondary,Government,43,345,Galiraya
+289,2019,Primary,Government,36,95,Kangulumira
+290,2022,Primary,Government,40,120,Kayunga Town Council
+291,2021,Secondary,Government,15,105,Kayunga Town Council
+292,2021,Secondary,Private,30,105,Kayunga Town Council
+293,2021,Secondary,Government,42,213,Busaana
+294,2020,Primary,Private,30,167,Bbaale
+295,2020,Secondary,Government,49,213,Bbaale
+296,2021,Secondary,Government,39,300,Galiraya
+297,2021,Primary,Private,70,75,Kangulumira
+298,2022,Secondary,Private,40,195,Kayunga Town Council
+299,2018,Secondary,Private,60,105,Kayunga
+300,2019,Secondary,Private,90,40,Bbaale
+301,2021,Secondary,Private,40,180,Kayunga
+302,2019,Primary,Government,23,10,Kayunga
+303,2018,Primary,Private,100,25,Kitimbwa
+304,2021,Primary,Government,16,80,Kayunga
+305,2022,Primary,Private,20,70,Kangulumira
+306,2018,Primary,Private,90,55,Kayunga Town Council
+307,2020,Primary,Private,90,85,Galiraya
+308,2018,Secondary,Private,20,250,Galiraya
+309,2020,Secondary,Government,41,278,Busaana
+310,2019,Secondary,Private,70,85,Kayunga Town Council
+311,2022,Primary,Government,33,110,Kayunga Town Council
+312,2019,Primary,Government,35,456,Kayunga Town Council
+313,2021,Primary,Government,33,278,Kayunga
+314,2019,Primary,Private,70,120,Kayunga
+315,2019,Secondary,Private,80,300,Bbaale
+316,2020,Primary,Private,80,250,Kangulumira
+317,2019,Secondary,Government,31,203,Kangulumira
+318,2018,Primary,Government,25,100,Kitimbwa
+319,2018,Secondary,Private,100,167,Kitimbwa
+320,2022,Secondary,Government,21,100,Busaana
+321,2021,Secondary,Private,20,345,Bbaale
+322,2020,Primary,Government,16,25,Busaana
+323,2021,Primary,Private,60,90,Kayunga
+324,2022,Primary,Private,30,100,Kayunga
+325,2022,Secondary,Government,29,25,Bbaale
+326,2019,Primary,Private,90,178,Kayunga Town Council
+327,2021,Secondary,Government,28,75,Kayunga
+328,2020,Secondary,Government,40,55,Kayunga Town Council
+329,2021,Primary,Government,31,50,Kayunga Town Council
+330,2022,Primary,Private,30,95,Kitimbwa
+331,2018,Primary,Private,30,278,Busaana
+332,2021,Secondary,Government,48,75,Kayunga Town Council
+333,2020,Secondary,Government,34,456,Busaana
+334,2020,Secondary,Government,18,213,Kitimbwa
+335,2019,Secondary,Government,23,102,Busaana
+336,2019,Secondary,Government,22,100,Kayunga
+337,2020,Primary,Private,30,102,Galiraya
+338,2018,Primary,Private,100,110,Galiraya
+339,2022,Primary,Government,49,150,Galiraya
+340,2022,Primary,Government,37,345,Kayunga
+341,2021,Secondary,Private,70,500,Kitimbwa
+342,2019,Secondary,Government,29,195,Kayunga Town Council
+343,2022,Primary,Private,20,90,Busaana
+344,2018,Secondary,Government,19,203,Kayunga
+345,2021,Primary,Government,25,30,Busaana
+346,2020,Primary,Government,49,25,Kayunga Town Council
+347,2022,Secondary,Government,27,345,Kangulumira
+348,2021,Secondary,Government,28,213,Kangulumira
+349,2019,Primary,Government,33,55,Kayunga Town Council
+350,2022,Primary,Private,30,20,Kitimbwa
+351,2019,Primary,Government,19,345,Kangulumira
+352,2018,Secondary,Private,20,95,Busaana
+353,2018,Primary,Private,80,178,Galiraya
+354,2021,Primary,Government,44,180,Kangulumira
+355,2022,Primary,Government,12,105,Bbaale
+356,2019,Secondary,Government,46,10,Bbaale
+357,2022,Primary,Private,50,70,Kangulumira
+358,2021,Secondary,Private,70,50,Kitimbwa
+359,2018,Secondary,Government,41,30,Kangulumira
+360,2022,Primary,Private,40,500,Kangulumira
+361,2019,Secondary,Government,28,40,Busaana
+362,2019,Primary,Private,90,199,Galiraya
+363,2022,Secondary,Private,40,102,Bbaale
+364,2018,Secondary,Private,50,105,Kayunga
+365,2020,Secondary,Government,19,110,Bbaale
+366,2022,Secondary,Private,90,500,Kayunga
+367,2022,Secondary,Government,45,102,Busaana
+368,2018,Primary,Government,41,80,Galiraya
+369,2020,Primary,Private,80,110,Kayunga Town Council
+370,2019,Secondary,Private,80,90,Bbaale
+371,2018,Primary,Government,35,199,Busaana
+372,2022,Secondary,Government,32,20,Bbaale
+373,2022,Secondary,Government,28,456,Kayunga Town Council
+374,2020,Secondary,Government,48,60,Kayunga
+375,2022,Secondary,Government,39,278,Kitimbwa
+376,2019,Secondary,Private,20,100,Bbaale
+377,2020,Secondary,Private,70,260,Kitimbwa
+378,2019,Secondary,Private,70,70,Galiraya
+379,2018,Primary,Government,33,40,Bbaale
+380,2018,Primary,Private,50,75,Kitimbwa
+381,2022,Primary,Private,70,456,Bbaale
+382,2018,Secondary,Private,20,240,Kayunga Town Council
+383,2019,Secondary,Private,20,197,Kayunga Town Council
+384,2022,Primary,Government,22,199,Kayunga
+385,2018,Primary,Private,50,30,Galiraya
+386,2019,Secondary,Government,49,260,Busaana
+387,2022,Primary,Private,70,45,Galiraya
+388,2022,Primary,Private,60,110,Kayunga Town Council
+389,2019,Primary,Government,11,378,Kayunga
+390,2018,Secondary,Government,16,300,Bbaale
+391,2018,Secondary,Government,19,85,Busaana
+392,2018,Secondary,Government,23,150,Kangulumira
+393,2019,Secondary,Private,80,102,Kayunga Town Council
+394,2021,Secondary,Private,60,70,Kayunga Town Council
+395,2018,Primary,Private,30,100,Kitimbwa
+396,2019,Primary,Government,36,60,Kangulumira
+397,2018,Primary,Private,90,110,Kayunga Town Council
+398,2021,Primary,Government,16,90,Kitimbwa
+399,2021,Primary,Government,38,10,Kayunga
+400,2020,Primary,Government,19,35,Galiraya
+401,2021,Secondary,Private,90,250,Kayunga
+402,2020,Secondary,Government,26,199,Bbaale
+403,2019,Primary,Government,37,90,Kayunga Town Council
+404,2021,Primary,Private,90,260,Kangulumira
+405,2018,Primary,Private,20,35,Kayunga
+406,2018,Secondary,Government,48,80,Kayunga
+407,2022,Secondary,Private,70,345,Kitimbwa
+408,2019,Secondary,Private,20,278,Kitimbwa
+409,2021,Primary,Government,38,55,Kangulumira
+410,2022,Primary,Government,16,180,Kayunga Town Council
+411,2021,Secondary,Private,60,110,Kayunga
+412,2018,Primary,Private,80,456,Kayunga Town Council
+413,2019,Secondary,Government,16,213,Kayunga Town Council
+414,2020,Secondary,Private,30,105,Busaana
+415,2018,Secondary,Government,33,60,Bbaale
+416,2021,Secondary,Private,60,45,Kayunga Town Council
+417,2021,Primary,Government,17,400,Kitimbwa
+418,2022,Secondary,Government,29,120,Kayunga Town Council
+419,2018,Secondary,Private,30,378,Kangulumira
+420,2018,Primary,Government,46,213,Kitimbwa
+421,2022,Secondary,Government,19,75,Kayunga
+422,2018,Primary,Government,28,195,Kitimbwa
+423,2020,Primary,Private,60,120,Galiraya
+424,2021,Secondary,Government,11,260,Busaana
+425,2020,Primary,Government,34,378,Bbaale
+426,2021,Secondary,Private,80,213,Galiraya
+427,2019,Secondary,Private,40,45,Bbaale
+428,2022,Secondary,Private,40,500,Kayunga
+429,2020,Primary,Private,20,167,Busaana
+430,2019,Secondary,Private,50,50,Busaana
+431,2020,Secondary,Private,50,195,Busaana
+432,2022,Secondary,Government,47,197,Kayunga Town Council
+433,2022,Primary,Private,30,456,Kayunga Town Council
+434,2018,Primary,Government,33,178,Kangulumira
+435,2021,Primary,Private,20,85,Kangulumira
+436,2021,Secondary,Private,60,400,Busaana
+437,2022,Secondary,Government,19,85,Bbaale
+438,2018,Secondary,Government,37,75,Kangulumira
+439,2022,Primary,Private,40,300,Kitimbwa
+440,2018,Primary,Government,15,30,Kangulumira
+441,2022,Primary,Government,14,197,Kangulumira
+442,2020,Secondary,Government,10,194,Galiraya
+443,2020,Secondary,Private,80,105,Galiraya
+444,2018,Secondary,Private,50,30,Kangulumira
+445,2022,Secondary,Private,60,102,Kayunga
+446,2021,Secondary,Government,23,100,Bbaale
+447,2021,Primary,Private,70,250,Kangulumira
+448,2021,Secondary,Private,100,40,Kangulumira
+449,2020,Primary,Private,50,45,Bbaale
+450,2019,Primary,Private,60,260,Kayunga Town Council
+451,2022,Secondary,Government,42,70,Kangulumira
+452,2020,Primary,Government,15,25,Kayunga
+453,2019,Primary,Government,34,20,Busaana
+454,2021,Primary,Government,26,40,Bbaale
+455,2019,Secondary,Government,13,400,Kangulumira
+456,2020,Secondary,Government,49,199,Kayunga
+457,2020,Primary,Government,23,345,Bbaale
+458,2021,Primary,Government,25,10,Kayunga
+459,2019,Primary,Government,13,240,Galiraya
+460,2022,Secondary,Private,20,194,Kayunga
+461,2020,Primary,Government,14,80,Bbaale
+462,2020,Primary,Private,80,55,Kitimbwa
+463,2019,Primary,Private,90,120,Kayunga
+464,2020,Secondary,Private,40,200,Busaana
+465,2020,Secondary,Government,16,80,Galiraya
+466,2021,Secondary,Government,44,65,Busaana
+467,2019,Primary,Government,21,378,Kayunga
+468,2021,Primary,Private,50,120,Kayunga Town Council
+469,2022,Primary,Private,100,10,Kayunga
+470,2020,Secondary,Government,26,278,Kitimbwa
+471,2020,Secondary,Private,70,213,Bbaale
+472,2018,Secondary,Private,100,167,Galiraya
+473,2020,Primary,Private,40,40,Bbaale
+474,2022,Secondary,Government,22,60,Kayunga
+475,2021,Secondary,Private,90,199,Bbaale
+476,2022,Secondary,Government,28,178,Busaana
+477,2018,Secondary,Private,50,345,Kayunga Town Council
+478,2022,Secondary,Government,15,102,Bbaale
+479,2019,Secondary,Private,70,200,Kayunga Town Council
+480,2020,Primary,Government,45,105,Kayunga
+481,2018,Secondary,Private,20,178,Kangulumira
+482,2018,Secondary,Government,22,95,Kayunga
+483,2022,Primary,Private,90,195,Galiraya
+484,2020,Primary,Private,90,456,Kayunga Town Council
+485,2022,Primary,Government,39,45,Kayunga Town Council
+486,2021,Secondary,Private,80,199,Busaana
+487,2018,Secondary,Private,20,199,Busaana
+488,2018,Secondary,Government,21,197,Kayunga Town Council
+489,2021,Secondary,Private,40,300,Kitimbwa
+490,2019,Secondary,Private,90,400,Kitimbwa
+491,2022,Primary,Government,26,400,Kayunga
+492,2022,Primary,Private,70,35,Galiraya
+493,2021,Secondary,Government,38,90,Kayunga
+494,2018,Primary,Private,80,240,Busaana
+495,2020,Secondary,Government,15,40,Kitimbwa
+496,2018,Primary,Government,30,200,Kangulumira
+497,2019,Primary,Government,45,75,Kayunga
+498,2020,Secondary,Private,80,110,Bbaale
+499,2022,Primary,Private,20,70,Busaana
+500,2021,Secondary,Government,33,260,Kayunga Town Council
+501,2020,Secondary,Private,90,75,Kayunga
+502,2020,Secondary,Government,35,278,Kitimbwa
+503,2022,Secondary,Private,50,110,Kayunga
+504,2020,Primary,Private,90,65,Kangulumira
+505,2021,Primary,Government,18,55,Busaana
+506,2022,Primary,Government,11,180,Galiraya
+507,2019,Primary,Private,80,100,Busaana
+508,2021,Primary,Government,32,199,Busaana
+509,2022,Primary,Government,30,240,Galiraya
+510,2020,Secondary,Government,40,45,Kayunga
+511,2022,Secondary,Government,42,30,Kayunga
+512,2020,Secondary,Private,60,150,Galiraya
+513,2022,Primary,Private,60,278,Kangulumira
+514,2019,Secondary,Government,33,70,Galiraya
+515,2021,Primary,Private,90,240,Galiraya
+516,2018,Primary,Private,70,10,Busaana
+517,2018,Primary,Government,30,30,Bbaale
+518,2020,Secondary,Private,30,120,Kayunga
+519,2022,Primary,Private,90,150,Galiraya
+520,2019,Secondary,Private,60,180,Bbaale
+521,2020,Primary,Private,20,167,Kayunga Town Council
+522,2021,Secondary,Private,40,90,Kangulumira
+523,2018,Secondary,Private,60,110,Kitimbwa
+524,2019,Secondary,Government,20,260,Bbaale
+525,2021,Primary,Private,30,194,Kangulumira
+526,2020,Primary,Private,20,65,Bbaale
+527,2019,Primary,Private,90,250,Kangulumira
+528,2018,Primary,Private,90,240,Galiraya
+529,2022,Secondary,Government,29,20,Kayunga Town Council
+530,2019,Secondary,Government,24,95,Kayunga
+531,2020,Primary,Private,100,10,Galiraya
+532,2018,Secondary,Private,70,20,Busaana
+533,2021,Secondary,Government,31,250,Kayunga
+534,2021,Primary,Private,100,300,Kayunga Town Council
+535,2018,Secondary,Government,18,167,Bbaale
+536,2021,Secondary,Private,90,35,Kayunga
+537,2021,Primary,Government,33,197,Busaana
+538,2019,Secondary,Private,80,194,Kayunga Town Council
+539,2021,Primary,Private,40,30,Kayunga Town Council
+540,2020,Secondary,Private,30,345,Kayunga Town Council
+541,2021,Primary,Private,30,178,Busaana
+542,2021,Secondary,Private,20,213,Kayunga Town Council
+543,2021,Primary,Private,20,200,Busaana
+544,2018,Primary,Private,90,250,Kangulumira
+545,2019,Secondary,Private,90,90,Kangulumira
+546,2021,Primary,Government,23,30,Kitimbwa
+547,2018,Primary,Government,17,75,Bbaale
+548,2018,Secondary,Government,36,260,Kayunga
+549,2021,Primary,Government,27,197,Kitimbwa
+550,2018,Secondary,Government,40,85,Bbaale
+551,2018,Primary,Private,40,195,Kitimbwa
+552,2022,Secondary,Government,32,195,Kangulumira
+553,2021,Primary,Private,40,95,Kitimbwa
+554,2021,Primary,Government,39,300,Busaana
+555,2020,Primary,Private,100,300,Galiraya
+556,2019,Secondary,Government,39,400,Kitimbwa
+557,2022,Primary,Government,41,20,Kayunga
+558,2020,Primary,Government,19,120,Galiraya
+559,2019,Primary,Government,10,102,Kangulumira
+560,2018,Primary,Private,30,100,Kangulumira
+561,2021,Primary,Government,31,300,Galiraya
+562,2020,Primary,Private,40,110,Kayunga
+563,2021,Primary,Government,14,25,Kangulumira
+564,2018,Secondary,Government,45,200,Kayunga Town Council
+565,2018,Primary,Private,20,213,Galiraya
+566,2022,Secondary,Private,50,55,Kayunga Town Council
+567,2018,Secondary,Private,90,345,Kayunga Town Council
+568,2021,Secondary,Government,19,400,Kayunga
+569,2019,Secondary,Private,90,197,Busaana
+570,2019,Primary,Government,17,194,Kayunga Town Council
+571,2020,Secondary,Private,60,25,Kitimbwa
+572,2020,Secondary,Government,24,80,Bbaale
+573,2022,Secondary,Government,34,120,Kayunga Town Council
+574,2021,Secondary,Government,31,240,Kitimbwa
+575,2022,Secondary,Government,39,180,Bbaale
+576,2019,Secondary,Private,90,95,Bbaale
+577,2019,Primary,Government,23,35,Bbaale
+578,2021,Primary,Private,40,110,Kitimbwa
+579,2019,Primary,Private,80,45,Kayunga
+580,2018,Secondary,Private,50,75,Kayunga
+581,2022,Primary,Government,17,167,Bbaale
+582,2021,Primary,Government,43,90,Galiraya
+583,2020,Secondary,Private,60,456,Bbaale
+584,2021,Secondary,Private,70,150,Bbaale
+585,2019,Secondary,Private,80,102,Kitimbwa
+586,2022,Primary,Private,90,20,Kayunga Town Council
+587,2021,Primary,Private,60,102,Kitimbwa
+588,2020,Secondary,Government,49,195,Bbaale
+589,2018,Primary,Government,25,345,Kayunga Town Council
+590,2019,Secondary,Government,30,20,Kitimbwa
+591,2022,Primary,Government,35,102,Kayunga Town Council
+592,2020,Primary,Government,12,150,Galiraya
+593,2021,Primary,Private,60,199,Kangulumira
+594,2021,Secondary,Government,24,65,Kangulumira
+595,2020,Primary,Government,39,70,Kayunga
+596,2021,Secondary,Private,70,70,Kayunga Town Council
+597,2022,Primary,Government,20,120,Busaana
+598,2018,Primary,Private,90,150,Bbaale
+599,2022,Primary,Private,20,85,Busaana
+600,2020,Primary,Private,50,500,Bbaale
+601,2019,Primary,Government,31,345,Kangulumira
+602,2022,Secondary,Private,20,300,Busaana
+603,2019,Primary,Government,26,35,Busaana
+604,2019,Primary,Private,50,278,Kitimbwa
+605,2018,Primary,Private,70,240,Kitimbwa
+606,2022,Secondary,Government,46,50,Kangulumira
+607,2019,Primary,Private,40,30,Busaana
+608,2022,Secondary,Government,10,150,Bbaale
+609,2020,Secondary,Government,13,400,Kayunga
+610,2021,Secondary,Private,90,35,Kayunga Town Council
+611,2022,Primary,Private,30,378,Busaana
+612,2020,Primary,Private,30,200,Bbaale
+613,2018,Primary,Government,28,10,Kitimbwa
+614,2019,Primary,Government,37,278,Kayunga
+615,2020,Secondary,Private,100,55,Galiraya
+616,2022,Primary,Private,60,55,Kangulumira
+617,2019,Secondary,Private,80,213,Kayunga Town Council
+618,2021,Secondary,Private,40,378,Kayunga Town Council
+619,2018,Primary,Private,40,150,Kitimbwa
+620,2021,Primary,Private,70,70,Kayunga
+621,2022,Primary,Government,23,240,Kayunga Town Council
+622,2020,Primary,Government,15,400,Kitimbwa
+623,2021,Primary,Private,70,250,Kitimbwa
+624,2021,Primary,Government,11,178,Kayunga
+625,2022,Primary,Private,30,70,Kayunga
+626,2018,Secondary,Private,30,10,Kayunga
+627,2019,Primary,Private,80,500,Kitimbwa
+628,2021,Primary,Private,40,100,Kayunga
+629,2022,Primary,Private,70,178,Galiraya
+630,2021,Secondary,Government,23,50,Bbaale
+631,2021,Secondary,Government,23,300,Galiraya
+632,2019,Secondary,Private,60,500,Galiraya
+633,2021,Primary,Government,43,45,Kayunga
+634,2018,Secondary,Government,17,85,Kayunga
+635,2020,Primary,Government,44,194,Busaana
+636,2019,Secondary,Government,46,197,Busaana
+637,2021,Primary,Government,45,45,Kitimbwa
+638,2022,Secondary,Private,30,102,Galiraya
+639,2022,Primary,Government,27,102,Kitimbwa
+640,2022,Secondary,Private,60,199,Kitimbwa
+641,2021,Secondary,Private,70,378,Galiraya
+642,2020,Primary,Government,30,197,Kitimbwa
+643,2018,Secondary,Private,20,240,Busaana
+644,2022,Secondary,Private,50,45,Bbaale
+645,2021,Secondary,Private,60,240,Kangulumira
+646,2022,Primary,Private,70,35,Bbaale
+647,2021,Primary,Government,30,70,Kayunga Town Council
+648,2020,Secondary,Government,20,50,Galiraya
+649,2020,Secondary,Government,21,203,Galiraya
+650,2018,Secondary,Private,80,110,Kangulumira
+651,2022,Primary,Government,42,260,Bbaale
+652,2019,Secondary,Government,13,300,Busaana
+653,2022,Secondary,Private,60,30,Galiraya
+654,2021,Secondary,Government,11,45,Kitimbwa
+655,2021,Secondary,Private,60,199,Busaana
+656,2020,Secondary,Government,41,250,Kayunga
+657,2018,Secondary,Government,13,100,Kayunga
+658,2019,Secondary,Private,100,95,Bbaale
+659,2020,Primary,Private,60,203,Kayunga
+660,2020,Primary,Private,90,25,Bbaale
+661,2022,Secondary,Private,60,50,Busaana
+662,2019,Secondary,Government,49,25,Kayunga
+663,2021,Primary,Government,14,100,Kangulumira
+664,2018,Secondary,Private,60,456,Busaana
+665,2022,Secondary,Government,36,80,Kangulumira
+666,2019,Primary,Government,19,345,Busaana
+667,2019,Primary,Government,26,250,Busaana
+668,2022,Secondary,Government,40,150,Busaana
+669,2018,Secondary,Private,90,80,Kayunga
+670,2022,Secondary,Private,30,200,Kayunga
+671,2018,Primary,Private,80,50,Kangulumira
+672,2019,Primary,Private,50,40,Galiraya
+673,2018,Secondary,Government,10,105,Busaana
+674,2019,Primary,Private,60,35,Kitimbwa
+675,2018,Primary,Private,40,55,Busaana
+676,2019,Primary,Government,48,25,Bbaale
+677,2018,Primary,Private,80,40,Galiraya
+678,2021,Secondary,Private,60,70,Kayunga Town Council
+679,2019,Secondary,Government,30,75,Busaana
+680,2022,Primary,Government,23,378,Kayunga Town Council
+681,2022,Secondary,Government,18,195,Kangulumira
+682,2019,Primary,Private,90,178,Kayunga Town Council
+683,2021,Primary,Private,50,345,Busaana
+684,2021,Primary,Private,20,40,Kitimbwa
+685,2020,Primary,Government,45,110,Kayunga Town Council
+686,2020,Secondary,Private,100,250,Bbaale
+687,2019,Secondary,Government,18,345,Kayunga
+688,2020,Primary,Government,17,456,Busaana
+689,2019,Primary,Government,47,260,Kayunga Town Council
+690,2022,Primary,Government,30,200,Kayunga
+691,2018,Primary,Private,30,100,Busaana
+692,2019,Secondary,Government,47,195,Kangulumira
+693,2020,Secondary,Private,50,250,Kitimbwa
+694,2020,Primary,Government,49,70,Kayunga
+695,2019,Secondary,Government,43,203,Kayunga
+696,2021,Primary,Private,70,80,Kayunga
+697,2019,Primary,Government,28,80,Kangulumira
+698,2022,Primary,Private,90,178,Bbaale
+699,2018,Primary,Private,40,50,Bbaale
+700,2019,Primary,Government,16,378,Kayunga
+701,2022,Secondary,Government,33,400,Bbaale
+702,2021,Primary,Private,20,100,Kayunga
+703,2021,Primary,Private,90,80,Busaana
+704,2020,Primary,Private,90,100,Kitimbwa
+705,2022,Primary,Private,80,40,Bbaale
+706,2019,Primary,Private,80,70,Bbaale
+707,2018,Primary,Private,80,197,Bbaale
+708,2018,Secondary,Government,27,120,Kayunga
+709,2019,Secondary,Government,33,200,Kayunga
+710,2022,Secondary,Government,10,60,Kayunga
+711,2018,Primary,Government,23,25,Bbaale
+712,2022,Primary,Government,12,100,Kangulumira
+713,2022,Secondary,Government,45,167,Kitimbwa
+714,2018,Secondary,Private,70,20,Galiraya
+715,2019,Primary,Private,50,30,Galiraya
+716,2021,Primary,Government,41,195,Kayunga
+717,2019,Primary,Government,21,25,Kayunga
+718,2020,Primary,Private,80,90,Kitimbwa
+719,2022,Secondary,Private,100,25,Busaana
+720,2021,Secondary,Private,100,240,Kitimbwa
+721,2022,Secondary,Private,40,199,Kitimbwa
+722,2021,Primary,Government,14,40,Kayunga Town Council
+723,2022,Secondary,Private,50,278,Kitimbwa
+724,2018,Secondary,Private,50,278,Busaana
+725,2021,Primary,Private,60,500,Kitimbwa
+726,2021,Primary,Private,30,105,Kangulumira
+727,2020,Secondary,Government,33,345,Busaana
+728,2019,Secondary,Private,40,105,Kitimbwa
+729,2018,Primary,Government,17,80,Busaana
+730,2020,Secondary,Private,50,167,Kayunga
+731,2022,Primary,Private,80,120,Kangulumira
+732,2018,Secondary,Private,50,378,Busaana
+733,2022,Primary,Government,40,200,Bbaale
+734,2020,Secondary,Private,80,150,Kayunga
+735,2021,Secondary,Government,46,120,Kangulumira
+736,2021,Primary,Private,80,80,Galiraya
+737,2022,Primary,Government,20,65,Kayunga
+738,2021,Secondary,Private,50,456,Kangulumira
+739,2020,Primary,Private,40,35,Kayunga Town Council
+740,2018,Secondary,Private,60,345,Galiraya
+741,2018,Primary,Government,34,25,Kayunga Town Council
+742,2021,Secondary,Private,100,102,Kayunga
+743,2020,Secondary,Government,33,20,Kayunga
+744,2020,Primary,Private,50,250,Busaana
+745,2022,Primary,Private,50,70,Kangulumira
+746,2020,Primary,Private,60,85,Busaana
+747,2019,Secondary,Government,26,90,Bbaale
+748,2022,Secondary,Private,40,95,Busaana
+749,2021,Secondary,Private,80,102,Busaana
+750,2018,Secondary,Government,29,199,Bbaale
+751,2021,Secondary,Government,46,240,Galiraya
+752,2018,Secondary,Private,80,456,Busaana
+753,2018,Primary,Private,100,213,Kitimbwa
+754,2020,Primary,Private,80,45,Kangulumira
+755,2022,Secondary,Government,18,20,Bbaale
+756,2018,Secondary,Government,47,203,Kayunga
+757,2019,Primary,Government,10,90,Kangulumira
+758,2020,Secondary,Private,60,105,Kayunga Town Council
+759,2020,Secondary,Government,45,178,Kangulumira
+760,2022,Primary,Government,41,30,Kitimbwa
+761,2020,Secondary,Government,20,240,Kayunga Town Council
+762,2020,Secondary,Private,40,75,Kangulumira
+763,2022,Secondary,Government,31,95,Kayunga Town Council
+764,2020,Primary,Government,47,250,Kitimbwa
+765,2021,Primary,Private,50,50,Kitimbwa
+766,2019,Secondary,Private,90,105,Bbaale
+767,2020,Secondary,Private,30,55,Busaana
+768,2018,Secondary,Government,49,100,Galiraya
+769,2019,Secondary,Government,47,213,Kayunga Town Council
+770,2018,Secondary,Government,22,65,Galiraya
+771,2021,Primary,Private,40,500,Galiraya
+772,2022,Secondary,Government,37,250,Busaana
+773,2022,Primary,Government,22,378,Busaana
+774,2019,Secondary,Government,26,456,Kayunga
+775,2020,Secondary,Government,46,150,Busaana
+776,2019,Secondary,Government,22,110,Busaana
+777,2018,Primary,Government,28,456,Kayunga
+778,2021,Secondary,Government,22,95,Busaana
+779,2020,Secondary,Private,50,378,Kayunga
+780,2022,Primary,Government,39,195,Bbaale
+781,2021,Secondary,Private,80,75,Kayunga
+782,2022,Primary,Government,35,200,Kayunga Town Council
+783,2020,Primary,Government,27,150,Kangulumira
+784,2022,Secondary,Government,43,194,Kangulumira
+785,2020,Primary,Private,90,300,Bbaale
+786,2022,Primary,Private,50,378,Kayunga
+787,2018,Secondary,Private,40,345,Galiraya
+788,2021,Secondary,Government,41,80,Kangulumira
+789,2018,Secondary,Government,11,80,Kayunga Town Council
+790,2018,Primary,Private,20,20,Busaana
+791,2019,Primary,Government,32,102,Kayunga
+792,2022,Primary,Government,31,50,Galiraya
+793,2018,Secondary,Private,60,240,Kayunga Town Council
+794,2022,Primary,Government,38,10,Kayunga Town Council
+795,2021,Secondary,Government,45,105,Kayunga
+796,2021,Secondary,Government,35,102,Kangulumira
+797,2018,Secondary,Private,20,95,Kangulumira
+798,2020,Secondary,Government,48,35,Bbaale
+799,2018,Primary,Government,47,110,Busaana
+800,2021,Primary,Private,80,199,Busaana
+801,2019,Primary,Private,30,30,Kayunga
+802,2022,Primary,Government,34,120,Galiraya
+803,2022,Secondary,Government,35,70,Kitimbwa
+804,2019,Primary,Government,12,20,Kitimbwa
+805,2020,Secondary,Private,20,260,Kayunga Town Council
+806,2022,Secondary,Private,90,378,Kayunga
+807,2022,Secondary,Private,30,167,Kitimbwa
+808,2020,Secondary,Private,30,194,Kitimbwa
+809,2022,Secondary,Government,32,80,Kayunga
+810,2020,Secondary,Private,100,178,Kangulumira
+811,2022,Primary,Government,45,60,Kayunga Town Council
+812,2021,Secondary,Government,17,378,Kayunga
+813,2022,Secondary,Private,90,60,Kangulumira
+814,2021,Primary,Private,100,20,Kayunga Town Council
+815,2019,Secondary,Government,46,378,Bbaale
+816,2018,Secondary,Government,38,65,Kayunga Town Council
+817,2018,Primary,Government,21,200,Busaana
+818,2018,Primary,Private,60,120,Kayunga
+819,2019,Secondary,Government,24,105,Kayunga Town Council
+820,2021,Primary,Private,70,199,Busaana
+821,2020,Secondary,Government,17,40,Kayunga Town Council
+822,2020,Secondary,Private,90,65,Kayunga
+823,2019,Secondary,Government,42,10,Bbaale
+824,2019,Primary,Private,30,194,Busaana
+825,2021,Secondary,Government,42,194,Kayunga Town Council
+826,2019,Primary,Government,30,345,Kangulumira
+827,2019,Secondary,Private,80,300,Galiraya
+828,2019,Primary,Government,19,345,Kayunga
+829,2019,Primary,Private,80,500,Bbaale
+830,2019,Primary,Private,70,35,Kitimbwa
+831,2020,Secondary,Private,30,194,Busaana
+832,2022,Secondary,Private,60,120,Bbaale
+833,2019,Secondary,Private,70,178,Galiraya
+834,2021,Secondary,Government,42,150,Kitimbwa
+835,2021,Primary,Private,30,194,Bbaale
+836,2018,Primary,Private,30,500,Busaana
+837,2022,Primary,Government,48,50,Busaana
+838,2019,Secondary,Government,26,260,Galiraya
+839,2019,Secondary,Government,16,55,Galiraya
+840,2022,Secondary,Government,19,30,Bbaale
+841,2019,Primary,Government,20,105,Kangulumira
+842,2018,Secondary,Government,26,197,Kangulumira
+843,2021,Secondary,Private,50,278,Kangulumira
+844,2022,Primary,Private,60,400,Galiraya
+845,2019,Secondary,Private,60,197,Kayunga Town Council
+846,2020,Secondary,Private,30,45,Kitimbwa
+847,2022,Secondary,Government,24,180,Kayunga Town Council
+848,2020,Secondary,Private,90,100,Busaana
+849,2018,Primary,Private,20,345,Kitimbwa
+850,2022,Secondary,Private,70,60,Bbaale
+851,2019,Secondary,Private,70,40,Kitimbwa
+852,2021,Secondary,Government,23,180,Bbaale
+853,2018,Secondary,Private,100,378,Galiraya
+854,2022,Secondary,Government,21,70,Kitimbwa
+855,2021,Primary,Private,100,194,Kayunga Town Council
+856,2019,Primary,Government,20,199,Galiraya
+857,2021,Primary,Government,10,378,Kitimbwa
+858,2020,Secondary,Government,16,80,Kayunga
+859,2022,Secondary,Private,20,213,Kayunga
+860,2018,Secondary,Private,30,85,Busaana
+861,2020,Secondary,Government,12,30,Busaana
+862,2019,Secondary,Government,38,300,Kangulumira
+863,2021,Primary,Private,40,260,Kayunga Town Council
+864,2022,Secondary,Government,37,260,Busaana
+865,2021,Secondary,Government,11,213,Bbaale
+866,2018,Secondary,Government,20,55,Kayunga Town Council
+867,2021,Secondary,Government,30,213,Kangulumira
+868,2022,Secondary,Government,39,203,Kitimbwa
+869,2022,Secondary,Government,46,75,Kayunga Town Council
+870,2020,Primary,Private,70,178,Kayunga Town Council
+871,2018,Primary,Government,15,197,Bbaale
+872,2018,Primary,Private,40,40,Kayunga
+873,2018,Secondary,Government,39,90,Kayunga Town Council
+874,2019,Secondary,Government,15,110,Kayunga
+875,2021,Secondary,Government,37,102,Kayunga
+876,2021,Primary,Private,40,180,Kangulumira
+877,2022,Primary,Government,23,194,Kitimbwa
+878,2020,Secondary,Government,38,85,Busaana
+879,2020,Primary,Government,20,197,Bbaale
+880,2020,Primary,Government,37,456,Kayunga Town Council
+881,2018,Secondary,Private,20,40,Kayunga
+882,2022,Secondary,Government,24,60,Bbaale
+883,2022,Secondary,Government,38,45,Kangulumira
+884,2022,Secondary,Government,33,260,Galiraya
+885,2022,Primary,Private,40,110,Galiraya
+886,2018,Secondary,Private,80,400,Kayunga
+887,2022,Secondary,Government,19,178,Kitimbwa
+888,2020,Primary,Private,100,200,Kitimbwa
+889,2019,Primary,Private,20,260,Kayunga Town Council
+890,2019,Secondary,Government,32,199,Busaana
+891,2021,Secondary,Government,13,400,Kangulumira
+892,2019,Secondary,Private,90,70,Kitimbwa
+893,2022,Primary,Private,70,110,Bbaale
+894,2022,Secondary,Government,34,180,Kayunga Town Council
+895,2021,Primary,Government,33,65,Bbaale
+896,2018,Secondary,Private,60,300,Busaana
+897,2021,Primary,Government,12,90,Kayunga Town Council
+898,2018,Primary,Private,100,80,Galiraya
+899,2019,Primary,Private,20,345,Busaana
+900,2022,Secondary,Private,50,35,Kitimbwa
+901,2021,Primary,Government,16,197,Kayunga Town Council
+902,2018,Primary,Private,20,45,Kitimbwa
+903,2022,Secondary,Government,45,105,Kayunga Town Council
+904,2019,Primary,Private,100,195,Bbaale
+905,2018,Primary,Private,50,25,Galiraya
+906,2022,Secondary,Government,27,50,Kayunga Town Council
+907,2021,Primary,Private,50,195,Kayunga Town Council
+908,2020,Secondary,Government,25,278,Kitimbwa
+909,2020,Primary,Private,30,95,Galiraya
+910,2019,Primary,Private,60,278,Kayunga
+911,2022,Secondary,Government,15,35,Kitimbwa
+912,2020,Secondary,Private,100,180,Kayunga
+913,2020,Secondary,Private,90,85,Busaana
+914,2018,Primary,Private,70,180,Kitimbwa
+915,2020,Secondary,Private,70,150,Kayunga
+916,2021,Secondary,Government,20,194,Kayunga Town Council
+917,2021,Secondary,Private,40,102,Busaana
+918,2020,Secondary,Private,40,167,Kayunga
+919,2022,Primary,Government,17,75,Busaana
+920,2020,Secondary,Government,26,60,Bbaale
+921,2018,Secondary,Government,21,85,Busaana
+922,2022,Primary,Government,18,197,Kayunga
+923,2022,Primary,Private,80,250,Galiraya
+924,2020,Primary,Government,13,55,Kitimbwa
+925,2018,Secondary,Government,48,194,Bbaale
+926,2018,Primary,Private,30,60,Kayunga Town Council
+927,2020,Secondary,Private,100,85,Kayunga
+928,2018,Primary,Government,38,95,Galiraya
+929,2021,Primary,Private,80,110,Kayunga Town Council
+930,2021,Primary,Government,16,105,Galiraya
+931,2022,Primary,Private,100,500,Kitimbwa
+932,2022,Primary,Private,40,150,Kitimbwa
+933,2021,Primary,Government,24,195,Kayunga Town Council
+934,2020,Secondary,Government,12,400,Bbaale
+935,2022,Primary,Government,14,178,Kitimbwa
+936,2021,Primary,Private,20,50,Busaana
+937,2020,Primary,Private,70,250,Kitimbwa
+938,2022,Secondary,Government,32,95,Galiraya
+939,2021,Primary,Government,17,345,Kangulumira
+940,2020,Primary,Private,50,167,Kangulumira
+941,2022,Primary,Private,90,65,Kitimbwa
+942,2018,Secondary,Government,34,35,Kayunga Town Council
+943,2022,Primary,Government,43,194,Kayunga Town Council
+944,2022,Primary,Government,17,120,Kangulumira
+945,2019,Secondary,Private,50,300,Kitimbwa
+946,2022,Secondary,Private,90,260,Busaana
+947,2022,Secondary,Government,34,105,Bbaale
+948,2020,Secondary,Private,60,55,Kayunga Town Council
+949,2021,Primary,Government,30,300,Bbaale
+950,2021,Secondary,Private,100,400,Galiraya
+951,2018,Primary,Private,90,150,Kayunga Town Council
+952,2019,Primary,Government,14,60,Bbaale
+953,2022,Primary,Government,12,345,Galiraya
+954,2022,Primary,Government,28,213,Busaana
+955,2019,Secondary,Private,100,50,Kitimbwa
+956,2022,Primary,Government,14,278,Busaana
+957,2022,Secondary,Private,20,200,Galiraya
+958,2022,Secondary,Government,44,90,Kayunga
+959,2019,Primary,Private,100,120,Kangulumira
+960,2020,Primary,Government,31,35,Kitimbwa
+961,2021,Primary,Private,20,199,Kayunga Town Council
+962,2021,Primary,Private,40,95,Bbaale
+963,2021,Primary,Government,21,95,Galiraya
+964,2022,Secondary,Government,33,167,Bbaale
+965,2021,Primary,Private,90,105,Kayunga Town Council
+966,2021,Primary,Government,30,30,Kayunga Town Council
+967,2021,Primary,Private,70,35,Kangulumira
+968,2018,Primary,Government,43,50,Bbaale
+969,2018,Secondary,Private,60,345,Busaana
+970,2018,Secondary,Private,30,40,Kayunga
+971,2018,Secondary,Government,21,197,Kayunga
+972,2020,Secondary,Private,80,75,Kayunga
+973,2020,Primary,Government,46,110,Kayunga
+974,2022,Primary,Private,30,167,Kayunga
+975,2019,Secondary,Government,27,95,Galiraya
+976,2018,Primary,Government,35,80,Busaana
+977,2019,Primary,Government,11,70,Kayunga Town Council
+978,2018,Primary,Private,50,213,Kayunga Town Council
+979,2019,Primary,Government,13,195,Kangulumira
+980,2018,Secondary,Government,27,213,Busaana
+981,2018,Secondary,Government,31,456,Kitimbwa
+982,2021,Primary,Government,23,110,Busaana
+983,2018,Secondary,Private,70,120,Kangulumira
+984,2022,Secondary,Private,20,456,Bbaale
+985,2022,Secondary,Government,10,20,Bbaale
+986,2022,Primary,Government,31,70,Kayunga
+987,2018,Primary,Government,39,199,Kayunga Town Council
+988,2020,Secondary,Government,16,250,Galiraya
+989,2020,Secondary,Government,13,20,Kitimbwa
+990,2018,Secondary,Government,47,110,Busaana
+991,2020,Primary,Private,40,194,Kayunga Town Council
+992,2020,Secondary,Government,47,10,Busaana
+993,2019,Primary,Government,35,30,Galiraya
+994,2019,Secondary,Government,19,35,Kayunga
+995,2019,Primary,Private,100,250,Bbaale
+996,2021,Primary,Government,24,100,Kangulumira
+997,2022,Primary,Private,60,300,Kitimbwa
+998,2019,Secondary,Government,49,102,Kayunga
+999,2021,Secondary,Government,30,200,Kangulumira
+1000,2021,Primary,Government,23,110,Nazigo
+1001,2018,Secondary,Private,70,120,Nazigo
+1002,2022,Secondary,Private,20,456,Nazigo
+1003,2022,Secondary,Government,10,20,Nazigo
+1004,2022,Primary,Government,31,70,Nazigo
+1005,2018,Primary,Government,39,199,Nazigo
+1006,2020,Secondary,Government,16,250,Nazigo
+1007,2020,Secondary,Government,13,20,Nazigo
+1008,2018,Secondary,Government,47,110,Nazigo
+1009,2020,Primary,Private,40,194,Nazigo
+1010,2020,Secondary,Government,47,10,Nazigo
+1011,2019,Primary,Government,35,30,Nazigo
+1012,2019,Secondary,Government,19,35,Nazigo
+1013,2019,Primary,Private,100,250,Nazigo
+1014,2021,Primary,Government,24,100,Nazigo
+1015,2022,Primary,Private,60,300,Nazigo
+1016,2019,Secondary,Government,49,102,Nazigo
+1017,2021,Secondary,Government,30,200,Nazigo
