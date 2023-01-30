@@ -1,0 +1,1010 @@
+[
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "16", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "6", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "19", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "25", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "14", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "8",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "10",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "9",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2021", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2021", "Quarter": "One", "Type": "Government", "Value": "8", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2021", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "36",
+    "SubCounty": "Kitimbwa",
+    "level": "primary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "30",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2021", "Quarter": "One", "Type": "Government", "Value": "23", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "20",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2021", "Quarter": "One", "Type": "Government", "Value": "40", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "4",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "35",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2021",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "30",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "4", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "18", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "4", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Private", "Value": "13", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "15",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "11",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "9",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2020", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2020", "Quarter": "One", "Type": "Government", "Value": "2", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2020", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "19",
+    "SubCounty": "Kitimbwa",
+    "level": "primary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "17",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2020", "Quarter": "One", "Type": "Government", "Value": "20", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "16",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2020", "Quarter": "One", "Type": "Government", "Value": "21", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "6",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2020",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "18", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "8", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "14", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "13", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "1", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "2",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "1",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "8",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2019", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2019", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2019", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2019", "Quarter": "One", "Type": "Government", "Value": "6", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "4",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2019", "Quarter": "One", "Type": "Government", "Value": "10", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2019", "Quarter": "One", "Type": "Government", "Value": "34", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "32",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "18",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2019",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "17",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "11", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "24", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "6", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "17", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "1", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "4", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "11", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "8",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "10",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "8",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2018", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2018", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2018", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "6",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2018", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "1",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2018", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "5",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2018", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "1",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2018",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "9", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "13", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "13", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "15",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "11",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "16",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "14",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2017", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2017", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2017", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2017", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "1",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2017", "Quarter": "One", "Type": "Government", "Value": "25", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "22",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2017", "Quarter": "One", "Type": "Government", "Value": "8", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "5",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2017",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "8", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "1", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Private", "Value": "1", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "12",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "12",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "8",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2016", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2016", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2016", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2016", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2016", "Quarter": "One", "Type": "Government", "Value": "7", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "5",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2016", "Quarter": "One", "Type": "Government", "Value": "9", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "5",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "17",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2016",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "12",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "13", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "0", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "0", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "6", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Private", "Value": "6", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "11",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "11",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2015", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2015", "Quarter": "One", "Type": "Government", "Value": "5", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2015", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "4",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2015", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2015", "Quarter": "One", "Type": "Government", "Value": "21", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "21",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2015", "Quarter": "One", "Type": "Government", "Value": "14", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "14",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2015",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "2",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "5", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "16", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "16", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2014", "Quarter": "One", "Type": "Private", "Value": "15", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "11",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "10",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "14",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "14",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2014", "Quarter": "One", "Type": "Government", "Value": "10", "SubCounty": "Bbaale", "level": "primary" },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "10",
+    "SubCounty": "Bbaale",
+    "level": "secondary"
+  },
+  { "year": "2014", "Quarter": "One", "Type": "Government", "Value": "13", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "13",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2014", "Quarter": "One", "Type": "Government", "Value": "8", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "8",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2014", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "4",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2014", "Quarter": "One", "Type": "Government", "Value": "1", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "1",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2014",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "10", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "20", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "11", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "11", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "21", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "21", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "31", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "31", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Private", "Value": "3", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "17",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "17",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "16",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "16",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2013", "Quarter": "One", "Type": "Government", "Value": "7", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2013", "Quarter": "One", "Type": "Government", "Value": "7", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2013", "Quarter": "One", "Type": "Government", "Value": "4", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "4",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "13",
+    "SubCounty": "Kitimbwa",
+    "level": "primary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "13",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2013", "Quarter": "One", "Type": "Government", "Value": "9", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "9",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2013", "Quarter": "One", "Type": "Government", "Value": "24", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "24",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "20",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2013",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "20",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "69", "SubCounty": "Galiraya", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "69", "SubCounty": "Galiraya", "level": "secondary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "65", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "65", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "36", "SubCounty": "Kayonza", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "36", "SubCounty": "Kayonza", "level": "secondary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "32", "SubCounty": "Kitimbwa", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "32", "SubCounty": "Kitimbwa", "level": "secondary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Busaana", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "12", "SubCounty": "Busaana", "level": "secondary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "19", "SubCounty": "Kayunga", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Private", "Value": "19", "SubCounty": "Kayunga", "level": "secondary" },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "18",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Private",
+    "Value": "18",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "13",
+    "SubCounty": "Galiraya",
+    "level": "primary"
+  },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "13",
+    "SubCounty": "Galiraya",
+    "level": "secondary"
+  },
+  { "year": "2012", "Quarter": "One", "Type": "Government", "Value": "8", "SubCounty": "Bbaale", "level": "primary" },
+  { "year": "2012", "Quarter": "One", "Type": "Government", "Value": "8", "SubCounty": "Bbaale", "level": "secondary" },
+  { "year": "2012", "Quarter": "One", "Type": "Government", "Value": "6", "SubCounty": "Kayonza", "level": "primary" },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "6",
+    "SubCounty": "Kayonza",
+    "level": "secondary"
+  },
+  { "year": "2012", "Quarter": "One", "Type": "Government", "Value": "3", "SubCounty": "Kitimbwa", "level": "primary" },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "3",
+    "SubCounty": "Kitimbwa",
+    "level": "secondary"
+  },
+  { "year": "2012", "Quarter": "One", "Type": "Government", "Value": "21", "SubCounty": "Busaana", "level": "primary" },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "21",
+    "SubCounty": "Busaana",
+    "level": "secondary"
+  },
+  { "year": "2012", "Quarter": "One", "Type": "Government", "Value": "29", "SubCounty": "Kayunga", "level": "primary" },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "29",
+    "SubCounty": "Kayunga",
+    "level": "secondary"
+  },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "5",
+    "SubCounty": "Kayunga Town Council",
+    "level": "primary"
+  },
+  {
+    "year": "2012",
+    "Quarter": "One",
+    "Type": "Government",
+    "Value": "5",
+    "SubCounty": "Kayunga Town Council",
+    "level": "secondary"
+  }
+]
