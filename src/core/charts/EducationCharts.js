@@ -5,6 +5,7 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 
 const defaultSubCounty = 'all';
 const defaultLevel = 'all';
+const defaultOwnership = 'all';
 const getYears = (data, yearRange) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
 
@@ -21,24 +22,26 @@ const getChartType = (type) => {
 
   return type;
 };
-const getSeries = (config, dataArray, subCounty, years, level) => {
+const getSeries = (config, dataArray, subCounty, years, level, ownership) => {
   const { series: seriesNames, mapping } = config;
   const series = seriesNames.map((seriesName, index) => ({
     name: seriesName,
     type: getChartType(config.type),
-    stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'School Type' : undefined,
+    ...(config.className !== 'dicharts--ple-performance-analysis' && {
+      stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'School Type' : undefined,
+    }),
     areaStyle: config.type === 'area' ? {} : undefined,
     smooth: true,
     emphasis: {
       focus: 'series',
     },
     label: {
-      show: index === seriesNames.length - 1,
+      show: config.className !== 'dicharts--ple-performance-analysis' ? index === seriesNames.length - 1 : true,
       position: 'top',
       formatter: (params) => {
         let total = 0;
         series.forEach((serie) => {
-          total += serie.data[params.dataIndex];
+          total += parseInt(serie.data[params.dataIndex], 10);
         });
 
         return formatNumber(total);
@@ -48,14 +51,32 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
       const yearValues = [];
       dataArray
         .filter((item) => {
-          if ((!subCounty && !level) || (subCounty === defaultSubCounty && level === defaultLevel)) {
+          if (
+            (!subCounty && !level && !ownership) ||
+            (subCounty === defaultSubCounty &&
+              level === defaultLevel &&
+              (ownership === undefined || ownership === defaultOwnership))
+          ) {
             return true;
           }
-          if (subCounty && (!level || level === defaultLevel)) {
+          if (subCounty && (!level || level === defaultLevel) && (!ownership || ownership === defaultOwnership)) {
             return item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase();
           }
-          if (level && (!subCounty || subCounty === defaultSubCounty)) {
-            return item[mapping.level].toLowerCase() === level.toLowerCase();
+          if (
+            level &&
+            (!subCounty || subCounty === defaultSubCounty) &&
+            (!ownership || ownership === defaultOwnership)
+          ) {
+            return mapping.level ? item[mapping.level].toLowerCase() === level.toLowerCase() : !mapping.level;
+          }
+          if (ownership && (!subCounty || subCounty === defaultSubCounty)) {
+            return item[mapping.ownership].toLowerCase() === ownership.toLowerCase();
+          }
+          if (ownership && subCounty) {
+            return (
+              item[mapping.ownership].toLowerCase() === ownership.toLowerCase() &&
+              item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase()
+            );
           }
 
           return (
@@ -66,6 +87,8 @@ const getSeries = (config, dataArray, subCounty, years, level) => {
         .forEach((item) => {
           if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
             yearValues.push(Number(item[mapping.value]));
+          } else if (item[mapping.year] === year && config.className === 'dicharts--ple-performance-analysis') {
+            yearValues.push(Number(item[mapping[seriesName.toLowerCase().split(' ').join('_')]]));
           }
         });
 
@@ -161,9 +184,10 @@ const renderChart = (config) => {
                 config.filters && config.filters.subCounties
                   ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
                   : data;
+
               window.DIState.addListener(() => {
                 dichart.showLoading();
-                const { subCounty: selectedSubCounty, level: selectedLevel } = window.DIState.getState;
+                const { subCounty: selectedSubCounty, level: selectedLevel, ownership } = window.DIState.getState;
 
                 // only update if subcounty or level have changed
                 if (subCounty === selectedSubCounty && level === selectedLevel) return;
@@ -183,6 +207,10 @@ const renderChart = (config) => {
                   },
                   xAxis: {
                     data: years,
+                    nameTextStyle: {
+                      verticalAlign: 'top',
+                    },
+                    name: 'Years',
                   },
                   yAxis: {
                     type: 'value',
@@ -198,7 +226,7 @@ const renderChart = (config) => {
                       },
                     },
                   },
-                  series: getSeries(config, filteredData, subCounty, years, level),
+                  series: getSeries(config, filteredData, subCounty, years, level, ownership),
                 });
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));

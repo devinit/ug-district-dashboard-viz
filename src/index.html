@@ -1,461 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DI Chart Boilerplate</title>
-    <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/spotlights.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/icons/ico.data.svg.css" />
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet" />
-    <link href="https://devinit.org/assets/css/di_website.min.2a5154f5c000.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.12.0/mapbox-gl.min.css" rel="stylesheet" />
-  </head>
-  <body class="body">
-    <div class="ui-base">
-      <main id="pagecontent" class="pagecontent -nofocus" role="main" tabindex="-1">
-        <section class="section">
-          <div class="row row--narrow">
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="district-selectors"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>DI Chart Boilerplate</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.min.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/spotlights.min.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/icons/ico.data.svg.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet" />
+  <link href="https://devinit.org/assets/css/di_website.min.2a5154f5c000.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.12.0/mapbox-gl.min.css" rel="stylesheet" />
+</head>
+
+<body class="body">
+  <div class="ui-base">
+    <main id="pagecontent" class="pagecontent -nofocus" role="main" tabindex="-1">
+      <section class="section">
+        <div class="row row--narrow">
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="district-selectors"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">District Map</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--district-map"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">District Map</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--district-map"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Key Facts</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--keyfacts"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Key Facts</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--keyfacts"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Number of schools</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--number-of-schools"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Number of schools</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--number-of-schools"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--learners-enrolment"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--learners-enrolment"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Number of Schools</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--table--number-of-schools"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Number of Schools</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--table--number-of-schools"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--table--learners-enrolment"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--table--learners-enrolment"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Classroom to learner's ratio</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--table--classroom-learners-ratio"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Classroom to learner's ratio</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--table--classroom-learners-ratio"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section">
-          <div class="row row--narrow">
-            <h3 class="type-l type-l--trailer">Classroom to learner's ratio</h3>
-            <div class="chart-container chart-container--full">
-              <div class="charts__chart">
-                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-                <div class="dicharts--classroom-learners-ratio"></div>
-                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Classroom to learner's ratio</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--classroom-learners-ratio"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
-                <div class="chart-loading">
-                  <div class="chart-loading__block">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
-    <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
-    <script>
-      const subCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
-      const topics = [
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">PLE Performance Analysis</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="ple-performance-selectors"></div>
+              <div class="dicharts--ple-performance-analysis"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
+  <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
+  <script>
+
+    const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+    const topics = [
+      {
+        id: 'education',
+        name: 'Education',
+        yearRange: [2016, 2021],
+        dashboardUrl: 'https://google.com',
+        dashboardButtonCaption: 'View Education Dashboard',
+        indicators: [
+          {
+            id: 'numberOfSchools',
+            name: 'Number of Schools',
+            description: 'Description Goes Here!',
+            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            range: [5, 10, 15, 20],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            yearRange: [2016, 2021],
+            mapping: {
+              location: 'SubCounty',
+              value: 'Value',
+              year: 'year',
+            },
+            aggregator: 'avg', //either sum, avg
+          },
+          {
+            id: 'learnersEnrolment',
+            name: 'Learners Enrolment',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [5, 10, 15, 20],
+          },
+        ],
+      },
+      /*
+      {
+        id: 'production',
+        name: 'Production',
+        yearRange: [2015, 2021],
+        dashboardUrl: 'https://google.com',
+        dashboardButtonCaption: 'View Production Dashboard',
+        indicators: [],
+      },
+      */
+    ];
+
+    const kayungaSubCounties = ['Galiraya', 'Bbaale', 'Kayonza', 'Kitimbwa', 'Busaana', 'Kayunga', 'Kayunga Town Council', 'Nazigo', 'Kangulumira'];
+    const state = {
+      location: {
+        name: 'Masindi',
+        fullName: 'Masindi District',
+        coordinates: [31.766240227362417, 1.8818134163990712],
+        // coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
+      },
+      selectors: [
         {
-          id: 'education',
-          name: 'Education',
+          id: 'subcounty',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/sub-counties.csv',
+          label: 'Select sub-county',
+          defaultValue: { value: 'all', label: 'All sub-counties' },
+          stateProperty: 'subCounty',
+          valueProperty: 'Name',
+          labelProperty: 'Name',
+        },
+        {
+          id: 'level',
+          label: 'Select level',
+          defaultValue: { value: 'all', label: 'Primary and Secondary' },
+          stateProperty: 'level',
+          valueProperty: 'value',
+          labelProperty: 'label',
+          data: [
+            { value: 'primary', label: 'Primary' },
+            { value: 'secondary', label: 'Secondary' },
+          ],
+        },
+        {
+          id: 'ownership',
+          label: 'Select ownership',
+          defaultValue: { value: 'all', label: 'Government and Private' },
+          stateProperty: 'ownership',
+          valueProperty: 'value',
+          labelProperty: 'label',
+          data: [
+            { value: 'government', label: 'Government' },
+            { value: 'private', label: 'Private' },
+          ],
+        },
+      ],
+      map: {
+        filters: {
+          topicLabel: 'Select a topic to explore',
+          indicatorLabel: 'Choose an indicator',
+          yearLabel: 'Choose a year',
+        },
+        data: topics,
+        options: {
+          zoom: 10,
+          maxZoom: 12,
+        },
+      },
+      keyFacts: {
+        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
+        tabs: [
+          {
+            id: 'overview',
+            show: true, // defaults to true
+            label: 'Overview Tab',
+          },
+          {
+            id: 'education',
+            dashboardURL: 'https://google.com/', // when undefined, button is not shown
+            dashboardButtonCaption: 'View Education Dashboard',
+          },
+          {
+            id: 'production',
+            show: false,
+            dashboardURL: 'https://google.com/',
+            dashboardButtonCaption: 'View Production Dashboard',
+          },
+        ],
+      },
+      charts: [
+        {
+          target: 'education',
+          className: 'dicharts--number-of-schools',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+          type: 'bar',
           yearRange: [2016, 2021],
-          dashboardUrl: 'https://google.com',
-          dashboardButtonCaption: 'View Education Dashboard',
-          indicators: [
-            {
-              id: 'numberOfSchools',
-              name: 'Number of Schools',
-              description: 'Description Goes Here!',
-              colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-              range: [5, 10, 15, 20],
-              url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
-              yearRange: [2016, 2021],
-              mapping: {
-                location: 'SubCounty',
-                value: 'Value',
-                year: 'year',
-              },
-              aggregator: 'avg', //either sum, avg
-            },
-            {
-              id: 'learnersEnrolment',
-              name: 'Learners Enrolment',
-              colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
-              range: [5, 10, 15, 20],
-            },
-          ],
-        },
-        /*
-        {
-          id: 'production',
-          name: 'Production',
-          yearRange: [2015, 2021],
-          dashboardUrl: 'https://google.com',
-          dashboardButtonCaption: 'View Production Dashboard',
-          indicators: [],
-        },
-        */
-      ];
-      const state = {
-        location: {
-          name: 'Masindi',
-          fullName: 'Masindi District',
-          coordinates: [31.766240227362417, 1.8818134163990712],
-          // coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
-        },
-        selectors: [
-          {
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/sub-counties.csv',
-            label: 'Select sub-county',
-            defaultValue: { value: 'all', label: 'All sub-counties' },
-            stateProperty: 'subCounty',
-            valueProperty: 'Name',
-            labelProperty: 'Name',
+          series: ['Government', 'Private'],
+          mapping: {
+            series: 'Type',
+            year: 'year',
+            value: 'Value',
+            subCounty: 'SubCounty',
+            level: 'level',
           },
-          {
-            label: 'Select level',
-            defaultValue: { value: 'all', label: 'Primary and Secondary' },
-            stateProperty: 'level',
-            valueProperty: 'value',
-            labelProperty: 'label',
-            data: [
-              { value: 'primary', label: 'Primary' },
-              { value: 'secondary', label: 'Secondary' },
-            ],
-          },
-        ],
-        map: {
           filters: {
-            topicLabel: 'Select a topic to explore',
-            indicatorLabel: 'Choose an indicator',
-            yearLabel: 'Choose a year',
+            subCounties: masindiSubCounties,
           },
-          data: topics,
           options: {
-            zoom: 10,
-            maxZoom: 12,
+            legend: { show: true },
           },
         },
-        keyFacts: {
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
-          tabs: [
-            {
-              id: 'overview',
-              show: true, // defaults to true
-              label: 'Overview Tab',
-            },
-            {
-              id: 'education',
-              dashboardURL: 'https://google.com/', // when undefined, button is not shown
-              dashboardButtonCaption: 'View Education Dashboard',
-            },
-            {
-              id: 'production',
-              show: false,
-              dashboardURL: 'https://google.com/',
-              dashboardButtonCaption: 'View Production Dashboard',
-            },
-          ],
+        {
+          target: 'education',
+          className: 'dicharts--learners-enrolment',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+          yearRange: [2018, 2021],
+          series: ['Government', 'Private'],
+          mapping: {
+            series: 'type',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: masindiSubCounties,
+          },
+          options: {
+            yAxis: { name: 'Learners enrolled' },
+          },
         },
-        charts: [
-          {
-            target: 'education',
-            className: 'dicharts--number-of-schools',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
-            type: 'bar',
-            yearRange: [2016, 2021],
-            series: ['Government', 'Private'],
-            mapping: {
-              series: 'Type',
-              year: 'year',
-              value: 'Value',
-              subCounty: 'SubCounty',
-              level: 'level',
-            },
-            filters: {
-              subCounties: subCounties,
-            },
-            options: {
-              legend: { show: true },
-            },
+        {
+          target: 'education',
+          className: 'dicharts--classroom-learners-ratio',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/classroom_to_pupil_ratio.csv',
+          type: 'area',
+          yearRange: [2018, 2021],
+          series: ['Government', 'Private'],
+          mapping: {
+            series: 'type',
+            year: 'year',
+            value: 'classroom_capacity',
+            subCounty: 'subcounty',
+            level: 'level',
           },
-          {
-            target: 'education',
-            className: 'dicharts--learners-enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
-            yearRange: [2018, 2021],
-            series: ['Government', 'Private'],
-            mapping: {
-              series: 'type',
-              year: 'year',
-              value: 'value',
-              subCounty: 'subcounty',
-              level: 'level',
-            },
-            filters: {
-              subCounties: subCounties,
-            },
-            options: {
-              yAxis: { name: 'Learners enrolled' },
-            },
+          filters: {
+            subCounties: masindiSubCounties,
           },
-          {
-            target: 'education',
-            className: 'dicharts--classroom-learners-ratio',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/classroom_to_pupil_ratio.csv',
-            type: 'area',
-            yearRange: [2018, 2021],
-            series: ['Government', 'Private'],
-            mapping: {
-              series: 'type',
-              year: 'year',
-              value: 'classroom_capacity',
-              subCounty: 'subcounty',
-              level: 'level',
+          aggregator: 'avg',
+          options: {
+            xAxis: {
+              boundaryGap: false,
             },
-            filters: {
-              subCounties: subCounties,
-            },
-            aggregator: 'avg',
-            options: {
-              xAxis: {
-                boundaryGap: false,
-              },
-              series: [{ label: { show: false } }, { label: { show: false } }],
-            },
+            series: [{ label: { show: false } }, { label: { show: false } }],
           },
-        ],
-        tables: [
-          {
-            target: 'education',
-            className: 'dicharts--table--number-of-schools',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
-            yearRange: [2016, 2021],
-            rows: ['Government', 'Private'],
-            mapping: {
-              rows: 'Type',
-              year: 'year',
-              value: 'Value',
-              subCounty: 'SubCounty',
-              level: 'level',
-            },
-            filters: {
-              subCounties: subCounties,
-            },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--ple-performance-analysis',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/ple_performance/public/assets/data/kayunga/ple_analysis_2018_to_2020.csv',
+          yearRange: [2018, 2020],
+          series: ['Grade 1', 'Grade 2', 'Grade 3'],
+          mapping: {
+            series: 'ownership',
+            year: 'year',
+            value: 'total',
+            subCounty: 'subcounty',
+            level: 'level',
+            ownership: 'ownership',
+            grade_1: 'divi_total',
+            grade_2: 'divii_total',
+            grade_3: 'diviii_total',
           },
-          {
-            target: 'education',
-            className: 'dicharts--table--learners-enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
-            yearRange: [2018, 2021],
-            rows: ['Government', 'Private'],
-            mapping: {
-              rows: 'type',
-              year: 'year',
-              value: 'value',
-              subCounty: 'subcounty',
-              level: 'level',
-            },
-            filters: {
-              subCounties: subCounties,
-            },
+          filters: {
+            subCounties: kayungaSubCounties,
           },
-          {
-            target: 'education',
-            className: 'dicharts--table--classroom-learners-ratio',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/classroom_to_pupil_ratio.csv',
-            yearRange: [2018, 2021],
-            rows: ['Government', 'Private'],
-            mapping: {
-              rows: 'type',
-              year: 'year',
-              value: 'classroom_capacity',
-              subCounty: 'subcounty',
-              level: 'level',
-            },
-            filters: {
-              subCounties: subCounties,
-            },
-            aggregator: 'avg',
+          aggregator: 'avg',
+          options: {
+            yAxis: { name: 'PLE Performance' },
           },
-        ],
-      };
-      if (window.DIState) {
-        window.DIState.setState(state);
-      } else {
-        const intervalID = window.setInterval(() => {
-          if (window.DIState) {
-            window.DIState.setState(state);
-            window.clearInterval(intervalID);
-          }
-        }, 500);
-      }
-    </script>
-  </body>
+        },
+      ],
+      tables: [
+        {
+          target: 'education',
+          className: 'dicharts--table--number-of-schools',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+          yearRange: [2016, 2021],
+          rows: ['Government', 'Private'],
+          mapping: {
+            rows: 'Type',
+            year: 'year',
+            value: 'Value',
+            subCounty: 'SubCounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: masindiSubCounties,
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--table--learners-enrolment',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+          yearRange: [2018, 2021],
+          rows: ['Government', 'Private'],
+          mapping: {
+            rows: 'type',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: masindiSubCounties,
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--table--classroom-learners-ratio',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/classroom_to_pupil_ratio.csv',
+          yearRange: [2018, 2021],
+          rows: ['Government', 'Private'],
+          mapping: {
+            rows: 'type',
+            year: 'year',
+            value: 'classroom_capacity',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: masindiSubCounties,
+          },
+          aggregator: 'avg',
+        },
+      ],
+    };
+    if (window.DIState) {
+      window.DIState.setState(state);
+    } else {
+      const intervalID = window.setInterval(() => {
+        if (window.DIState) {
+          window.DIState.setState(state);
+          window.clearInterval(intervalID);
+        }
+      }, 500);
+    }
+  </script>
+</body>
+
 </html>
