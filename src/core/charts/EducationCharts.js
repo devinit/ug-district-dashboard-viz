@@ -40,9 +40,14 @@ const getSeries = (config, dataArray, subCounty, years, level, ownership) => {
       position: 'top',
       formatter: (params) => {
         let total = 0;
-        series.forEach((serie) => {
-          total += parseInt(serie.data[params.dataIndex], 10);
-        });
+        for (let i = 0; i < series.length; i += 1) {
+          if (series[i].name === seriesName && config.className === 'dicharts--ple-performance-analysis') {
+            total = parseInt(series[i].data[params.dataIndex], 10);
+            break;
+          } else {
+            total += parseInt(series[i].data[params.dataIndex], 10);
+          }
+        }
 
         return formatNumber(total);
       },
@@ -67,16 +72,19 @@ const getSeries = (config, dataArray, subCounty, years, level, ownership) => {
             (!subCounty || subCounty === defaultSubCounty) &&
             (!ownership || ownership === defaultOwnership)
           ) {
-            return mapping.level ? item[mapping.level].toLowerCase() === level.toLowerCase() : !mapping.level;
+            return item[mapping.level]
+              ? item[mapping.level].toLowerCase() === level.toLowerCase()
+              : !item[mapping.level];
           }
           if (ownership && (!subCounty || subCounty === defaultSubCounty)) {
-            return item[mapping.ownership].toLowerCase() === ownership.toLowerCase();
+            return item[mapping.ownership]
+              ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
+              : !item[mapping.ownership];
           }
           if (ownership && subCounty) {
-            return (
-              item[mapping.ownership].toLowerCase() === ownership.toLowerCase() &&
-              item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase()
-            );
+            return item[mapping.ownership]
+              ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
+              : !item[mapping.ownership] && item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase();
           }
 
           return (
