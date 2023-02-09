@@ -385,6 +385,97 @@
           },
           options: {
             legend: { show: true },
+          }
+        },
+        {
+          target: 'education',
+          className: 'dicharts--number-of-schools',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/data_updates/public/assets/data/kayunga/numberOfSchools.json',
+          type: 'bar',
+          yearRange: [2016, 2021],
+          series: ['Government', 'Private'],
+          mapping: {
+            series: 'Type',
+            year: 'year',
+            value: 'Value',
+            subCounty: 'SubCounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: true },
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--learners-enrolment',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/data_updates/public/assets/data/kayunga/learner_enrollment.csv',
+          yearRange: [2018, 2021],
+          series: ['Government', 'Private'],
+          mapping: {
+            series: 'type',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
+          },
+          options: {
+            yAxis: { name: 'Learners enrolled' },
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--classroom-learners-ratio',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/data_updates/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+          type: 'area',
+          yearRange: [2018, 2021],
+          series: ['Government', 'Private'],
+          mapping: {
+            series: 'type',
+            year: 'year',
+            value: 'classroom_capacity',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
+          },
+          aggregator: 'avg',
+          options: {
+            xAxis: {
+              boundaryGap: false,
+            },
+            series: [{ label: { show: false } }, { label: { show: false } }],
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--ple-performance-analysis',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/ple_performance/public/assets/data/kayunga/ple_analysis_2018_to_2020.csv',
+          yearRange: [2018, 2020],
+          series: ['Grade 1', 'Grade 2', 'Grade 3'],
+          mapping: {
+            series: 'ownership',
+            year: 'year',
+            value: 'total',
+            subCounty: 'subcounty',
+            level: 'level',
+            ownership: 'ownership',
+            grade_1: 'divi_total',
+            grade_2: 'divii_total',
+            grade_3: 'diviii_total',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
+          },
+          aggregator: 'sum',
+          options: {
+            yAxis: { name: 'PLE Performance' },
           },
         },
         {
@@ -508,6 +599,58 @@
           },
           filters: {
             subCounties: masindiSubCounties,
+          },
+          aggregator: 'avg',
+        },
+        {
+          target: 'education',
+          className: 'dicharts--table--number-of-schools',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/data_updates/public/assets/data/kayunga/numberOfSchools.json',
+          yearRange: [2016, 2021],
+          rows: ['Government', 'Private'],
+          mapping: {
+            rows: 'Type',
+            year: 'year',
+            value: 'Value',
+            subCounty: 'SubCounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--table--learners-enrolment',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/data_updates/public/assets/data/kayunga/learner_enrollment.csv',
+          yearRange: [2018, 2021],
+          rows: ['Government', 'Private'],
+          mapping: {
+            rows: 'type',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
+          },
+        },
+        {
+          target: 'education',
+          className: 'dicharts--table--classroom-learners-ratio',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/data_updates/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+          yearRange: [2018, 2021],
+          rows: ['Government', 'Private'],
+          mapping: {
+            rows: 'type',
+            year: 'year',
+            value: 'classroom_capacity',
+            subCounty: 'subcounty',
+            level: 'level',
+          },
+          filters: {
+            subCounties: kayungaSubCounties,
           },
           aggregator: 'avg',
         },
