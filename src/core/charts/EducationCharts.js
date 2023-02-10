@@ -2,6 +2,7 @@ import deepMerge from 'deepmerge';
 import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
 import { combineMerge } from '../../utils';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
+import renderSelectors from '../SelectorDropdowns';
 
 const defaultSubCounty = 'all';
 const defaultLevel = 'all';
@@ -238,6 +239,10 @@ const renderChart = (config) => {
                 });
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+
+                if (config.selectors && config.selectors.length) {
+                  renderSelectors(config.selectorClassName, { selectors: config.selectors });
+                }
 
                 dichart.hideLoading();
               });

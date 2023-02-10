@@ -110,6 +110,7 @@
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--learners-enrolment-selectors"></div>
               <div class="dicharts--learners-enrolment"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
@@ -132,6 +133,7 @@
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--table--number-of-schools-selectors"></div>
               <div class="dicharts--table--number-of-schools"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
@@ -404,6 +406,20 @@
           options: {
             yAxis: { name: 'Learners enrolled' },
           },
+          selectorClassName: 'dicharts--learners-enrolment-selectors',
+          selectors: [
+            {
+              label: 'Select level',
+              defaultValue: { value: 'all', label: 'Primary and Secondary' },
+              stateProperty: 'level',
+              valueProperty: 'value',
+              labelProperty: 'label',
+              data: [
+                { value: 'primary', label: 'Primary' },
+                { value: 'secondary', label: 'Secondary' },
+              ],
+            },
+          ],
         },
         {
           target: 'education',
@@ -543,6 +559,20 @@
           filters: {
             subCounties: masindiSubCounties,
           },
+          selectorClassName: 'dicharts--table--number-of-schools-selectors',
+          selectors: [
+            {
+              label: 'Select level',
+              defaultValue: { value: 'all', label: 'Primary and Secondary' },
+              stateProperty: 'level',
+              valueProperty: 'value',
+              labelProperty: 'label',
+              data: [
+                { value: 'primary', label: 'Primary' },
+                { value: 'secondary', label: 'Secondary' },
+              ],
+            },
+          ],
         },
         {
           target: 'education',
