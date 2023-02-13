@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/icons/ico.data.svg.css" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet" />
     <link href="https://devinit.org/assets/css/di_website.min.2a5154f5c000.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.12.0/mapbox-gl.min.css" rel="stylesheet" />
   </head>
   <body class="body">
     <div class="ui-base">
@@ -39,12 +40,32 @@
 
         <section class="section">
           <div class="row row--narrow">
+            <h3 class="type-l type-l--trailer">District Map</h3>
+            <div class="chart-container chart-container--full">
+              <div class="charts__chart">
+                <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+                <div class="dicharts--district-map"></div>
+                <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+                <div class="chart-loading">
+                  <div class="chart-loading__block">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="row row--narrow">
             <h3 class="type-l type-l--trailer">Key Facts</h3>
             <div class="chart-container chart-container--full">
               <div class="charts__chart">
                 <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
                 <div class="dicharts--keyfacts"></div>
-                <div class="number-of-schools"></div>
                 <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
                 <div class="chart-loading">
                   <div class="chart-loading__block">
@@ -199,8 +220,55 @@
     <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
     <script>
       const subCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+      const topics = [
+        {
+          id: 'education',
+          name: 'Education',
+          yearRange: [2016, 2021],
+          dashboardUrl: 'https://google.com',
+          dashboardButtonCaption: 'View Education Dashboard',
+          indicators: [
+            {
+              id: 'numberOfSchools',
+              name: 'Number of Schools',
+              description: 'Description Goes Here!',
+              colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+              range: [5, 10, 15, 20],
+              url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+              yearRange: [2016, 2021],
+              mapping: {
+                location: 'SubCounty',
+                value: 'Value',
+                year: 'year',
+              },
+              aggregator: 'avg', //either sum, avg
+            },
+            {
+              id: 'learnersEnrolment',
+              name: 'Learners Enrolment',
+              colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+              range: [5, 10, 15, 20],
+            },
+          ],
+        },
+        /*
+        {
+          id: 'production',
+          name: 'Production',
+          yearRange: [2015, 2021],
+          dashboardUrl: 'https://google.com',
+          dashboardButtonCaption: 'View Production Dashboard',
+          indicators: [],
+        },
+        */
+      ];
       const state = {
-        location: { name: 'Masindi', fullName: 'Masindi District' },
+        location: {
+          name: 'Masindi',
+          fullName: 'Masindi District',
+          coordinates: [31.766240227362417, 1.8818134163990712],
+          // coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
+        },
         selectors: [
           {
             url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/sub-counties.csv',
@@ -222,6 +290,18 @@
             ],
           },
         ],
+        map: {
+          filters: {
+            topicLabel: 'Select a topic to explore',
+            indicatorLabel: 'Choose an indicator',
+            yearLabel: 'Choose a year',
+          },
+          data: topics,
+          options: {
+            zoom: 10,
+            maxZoom: 12,
+          },
+        },
         keyFacts: {
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
           tabs: [
