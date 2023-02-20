@@ -59,9 +59,7 @@ const getSeries = (config, dataArray, subCounty, years, level, ownership) => {
         .filter((item) => {
           if (
             (!subCounty && !level && !ownership) ||
-            (subCounty === defaultSubCounty &&
-              level === defaultLevel &&
-              (ownership === undefined || ownership === defaultOwnership))
+            (subCounty === defaultSubCounty && level === defaultLevel && ownership === defaultOwnership)
           ) {
             return true;
           }
@@ -73,24 +71,16 @@ const getSeries = (config, dataArray, subCounty, years, level, ownership) => {
             (!subCounty || subCounty === defaultSubCounty) &&
             (!ownership || ownership === defaultOwnership)
           ) {
-            return item[mapping.level]
-              ? item[mapping.level].toLowerCase() === level.toLowerCase()
-              : !item[mapping.level];
+            return item[mapping.level].toLowerCase() === level.toLowerCase();
           }
-          if (ownership && (!subCounty || subCounty === defaultSubCounty)) {
-            return item[mapping.ownership]
-              ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
-              : !item[mapping.ownership];
-          }
-          if (ownership && subCounty) {
-            return item[mapping.ownership]
-              ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
-              : !item[mapping.ownership] && item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase();
+          if (ownership && (!subCounty || subCounty === defaultSubCounty) && (!level || level === defaultLevel)) {
+            return item[mapping.level].toLowerCase() === level.toLowerCase();
           }
 
           return (
             item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() &&
-            item[mapping.level].toLowerCase() === level.toLowerCase()
+            item[mapping.level].toLowerCase() === level.toLowerCase() &&
+            item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
           );
         })
         .forEach((item) => {
@@ -189,6 +179,7 @@ const renderChart = (config) => {
             if (window.DIState) {
               let subCounty = defaultSubCounty;
               let level = defaultLevel;
+              let ownership = defaultOwnership;
               const filteredData =
                 config.filters && config.filters.subCounties
                   ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
@@ -196,13 +187,18 @@ const renderChart = (config) => {
 
               window.DIState.addListener(() => {
                 dichart.showLoading();
-                const { subCounty: selectedSubCounty, level: selectedLevel, ownership } = window.DIState.getState;
+                const {
+                  subCounty: selectedSubCounty,
+                  level: selectedLevel,
+                  ownership: selectedOwnership,
+                } = window.DIState.getState;
 
                 // only update if subcounty or level have changed
-                if (subCounty === selectedSubCounty && level === selectedLevel) return;
+                if (subCounty === selectedSubCounty) return;
 
                 subCounty = selectedSubCounty || defaultSubCounty;
                 level = selectedLevel || defaultLevel;
+                ownership = selectedOwnership || defaultOwnership;
 
                 const years = getYears(filteredData, config.yearRange);
                 const options = deepMerge(defaultOptions, {
