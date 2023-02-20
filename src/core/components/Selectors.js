@@ -12,32 +12,34 @@ const Selectors = (props) => {
   useEffect(() => {
     if (props.configs) {
       Promise.all(
-        props.configs.map(async (selector) => {
-          const item = {
-            label: selector.label,
-            defaultValue: selector.defaultValue,
-            stateProperty: selector.stateProperty,
-          };
-          item.options = selector.defaultValue ? [selector.defaultValue] : [];
-          let data = selector.data || [];
-          if (selector.url) {
-            data = await fetchData(selector.url);
-          }
-          item.options = item.options.concat(
-            data.reduce((options, curr) => {
-              if (!options.find((i) => i[selector.valueProperty] === curr[selector.valueProperty])) {
-                options.push({
-                  value: curr[selector.valueProperty],
-                  label: curr[selector.labelProperty],
-                });
-              }
+        props.configs
+          .filter((item) => props.renderIds.includes(item.id))
+          .map(async (selector) => {
+            const item = {
+              label: selector.label,
+              defaultValue: selector.defaultValue,
+              stateProperty: selector.stateProperty,
+            };
+            item.options = selector.defaultValue ? [selector.defaultValue] : [];
+            let data = selector.data || [];
+            if (selector.url) {
+              data = await fetchData(selector.url);
+            }
+            item.options = item.options.concat(
+              data.reduce((options, curr) => {
+                if (!options.find((i) => i[selector.valueProperty] === curr[selector.valueProperty])) {
+                  options.push({
+                    value: curr[selector.valueProperty],
+                    label: curr[selector.labelProperty],
+                  });
+                }
 
-              return options;
-            }, [])
-          );
+                return options;
+              }, [])
+            );
 
-          return item;
-        })
+            return item;
+          })
       )
         .then(setSelectors)
         .catch((error) => window.console.log(error));
@@ -76,6 +78,7 @@ Selectors.propTypes = {
       valueProperty: PropTypes.string.isRequired,
     })
   ),
+  renderIds: PropTypes.string,
 };
 
 export default Selectors;
