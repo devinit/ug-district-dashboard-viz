@@ -200,7 +200,7 @@
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="ple-performance-selectors"></div>
+              <div class="dicharts--ple-performance-selectors"></div>
               <div class="dicharts--ple-performance-analysis"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
@@ -286,30 +286,30 @@
           valueProperty: 'Name',
           labelProperty: 'Name',
         },
-        {
-          id: 'level',
-          label: 'Select level',
-          defaultValue: { value: 'all', label: 'Primary and Secondary' },
-          stateProperty: 'level',
-          valueProperty: 'value',
-          labelProperty: 'label',
-          data: [
-            { value: 'primary', label: 'Primary' },
-            { value: 'secondary', label: 'Secondary' },
-          ],
-        },
-        {
-          id: 'ownership',
-          label: 'Select ownership',
-          defaultValue: { value: 'all', label: 'Government and Private' },
-          stateProperty: 'ownership',
-          valueProperty: 'value',
-          labelProperty: 'label',
-          data: [
-            { value: 'government', label: 'Government' },
-            { value: 'private', label: 'Private' },
-          ],
-        },
+        // {
+        //   id: 'level',
+        //   label: 'Select level',
+        //   defaultValue: { value: 'all', label: 'Primary and Secondary' },
+        //   stateProperty: 'level',
+        //   valueProperty: 'value',
+        //   labelProperty: 'label',
+        //   data: [
+        //     { value: 'primary', label: 'Primary' },
+        //     { value: 'secondary', label: 'Secondary' },
+        //   ],
+        // },
+        // {
+        //   id: 'ownership',
+        //   label: 'Select ownership',
+        //   defaultValue: { value: 'all', label: 'Government and Private' },
+        //   stateProperty: 'ownership',
+        //   valueProperty: 'value',
+        //   labelProperty: 'label',
+        //   data: [
+        //     { value: 'government', label: 'Government' },
+        //     { value: 'private', label: 'Private' },
+        //   ],
+        // },
       ],
       map: {
         filters: {
@@ -448,31 +448,6 @@
         },
         {
           target: 'education',
-          className: 'dicharts--ple-performance-analysis',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/ple_performance/public/assets/data/kayunga/ple_analysis_2018_to_2020.csv',
-          yearRange: [2018, 2020],
-          series: ['Grade 1', 'Grade 2', 'Grade 3'],
-          mapping: {
-            series: 'ownership',
-            year: 'year',
-            value: 'total',
-            subCounty: 'subcounty',
-            level: 'level',
-            ownership: 'ownership',
-            grade_1: 'divi_total',
-            grade_2: 'divii_total',
-            grade_3: 'diviii_total',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-          aggregator: 'sum',
-          options: {
-            yAxis: { name: 'PLE Performance' },
-          },
-        },
-        {
-          target: 'education',
           className: 'dicharts--learners-enrolment',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
           yearRange: [2018, 2021],
@@ -519,7 +494,7 @@
         {
           target: 'education',
           className: 'dicharts--ple-performance-analysis',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/ple_performance/public/assets/data/kayunga/ple_analysis_2018_to_2020.csv',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/ple_analysis_2018_to_2020.csv',
           yearRange: [2018, 2020],
           series: ['Grade 1', 'Grade 2', 'Grade 3'],
           mapping: {
@@ -536,10 +511,24 @@
           filters: {
             subCounties: kayungaSubCounties,
           },
-          aggregator: 'avg',
+          aggregator: 'sum',
           options: {
             yAxis: { name: 'PLE Performance' },
           },
+          selectorClassName: 'dicharts--ple-performance-selectors',
+          selectors: [
+            {
+              label: 'Select ownership',
+              defaultValue: { value: 'all', label: 'Government and Private' },
+              stateProperty: 'ownership',
+              valueProperty: 'value',
+              labelProperty: 'label',
+              data: [
+                { value: 'government', label: 'Government' },
+                { value: 'private', label: 'Private' },
+              ],
+            },
+          ],
         },
       ],
       tables: [

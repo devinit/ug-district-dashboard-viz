@@ -71,16 +71,39 @@ const getSeries = (config, dataArray, subCounty, years, level, ownership) => {
             (!subCounty || subCounty === defaultSubCounty) &&
             (!ownership || ownership === defaultOwnership)
           ) {
-            return item[mapping.level].toLowerCase() === level.toLowerCase();
+            return item[mapping.level] ? item[mapping.level].toLowerCase() === level.toLowerCase() : true;
           }
           if (ownership && (!subCounty || subCounty === defaultSubCounty) && (!level || level === defaultLevel)) {
-            return item[mapping.level].toLowerCase() === level.toLowerCase();
+            return item[mapping.ownership] ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase() : true;
+          }
+
+          if (subCounty && ownership && (!level || level === defaultLevel)) {
+            return item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() && item[mapping.ownership]
+              ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
+              : true;
+          }
+
+          if (subCounty && level && (!ownership || ownership === defaultOwnership)) {
+            return item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() && item[mapping.level]
+              ? item[mapping.level].toLowerCase() === level.toLowerCase()
+              : true;
+          }
+
+          if (ownership && level && (!subCounty || subCounty === defaultSubCounty)) {
+            if (item[mapping.ownership] && item[mapping.level]) {
+              return (
+                item[mapping.ownership].toLowerCase() === ownership.toLowerCase() &&
+                item[mapping.level].toLowerCase() === level.toLowerCase()
+              );
+            }
+
+            return true;
           }
 
           return (
             item[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() &&
-            item[mapping.level].toLowerCase() === level.toLowerCase() &&
-            item[mapping.ownership].toLowerCase() === ownership.toLowerCase()
+            (item[mapping.level] ? item[mapping.level].toLowerCase() === level.toLowerCase() : true) &&
+            (item[mapping.ownership] ? item[mapping.ownership].toLowerCase() === ownership.toLowerCase() : true)
           );
         })
         .forEach((item) => {
@@ -194,7 +217,8 @@ const renderChart = (config) => {
                 } = window.DIState.getState;
 
                 // only update if subcounty or level have changed
-                if (subCounty === selectedSubCounty) return;
+                if (subCounty === selectedSubCounty && level === selectedLevel && ownership === selectedOwnership)
+                  return;
 
                 subCounty = selectedSubCounty || defaultSubCounty;
                 level = selectedLevel || defaultLevel;

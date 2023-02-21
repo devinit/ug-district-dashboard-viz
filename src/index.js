@@ -13,7 +13,6 @@ import './styles/styles.css';
  */
 window.addEventListener('load', () => {
   renderSelectors('district-selectors');
-  renderSelectors('ple-performance-selectors');
   renderDistrictMap('dicharts--district-map');
   // renderEChart();
   renderEducationTables();
