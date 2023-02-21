@@ -128,10 +128,6 @@ const renderTable = (config) => {
               const rows = parseTableData(config, filteredData, selectedSubCounty, selectedLevel);
               root.render(createElement(DistrictTable, { rows }));
 
-              if (config.selectors && config.selectors.length) {
-                renderSelectors(config.selectorClassName, { selectors: config.selectors });
-              }
-
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
             });
@@ -152,7 +148,12 @@ const initTables = () => {
       if (tableConfigs && configs.length !== tableConfigs.length) {
         configs = tableConfigs.filter((config) => config.target === 'education');
 
-        configs.forEach(renderTable);
+        configs.forEach((config) => {
+          renderTable(config);
+          if (config.selectors && config.selectors.length) {
+            renderSelectors(config.selectorClassName, { selectors: config.selectors });
+          }
+        });
       }
     });
   } else {
