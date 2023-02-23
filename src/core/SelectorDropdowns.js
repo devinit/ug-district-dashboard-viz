@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client';
 import { addFilterWrapper } from '../widgets/filters';
 import Selectors from './components/Selectors';
 
-const renderSelectors = (className, id) => {
+const renderSelectors = (className) => {
   window.DICharts.handler.addChart({
     className,
     d3: {
@@ -34,7 +34,7 @@ const renderSelectors = (className, id) => {
                   'Invalid value for selectors - an Array is expected. Please review the documentation!'
                 );
               }
-              rootElement.render(<Selectors configs={selectors} renderIds={id} />);
+              rootElement.render(<Selectors configs={selectors} />);
             });
           } else {
             window.console.log('State is not defined');
