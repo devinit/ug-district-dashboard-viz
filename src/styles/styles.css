@@ -3,13 +3,14 @@
 .dicharts--number-of-schools,
 .dicharts--dimensions,
 .dicharts--district-map {
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 .dicharts--number-of-schools,
 .dicharts--learners-enrolment {
   padding-top: 30px;
+  height: 450px;
 }
 
 .dicharts--keyfacts {
@@ -62,7 +63,7 @@
 
 @media screen and (max-width: 412px) {
   .custom-legend.right {
-      display: block;
+    display: block;
   }
 }
 
@@ -98,7 +99,7 @@
 
 @media screen and (max-width: 699px) {
   .chart-container .charts__chart {
-      display: block;
+    display: block;
   }
 }
 
