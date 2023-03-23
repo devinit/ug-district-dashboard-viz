@@ -128,7 +128,74 @@ const validConfigs = (config) => {
   return true;
 };
 
-const renderChart = (config) => {
+const handleSelectors = ({ data, config, subCounty, years, chart }) => {
+  const onChangeSelector = (selector, item) => {
+    const options = chart.getOption();
+    const selectedOption = Array.isArray(item) ? item[0].value : item.value;
+    if (selectedOption) {
+      const seriesData =
+        selectedOption === defaultSelectValue
+          ? data
+          : filterDataByProperty(data, selector.config.dataProperty, selectedOption);
+      options.series = getSeries(config, seriesData, subCounty, years);
+      chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+    }
+  };
+
+  renderSelectors(config.selectorClassName, {
+    selectors: config.selectors,
+    onChange: onChangeSelector,
+    makeSticky: false,
+  });
+};
+
+const updateChart = ({ data, subCounty, config, chart }) => {
+  // filter by selected sub-county
+  const filteredData = filterDataBySubCounty(data, subCounty, config.mapping.subCounty);
+  // extract year range from data
+  const years = getYears(data, config.yearRange);
+  const options = deepMerge(defaultOptions, {
+    responsive: false,
+    legend: {
+      selectedMode: false,
+    },
+    grid: {
+      top: 60,
+      bottom: 60,
+    },
+    xAxis: {
+      data: years,
+      nameTextStyle: {
+        verticalAlign: 'top',
+      },
+      name: 'Years',
+    },
+    yAxis: {
+      type: 'value',
+      nameLocation: 'middle',
+      nameGap: 50,
+    },
+    toolbox: {
+      showTitle: false,
+      feature: {
+        saveAsImage: {
+          show: false,
+        },
+      },
+    },
+    series: getSeries(config, filteredData, subCounty, years),
+  });
+  // set colour - has to be done after the options merge above or it won't stick
+  options.color = colorways.cerulean;
+  chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+
+  // handle configured inline selectors
+  if (config.selectorClassName && config.selectors && config.selectors.length) {
+    handleSelectors({ data, subCounty, years, chart, config });
+  }
+};
+
+const processConfig = (config) => {
   if (!validConfigs(config)) return;
 
   window.DICharts.handler.addChart({
@@ -160,64 +227,7 @@ const renderChart = (config) => {
                 }
 
                 subCounty = selectedSubCounty || defaultSelectValue;
-                // filter by selected sub-county
-                const filteredData = filterDataBySubCounty(data, subCounty, config.mapping.subCounty);
-                // extract year range from data
-                const years = getYears(data, config.yearRange);
-                const options = deepMerge(defaultOptions, {
-                  responsive: false,
-                  legend: {
-                    selectedMode: false,
-                  },
-                  grid: {
-                    top: 60,
-                    bottom: 60,
-                  },
-                  xAxis: {
-                    data: years,
-                    nameTextStyle: {
-                      verticalAlign: 'top',
-                    },
-                    name: 'Years',
-                  },
-                  yAxis: {
-                    type: 'value',
-                    nameLocation: 'middle',
-                    nameGap: 50,
-                  },
-                  toolbox: {
-                    showTitle: false,
-                    feature: {
-                      saveAsImage: {
-                        show: false,
-                      },
-                    },
-                  },
-                  series: getSeries(config, filteredData, subCounty, years),
-                });
-                // set colour - has to be done after the options merge above or it won't stick
-                options.color = colorways.cerulean;
-                chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
-
-                const onChangeSelector = (selector, item) => {
-                  const selectedOption = Array.isArray(item) ? item[0].value : item.value;
-                  if (selectedOption) {
-                    const seriesData =
-                      selectedOption === defaultSelectValue
-                        ? filteredData
-                        : filterDataByProperty(filteredData, selector.config.dataProperty, selectedOption);
-                    options.series = getSeries(config, seriesData, subCounty, years);
-                    chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
-                  }
-                };
-
-                if (config.selectorClassName && config.selectors && config.selectors.length) {
-                  renderSelectors(config.selectorClassName, {
-                    selectors: config.selectors,
-                    onChange: onChangeSelector,
-                    makeSticky: false,
-                  });
-                }
+                updateChart({ data, subCounty, chart, config });
 
                 dichart.hideLoading();
               });
@@ -243,8 +253,7 @@ const initCharts = () => {
       // ensures that the state update that renders the charts only runs once
       if (chartConfigs && configs.length !== chartConfigs.length) {
         configs = chartConfigs.filter((config) => config.target === 'education');
-
-        configs.forEach(renderChart);
+        configs.forEach(processConfig);
       }
     });
   } else {
