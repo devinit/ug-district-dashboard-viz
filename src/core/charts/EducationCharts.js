@@ -210,18 +210,15 @@ const renderChart = (config) => {
 
               window.DIState.addListener(() => {
                 dichart.showLoading();
-                const {
-                  subCounty: selectedSubCounty,
-                  level: selectedLevel,
-                  ownership: selectedOwnership,
-                } = window.DIState.getState;
+                const { subCounty: selectedSubCounty, ownership: selectedOwnership } = window.DIState.getState;
 
                 // only update if subcounty or level have changed
-                if (subCounty === selectedSubCounty && level === selectedLevel && ownership === selectedOwnership)
+                if (subCounty === selectedSubCounty && ownership === selectedOwnership) {
                   return;
+                }
 
                 subCounty = selectedSubCounty || defaultSubCounty;
-                level = selectedLevel || defaultLevel;
+                level = defaultLevel;
                 ownership = selectedOwnership || defaultOwnership;
 
                 const years = getYears(filteredData, config.yearRange);
@@ -232,7 +229,7 @@ const renderChart = (config) => {
                   },
                   grid: {
                     top: 60,
-                    bottom: 20,
+                    bottom: 60,
                   },
                   xAxis: {
                     data: years,
@@ -260,8 +257,21 @@ const renderChart = (config) => {
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 
+                const onChangeSelector = (_selector, item) => {
+                  const selectedLevel = Array.isArray(item) ? item[0].value : item.value;
+                  if (selectedLevel !== level) {
+                    level = selectedLevel;
+                    options.series = getSeries(config, filteredData, subCounty, years, level, ownership);
+                    chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+                  }
+                };
+
                 if (config.selectorClassName && config.selectors && config.selectors.length) {
-                  renderSelectors(config.selectorClassName, { selectors: config.selectors, makeSticky: false });
+                  renderSelectors(config.selectorClassName, {
+                    selectors: config.selectors,
+                    onChange: onChangeSelector,
+                    makeSticky: false,
+                  });
                 }
 
                 dichart.hideLoading();

@@ -15,7 +15,7 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
 
           const chartParentSection = chartNode.closest('.section');
 
-          if (!options.makeSticky) {
+          if (options.makeSticky) {
             chartParentSection.classList.add('sticky'); // means it's a top level selector
           }
 
@@ -38,14 +38,10 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
                   'Invalid value for selectors - an Array is expected. Please review the documentation!'
                 );
               }
-              rootElement.render(
-                <Selectors
-                  configs={selectors}
-                  onChange={(selector, item) => {
-                    window.DIState.setState({ [selector.stateProperty]: item.value });
-                  }}
-                />
-              );
+              const onChange = (selector, item) => {
+                window.DIState.setState({ [selector.stateProperty]: item.value });
+              };
+              rootElement.render(<Selectors configs={selectors} onChange={options.onChange || onChange} />);
             });
           } else {
             window.console.log('State is not defined');

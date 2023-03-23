@@ -88,6 +88,7 @@
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--number-of-schools__selectors"></div>
               <div class="dicharts--number-of-schools"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
@@ -340,7 +341,20 @@
           },
           options: {
             legend: { show: true },
-          }
+          },
+          selectorClassName: 'dicharts--number-of-schools__selectors',
+          selectors: [
+            {
+              data: [
+                { value: 'primary', label: 'Primary' },
+                { value: 'secondary', label: 'Secondary' }
+              ],
+              label: 'Select level',
+              defaultValue: { value: 'all', label: 'Primary and secondary' },
+              valueProperty: 'value',
+              labelProperty: 'label',
+            },
+          ],
         },
         {
           target: 'education',
