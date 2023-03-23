@@ -39,7 +39,7 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
                 );
               }
               const onChange = (selector, item) => {
-                window.DIState.setState({ [selector.stateProperty]: item.value });
+                window.DIState.setState({ [selector.config.stateProperty]: item.value });
               };
               rootElement.render(<Selectors configs={selectors} onChange={options.onChange || onChange} />);
             });

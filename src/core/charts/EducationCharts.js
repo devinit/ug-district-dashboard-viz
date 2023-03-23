@@ -5,6 +5,7 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
 
 const defaultSubCounty = 'all';
+
 const getYears = (data, yearRange) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
 
@@ -14,6 +15,7 @@ const getYears = (data, yearRange) => {
 
   return sortedStringYears;
 };
+
 const getChartType = (type) => {
   if (!type) return 'bar';
 
@@ -85,6 +87,7 @@ const getSeries = (config, data, subCounty, years) => {
 
   return series;
 };
+
 const validConfigs = (config) => {
   if (!config.className) {
     window.console.error('Invalid chart config: className is required!');
@@ -134,6 +137,7 @@ const validConfigs = (config) => {
 
   return true;
 };
+
 const renderChart = (config) => {
   if (!validConfigs(config)) return;
 
@@ -201,6 +205,7 @@ const renderChart = (config) => {
                   },
                   series: getSeries(config, filteredData, subCounty, years),
                 });
+                // set colour - has to be done after the options merge above or it won't stick
                 options.color = colorways.cerulean;
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 

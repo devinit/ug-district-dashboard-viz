@@ -16,7 +16,7 @@ const Selectors = (props) => {
           const item = {
             label: selector.label,
             defaultValue: selector.defaultValue,
-            stateProperty: selector.stateProperty,
+            config: selector,
           };
           item.options = selector.defaultValue ? [selector.defaultValue] : [];
           let data = selector.data || [];
