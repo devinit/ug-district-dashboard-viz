@@ -1,10 +1,9 @@
 import deepMerge from 'deepmerge';
-import defaultOptions, { handleResize, colorways } from '../../charts/echarts/index';
+import defaultOptions, { colorways, handleResize } from '../../charts/echarts/index';
 import { combineMerge } from '../../utils';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
-
-const defaultSubCounty = 'all';
+import { defaultSelectValue, filterDataByProperty, filterDataBySubCounty } from '../utils';
 
 const getYears = (data, yearRange) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
@@ -23,15 +22,6 @@ const getChartType = (type) => {
 
   return type;
 };
-
-const filterDataBySubCounty = (data, subCounty, subCountyProperty) =>
-  data.filter((item) => {
-    if (!subCounty || subCounty === defaultSubCounty) {
-      return true;
-    }
-
-    return item[subCountyProperty].toLowerCase() === subCounty.toLowerCase();
-  });
 
 const getSeries = (config, data, subCounty, years) => {
   const { series: seriesNames, mapping } = config;
@@ -154,7 +144,7 @@ const renderChart = (config) => {
 
           fetchData(config.url).then((originalData) => {
             if (window.DIState) {
-              let subCounty = defaultSubCounty;
+              let subCounty = defaultSelectValue;
               const data =
                 config.filters && config.filters.subCounties
                   ? originalData.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty])) // if available, only include the configured sub-counties
@@ -169,7 +159,7 @@ const renderChart = (config) => {
                   return;
                 }
 
-                subCounty = selectedSubCounty || defaultSubCounty;
+                subCounty = selectedSubCounty || defaultSelectValue;
                 // filter by selected sub-county
                 const filteredData = filterDataBySubCounty(data, subCounty, config.mapping.subCounty);
                 // extract year range from data
@@ -209,14 +199,16 @@ const renderChart = (config) => {
                 options.color = colorways.cerulean;
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 
-                const onChangeSelector = (_selector, item) => {
-                  console.log(_selector, item);
-                  // const selectedLevel = Array.isArray(item) ? item[0].value : item.value;
-                  // if (selectedLevel !== level) {
-                  //   level = selectedLevel;
-                  //   options.series = getSeries(config, filteredData, subCounty, years, level, ownership);
-                  //   chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
-                  // }
+                const onChangeSelector = (selector, item) => {
+                  const selectedOption = Array.isArray(item) ? item[0].value : item.value;
+                  if (selectedOption) {
+                    const seriesData =
+                      selectedOption === defaultSelectValue
+                        ? filteredData
+                        : filterDataByProperty(filteredData, selector.config.dataProperty, selectedOption);
+                    options.series = getSeries(config, seriesData, subCounty, years);
+                    chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+                  }
                 };
 
                 if (config.selectorClassName && config.selectors && config.selectors.length) {

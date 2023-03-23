@@ -73,7 +73,6 @@ Selectors.propTypes = {
       url: PropTypes.string,
       label: PropTypes.string.isRequired,
       defaultValue: PropTypes.shape({ value: PropTypes.string, label: PropTypes.string }),
-      stateProperty: PropTypes.string.isRequired,
       labelProperty: PropTypes.string.isRequired,
       valueProperty: PropTypes.string.isRequired,
     })
