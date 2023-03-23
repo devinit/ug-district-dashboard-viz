@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import { createRoot } from 'react-dom/client';
-import { addFilterWrapper } from '../widgets/filters';
+import { createFilterWrapper } from '../widgets/filters';
 import Selectors from './components/Selectors';
 
 const renderSelectors = (className, options = { makeSticky: false }) => {
@@ -19,7 +19,7 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
             chartParentSection.classList.add('sticky'); // means it's a top level selector
           }
 
-          const selectorWrapper = addFilterWrapper(chartNode);
+          const selectorWrapper = createFilterWrapper(chartNode);
           const rootElement = createRoot(selectorWrapper);
           if (window.DIState) {
             window.DIState.addListener(() => {
