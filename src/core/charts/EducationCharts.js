@@ -254,7 +254,7 @@ const renderChart = (config) => {
                   },
                   series: getSeries(config, filteredData, subCounty, years, level, ownership),
                 });
-                options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
+                options.color = colorways.cerulean;
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 
                 const onChangeSelector = (_selector, item) => {

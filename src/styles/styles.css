@@ -8,7 +8,8 @@
 }
 
 .dicharts--number-of-schools,
-.dicharts--learners-enrolment {
+.dicharts--learners-enrolment,
+.dicharts--ple-performance-analysis {
   padding-top: 30px;
   height: 450px;
 }

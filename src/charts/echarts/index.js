@@ -24,6 +24,7 @@ export const colorways = {
   bluebell: ['#0c457b', '#0071b1', '#0089cc', '#5da3d9', '#77adde', '#88bae5', '#bcd4f0', '#d3e0f4'],
   leaf: ['#08492f', '#005b3e', '#00694a', '#3b8c62', '#74bf93', '#a2d1b0', '#b1d8bb', '#c5e1cb'],
   orange: ['#973915', '#d85b31', '#eb642b', '#f18e5e', '#f4a57c', '#f6bb9d'],
+  cerulean: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'],
 };
 
 export const getThematicColoursMix = (exclude = ['rainbow']) => {
