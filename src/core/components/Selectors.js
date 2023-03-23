@@ -47,20 +47,22 @@ const Selectors = (props) => {
 
   return (
     <ChartFilters selectErrorMessage={selectErrorMessage}>
-      {selectors.map(({ label, options, defaultValue, stateProperty }) => (
-        <Select
-          key={label}
-          label={label}
-          options={options}
-          classNamePrefix="subcounty-filter sticky-top"
-          isClearable={false}
-          defaultValue={[{ ...defaultValue, isCloseable: true }]}
-          onChange={(item) => {
-            window.DIState.setState({ [stateProperty]: item.value });
-          }}
-          css={{ minWidth: '200px' }}
-        />
-      ))}
+      {selectors.map((selector) => {
+        const { label, options, defaultValue } = selector;
+
+        return (
+          <Select
+            key={label}
+            label={label}
+            options={options}
+            classNamePrefix="subcounty-filter sticky-top"
+            isClearable={false}
+            defaultValue={[{ ...defaultValue, isCloseable: true }]}
+            onChange={(item) => props.onChange(selector, item)}
+            css={{ minWidth: '200px' }}
+          />
+        );
+      })}
     </ChartFilters>
   );
 };
@@ -76,6 +78,7 @@ Selectors.propTypes = {
       valueProperty: PropTypes.string.isRequired,
     })
   ),
+  onChange: PropTypes.func,
 };
 
 export default Selectors;

@@ -12,7 +12,7 @@ import './styles/styles.css';
  * Run your code after the page has loaded
  */
 window.addEventListener('load', () => {
-  renderSelectors('district-selectors');
+  renderSelectors('district-selectors', { makeSticky: true });
   renderDistrictMap('dicharts--district-map');
   // renderEChart();
   renderEducationTables();

@@ -260,8 +260,8 @@ const renderChart = (config) => {
                 options.color = ['#a21e25', '#fbd7cb'].concat(colorways.default);
                 chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
 
-                if (config.selectors && config.selectors.length) {
-                  renderSelectors(config.selectorClassName, { selectors: config.selectors });
+                if (config.selectorClassName && config.selectors && config.selectors.length) {
+                  renderSelectors(config.selectorClassName, { selectors: config.selectors, makeSticky: false });
                 }
 
                 dichart.hideLoading();
