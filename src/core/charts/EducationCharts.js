@@ -33,7 +33,6 @@ const filterDataBySubCounty = (data, subCounty, subCountyProperty) =>
 
 const getSeries = (config, data, subCounty, years) => {
   const { series: seriesNames, mapping } = config;
-  const subCountyData = filterDataBySubCounty(data, subCounty, mapping.subCounty);
   // create chart series object
   const series = seriesNames.map((seriesName, index) => ({
     name: seriesName,
@@ -63,7 +62,7 @@ const getSeries = (config, data, subCounty, years) => {
     },
     data: years.map((year) => {
       const yearValues = [];
-      subCountyData.forEach((item) => {
+      data.forEach((item) => {
         if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
           yearValues.push(Number(item[mapping.value]));
         } else if (item[mapping.year] === year && config.className === 'dicharts--ple-performance-analysis') {
@@ -149,13 +148,13 @@ const renderChart = (config) => {
           // Render echarts coding here
           const chart = window.echarts.init(chartNode);
 
-          fetchData(config.url).then((data) => {
+          fetchData(config.url).then((originalData) => {
             if (window.DIState) {
               let subCounty = defaultSubCounty;
-              const filteredData =
+              const data =
                 config.filters && config.filters.subCounties
-                  ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
-                  : data;
+                  ? originalData.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty])) // if available, only include the configured sub-counties
+                  : originalData;
 
               window.DIState.addListener(() => {
                 dichart.showLoading();
@@ -167,8 +166,10 @@ const renderChart = (config) => {
                 }
 
                 subCounty = selectedSubCounty || defaultSubCounty;
-
-                const years = getYears(filteredData, config.yearRange);
+                // filter by selected sub-county
+                const filteredData = filterDataBySubCounty(data, subCounty, config.mapping.subCounty);
+                // extract year range from data
+                const years = getYears(data, config.yearRange);
                 const options = deepMerge(defaultOptions, {
                   responsive: false,
                   legend: {
