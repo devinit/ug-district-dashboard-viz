@@ -128,7 +128,7 @@ const validConfigs = (config) => {
   return true;
 };
 
-const handleSelectors = ({ data, config, subCounty, years, chart }) => {
+const handleSelectors = async ({ data, config, subCounty, years, chart }, selectorNodes) => {
   const onChangeSelector = (selector, item) => {
     const options = chart.getOption();
     const selectedOption = Array.isArray(item) ? item[0].value : item.value;
@@ -137,23 +137,22 @@ const handleSelectors = ({ data, config, subCounty, years, chart }) => {
         selectedOption === defaultSelectValue
           ? data
           : filterDataByProperty(data, selector.config.dataProperty, selectedOption);
-      options.series = getSeries(config, seriesData, subCounty, years);
+      options.series = getSeries(config, seriesData || [], subCounty, years);
       chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
     }
   };
 
-  renderSelectors(config.selectorClassName, {
+  const selectors = await renderSelectors(config.selectorClassName, {
     selectors: config.selectors,
     onChange: onChangeSelector,
     makeSticky: false,
+    nodes: selectorNodes,
   });
+
+  return selectors;
 };
 
-const updateChart = ({ data, subCounty, config, chart }) => {
-  // filter by selected sub-county
-  const filteredData = filterDataBySubCounty(data, subCounty, config.mapping.subCounty);
-  // extract year range from data
-  const years = getYears(data, config.yearRange);
+const updateChart = ({ data, subCounty, years, config, chart }) => {
   const options = deepMerge(defaultOptions, {
     responsive: false,
     legend: {
@@ -183,16 +182,11 @@ const updateChart = ({ data, subCounty, config, chart }) => {
         },
       },
     },
-    series: getSeries(config, filteredData, subCounty, years),
+    series: getSeries(config, data, subCounty, years),
   });
   // set colour - has to be done after the options merge above or it won't stick
   options.color = colorways.cerulean;
   chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
-
-  // handle configured inline selectors
-  if (config.selectorClassName && config.selectors && config.selectors.length) {
-    handleSelectors({ data, subCounty, years, chart, config });
-  }
 };
 
 const processConfig = (config) => {
@@ -211,23 +205,52 @@ const processConfig = (config) => {
 
           fetchData(config.url).then((originalData) => {
             if (window.DIState) {
+              // set default sub-county
               let subCounty = defaultSelectValue;
+              window.DIState.setState({ subCounty });
+
               const data =
                 config.filters && config.filters.subCounties
                   ? originalData.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty])) // if available, only include the configured sub-counties
                   : originalData;
+              // extract year range from data
+              const years = getYears(data, config.yearRange);
 
+              let selectors = [];
+
+              // handle sub-county changes.
+              const onChangeSubCounty = (selectedSubCounty) => {
+                subCounty = selectedSubCounty || defaultSelectValue;
+                // filter data by selected sub-county
+                const filteredData = filterDataBySubCounty(data, subCounty, config.mapping.subCounty);
+
+                updateChart({ data: filteredData, subCounty, years, chart, config });
+
+                // handle configured inline selectors
+                if (config.selectorClassName && config.selectors && config.selectors.length) {
+                  handleSelectors({ data: filteredData, subCounty, years, chart, config }, selectors).then(
+                    (updatedSelectors) => {
+                      selectors = updatedSelectors;
+                    }
+                  );
+                }
+              };
+
+              // call for default rendering
+              onChangeSubCounty(subCounty);
+
+              // listen & react to changes in global state
               window.DIState.addListener(() => {
                 dichart.showLoading();
                 const { subCounty: selectedSubCounty } = window.DIState.getState;
 
-                // only update if subcounty
-                if (subCounty === selectedSubCounty) {
+                // only update if subcounty changes
+                if (!selectedSubCounty || subCounty === selectedSubCounty) {
+                  dichart.hideLoading();
+
                   return;
                 }
-
-                subCounty = selectedSubCounty || defaultSelectValue;
-                updateChart({ data, subCounty, chart, config });
+                onChangeSubCounty(selectedSubCounty);
 
                 dichart.hideLoading();
               });

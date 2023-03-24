@@ -19,7 +19,8 @@
 }
 
 .spotlight-banner.data-selector--wrapper {
-  padding: 1em 2em 3rem 2em;
+  padding: 1em 2em 2rem 2em;
+  min-height: 95px;
 }
 
 .spotlight-banner .labelled-data-selector--wrapper .data-selector {
