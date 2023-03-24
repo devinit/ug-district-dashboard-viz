@@ -422,14 +422,13 @@
           className: 'dicharts--ple-performance-analysis',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/ple_analysis_2018_to_2020.csv',
           yearRange: [2018, 2020],
-          series: ['Grade 1', 'Grade 2', 'Grade 3'],
+          series: ['Government', 'Private'],
           mapping: {
             series: 'ownership',
             year: 'year',
             value: 'total',
             subCounty: 'subcounty',
             level: 'level',
-            ownership: 'ownership',
           },
           filters: {
             subCounties: kayungaSubCounties,
@@ -439,19 +438,6 @@
             yAxis: { name: 'PLE Performance' },
           },
           selectorClassName: 'dicharts--ple-performance-selectors',
-          selectors: [
-            {
-              label: 'Select ownership',
-              defaultValue: { value: 'all', label: 'Government and Private' },
-              dataProperty: 'ownership',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'government', label: 'Government' },
-                { value: 'private', label: 'Private' },
-              ],
-            },
-          ],
         },
       ],
       tables: [
