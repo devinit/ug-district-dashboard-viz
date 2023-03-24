@@ -29,24 +29,17 @@ const getSeries = (config, data, subCounty, years) => {
   const series = seriesNames.map((seriesName, index) => ({
     name: seriesName,
     type: getChartType(config.type),
-    ...(config.className !== 'dicharts--ple-performance-analysis' && {
-      stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'School Type' : undefined,
-    }),
+    stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'Education' : undefined,
     areaStyle: config.type === 'area' ? {} : undefined,
     smooth: true,
     emphasis: { focus: 'series' },
     label: {
-      show: config.className !== 'dicharts--ple-performance-analysis' ? index === seriesNames.length - 1 : true,
+      show: index === seriesNames.length - 1,
       position: 'top',
       formatter: (params) => {
         let total = 0;
         for (let i = 0; i < series.length; i += 1) {
-          if (series[i].name === seriesName && config.className === 'dicharts--ple-performance-analysis') {
-            total = parseInt(series[i].data[params.dataIndex], 10);
-            break;
-          } else {
-            total += parseInt(series[i].data[params.dataIndex], 10);
-          }
+          total += parseInt(series[i].data[params.dataIndex], 10);
         }
 
         return formatNumber(total);
@@ -57,8 +50,6 @@ const getSeries = (config, data, subCounty, years) => {
       data.forEach((item) => {
         if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
           yearValues.push(Number(item[mapping.value]));
-        } else if (item[mapping.year] === year && config.className === 'dicharts--ple-performance-analysis') {
-          yearValues.push(Number(item[mapping[seriesName.toLowerCase().split(' ').join('_')]]));
         }
       });
 
