@@ -120,27 +120,41 @@ const validConfigs = (config) => {
 };
 
 const handleSelectors = async ({ data, config, subCounty, years, chart }, selectorNodes) => {
+  // keep track of the current value of all available selectors
+  const selectors = config.selectors.map((selector) => ({
+    property: selector.dataProperty,
+    value: 'all',
+  }));
+
   const onChangeSelector = (selector, item) => {
     const options = chart.getOption();
     const selectedOption = Array.isArray(item) ? item[0].value : item.value;
     if (selectedOption) {
-      const seriesData =
-        selectedOption === defaultSelectValue
-          ? data
-          : filterDataByProperty(data, selector.config.dataProperty, selectedOption);
-      options.series = getSeries(config, seriesData || [], subCounty, years);
-      chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+      // update selector value
+      const selected = selectors.find((tracker) => tracker.property === selector.config.dataProperty);
+      if (selected) {
+        selected.value = selectedOption;
+        // filter data by all available selectors and their value
+        const selectedData = selectors.reduce((filteredData, curr) => {
+          if (curr.value === 'all') {
+            return filteredData;
+          }
+
+          return filterDataByProperty(filteredData, curr.property, curr.value);
+        }, data);
+        // update chart
+        options.series = getSeries(config, selectedData || [], subCounty, years);
+        chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+      }
     }
   };
 
-  const selectors = await renderSelectors(config.selectorClassName, {
+  return renderSelectors(config.selectorClassName, {
     selectors: config.selectors,
     onChange: onChangeSelector,
     makeSticky: false,
     nodes: selectorNodes,
   });
-
-  return selectors;
 };
 
 const updateChart = ({ data, subCounty, years, config, chart }) => {
