@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import { createRoot } from 'react-dom/client';
+import { v4 as uuidv4 } from 'uuid';
 import { createFilterWrapper } from '../widgets/filters';
 import Selectors from './components/Selectors';
 
@@ -19,7 +20,7 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
       promises.push(
         new Promise((resolve) => {
           selectorNode.render(
-            <Selectors key={`${Math.random()}`} configs={options.selectors} onChange={options.onChange || onChange} />
+            <Selectors key={uuidv4()} configs={options.selectors} onChange={options.onChange || onChange} />
           );
           resolve(selectorNode);
         })

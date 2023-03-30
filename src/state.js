@@ -1,8 +1,9 @@
-import { makeObservable, observable, action, computed, autorun } from 'mobx';
+import { action, autorun, computed, makeObservable, observable } from 'mobx';
+import { v4 as uuidv4 } from 'uuid';
 
 class State {
   constructor() {
-    this.id = Math.random();
+    this.id = uuidv4();
     this.state = {};
     this.listeners = [];
 
