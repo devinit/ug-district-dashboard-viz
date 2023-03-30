@@ -12,8 +12,7 @@ import './styles/styles.css';
  * Run your code after the page has loaded
  */
 window.addEventListener('load', () => {
-  renderSelectors('district-selectors', 'subcounty, level');
-  renderSelectors('ple-performance-selectors', 'ownership');
+  renderSelectors('district-selectors', { makeSticky: true });
   renderDistrictMap('dicharts--district-map');
   // renderEChart();
   renderEducationTables();

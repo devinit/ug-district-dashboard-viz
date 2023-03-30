@@ -2,6 +2,7 @@ import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
 import DistrictTable from '../components/DistrictTable';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
+import renderSelectors from '../SelectorDropdowns';
 
 const parseTableData = (config, data, subCounty, level) => {
   const { rows: COLUMN_CAPTIONS, mapping } = config;
@@ -126,6 +127,7 @@ const renderTable = (config) => {
                   : data;
               const rows = parseTableData(config, filteredData, selectedSubCounty, selectedLevel);
               root.render(createElement(DistrictTable, { rows }));
+
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
             });
@@ -146,7 +148,12 @@ const initTables = () => {
       if (tableConfigs && configs.length !== tableConfigs.length) {
         configs = tableConfigs.filter((config) => config.target === 'education');
 
-        configs.forEach(renderTable);
+        configs.forEach((config) => {
+          renderTable(config);
+          if (config.selectors && config.selectors.length) {
+            renderSelectors(config.selectorClassName, { selectors: config.selectors });
+          }
+        });
       }
     });
   } else {

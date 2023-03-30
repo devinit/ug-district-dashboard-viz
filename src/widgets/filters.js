@@ -6,3 +6,9 @@ export const addFilterWrapper = (chartNode) => {
 
   return filterWrapper;
 };
+
+export const createFilterWrapper = (filterNode) => {
+  filterNode.classList.add(...['spotlight-banner', 'data-selector--wrapper']);
+
+  return filterNode;
+};

@@ -11,8 +11,8 @@ const selectStyles = {
     borderColor: '#ddd',
     borderRadius: 'none',
     boxShadow: 'none',
-    ':hover': { borderColor: '#8f1b13' },
-    ':active': { borderColor: '#8f1b13' },
+    ':hover': { borderColor: '#357ba5' },
+    ':active': { borderColor: '#357ba5' },
   }),
   menu: (styles) => ({
     ...styles,
@@ -22,8 +22,8 @@ const selectStyles = {
   option: (styles, state) => ({
     ...styles,
     fontSize: '14px',
-    ':hover': { backgroundColor: '#f0826d' },
-    backgroundColor: state.isSelected ? '#8f1b13' : 'transparent',
+    ':hover': { backgroundColor: '#4e9ac6', color: '#ffffff' },
+    backgroundColor: state.isSelected ? '#357ba5' : 'transparent',
   }),
   singleValue: (styles) => ({ ...styles, fontSize: '14px' }),
   multiValue: (styles) => ({ ...styles, fontSize: '14px' }),
