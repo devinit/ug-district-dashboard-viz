@@ -226,6 +226,18 @@
   <script>
 
     const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+    const mapMapping = {
+      'Karujubu': 'Karujubu Division',
+      'Nyangahya': 'Nyangahya Division',
+      'Masindi Town Council': 'Central Division',
+    }
+    const mapFormatter = (value, target = 'map') => {
+      if (Object.keys(mapMapping).includes(value)) {
+        return mapMapping[value].toUpperCase();
+      }
+
+      return value.toUpperCase();
+    }
     const topics = [
       {
         id: 'education',
@@ -296,6 +308,7 @@
           zoom: 10,
           maxZoom: 12,
         },
+        formatter: mapFormatter,
       },
       keyFacts: {
         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',

@@ -179,7 +179,7 @@ const DistrictMap = (props) => {
               loading,
               data,
               props.location,
-              coreLayer,
+              props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
               activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {}
             )}
           </BaseMap>
