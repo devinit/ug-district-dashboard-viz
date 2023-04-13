@@ -264,8 +264,16 @@
           {
             id: 'learnersEnrolment',
             name: 'Learners Enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
             colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
             range: [5, 10, 15, 20],
+            yearRange: [2018, 2020],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'avg', //either sum, avg
           },
         ],
       },
