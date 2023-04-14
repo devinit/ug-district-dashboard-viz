@@ -251,7 +251,7 @@
         indicators: [
           {
             id: 'numberOfSchools',
-            name: 'Number of Schools',
+            name: 'Number of Primary Schools',
             description: 'Description Goes Here!',
             colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
             range: [5, 10, 15, 20],
@@ -268,11 +268,29 @@
             },
           },
           {
-            id: 'learnersEnrolment',
-            name: 'Learners Enrolment',
+            id: 'numberOfSecondarySchools',
+            name: 'Number of Secondary Schools',
+            description: 'Description Goes Here!',
+            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            range: [5, 10, 15, 20],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            yearRange: [2016, 2021],
+            mapping: {
+              location: 'SubCounty',
+              value: 'Value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['secondary'],
+            },
+          },
+          {
+            id: 'primaryEnrolment',
+            name: 'Primary School Enrolment',
             url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
             colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
-            range: [5, 10, 15, 20],
+            range: [50, 100, 200, 300],
             yearRange: [2018, 2020],
             mapping: {
               location: 'subcounty',
@@ -281,7 +299,24 @@
             },
             aggregator: 'sum', //either sum, avg
             filters: {
-              level: ['primary'],
+              level: ['Primary'],
+            },
+          },
+          {
+            id: 'secondaryEnrolment',
+            name: 'Secondary School Enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [50, 100, 200, 300],
+            yearRange: [2018, 2020],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['Secondary'],
             },
           },
         ],
