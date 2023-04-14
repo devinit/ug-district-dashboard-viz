@@ -45,7 +45,7 @@
     "@turf/center-of-mass": "^6.5.0",
     "@turf/helpers": "^6.5.0",
     "classnames": "^2.3.2",
-    "core-js": "^3.30.0",
+    "core-js": "^3.30.1",
     "deepmerge": "^4.3.1",
     "expect.js": "^0.3.1",
     "lodash": "^4.17.21",
