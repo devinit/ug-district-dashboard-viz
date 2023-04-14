@@ -262,7 +262,10 @@
               value: 'Value',
               year: 'year',
             },
-            aggregator: 'avg', //either sum, avg
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['primary'],
+            },
           },
           {
             id: 'learnersEnrolment',
@@ -276,7 +279,10 @@
               value: 'value',
               year: 'year',
             },
-            aggregator: 'avg', //either sum, avg
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['primary'],
+            },
           },
         ],
       },

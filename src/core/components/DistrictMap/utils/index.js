@@ -69,6 +69,17 @@ export const aggregateValues = (data, aggregate) => {
   });
 };
 
+const filterData = (data, filters) => {
+  if (!filters) return data;
+
+  let filteredData = data;
+  Object.keys(filters).forEach((column) => {
+    filteredData = filteredData.filter((item) => filters[column].includes(item[column]));
+  });
+
+  return filteredData;
+};
+
 export const processData = (data, indicator, year) => {
   if (!indicator) return [];
   if (!indicator.mapping) {
@@ -77,10 +88,10 @@ export const processData = (data, indicator, year) => {
   const { location, value, year: yearField } = indicator.mapping;
 
   const filteredData = year
-    ? data
+    ? filterData(data, indicator.filters)
         .filter((item) => item[yearField] === `${year}`)
         .map((item) => ({ name: item[location], value: Number(item[value]) }))
-    : data.map((item) => ({ name: item[location], value: Number(item[value]) }));
+    : filterData(data, indicator.filters).map((item) => ({ name: item[location], value: Number(item[value]) }));
   if (indicator.aggregator) {
     return aggregateValues(filteredData, indicator.aggregator);
   }
