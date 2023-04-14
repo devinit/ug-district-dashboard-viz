@@ -104,7 +104,10 @@ const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [state, dispatch] = useReducer(mapReducer, initialState);
   const { filterOptions, activeIndicator, activeTopic, activeYear } = state;
-  const { data, setMap, setOptions } = useMap(props.location, coreLayer);
+  const { data, setMap, setOptions } = useMap(
+    props.location,
+    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer
+  );
 
   useEffect(() => {
     // set map options using their caption values

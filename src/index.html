@@ -230,9 +230,12 @@
       'Karujubu': 'Karujubu Division',
       'Nyangahya': 'Nyangahya Division',
       'Masindi Town Council': 'Central Division',
+      'KARUJUBU DIVISION': 'Karujubu',
+      'NYANGAHYA DIVISION': 'Nyangahya',
+      'CENTRAL DIVISION': 'Masindi Town Council',
     }
     const mapFormatter = (value, target = 'map') => {
-      if (Object.keys(mapMapping).includes(value)) {
+      if (Object.keys(mapMapping).map((key) => key.toUpperCase()).includes(value.toUpperCase())) {
         return mapMapping[value].toUpperCase();
       }
 
