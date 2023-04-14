@@ -19,3 +19,14 @@ export const filterDataByProperty = (data, propertyName, propertyValue) =>
   propertyName && propertyValue
     ? data.filter((item) => item[propertyName].toLowerCase() === propertyValue.toLowerCase())
     : data;
+
+export const filterData = (data, filters) => {
+  if (!filters) return data;
+
+  let filteredData = data;
+  Object.keys(filters).forEach((column) => {
+    filteredData = filteredData.filter((item) => filters[column].includes(item[column]));
+  });
+
+  return filteredData;
+};

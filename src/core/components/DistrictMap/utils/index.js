@@ -1,5 +1,6 @@
 import { groupBy } from 'lodash';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
+import { filterData } from '../../../utils';
 
 export const COLOURED_LAYER = 'highlight';
 export const coreLayer = {
@@ -67,17 +68,6 @@ export const aggregateValues = (data, aggregate) => {
       value: aggregate === 'sum' ? sum : avg,
     };
   });
-};
-
-const filterData = (data, filters) => {
-  if (!filters) return data;
-
-  let filteredData = data;
-  Object.keys(filters).forEach((column) => {
-    filteredData = filteredData.filter((item) => filters[column].includes(item[column]));
-  });
-
-  return filteredData;
 };
 
 export const processData = (data, indicator, year) => {
