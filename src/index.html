@@ -248,14 +248,10 @@
   <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
   <script>
 
-    const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+    /* Kayunga Mapping */
     const mapMapping = {
-      'Karujubu': 'Karujubu Division',
-      'Nyangahya': 'Nyangahya Division',
-      'Masindi Town Council': 'Central Division',
-      'KARUJUBU DIVISION': 'Karujubu',
-      'NYANGAHYA DIVISION': 'Nyangahya',
-      'CENTRAL DIVISION': 'Masindi Town Council',
+      'kayunga tc': 'Kayunga Town Council',
+      'KAYUNGA TOWN COUNCIL': 'kayunga tc',
     }
     const mapFormatter = (value, target = 'map') => {
       if (Object.keys(mapMapping).map((key) => key.toUpperCase()).includes(value.toUpperCase())) {
@@ -276,13 +272,14 @@
             id: 'numberOfSchools',
             name: 'Number of Primary Schools',
             description: 'Description Goes Here!',
-            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            range: [5, 10, 15, 20],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
-            yearRange: [2016, 2021],
+            // colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            colours: ['#d6e7f2', '#bad7e9', '#9fc7e0', '#83b7d7', '#67a7ce'],
+            range: [25, 50, 75, 100],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
+            yearRange: [2017, 2022],
             mapping: {
-              location: 'SubCounty',
-              value: 'Value',
+              location: 'subcounty',
+              value: 'value',
               year: 'year',
             },
             aggregator: 'sum', //either sum, avg
@@ -296,7 +293,7 @@
             description: 'Description Goes Here!',
             colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
             range: [5, 10, 15, 20],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
             yearRange: [2016, 2021],
             mapping: {
               location: 'SubCounty',
@@ -311,7 +308,7 @@
           {
             id: 'primaryEnrolment',
             name: 'Primary School Enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/learner_enrollment.csv',
             colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
             range: [50, 100, 200, 300],
             yearRange: [2018, 2020],
@@ -328,7 +325,7 @@
           {
             id: 'secondaryEnrolment',
             name: 'Secondary School Enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/learner_enrollment.csv',
             colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
             range: [50, 100, 200, 300],
             yearRange: [2018, 2020],
@@ -356,15 +353,15 @@
     const kayungaSubCounties = ['Galiraya', 'Bbaale', 'Kayonza', 'Kitimbwa', 'Busaana', 'Kayunga', 'Kayunga Town Council', 'Nazigo', 'Kangulumira'];
     const state = {
       location: {
-        name: 'Masindi',
-        fullName: 'Masindi District',
-        coordinates: [31.766240227362417, 1.8818134163990712],
-        // coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
+        name: 'Kayunga',
+        fullName: 'Kayunga District',
+        //coordinates: [31.766240227362417, 1.8818134163990712],
+        coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
       },
       selectors: [
         {
           id: 'subcounty',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/sub-counties.csv',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/sub-counties.csv',
           label: 'Select sub-county',
           defaultValue: { value: 'all', label: 'All sub-counties' },
           stateProperty: 'subCounty',
@@ -383,10 +380,10 @@
           zoom: 10,
           maxZoom: 12,
         },
-        formatter: mapFormatter,
+        // formatter: mapFormatter,
       },
       keyFacts: {
-        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
+        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/District%20Profile.csv',
         tabs: [
           {
             id: 'overview',
@@ -395,13 +392,13 @@
           },
           {
             id: 'education',
-            dashboardURL: 'https://google.com/', // when undefined, button is not shown
+            dashboardURL: 'https://datahub.go.ug/district-dashboards/kayunga/education/', // when undefined, button is not shown
             dashboardButtonCaption: 'View Education Dashboard',
           },
           {
             id: 'production',
             show: false,
-            dashboardURL: 'https://google.com/',
+            dashboardURL: 'https://datahub.go.ug/district-dashboards/kayunga/production/',
             dashboardButtonCaption: 'View Production Dashboard',
           },
         ],
@@ -410,7 +407,7 @@
         {
           target: 'education',
           className: 'dicharts--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
           type: 'bar',
           typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
           yearRange: [2016, 2021],
@@ -459,7 +456,7 @@
         {
           target: 'education',
           className: 'dicharts--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learner_enrollment.csv',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/learner_enrollment.csv',
           yearRange: [2018, 2021],
           series: ['Government', 'Private'],
           mapping: {
@@ -493,7 +490,7 @@
         {
           target: 'education',
           className: 'dicharts--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
           type: 'area',
           yearRange: [2018, 2021],
           series: ['Government', 'Private'],
@@ -595,7 +592,7 @@
         {
           target: 'education',
           className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
           yearRange: [2016, 2021],
           rows: ['Government', 'Private'],
           mapping: {
@@ -644,7 +641,7 @@
         {
           target: 'education',
           className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
           yearRange: [2016, 2021],
           rows: ['Government', 'Private'],
           mapping: {
@@ -661,7 +658,7 @@
         {
           target: 'education',
           className: 'dicharts--table--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learner_enrollment.csv',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/learner_enrollment.csv',
           yearRange: [2018, 2021],
           rows: ['Government', 'Private'],
           mapping: {
@@ -678,7 +675,7 @@
         {
           target: 'education',
           className: 'dicharts--table--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
           yearRange: [2018, 2021],
           rows: ['Government', 'Private'],
           mapping: {
