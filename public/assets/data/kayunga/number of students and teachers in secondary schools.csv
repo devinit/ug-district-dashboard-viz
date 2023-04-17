@@ -1,0 +1,73 @@
+﻿district_id,subcounty_id,parish_id,subcounty,parish,school_name,ownership,year,number_of_teacher,number_of_students
+d102,s101,,Galiraya,,Galiraya Seed Secondary School,Government,2018,17,278
+d102,s102,,Bbaale,,Bbaale Secondary School,Government,2018,29,419
+d102,s101,,Galiraya,,St. Boniface Secondary School Kasokwe,Private,2018,,477
+d102,s103,,Kayonza,,Naalinya Irene Ndagire Secondary School,Government,2018,,897
+d102,s104,,Kitimbwa,,Kitatya Senior Secondary School,Government,2018,24,712
+d102,s113,,Kitimbwa Town Council,,Kitimbwa Bright Future Academy,Private,2018,,739
+d102,s110,,Busaana Town Council,,Busaana Senior Secondary School,Government,2018,38,1231
+d102,s110,,Busaana Town Council,,Bugerere High School Busaana,Private,2018,,697
+d102,s111,,Nazigo Town Council,,Nazigo Town Senior Secondary School,Private,2018,,
+d102,s113,,Kitimbwa Town Council,,St. Mathias Mulumba Secondary School,Private,2018,,439
+d102,s106,,Nazigo,,St. Mathias Kalemba Secondary School,Government,2018,47,1017
+d102,s108,,Kayunga,,Green Valley High School,Private,2018,,773
+d102,s112,,Kangulumira Town Council,,Kangulumira Public Secondary School,Government,2018,32,797
+d102,s112,,Kangulumira Town Council,,Uganda Matrys Secondary School Kangulumira,Private,2018,,699
+d102,s112,,Kangulumira Town Council,,Kisega High School,Private,2018,,887
+d102,s108,,Kayunga,,Busaale Senior Secondary School,Private,2018,,
+d102,s108,,Kayunga,,St. John's Busaale Secondary School,Private,2018,,204
+d102,s108,,Kayunga,,Kanjuki Senior Secondary School,Government,2018,28,652
+d102,s109,,Kayunga Town Council,,Namagabi Senior Secondary School,Government,2018,34,774
+d102,s109,,Kayunga Town Council,,Kayunga Light College Senior Secondary School,Private,2018,,442
+d102,s109,,Kayunga Town Council,,Green Vine College,Government,2018,,829
+d102,s109,,Kayunga Town Council,,Ndeeba Senior Secondary School,Government,2018,27,544
+d102,s109,,Kayunga Town Council,,Muyalen High School,Private,2018,,322
+d102,s105,,Busaana,,St. Peters Kibuzi Senior Secondary School,Government,2018,17,318
+d102,s101,,Galiraya,,Galiraya Seed Secondary School,Government,2017,10,162
+d102,s102,,Bbaale,,Bbaale Secondary School,Government,2017,27,201
+d102,s101,,Galiraya,,St. Boniface Secondary School Kasokwe,Private,2017,,521
+d102,s103,,Kayonza,,Nalinya Irene Ndagire Secondary School,Government,2017,,760
+d102,s104,,Kitimbwa,,Kitatya Secondary School,Government,2017,15523,414
+d102,s113,,Kitimbwa Town Council,,Kitimbwa Bright Future Secondary School,Private,2017,,523
+d102,s110,,Busaana Town Council,,Busaana Secondary School,Government,2017,32,485
+d102,s110,,Busaana Town Council,,Bugerere High School,Private,2017,,705
+d102,s111,,Nazigo Town Council,,Nazigo Town Secondary School,Private,2017,,506
+d102,s113,,Kitimbwa Town Council,,St. Matia Mulumba Secondary School,Private,2017,,521
+d102,s106,,Nazigo,,St. Mathias Kalemba Secondary School,Government,2017,39,
+d102,s108,,Kayunga,,Green Valley High School,Private,2017,,706
+d102,s112,,Kangulumira Town Council,,Kangulumira Public Secondary School,Government,2017,33,716
+d102,s112,,Kangulumira Town Council,,Uganda Matrys Secondary School Kangulumira,Private,2017,,639
+d102,s112,,Kangulumira Town Council,,Kisega High School,Private,2017,,952
+d102,s108,,Kayunga,,Busaale Secondary School,Private,2017,,485
+d102,s108,,Kayunga,,St. John's Busaale Secondary School,Private,2017,,114
+d102,s108,,Kayunga,,Kanjuki Senior Secondary School,Government,2017,25,
+d102,s109,,Kayunga Town Council,,Namagabi Secondary School,Government,2017,45,
+d102,s109,,Kayunga Town Council,,Kayunga Light College,Private,2017,,685
+d102,s109,,Kayunga Town Council,,Green Vine College,Government,2017,,806
+d102,s109,,Kayunga Town Council,,Ndeeba Secondary School,Government,2017,39,521
+d102,s109,,Kayunga Town Council,,Muyalen High School,Private,2017,,157
+d102,s105,,Busaana,,St. Peters Kibuzi Secondary School,Government,2017,13,
+d102,s101,,Galiraya,,Galiraya Seed Secondary School,Government,2016,14,343
+d102,s102,,Bbaale,,Bbaale Secondary School,Government,2016,29,392
+d102,s101,,Galiraya,,St. Boniface Secondary School Kasokwe,Private,2016,,252
+d102,s103,,Kayonza,,Nalinya Irene Ndagire Secondary School,Government,2016,,787
+d102,s104,,Kitimbwa,,Kitatya Secondary School,Government,2016,14,682
+d102,s113,,Kitimbwa Town Council,,Kitimbwa Bright Future Secondary School,Private,2016,,717
+d102,s110,,Busaana Town Council,,Busaana Secondary School,Government,2016,32,1015
+d102,s110,,Busaana Town Council,,Bugerere High School,Private,2016,,774
+d102,s111,,Nazigo Town Council,,Nazigo Town Secondary School,Private,2016,,859
+d102,s113,,Kitimbwa Town Council,,St. Matia Mulumba Secondary School,Private,2016,,363
+d102,s106,,Nazigo,,St. Mathias Kalemba Secondary School,Government,2016,43,
+d102,s108,,Kayunga,,Green Valley High School,Private,2016,,669
+d102,s112,,Kangulumira Town Council,,Kangulumira Public Secondary School,Government,2016,27,695
+d102,s112,,Kangulumira Town Council,,Uganda Matrys Secondary School Kangulumira,Private,2016,,1114
+d102,s112,,Kangulumira Town Council,,Kisega High School,Private,2016,,904
+d102,s108,,Kayunga,,Busaale Secondary School,Private,2016,,598
+d102,s108,,Kayunga,,St. John's Busaale Secondary School,Private,2016,,112
+d102,s108,,Kayunga,,Kanjuki Senior Secondary School,Government,2016,25,
+d102,s109,,Kayunga Town Council,,Namagabi Secondary School,Government,2016,50,
+d102,s109,,Kayunga Town Council,,Kayunga Light College,Private,2016,,411
+d102,s109,,Kayunga Town Council,,Green Vine College,Government,2016,,1888
+d102,s109,,Kayunga Town Council,,Ndeeba Secondary School,Government,2016,36,586
+d102,s109,,Kayunga Town Council,,Muyalen High School,Private,2016,,211
+d102,s105,,Busaana,,St. Peters Kibuzi Secondary School,Government,2016,,
