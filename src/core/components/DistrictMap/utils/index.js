@@ -1,5 +1,6 @@
 import { groupBy } from 'lodash';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
+import { filterData } from '../../../utils';
 
 export const COLOURED_LAYER = 'highlight';
 export const coreLayer = {
@@ -76,11 +77,12 @@ export const processData = (data, indicator, year) => {
   }
   const { location, value, year: yearField } = indicator.mapping;
 
-  const filteredData = year
-    ? data
+  let filteredData = filterData(data, indicator.filters);
+  filteredData = year
+    ? filteredData
         .filter((item) => item[yearField] === `${year}`)
         .map((item) => ({ name: item[location], value: Number(item[value]) }))
-    : data.map((item) => ({ name: item[location], value: Number(item[value]) }));
+    : filteredData.map((item) => ({ name: item[location], value: Number(item[value]) }));
   if (indicator.aggregator) {
     return aggregateValues(filteredData, indicator.aggregator);
   }

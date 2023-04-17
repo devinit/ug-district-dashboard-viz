@@ -40,6 +40,12 @@ const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelect
     if (onError) onError(); // reset error message
   }, [values]);
 
+  useEffect(() => {
+    if (props.value) {
+      setValues(props.value);
+    }
+  }, [props.value]);
+
   const onChange = (_values) => {
     if (!props.isMulti) {
       setValues(_values);
@@ -105,6 +111,7 @@ Select.propTypes = {
   isMulti: PropTypes.bool,
   isClearable: PropTypes.bool,
   className: PropTypes.string,
+  value: PropTypes.array,
 };
 
 Select.defaultProps = { maxSelectedOptions: 2, singleSelectOptions: [] };

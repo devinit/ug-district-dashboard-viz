@@ -86,6 +86,7 @@ function mapReducer(state, action) {
         filterOptions: action.merge ? { ...state.filterOptions, ...action.filterOptions } : action.filterOptions,
         activeTopic: action.activeTopic,
         activeIndicator: action.activeIndicator,
+        activeYear: action.activeYear,
       };
     case 'SET_DATA':
       return { ...state, data: action.data };
@@ -102,8 +103,11 @@ const initialState = {
 const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [state, dispatch] = useReducer(mapReducer, initialState);
-  const { filterOptions, activeIndicator, activeTopic } = state;
-  const { data, setMap, setOptions } = useMap(props.location, coreLayer);
+  const { filterOptions, activeIndicator, activeTopic, activeYear } = state;
+  const { data, setMap, setOptions } = useMap(
+    props.location,
+    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer
+  );
 
   useEffect(() => {
     // set map options using their caption values
@@ -123,13 +127,14 @@ const DistrictMap = (props) => {
     setMap(_map);
   }
   const updateFilterOptions = (options, merge = true) => {
-    const { topic, indicator } = getRawFilterOptions(props.configs.data, { ...filterOptions, ...options });
+    const { topic, indicator, year } = getRawFilterOptions(props.configs.data, { ...filterOptions, ...options });
     dispatch({
       type: 'UPDATE_FILTERS',
       merge,
       filterOptions: options,
       activeTopic: topic,
       activeIndicator: indicator,
+      activeYear: year,
     });
   };
   const activeTopicOptions = getTopicById(props.configs.data, filterOptions.topic);
@@ -150,6 +155,7 @@ const DistrictMap = (props) => {
     updateFilterOptions,
     activeTopic,
     activeIndicator,
+    activeYear,
   }));
 
   return (
@@ -179,7 +185,7 @@ const DistrictMap = (props) => {
               loading,
               data,
               props.location,
-              coreLayer,
+              props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
               activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {}
             )}
           </BaseMap>

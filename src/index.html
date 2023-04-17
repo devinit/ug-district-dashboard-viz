@@ -226,6 +226,21 @@
   <script>
 
     const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+    const mapMapping = {
+      'Karujubu': 'Karujubu Division',
+      'Nyangahya': 'Nyangahya Division',
+      'Masindi Town Council': 'Central Division',
+      'KARUJUBU DIVISION': 'Karujubu',
+      'NYANGAHYA DIVISION': 'Nyangahya',
+      'CENTRAL DIVISION': 'Masindi Town Council',
+    }
+    const mapFormatter = (value, target = 'map') => {
+      if (Object.keys(mapMapping).map((key) => key.toUpperCase()).includes(value.toUpperCase())) {
+        return mapMapping[value].toUpperCase();
+      }
+
+      return value.toUpperCase();
+    }
     const topics = [
       {
         id: 'education',
@@ -236,7 +251,7 @@
         indicators: [
           {
             id: 'numberOfSchools',
-            name: 'Number of Schools',
+            name: 'Number of Primary Schools',
             description: 'Description Goes Here!',
             colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
             range: [5, 10, 15, 20],
@@ -247,13 +262,62 @@
               value: 'Value',
               year: 'year',
             },
-            aggregator: 'avg', //either sum, avg
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['primary'],
+            },
           },
           {
-            id: 'learnersEnrolment',
-            name: 'Learners Enrolment',
-            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            id: 'numberOfSecondarySchools',
+            name: 'Number of Secondary Schools',
+            description: 'Description Goes Here!',
+            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
             range: [5, 10, 15, 20],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
+            yearRange: [2016, 2021],
+            mapping: {
+              location: 'SubCounty',
+              value: 'Value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['secondary'],
+            },
+          },
+          {
+            id: 'primaryEnrolment',
+            name: 'Primary School Enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [50, 100, 200, 300],
+            yearRange: [2018, 2020],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['Primary'],
+            },
+          },
+          {
+            id: 'secondaryEnrolment',
+            name: 'Secondary School Enrolment',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [50, 100, 200, 300],
+            yearRange: [2018, 2020],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              level: ['Secondary'],
+            },
           },
         ],
       },
@@ -296,6 +360,7 @@
           zoom: 10,
           maxZoom: 12,
         },
+        formatter: mapFormatter,
       },
       keyFacts: {
         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
@@ -334,7 +399,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            SubCounty: kayungaSubCounties,
           },
           options: {
             legend: { show: true },
@@ -369,7 +434,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            subcounty: kayungaSubCounties,
           },
           options: {
             yAxis: { name: 'Learners enrolled' },
@@ -404,7 +469,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            SubCounty: kayungaSubCounties,
           },
           aggregator: 'avg',
           options: {
@@ -417,7 +482,7 @@
         {
           target: 'education',
           className: 'dicharts--ple-performance-analysis',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/feature/toggle_selectors/public/assets/data/kayunga/ple_performance.json',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/ple_performance.json',
           yearRange: [2018, 2020],
           series: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
           mapping: {

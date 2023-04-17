@@ -14,7 +14,11 @@ const getTopicIndicatorOptions = (topics, topic) => {
 const getIndicatorYearOptions = (topics, selectedTopic, selectedIndicator) => {
   if (selectedTopic && selectedIndicator) {
     const topic = getTopicById(topics, selectedTopic);
-    const indicator = topic && topic.indicators && topic.indicators.length ? topic.indicators[0] : null;
+    if (!(topic && topic.indicators && topic.indicators.length)) {
+      return [];
+    }
+
+    const indicator = topic.indicators.find((ind) => ind.id === selectedIndicator);
     if (indicator && indicator.yearRange) {
       return getYearsFromRange(indicator.yearRange).map((year) => ({ value: year, label: year }));
     }
@@ -40,6 +44,15 @@ const useData = (topics) => {
       }
     }
   }, [filterOptions.topic]);
+  useEffect(() => {
+    if (filterOptions.indicator) {
+      const yearOptions = getIndicatorYearOptions(topics, filterOptions.topic, filterOptions.indicator);
+      // only change if the current year isn't one of the year options
+      if (yearOptions.length && !yearOptions.find((optn) => optn.value === filterOptions.year)) {
+        updateFilterOptions({ year: yearOptions[0].value });
+      }
+    }
+  }, [filterOptions.indicator]);
 
   return {
     topicOptions: getTopicOptionsFromData(topics || []),

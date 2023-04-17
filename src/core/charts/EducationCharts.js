@@ -3,7 +3,7 @@ import defaultOptions, { colorways, handleResize } from '../../charts/echarts/in
 import { combineMerge } from '../../utils';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
-import { defaultSelectValue, filterDataByProperty, filterDataBySubCounty } from '../utils';
+import { defaultSelectValue, filterData, filterDataByProperty, filterDataBySubCounty } from '../utils';
 
 const getYears = (data, yearRange) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
@@ -214,10 +214,9 @@ const processConfig = (config) => {
               let subCounty = defaultSelectValue;
               window.DIState.setState({ subCounty });
 
-              const data =
-                config.filters && config.filters.subCounties
-                  ? originalData.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty])) // if available, only include the configured sub-counties
-                  : originalData;
+              const data = config.filters
+                ? filterData(originalData, config.filters) // if available, only include the configured sub-counties
+                : originalData;
               // extract year range from data
               const years = getYears(data, config.yearRange);
 
