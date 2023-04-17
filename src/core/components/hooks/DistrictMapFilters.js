@@ -19,9 +19,7 @@ const getIndicatorYearOptions = (topics, selectedTopic, selectedIndicator) => {
     }
 
     let indicator = topic.indicators[0];
-    if (selectedIndicator) {
-      indicator = topic.indicators.find((ind) => ind.id === selectedIndicator);
-    }
+    indicator = topic.indicators.find((ind) => ind.id === selectedIndicator);
     if (indicator && indicator.yearRange) {
       return getYearsFromRange(indicator.yearRange).map((year) => ({ value: year, label: year }));
     }
