@@ -32,10 +32,14 @@ const DistrictMapSidebar = () => {
         <DistrictMapFilters />
       </ErrorBoundary>
       {activeIndicator ? (
-        <Legend>
-          {renderLegendItems(activeIndicator.range, activeIndicator.colours)}
-          <LegendItem>no data / not applicable</LegendItem>
-        </Legend>
+        <>
+          <div className="spotlight__subheading">{activeIndicator.name}</div>
+          {activeIndicator.description ? <p className="spotlight__excerpt">{activeIndicator.description}</p> : null}
+          <Legend>
+            {renderLegendItems(activeIndicator.range, activeIndicator.colours)}
+            <LegendItem>no data / not applicable</LegendItem>
+          </Legend>
+        </>
       ) : null}
     </div>
   );
