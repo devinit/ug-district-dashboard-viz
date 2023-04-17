@@ -248,11 +248,11 @@
   <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
   <script>
 
-    /* Kayunga Mapping */
+    /* Kayunga Mapping
     const mapMapping = {
-      'kayunga tc': 'Kayunga Town Council',
-      'KAYUNGA TOWN COUNCIL': 'kayunga tc',
-    }
+      'Kangulumira Town Council': 'Kangulumira',
+      'KANGULUMIRA TOWN COUNCIL': 'Kangulumira',
+    } */
     const mapFormatter = (value, target = 'map') => {
       if (Object.keys(mapMapping).map((key) => key.toUpperCase()).includes(value.toUpperCase())) {
         return mapMapping[value].toUpperCase();
@@ -376,6 +376,20 @@
             mapping: {
               location: 'subcounty',
               value: 'number_of_female_teachers',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+          },
+          {
+            id: 'numberOfSecondaryTeachers',
+            name: 'Secondary School Teachers (All)',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [15, 30, 40, 50,],
+            yearRange: [2016, 2018],
+            mapping: {
+              location: 'subcounty',
+              value: 'number_of_teacher',
               year: 'year',
             },
             aggregator: 'sum', //either sum, avg
