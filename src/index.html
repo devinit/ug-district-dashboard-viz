@@ -338,6 +338,48 @@
               level: ['Secondary'],
             },
           },
+          {
+            id: 'numberOfPrimaryTeachers',
+            name: 'Primary School Teachers (All)',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number_of_teachers_in_primary_schools.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [50, 100, 200, 300],
+            yearRange: [2022, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'total',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+          },
+          {
+            id: 'numberOfMalePrimaryTeachers',
+            name: 'Primary School Teachers (Male)',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number_of_teachers_in_primary_schools.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [50, 100, 150, 200],
+            yearRange: [2022, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'number_of_male_teachers',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+          },
+          {
+            id: 'numberOfFemalePrimaryTeachers',
+            name: 'Primary School Teachers (Female)',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number_of_teachers_in_primary_schools.csv',
+            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+            range: [50, 100, 150, 200],
+            yearRange: [2022, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'number_of_female_teachers',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+          },
         ],
       },
     ];
@@ -382,7 +424,7 @@
         // formatter: mapFormatter,
       },
       keyFacts: {
-        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/District%20Profile.csv',
+        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/District%20Profile.csv',
         tabs: [
           {
             id: 'overview',
