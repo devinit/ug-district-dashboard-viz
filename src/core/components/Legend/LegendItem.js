@@ -1,17 +1,22 @@
-import React from 'react';
+import * as Color from 'color';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-const LegendItem = ({ children, className, bgColor, textColor }) => (
-  <span className={className} data-testid="spotlight-legend-item">
-    {children}
-    <style>{`
+const LegendItem = ({ children, className, bgColor, textColor }) => {
+  const color = Color(bgColor);
+
+  return (
+    <span className={className} data-testid="spotlight-legend-item">
+      {children}
+      <style>{`
       span.${className} {
         background-color: ${bgColor || '#D1CBCF'} !important;
-        color: ${textColor || 'inherit'};
+        color: ${textColor || color.isLight() ? '#000' : '#FFF'};
       }
     `}</style>
-  </span>
-);
+    </span>
+  );
+};
 
 LegendItem.propTypes = {
   children: PropTypes.any,
