@@ -11,7 +11,9 @@ const parseTableData = (config, data, subCounty, level) => {
   const dataRows = COLUMN_CAPTIONS.map((item) => {
     const valuesByYear = {};
     data
-      .filter((row) => years.includes(Number(row[mapping.year])) && row[mapping.rows] === item)
+      .filter(
+        (row) => years.includes(Number(row[mapping.year])) && row[mapping.rows].toLowerCase() === item.toLowerCase()
+      )
       .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
       .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
       .forEach((row) => {
