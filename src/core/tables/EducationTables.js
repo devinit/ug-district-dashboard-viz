@@ -3,8 +3,9 @@ import { createRoot } from 'react-dom/client';
 import DistrictTable from '../components/DistrictTable';
 import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
+import { defaultSelectValue, filterDataByProperty, filterDataBySubCounty } from '../utils';
 
-const parseTableData = (config, data, subCounty, level) => {
+const parseTableData = (config, data, subCounty) => {
   const { rows: COLUMN_CAPTIONS, mapping } = config;
   const years = getYearsFromRange(config.yearRange);
   const headerRow = ['School Type'].concat(years);
@@ -14,8 +15,9 @@ const parseTableData = (config, data, subCounty, level) => {
       .filter(
         (row) => years.includes(Number(row[mapping.year])) && row[mapping.rows].toLowerCase() === item.toLowerCase()
       )
-      .filter((row) => (subCounty !== 'all' ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true))
-      .filter((row) => (level !== 'all' ? row[mapping.level].toLowerCase() === level.toLowerCase() : true))
+      .filter((row) =>
+        subCounty !== defaultSelectValue ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true
+      )
       .forEach((row) => {
         const yearValues = valuesByYear[row[mapping.year]] || [];
         valuesByYear[row[mapping.year]] = [...yearValues, Number(row[mapping.value])];
@@ -99,6 +101,44 @@ const validConfigs = (config) => {
 
   return true;
 };
+
+const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorNodes) => {
+  // keep track of the current value of all available selectors
+  const selectors = config.selectors.map((selector) => ({
+    property: selector.dataProperty,
+    value: defaultSelectValue,
+  }));
+
+  const onChangeSelector = (selector, item) => {
+    const selectedOption = Array.isArray(item) ? item[0].value : item.value;
+    if (selectedOption) {
+      // update selector value
+      const selected = selectors.find((tracker) => tracker.property === selector.config.dataProperty);
+      if (selected) {
+        selected.value = selectedOption;
+        // filter data by all available selectors and their value
+        const selectedData = selectors.reduce((filteredData, curr) => {
+          if (curr.value === defaultSelectValue) {
+            return filteredData;
+          }
+
+          return filterDataByProperty(filteredData, curr.property, curr.value);
+        }, data);
+        // update table
+        const rows = parseTableData(config, selectedData, subCounty);
+        tableRoot.render(createElement(DistrictTable, { rows }));
+      }
+    }
+  };
+
+  return renderSelectors(config.selectorClassName, {
+    selectors: config.selectors,
+    onChange: onChangeSelector,
+    makeSticky: false,
+    nodes: selectorNodes,
+  });
+};
+
 const renderTable = (config) => {
   if (!validConfigs(config)) return;
 
@@ -111,24 +151,32 @@ const renderTable = (config) => {
             const dichart = new window.DICharts.Chart(tableNode.parentElement);
             dichart.showLoading();
 
-            const defaultSubCounty = 'all';
-            const defaultLevel = 'all';
+            const defaultSubCounty = defaultSelectValue;
             const root = createRoot(tableNode);
-            let selectedLevel = defaultLevel;
             let selectedSubCounty = defaultSubCounty;
+            let selectors = [];
+
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { subCounty, level } = window.DIState.getState;
-              if (subCounty === selectedSubCounty && level === selectedLevel) return;
+              const { subCounty } = window.DIState.getState;
+              if (subCounty === selectedSubCounty) return;
 
               selectedSubCounty = subCounty || defaultSubCounty;
-              selectedLevel = level || defaultLevel;
               const filteredData =
                 config.filters && config.filters.subCounties
-                  ? data.filter((item) => config.filters.subCounties.includes(item[config.mapping.subCounty]))
+                  ? filterDataBySubCounty(data, selectedSubCounty, config.mapping.subCounty)
                   : data;
-              const rows = parseTableData(config, filteredData, selectedSubCounty, selectedLevel);
+              const rows = parseTableData(config, filteredData, selectedSubCounty);
               root.render(createElement(DistrictTable, { rows }));
+
+              if (config.selectors && config.selectors.length) {
+                handleSelectors(
+                  { data: filteredData, subCounty: selectedSubCounty, config, tableRoot: root },
+                  selectors
+                ).then((updatedSelectors) => {
+                  selectors = updatedSelectors;
+                });
+              }
 
               dichart.hideLoading();
               tableNode.parentElement.classList.add('auto-height');
@@ -152,9 +200,6 @@ const initTables = () => {
 
         configs.forEach((config) => {
           renderTable(config);
-          if (config.selectors && config.selectors.length) {
-            renderSelectors(config.selectorClassName, { selectors: config.selectors });
-          }
         });
       }
     });
