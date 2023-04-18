@@ -516,7 +516,7 @@
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
           yearRange: [2016, 2018],
           type: 'bar',
-          series: ['Government'],
+          series: ['Government', 'Private'],
           mapping: {
             series: 'ownership',
             year: 'year',
@@ -527,8 +527,8 @@
             subcounty: kayungaSubCounties,
           },
           options: {
-            legend: { show: false },
-            tooltip: { show: false },
+            legend: { show: true },
+            tooltip: { show: true },
             yAxis: { name: 'Number of students' },
           },
         },
