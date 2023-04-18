@@ -463,23 +463,25 @@
           target: 'education',
           className: 'dicharts--number-of-schools',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
-          type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
-          yearRange: [2016, 2021],
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2017, 2022],
           series: ['Government', 'Private'],
           mapping: {
-            series: 'Type',
+            series: 'ownership',
             year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
+            value: 'value',
+            subCounty: 'subcounty',
             level: 'level',
           },
           filters: {
-            SubCounty: kayungaSubCounties,
+            subcounty: kayungaSubCounties,
           },
           options: {
             legend: { show: true },
-            yAxis: { name: 'Number of schools'}
+            xAxis: { boundaryGap: false },
+            yAxis: { name: 'Number of schools'},
+            series: [{ label: { show: false } }, { label: { show: false } }]
           },
           selectorClassName: 'dicharts--number-of-schools__selectors',
           selectors: [
