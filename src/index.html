@@ -175,28 +175,6 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Classroom to learner's ratio</h3>
-          <div class="chart-container chart-container--full">
-            <div class="charts__chart">
-              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--table--classroom-learners-ratio"></div>
-              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
-
-              <div class="chart-loading">
-                <div class="chart-loading__block">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="row row--narrow">
           <h3 class="type-l type-l--trailer">PLE Performance Analysis</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
@@ -557,31 +535,6 @@
         },
         {
           target: 'education',
-          className: 'dicharts--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
-          type: 'area',
-          yearRange: [2018, 2021],
-          series: ['Government', 'Private'],
-          mapping: {
-            series: 'type',
-            year: 'year',
-            value: 'classroom_capacity',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            SubCounty: kayungaSubCounties,
-          },
-          aggregator: 'avg',
-          options: {
-            xAxis: {
-              boundaryGap: false,
-            },
-            series: [{ label: { show: false } }, { label: { show: false } }],
-          },
-        },
-        {
-          target: 'education',
           className: 'dicharts--ple-performance-analysis',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/ple_performance.json',
           yearRange: [2018, 2022],
@@ -690,24 +643,6 @@
         },
         {
           target: 'education',
-          className: 'dicharts--table--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
-          yearRange: [2018, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'type',
-            year: 'year',
-            value: 'classroom_capacity',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-          aggregator: 'avg',
-        },
-        {
-          target: 'education',
           className: 'dicharts--table--number-of-schools',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
           yearRange: [2016, 2021],
@@ -739,24 +674,6 @@
           filters: {
             subCounties: kayungaSubCounties,
           },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
-          yearRange: [2018, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'type',
-            year: 'year',
-            value: 'classroom_capacity',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-          aggregator: 'avg',
         },
       ],
     };
