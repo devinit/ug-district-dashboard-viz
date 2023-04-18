@@ -30,10 +30,10 @@ d102,s102,Bbaale,2022,Secondary,Government,1
 d102,s103,Kayonza,2022,Secondary,Government,1
 d102,s104,Kitimbwa,2022,Secondary,Government,1
 d102,s105,Busaana,2022,Secondary,Government,1
-d102,s106,Nazigo ,2022,Secondary,Government,2
-d102,s107,Kangulumira,2022,Secondary,Government,1
+d102,s106,Nazigo ,2022,Secondary,Government,1
+d102,s107,Kangulumira,2022,Secondary,Government,0
 d102,s108,Kayunga,2022,Secondary,Government,1
-d102,s109,Kayunga Town Council,2022,Secondary,Government,3
+d102,s109,Kayunga Town Council,2022,Secondary,Government,2
 d102,s110,Busaana Town Council,2022,Secondary,Government,1
 d102,s111,Nazigo Town Council,2022,Secondary,Government,1
 d102,s112,Kangulumira Town Council,2022,Secondary,Government,1
@@ -42,11 +42,11 @@ d102,s101,Galiraya,2022,Secondary,Private,1
 d102,s102,Bbaale,2022,Secondary,Private,2
 d102,s103,Kayonza,2022,Secondary,Private,4
 d102,s104,Kitimbwa,2022,Secondary,Private,1
-d102,s105,Busaana,2022,Secondary,Private,4
+d102,s105,Busaana,2022,Secondary,Private,3
 d102,s106,Nazigo ,2022,Secondary,Private,7
-d102,s107,Kangulumira,2022,Secondary,Private,6
+d102,s107,Kangulumira,2022,Secondary,Private,5
 d102,s108,Kayunga,2022,Secondary,Private,8
-d102,s109,Kayunga Town Council,2022,Secondary,Private,5
+d102,s109,Kayunga Town Council,2022,Secondary,Private,6
 d102,s110,Busaana Town Council,2022,Secondary,Private,2
 d102,s111,Nazigo Town Council,2022,Secondary,Private,4
 d102,s112,Kangulumira Town Council,2022,Secondary,Private,4
