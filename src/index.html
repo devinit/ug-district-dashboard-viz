@@ -130,11 +130,11 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Learner's Enrolment (Table)</h3>
+          <h3 class="type-l type-l--trailer">Secondary Enrolment, 2016 - 2018 (Chart)</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--table--learners-enrolment"></div>
+              <div class="dicharts--secondary-enrolment"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -512,6 +512,28 @@
         },
         {
           target: 'education',
+          className: 'dicharts--secondary-enrolment',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
+          yearRange: [2016, 2018],
+          type: 'bar',
+          series: ['Government'],
+          mapping: {
+            series: 'ownership',
+            year: 'year',
+            value: 'number_of_students',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: false },
+            tooltip: { show: false },
+            yAxis: { name: 'Number of students' },
+          },
+        },
+        {
+          target: 'education',
           className: 'dicharts--teacher-student-ratio-secondary',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
           yearRange: [2016, 2018],
@@ -531,20 +553,6 @@
             tooltip: { show: false },
             yAxis: { name: 'Teacher to student ratio' },
           },
-          // selectorClassName: 'dicharts--teacher-student-ratio-secondary-selectors',
-          /* selectors: [
-            {
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and Secondary' },
-              dataProperty: 'level',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' },
-              ],
-            },
-          ], */
         },
         {
           target: 'education',
