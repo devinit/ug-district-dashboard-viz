@@ -1,0 +1,71 @@
+id,parish,subcounty_id,subcounty
+p101,Bubajjwe,s108,Kayunga
+p102,Busaale,s108,Kayunga
+p103,Bukolooto,s108,Kayunga
+p104,Nakaseeta,s108,Kayunga
+p105,Buyobe,s108,Kayunga
+p106,Nsotoka,s108,Kayunga
+p107,Bukujju,s108,Kayunga
+p108,Kiteredde,s108,Kayunga
+p109,Bbaale,s102,Bbaale
+p110,Misanga,s102,Bbaale
+p111,Kavule,s102,Bbaale
+p112,Mugongo,s102,Bbaale
+p113,Kokotero,s102,Bbaale
+p114,Nakitokolo,s102,Bbaale
+p115,Kasana,s105,Busaana
+p116,Nabuganyi,s105,Busaana
+p117,Namukuma,s105,Busaana
+p118,Kiwangula,s105,Busaana
+p119,Namirembe,s105,Busaana
+p120,Namusaale,s105,Busaana
+p121,Lusenke,s105,Busaana
+p122,Nampanyi,s105,Busaana
+p123,Galiraaya,s101,Galiraya
+p124,Namalere,s101,Galiraya
+p125,Kasokwe,s101,Galiraya
+p126,Namayuge,s101,Galiraya
+p127,Kirasa,s101,Galiraya
+p128,Ntimba Island,s101,Galiraya
+p129,Kikwanya,s107,Kangulumira
+p130,Kawomya,s107,Kangulumira
+p131,Seeta-Nyiize,s107,Kangulumira
+p132,Bukamba,s106,Nazigo
+p133,Kirindi,s106,Nazigo
+p134,Nsiima,s106,Nazigo
+p135,Katikanyonyi,s106,Nazigo
+p136,Nateeta  ,s106,Nazigo
+p137,Kimanya,s106,Nazigo
+p138,Nazigo,s106,Nazigo
+p139,Kitatya,s104,Kitimbwa
+p140,Namulaba,s104,Kitimbwa
+p141,Wabwoko,s104,Kitimbwa
+p142,Kyerima,s104,Kitimbwa
+p143,Nkokonjeru,s104,Kitimbwa
+p144,Nakivubo,s104,Kitimbwa
+p145,Bukoloto Ward,s109,Kayunga Town Council
+p146,Ntenjeru Ward,s109,Kayunga Town Council
+p147,Central Ward,s109,Kayunga Town Council
+p148,Namagabi Ward,s109,Kayunga Town Council
+p149,Balisanga,s103,Kayonza
+p150,Kafumba,s103,Kayonza
+p151,Kamusabi,s103,Kayonza
+p152,Kanywero,s103,Kayonza
+p153,Kitwe,s103,Kayonza
+p154,Nakyesa,s103,Kayonza
+p155,Nakyesanja,s103,Kayonza
+p156,Namaliri,s103,Kayonza
+p157,Namizo,s103,Kayonza
+p158,Kasana Ward,s110,Busaana Town Council
+p159,Lusenke Ward,s110,Busaana Town Council
+p160,Namukuma Ward,s110,Busaana Town Council
+p161,Namirembe Ward,s110,Busaana Town Council
+p162,Nateeta Ward,s111,Nazigo Town Council
+p163,Nazigo Ward,s111,Nazigo Town Council
+p164,Kimanya Ward,s111,Nazigo Town Council
+p165,Kangulumira Ward,s112,Kangulumira Town Council
+p166,Kigayaza Ward,s112,Kangulumira Town Council
+p167,Nakatundu Ward,s112,Kangulumira Town Council
+p168,Kyerima Ward,s113,Kitimbwa Town Council
+p169,Wabwoko Ward,s113,Kitimbwa Town Council
+p170,Wabuyinja Ward,s113,Kitimbwa Town Council
