@@ -130,12 +130,11 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+          <h3 class="type-l type-l--trailer">Learner's Enrolment (Table)</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--learners-enrolment-selectors"></div>
-              <div class="dicharts--learners-enrolment"></div>
+              <div class="dicharts--table--learners-enrolment"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -153,11 +152,12 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+          <h3 class="type-l type-l--trailer">Secondary School Teacher to Student ratio, 2016 - 2018 (Chart)</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--table--learners-enrolment"></div>
+              <div class="dicharts--learners-enrolment-selectors"></div>
+              <div class="dicharts--teacher-student-ratio-secondary"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -512,25 +512,27 @@
         },
         {
           target: 'education',
-          className: 'dicharts--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/learner_enrollment.csv',
-          yearRange: [2018, 2021],
-          series: ['Government', 'Private'],
+          className: 'dicharts--teacher-student-ratio-secondary',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
+          yearRange: [2016, 2018],
+          type: 'bar',
+          series: ['Government'],
           mapping: {
-            series: 'type',
+            series: 'ownership',
             year: 'year',
-            value: 'value',
+            value: 'number_of_students',
             subCounty: 'subcounty',
-            level: 'level',
           },
           filters: {
             subcounty: kayungaSubCounties,
           },
           options: {
-            yAxis: { name: 'Learners enrolled' },
+            legend: { show: false },
+            tooltip: { show: false },
+            yAxis: { name: 'Teacher to student ratio' },
           },
-          selectorClassName: 'dicharts--learners-enrolment-selectors',
-          selectors: [
+          // selectorClassName: 'dicharts--teacher-student-ratio-secondary-selectors',
+          /* selectors: [
             {
               label: 'Select level',
               defaultValue: { value: 'all', label: 'Primary and Secondary' },
@@ -542,7 +544,7 @@
                 { value: 'secondary', label: 'Secondary' },
               ],
             },
-          ],
+          ], */
         },
         {
           target: 'education',
