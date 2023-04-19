@@ -1,0 +1,553 @@
+district_id,subcounty_id,parish_id,subcounty,parrish,year,school_name,ownership,gender,p1,p2,p3,p4,p5,p6,p7,subtotal
+d101,s113,,Bwijanga,Bikonzi,2014,Ikoba Boys Primary School,Government,Boys,30,41,20,34,49,35,26,235
+d101,s110,,Pakanyi,Kyakamese,2014,Alimugonza Primary School,Government,Boys,101,70,97,78,58,42,22,468
+d101,s110,p127,Pakanyi,Kihaguzi,2014,Bokwe Primary School,Government,Boys,82,91,82,73,68,51,25,472
+d101,s111,p103,Budongo,Nyabyeya,2014,Budongo Saw Mill Primary School,Government,Boys,21,19,29,34,39,39,20,201
+d101,s113,p105,Bwijanga,Kahembe,2014,Bulima Primary School,Government,Boys,62,73,62,49,57,34,21,358
+d101,s111,p102,Budongo,Kasongoire,2014,Bulyango Public Primary School,Government,Boys,107,52,119,63,35,30,17,423
+d101,s113,p106,Bwijanga,Kitamba,2014,Byerima Primary School,Government,Boys,35,22,38,39,43,24,11,212
+d101,s113,,Bwijanga,Bikonzi,2014,Ikoba Girls Primary School,Government,Boys,0,0,0,0,0,0,0,0
+d101,s113,,Bwijanga,Bikonzi,2014,Isagara Primary School,Government,Boys,48,70,50,44,38,36,28,314
+d101,s113,p106,Bwijanga,Kitamba,2014,Isimba Primary School,Government,Boys,24,32,27,25,20,19,8,155
+d101,s111,p104,Budongo,Kabongo,2014,Kabango Primary School,Government,Boys,247,158,240,223,120,52,49,1089
+d101,s109,p130,Miirya,Bigando,2014,Kahaara Primary School,Government,Boys,46,40,33,44,31,13,16,223
+d101,s111,p103,Budongo,Nyabyeya,2014,Karongo Primary School,Government,Boys,67,57,58,78,47,26,26,359
+d101,s110,,Pakanyi,Kyakamese,2014,Karungi Primary School,Government,Boys,74,46,45,89,45,17,10,326
+d101,s111,,Budongo,Kasenene,2014,Kasenene Primary School,Government,Boys,104,94,64,71,27,30,11,401
+d101,s111,p102,Budongo,Kasongoire,2014,Kasongoire Primary School,Government,Boys,22,45,29,30,17,21,9,173
+d101,s104,p124,Kimengo,Kimengo,2014,Kayera Primary School,Government,Boys,20,12,11,6,8,10,14,81
+d101,s110,p127,Pakanyi,Kihaguzi,2014,Kibamba Primary School,Government,Boys,64,33,22,33,39,33,13,237
+d101,s109,p130,Miirya,Bigando,2014,Kibbali Primary School,Government,Boys,35,30,35,31,25,16,13,185
+d101,s110,,Pakanyi,Kyatiri,2014,Kibibira Primary School,Government,Boys,115,42,68,48,15,20,11,319
+d101,s113,,Bwijanga,Bikonzi,2014,Kichandi Primary School,Government,Boys,21,18,21,26,29,17,7,139
+d101,s109,p132,Miirya,Kigulya,2014,Kigezi Primary School,Government,Boys,55,54,47,63,50,25,11,305
+d101,s113,p107,Bwijanga,Ntoma,2014,Kihagani Primary School,Government,Boys,15,7,5,4,6,4,2,43
+d101,s113,,Bwijanga,Bikonzi,2014,Kihoole Primary School,Government,Boys,4,6,8,15,11,7,11,62
+d101,s113,,Bwijanga,Rukondwa,2014,Kiina Primary School,Government,Boys,40,20,32,22,28,30,7,179
+d101,s109,p132,Miirya,Kigulya,2014,Kijogoro Primary School,Government,Boys,38,29,28,30,18,11,10,164
+d101,s104,,Kimengo,Kijunjubwa,2014,Kijunjubwa Primary School,Government,Boys,23,28,30,43,24,18,14,180
+d101,s113,p106,Bwijanga,Kitamba,2014,Kikingura Primary School,Government,Boys,36,44,64,74,53,45,23,339
+d101,s113,,Bwijanga,Bikonzi,2014,Kikuube Primary School,Government,Boys,25,27,11,25,16,16,7,127
+d101,s110,,Pakanyi,Labongo,2014,Kilanyi Primary School,Government,Boys,33,23,29,38,39,16,18,196
+d101,s110,,Pakanyi,Labongo,2014,Kilanyi Muslim Primary School,Government,Boys,26,28,19,23,23,18,14,151
+d101,s111,p102,Budongo,Kasongoire,2014,Kimanya Primary School,Government,Boys,48,40,38,42,28,11,13,220
+d101,s111,,Budongo,Nyantonzi,2014,Kimanya Upper Primary School,Government,Boys,58,56,47,49,50,37,8,305
+d101,s104,,Kimengo,Kijunjubwa,2014,Kimengo Primary School,Government,Boys,44,34,27,20,23,21,15,184
+d101,s109,p132,Miirya,Kigulya,2014,Kinumi Primary School,Government,Boys,64,62,52,50,53,23,17,321
+d101,s109,p130,Miirya,Bigando,2014,Kinuuma Primary School,Government,Boys,68,38,34,40,32,33,13,258
+d101,s111,,Budongo,Kinyara ward,2014,Kinyara Sugar Works Primary School,Government,Boys,143,136,158,168,143,175,76,999
+d101,s113,,Bwijanga,Bikonzi,2014,Kinywamurara Primary School,Government,Boys,41,26,33,33,34,23,12,202
+d101,s113,p105,Bwijanga,Kahembe,2014,Kisalizi Primary School,Government,Boys,45,38,55,27,35,15,12,227
+d101,s110,,Pakanyi,Kyakamese,2014,Kisindizi II Primary School,Government,Boys,32,34,45,18,38,14,8,189
+d101,s110,,Pakanyi,Kyakamese,2014,Kisindizi Public Primary School,Government,Boys,53,28,44,44,28,36,12,245
+d101,s113,p106,Bwijanga,Kitamba,2014,Kitamba Primary School,Government,Boys,13,25,30,27,34,33,17,179
+d101,s110,,Pakanyi,Kiruli,2014,Kitanyata Primary School,Government,Boys,93,83,115,79,80,56,35,541
+d101,s113,,Bwijanga,Rukondwa,2014,Kitonozi Primary School,Government,Boys,34,24,30,33,29,23,14,187
+d101,s109,p132,Miirya,Kigulya,2014,Kitwetwe Primary School,Government,Boys,85,58,51,47,28,27,15,311
+d101,s110,,Pakanyi,Kyakamese,2014,Kiyuya Primary School,Government,Boys,50,45,47,54,63,31,21,311
+d101,s109,p131,Miirya,Isimba,2014,Kyabaswa Primary School,Government,Boys,40,35,21,29,31,25,22,203
+d101,s110,,Pakanyi,Kyatiri,2014,Kyatiri Primary School,Government,Boys,108,96,155,129,76,68,39,671
+d101,s113,p105,Bwijanga,Kahembe,2014,Marongo Primary School,Government,Boys,28,20,21,19,22,32,19,161
+d101,s113,,Bwijanga,Bikonzi,2014,Masinde CH Primary School,Government,Boys,7,11,7,5,4,0,0,34
+d101,s104,,Kimengo,Kijunjubwa,2014,Miduuma Primary School,Government,Boys,30,23,27,28,32,27,11,178
+d101,s113,p106,Bwijanga,Kitamba,2014,Mihembero Primary School,Government,Boys,24,24,33,41,30,29,22,203
+d101,s113,p106,Bwijanga,Kitamba,2014,Miramura Primary School,Government,Boys,23,21,13,24,21,22,10,134
+d101,s113,p105,Bwijanga,Kahembe,2014,Murro Primary School,Government,Boys,29,19,23,36,37,18,10,172
+d101,s113,p107,Bwijanga,Ntoma,2014,Ntooma Primary School,Government,Boys,45,45,45,101,69,58,31,394
+d101,s113,p107,Bwijanga,Ntoma,2014,Nyabubale Primary School,Government,Boys,15,10,11,17,3,3,2,61
+d101,s111,p103,Budongo,Nyabyeya,2014,Nyabyeya Primary School,Government,Boys,65,71,94,111,63,49,18,471
+d101,s110,,Pakanyi,Kiruli,2014,Nyakarongo Primary School,Government,Boys,58,20,26,20,19,16,13,172
+d101,s110,,Pakanyi,Kyakamese,2014,Nyakatoogo Primary School,Government,Boys,47,22,26,21,18,38,7,179
+d101,s110,,Pakanyi,Labongo,2014,Nyakyanika Primary School,Government,Boys,49,44,46,52,42,42,17,292
+d101,s110,,Pakanyi,Kyatiri,2014,Nyambindo Primary School,Government,Boys,37,50,53,36,37,30,12,255
+d101,s111,,Budongo,Nyantonzi,2014,Nyantonzi Primary School,Government,Boys,44,55,70,58,22,23,22,294
+d101,s113,,Bwijanga,Rukondwa,2014,Rukondwa Primary School,Government,Boys,42,26,14,13,11,14,7,127
+d101,s111,,Budongo,Nyantonzi,2014,Rwempisi Primary School,Government,Boys,34,36,56,42,39,29,12,248
+d101,s111,,Budongo,Nyantonzi,2014,Siiba Primary School,Government,Boys,40,30,28,41,43,7,15,204
+d101,s113,p105,Bwijanga,kahembe,2014,St. Kizito Murro Primary School,Government,Boys,17,17,20,9,8,10,9,90
+d101,s109,p131,Miirya,Isimba,2014,St. Paul's Pakanyi Primary School,Government,Boys,38,25,53,24,34,31,16,221
+d101,s110,,Pakanyi,Kyakamese,2014,Waiga Primary School,Government,Boys,81,64,52,97,41,46,27,408
+d101,s110,,Pakanyi,Labongo,2014,Walyoba Primary School,Government,Boys,48,40,44,93,84,72,25,406
+d101,s113,,Bwijanga,Bikonzi,2014,Ikoba Boys Primary School,Government,Girls,0,0,0,0,0,0,0,0
+d101,s110,,Pakanyi,Kyakamese,2014,Alimugonza Primary School,Government,Girls,109,63,58,100,34,31,19,414
+d101,s110,p127,Pakanyi,Kihaguzi,2014,Bokwe Primary School,Government,Girls,73,78,56,76,66,62,20,431
+d101,s111,p103,Budongo,Nyabyeya,2014,Budongo Saw Mill Primary School,Government,Girls,40,10,31,27,29,22,10,169
+d101,s113,p105,Bwijanga,Kahembe,2014,Bulima Primary School,Government,Girls,55,49,74,66,35,42,19,340
+d101,s111,p102,Budongo,Kasongoire,2014,Bulyango Public Primary School,Government,Girls,133,104,73,79,18,16,13,436
+d101,s113,p106,Bwijanga,Kitamba,2014,Byerima Primary School,Government,Girls,22,25,26,35,22,25,14,169
+d101,s113,,Bwijanga,Bikonzi,2014,Ikoba Girls Primary School,Government,Girls,38,31,35,32,42,36,23,237
+d101,s113,,Bwijanga,Bikonzi,2014,Isagara Primary School,Government,Girls,55,63,40,44,42,39,24,307
+d101,s113,p106,Bwijanga,Kitamba,2014,Isimba Primary School,Government,Girls,21,28,28,16,25,20,12,150
+d101,s111,p104,Budongo,Kabongo,2014,Kabango Primary School,Government,Girls,335,199,225,310,127,74,64,1334
+d101,s109,p130,Miirya,Bigando,2014,Kahaara Primary School,Government,Girls,31,32,32,34,38,35,18,220
+d101,s111,p103,Budongo,Nyabyeya,2014,Karongo Primary School,Government,Girls,67,60,85,54,54,29,14,363
+d101,s110,,Pakanyi,Kyakamese,2014,Karungi Primary School,Government,Girls,75,45,32,60,48,19,19,298
+d101,s111,,Budongo,Kasenene,2014,Kasenene Primary School,Government,Girls,105,86,51,90,33,22,12,399
+d101,s111,p102,Budongo,Kasongoire,2014,Kasongoire Primary School,Government,Girls,31,41,31,45,28,24,6,206
+d101,s104,p124,Kimengo,Kimengo,2014,Kayera Primary School,Government,Girls,23,19,9,15,14,7,14,101
+d101,s110,p127,Pakanyi,Kihaguzi,2014,Kibamba Primary School,Government,Girls,80,49,37,30,39,29,9,273
+d101,s109,p130,Miirya,Bigando,2014,Kibbali Primary School,Government,Girls,30,25,30,20,25,17,11,158
+d101,s110,,Pakanyi,Kyatiri,2014,Kibibira Primary School,Government,Girls,94,56,52,46,17,6,6,277
+d101,s113,,Bwijanga,Bikonzi,2014,Kichandi Primary School,Government,Girls,14,12,21,24,25,14,14,124
+d101,s109,p132,Miirya,Kigulya,2014,Kigezi Primary School,Government,Girls,76,56,51,56,35,41,10,325
+d101,s113,p107,Bwijanga,Ntoma,2014,Kihagani Primary School,Government,Girls,14,11,7,7,1,9,7,56
+d101,s113,,Bwijanga,Bikonzi,2014,Kihoole Primary School,Government,Girls,6,6,6,10,11,9,10,58
+d101,s113,,Bwijanga,Rukondwa,2014,Kiina Primary School,Government,Girls,34,30,27,22,31,22,11,177
+d101,s109,p132,Miirya,Kigulya,2014,Kijogoro Primary School,Government,Girls,39,33,31,24,10,7,5,149
+d101,s104,,Kimengo,Kijunjubwa,2014,Kijunjubwa Primary School,Government,Girls,7,19,19,23,27,19,7,121
+d101,s113,p106,Bwijanga,Kitamba,2014,Kikingura Primary School,Government,Girls,50,47,59,48,44,31,26,305
+d101,s113,,Bwijanga,Bikonzi,2014,Kikuube Primary School,Government,Girls,25,28,17,14,19,19,10,132
+d101,s110,,Pakanyi,Labongo,2014,Kilanyi Primary School,Government,Girls,41,14,23,37,30,22,14,181
+d101,s110,,Pakanyi,Labongo,2014,Kilanyi Muslim Primary School,Government,Girls,32,12,20,27,33,19,19,162
+d101,s111,p102,Budongo,Kasongoire,2014,Kimanya Primary School,Government,Girls,59,25,38,24,23,9,8,186
+d101,s111,,Budongo,Nyantonzi,2014,Kimanya Upper Primary School,Government,Girls,75,61,55,49,44,27,7,318
+d101,s104,,Kimengo,Kijunjubwa,2014,Kimengo Primary School,Government,Girls,46,47,29,24,31,36,19,232
+d101,s109,p132,Miirya,Kigulya,2014,Kinumi Primary School,Government,Girls,71,64,50,50,45,48,24,352
+d101,s109,p130,Miirya,Bigando,2014,Kinuuma Primary School,Government,Girls,44,34,32,35,37,24,18,224
+d101,s111,,Budongo,Kinyara ward,2014,Kinyara Sugar Works Primary School,Government,Girls,111,141,182,182,148,130,65,959
+d101,s113,,Bwijanga,Bikonzi,2014,Kinywamurara Primary School,Government,Girls,36,32,23,27,29,24,9,180
+d101,s113,p105,Bwijanga,Kahembe,2014,Kisalizi Primary School,Government,Girls,36,46,44,19,27,40,26,238
+d101,s110,,Pakanyi,Kyakamese,2014,Kisindizi II Primary School,Government,Girls,32,29,36,30,17,20,15,179
+d101,s110,,Pakanyi,Kyakamese,2014,Kisindizi Public Primary School,Government,Girls,42,38,31,45,23,31,9,219
+d101,s113,p106,Bwijanga,Kitamba,2014,Kitamba Primary School,Government,Girls,26,31,24,22,38,29,12,182
+d101,s110,,Pakanyi,Kiruli,2014,Kitanyata Primary School,Government,Girls,105,68,96,80,109,61,24,543
+d101,s113,,Bwijanga,Rukondwa,2014,Kitonozi Primary School,Government,Girls,35,37,32,24,30,24,17,199
+d101,s109,p132,Miirya,Kigulya,2014,Kitwetwe Primary School,Government,Girls,66,55,54,33,23,11,5,247
+d101,s110,,Pakanyi,Kyakamese,2014,Kiyuya Primary School,Government,Girls,28,34,34,58,64,44,24,286
+d101,s109,p131,Miirya,Isimba,2014,Kyabaswa Primary School,Government,Girls,48,29,32,25,28,17,12,191
+d101,s110,,Pakanyi,Kyatiri,2014,Kyatiri Primary School,Government,Girls,110,117,142,118,63,53,36,639
+d101,s113,p105,Bwijanga,Kahembe,2014,Marongo Primary School,Government,Girls,15,13,18,35,21,35,16,153
+d101,s113,,Bwijanga,Bikonzi,2014,Masinde CH Primary School,Government,Girls,9,2,6,3,6,0,2,28
+d101,s104,,Kimengo,Kijunjubwa,2014,Miduuma Primary School,Government,Girls,20,28,23,27,18,26,9,151
+d101,s113,p106,Bwijanga,Kitamba,2014,Mihembero Primary School,Government,Girls,21,30,20,33,26,26,21,177
+d101,s113,p106,Bwijanga,Kitamba,2014,Miramura Primary School,Government,Girls,18,20,18,20,24,8,0,108
+d101,s113,p105,Bwijanga,Kahembe,2014,Murro Primary School,Government,Girls,37,27,21,36,27,18,10,176
+d101,s113,p107,Bwijanga,Ntoma,2014,Ntooma Primary School,Government,Girls,45,37,44,69,86,80,24,385
+d101,s113,p107,Bwijanga,Ntoma,2014,Nyabubale Primary School,Government,Girls,8,10,8,22,0,5,2,55
+d101,s111,p103,Budongo,Nyabyeya,2014,Nyabyeya Primary School,Government,Girls,70,72,118,59,57,46,22,444
+d101,s110,,Pakanyi,Kiruli,2014,Nyakarongo Primary School,Government,Girls,30,27,32,15,5,4,7,120
+d101,s110,,Pakanyi,Kyakamese,2014,Nyakatoogo Primary School,Government,Girls,35,23,34,21,24,33,12,182
+d101,s110,,Pakanyi,Labongo,2014,Nyakyanika Primary School,Government,Girls,47,43,42,56,35,18,27,268
+d101,s110,,Pakanyi,Kyatiri,2014,Nyambindo Primary School,Government,Girls,68,55,52,42,33,38,7,295
+d101,s111,,Budongo,Nyantonzi,2014,Nyantonzi Primary School,Government,Girls,66,36,67,58,53,23,23,326
+d101,s113,,Bwijanga,Rukondwa,2014,Rukondwa Primary School,Government,Girls,20,16,17,15,17,14,10,109
+d101,s111,,Budongo,Nyantonzi,2014,Rwempisi Primary School,Government,Girls,24,34,55,43,22,15,6,199
+d101,s111,,Budongo,Nyantonzi,2014,Siiba Primary School,Government,Girls,41,30,39,17,38,20,2,187
+d101,s113,p105,Bwijanga,kahembe,2014,St. Kizito Murro Primary School,Government,Girls,17,15,17,21,20,20,19,129
+d101,s109,p131,Miirya,Isimba,2014,St. Paul's Pakanyi Primary School,Government,Girls,31,26,32,25,32,41,17,204
+d101,s110,,Pakanyi,Kyakamese,2014,Waiga Primary School,Government,Girls,78,59,34,80,48,23,6,328
+d101,s110,,Pakanyi,Labongo,2014,Walyoba Primary School,Government,Girls,39,20,35,73,82,75,25,349
+d101,s110,,Pakanyi,Kyakamese,2020,Alimugonza Primary School,Government,Boys,131,79,93,113,117,54,23,610
+d101,s107,p127,Labongo,Kihaguzi,2020,Bokwe Primary School,Government,Boys,83,70,68,67,57,40,22,407
+d101,s111,p103,Budongo,Nyabyeya,2020,Budongo Saw Mill Primary School,Government,Boys,25,8,13,26,15,21,13,121
+d101,s112,p111,Bulima Town Council,Kahembe ward,2020,Bulima Primary School,Government,Boys,73,73,77,108,80,65,40,516
+d101,s111,p102,Budongo,Kasongoire,2020,Bulyango Public Primary School,Government,Boys,60,63,76,61,39,37,17,353
+d101,s113,p106,Bwijanga,Kitamba,2020,Byerima Primary School,Government,Boys,14,17,32,28,28,43,9,171
+d101,s101,,Bikonzi,,2020,Ikoba Boys Primary School,Government,Boys,14,20,24,10,16,11,15,110
+d101,s101,,Bikonzi,,2020,Ikoba Girls Primary School,Government,Boys,0,0,0,0,0,0,0,0
+d101,s101,,Bikonzi,,2020,Isagara Primary School,Government,Boys,52,30,42,35,36,36,20,251
+d101,s113,p106,Bwijanga,Kitamba,2020,Isimba Primary School,Government,Boys,18,30,29,39,32,20,9,177
+d101,s102,p109,Kabango Town Council,Kabango ward,2020,Kabango Primary School,Government,Boys,144,101,192,174,79,80,42,812
+d101,s109,p130,Miirya,Bigando,2020,Kahaara Primary School,Government,Boys,50,29,35,33,25,16,19,207
+d101,s111,p103,Budongo,Nyabyeya,2020,Karongo Primary School,Government,Boys,78,68,135,89,56,35,19,480
+d101,s110,,Pakanyi,Kyakamese,2020,Karungi Primary School,Government,Boys,94,40,61,73,38,24,17,347
+d101,s108,p117,Nyantonzi,Kasenene,2020,Kasenene Primary School,Government,Boys,110,188,208,188,54,33,15,796
+d101,s111,p102,Budongo,Kasongoire,2020,Kasongoire Primary School,Government,Boys,39,37,35,45,29,19,7,211
+d101,s104,p124,Kimengo,Kimengo,2020,Kayera Primary School,Government,Boys,32,13,25,13,3,4,8,98
+d101,s109,p130,Miirya,Bigando,2020,Kibaali Primary School,Government,Boys,38,35,32,45,26,29,17,222
+d101,s107,p127,Labongo,Kihaguzi,2020,Kibamba Primary School,Government,Boys,38,35,32,45,26,29,17,222
+d101,s105,p135,Kiruli,Kibibira,2020,Kibibira Primary School,Government,Boys,71,51,38,46,40,27,19,292
+d101,s101,,Bikonzi,,2020,Kichandi Primary School,Government,Boys,34,36,47,30,21,22,8,198
+d101,s109,p132,Miirya,Kigulya,2020,Kigezi Primary School,Government,Boys,74,68,34,61,53,25,15,330
+d101,s113,p107,Bwijanga,Ntoma,2020,Kihagani Primary School,Government,Boys,15,7,12,4,4,2,3,47
+d101,s101,,Bikonzi,,2020,Kihoole Primary School,Government,Boys,15,18,16,15,16,10,6,96
+d101,s101,p114,Bikonzi,Rukondwa,2020,Kiina Primary School,Government,Boys,35,43,51,34,24,29,23,239
+d101,s109,p132,Miirya,Kigulya,2020,Kijogoro Primary School,Government,Boys,86,66,89,64,42,26,19,392
+d101,s104,,Kimengo,,2020,Kijunjubwa Primary School,Government,Boys,41,38,41,48,39,31,20,258
+d101,s113,p106,Bwijanga,Kitamba,2020,Kikingura Primary School,Government,Boys,53,46,57,68,67,49,21,361
+d101,s101,p116,Bikonzi,Kikube,2020,Kikuube Primary School,Government,Boys,28,30,22,57,39,33,14,223
+d101,s107,p126,Labongo,Labongo,2020,Kilanyi Primary School,Government,Boys,54,36,33,35,29,15,21,223
+d101,s107,p126,Labongo,Labongo,2020,Kilanyi Muslim Primary School,Government,Boys,60,22,38,33,21,28,15,217
+d101,s108,p119,Nyantonzi,Kimanya,2020,Kimanya Primary School,Government,Boys,29,36,49,41,36,30,16,237
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Kimanya Upper Primary School,Government,Boys,64,61,19,29,37,28,19,257
+d101,s104,,Kimengo,,2020,Kimengo Primary School,Government,Boys,33,21,34,23,21,28,11,171
+d101,s109,p132,Miirya,Kigulya,2020,Kinumi Primary School,Government,Boys,115,61,87,63,71,48,28,473
+d101,s109,p130,Miirya,Bigando,2020,Kinuuma Primary School,Government,Boys,27,42,51,44,30,22,21,237
+d101,s102,p108,Kabango Town Council,Kinyara ward,2020,Kinyara Sugar Works Primary School,Government,Boys,162,157,179,162,118,139,70,987
+d101,s101,,Bikonzi,,2020,Kinywamurara Primary School,Government,Boys,38,32,29,25,30,12,17,183
+d101,s112,p111,Bulima Town Council,Kahembe ward,2020,Kisalizi Primary School,Government,Boys,49,46,61,44,36,25,6,267
+d101,s106,,Kyatiri Town Council,,2020,Kisindizi II Primary School,Government,Boys,44,37,41,25,24,21,18,210
+d101,s110,,Pakanyi,Kyakamese,2020,Kisindizi Public Primary School,Government,Boys,80,46,46,44,15,22,10,263
+d101,s113,p106,Bwijanga,Kitamba,2020,Kitamba Primary School,Government,Boys,77,85,84,89,69,49,19,472
+d101,s105,p133,Kiruli,Kiruli,2020,Kitanyata Primary School,Government,Boys,77,85,84,89,69,49,19,472
+d101,s101,p114,Bikonzi,Rukondwa,2020,Kitonozi Primary School,Government,Boys,50,38,36,33,37,29,15,238
+d101,s109,p132,Miirya,Kigulya,2020,Kitwetwe Primary School,Government,Boys,109,37,36,41,25,18,13,279
+d101,s110,,Pakanyi,Kyakamese,2020,Kiyuya Primary School,Government,Boys,39,55,36,59,57,64,29,339
+d101,s109,p131,Miirya,Isimba,2020,Kyabaswa Primary School,Government,Boys,47,37,40,55,46,31,8,264
+d101,s110,,Pakanyi,,2020,Kyatiri Primary School,Government,Boys,147,93,150,128,75,84,49,726
+d101,s112,p111,Bulima Town Council,Kahembe ward,2020,Marongo Primary School,Government,Boys,47,48,53,40,32,19,19,258
+d101,s101,,Bikonzi,,2020,Masindi CH Primary School,Government,Boys,25,11,17,15,17,4,3,92
+d101,s103,p141,Kijunjubwa,Kijunjubwa,2020,Miduuma Primary School,Government,Boys,29,23,27,28,18,16,15,156
+d101,s113,p106,Bwijanga,Kitamba,2020,Mihembero Primary School,Government,Boys,35,29,31,31,26,33,14,199
+d101,s113,p106,Bwijanga,Kitamba,2020,Miramura Primary School,Government,Boys,49,23,43,23,24,15,12,189
+d101,s113,p105,Bwijanga,Kahembe,2020,Murro Primary School,Government,Boys,38,24,27,22,28,26,6,171
+d101,s113,p107,Bwijanga,Ntoma,2020,Ntooma Primary School,Government,Boys,53,70,79,85,33,37,36,393
+d101,s113,p107,Bwijanga,Ntoma,2020,Nyabubaale Primary School,Government,Boys,11,9,8,11,13,3,2,57
+d101,s111,p103,Budongo,Nyabyeya,2020,Nyabyeya Primary School,Government,Boys,121,130,149,122,100,83,45,750
+d101,s105,p133,Kiruli,Kiruli,2020,Nyakarongo Primary School,Government,Boys,43,36,27,24,16,23,9,178
+d101,s106,,Kyatiri Town Council,,2020,Nyakatoogo Primary School,Government,Boys,19,8,16,16,6,3,1,69
+d101,s107,p126,Labongo,Labongo,2020,Nyakyanika Primary School,Government,Boys,38,72,83,60,34,34,32,353
+d101,s106,,Kyatiri Town Council,Kyatiri,2020,Nyambindo Primary School,Government,Boys,135,76,68,87,26,27,16,435
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Nyantonzi Primary School,Government,Boys,36,59,63,55,36,12,17,278
+d101,s101,p114,Bikonzi,Rukondwa,2020,Rukondwa Primary School,Government,Boys,35,28,25,19,9,14,7,137
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Rwempisi Primary School,Government,Boys,29,84,39,41,9,19,13,234
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Siiba Primary School,Government,Boys,45,21,39,44,26,28,15,218
+d101,s109,p131,Miirya,Isimba,2020,St Paul's Primary School Pakanyi,Government,Boys,11,10,7,12,18,7,6,71
+d101,s113,p105,Bwijanga,Kahembe,2020,St. Kizito Murro Primary School,Government,Boys,40,35,34,62,40,35,19,265
+d101,s110,,Pakanyi,Kyakamese,2020,Waiga Primary School,Government,Boys,114,109,105,77,64,41,35,545
+d101,s107,p126,Labongo,Labongo,2020,Walyoba Primary School,Government,Boys,43,41,74,90,95,43,31,417
+d101,s110,,Pakanyi,Kyakamese,2020,Alimugonza Primary School,Government,Girls,131,102,78,101,78,36,12,538
+d101,s107,p127,Labongo,Kihaguzi,2020,Bokwe Primary School,Government,Girls,118,61,76,56,36,39,30,416
+d101,s111,p103,Budongo,Nyabyeya,2020,Budongo Saw Mill Primary School,Government,Girls,23,11,8,7,18,14,7,88
+d101,s112,p111,Bulima Town Council,Kahembe ward,2020,Bulima Primary School,Government,Girls,48,47,79,100,90,106,43,513
+d101,s111,p102,Budongo,Kasongoire,2020,Bulyango Public Primary School,Government,Girls,47,48,61,64,57,36,14,327
+d101,s113,p106,Bwijanga,Kitamba,2020,Byerima Primary School,Government,Girls,5,19,18,18,23,15,12,110
+d101,s101,,Bikonzi,,2020,Ikoba Boys Primary School,Government,Girls,0,0,0,0,0,0,0,0
+d101,s101,,Bikonzi,,2020,Ikoba Girls Primary School,Government,Girls,19,19,20,29,19,20,20,146
+d101,s101,,Bikonzi,,2020,Isagara Primary School,Government,Girls,37,47,30,36,46,37,23,256
+d101,s113,p106,Bwijanga,Kitamba,2020,Isimba Primary School,Government,Girls,22,23,29,15,33,30,11,163
+d101,s102,p109,Kabango Town Council,Kabango ward,2020,Kabango Primary School,Government,Girls,107,137,157,182,150,121,42,896
+d101,s109,p130,Miirya,Bigando,2020,Kahaara Primary School,Government,Girls,38,26,23,22,18,15,10,152
+d101,s111,p103,Budongo,Nyabyeya,2020,Karongo Primary School,Government,Girls,82,81,81,94,69,25,30,462
+d101,s110,,Pakanyi,Kyakamese,2020,Karungi Primary School,Government,Girls,124,72,60,52,37,14,7,366
+d101,s108,p117,Nyantonzi,Kasenene,2020,Kasenene Primary School,Government,Girls,112,104,108,52,54,27,12,469
+d101,s111,p102,Budongo,Kasongoire,2020,Kasongoire Primary School,Government,Girls,31,28,38,42,39,31,12,221
+d101,s104,p124,Kimengo,Kimengo,2020,Kayera Primary School,Government,Girls,21,19,14,3,14,7,10,88
+d101,s109,p130,Miirya,Bigando,2020,Kibaali Primary School,Government,Girls,49,35,42,20,25,31,12,215
+d101,s107,p127,Labongo,Kihaguzi,2020,Kibamba Primary School,Government,Girls,49,35,42,20,25,31,12,215
+d101,s105,p135,Kiruli,Kibibira,2020,Kibibira Primary School,Government,Girls,86,42,40,37,28,15,8,256
+d101,s101,,Bikonzi,,2020,Kichandi Primary School,Government,Girls,40,38,49,30,23,25,11,216
+d101,s109,p132,Miirya,Kigulya,2020,Kigezi Primary School,Government,Girls,67,77,54,61,31,26,12,328
+d101,s113,p107,Bwijanga,Ntoma,2020,Kihagani Primary School,Government,Girls,12,11,9,4,5,6,8,55
+d101,s101,,Bikonzi,,2020,Kihoole Primary School,Government,Girls,16,19,15,24,22,14,7,117
+d101,s101,p114,Bikonzi,Rukondwa,2020,Kiina Primary School,Government,Girls,24,30,26,22,20,31,20,173
+d101,s109,p132,Miirya,Kigulya,2020,Kijogoro Primary School,Government,Girls,90,66,94,79,49,31,21,430
+d101,s104,,Kimengo,,2020,Kijunjubwa Primary School,Government,Girls,33,81,32,37,42,40,18,283
+d101,s113,p106,Bwijanga,Kitamba,2020,Kikingura Primary School,Government,Girls,54,44,50,62,67,51,21,349
+d101,s101,p116,Bikonzi,Kikube,2020,Kikuube Primary School,Government,Girls,16,18,23,28,33,35,16,169
+d101,s107,p126,Labongo,Labongo,2020,Kilanyi Primary School,Government,Girls,60,31,29,33,20,25,17,215
+d101,s107,p126,Labongo,Labongo,2020,Kilanyi Muslim Primary School,Government,Girls,24,24,22,34,28,38,16,186
+d101,s108,p119,Nyantonzi,Kimanya,2020,Kimanya Primary School,Government,Girls,34,50,31,52,45,15,14,241
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Kimanya Upper Primary School,Government,Girls,58,43,45,37,48,26,7,264
+d101,s104,,Kimengo,,2020,Kimengo Primary School,Government,Girls,28,18,20,19,18,36,17,156
+d101,s109,p132,Miirya,Kigulya,2020,Kinumi Primary School,Government,Girls,93,79,134,63,66,63,31,529
+d101,s109,p130,Miirya,Bigando,2020,Kinuuma Primary School,Government,Girls,49,37,38,39,37,29,21,250
+d101,s102,p108,Kabango Town Council,Kinyara ward,2020,Kinyara Sugar Works Primary School,Government,Girls,117,131,168,153,154,135,78,936
+d101,s101,,Bikonzi,,2020,Kinywamurara Primary School,Government,Girls,23,26,29,30,21,13,,142
+d101,s112,p111,Bulima Town Council,Kahembe ward,2020,Kisalizi Primary School,Government,Girls,43,37,36,50,96,38,22,322
+d101,s106,,Kyatiri Town Council,,2020,Kisindizi II Primary School,Government,Girls,37,28,32,29,47,23,11,207
+d101,s110,,Pakanyi,Kyakamese,2020,Kisindizi Public Primary School,Government,Girls,63,45,36,42,32,14,10,242
+d101,s113,p106,Bwijanga,Kitamba,2020,Kitamba Primary School,Government,Girls,81,77,78,77,70,69,13,465
+d101,s105,p133,Kiruli,Kiruli,2020,Kitanyata Primary School,Government,Girls,81,77,78,77,70,69,13,465
+d101,s101,p114,Bikonzi,Rukondwa,2020,Kitonozi Primary School,Government,Girls,52,46,36,34,29,32,22,251
+d101,s109,p132,Miirya,Kigulya,2020,Kitwetwe Primary School,Government,Girls,66,32,37,25,18,8,6,192
+d101,s110,,Pakanyi,Kyakamese,2020,Kiyuya Primary School,Government,Girls,47,28,55,39,44,46,33,292
+d101,s109,p131,Miirya,Isimba,2020,Kyabaswa Primary School,Government,Girls,42,39,46,29,20,28,18,222
+d101,s110,,Pakanyi,,2020,Kyatiri Primary School,Government,Girls,152,113,131,120,94,65,31,706
+d101,s112,p111,Bulima Town Council,Kahembe ward,2020,Marongo Primary School,Government,Girls,27,27,30,23,26,26,23,182
+d101,s101,,Bikonzi,,2020,Masindi CH Primary School,Government,Girls,23,6,6,21,10,9,10,85
+d101,s103,p141,Kijunjubwa,Kijunjubwa,2020,Miduuma Primary School,Government,Girls,24,13,20,22,15,14,12,120
+d101,s113,p106,Bwijanga,Kitamba,2020,Mihembero Primary School,Government,Girls,24,16,30,26,19,23,14,152
+d101,s113,p106,Bwijanga,Kitamba,2020,Miramura Primary School,Government,Girls,37,29,33,32,22,16,3,172
+d101,s113,p105,Bwijanga,Kahembe,2020,Murro Primary School,Government,Girls,29,16,13,22,26,26,15,147
+d101,s113,p107,Bwijanga,Ntoma,2020,Ntooma Primary School,Government,Girls,42,41,72,90,45,57,17,364
+d101,s113,p107,Bwijanga,Ntoma,2020,Nyabubaale Primary School,Government,Girls,20,11,6,6,9,1,1,54
+d101,s111,p103,Budongo,Nyabyeya,2020,Nyabyeya Primary School,Government,Girls,140,127,125,155,94,96,27,764
+d101,s105,p133,Kiruli,Kiruli,2020,Nyakarongo Primary School,Government,Girls,39,32,18,15,13,17,6,140
+d101,s106,,Kyatiri Town Council,,2020,Nyakatoogo Primary School,Government,Girls,8,12,8,6,3,3,,40
+d101,s107,p126,Labongo,Labongo,2020,Nyakyanika Primary School,Government,Girls,114,60,60,80,30,34,10,388
+d101,s106,,Kyatiri Town Council,Kyatiri,2020,Nyambindo Primary School,Government,Girls,152,85,58,52,26,26,11,410
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Nyantonzi Primary School,Government,Girls,30,40,65,64,37,16,11,263
+d101,s101,p114,Bikonzi,Rukondwa,2020,Rukondwa Primary School,Government,Girls,34,15,13,15,15,14,7,113
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Rwempisi Primary School,Government,Girls,53,58,22,44,37,15,3,232
+d101,s108,p118,Nyantonzi,Nyantonzi,2020,Siiba Primary School,Government,Girls,45,16,44,39,39,27,18,228
+d101,s109,p131,Miirya,Isimba,2020,St Paul's Primary School Pakanyi,Government,Girls,14,11,14,13,13,11,5,81
+d101,s113,p105,Bwijanga,Kahembe,2020,St. Kizito Murro Primary School,Government,Girls,30,28,33,55,38,47,16,247
+d101,s110,,Pakanyi,Kyakamese,2020,Waiga Primary School,Government,Girls,115,86,101,109,56,38,15,520
+d101,s107,p126,Labongo,Labongo,2020,Walyoba Primary School,Government,Girls,30,45,63,74,58,58,28,356
+d101,s110,,Pakanyi,Kyakamese,2021,Alimugonza Primary School,Government,Boys,131,79,93,113,117,54,23,610
+d101,s107,p127,Labongo,Kihaguzi,2021,Bokwe Primary School,Government,Boys,83,70,68,67,57,40,22,407
+d101,s111,p103,Budongo,Nyabyeya,2021,Budongo Saw Mill Primary School,Government,Boys,25,8,13,26,15,21,13,121
+d101,s112,p111,Bulima Town Council,Kahembe ward,2021,Bulima Primary School,Government,Boys,73,73,77,108,80,65,40,516
+d101,s111,p102,Budongo,Kasongoire,2021,Bulyango Public Primary School,Government,Boys,60,63,76,61,39,37,17,353
+d101,s113,p106,Bwijanga,Kitamba,2021,Byerima Primary School,Government,Boys,14,17,32,28,28,43,9,171
+d101,s101,,Bikonzi,,2021,Ikoba Boys Primary School,Government,Boys,14,20,24,10,16,11,15,110
+d101,s101,,Bikonzi,,2021,Ikoba Girls Primary School,Government,Boys,0,0,0,0,0,0,0,0
+d101,s101,,Bikonzi,,2021,Isagara Primary School,Government,Boys,52,30,42,35,36,36,20,251
+d101,s113,p106,Bwijanga,Kitamba,2021,Isimba Primary School,Government,Boys,18,30,29,39,32,20,9,177
+d101,s102,p109,Kabango Town Council,Kabango ward,2021,Kabango Primary School,Government,Boys,144,101,192,174,79,80,42,812
+d101,s109,p130,Miirya,Bigando,2021,Kahaara Primary School,Government,Boys,50,29,35,33,25,16,19,207
+d101,s111,p103,Budongo,Nyabyeya,2021,Karongo Primary School,Government,Boys,78,68,135,89,56,35,19,480
+d101,s110,,Pakanyi,Kyakamese,2021,Karungi Primary School,Government,Boys,94,40,61,73,38,24,17,347
+d101,s108,p117,Nyantonzi,Kasenene,2021,Kasenene Primary School,Government,Boys,110,188,208,188,54,33,15,796
+d101,s111,p102,Budongo,Kasongoire,2021,Kasongoire Primary School,Government,Boys,39,37,35,45,29,19,7,211
+d101,s104,p124,Kimengo,Kimengo,2021,Kayera Primary School,Government,Boys,32,13,25,13,3,4,8,98
+d101,s109,p130,Miirya,Bigando,2021,Kibaali Primary School,Government,Boys,38,35,32,45,26,29,17,222
+d101,s107,p127,Labongo,Kihaguzi,2021,Kibamba Primary School,Government,Boys,38,35,32,45,26,29,17,222
+d101,s105,p135,Kiruli,Kibibira,2021,Kibibira Primary School,Government,Boys,71,51,38,46,40,27,19,292
+d101,s101,,Bikonzi,,2021,Kichandi Primary School,Government,Boys,34,36,47,30,21,22,8,198
+d101,s109,p132,Miirya,Kigulya,2021,Kigezi Primary School,Government,Boys,74,68,34,61,53,25,15,330
+d101,s113,p107,Bwijanga,Ntoma,2021,Kihagani Primary School,Government,Boys,15,7,12,4,4,2,3,47
+d101,s101,,Bikonzi,,2021,Kihoole Primary School,Government,Boys,15,18,16,15,16,10,6,96
+d101,s101,p114,Bikonzi,Rukondwa,2021,Kiina Primary School,Government,Boys,35,43,51,34,24,29,23,239
+d101,s109,p132,Miirya,Kigulya,2021,Kijogoro Primary School,Government,Boys,86,66,89,64,42,26,19,392
+d101,s104,,Kimengo,,2021,Kijunjubwa Primary School,Government,Boys,41,38,41,48,39,31,20,258
+d101,s113,p106,Bwijanga,Kitamba,2021,Kikingura Primary School,Government,Boys,53,46,57,68,67,49,21,361
+d101,s101,p116,Bikonzi,Kikube,2021,Kikuube Primary School,Government,Boys,28,30,22,57,39,33,14,223
+d101,s107,p126,Labongo,Labongo,2021,Kilanyi Primary School,Government,Boys,54,36,33,35,29,15,21,223
+d101,s107,p126,Labongo,Labongo,2021,Kilanyi Muslim Primary School,Government,Boys,60,22,38,33,21,28,15,217
+d101,s108,p119,Nyantonzi,Kimanya,2021,Kimanya Primary School,Government,Boys,29,36,49,41,36,30,16,237
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Kimanya Upper Primary School,Government,Boys,64,61,19,29,37,28,19,257
+d101,s104,,Kimengo,,2021,Kimengo Primary School,Government,Boys,33,21,34,23,21,28,11,171
+d101,s109,p132,Miirya,Kigulya,2021,Kinumi Primary School,Government,Boys,115,61,87,63,71,48,28,473
+d101,s109,p130,Miirya,Bigando,2021,Kinuuma Primary School,Government,Boys,27,42,51,44,30,22,21,237
+d101,s102,p108,Kabango Town Council,Kinyara ward,2021,Kinyara Sugar Works Primary School,Government,Boys,162,157,179,162,118,139,70,987
+d101,s101,,Bikonzi,,2021,Kinywamurara Primary School,Government,Boys,38,32,29,25,30,12,17,183
+d101,s112,p111,Bulima Town Council,Kahembe ward,2021,Kisalizi Primary School,Government,Boys,49,46,61,44,36,25,6,267
+d101,s106,,Kyatiri Town Council,,2021,Kisindizi II Primary School,Government,Boys,44,37,41,25,24,21,18,210
+d101,s110,,Pakanyi,Kyakamese,2021,Kisindizi Public Primary School,Government,Boys,80,46,46,44,15,22,10,263
+d101,s113,p106,Bwijanga,Kitamba,2021,Kitamba Primary School,Government,Boys,77,85,84,89,69,49,19,472
+d101,s105,p133,Kiruli,Kiruli,2021,Kitanyata Primary School,Government,Boys,77,85,84,89,69,49,19,472
+d101,s101,p114,Bikonzi,Rukondwa,2021,Kitonozi Primary School,Government,Boys,50,38,36,33,37,29,15,238
+d101,s109,p132,Miirya,Kigulya,2021,Kitwetwe Primary School,Government,Boys,109,37,36,41,25,18,13,279
+d101,s110,,Pakanyi,Kyakamese,2021,Kiyuya Primary School,Government,Boys,39,55,36,59,57,64,29,339
+d101,s109,p131,Miirya,Isimba,2021,Kyabaswa Primary School,Government,Boys,47,37,40,55,46,31,8,264
+d101,s110,,Pakanyi,,2021,Kyatiri Primary School,Government,Boys,147,93,150,128,75,84,49,726
+d101,s112,p111,Bulima Town Council,Kahembe ward,2021,Marongo Primary School,Government,Boys,47,48,53,40,32,19,19,258
+d101,s101,,Bikonzi,,2021,Masindi CH Primary School,Government,Boys,25,11,17,15,17,4,3,92
+d101,s103,p141,Kijunjubwa,Kijunjubwa,2021,Miduuma Primary School,Government,Boys,29,23,27,28,18,16,15,156
+d101,s113,p106,Bwijanga,Kitamba,2021,Mihembero Primary School,Government,Boys,35,29,31,31,26,33,14,199
+d101,s113,p106,Bwijanga,Kitamba,2021,Miramura Primary School,Government,Boys,49,23,43,23,24,15,12,189
+d101,s113,p105,Bwijanga,Kahembe,2021,Murro Primary School,Government,Boys,38,24,27,22,28,26,6,171
+d101,s113,p107,Bwijanga,Ntoma,2021,Ntooma Primary School,Government,Boys,53,70,79,85,33,37,36,393
+d101,s113,p107,Bwijanga,Ntoma,2021,Nyabubaale Primary School,Government,Boys,11,9,8,11,13,3,2,57
+d101,s111,p103,Budongo,Nyabyeya,2021,Nyabyeya Primary School,Government,Boys,121,130,149,122,100,83,45,750
+d101,s105,p133,Kiruli,Kiruli,2021,Nyakarongo Primary School,Government,Boys,43,36,27,24,16,23,9,178
+d101,s106,,Kyatiri Town Council,,2021,Nyakatoogo Primary School,Government,Boys,19,8,16,16,6,3,1,69
+d101,s107,p126,Labongo,Labongo,2021,Nyakyanika Primary School,Government,Boys,38,72,83,60,34,34,32,353
+d101,s106,,Kyatiri Town Council,Kyatiri,2021,Nyambindo Primary School,Government,Boys,135,76,68,87,26,27,16,435
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Nyantonzi Primary School,Government,Boys,36,59,63,55,36,12,17,278
+d101,s101,p114,Bikonzi,Rukondwa,2021,Rukondwa Primary School,Government,Boys,35,28,25,19,9,14,7,137
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Rwempisi Primary School,Government,Boys,29,84,39,41,9,19,13,234
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Siiba Primary School,Government,Boys,45,21,39,44,26,28,15,218
+d101,s109,p131,Miirya,Isimba,2021,St Paul's Primary School Pakanyi,Government,Boys,11,10,7,12,18,7,6,71
+d101,s113,p105,Bwijanga,Kahembe,2021,St. Kizito Murro Primary School,Government,Boys,40,35,34,62,40,35,19,265
+d101,s110,,Pakanyi,Kyakamese,2021,Waiga Primary School,Government,Boys,114,109,105,77,64,41,35,545
+d101,s107,p126,Labongo,Labongo,2021,Walyoba Primary School,Government,Boys,43,41,74,90,95,43,31,417
+d101,s110,,Pakanyi,Kyakamese,2021,Alimugonza Primary School,Government,Girls,131,102,78,101,78,36,12,538
+d101,s107,p127,Labongo,Kihaguzi,2021,Bokwe Primary School,Government,Girls,118,61,76,56,36,39,30,416
+d101,s111,p103,Budongo,Nyabyeya,2021,Budongo Saw Mill Primary School,Government,Girls,23,11,8,7,18,14,7,88
+d101,s112,p111,Bulima Town Council,Kahembe ward,2021,Bulima Primary School,Government,Girls,48,47,79,100,90,106,43,513
+d101,s111,p102,Budongo,Kasongoire,2021,Bulyango Public Primary School,Government,Girls,47,48,61,64,57,36,14,327
+d101,s113,p106,Bwijanga,Kitamba,2021,Byerima Primary School,Government,Girls,5,19,18,18,23,15,12,110
+d101,s101,,Bikonzi,,2021,Ikoba Boys Primary School,Government,Girls,0,0,0,0,0,0,0,0
+d101,s101,,Bikonzi,,2021,Ikoba Girls Primary School,Government,Girls,19,19,20,29,19,20,20,146
+d101,s101,,Bikonzi,,2021,Isagara Primary School,Government,Girls,37,47,30,36,46,37,23,256
+d101,s113,p106,Bwijanga,Kitamba,2021,Isimba Primary School,Government,Girls,22,23,29,15,33,30,11,163
+d101,s102,p109,Kabango Town Council,Kabango ward,2021,Kabango Primary School,Government,Girls,107,137,157,182,150,121,42,896
+d101,s109,p130,Miirya,Bigando,2021,Kahaara Primary School,Government,Girls,38,26,23,22,18,15,10,152
+d101,s111,p103,Budongo,Nyabyeya,2021,Karongo Primary School,Government,Girls,82,81,81,94,69,25,30,462
+d101,s110,,Pakanyi,Kyakamese,2021,Karungi Primary School,Government,Girls,124,72,60,52,37,14,7,366
+d101,s108,p117,Nyantonzi,Kasenene,2021,Kasenene Primary School,Government,Girls,112,104,108,52,54,27,12,469
+d101,s111,p102,Budongo,Kasongoire,2021,Kasongoire Primary School,Government,Girls,31,28,38,42,39,31,12,221
+d101,s104,p124,Kimengo,Kimengo,2021,Kayera Primary School,Government,Girls,21,19,14,3,14,7,10,88
+d101,s109,p130,Miirya,Bigando,2021,Kibaali Primary School,Government,Girls,49,35,42,20,25,31,12,215
+d101,s107,p127,Labongo,Kihaguzi,2021,Kibamba Primary School,Government,Girls,49,35,42,20,25,31,12,215
+d101,s105,p135,Kiruli,Kibibira,2021,Kibibira Primary School,Government,Girls,86,42,40,37,28,15,8,256
+d101,s101,,Bikonzi,,2021,Kichandi Primary School,Government,Girls,40,38,49,30,23,25,11,216
+d101,s109,p132,Miirya,Kigulya,2021,Kigezi Primary School,Government,Girls,67,77,54,61,31,26,12,328
+d101,s113,p107,Bwijanga,Ntoma,2021,Kihagani Primary School,Government,Girls,12,11,9,4,5,6,8,55
+d101,s101,,Bikonzi,,2021,Kihoole Primary School,Government,Girls,16,19,15,24,22,14,7,117
+d101,s101,p114,Bikonzi,Rukondwa,2021,Kiina Primary School,Government,Girls,24,30,26,22,20,31,20,173
+d101,s109,p132,Miirya,Kigulya,2021,Kijogoro Primary School,Government,Girls,90,66,94,79,49,31,21,430
+d101,s104,,Kimengo,,2021,Kijunjubwa Primary School,Government,Girls,33,81,32,37,42,40,18,283
+d101,s113,p106,Bwijanga,Kitamba,2021,Kikingura Primary School,Government,Girls,54,44,50,62,67,51,21,349
+d101,s101,p116,Bikonzi,Kikube,2021,Kikuube Primary School,Government,Girls,16,18,23,28,33,35,16,169
+d101,s107,p126,Labongo,Labongo,2021,Kilanyi Primary School,Government,Girls,60,31,29,33,20,25,17,215
+d101,s107,p126,Labongo,Labongo,2021,Kilanyi Muslim Primary School,Government,Girls,24,24,22,34,28,38,16,186
+d101,s108,p119,Nyantonzi,Kimanya,2021,Kimanya Primary School,Government,Girls,34,50,31,52,45,15,14,241
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Kimanya Upper Primary School,Government,Girls,58,43,45,37,48,26,7,264
+d101,s104,,Kimengo,,2021,Kimengo Primary School,Government,Girls,28,18,20,19,18,36,17,156
+d101,s109,p132,Miirya,Kigulya,2021,Kinumi Primary School,Government,Girls,93,79,134,63,66,63,31,529
+d101,s109,p130,Miirya,Bigando,2021,Kinuuma Primary School,Government,Girls,49,37,38,39,37,29,21,250
+d101,s102,p108,Kabango Town Council,Kinyara ward,2021,Kinyara Sugar Works Primary School,Government,Girls,117,131,168,153,154,135,78,936
+d101,s101,,Bikonzi,,2021,Kinywamurara Primary School,Government,Girls,23,26,29,30,21,13,,142
+d101,s112,p111,Bulima Town Council,Kahembe ward,2021,Kisalizi Primary School,Government,Girls,43,37,36,50,96,38,22,322
+d101,s106,,Kyatiri Town Council,,2021,Kisindizi II Primary School,Government,Girls,37,28,32,29,47,23,11,207
+d101,s110,,Pakanyi,Kyakamese,2021,Kisindizi Public Primary School,Government,Girls,63,45,36,42,32,14,10,242
+d101,s113,p106,Bwijanga,Kitamba,2021,Kitamba Primary School,Government,Girls,81,77,78,77,70,69,13,465
+d101,s105,p133,Kiruli,Kiruli,2021,Kitanyata Primary School,Government,Girls,81,77,78,77,70,69,13,465
+d101,s101,p114,Bikonzi,Rukondwa,2021,Kitonozi Primary School,Government,Girls,52,46,36,34,29,32,22,251
+d101,s109,p132,Miirya,Kigulya,2021,Kitwetwe Primary School,Government,Girls,66,32,37,25,18,8,6,192
+d101,s110,,Pakanyi,Kyakamese,2021,Kiyuya Primary School,Government,Girls,47,28,55,39,44,46,33,292
+d101,s109,p131,Miirya,Isimba,2021,Kyabaswa Primary School,Government,Girls,42,39,46,29,20,28,18,222
+d101,s110,,Pakanyi,,2021,Kyatiri Primary School,Government,Girls,152,113,131,120,94,65,31,706
+d101,s112,p111,Bulima Town Council,Kahembe ward,2021,Marongo Primary School,Government,Girls,27,27,30,23,26,26,23,182
+d101,s101,,Bikonzi,,2021,Masindi CH Primary School,Government,Girls,23,6,6,21,10,9,10,85
+d101,s103,p141,Kijunjubwa,Kijunjubwa,2021,Miduuma Primary School,Government,Girls,24,13,20,22,15,14,12,120
+d101,s113,p106,Bwijanga,Kitamba,2021,Mihembero Primary School,Government,Girls,24,16,30,26,19,23,14,152
+d101,s113,p106,Bwijanga,Kitamba,2021,Miramura Primary School,Government,Girls,37,29,33,32,22,16,3,172
+d101,s113,p105,Bwijanga,Kahembe,2021,Murro Primary School,Government,Girls,29,16,13,22,26,26,15,147
+d101,s113,p107,Bwijanga,Ntoma,2021,Ntooma Primary School,Government,Girls,42,41,72,90,45,57,17,364
+d101,s113,p107,Bwijanga,Ntoma,2021,Nyabubaale Primary School,Government,Girls,20,11,6,6,9,1,1,54
+d101,s111,p103,Budongo,Nyabyeya,2021,Nyabyeya Primary School,Government,Girls,140,127,125,155,94,96,27,764
+d101,s105,p133,Kiruli,Kiruli,2021,Nyakarongo Primary School,Government,Girls,39,32,18,15,13,17,6,140
+d101,s106,,Kyatiri Town Council,,2021,Nyakatoogo Primary School,Government,Girls,8,12,8,6,3,3,,40
+d101,s107,p126,Labongo,Labongo,2021,Nyakyanika Primary School,Government,Girls,114,60,60,80,30,34,10,388
+d101,s106,,Kyatiri Town Council,Kyatiri,2021,Nyambindo Primary School,Government,Girls,152,85,58,52,26,26,11,410
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Nyantonzi Primary School,Government,Girls,30,40,65,64,37,16,11,263
+d101,s101,p114,Bikonzi,Rukondwa,2021,Rukondwa Primary School,Government,Girls,34,15,13,15,15,14,7,113
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Rwempisi Primary School,Government,Girls,53,58,22,44,37,15,3,232
+d101,s108,p118,Nyantonzi,Nyantonzi,2021,Siiba Primary School,Government,Girls,45,16,44,39,39,27,18,228
+d101,s109,p131,Miirya,Isimba,2021,St Paul's Primary School Pakanyi,Government,Girls,14,11,14,13,13,11,5,81
+d101,s113,p105,Bwijanga,Kahembe,2021,St. Kizito Murro Primary School,Government,Girls,30,28,33,55,38,47,16,247
+d101,s110,,Pakanyi,Kyakamese,2021,Waiga Primary School,Government,Girls,115,86,101,109,56,38,15,520
+d101,s107,p126,Labongo,Labongo,2021,Walyoba Primary School,Government,Girls,30,45,63,74,58,58,28,356
+d101,s101,,Bikonzi ,,2022,Ikoba Boys Primary School,Government,Boys,26,16,16,12,18,9,10,107
+d101,s110,,Pakanyi,Kyakamese,2022,Alimugonza Primary School,Government,Boys,122,103,116,89,140,68,40,678
+d101,s107,p127,Labongo,Kihaguzi,2022,Bokwe Primary School,Government,Boys,174,105,110,81,73,65,29,637
+d101,s111,p103,Budongo,Nyabyeya,2022,Budongo Saw Mill Primary School,Government,Boys,28,13,12,12,17,17,10,109
+d101,s112,p111,Bulima Town Council,Kahembe ward,2022,Bulima Primary School,Government,Boys,69,85,82,58,74,84,51,503
+d101,s111,p102,Budongo,Kasongoire,2022,Bulyango Public Primary School,Government,Boys,88,87,90,91,65,48,19,488
+d101,s113,p106,Bwijanga,Kitamba,2022,Byerima Primary School,Government,Boys,24,13,25,25,18,24,18,147
+d101,s101,,Bikonzi,,2022,Ikoba Girls Primary School,Government,Boys,0,0,0,0,0,0,0,0
+d101,s101,,Bikonzi,,2022,Isagara Primary School,Government,Boys,84,51,48,45,25,27,28,308
+d101,s113,p106,Bwijanga,Kitamba,2022,Isimba Primary School,Government,Boys,28,15,26,36,28,19,9,161
+d101,s102,p109,Kabango Town Council,Kabango ward,2022,Kabango Primary School,Government,Boys,128,118,110,126,107,84,47,720
+d101,s109,p130,Miirya,Bigando,2022,Kahara Primary School,Government,Boys,64,27,45,20,24,21,13,214
+d101,s111,p103,Budongo,Nyabyeya,2022,Karongo Primary School,Government,Boys,140,116,87,76,77,54,30,580
+d101,s110,,Pakanyi,Kyakamese,2022,Karungi Primary School,Government,Boys,102,64,45,52,57,49,21,390
+d101,s108,p117,Nyantonzi,Kasenene,2022,Kasenene Primary School,Government,Boys,202,189,143,115,116,49,27,841
+d101,s111,p102,Budongo,Kasongoire,2022,Kasongoire Primary School,Government,Boys,37,40,45,38,42,30,16,248
+d101,s104,p124,Kimengo,Kimengo,2022,Kayera Primary School,Government,Boys,58,34,16,17,29,18,7,179
+d101,s109,p130,Miirya,Bigando,2022,Kibali Primary School,Government,Boys,63,57,44,30,46,20,8,268
+d101,s107,p127,Labongo,Kihaguzi,2022,Kibamba Primary School,Government,Boys,71,59,60,58,44,22,25,339
+d101,s105,p135,Kiruli,Kibibira,2022,Kibibira Primary School,Government,Boys,135,97,52,56,27,30,14,411
+d101,s101,,Bikonzi,,2022,Kichandi Primary School,Government,Boys,62,37,41,42,39,23,15,259
+d101,s109,p132,Miirya,Kigulya,2022,Kigezi Primary School,Government,Boys,110,68,70,73,52,33,20,426
+d101,s113,p107,Bwijanga,Ntoma,2022,Kihagani Primary School,Government,Boys,26,15,10,9,9,0,3,72
+d101,s101,,Bikonzi,,2022,Kihoole Primary School,Government,Boys,37,19,19,19,14,7,7,113
+d101,s101,p114,Bikonzi,Rukondwa,2022,Kiina Primary School,Government,Boys,70,42,48,54,64,22,31,331
+d101,s109,p132,Miirya,Kigulya,2022,Kijogoro Primary School,Government,Boys,145,100,103,51,56,39,32,526
+d101,s104,,Kimengo,,2022,Kijunjubwa Primary School,Government,Boys,46,45,38,41,46,39,19,274
+d101,s113,p106,Bwijanga,Kitamba,2022,Kikingura Primary School,Government,Boys,89,90,99,112,86,61,42,579
+d101,s101,p116,Bikonzi,Kikube,2022,Kikuube Primary School,Government,Boys,43,46,36,37,35,33,27,257
+d101,s107,p126,Labongo,Labongo,2022,Kilanyi Primary School,Government,Boys,49,43,34,25,28,19,18,216
+d101,s107,p126,Labongo,Labongo,2022,Kilanyi Moslem Primary School,Government,Boys,64,29,45,34,38,39,20,269
+d101,s108,p119,Nyantonzi,Kimanya,2022,Kimanya Primary School,Government,Boys,83,59,48,50,36,23,15,314
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,Kimanya Upper,Government,Boys,122,53,43,38,24,26,10,316
+d101,s104,,Kimengo,,2022,Kimengo Primary School,Government,Boys,78,37,44,34,40,27,14,274
+d101,s109,p132,Miirya,Kigulya,2022,Kinuma Primary School,Government,Boys,71,49,41,36,47,30,22,296
+d101,s109,p130,Miirya,Bigando,2022,Kinumi Primary School,Government,Boys,125,108,77,77,53,29,40,509
+d101,s102,p108,Kabango Town Council,Kinyara ward,2022,Kinyara Sugar Works Primary School,Government,Boys,127,123,141,130,135,105,80,841
+d101,s101,,Bikonzi,,2022,Kinywamurara Primary School,Government,Boys,52,42,34,38,21,14,15,216
+d101,s112,p111,Bulima Town Council,Kahembe ward,2022,Kisalizi Primary School,Government,Boys,74,39,54,52,51,36,13,319
+d101,s106,,Kyatiri Town Council,,2022,Kisindizi II Primary School,Government,Boys,49,45,40,50,46,27,18,275
+d101,s110,,Pakanyi,Kyakamese,2022,Kisindizi Public Primary School,Government,Boys,61,48,22,31,17,13,8,200
+d101,s113,p106,Bwijanga,Kitamba,2022,Kitamba Primary School,Government,Boys,71,59,60,58,44,22,25,339
+d101,s105,p133,Kiruli,Kiruli,2022,Kitanyata Primary School,Government,Boys,145,124,113,95,112,90,34,713
+d101,s101,p114,Bikonzi,Rukondwa,2022,Kitonozi Primary School,Government,Boys,60,59,38,33,34,30,34,288
+d101,s109,p132,Miirya,Kigulya,2022,Kitwetwe Primary School,Government,Boys,105,45,45,36,16,15,7,269
+d101,s110,,Pakanyi,Kyakamese,2022,Kiyuya Primary School,Government,Boys,56,21,33,34,28,37,44,253
+d101,s109,p131,Miirya,Isimba,2022,Kyabaswa Primary School,Government,Boys,70,45,42,32,35,32,25,281
+d101,s110,,Pakanyi,,2022,Marongo Primary School,Government,Boys,90,68,54,58,47,43,29,389
+d101,s112,p111,Bulima Town Council,Kahembe ward,2022,Miduuma Primary School,Government,Boys,33,23,17,37,26,17,10,163
+d101,s101,,Bikonzi,,2022,Mihembero Primary School,Government,Boys,46,37,40,33,30,36,30,252
+d101,s103,p141,Kijunjubwa,Kijunjubwa,2022,Miramura Primary School,Government,Boys,71,41,30,23,37,21,12,235
+d101,s113,p106,Bwijanga,Kitamba,2022,Masindisd Centre Primary School,Government,Boys,36,4,10,10,14,16,2,92
+d101,s113,p106,Bwijanga,Kitamba,2022,Murro Primary School,Government,Boys,33,30,26,26,14,11,19,159
+d101,s113,p105,Bwijanga,Kahembe,2022,Ntooma Primary School,Government,Boys,79,82,89,90,79,54,26,499
+d101,s113,p107,Bwijanga,Ntoma,2022,Nyabubale Primary School,Government,Boys,26,14,14,2,4,3,1,7
+d101,s113,p107,Bwijanga,Ntoma,2022,Nyabyeya Primary School,Government,Boys,153,112,106,130,100,98,43,742
+d101,s111,p103,Budongo,Nyabyeya,2022,Nyakarongo Primary School,Government,Boys,83,38,56,30,16,5,11,239
+d101,s105,p133,Kiruli,Kiruli,2022,Nyakatoogo Primary School,Government,Boys,34,18,24,11,20,13,8,128
+d101,s106,,Kyatiri Town Council,,2022,Nyakyanika Primary School,Government,Boys,89,64,85,65,50,37,21,411
+d101,s107,p126,Labongo,Labongo,2022,Nyambindo Primary School,Government,Boys,163,97,68,66,31,16,12,453
+d101,s106,,Kyatiri Town Council,Kyatiri,2022,Nyantonzi Primary School,Government,Boys,75,68,94,76,72,28,26,439
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,Rukondwa Primary School,Government,Boys,37,13,24,18,21,16,10,139
+d101,s101,p114,Bikonzi,Rukondwa,2022,Rwempisi Primary School,Government,Boys,132,75,58,50,27,10,11,363
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,Siiba Primary School,Government,Boys,56,35,32,20,34,19,14,210
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,St Mary's Kyatiri Primary School,Government,Boys,219,149,140,159,142,79,56,944
+d101,s109,p131,Miirya,Isimba,2022,St. Kizito Murro Primary School,Government,Boys,20,18,13,11,15,18,10,105
+d101,s113,p105,Bwijanga,Kahembe,2022,St. Paul Primary School Pakanyi,Government,Boys,91,33,52,27,46,22,19,290
+d101,s110,,Pakanyi,Kyakamese,2022,Waiga Primary School,Government,Boys,155,105,95,115,59,48,25,602
+d101,s107,p126,Labongo,Labongo,2022,Walyoba Primary School,Government,Boys,97,59,74,78,71,53,39,471
+d101,s110,,Pakanyi,Kyakamese,2022,Ikoba Boys Primary School,Government,Girls,0,0,0,0,0,0,0,0
+d101,s107,p127,Labongo,Kihaguzi,2022,Alimugonza Primary School,Government,Girls,120,100,107,109,120,53,45,654
+d101,s111,p103,Budongo,Nyabyeya,2022,Bokwe Primary School,Government,Girls,166,103,102,89,86,43,39,628
+d101,s112,p111,Bulima Town Council,Kahembe ward,2022,Budongo Saw Mill Primary School,Government,Girls,20,19,14,8,18,10,10,99
+d101,s111,p102,Budongo,Kasongoire,2022,Bulima Primary School,Government,Girls,78,63,63,67,81,86,71,509
+d101,s113,p106,Bwijanga,Kitamba,2022,Bulyango Public Primary School,Government,Girls,87,87,85,89,75,49,24,496
+d101,s101,,Bikonzi,,2022,Byerima Primary School,Government,Girls,22,20,20,21,21,20,6,130
+d101,s101,,Bikonzi,,2022,Ikoba Girls Primary School,Government,Girls,30,15,20,16,22,28,13,144
+d101,s101,,Bikonzi,,2022,Isagara Primary School,Government,Girls,72,32,52,28,32,28,37,281
+d101,s113,p106,Bwijanga,Kitamba,2022,Isimba Primary School,Government,Girls,35,30,14,22,27,9,19,156
+d101,s102,p109,Kabango Town Council,Kabango ward,2022,Kabango Primary School,Government,Girls,142,123,135,112,164,113,69,858
+d101,s109,p130,Miirya,Bigando,2022,Kahara Primary School,Government,Girls,51,25,22,20,24,15,14,171
+d101,s111,p103,Budongo,Nyabyeya,2022,Karongo Primary School,Government,Girls,110,113,80,108,80,43,36,570
+d101,s110,,Pakanyi,Kyakamese,2022,Karungi Primary School,Government,Girls,103,71,64,40,35,41,18,372
+d101,s108,p117,Nyantonzi,Kasenene,2022,Kasenene Primary School,Government,Girls,188,178,135,98,84,48,28,759
+d101,s111,p102,Budongo,Kasongoire,2022,Kasongoire Primary School,Government,Girls,50,33,30,39,38,31,20,241
+d101,s104,p124,Kimengo,Kimengo,2022,Kayera Primary School,Government,Girls,50,33,28,13,14,10,9,157
+d101,s109,p130,Miirya,Bigando,2022,Kibali Primary School,Government,Girls,71,76,58,42,49,28,9,333
+d101,s107,p127,Labongo,Kihaguzi,2022,Kibamba Primary School,Government,Girls,79,47,94,44,44,28,10,346
+d101,s105,p135,Kiruli,Kibibira,2022,Kibibira Primary School,Government,Girls,172,85,65,41,34,12,14,423
+d101,s101,,Bikonzi,,2022,Kichandi Primary School,Government,Girls,52,42,43,35,42,25,18,257
+d101,s109,p132,Miirya,Kigulya,2022,Kigezi Primary School,Government,Girls,90,82,45,78,42,38,15,390
+d101,s113,p107,Bwijanga,Ntoma,2022,Kihagani Primary School,Government,Girls,34,25,20,21,18,6,4,128
+d101,s101,,Bikonzi,,2022,Kihoole Primary School,Government,Girls,28,14,10,14,12,17,15,110
+d101,s101,p114,Bikonzi,Rukondwa,2022,Kiina Primary School,Government,Girls,65,36,26,47,29,36,24,263
+d101,s109,p132,Miirya,Kigulya,2022,Kijogoro Primary School,Government,Girls,141,106,96,61,49,37,18,508
+d101,s104,,Kimengo,,2022,Kijunjubwa Primary School,Government,Girls,52,47,48,28,45,47,37,304
+d101,s113,p106,Bwijanga,Kitamba,2022,Kikingura Primary School,Government,Girls,92,88,98,65,88,53,38,522
+d101,s101,p116,Bikonzi,Kikube,2022,Kikuube Primary School,Government,Girls,46,24,28,27,33,24,17,199
+d101,s107,p126,Labongo,Labongo,2022,Kilanyi Primary School,Government,Girls,57,39,27,33,30,17,9,212
+d101,s107,p126,Labongo,Labongo,2022,Kilanyi Moslem Primary School,Government,Girls,49,20,30,26,32,25,31,213
+d101,s108,p119,Nyantonzi,Kimanya,2022,Kimanya Primary School,Government,Girls,64,27,42,38,44,25,13,253
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,Kimanya Upper,Government,Girls,118,82,41,39,28,29,20,357
+d101,s104,,Kimengo,,2022,Kimengo Primary School,Government,Girls,80,40,49,28,31,18,22,268
+d101,s109,p132,Miirya,Kigulya,2022,Kinuma Primary School,Government,Girls,84,36,40,43,40,27,21,291
+d101,s109,p130,Miirya,Bigando,2022,Kinumi Primary School,Government,Girls,102,96,75,72,51,40,36,472
+d101,s102,p108,Kabango Town Council,Kinyara ward,2022,Kinyara Sugar Works Primary School,Government,Girls,137,92,119,128,117,103,102,798
+d101,s101,,Bikonzi,,2022,Kinywamurara Primary School,Government,Girls,53,50,38,24,25,19,18,227
+d101,s112,p111,Bulima Town Council,Kahembe ward,2022,Kisalizi Primary School,Government,Girls,84,50,52,42,45,34,36,343
+d101,s106,,Kyatiri Town Council,,2022,Kisindizi II Primary School,Government,Girls,51,60,44,40,34,24,21,274
+d101,s110,,Pakanyi,Kyakamese,2022,Kisindizi Public Primary School,Government,Girls,67,37,25,25,11,16,10,191
+d101,s113,p106,Bwijanga,Kitamba,2022,Kitamba Primary School,Government,Girls,79,47,94,44,44,28,10,346
+d101,s105,p133,Kiruli,Kiruli,2022,Kitanyata Primary School,Government,Girls,188,148,119,73,107,58,38,731
+d101,s101,p114,Bikonzi,Rukondwa,2022,Kitonozi Primary School,Government,Girls,66,41,43,47,40,27,30,294
+d101,s109,p132,Miirya,Kigulya,2022,Kitwetwe Primary School,Government,Girls,108,45,35,22,10,10,3,233
+d101,s110,,Pakanyi,Kyakamese,2022,Kiyuya Primary School,Government,Girls,64,20,35,28,28,20,18,213
+d101,s109,p131,Miirya,Isimba,2022,Kyabaswa Primary School,Government,Girls,52,39,35,41,32,23,14,236
+d101,s110,,Pakanyi,,2022,Marongo Primary School,Government,Girls,75,56,49,61,41,36,29,347
+d101,s112,p111,Bulima Town Council,Kahembe ward,2022,Miduuma Primary School,Government,Girls,25,30,15,40,19,9,14,152
+d101,s101,,Bikonzi,,2022,Mihembero Primary School,Government,Girls,47,36,31,35,38,30,17,234
+d101,s103,p141,Kijunjubwa,Kijunjubwa,2022,Miramura Primary School,Government,Girls,63,25,36,31,31,18,17,221
+d101,s113,p106,Bwijanga,Kitamba,2022,Masindisd Centre Primary School,Government,Girls,22,9,8,13,13,21,9,95
+d101,s113,p106,Bwijanga,Kitamba,2022,Murro Primary School,Government,Girls,33,27,12,23,17,15,19,146
+d101,s113,p105,Bwijanga,Kahembe,2022,Ntooma Primary School,Government,Girls,98,54,86,83,87,79,24,511
+d101,s113,p107,Bwijanga,Ntoma,2022,Nyabubale Primary School,Government,Girls,31,21,12,6,3,3,1,77
+d101,s113,p107,Bwijanga,Ntoma,2022,Nyabyeya Primary School,Government,Girls,156,94,123,115,114,124,45,771
+d101,s111,p103,Budongo,Nyabyeya,2022,Nyakarongo Primary School,Government,Girls,87,56,31,11,21,22,8,236
+d101,s105,p133,Kiruli,Kiruli,2022,Nyakatoogo Primary School,Government,Girls,19,19,24,8,15,11,15,111
+d101,s106,,Kyatiri Town Council,,2022,Nyakyanika Primary School,Government,Girls,130,81,80,54,34,33,25,437
+d101,s107,p126,Labongo,Labongo,2022,Nyambindo Primary School,Government,Girls,120,72,79,55,42,17,8,393
+d101,s106,,Kyatiri Town Council,Kyatiri,2022,Nyantonzi Primary School,Government,Girls,78,88,88,70,77,41,13,455
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,Rukondwa Primary School,Government,Girls,39,15,24,17,18,16,5,134
+d101,s101,p114,Bikonzi,Rukondwa,2022,Rwempisi Primary School,Government,Girls,104,73,70,40,21,17,10,335
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,Siiba Primary School,Government,Girls,61,34,24,30,36,22,8,215
+d101,s108,p118,Nyantonzi,Nyantonzi,2022,St Mary's Kyatiri Primary School,Government,Girls,202,132,177,136,121,73,63,904
+d101,s109,p131,Miirya,Isimba,2022,St. Kizito Murro Primary School,Government,Girls,18,17,12,10,12,12,12,93
+d101,s113,p105,Bwijanga,Kahembe,2022,St. Paul Primary School Pakanyi,Government,Girls,62,33,42,33,34,15,28,247
+d101,s110,,Pakanyi,Kyakamese,2022,Waiga Primary School,Government,Girls,150,116,97,108,64,52,27,614
+d101,s107,p126,Labongo,Labongo,2022,Walyoba Primary School,Government,Girls,69,60,67,95,70,68,62,491
