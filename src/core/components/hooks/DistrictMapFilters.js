@@ -21,6 +21,7 @@ const getIndicatorYearOptions = (topics, selectedTopic, selectedIndicator) => {
     const indicator = topic.indicators.find((ind) => ind.id === selectedIndicator);
     if (indicator && indicator.yearRange) {
       return getYearsFromRange(indicator.yearRange)
+        .filter((year) => (indicator.excludeYears ? !indicator.excludeYears.includes(year) : year))
         .reverse() // so as to start from the latest year
         .map((year) => ({ value: year, label: year }));
     }
