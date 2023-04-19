@@ -1,4 +1,4 @@
-district_id,subcounty_id,parish_id,subcounty,parrish,year,school_name,ownership,gender,p1,p2,p3,p4,p5,p6,p7,subtotal
+district_id,subcounty_id,parish_id,subcounty,parish,year,school_name,ownership,gender,p1,p2,p3,p4,p5,p6,p7,subtotal
 d101,s113,,Bwijanga,Bikonzi,2014,Ikoba Boys Primary School,Government,Boys,30,41,20,34,49,35,26,235
 d101,s110,,Pakanyi,Kyakamese,2014,Alimugonza Primary School,Government,Boys,101,70,97,78,58,42,22,468
 d101,s110,p127,Pakanyi,Kihaguzi,2014,Bokwe Primary School,Government,Boys,82,91,82,73,68,51,25,472
