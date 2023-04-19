@@ -1,10 +1,10 @@
-district_id,subcounty_id,subcounty,year,level,ownership,value
+﻿district_id,subcounty_id,subcounty,year,level,ownership,value
 d102,s101,Galiraya,2022,Primary,Government,11
 d102,s102,Bbaale,2022,Primary,Government,6
 d102,s103,Kayonza,2022,Primary,Government,31
 d102,s104,Kitimbwa,2022,Primary,Government,19
 d102,s105,Busaana,2022,Primary,Government,31
-d102,s106,Nazigo ,2022,Primary,Government,20
+d102,s106,Nazigo,2022,Primary,Government,20
 d102,s107,Kangulumira,2022,Primary,Government,10
 d102,s108,Kayunga,2022,Primary,Government,19
 d102,s109,Kayunga Town Council,2022,Primary,Government,7
@@ -17,7 +17,7 @@ d102,s102,Bbaale,2022,Primary,Private,13
 d102,s103,Kayonza,2022,Primary,Private,24
 d102,s104,Kitimbwa,2022,Primary,Private,12
 d102,s105,Busaana,2022,Primary,Private,17
-d102,s106,Nazigo ,2022,Primary,Private,52
+d102,s106,Nazigo,2022,Primary,Private,52
 d102,s107,Kangulumira,2022,Primary,Private,36
 d102,s108,Kayunga,2022,Primary,Private,44
 d102,s109,Kayunga Town Council,2022,Primary,Private,19
@@ -30,7 +30,7 @@ d102,s102,Bbaale,2022,Secondary,Government,1
 d102,s103,Kayonza,2022,Secondary,Government,1
 d102,s104,Kitimbwa,2022,Secondary,Government,1
 d102,s105,Busaana,2022,Secondary,Government,1
-d102,s106,Nazigo ,2022,Secondary,Government,1
+d102,s106,Nazigo,2022,Secondary,Government,1
 d102,s107,Kangulumira,2022,Secondary,Government,0
 d102,s108,Kayunga,2022,Secondary,Government,1
 d102,s109,Kayunga Town Council,2022,Secondary,Government,2
@@ -43,7 +43,7 @@ d102,s102,Bbaale,2022,Secondary,Private,2
 d102,s103,Kayonza,2022,Secondary,Private,4
 d102,s104,Kitimbwa,2022,Secondary,Private,1
 d102,s105,Busaana,2022,Secondary,Private,3
-d102,s106,Nazigo ,2022,Secondary,Private,7
+d102,s106,Nazigo,2022,Secondary,Private,7
 d102,s107,Kangulumira,2022,Secondary,Private,5
 d102,s108,Kayunga,2022,Secondary,Private,8
 d102,s109,Kayunga Town Council,2022,Secondary,Private,6
@@ -56,7 +56,7 @@ d102,s102,Bbaale,2021,Primary,Government,
 d102,s103,Kayonza,2021,Primary,Government,
 d102,s104,Kitimbwa,2021,Primary,Government,
 d102,s105,Busaana,2021,Primary,Government,
-d102,s106,Nazigo ,2021,Primary,Government,
+d102,s106,Nazigo,2021,Primary,Government,
 d102,s107,Kangulumira,2021,Primary,Government,
 d102,s108,Kayunga,2021,Primary,Government,
 d102,s109,Kayunga Town Council,2021,Primary,Government,
@@ -69,7 +69,7 @@ d102,s102,Bbaale,2021,Primary,Private,
 d102,s103,Kayonza,2021,Primary,Private,
 d102,s104,Kitimbwa,2021,Primary,Private,
 d102,s105,Busaana,2021,Primary,Private,
-d102,s106,Nazigo ,2021,Primary,Private,
+d102,s106,Nazigo,2021,Primary,Private,
 d102,s107,Kangulumira,2021,Primary,Private,
 d102,s108,Kayunga,2021,Primary,Private,
 d102,s109,Kayunga Town Council,2021,Primary,Private,
@@ -82,7 +82,7 @@ d102,s102,Bbaale,2021,Secondary,Government,
 d102,s103,Kayonza,2021,Secondary,Government,
 d102,s104,Kitimbwa,2021,Secondary,Government,
 d102,s105,Busaana,2021,Secondary,Government,
-d102,s106,Nazigo ,2021,Secondary,Government,
+d102,s106,Nazigo,2021,Secondary,Government,
 d102,s107,Kangulumira,2021,Secondary,Government,
 d102,s108,Kayunga,2021,Secondary,Government,
 d102,s109,Kayunga Town Council,2021,Secondary,Government,
@@ -95,7 +95,7 @@ d102,s102,Bbaale,2021,Secondary,Private,
 d102,s103,Kayonza,2021,Secondary,Private,
 d102,s104,Kitimbwa,2021,Secondary,Private,
 d102,s105,Busaana,2021,Secondary,Private,
-d102,s106,Nazigo ,2021,Secondary,Private,
+d102,s106,Nazigo,2021,Secondary,Private,
 d102,s107,Kangulumira,2021,Secondary,Private,
 d102,s108,Kayunga,2021,Secondary,Private,
 d102,s109,Kayunga Town Council,2021,Secondary,Private,
@@ -108,7 +108,7 @@ d102,s102,Bbaale,2020,Primary,Government,
 d102,s103,Kayonza,2020,Primary,Government,
 d102,s104,Kitimbwa,2020,Primary,Government,
 d102,s105,Busaana,2020,Primary,Government,
-d102,s106,Nazigo ,2020,Primary,Government,
+d102,s106,Nazigo,2020,Primary,Government,
 d102,s107,Kangulumira,2020,Primary,Government,
 d102,s108,Kayunga,2020,Primary,Government,
 d102,s109,Kayunga Town Council,2020,Primary,Government,
@@ -121,7 +121,7 @@ d102,s102,Bbaale,2020,Primary,Private,
 d102,s103,Kayonza,2020,Primary,Private,
 d102,s104,Kitimbwa,2020,Primary,Private,
 d102,s105,Busaana,2020,Primary,Private,
-d102,s106,Nazigo ,2020,Primary,Private,
+d102,s106,Nazigo,2020,Primary,Private,
 d102,s107,Kangulumira,2020,Primary,Private,
 d102,s108,Kayunga,2020,Primary,Private,
 d102,s109,Kayunga Town Council,2020,Primary,Private,
@@ -134,7 +134,7 @@ d102,s102,Bbaale,2020,Secondary,Government,
 d102,s103,Kayonza,2020,Secondary,Government,
 d102,s104,Kitimbwa,2020,Secondary,Government,
 d102,s105,Busaana,2020,Secondary,Government,
-d102,s106,Nazigo ,2020,Secondary,Government,
+d102,s106,Nazigo,2020,Secondary,Government,
 d102,s107,Kangulumira,2020,Secondary,Government,
 d102,s108,Kayunga,2020,Secondary,Government,
 d102,s109,Kayunga Town Council,2020,Secondary,Government,
@@ -147,7 +147,7 @@ d102,s102,Bbaale,2020,Secondary,Private,
 d102,s103,Kayonza,2020,Secondary,Private,
 d102,s104,Kitimbwa,2020,Secondary,Private,
 d102,s105,Busaana,2020,Secondary,Private,
-d102,s106,Nazigo ,2020,Secondary,Private,
+d102,s106,Nazigo,2020,Secondary,Private,
 d102,s107,Kangulumira,2020,Secondary,Private,
 d102,s108,Kayunga,2020,Secondary,Private,
 d102,s109,Kayunga Town Council,2020,Secondary,Private,
@@ -160,7 +160,7 @@ d102,s102,Bbaale,2019,Primary,Government,
 d102,s103,Kayonza,2019,Primary,Government,
 d102,s104,Kitimbwa,2019,Primary,Government,
 d102,s105,Busaana,2019,Primary,Government,
-d102,s106,Nazigo ,2019,Primary,Government,
+d102,s106,Nazigo,2019,Primary,Government,
 d102,s107,Kangulumira,2019,Primary,Government,
 d102,s108,Kayunga,2019,Primary,Government,
 d102,s109,Kayunga Town Council,2019,Primary,Government,
@@ -173,7 +173,7 @@ d102,s102,Bbaale,2019,Primary,Private,
 d102,s103,Kayonza,2019,Primary,Private,
 d102,s104,Kitimbwa,2019,Primary,Private,
 d102,s105,Busaana,2019,Primary,Private,
-d102,s106,Nazigo ,2019,Primary,Private,
+d102,s106,Nazigo,2019,Primary,Private,
 d102,s107,Kangulumira,2019,Primary,Private,
 d102,s108,Kayunga,2019,Primary,Private,
 d102,s109,Kayunga Town Council,2019,Primary,Private,
@@ -186,7 +186,7 @@ d102,s102,Bbaale,2019,Secondary,Government,
 d102,s103,Kayonza,2019,Secondary,Government,
 d102,s104,Kitimbwa,2019,Secondary,Government,
 d102,s105,Busaana,2019,Secondary,Government,
-d102,s106,Nazigo ,2019,Secondary,Government,
+d102,s106,Nazigo,2019,Secondary,Government,
 d102,s107,Kangulumira,2019,Secondary,Government,
 d102,s108,Kayunga,2019,Secondary,Government,
 d102,s109,Kayunga Town Council,2019,Secondary,Government,
@@ -199,7 +199,7 @@ d102,s102,Bbaale,2019,Secondary,Private,
 d102,s103,Kayonza,2019,Secondary,Private,
 d102,s104,Kitimbwa,2019,Secondary,Private,
 d102,s105,Busaana,2019,Secondary,Private,
-d102,s106,Nazigo ,2019,Secondary,Private,
+d102,s106,Nazigo,2019,Secondary,Private,
 d102,s107,Kangulumira,2019,Secondary,Private,
 d102,s108,Kayunga,2019,Secondary,Private,
 d102,s109,Kayunga Town Council,2019,Secondary,Private,
@@ -212,7 +212,7 @@ d102,s102,Bbaale,2018,Primary,Government,6
 d102,s103,Kayonza,2018,Primary,Government,31
 d102,s104,Kitimbwa,2018,Primary,Government,26
 d102,s105,Busaana,2018,Primary,Government,30
-d102,s106,Nazigo ,2018,Primary,Government,19
+d102,s106,Nazigo,2018,Primary,Government,19
 d102,s107,Kangulumira,2018,Primary,Government,18
 d102,s108,Kayunga,2018,Primary,Government,19
 d102,s109,Kayunga Town Council,2018,Primary,Government,7
@@ -225,7 +225,7 @@ d102,s102,Bbaale,2018,Primary,Private,20
 d102,s103,Kayonza,2018,Primary,Private,66
 d102,s104,Kitimbwa,2018,Primary,Private,44
 d102,s105,Busaana,2018,Primary,Private,48
-d102,s106,Nazigo ,2018,Primary,Private,59
+d102,s106,Nazigo,2018,Primary,Private,59
 d102,s107,Kangulumira,2018,Primary,Private,47
 d102,s108,Kayunga,2018,Primary,Private,33
 d102,s109,Kayunga Town Council,2018,Primary,Private,29
@@ -238,7 +238,7 @@ d102,s102,Bbaale,2018,Secondary,Government,1
 d102,s103,Kayonza,2018,Secondary,Government,1
 d102,s104,Kitimbwa,2018,Secondary,Government,1
 d102,s105,Busaana,2018,Secondary,Government,2
-d102,s106,Nazigo ,2018,Secondary,Government,1
+d102,s106,Nazigo,2018,Secondary,Government,1
 d102,s107,Kangulumira,2018,Secondary,Government,1
 d102,s108,Kayunga,2018,Secondary,Government,3
 d102,s109,Kayunga Town Council,2018,Secondary,Government,0
@@ -251,7 +251,7 @@ d102,s102,Bbaale,2018,Secondary,Private,0
 d102,s103,Kayonza,2018,Secondary,Private,0
 d102,s104,Kitimbwa,2018,Secondary,Private,1
 d102,s105,Busaana,2018,Secondary,Private,1
-d102,s106,Nazigo ,2018,Secondary,Private,3
+d102,s106,Nazigo,2018,Secondary,Private,3
 d102,s107,Kangulumira,2018,Secondary,Private,2
 d102,s108,Kayunga,2018,Secondary,Private,4
 d102,s109,Kayunga Town Council,2018,Secondary,Private,0
@@ -264,7 +264,7 @@ d102,s102,Bbaale,2017,Primary,Government,6
 d102,s103,Kayonza,2017,Primary,Government,31
 d102,s104,Kitimbwa,2017,Primary,Government,27
 d102,s105,Busaana,2017,Primary,Government,30
-d102,s106,Nazigo ,2017,Primary,Government,17
+d102,s106,Nazigo,2017,Primary,Government,17
 d102,s107,Kangulumira,2017,Primary,Government,18
 d102,s108,Kayunga,2017,Primary,Government,19
 d102,s109,Kayunga Town Council,2017,Primary,Government,8
@@ -277,7 +277,7 @@ d102,s102,Bbaale,2017,Primary,Private,20
 d102,s103,Kayonza,2017,Primary,Private,52
 d102,s104,Kitimbwa,2017,Primary,Private,48
 d102,s105,Busaana,2017,Primary,Private,43
-d102,s106,Nazigo ,2017,Primary,Private,65
+d102,s106,Nazigo,2017,Primary,Private,65
 d102,s107,Kangulumira,2017,Primary,Private,55
 d102,s108,Kayunga,2017,Primary,Private,38
 d102,s109,Kayunga Town Council,2017,Primary,Private,30
@@ -290,7 +290,7 @@ d102,s102,Bbaale,2017,Secondary,Government,1
 d102,s103,Kayonza,2017,Secondary,Government,1
 d102,s104,Kitimbwa,2017,Secondary,Government,1
 d102,s105,Busaana,2017,Secondary,Government,2
-d102,s106,Nazigo ,2017,Secondary,Government,1
+d102,s106,Nazigo,2017,Secondary,Government,1
 d102,s107,Kangulumira,2017,Secondary,Government,1
 d102,s108,Kayunga,2017,Secondary,Government,3
 d102,s109,Kayunga Town Council,2017,Secondary,Government,0
@@ -303,7 +303,7 @@ d102,s102,Bbaale,2017,Secondary,Private,0
 d102,s103,Kayonza,2017,Secondary,Private,0
 d102,s104,Kitimbwa,2017,Secondary,Private,1
 d102,s105,Busaana,2017,Secondary,Private,1
-d102,s106,Nazigo ,2017,Secondary,Private,3
+d102,s106,Nazigo,2017,Secondary,Private,3
 d102,s107,Kangulumira,2017,Secondary,Private,2
 d102,s108,Kayunga,2017,Secondary,Private,4
 d102,s109,Kayunga Town Council,2017,Secondary,Private,0
