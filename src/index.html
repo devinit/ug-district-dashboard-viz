@@ -414,20 +414,17 @@
           },
           {
             id: 'secondaryEnrolment',
-            name: 'Secondary School Enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+            name: 'Secondary School Enrolment (All)',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/raw/secondary_school_enrolment.csv',
             colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
-            range: [50, 100, 200, 300],
-            yearRange: [2018, 2020],
+            range: [500, 600, 700, 800],
+            yearRange: [2014, 2014],
             mapping: {
-              location: 'subcounty',
-              value: 'value',
+              location: 'subcounties',
+              value: 'subtotal',
               year: 'year',
             },
             aggregator: 'sum', //either sum, avg
-            filters: {
-              level: ['Secondary'],
-            },
           },
         ],
       },
