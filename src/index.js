@@ -2,10 +2,10 @@ import renderSelectors from './core/SelectorDropdowns';
 import './state';
 // import renderEChart from './core/charts/ExampleChart';
 // import renderTable from './core/tables/ExampleTable';
-import renderEducationCharts from './core/charts/EducationCharts';
+import renderCharts from './core/charts/Charts';
 import renderDistrictMap from './core/DistrictMap';
 import renderKeyFacts from './core/KeyFacts';
-import renderEducationTables from './core/tables/EducationTables';
+import renderTables from './core/tables/Tables';
 import './styles/styles.css';
 
 /**
@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
   renderSelectors('district-selectors', { makeSticky: true });
   renderDistrictMap('dicharts--district-map');
   // renderEChart();
-  renderEducationTables();
+  renderTables();
   renderKeyFacts('dicharts--keyfacts');
-  renderEducationCharts();
+  renderCharts();
 });

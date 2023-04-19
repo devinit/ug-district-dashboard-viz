@@ -196,7 +196,7 @@ const initTables = () => {
 
       // ensures that the state update that renders the charts only runs once
       if (tableConfigs && configs.length !== tableConfigs.length) {
-        configs = tableConfigs.filter((config) => config.target === 'education');
+        configs = tableConfigs;
 
         configs.forEach((config) => {
           renderTable(config);
