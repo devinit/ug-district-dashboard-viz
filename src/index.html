@@ -175,12 +175,12 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">PLE Performance Analysis</h3>
+          <h3 class="type-l type-l--trailer">Primary School Teachers</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--ple-performance-selectors"></div>
-              <div class="dicharts--ple-performance-analysis"></div>
+              <div class="dicharts--primary-teachers--selectors"></div>
+              <div class="dicharts--primary-teachers"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -198,11 +198,12 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Education Institutions</h3>
+          <h3 class="type-l type-l--trailer">PLE Performance Analysis</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--education-institutions"></div>
+              <div class="dicharts--ple-performance-selectors"></div>
+              <div class="dicharts--ple-performance-analysis"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -535,6 +536,28 @@
         },
         {
           target: 'education',
+          className: 'dicharts--primary-teachers',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/kayunga/number_of_teachers_in_primary_schools.json',
+          yearRange: [2022, 2022],
+          type: 'bar',
+          series: ['Male', 'Female'],
+          mapping: {
+            series: 'gender',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            yAxis: { name: 'Number of teachers' },
+            series: [{ stack: undefined }]
+          },
+          aggregator: 'avg',
+        },
+        {
+          target: 'education',
           className: 'dicharts--ple-performance-analysis',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/ple_performance.json',
           yearRange: [2018, 2022],
@@ -576,37 +599,6 @@
               ],
             },
           ],
-        },
-        {
-          target: 'education',
-          className: 'dicharts--education-institutions',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/number_of_education_institutions.csv',
-          yearRange: [],
-          series: ['Pre-Primary Schools', 'Primary Schools', 'Secondary Schools', 'Teacher Training Colleges', 'Technical Colleges', 'Technical Schools', 'Universities'],
-          mapping: {
-            series: 'institution',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-          },
-          aggregator: 'sum',
-          type: 'pie',
-          options: {
-            yAxis: { show: false },
-            xAxis: { show: false },
-            tooltip: { trigger: 'item' },
-            legend: {
-              orient: 'vertical',
-              left: 20,
-              top: 'middle',
-              selectedMode: true,
-            },
-            series: [
-              {
-                label: { formatter: '{b} ({c})' }
-              }
-            ]
-          },
         },
       ],
       tables: [
