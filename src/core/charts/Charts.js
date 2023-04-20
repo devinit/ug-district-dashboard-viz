@@ -23,48 +23,94 @@ const getChartType = (type) => {
   return type;
 };
 
+const getPieSeriesValue = (data, seriesName, config) => {
+  const sum = data.reduce((value, curr) => {
+    if (curr[config.mapping.series] === seriesName) {
+      return value + Number(curr[config.mapping.value]);
+    }
+
+    return value;
+  }, 0);
+
+  if (!config.aggregator || config.aggregator === 'sum') {
+    return sum;
+  }
+  if (config.aggregator === 'avg') {
+    return sum / data.filter((items) => items[config.mapping.series] === seriesName);
+  }
+
+  return sum; // leaving room for other aggregators
+};
+
 const getSeries = (config, data, subCounty, years) => {
   const { series: seriesNames, mapping } = config;
-  // create chart series object
-  const series = seriesNames.map((seriesName, index) => ({
-    name: seriesName,
-    type: getChartType(config.type),
-    stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'Education' : undefined,
-    areaStyle: config.type === 'area' ? {} : undefined,
-    smooth: true,
-    emphasis: { focus: 'series' },
-    label: {
-      show: index === seriesNames.length - 1,
-      position: 'top',
-      formatter: (params) => {
-        let total = 0;
-        for (let i = 0; i < series.length; i += 1) {
-          total += parseInt(series[i].data[params.dataIndex], 10);
-        }
+  const chartType = getChartType(config.type);
 
-        return formatNumber(total);
+  if (chartType !== 'pie') {
+    // create chart series object
+    const series = seriesNames.map((seriesName, index) => ({
+      name: seriesName,
+      type: chartType,
+      stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'Education' : undefined,
+      areaStyle: config.type === 'area' ? {} : undefined,
+      smooth: true,
+      emphasis: { focus: 'series' },
+      label: {
+        show: index === seriesNames.length - 1,
+        fontFamily: 'Geomanist Regular,sans-serif',
+        position: 'top',
+        formatter: (params) => {
+          let total = 0;
+          for (let i = 0; i < series.length; i += 1) {
+            total += parseInt(series[i].data[params.dataIndex], 10);
+          }
+
+          return formatNumber(total);
+        },
       },
-    },
-    data: years.map((year) => {
-      const yearValues = [];
-      data.forEach((item) => {
-        if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
-          yearValues.push(Number(item[mapping.value]));
+      data: years.map((year) => {
+        const yearValues = [];
+        data.forEach((item) => {
+          if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
+            yearValues.push(Number(item[mapping.value]));
+          }
+        });
+
+        if (!config.aggregator || config.aggregator === 'sum') {
+          return yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
         }
-      });
+        if (config.aggregator === 'avg') {
+          const sum = yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-      if (!config.aggregator || config.aggregator === 'sum') {
-        return yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-      }
-      if (config.aggregator === 'avg') {
-        const sum = yearValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+          return formatNumber(sum / yearValues.length);
+        }
 
-        return formatNumber(sum / yearValues.length);
-      }
+        throw new Error('Invalid aggregator: ', config.aggregator);
+      }),
+    }));
 
-      throw new Error('Invalid aggregator: ', config.aggregator);
-    }),
-  }));
+    return series;
+  }
+
+  // create pie chart series object
+  const series = [
+    {
+      type: 'pie',
+      radius: '50%',
+      data: seriesNames.map((seriesName) => ({
+        name: seriesName,
+        value: getPieSeriesValue(data, seriesName, config),
+      })),
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)',
+        },
+      },
+      label: { fontFamily: 'Geomanist Regular,sans-serif' },
+    },
+  ];
 
   return series;
 };
@@ -218,7 +264,7 @@ const processConfig = (config) => {
                 ? filterData(originalData, config.filters) // if available, only include the configured sub-counties
                 : originalData;
               // extract year range from data
-              const years = getYears(data, config.yearRange);
+              const years = config.yearRange && config.yearRange.length ? getYears(data, config.yearRange) : [];
 
               let selectors = [];
 

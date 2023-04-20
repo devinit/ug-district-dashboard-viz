@@ -216,8 +216,29 @@
             </div>
           </div>
         </div>
-  </div>
-  </section>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Education Institutions</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--education-institutions"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
@@ -522,6 +543,37 @@
               ],
             },
           ],
+        },
+        {
+          target: 'education',
+          className: 'dicharts--education-institutions',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/number_of_education_institutions.csv',
+          yearRange: [],
+          series: ['Pre-Primary Schools', 'Primary Schools', 'Secondary Schools', 'Teacher Training Colleges', 'Technical Colleges', 'Technical Schools', 'Universities'],
+          mapping: {
+            series: 'institution',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          aggregator: 'sum',
+          type: 'pie',
+          options: {
+            yAxis: { show: false },
+            xAxis: { show: false },
+            tooltip: { trigger: 'item' },
+            legend: {
+              orient: 'vertical',
+              left: 20,
+              top: 'middle',
+              selectedMode: true,
+            },
+            series: [
+              {
+                label: { formatter: '{b} ({c})' }
+              }
+            ]
+          },
         },
       ],
       tables: [
