@@ -246,7 +246,7 @@
   <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
   <script>
 
-    const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+    const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Central', 'Miirya', 'Nyangahya', 'Pakanyi'];
     const mapMapping = {
       'Karujubu': 'Karujubu Division',
       'Nyangahya': 'Nyangahya Division',
@@ -437,7 +437,6 @@
       { stack: undefined, label: { show: false } }
     ];
 
-    const kayungaSubCounties = ['Galiraya', 'Bbaale', 'Kayonza', 'Kitimbwa', 'Busaana', 'Kayunga', 'Kayunga Town Council', 'Nazigo', 'Kangulumira'];
     const state = {
       location: {
         name: 'Masindi',
@@ -494,20 +493,20 @@
         {
           target: 'education',
           className: 'dicharts--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/raw/number_of_schools.csv',
           type: 'bar',
           typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
-          yearRange: [2016, 2021],
+          yearRange: [2014, 2022],
           series: ['Government', 'Private'],
           mapping: {
-            series: 'Type',
+            series: 'ownership',
             year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
+            value: 'value',
+            subCounty: 'subcounty',
             level: 'level',
           },
           filters: {
-            SubCounty: kayungaSubCounties,
+            subcounty: masindiSubCounties,
           },
           options: {
             legend: { show: true },
@@ -554,7 +553,7 @@
             level: 'level',
           },
           filters: {
-            subcounty: kayungaSubCounties,
+            subcounty: masindiSubCounties,
           },
           options: {
             yAxis: { name: 'Learners enrolled' },
@@ -589,7 +588,7 @@
             level: 'level',
           },
           filters: {
-            SubCounty: kayungaSubCounties,
+            SubCounty: masindiSubCounties,
           },
           aggregator: 'avg',
           options: {
@@ -690,7 +689,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            subCounties: masindiSubCounties,
           },
           selectorClassName: 'dicharts--table--number-of-schools-selectors',
           selectors: [
@@ -721,7 +720,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            subCounties: masindiSubCounties,
           },
           aggregator: 'avg',
         },
@@ -739,7 +738,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            subCounties: masindiSubCounties,
           },
         },
         {
@@ -756,7 +755,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            subCounties: masindiSubCounties,
           },
         },
         {
@@ -773,7 +772,7 @@
             level: 'level',
           },
           filters: {
-            subCounties: kayungaSubCounties,
+            subCounties: masindiSubCounties,
           },
           aggregator: 'avg',
         },
