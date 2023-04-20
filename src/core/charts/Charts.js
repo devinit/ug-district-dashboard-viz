@@ -5,17 +5,28 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
 import { defaultSelectValue, filterData, filterDataByProperty, filterDataBySubCounty } from '../utils';
 
-const getYears = (data, yearRange, config = {}) => {
-  if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
+const getYears = (data, config = {}) => {
+  if (Array.isArray(config.yearRange) && config.yearRange.length) {
+    const years = getYearsFromRange(config.yearRange);
+
+    if (config.excludeYears) {
+      return years.filter((year) => !config.excludeYears.includes(year)).map((year) => `${year}`);
+    }
+
+    return years.map((year) => `${year}`);
+  }
 
   const yearField = config.mapping && config.mapping.year;
   if (!yearField) return [];
 
   const yearList = Array.from(new Set(data.map((item) => Number(item[yearField]))));
   const sortedYears = yearList.sort((a, b) => a - b);
-  const sortedStringYears = sortedYears.map((year) => year.toString());
 
-  return sortedStringYears;
+  if (config.excludeYears) {
+    return sortedYears.filter((year) => !config.excludeYears.includes(year)).map((year) => `${year}`);
+  }
+
+  return sortedYears.map((year) => year.toString());
 };
 
 const getChartType = (type) => {
@@ -268,9 +279,7 @@ const processConfig = (config) => {
                 : originalData;
               // extract year range from data
               const years =
-                config.yearRange && config.yearRange.length
-                  ? getYears(data, config.yearRange)
-                  : getYears(data, null, config);
+                config.yearRange && config.yearRange.length ? getYears(data, config) : getYears(data, config);
 
               let selectors = [];
 
