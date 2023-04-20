@@ -5,10 +5,12 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
 import { defaultSelectValue, filterData, filterDataByProperty, filterDataBySubCounty } from '../utils';
 
-const getYears = (data, yearRange) => {
+const getYears = (data, yearRange, yearField) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
 
-  const yearList = Array.from(new Set(data.map((item) => Number(item.year))));
+  if (!yearField) return [];
+
+  const yearList = Array.from(new Set(data.map((item) => Number(item[yearField]))));
   const sortedYears = yearList.sort((a, b) => a - b);
   const sortedStringYears = sortedYears.map((year) => year.toString());
 
@@ -264,7 +266,10 @@ const processConfig = (config) => {
                 ? filterData(originalData, config.filters) // if available, only include the configured sub-counties
                 : originalData;
               // extract year range from data
-              const years = config.yearRange && config.yearRange.length ? getYears(data, config.yearRange) : [];
+              const years =
+                config.yearRange && config.yearRange.length
+                  ? getYears(data, config.yearRange)
+                  : getYears(data, null, config.mapping.year);
 
               let selectors = [];
 
