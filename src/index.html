@@ -107,7 +107,7 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+          <h3 class="type-l type-l--trailer">Government Primary School Enrolment</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
@@ -542,36 +542,22 @@
         {
           target: 'education',
           className: 'dicharts--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learner_enrollment.csv',
-          yearRange: [2018, 2021],
-          series: ['Government', 'Private'],
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/raw/primary_school_enrolment.csv',
+          // yearRange: [2014, 2021], // when not specified, year range is taken from the data
+          // excludeYears: [2016, 2018], // used to exclude years you don't wish to appear
+          series: ['Boys', 'Girls'],
           mapping: {
-            series: 'type',
+            series: 'gender',
             year: 'year',
-            value: 'value',
+            value: 'subtotal',
             subCounty: 'subcounty',
-            level: 'level',
           },
           filters: {
             subcounty: masindiSubCounties,
           },
           options: {
-            yAxis: { name: 'Learners enrolled' },
+            yAxis: { name: 'Pupils enrolled' },
           },
-          selectorClassName: 'dicharts--learners-enrolment-selectors',
-          selectors: [
-            {
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and Secondary' },
-              dataProperty: 'level',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' },
-              ],
-            },
-          ],
         },
         {
           target: 'education',
