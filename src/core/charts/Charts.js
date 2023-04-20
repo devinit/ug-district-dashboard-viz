@@ -5,9 +5,10 @@ import fetchData, { formatNumber, getYearsFromRange } from '../../utils/data';
 import renderSelectors from '../SelectorDropdowns';
 import { defaultSelectValue, filterData, filterDataByProperty, filterDataBySubCounty } from '../utils';
 
-const getYears = (data, yearRange, yearField) => {
+const getYears = (data, yearRange, config = {}) => {
   if (yearRange) return getYearsFromRange(yearRange).map((year) => `${year}`);
 
+  const yearField = config.mapping && config.mapping.year;
   if (!yearField) return [];
 
   const yearList = Array.from(new Set(data.map((item) => Number(item[yearField]))));
@@ -269,7 +270,7 @@ const processConfig = (config) => {
               const years =
                 config.yearRange && config.yearRange.length
                   ? getYears(data, config.yearRange)
-                  : getYears(data, null, config.mapping.year);
+                  : getYears(data, null, config);
 
               let selectors = [];
 
