@@ -171,9 +171,9 @@ const validConfigs = (config) => {
   }
 
   if (!config.mapping.subCounty) {
-    window.console.error('Invalid chart config: mapping.subCounty is required!');
+    window.console.warn('Potentially invalid chart config: mapping.subCounty may be required!');
 
-    return false;
+    return true;
   }
 
   return true;
@@ -301,13 +301,18 @@ const processConfig = (config) => {
                 }
               };
 
-              // call for default rendering
+              // call for default rendering, even for charts that are NOT sensitive to subcounty selection
               onChangeSubCounty(subCounty);
 
               // listen & react to changes in global state
               window.DIState.addListener(() => {
                 dichart.showLoading();
                 const { subCounty: selectedSubCounty } = window.DIState.getState;
+
+                // currently only listening to global sub-county selector
+                if (!config.mapping.subCounty) {
+                  return;
+                }
 
                 // only update if subcounty changes
                 if (!selectedSubCounty || subCounty === selectedSubCounty) {
@@ -319,6 +324,8 @@ const processConfig = (config) => {
 
                 dichart.hideLoading();
               });
+
+              dichart.hideLoading();
             } else {
               window.console.log('State is not defined');
             }
