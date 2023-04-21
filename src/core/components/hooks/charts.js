@@ -37,7 +37,6 @@ const useData = (config, defaultFilters = []) => {
   }, [data, filters]);
 
   const updateFilter = (filterId, value) => {
-    console.log(filterId, value);
     if (filters && filters.length) {
       setFilters(
         filters.map((filter) => {

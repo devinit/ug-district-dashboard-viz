@@ -62,6 +62,7 @@ const processConfig = (config) => {
       onAdd: (chartNodes) => {
         Array.prototype.forEach.call(chartNodes, (chartNode) => {
           chartNode.classList.add('dicharts--dimensions');
+          chartNode.parentElement.classList.add('auto-height');
           const dichart = new window.DICharts.Chart(chartNode.parentElement);
 
           dichart.showLoading();

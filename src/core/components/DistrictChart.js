@@ -22,7 +22,7 @@ const DistrictChart = (props) => {
     }
   }, [chart, props.data]);
 
-  return <div ref={ref} style={{ height: props.height || '100%' }} />;
+  return <div ref={ref} style={{ height: props.height || '450px' }} />;
 };
 
 DistrictChart.propTypes = {
