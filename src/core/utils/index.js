@@ -30,3 +30,24 @@ export const filterData = (data, filters) => {
 
   return filteredData;
 };
+
+export const getDefaultFilters = (config, subCounty) => {
+  const { mapping, selectors } = config;
+  const filterArray = [];
+  if (mapping.subCounty && subCounty) {
+    filterArray.push({
+      dataProperty: mapping.subCounty,
+      value: 'all',
+    });
+  }
+  if (selectors) {
+    selectors.forEach((selector) => {
+      filterArray.push({
+        dataProperty: selector.dataProperty,
+        value: selector.defaultValue ? selector.defaultValue.value : 'all',
+      });
+    });
+  }
+
+  return filterArray;
+};

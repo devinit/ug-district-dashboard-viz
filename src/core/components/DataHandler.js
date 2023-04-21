@@ -1,37 +1,27 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
-import fetchData from '../../utils/data';
-import { filterData, filterDataBySubCounty } from '../utils';
-import { getYears } from '../utils/charts';
+import React, { useEffect } from 'react';
+import { getDefaultFilters } from '../utils/index';
 import DistrictChart from './DistrictChart';
+import useData from './hooks/charts';
 import Selectors from './Selectors';
 
 const DataHandler = (props) => {
-  const [data, setData] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
-  const [years, setYears] = useState([]);
+  const { data, years, setFilters, updateFilter } = useData(props.config);
 
   useEffect(() => {
-    const { url, filters, yearRange } = props.config;
-    fetchData(url).then((originalData) => {
-      // if available, filter data
-      const rawData = filters ? filterData(originalData, filters) : originalData;
-      setData(rawData);
-      setFilteredData(rawData);
-      setYears(yearRange && yearRange.length ? getYears(data, props.config) : getYears(data, props.config));
-    });
+    setFilters(getDefaultFilters(props.config, props.subCounty));
   }, []);
 
   useEffect(() => {
     const { subCounty, config } = props;
     if (subCounty && config.mapping.subCounty) {
-      setFilteredData(filterDataBySubCounty(data, subCounty, config.mapping.subCounty));
+      updateFilter(config.mapping.subCounty, props.subCounty);
     }
   }, [props.subCounty]);
 
   const onChangeSelector = (selector, item) => {
-    console.log(selector, item);
+    updateFilter(selector.dataProperty, item.value);
   };
 
   return (
@@ -46,7 +36,7 @@ const DataHandler = (props) => {
       <DistrictChart
         className={classNames({ 'dicharts--padding-top': !props.config.selectors })}
         {...props}
-        data={filteredData}
+        data={data}
         years={years}
         height={props.config.selectors ? '85%' : '100%'}
       />
