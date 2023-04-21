@@ -8,6 +8,19 @@
   padding-top: 30px;
 }
 
+.dicharts--selectors--toggler {
+  display: flex;
+  align-items: end;
+}
+
+.button-group {
+  margin-right: 3rem;
+}
+
+.button-sm {
+  padding: 1rem;
+}
+
 .dicharts--number-of-schools,
 .dicharts--learners-enrolment,
 .dicharts--ple-performance-analysis {
