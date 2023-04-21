@@ -1,9 +1,11 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import fetchData from '../../utils/data';
 import { filterData, filterDataBySubCounty } from '../utils';
 import { getYears } from '../utils/charts';
 import DistrictChart from './DistrictChart';
+import Selectors from './Selectors';
 
 const DataHandler = (props) => {
   const [data, setData] = useState([]);
@@ -28,9 +30,26 @@ const DataHandler = (props) => {
     }
   }, [props.subCounty]);
 
+  const onChangeSelector = (selector, item) => {
+    console.log(selector, item);
+  };
+
   return (
     <>
-      <DistrictChart {...props} data={filteredData} years={years} />
+      {props.config.selectors ? (
+        <Selectors
+          configs={props.config.selectors}
+          onChange={onChangeSelector}
+          className="spotlight-banner data-selector--wrapper"
+        />
+      ) : null}
+      <DistrictChart
+        className={classNames({ 'dicharts--padding-top': !props.config.selectors })}
+        {...props}
+        data={filteredData}
+        years={years}
+        height={props.config.selectors ? '85%' : '100%'}
+      />
     </>
   );
 };

@@ -46,7 +46,7 @@ const Selectors = (props) => {
   const selectErrorMessage = '';
 
   return (
-    <ChartFilters selectErrorMessage={selectErrorMessage}>
+    <ChartFilters selectErrorMessage={selectErrorMessage} className={props.className}>
       {selectors.map((selector) => {
         const { label, options, defaultValue } = selector;
 
@@ -78,6 +78,7 @@ Selectors.propTypes = {
     })
   ),
   onChange: PropTypes.func,
+  className: PropTypes.string,
 };
 
 export default Selectors;
