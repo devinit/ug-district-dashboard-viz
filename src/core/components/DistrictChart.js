@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef, useState } from 'react';
+import { handleResize } from '../../charts/echarts/index';
 import { updateChart } from '../utils/charts';
 
 const DistrictChart = (props) => {
@@ -8,7 +9,9 @@ const DistrictChart = (props) => {
 
   useEffect(() => {
     if (ref.current) {
-      setChart(window.echarts.init(ref.current));
+      const chartInstance = window.echarts.init(ref.current);
+      setChart(chartInstance);
+      handleResize(chartInstance, ref.current);
     }
   }, []);
 
@@ -19,7 +22,7 @@ const DistrictChart = (props) => {
     }
   }, [chart, props.data]);
 
-  return <div ref={ref} style={{ height: '100%' }} />;
+  return <div ref={ref} style={{ height: props.height || '100%' }} />;
 };
 
 DistrictChart.propTypes = {
@@ -27,6 +30,7 @@ DistrictChart.propTypes = {
   subCounty: PropTypes.string,
   data: PropTypes.array,
   years: PropTypes.array,
+  height: PropTypes.string,
 };
 
 DistrictChart.defaultProps = {
