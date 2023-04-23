@@ -1,12 +1,13 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import DistrictTable from './DistrictTable';
 import { getDefaultFilters } from '../utils/index';
+import { parseTableData } from '../utils/tables';
 import DistrictChart from './DistrictChart';
+import DistrictTable from './DistrictTable';
 import useData from './hooks/charts';
 import Selectors from './Selectors';
-import { parseTableData } from '../utils/tables';
+import TableChartToggler from './TableChartToggler';
 
 const DataHandler = (props) => {
   const { data, years, setFilters, updateFilter } = useData(props.config);
@@ -35,14 +36,11 @@ const DataHandler = (props) => {
           onChange={onChangeSelector}
           className="spotlight-banner data-selector--wrapper dicharts--selectors--toggler"
         >
-          <div className="button-group">
-            <button type="button" className="button button-sm" onClick={() => setShowing('chart')}>
-              Chart
-            </button>
-            <button type="button" className="button button-sm" onClick={() => setShowing('table')}>
-              Table
-            </button>
-          </div>
+          <TableChartToggler
+            show={!!props.config.table}
+            onClickChart={() => setShowing('chart')}
+            onClickTable={() => setShowing('table')}
+          />
         </Selectors>
       ) : null}
       {showing === 'chart' ? (
