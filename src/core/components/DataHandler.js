@@ -40,6 +40,7 @@ const DataHandler = (props) => {
             show={!!props.config.table}
             onClickChart={() => setShowing('chart')}
             onClickTable={() => setShowing('table')}
+            activeButton={showing}
           />
         </Selectors>
       ) : null}

@@ -17,6 +17,31 @@
   margin-right: 3rem;
 }
 
+button.button-outline,
+.button.button-outline {
+  background: transparent;
+  color: inherit;
+}
+
+.button-group .button-outline {
+  border: 1px solid #357ba5;
+  border-left: none;
+  color: #357ba5;
+}
+
+.button-group .button-outline:first-child {
+  border-left: 1px solid #357ba5;
+}
+
+.button-group .button-outline:hover,
+.button-group .button-outline.active {
+  color: #fff;
+}
+
+.button-group .button-outline.active {
+  background: #357ba5;
+}
+
 .button-sm {
   padding: 1rem;
 }
