@@ -18,9 +18,9 @@ const DistrictChart = (props) => {
   useEffect(() => {
     if (chart && props.data) {
       const { subCounty, config, data, years } = props;
-      updateChart({ data, subCounty, years, chart, config });
+      updateChart({ data, subCounty, years, chart, config: { ...config, type: props.type || config.type } });
     }
-  }, [chart, props.data]);
+  }, [chart, props.data, props.type]);
 
   return <div ref={ref} style={{ height: props.height || '450px' }} />;
 };
@@ -31,6 +31,7 @@ DistrictChart.propTypes = {
   data: PropTypes.array,
   years: PropTypes.array,
   height: PropTypes.string,
+  type: PropTypes.string, // chart type e.g bar, line, area, pie
 };
 
 DistrictChart.defaultProps = {

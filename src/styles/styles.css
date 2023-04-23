@@ -8,13 +8,13 @@
   padding-top: 30px;
 }
 
-.dicharts--selectors--toggler {
+.dicharts--actions {
   display: flex;
   align-items: flex-end;
 }
 
 .button-group {
-  margin-right: 3rem;
+  margin-left: auto;
 }
 
 button.button-outline,
@@ -43,7 +43,7 @@ button.button-outline,
 }
 
 .button-sm {
-  padding: 1rem;
+  padding: 0.9rem 1rem;
 }
 
 .dicharts--number-of-schools,

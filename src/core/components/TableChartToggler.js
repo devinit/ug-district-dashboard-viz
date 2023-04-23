@@ -6,7 +6,7 @@ const TableChartToggler = (props) => {
   if (!props.show) return null;
 
   return (
-    <div className="button-group">
+    <div className={classNames('button-group', props.className)}>
       <button
         type="button"
         className={classNames('button button-sm button-outline', { active: props.activeButton === 'chart' })}
@@ -30,6 +30,7 @@ TableChartToggler.propTypes = {
   onClickChart: PropTypes.func,
   onClickTable: PropTypes.func,
   activeButton: PropTypes.string,
+  className: PropTypes.string,
 };
 
 TableChartToggler.defaultProps = { activeButton: 'chart' };
