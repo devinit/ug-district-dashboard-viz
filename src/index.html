@@ -363,13 +363,6 @@
       },
     ];
 
-    const barChartSeries = [
-      { stack: undefined, barGap: 0 },
-      { stack: undefined },
-      { stack: undefined },
-      { stack: undefined, label: { show: false } }
-    ];
-
     const state = {
       location: {
         name: 'Masindi',
@@ -442,6 +435,7 @@
             subcounty: masindiSubCounties,
           },
           options: {
+            stack: 'schools',
             legend: { show: true },
             yAxis: { name: 'Number of schools'}
           },
@@ -490,6 +484,7 @@
             subcounty: masindiSubCounties,
           },
           options: {
+            stack: 'enrolment',
             yAxis: { name: 'Pupils enrolled' },
           },
           table: {
@@ -518,10 +513,15 @@
           },
           aggregator: 'sum',
           type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
+          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
           options: {
             yAxis: { name: 'PLE Performance' },
-            series: barChartSeries
+            series: [
+              { barGap: 0 },
+              {},
+              {},
+              { label: { show: false } }
+            ]
           },
           selectorClassName: 'dicharts--ple-performance-selectors',
           selectors: [
