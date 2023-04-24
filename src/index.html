@@ -14,6 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet" />
   <link href="https://devinit.org/assets/css/di_website.min.2a5154f5c000.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.12.0/mapbox-gl.min.css" rel="stylesheet" />
+  <style>
+    .dicharts--secondary-enrolment {
+      height: 100% !important;
+    }
+  </style>
 </head>
 
 <body class="body">
@@ -221,7 +226,7 @@
     </main>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></scrip>
   <script src="https://d3js.org/d3.v4.js"></script>
   <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
   <script src="https://devinit.org/assets/visualisation/js/dicharts.8dcf468d3b56.js"></script>
@@ -457,8 +462,8 @@
             subcounty: kayungaSubCounties,
           },
           options: {
+            stack: 'schools',
             legend: { show: true },
-            xAxis: { boundaryGap: false },
             yAxis: { name: 'Number of schools'},
             series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
           },
@@ -495,6 +500,7 @@
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
           yearRange: [2016, 2018],
           type: 'bar',
+          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'area', label: 'Area Chart' }, { value: 'line', label: 'Line Chart' }],
           series: ['Government', 'Private'],
           mapping: {
             series: 'ownership',
@@ -506,9 +512,21 @@
             subcounty: kayungaSubCounties,
           },
           options: {
+            stack: 'enrolment',
             legend: { show: true },
             tooltip: { show: true },
             yAxis: { name: 'Number of students' },
+          },
+          table: {
+            target: 'education',
+            yearRange: [2016, 2018],
+            rows: ['Government', 'Private'],
+            mapping: {
+              rows: 'ownership',
+              year: 'year',
+              value: 'number_of_students',
+              subCounty: 'subcounty',
+            },
           },
         },
         {
@@ -570,6 +588,7 @@
           },
           aggregator: 'sum',
           type: 'bar',
+          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
           options: {
             yAxis: { name: 'PLE Performance' },
             series: barChartSeries
@@ -599,75 +618,19 @@
               ],
             },
           ],
-        },
-      ],
-      tables: [
-        {
-          target: 'education',
-          className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
-          yearRange: [2017, 2022],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'ownership',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subcounty: kayungaSubCounties,
-          },
-          selectorClassName: 'dicharts--table--number-of-schools-selectors',
-          selectors: [
-            {
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and Secondary' },
-              dataProperty: 'level',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' },
-              ],
+          table: {
+            yearRange: [2018, 2022],
+            rows: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
+            mapping: {
+              rows: 'grade',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
             },
-          ],
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
-          yearRange: [2016, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'Type',
-            year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/learner_enrollment.csv',
-          yearRange: [2018, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'type',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
           },
         },
       ],
+      tables: [],
     };
     if (window.DIState) {
       window.DIState.setState(state);
