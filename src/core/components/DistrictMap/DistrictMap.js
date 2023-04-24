@@ -44,7 +44,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
             default: '#D1CBCF',
             stops: getLocationStyles(data, mapConfig.range, mapConfig.colours, layerConfig.formatter),
           },
-          'fill-opacity': 0.75,
+          'fill-opacity': 0.9,
           'fill-outline-color': '#ffffff',
         }}
         onAdd={onAddHighlightLayer}
