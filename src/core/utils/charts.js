@@ -143,6 +143,7 @@ export const updateChart = ({ data, subCounty, years, config, chart }) => {
         verticalAlign: 'top',
       },
       name: 'Years',
+      boundaryGap: config.type !== 'area',
     },
     yAxis: {
       type: 'value',
