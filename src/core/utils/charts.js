@@ -133,7 +133,7 @@ export const updateChart = ({ data, subCounty, years, config, chart }) => {
   const options = deepMerge(defaultOptions, {
     responsive: false,
     legend: {
-      selectedMode: false,
+      selectedMode: true,
     },
     grid: {
       top: 60,

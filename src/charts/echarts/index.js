@@ -52,9 +52,10 @@ const defaultOptions = {
   tooltip: {
     trigger: 'axis',
     textStyle: {
+      color: '#32313f',
       fontFamily: 'Geomanist Regular,sans-serif',
     },
-    axisPointer: { type: 'none' },
+    axisPointer: { type: 'line', axis: 'x' },
   },
   toolbox: {
     showTitle: false,
@@ -70,6 +71,7 @@ const defaultOptions = {
       show: true,
       textStyle: {
         fontFamily: 'Geomanist Regular,sans-serif',
+        color: '#32313f',
         formatter(param) {
           return `<div>${param.title}</div>`; // user-defined DOM structure
         },
@@ -78,26 +80,40 @@ const defaultOptions = {
   },
   color: colorways.rainbow,
   xAxis: {
+    axisLine: {
+      show: true,
+      lineStyle: { color: '#ddd' },
+    },
     axisLabel: {
       fontFamily: 'Geomanist Regular,sans-serif',
       fontSize: 13,
+      color: '#32313f',
     },
     splitLine: {
       show: false,
     },
+    nameTextStyle: { color: '#32313f', fontFamily: 'Geomanist Regular,sans-serif' },
   },
   yAxis: {
     axisLabel: {
       fontFamily: 'Geomanist Regular,sans-serif',
       fontSize: 13,
+      color: '#32313f',
     },
-    splitLine: {
+    axisLine: {
       show: false,
+      lineStyle: { color: '#ddd' },
     },
+    axisTick: { show: false },
+    splitLine: { show: false },
+    nameTextStyle: { color: '#32313f', fontFamily: 'Geomanist Regular,sans-serif' },
   },
   axisPointer: { type: 'none' },
   grid: {
     top: 10,
+  },
+  textStyle: {
+    fontFamily: 'Geomanist Regular,sans-serif',
   },
 };
 
