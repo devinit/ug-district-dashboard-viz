@@ -130,29 +130,6 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Number of Schools</h3>
-          <div class="chart-container chart-container--full">
-            <div class="charts__chart">
-              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--table--number-of-schools-selectors"></div>
-              <div class="dicharts--table--number-of-schools"></div>
-              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
-
-              <div class="chart-loading">
-                <div class="chart-loading__block">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="row row--narrow">
           <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
@@ -661,37 +638,6 @@
         },
       ],
       tables: [
-        {
-          target: 'education',
-          className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
-          yearRange: [2016, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'Type',
-            year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: masindiSubCounties,
-          },
-          selectorClassName: 'dicharts--table--number-of-schools-selectors',
-          selectors: [
-            {
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and Secondary' },
-              dataProperty: 'level',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' },
-              ],
-            },
-          ],
-        },
         {
           target: 'education',
           className: 'dicharts--table--classroom-learners-ratio',
