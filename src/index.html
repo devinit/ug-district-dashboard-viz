@@ -522,6 +522,7 @@
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/raw/primary_school_enrolment.csv',
           // yearRange: [2014, 2021], // when not specified, year range is taken from the data
           // excludeYears: [2016, 2018], // used to exclude years you don't wish to appear
+          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
           series: ['Boys', 'Girls'],
           mapping: {
             series: 'gender',
@@ -534,6 +535,17 @@
           },
           options: {
             yAxis: { name: 'Pupils enrolled' },
+          },
+          table: {
+            yearRange: [2014, 2022],
+            excludeYears: [2015, 2016, 2017, 2018, 2019],
+            rows: ['Boys', 'Girls'],
+            mapping: {
+              rows: 'gender',
+              year: 'year',
+              value: 'subtotal',
+              subCounty: 'subcounty'
+            },
           },
         },
         {
