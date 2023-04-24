@@ -518,6 +518,7 @@
           },
           aggregator: 'sum',
           type: 'bar',
+          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
           options: {
             yAxis: { name: 'PLE Performance' },
             series: barChartSeries
@@ -547,6 +548,16 @@
               ],
             },
           ],
+          table: {
+            yearRange: [2018, 2020],
+            rows: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
+            mapping: {
+              rows: 'grade',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty'
+            },
+          },
         },
         {
           target: 'education',
