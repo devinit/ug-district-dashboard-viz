@@ -3,7 +3,9 @@ import { defaultSelectValue } from '.';
 
 export const parseTableData = (config, data, subCounty) => {
   const { rows: COLUMN_CAPTIONS, mapping } = config;
-  const years = getYearsFromRange(config.yearRange);
+  const years = getYearsFromRange(config.yearRange).filter(
+    (year) => !config.excludeYears || !config.excludeYears.includes(year)
+  );
   const headerRow = ['School Type'].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((item) => {
     const valuesByYear = {};
