@@ -59,17 +59,18 @@ const getSeries = (config, data, subCounty, years) => {
   const chartType = getChartType(config.type);
 
   if (chartType !== 'pie') {
+    const stack = !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'district-stack' : undefined;
     // create chart series object
     const series = seriesNames.map((seriesName, index) => ({
       name: seriesName,
       type: chartType,
-      stack: !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'Education' : undefined,
+      stack,
       areaStyle: config.type === 'area' ? {} : undefined,
       smooth: true,
       emphasis: { focus: 'series' },
       symbol: 'circle', // only used for line charts
       label: {
-        show: config.type !== 'line' && index === seriesNames.length - 1,
+        show: stack && index === seriesNames.length - 1,
         fontFamily: 'Geomanist Regular,sans-serif',
         position: 'top',
         formatter: (params) => {
