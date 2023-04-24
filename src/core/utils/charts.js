@@ -59,7 +59,7 @@ const getSeries = (config, data, subCounty, years) => {
   const chartType = getChartType(config.type);
 
   if (chartType !== 'pie') {
-    const stack = !config.type || ['area', 'bar', 'column'].includes(config.type) ? 'district-stack' : undefined;
+    const { stack } = config.options;
     // create chart series object
     const series = seriesNames.map((seriesName, index) => ({
       name: seriesName,
