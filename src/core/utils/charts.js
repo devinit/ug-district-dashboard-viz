@@ -67,8 +67,9 @@ const getSeries = (config, data, subCounty, years) => {
       areaStyle: config.type === 'area' ? {} : undefined,
       smooth: true,
       emphasis: { focus: 'series' },
+      symbol: 'circle', // only used for line charts
       label: {
-        show: index === seriesNames.length - 1,
+        show: config.type !== 'line' && index === seriesNames.length - 1,
         fontFamily: 'Geomanist Regular,sans-serif',
         position: 'top',
         formatter: (params) => {
