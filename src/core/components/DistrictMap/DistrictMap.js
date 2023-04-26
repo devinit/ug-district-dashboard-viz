@@ -28,7 +28,9 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
     });
   }
 
-  if (!loading && data.length) {
+  if (!loading && mapConfig.range && mapConfig.colours && data.length) {
+    const stops = getLocationStyles(data, mapConfig.range, mapConfig.colours, layerConfig.formatter);
+
     return hiddenLayers.concat(
       <BaseMapLayer
         key={COLOURED_LAYER}
@@ -42,7 +44,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
             property: layerConfig.nameProperty,
             type: 'categorical',
             default: '#D1CBCF',
-            stops: getLocationStyles(data, mapConfig.range, mapConfig.colours, layerConfig.formatter),
+            stops,
           },
           'fill-opacity': 0.9,
           'fill-outline-color': '#ffffff',

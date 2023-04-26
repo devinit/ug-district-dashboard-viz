@@ -80,7 +80,7 @@ export const processData = (data, indicator, year) => {
   let filteredData = filterData(data, indicator.filters);
   filteredData = year
     ? filteredData
-        .filter((item) => item[yearField] === `${year}`)
+        .filter((item) => `${item[yearField]}` === `${year}`)
         .map((item) => ({ name: item[location], value: Number(item[value]) }))
     : filteredData.map((item) => ({ name: item[location], value: Number(item[value]) }));
   if (indicator.aggregator) {
