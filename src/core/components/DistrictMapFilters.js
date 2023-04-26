@@ -9,7 +9,19 @@ import useData from './hooks/DistrictMapFilters';
 const DistrictMapFilters = () => {
   const { filters, topics, filterOptions, updateFilterOptions } = useContext(DistrictMapContext);
   const { topicOptions, indicatorOptions, yearOptions } = useData(topics);
-  const { year } = filterOptions;
+  const { year, indicator } = filterOptions;
+
+  const onChange = (item, filter, currentFilterValue) => {
+    if (Array.isArray(item) && item.length) {
+      if (item[0].value !== currentFilterValue) {
+        updateFilterOptions({ [filter]: item[0].value });
+      }
+    } else if (item && !Array.isArray(item)) {
+      if (item.value !== currentFilterValue) {
+        updateFilterOptions({ [filter]: item && item.value });
+      }
+    }
+  };
 
   return (
     <form className="form">
@@ -33,11 +45,15 @@ const DistrictMapFilters = () => {
           <Select
             label={filters.indicatorLabel}
             options={indicatorOptions}
-            defaultValue={[indicatorOptions[0]]}
+            value={[
+              indicator
+                ? indicatorOptions.find((optn) => optn.value === indicator) || indicatorOptions[0]
+                : indicatorOptions[0],
+            ]}
             classNamePrefix="indicator-selector"
             isClearable={false}
             css={{ minWidth: '100%', marginTop: '1em' }}
-            onChange={(item) => updateFilterOptions({ indicator: item && item.value })}
+            onChange={(item) => onChange(item, 'indicator', indicator)}
           />
         ) : null}
         {yearOptions && yearOptions.length ? (
@@ -48,17 +64,7 @@ const DistrictMapFilters = () => {
             classNamePrefix="year-selector"
             isClearable={false}
             css={{ minWidth: '100%', marginTop: '1em' }}
-            onChange={(item) => {
-              if (Array.isArray(item) && item.length) {
-                if (item[0].value !== year) {
-                  updateFilterOptions({ year: item[0].value });
-                }
-              } else if (item && !Array.isArray(item)) {
-                if (item.value !== year) {
-                  updateFilterOptions({ year: item.value });
-                }
-              }
-            }}
+            onChange={(item) => onChange(item, 'year', year)}
           />
         ) : null}
       </div>
