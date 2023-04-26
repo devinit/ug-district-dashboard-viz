@@ -89,29 +89,6 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Number of Schools (Table)</h3>
-          <div class="chart-container chart-container--full">
-            <div class="charts__chart">
-              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
-              <div class="dicharts--table--number-of-schools-selectors"></div>
-              <div class="dicharts--table--number-of-schools"></div>
-              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
-
-              <div class="chart-loading">
-                <div class="chart-loading__block">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="row row--narrow">
           <h3 class="type-l type-l--trailer">Number of Schools (Chart)</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
@@ -380,6 +357,176 @@
           },
         ],
       },
+      {
+        id: 'production',
+        name: 'Production',
+        dashboardUrl: '',
+        dashboardButtonCaption: 'View Production Dashboard',
+        indicators: [
+          {
+            id: 'maizeProduction',
+            name: 'Maize Production (in tons)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [2000, 4000, 6000, 8000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
+            yearRange: [2017, 2021],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Maize'],
+            },
+          },
+          {
+            id: 'bananaProduction',
+            name: 'Banana Production (in tons)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [2000, 4000, 6000, 8000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
+            yearRange: [2017, 2021],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Bananas'],
+            },
+          },
+          {
+            id: 'cassaveProduction',
+            name: 'Cassava Production (in tons)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [2000, 4000, 6000, 8000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
+            yearRange: [2017, 2021],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Cassava'],
+            },
+          },
+          {
+            id: 'beansProduction',
+            name: 'Beans Production (in tons)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [2000, 4000, 6000, 8000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
+            yearRange: [2017, 2021],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Beans'],
+            },
+          },
+          {
+            id: 'cattleProduction',
+            name: 'Number of Cattle (local)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Local cattle'],
+            },
+          },
+          {
+            id: 'exoticCattleProduction',
+            name: 'Number of Cattle (exotic)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Exotic cross Breed Cattle'],
+            },
+          },
+          {
+            id: 'goalProduction',
+            name: 'Number of Goats (local)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Local Goats'],
+            },
+          },
+          {
+            id: 'pigProduction',
+            name: 'Number of Pigs',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Pigs'],
+            },
+          },
+          {
+            id: 'chickenProduction',
+            name: 'Number of Chicken (local)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Local Chicken'],
+            },
+          },
+        ]
+      }
     ];
 
     const barChartSeries = [
