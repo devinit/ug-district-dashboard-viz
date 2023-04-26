@@ -32,13 +32,13 @@ const ProductionTab = (props) => {
   return (
     <TabContainer id={id} label={tabOptions.label || 'Production'} active={!!props.active || tabOptions.active}>
       <TabContent>
-        {heading ? (
-          <TabContentHeader>
-            <div
-              css={css`
-                display: flex;
-              `}
-            >
+        <TabContentHeader>
+          <div
+            css={css`
+              display: flex;
+            `}
+          >
+            {heading ? (
               <div
                 css={css`
                   margin-right: 1rem;
@@ -60,12 +60,10 @@ const ProductionTab = (props) => {
                 </b>
                 <SpotlightPopup description={`Last updated: ${heading.lastUpdated}`} />
               </div>
-              {renderDashboardButton()}
-            </div>
-          </TabContentHeader>
-        ) : (
-          renderDashboardButton()
-        )}
+            ) : null}
+            {renderDashboardButton()}
+          </div>
+        </TabContentHeader>
         {data && data.production && data.production.length ? (
           <div className="l-2up">
             {data.production
