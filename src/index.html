@@ -361,6 +361,32 @@
           },
         ],
       },
+      {
+        id: 'production',
+        name: 'Production',
+        dashboardUrl: '',
+        dashboardButtonCaption: 'View Production Dashboard',
+        indicators: [
+          {
+            id: 'maizeProduction',
+            name: 'Maize Production (in tons)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [2000, 4000, 6000, 8000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/estimated%20food%20security%20crop%20production%20levels.json',
+            yearRange: [2017, 2021],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Maize'],
+            },
+          },
+        ]
+      }
     ];
 
     const state = {
