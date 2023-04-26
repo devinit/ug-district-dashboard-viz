@@ -1,0 +1,7 @@
+district_id,subcounty_id,year,subcounty,ownership,pre_primary,teacher_training_colleges,technical_colleges,vocational_schools,technical_schools,universities
+d101,,2020,,Government,0,2,1,0,0,0
+d101,,2020,,Private,86,0,0,5,0,0
+d101,,2018,,Government,0,1,1,0,0,0
+d101,,2018,,Private,69,0,0,5,0,1
+d101,,2016,,Government,0,1,1,0,0,0
+d101,,2016,,Private,69,0,0,5,0,1
