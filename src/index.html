@@ -439,6 +439,96 @@
               crop: ['Beans'],
             },
           },
+          {
+            id: 'cattleProduction',
+            name: 'Number of Cattle (local)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Local cattle'],
+            },
+          },
+          {
+            id: 'exoticCattleProduction',
+            name: 'Number of Cattle (exotic)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Exotic cross Breed Cattle'],
+            },
+          },
+          {
+            id: 'goalProduction',
+            name: 'Number of Goats (local)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Local Goats'],
+            },
+          },
+          {
+            id: 'pigProduction',
+            name: 'Number of Pigs',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Pigs'],
+            },
+          },
+          {
+            id: 'chickenProduction',
+            name: 'Number of Chicken (local)',
+            //description: 'All government and private schools in Masindi district, by sub-county',
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [15000, 30000, 50000, 80000],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+            yearRange: [2013, 2022],
+            mapping: {
+              location: 'subcounty',
+              value: 'value',
+              year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+              crop: ['Local Chicken'],
+            },
+          },
         ]
       }
     ];
