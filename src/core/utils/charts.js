@@ -85,7 +85,10 @@ const getSeries = (config, data, subCounty, years) => {
       data: years.map((year) => {
         const yearValues = [];
         data.forEach((item) => {
-          if (item[mapping.year] === year && item[mapping.series].toLowerCase() === seriesName.toLowerCase()) {
+          if (
+            `${item[mapping.year] || ''}` === `${year}` &&
+            item[mapping.series].toLowerCase() === seriesName.toLowerCase()
+          ) {
             yearValues.push(Number(item[mapping.value]));
           }
         });
@@ -165,4 +168,5 @@ export const updateChart = ({ data, subCounty, years, config, chart }) => {
   // set colour - has to be done after the options merge above or it won't stick
   options.color = colorways.cerulean;
   chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
+  console.log(chart.getOption(), data);
 };
