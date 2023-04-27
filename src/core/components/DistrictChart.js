@@ -17,8 +17,8 @@ const DistrictChart = (props) => {
 
   useEffect(() => {
     if (chart && props.data) {
-      const { subCounty, config, data, years } = props;
-      updateChart({ data, subCounty, years, chart, config: { ...config, type: props.type || config.type } });
+      const { config, data, years } = props;
+      updateChart({ data, years, chart, config: { ...config, type: props.type || config.type } });
     }
   }, [chart, props.data, props.type]);
 

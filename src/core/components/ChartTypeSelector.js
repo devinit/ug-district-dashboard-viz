@@ -10,7 +10,7 @@ const ChartTypeSelector = (props) => (
     isClearable={false}
     defaultValue={[props.options[0]]}
     onChange={(item) => props.onChange(item.value)}
-    css={{ minWidth: '150px', marginLeft: '2em' }}
+    css={{ minWidth: '200px', marginLeft: '2em' }}
   />
 );
 
