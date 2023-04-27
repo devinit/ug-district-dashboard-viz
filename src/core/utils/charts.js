@@ -28,7 +28,7 @@ export const getYears = (data, config = {}) => {
 };
 
 const getChartType = (type) => {
-  if (!type) return 'bar';
+  if (!type || ['bar-stacked', 'column-stacked'].includes(type)) return 'bar';
 
   if (type === 'area') return 'line';
 
@@ -59,7 +59,8 @@ const getSeries = (config, data, years) => {
   const chartType = getChartType(config.type);
 
   if (chartType !== 'pie') {
-    const { stack } = config.options;
+    const stack =
+      !config.type || ['area', 'bar-stacked', 'column-stacked'].includes(config.type) ? 'district-stack' : undefined;
     // create chart series object
     const series = seriesNames.map((seriesName, index) => ({
       name: seriesName,
