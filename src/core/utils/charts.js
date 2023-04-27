@@ -68,7 +68,13 @@ const getSeries = (config, data, years) => {
       stack,
       areaStyle: config.type === 'area' ? {} : undefined,
       smooth: true,
-      emphasis: { focus: 'series' },
+      emphasis: {
+        focus: 'series',
+        label: {
+          show: true,
+          formatter: (params) => formatNumber(params.value),
+        },
+      },
       symbol: 'circle', // only used for line charts
       label: {
         show: stack && index === seriesNames.length - 1,
