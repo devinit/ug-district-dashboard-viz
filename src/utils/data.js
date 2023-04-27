@@ -10,14 +10,14 @@ const fetchCSVData = (url) =>
     });
   });
 
-export const formatNumber = (value, defaultForNan = '') => {
+export const formatNumber = (value, defaultForNan = '', options = {}) => {
   const formattedNumber = Number(value);
 
   if (Number.isNaN(formattedNumber)) {
     return defaultForNan;
   }
 
-  return new Intl.NumberFormat('en-GB', { maximumFractionDigits: 2 }).format(formattedNumber);
+  return new Intl.NumberFormat('en-GB', { maximumFractionDigits: 2, ...options }).format(formattedNumber);
 };
 
 export const parseValuesToNumbers = (data, valueField) =>

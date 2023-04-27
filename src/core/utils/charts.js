@@ -80,7 +80,7 @@ const getSeries = (config, data, years) => {
             total += parseInt(series[i].data[params.dataIndex], 10);
           }
 
-          return formatNumber(total);
+          return formatNumber(total, '', { notation: 'compact' });
         },
       },
       data: years.map((year) => {
@@ -155,6 +155,9 @@ export const updateChart = ({ data, years, config, chart }) => {
       type: 'value',
       nameLocation: 'middle',
       nameGap: 50,
+      axisLabel: {
+        formatter: (value) => formatNumber(value, '', { notation: 'compact' }),
+      },
     },
     toolbox: {
       showTitle: false,
