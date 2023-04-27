@@ -802,9 +802,10 @@
           className: 'dicharts--crop-production',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
           type: 'area',
-          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
           yearRange: [2017, 2021],
-          series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+          // series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+          series: ['Maize', 'Cassava', 'Bananas', 'Rice', 'Sweet Potatoes'],
           mapping: {
             series: 'crop',
             year: 'year',
@@ -815,7 +816,6 @@
             subcounty: kayungaSubCounties,
           },
           options: {
-            stack: 'crops',
             legend: { show: true },
             yAxis: { name: 'Crop production in tons'},
             series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
