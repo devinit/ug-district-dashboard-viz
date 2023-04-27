@@ -15,7 +15,16 @@
   <link href="https://devinit.org/assets/css/di_website.min.2a5154f5c000.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.12.0/mapbox-gl.min.css" rel="stylesheet" />
   <style>
-    .dicharts--secondary-enrolment {
+    .dicharts--secondary-enrolment,
+    .dicharts--teacher-student-ratio-secondary,
+    .dicharts--primary-teachers,
+    .dicharts--crop-production-legumes,
+    .dicharts--crop-production,
+    .dicharts--livestock,
+    .dicharts--goat-breeds,
+    .dicharts--cattle-breeds,
+    .dicharts--poultry,
+    .dicharts--chicken-by-purpose {
       height: 100% !important;
     }
   </style>
@@ -276,6 +285,72 @@
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
               <div class="dicharts--poultry"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Cattle Breeds</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--cattle-breeds"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Goat Breeds</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--goat-breeds"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Chicken by Purpose</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--chicken-by-purpose"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -993,6 +1068,108 @@
             target: 'production',
             yearRange: [2013, 2022],
             rows: ['Local Chicken', 'Ducks', 'Turkeys'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--cattle-breeds',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local cattle', 'Exotic cross Breed Cattle'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of cattle'},
+            // series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local cattle', 'Exotic cross Breed Cattle'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--goat-breeds',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local Goats', 'Exotic Cross Breed Goats'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of goats'},
+            // series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local Goats', 'Exotic Cross Breed Goats'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--chicken-by-purpose',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local Chicken', 'Layers', 'Broilers'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of goats'},
+            // series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local Chicken', 'Layers', 'Broilers'],
             mapping: {
               rows: 'crop',
               year: 'year',
