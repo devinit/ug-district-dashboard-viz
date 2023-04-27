@@ -54,7 +54,7 @@ const getPieSeriesValue = (data, seriesName, config) => {
   return sum; // leaving room for other aggregators
 };
 
-const getSeries = (config, data, subCounty, years) => {
+const getSeries = (config, data, years) => {
   const { series: seriesNames, mapping } = config;
   const chartType = getChartType(config.type);
 
@@ -132,7 +132,7 @@ const getSeries = (config, data, subCounty, years) => {
   return series;
 };
 
-export const updateChart = ({ data, subCounty, years, config, chart }) => {
+export const updateChart = ({ data, years, config, chart }) => {
   const options = deepMerge(defaultOptions, {
     responsive: false,
     legend: {
@@ -163,10 +163,9 @@ export const updateChart = ({ data, subCounty, years, config, chart }) => {
         },
       },
     },
-    series: getSeries(config, data, subCounty, years),
+    series: getSeries(config, data, years),
   });
   // set colour - has to be done after the options merge above or it won't stick
   options.color = colorways.cerulean;
   chart.setOption(deepMerge(options, config.options || {}, { arrayMerge: combineMerge }));
-  console.log(chart.getOption(), data);
 };
