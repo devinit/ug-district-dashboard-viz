@@ -203,6 +203,28 @@
     </main>
   </div>
 
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Food Security Crop Production</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--crop-production"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></scrip>
   <script src="https://d3js.org/d3.v4.js"></script>
   <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
@@ -591,186 +613,36 @@
         ],
       },
       charts: [
+
         {
-          target: 'education',
-          className: 'dicharts--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_schools.csv',
+          target: 'production',
+          className: 'dicharts--crop-production',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
           type: 'area',
           typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
-          yearRange: [2017, 2022],
-          series: ['Government', 'Private'],
+          yearRange: [2017, 2021],
+          series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
           mapping: {
-            series: 'ownership',
+            series: 'crop',
             year: 'year',
             value: 'value',
             subCounty: 'subcounty',
-            level: 'level',
           },
           filters: {
             subcounty: kayungaSubCounties,
           },
           options: {
-            stack: 'schools',
+            stack: 'crops',
             legend: { show: true },
-            yAxis: { name: 'Number of schools'},
+            yAxis: { name: 'Crop production in tons'},
             series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
           },
-          selectorClassName: 'dicharts--number-of-schools__selectors',
-          selectors: [
-            {
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' }
-              ],
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and secondary' },
-              valueProperty: 'value',
-              labelProperty: 'label',
-              dataProperty: 'level'
-            },
-          ],
           table: {
-            target: 'education',
-            yearRange: [2017, 2022],
-            rows: ['Government', 'Private'],
+            target: 'production',
+            yearRange: [2017, 2021],
+            rows: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
             mapping: {
-              rows: 'ownership',
-              year: 'year',
-              value: 'value',
-              subCounty: 'subcounty',
-              level: 'level',
-            },
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--secondary-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20students%20and%20teachers%20in%20secondary%20schools.csv',
-          yearRange: [2016, 2018],
-          type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'area', label: 'Area Chart' }, { value: 'line', label: 'Line Chart' }],
-          series: ['Government', 'Private'],
-          mapping: {
-            series: 'ownership',
-            year: 'year',
-            value: 'number_of_students',
-            subCounty: 'subcounty',
-          },
-          filters: {
-            subcounty: kayungaSubCounties,
-          },
-          options: {
-            stack: 'enrolment',
-            legend: { show: true },
-            tooltip: { show: true },
-            yAxis: { name: 'Number of students' },
-          },
-          table: {
-            target: 'education',
-            yearRange: [2016, 2018],
-            rows: ['Government', 'Private'],
-            mapping: {
-              rows: 'ownership',
-              year: 'year',
-              value: 'number_of_students',
-              subCounty: 'subcounty',
-            },
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--teacher-student-ratio-secondary',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/secondary_ratio_of_teachers_to_students.json',
-          yearRange: [2016, 2018],
-          type: 'bar',
-          series: ['Government'],
-          mapping: {
-            series: 'ownership',
-            year: 'year',
-            value: 'ratio',
-            subCounty: 'subcounty',
-          },
-          filters: {
-            subcounty: kayungaSubCounties,
-          },
-          options: {
-            legend: { show: false },
-            tooltip: { show: false },
-            yAxis: { name: 'Teacher to student ratio' },
-          },
-          aggregator: 'avg',
-        },
-        {
-          target: 'education',
-          className: 'dicharts--primary-teachers',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number_of_teachers_in_primary_schools.json',
-          yearRange: [2022, 2022],
-          type: 'bar',
-          series: ['Male', 'Female'],
-          mapping: {
-            series: 'gender',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-          },
-          filters: {
-            subcounty: kayungaSubCounties,
-          },
-          options: {
-            yAxis: { name: 'Number of teachers' },
-            series: [{ stack: undefined }]
-          },
-          aggregator: 'avg',
-        },
-        {
-          target: 'education',
-          className: 'dicharts--ple-performance-analysis',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/ple_performance.json',
-          yearRange: [2018, 2022],
-          series: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
-          mapping: {
-            series: 'grade',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-          },
-          aggregator: 'sum',
-          type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
-          options: {
-            yAxis: { name: 'PLE Performance' },
-            series: barChartSeries
-          },
-          selectorClassName: 'dicharts--ple-performance-selectors',
-          selectors: [
-            {
-              label: 'Select gender',
-              defaultValue: { value: 'all', label: 'All' },
-              dataProperty: 'gender',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'male', label: 'Male' },
-                { value: 'female', label: 'Female' },
-              ],
-            },
-            {
-              label: 'Select ownership',
-              defaultValue: { value: 'all', label: 'All' },
-              dataProperty: 'ownership',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'government', label: 'Government' },
-                { value: 'private', label: 'Private' },
-              ],
-            },
-          ],
-          table: {
-            yearRange: [2018, 2022],
-            rows: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
-            mapping: {
-              rows: 'grade',
+              rows: 'crop',
               year: 'year',
               value: 'value',
               subCounty: 'subcounty',
