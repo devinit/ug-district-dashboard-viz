@@ -14,6 +14,20 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet" />
   <link href="https://devinit.org/assets/css/di_website.min.2a5154f5c000.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.12.0/mapbox-gl.min.css" rel="stylesheet" />
+  <style>
+    .dicharts--secondary-enrolment,
+    .dicharts--teacher-student-ratio-secondary,
+    .dicharts--primary-teachers,
+    .dicharts--crop-production-legumes,
+    .dicharts--crop-production,
+    .dicharts--livestock,
+    .dicharts--goat-breeds,
+    .dicharts--cattle-breeds,
+    .dicharts--poultry,
+    .dicharts--chicken-by-purpose {
+      height: 100% !important;
+    }
+  </style>
 </head>
 
 <body class="body">
@@ -158,6 +172,160 @@
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
               <div class="dicharts--education-institutions"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Food Security Crop Production</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--crop-production"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Food Security Crop Production (Legumes)</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--crop-production-legumes"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Number of Livestock</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--livestock"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Number of Poultry</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--poultry"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Cattle Breeds</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--cattle-breeds"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Goat Breeds</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--goat-breeds"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Chicken by Purpose</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--chicken-by-purpose"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -757,6 +925,246 @@
                 label: { formatter: '{b} ({c})' }
               }
             ]
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--crop-production',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/estimated%20food%20security%20crop%20production%20levels.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2017, 2021],
+          // series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+          series: ['Maize', 'Cassava', 'Bananas', 'Rice', 'Sweet Potatoes'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Crop production in tons'},
+            series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2017, 2021],
+            rows: ['Maize', 'Cassava', 'Bananas', 'Rice', 'Sweet Potatoes'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--crop-production-legumes',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/estimated%20food%20security%20crop%20production%20levels.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2017, 2021],
+          // series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+          series: ['Beans', 'Groundnuts'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Crop production in tons'},
+            series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2017, 2021],
+            rows: ['Beans', 'Groundnuts'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--livestock',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local cattle', 'Local Goats', 'Pigs', 'Sheep'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of livestock'},
+            series: ['Local cattle', 'Local Goats', 'Pigs', 'Sheep'].map(() => ({ label: { show: false } }))
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local cattle', 'Local Goats', 'Pigs', 'Sheep'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--poultry',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local Chicken', 'Ducks', 'Turkeys'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of poultry'},
+            series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local Chicken', 'Ducks', 'Turkeys'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--cattle-breeds',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local cattle', 'Exotic cross Breed Cattle'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of cattle'},
+            // series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local cattle', 'Exotic cross Breed Cattle'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--goat-breeds',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local Goats', 'Exotic Cross Breed Goats'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of goats'},
+            // series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local Goats', 'Exotic Cross Breed Goats'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--chicken-by-purpose',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local Chicken', 'Layers', 'Broilers'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: masindiSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of goats'},
+            // series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local Chicken', 'Layers', 'Broilers'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
           },
         },
       ],
