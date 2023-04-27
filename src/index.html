@@ -225,6 +225,28 @@
         </div>
       </section>
 
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Food Security Crop Production (Legumes)</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--crop-production-legumes"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></scrip>
   <script src="https://d3js.org/d3.v4.js"></script>
   <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
@@ -806,6 +828,41 @@
           yearRange: [2017, 2021],
           // series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
           series: ['Maize', 'Cassava', 'Bananas', 'Rice', 'Sweet Potatoes'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Crop production in tons'},
+            series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2017, 2021],
+            rows: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--crop-production-legumes',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/estimated%20food%20security%20crop%20production%20levels.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2017, 2021],
+          // series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+          series: ['Beans', 'Groundnuts'],
           mapping: {
             series: 'crop',
             year: 'year',
