@@ -32,7 +32,11 @@ const DataHandler = (props) => {
 
   return (
     <>
-      <div className="spotlight-banner data-selector--wrapper dicharts--actions">
+      <div
+        className={classNames('spotlight-banner data-selector--wrapper dicharts--actions', {
+          'align-left': !props.config.selectors,
+        })}
+      >
         {props.config.selectors ? <Selectors configs={props.config.selectors} onChange={onChangeSelector} /> : null}
         <TableChartToggler
           show={!!props.config.table}

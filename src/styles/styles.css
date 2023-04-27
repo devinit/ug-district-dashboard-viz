@@ -17,6 +17,10 @@
   margin-left: auto;
 }
 
+.dicharts--actions.align-left .button-group {
+  margin-left: 0;
+}
+
 button.button-outline,
 .button.button-outline {
   background: transparent;
