@@ -590,8 +590,8 @@
           target: 'education',
           className: 'dicharts--number-of-schools',
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-          type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
+          type: 'bar-stacked',
+          typeOptions: [{ value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
           // yearRange: [2014, 2022],
           series: ['Government', 'Private'],
           mapping: {
@@ -605,7 +605,6 @@
             subcounty: masindiSubCounties,
           },
           options: {
-            stack: 'schools',
             legend: { show: true },
             yAxis: { name: 'Number of schools'}
           },
@@ -642,7 +641,8 @@
           url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/primary_school_enrolment.csv',
           // yearRange: [2014, 2021], // when not specified, year range is taken from the data
           // excludeYears: [2016, 2018], // used to exclude years you don't wish to appear
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
+          type: 'bar-stacked',
+          typeOptions: [{ value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
           series: ['Boys', 'Girls'],
           mapping: {
             series: 'gender',
@@ -654,7 +654,6 @@
             subcounty: masindiSubCounties,
           },
           options: {
-            stack: 'enrolment',
             yAxis: { name: 'Pupils enrolled' },
           },
           table: {
@@ -683,7 +682,7 @@
           },
           aggregator: 'sum',
           type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'area', label: 'Area Chart' }, { value: 'line', label: 'Line Chart' }],
           options: {
             yAxis: { name: 'PLE Performance' },
             series: [
