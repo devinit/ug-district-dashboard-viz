@@ -269,6 +269,28 @@
         </div>
       </section>
 
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Number of Poultry</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--poultry"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></scrip>
   <script src="https://d3js.org/d3.v4.js"></script>
   <script src="https://devinit.org/assets/js/app.bundle.15a22136aec7.js"></script>
@@ -931,12 +953,46 @@
           options: {
             legend: { show: true },
             yAxis: { name: 'Number of livestock'},
-            series: [{ symbol: 'circle', label: { show: false } }, { symbol: 'circle', label: { show: false } }]
+            series: ['Local cattle', 'Local Goats', 'Pigs', 'Sheep'].map(() => ({ label: { show: false } }))
           },
           table: {
             target: 'production',
             yearRange: [2013, 2022],
             rows: ['Local cattle', 'Local Goats', 'Pigs', 'Sheep'],
+            mapping: {
+              rows: 'crop',
+              year: 'year',
+              value: 'value',
+              subCounty: 'subcounty',
+            },
+          },
+        },
+        {
+          target: 'production',
+          className: 'dicharts--poultry',
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+          type: 'area',
+          typeOptions: [{ value: 'area', label: 'Area Chart' }, { value: 'bar-stacked', label: 'Bar Chart (Stacked)' }, { value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }],
+          yearRange: [2013, 2022],
+          series: ['Local Chicken', 'Ducks', 'Turkeys'],
+          mapping: {
+            series: 'crop',
+            year: 'year',
+            value: 'value',
+            subCounty: 'subcounty',
+          },
+          filters: {
+            subcounty: kayungaSubCounties,
+          },
+          options: {
+            legend: { show: true },
+            yAxis: { name: 'Number of poultry'},
+            series: [{ label: { show: false } }, { label: { show: false } }, { label: { show: false } }]
+          },
+          table: {
+            target: 'production',
+            yearRange: [2013, 2022],
+            rows: ['Local Chicken', 'Ducks', 'Turkeys'],
             mapping: {
               rows: 'crop',
               year: 'year',
