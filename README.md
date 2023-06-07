@@ -200,6 +200,7 @@ Here is a full configuration for global selectors/dropdowns/filters.
 ## Key Facts config
 
 Here is a full config for the Key Facts tab widget.
+Example data URL [here](https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv)
 
         const state = {
                 keyFacts: { // state property for this widget.
