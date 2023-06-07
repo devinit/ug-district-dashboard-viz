@@ -127,3 +127,51 @@ Here a full configuration for charts, with a provision to toggle between a chart
                         },
                 }
         }
+
+
+### Map Config
+
+Here a full configuration for the maps.
+
+        const state = {
+                location: { // configure the location context of the dashboard. This mostly affects the map.
+                        name: 'Masindi', // location name - should match a location on the map. The Ugandan map highlights this location.
+                        fullName: 'Masindi District',
+                        coordinates: [31.766240227362417, 1.8818134163990712], // array with latitued and longitude - default zoom coordinates when the map is initially rendered
+                },
+                map: {
+                        filters: { // used to customise the labels for the 3 available filters.
+                                topicLabel: 'Select a topic to explore',
+                                indicatorLabel: 'Choose an indicator',
+                                yearLabel: 'Choose a year',
+                        },
+                        data: [ // an array that contains topics/themes that are to be rendered on the map
+                                {
+                                        id: 'education', // id of the topic
+                                        name: 'Education', // name of the topic
+                                        dashboardUrl: '', // if provided, a button appears on the top left of the map to navigate to this URL
+                                        dashboardButtonCaption: 'View Education Dashboard', // button caption
+                                        indicators: [ // populates the indicators filter/dropdown for this topic - the map renders data for a selected indicator.
+                                                {
+                                                        id: 'numberOfSchools', // indicator ID
+                                                        name: 'Number of Primary Schools', // name of indicator as will appear in dropdown, tooltips and legend
+                                                        description: 'Description Goes Here!', // a brief description of the indicator - appears above the legend.
+                                                        url: '', // data source URL - CSV, JSON or API endpoint that returns JSON data
+                                                        yearRange: [2016, 2021], // max and min year range - use to generate years for the year filter.
+                                                        colours: ['#faa2c1', '#f06595', '#d6336c'],  // a list of hex colours for each range of data
+                                                        range: [5, 10, 15, 20], // groups values into sepecified ranges e.g < 5, 5 - 10, 10 - 15, 15 - 20, > 20 - the specified colours map to these ranges and highlight different values on the map.
+                                                        mapping: { // maps expected data to available columns in the provided data source.
+                                                                location: 'SubCounty', // location column
+                                                                value: 'Value', // value column
+                                                                year: 'year', // year column
+                                                        },
+                                                        aggregator: 'sum', // either sum, avg
+                                                        filters: {
+                                                                level: ['primary'], // filters data for a specified column e.g. only renders rows that have a level === 'primary'
+                                                        },
+                                                },
+                                        ]
+                                }
+                        ]
+                }
+        }
