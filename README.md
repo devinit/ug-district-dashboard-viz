@@ -195,3 +195,26 @@ Here is a full configuration for global selectors/dropdowns/filters.
                         },
                 ]
         }
+
+
+## Key Facts config
+
+Here is a full config for the Key Facts tab widget.
+
+        const state = {
+                keyFacts: { // state property for this widget.
+                        url: '', // data source URL - the stats that are show are taken from this data source. No mapping, so not as flexible as the others.
+                        tabs: [
+                                {
+                                        id: 'overview', // id of tab
+                                        show: true, // defaults to true
+                                        label: 'Overview Tab', // label of the tab
+                                },
+                                {
+                                        id: 'education',
+                                        dashboardURL: '', // when undefined, button is not shown
+                                        dashboardButtonCaption: 'View Education Dashboard', // button caption
+                                },
+                        ],
+                },
+        }
