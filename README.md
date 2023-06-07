@@ -175,3 +175,23 @@ Here a full configuration for the maps.
                         ]
                 }
         }
+
+
+## Selector Config
+
+Here is a full configuration for global selectors/dropdowns/filters.
+
+        const state = {
+                selectors: [ // an array of objects, each corresponding to a dropdown
+                        {
+                                id: 'subcounty', // id of the selector
+                                url: '', // data source of the selector
+                                data: [], // an array of objects - dropdown options. Optional - Only need either this or URL.
+                                label: 'Select sub-county', // label of the selector
+                                defaultValue: { value: 'all', label: 'All sub-counties' }, // a value of `all` is expected for when no option is selected.
+                                stateProperty: 'subCounty', // which state property to update when this value changes. `subCounty` is the expected property for a subcounty selector
+                                valueProperty: 'Name', // value column
+                                labelProperty: 'Name', // label column
+                        },
+                ]
+        }
