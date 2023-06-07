@@ -6,9 +6,19 @@ import { getYears } from '../../utils/charts';
 
 const useData = (config, defaultFilters = []) => {
   const { url, yearRange } = config;
-  const { data, error } = useSWR(url, () =>
-    fetchData(url).then((originalData) => (config.filters ? filterData(originalData, config.filters) : originalData))
-  );
+  const { data, error } = useSWR(url || config.className, () => {
+    if (config.data && Array.isArray(config.data)) {
+      return config.data;
+    }
+
+    if (url) {
+      return fetchData(url).then((originalData) =>
+        config.filters ? filterData(originalData, config.filters) : originalData
+      );
+    }
+
+    return [];
+  });
   const [filters, setFilters] = useState(defaultFilters);
 
   if (error) {
@@ -24,13 +34,15 @@ const useData = (config, defaultFilters = []) => {
   }, [data]);
   const filteredData = useMemo(() => {
     if (data && data.length) {
-      return filters.reduce((lessData, curr) => {
-        if (curr.value === 'all') {
-          return lessData;
-        }
+      return filters.length
+        ? filters.reduce((lessData, curr) => {
+            if (curr.value === 'all') {
+              return lessData;
+            }
 
-        return filterDataByProperty(lessData, curr.dataProperty, curr.value);
-      }, data);
+            return filterDataByProperty(lessData, curr.dataProperty, curr.value);
+          }, data)
+        : data;
     }
 
     return [];
