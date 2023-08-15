@@ -8,7 +8,14 @@ import { getLocationStyles } from '../../../components/BaseMap/utils';
 import { DistrictMapContext } from '../../context';
 import DistrictMapSidebar from '../DistrictMapSidebar';
 import useMap from '../hooks/DistrictMap';
-import { COLOURED_LAYER, coreLayer, getRawFilterOptions, getTopicById, onAddLayer } from './utils/index';
+import {
+  COLOURED_LAYER,
+  coreLayer,
+  getRawFilterOptions,
+  getTopicById,
+  onAddLayer,
+  getSchoolMarkers,
+} from './utils/index';
 
 const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
   const hiddenLayers = [layerConfig].map((layer) => (
@@ -106,7 +113,12 @@ const DistrictMap = (props) => {
   const [loading, setLoading] = useState(true);
   const [state, dispatch] = useReducer(mapReducer, initialState);
   const { filterOptions, activeIndicator, activeTopic, activeYear } = state;
-  const { data, setMap, setOptions } = useMap(
+  const {
+    data,
+    map: mapInstance,
+    setMap,
+    setOptions,
+  } = useMap(
     props.location,
     props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer
   );
@@ -122,7 +134,7 @@ const DistrictMap = (props) => {
         year,
       });
     }
-  }, [activeIndicator, filterOptions.year]);
+  }, [activeIndicator, filterOptions.year, mapInstance]);
 
   function onLoad(_map) {
     setLoading(false);
@@ -171,6 +183,7 @@ const DistrictMap = (props) => {
           {renderDashboardButton()}
           <BaseMap
             accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
+            locationData={getSchoolMarkers(props.location.name)}
             options={{
               style: coreLayer.style,
               center: coreLayer.center,
