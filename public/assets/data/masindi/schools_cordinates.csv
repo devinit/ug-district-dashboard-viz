@@ -1,0 +1,278 @@
+district_id,county_id,subcounty_id,parish_id,district,county,subcounty,parish,level,ownership,school_name,gps_coordinates
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Government,Ikoba Boys Primary School,"1.5931448687430334, 31.64886470781923"
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Government,Ikoba Girls Primary School,"1.595359488700697, 31.643280386984934"
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Government,Isagara Primary School,
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,Primary,Government,Kichandi Primary School,"1.6007932368197078, 31.70004839500018"
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Government,Kihoole Primary School,"1.57763237905131, 31.63565355245786"
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,Primary,Government,Kiina Primary School,"1.601457524441458, 31.659392209167965"
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,Primary,Government,Kikuube Primary School,"1.5547226182664342, 31.66149454983712"
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,Primary,Government,Kinywamurara Primary School,"1.565779276844976, 31.68943231926802"
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,Primary,Government,Kitonozi Primary School,
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Government,Masindi Centre For The Handcapped,"1.5925148934633881, 31.659302638003908"
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,Primary,Government,Rukondwa Primary School,"1.6238172492995777, 31.6869199245118"
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Private,Bright Care Primary School,
+d101,c102,s101,p103,Masindi,Bujenje,Bikonzi,Kitonozi,Primary,Private,Alinda Primary School,"1.6311526544052077, 31.6503307337772"
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Primary,Private,Lords Will Primary School,"1.5748824855650752, 31.669056821120883 "
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,Primary,Private,Royal Nursery And Primary School,
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,Primary,Government,Budongo Saw Mill Primary School,"1.6958523061696527, 31.5377632569025 "
+d101,c102,s111,p105,Masindi,Bujenje,Budongo,Bwinamira,Primary,Government,Bulyango Public Primary School,"1.6229349648256257, 31.533879909002717"
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,Primary,Private,CMU Kindergarten And Primary School,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,Primary,Government,Karongo Primary School,"1.6731945167118387, 31.512188883588248"
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,Primary,Government,Kasongoire Primary School,"1.5836132524668352, 31.555645325634732"
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,Primary,Private,Nyabigoma Primary School,
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,Primary,Government,Nyabyeya Primary School,"1.69332,31.53974"
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,Primary,Government,Kisalizi Primary School,"1.5261128165493012, 31.503012923521304"
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,Primary,Government,Marongo Primary School,"0.91369, 31.01783"
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,Primary,Private,Marongo Mother Care Primary School,"1.4734257707811467, 31.550956070391113"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Government,Bulima Primary School,"1.51097, 31.53991"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Private,Bulima Valley Primary School,"1.5134890772705072, 31.526908632208684"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Government,Byerima Primary School,"1.4883207888406833, 31.60533986660303"
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Private,Christ The Rock Primary School,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Private,Exodus Nursery And Primary School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Government,Isimba Primary School,"1.5067021,31.5954244"
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Private,Jowante Junior Academy,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Government,Kihagani Primary School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Private,Kikingura Bright Junior School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Private,Kikingura Progrossive Primary School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Government,Kikingura Primary School,"1.4871231268351846,31.648384681140083"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Government,Kitamba Primary School,"1.523400174631895, 31.597264526515257"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Government,Mihembero Primary School,"1.5268850237160019, 31.65057654752598"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Government,Miramura Primary School,"1.4299286424226916, 31.595894373199695"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Government,Murro Primary School,"1.5457456871928452, 31.603744201016468"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Private,New Hope Primary School,"1.5061119484630203, 31.529618390910503"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Private,New Star Parents Primary School,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Private,Ntooma Model Primary School,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Government,Ntooma Primary School,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Government,Nyabubale Primary School,"1.43348694130141, 31.701978073041083"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Government,St Kizito Murro Primary School,"1.5451343762700904, 31.610139581937364"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Primary,Private,Sun Light Primary School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Primary,Private,Bwijanga Primary School,"1.5360963115161856, 31.586598916811237"
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Primary,Private,Jowante Junior School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Primary,Government,Kabango Primary School,
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,Primary,Government,Kinyara Sugar Works Primary School,"1.6314832494053446, 31.602108356342896"
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Primary,Private,Ebenezer Christian School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Primary,Private,Montessori N And Primary School,"1.6529126087556212, 31.584542183432788"
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Primary,Private,St Simon Primary School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Primary,Private,Success Primary School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Primary,Private,Top Care Primary School,"1.654926154325003, 31.58399552112658"
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,Primary,Government,Miduuma Primary School,"1.3965684230969315, 31.79756104479679"
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,Primary,Private,Arise And Prosper Primary School,
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,Primary,Private,Gods Mercy Primary School,"1.4380324720355642, 31.54607554335518"
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,Primary,Private,Kateirwe Parents Primary School,
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,Primary,Government,Kijunjubwa Primary School,"1.4880992577835104, 31.76860392099535"
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,Primary,Private,Parents Heart Primary School,"1.480653804184813, 31.771049139653954"
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,Primary,Private,Kaikuku Community Primary School,"1.3597106925833031, 31.71681442854415"
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,Primary,Private,Basiima Primary School,
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,Primary,Government,Kayera Primary School,
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,Primary,Government,Kimengo Primary School,
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,Primary,Private,Kayera Parents Primary School,"1.5578163148465123, 32.02544462150133"
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,Primary,Private,Myeba Community Primary School,
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,Primary,Government,Kibibira Primary School,"1.8356493167248733, 31.878365432204607"
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Primary,Government,Kitanyata Primary School,"1.8547936071845241, 31.83430414965443"
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,Primary,Government,Nyakarongo Primary School,"1.7739133451846134, 31.820203120327097"
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,Primary,Government,Kisindizi II Primary School,"1.7752337117537342, 31.841259027448988"
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Primary,Private,Kitengule Parents Primary School,
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Primary,Private,St Regina Junior Academy,
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Primary,Private,Eped Infant Primary School,
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Primary,Private,Gods Will Primary School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Government,St Marys Primary School Kyatiri,"1.793594810732984, 31.883559534552376"
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Private,St Kizito Primary School,"1.6479568022463662, 31.581128843868367"
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Private,Victory Primary School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Private,Melody Vision Nursery And Primary School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Private,Wisdom Nursery And Primary School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Government,Kyatiri Primary School,"1.7915362392680223, 31.882983993254516"
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Primary,Private,Blessed Damian Primary School,"1.7780737642917477, 31.90223110791025"
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,Primary,Government,Bokwe Primary School,
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Primary,Government,Kilanyi Muslim Primary School,"1.7831146809590996, 31.71224404557168"
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Primary,Government,Kilanyi Primary School,
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Primary,Government,Nyakyanika Primary School,"1.771820660864252, 31.675778818919756"
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Primary,Government,Walyoba Primary School,
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Primary,Private,Walyoba Briliant Primary School,
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Primary,Private,Faith Primary School,
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Primary,Private,Happy Hours Primary School,
+d101,c101,s107,p141,Masindi,Buruli,Labongo,Kihaguzi,Primary,Private,Nyakyanika COU Nursery And Primary School,
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Primary,Private,Seven Gifts Primary School,
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Primary,Private,Sun Will Primary School,"1.7351982562841988, 31.741428900306282"
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,Primary,Government,Kahaara Primary School,
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,Primary,Government,Kigezi Primary School,
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,Primary,Government,Kijogoro Primary School,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Primary,Private,King Arnold Primary School,
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,Primary,Government,Kinumi Primary School,
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,Primary,Government,Kinuuma Primary School,
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,Primary,Government,Kitwetwe Primary School,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Primary,Government,Kyabaswa Primary School,
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,Primary,Private,Kyamukama Parents Primary School,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Primary,Government,Nyambindo Primary School,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Primary,Private,Walyoba Brilliant Primary School,"1.7614708641046384, 31.769041513117713"
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,Primary,Government,Kasenene Primary School,"0.5837733807454578, 30.99871618650625"
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,Primary,Government,Kimanya Primary School,"1.5825699320420934, 31.51710522981397"
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,Primary,Government,Kimanya Upper Primary School,"1.6056485787322992, 31.485435455635244"
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Primary,Government,Nyantonzi Primary School,
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,Primary,Government,Rwempisi Primary School,"1.6284362206468457, 31.510214601458433"
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Primary,Government,Siiba Primary School,"1.6474363138016932, 31.485757969007548"
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,Primary,Private,Abangi Primary School,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Primary,Private,Fountain Of Knowledge Primary School,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Primary,Private,Kababiito Primary School,"1.6239552464067855, 31.45650027199173"
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,Primary,Private,St Philip COU Primary School,
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,Primary,Government,Kibali Primary School,"1.6225112317790484, 31.77996946217159"
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Primary,Private,Gold View Primary School,
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,Primary,Private,Pefa CDC Primary School,
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,Primary,Private,Rwentale COU Primary School,
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,Primary,Private,Rwengabi Community Primary School,
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,Primary,Private,Bisaju COU Priamry School,
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,St Edwards Primary School,"1.6956214766177435, 31.721463983908432"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,Masindi Army Barracks Primary School,
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,Army Day Primary School,
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,Masindi Junior School,"1.6819384238524864, 31.722177843195134"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,Masindi Public Primary School,"1.6836260369016063, 31.71854942249189"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,Masindi Islamic Primary School,"1.6835592985102588, 31.714952228877625"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Government,Masindi Town Model Primary School,
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Primary,Government,Nyamigisa Girls Primary School,
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Primary,Government,Nyamigisa Boys Primary School,
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Primary,Government,Kihande Moslem Primary School,"1.6788222317933377, 31.710677258684683"
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Primary,Government,Kirasa Moslem Primary School,"1.6754748852960872, 31.742455012843568"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Primary,Government,Kabalega Primary School,"1.6892243376197287, 31.699757218253925"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Primary,Private,Good Hope Primary School,"1.6905609978780878, 31.708320939637282"
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Primary,Private,Tropical Primary School,"1.6805018791511712, 31.7266345809251"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Primary,Private,Canaani Junior Primary School,
+d101,c103,s116,p122,Masindi,Masindi Municipal Council,Karujubu Division,Kisiita Ward,Primary,Government,Kinogozi Primary School,"1.6779651734781302, 31.691005859607316"
+d101,c103,s116,p121,Masindi,Masindi Municipal Council,Karujubu Division,Kihuuba Ward,Primary,Government,Kabalye Settlement Primary School,"1.7222448060885442, 31.689542338904534"
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,Primary,Government,Kabalye Primary School,"1.6871965280135295, 31.652784862063733"
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,Primary,Government,Kibwona Primary school,"1.6644325700574099, 31.64600342387478"
+d101,c103,s116,p122,Masindi,Masindi Municipal Council,Karujubu Division,Kisiita Ward,Primary,Government,Karujubu Primary School,"1.6749167895441346, 31.66117100888104"
+d101,c103,s116,p121,Masindi,Masindi Municipal Council,Karujubu Division,Kihuuba Ward,Primary,Government,Kyema Primary School,"1.7199807872792574, 31.73369245391242"
+d101,c103,s116,p121,Masindi,Masindi Municipal Council,Karujubu Division,Kihuuba Ward,Primary,Government,Kihuuba Primary School,"1.7346322117304176, 31.711800067233447"
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,Primary,Government,Bulyango Primary School,"1.6229630495973657, 31.533861848803742"
+d101,c103,s118,p148,Masindi,Masindi Municipal Council,Nyangahya Division,Kikwanana Ward,Primary,Government,Biizi Primary School,"1.64204750702043, 31.74533835587596"
+d101,c103,s118,p147,Masindi,Masindi Municipal Council,Nyangahya Division,Kiryanga Ward,Primary,Government,Rwijere Primary School,"1.6544501938716263, 31.692295557565068"
+d101,c103,s118,p147,Masindi,Masindi Municipal Council,Nyangahya Division,Kiryanga Ward,Primary,Government,Kalyango Primary School,
+d101,c103,s118,p147,Masindi,Masindi Municipal Council,Nyangahya Division,Kiryanga Ward,Primary,Government,Katasenywa Primary School,
+d101,c103,s118,p148,Masindi,Masindi Municipal Council,Nyangahya Division,Kikwanana Ward,Primary,Government,Kamurasi Demonstration Primary School,"1.6706492705536746, 31.733090983825456"
+d101,c103,s117,p125,Masindi,Masindi Municipal Council,Kigulya Division,Kigulya Ward,Primary,Government,Kigulya Primary School,"1.7012131116048583, 31.75798567025877"
+d101,c103,s117,p124,Masindi,Masindi Municipal Council,Kigulya Division,Bigando Ward,Primary,Government,Bigando Primary School,"1.6585389619213793, 31.782697581550536"
+d101,c103,s117,p126,Masindi,Masindi Municipal Council,Kigulya Division,Isimba Ward,Primary,Government,Kisanja Primary School,"1.7361341029619843, 31.74674714772559"
+d101,c103,s117,p125,Masindi,Masindi Municipal Council,Kigulya Division,Kigulya Ward,Primary,Government,Nyakatooke Primary School,"1.7738482052634483, 31.820204749286198"
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Government,Alimugonza Primary School,"1.88329039850329, 31.77586188824817"
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Private,Christ Star Infants Primary School,
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,Primary,Private,Cornerstone Infant Development School,
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,Primary,Private,Kaborogota Model Primary School,
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,Primary,Private,Kaborogota Parents Primary School,
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Government,Karungi Primary School,"1.8122391575545904, 31.76692867865665"
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,Primary,Private,Kasabya Integrated Primary School,
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Private,Katumba Lutheran Primary School,"1.7837030433210908, 31.80906570833235"
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,Primary,Government,Kisindizi Public Primary School,"1.7898032820484344, 31.745722699412756"
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,Primary,Government,Kiyuya Primary School,"1.816384080511496, 31.80494838471701"
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Private,Rutindo Primary School,"1.7644147274134179, 31.787429345111047"
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Private,St Paul Memorial Alimugonza Primary School,
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,Primary,Government,Nyakatoogo Primary School,"1.773856935631045, 31.820188292527273"
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,Primary,Government,Kibamba Primary School,"1.8459471164090686, 31.707854376808164"
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Government,St Pauls Primary School Pakanyi,"1.763557913493508, 31.785987594624"
+d101,c101,s110,p156,Masindi,Buruli,Pakanyi,Kyangamyoyo,Primary,Private,Ever Joy Primary School,
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Primary,Government,Waiga Primary School,"2.0248548854226938, 31.50064744904533"
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Nursery,Private,Excel Internatiional Nursery School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Nursery,Private,Montessori Nursery School,
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,Nursery,Private,Kinyara Sugar Nursery School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Nursery,Private,St Simon COU Nursery School,
+d101,c102,s111,p105,Masindi,Bujenje,Budongo,Bwinamira,Nursery,Private,Bwinamira Infants Nursery School,
+d101,c102,s111,p105,Masindi,Bujenje,Budongo,Bwinamira,Nursery,Private,Flobeto II Nursery School,
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,Nursery,Private,CMU Kindergaten,"1.4490307878142275, 31.328636064090116"
+d101,c103,s117,p126,Masindi,Masindi Municipal Council,Kigulya Division,Isimba Ward,Nursery,Private,King Arnold Nursery School,
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,Nursery,Private,Kigezi Nursery School,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Nursery,Private,Sunlight Nursery School,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Nursery,Private,New Hope Nursery School,"1.506184864325297, 31.529653315500763"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Nursery,Private,Miramura Nursery School,"1.4299935291971102, 31.59588082969926"
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Nursery,Private,Kabaswa Public Nursery School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Nursery,Private,Kikingura Bright Junior Nursery School,
+d101,c102,s101,p103,Masindi,Bujenje,Bikonzi,Kitonozi,Nursery,Private,Lord will Nursery School,
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,Nursery,Private,Kisalizi Nursery School,
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,Nursery,Private,Katairwe Parents Nursery School,
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,Nursery,Private,Gods Mercy Nursery School,
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,Nursery,Private,Basiima Nursery School,
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,Nursery,Private,Kahaara Nursery School,"1.6681611378554466, 31.822249653515563"
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Nursery,Private,Ntooma Modern Nursery School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Nursery,Private,New Star Nursery School,
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Nursery,Private,St Regina Nursery School,
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Nursery,Private,Sunwill Nursery School,"1.7352257997465492, 31.74143169675363"
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Nursery,Private,Faith Nursery School,
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,Nursery,Private,Kijogoro Nursery School,
+d101,c103,s117,p126,Masindi,Masindi Municipal Council,Kigulya Division,Isimba Ward,Nursery,Private,Isimba Nursery School,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Nursery,Private,St Peters COU Onadra Nursery School,
+d101,c103,s117,p126,Masindi,Masindi Municipal Council,Kigulya Division,Isimba Ward,Nursery,Private,St Pauls Pakanyi Nursery School,"1.7648848599898537, 31.786030701576287"
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,Nursery,Private,Kasongoire Hillside Nursery School,
+d101,c101,s114,p131,Masindi,Buruli,Kijunjubwa Town Council,Kijunjubwa Ward,Nursery,Private,Nyamukongo Nursery School,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Nursery,Private,Christ The Rock Nursery School,
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,Nursery,Private,Kikuube Nursery School,
+d101,c102,s101,p103,Masindi,Bujenje,Bikonzi,Kitonozi,Nursery,Private,Alinda Nursery School,"1.631092157049498, 31.65032587479599"
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Nursery,Private,Seven Gifts Nursery School,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Nursery,Private,Jowate Junior Academy Nursery School,
+d101,c101,s110,p156,Masindi,Buruli,Pakanyi,Kyangamyoyo,Nursery,Private,Ever Joy Junior Nursery School,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Nursery,Private,Walyoba Infants Care Nursery School,"1.7584072836180542, 31.768418226866807"
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,Nursery,Private,Happy Hours Nursery School,
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,Nursery,Private,True Vine Nursery School,
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,Nursery,Private,Kitengule Parents Nursery School,
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Nursery,Private,Bright Care Nursery School,
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,Nursery,Private,Gods Will Nursery School,
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,Nursery,Private,Bokwe Nursery School,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,Nursery,Private,Kanyege Nursery School,
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,Nursery,Private,New Hope Nursery School,
+d101,c102,s111,p105,Masindi,Bujenje,Budongo,Bwinamira,Nursery,Private,Glory of God Nursery School,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Nursery,Private,Kababito Community Nursery School,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Nursery,Private,Fountain of Knowlede Nursery School,
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,Nursery,Private,Trinity Nursery School,
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,Nursery,Private,Kids Light Nursery School,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Nursery,Private,Bulima Vally Nursery School,
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,Nursery,Private,Kyamukama Parents Nursery School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Nursery,Private,Kikingura Progressive Nursery School,
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,Nursery,Private,Abangi Nursery School,
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,Nursery,Private,Royal Nursery School,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Nursery,Private,St Philip COU Nursery School,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Nursery,Private,Exodus Nursery School,
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,Nursery,Private,Arise Prosper Nursery School,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Nursery,Private,Bwijanga Nursery School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Nursery,Private,Success Nursery School,
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Nursery,Private,Ebenezer Christian Nursery School,"1.649482445128296, 31.585684791372497"
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,Nursery,Private,Top Care Nursery School,
+d101,c101,s107,p141,Masindi,Buruli,Labongo,Kihaguzi,Nursery,Private,Nyakyanika COU Nursery School,
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Nursery,Private,Walyoba Trinity Nursery School,
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,Nursery,Private,Walyoba Nursery School,
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,Nursery,Private,Rusangura Nursery School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Nursery,Private,Victory Nursery School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Nursery,Private,Wisdom Nursery School,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Secondary,Private,Blessed Damian Secondary School,"1.7804074817762097, 31.902434364338717"
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,Secondary,Private,Budongo Secondary School,"1.6462976608179565, 31.4782553631208"
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Secondary,Government,Bwijanga Secondary School,"1.536947672820868, 31.581751038397577"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Excel High Secondary School,"1.6882204727848418, 31.712773469699663"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Green Field Senior Secondary School,"1.6735329526754565, 31.69748003608377"
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,Secondary,Government,Ikoba Girls Secondary School,"1.5938419654835685, 31.653633717752747"
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Secondary,Private,Iman Academy Secondary School,"1.6845461831034345, 31.734455255661803"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Secondary,Government,Kabalega Secondary School,"1.6942948041207386, 31.716046900864594"
+d101,c103,s115,p122,Masindi,Masindi Municipal Council,Karujubu Division,Kisiita Ward,Secondary,Private,Karujubu Parents Secondary School,
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,Secondary,Private,Kef College Masindi,
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,Secondary,Private,Kijunjubwa Community Secondary School,"1.4802986996099774, 31.77078378423336"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Kings College Masindi,"1.6943543230729705, 31.704228240936615"
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,Secondary,Private,Kinyara High School,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,Secondary,Government,Kinyara Senior Secondary School,"1.6504634784392995, 31.587171922857767"
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Secondary,Private,Kitara Model Secondary School,"1.7005113892934112, 31.721293868434945"
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,Secondary,Government,Kiyuya Seed Secondary School,"1.8210007766721268, 31.80118545997304"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Secondary,Private,Lampstand Comprehensive Secondary School,
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Masindi Academy Secondary School,
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Secondary,Government,Masindi Army Secondary School,
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Masindi High School,"1.6692579078272738, 31.704244518990574"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Government,Masindi Senior Secondary School,"1.6911027754485717, 31.704829810666403"
+d101,c103,s118,p147,Masindi,Masindi Municipal Council,Nyangahya Division,Kiryanga Ward,Secondary,Government,Nyangahya Community Secondary School,"1.635331836107928, 31.699476584298278"
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,Secondary,Government,Pakanyi Senior Secondary School,"1.7692918109163842, 31.786002697098805"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,St Dominic Savio Boys Secondary School,"1.6745759471337747, 31.714988303289328"
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,Secondary,Private,St Joseph Senior Secondary School Kikingura,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,Secondary,Private,St Kizito Murro Secondary School,"1.5451804353831964, 31.609541734210996"
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,Secondary,Private,St Marys Kyatiri Secondary School,"1.7943530812872062, 31.883711053157082"
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,Secondary,Government,St Pauls Secondary School Pakanyi,"1.7638980732731082, 31.78474524209397"
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Secondary,Government,St Theresa Girls Secondary School Nyamisinga,"1.6661532474161147, 31.7117671423398"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Masindi Advanced Secondary School,
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Secondary,Private,Green Valley Secondary School,
+d101,c103,s116,p121,Masindi,Masindi Municipal Council,Karujubu Division,Kihuuba Ward,Tertiary,Government,Uganda Technical College Kyema,
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,Tertiary,Government,Nyabyeya Primary School,
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,Tertiary,Private,Kinyara Training Centre,"1.6337490228256348, 31.600223105866704"
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,Tertiary,Government,Kabalega College,
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Tertiary,Private,St Kizito Vocational,
+d101,c103,s115,p115,Masindi,Masindi Municipal Council,Central Division,Civic Centre Ward,Tertiary,Private,Red Earth Nursery And Training Center,"1.6891701976512423, 31.722187525780367"
+d101,c103,s115,p116,Masindi,Masindi Municipal Council,Central Division,Southern Ward,Tertiary,Private,Morate Nursery Teachers Training Centre,
