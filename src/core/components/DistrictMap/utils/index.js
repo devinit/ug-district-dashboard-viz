@@ -98,32 +98,36 @@ const processCoordinates = (data) => {
 return coordinates.map((item) => Number(item))
 }
 
-export const getSchoolMarkers =  async (district) => {
+export const getSchoolMarkers =  (district) => {
   const dataUrl = `https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/${activeBranch}/public/assets/data/${district.toLowerCase()}/schools-locations.csv`
-  const data = await fetchData(dataUrl)
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: []
   }
+  fetchData(dataUrl).then((data) => {
+    data.forEach((item) => {
+      if (item.gps_coordinates) {
+        const itemCoordinates = processCoordinates(item.gps_coordinates)
 
-  data.forEach((item) => {
-    const itemCoordinates = processCoordinates(item.gps_coordinates)
-
-    if (itemCoordinates) {
-      finalGeoJSON.features.push({
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [itemCoordinates[1], itemCoordinates[0]]
-        },
-        properties: {
-          level: item.level,
-          ownership: item.ownership,
-          name: item.school_name,
-          parish: item.parish
-        }
-      })
-    }
+      if (itemCoordinates) {
+        finalGeoJSON.features.push({
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [itemCoordinates[1], itemCoordinates[0]]
+          },
+          properties: {
+            level: item.level,
+            ownership: item.ownership,
+            name: item.school_name,
+            parish: item.parish
+          }
+        })
+      }
+      }
+    })
+  }).catch((error) => {
+    console.log(error)
   })
 
 return finalGeoJSON
