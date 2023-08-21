@@ -196,6 +196,10 @@ button.button-outline,
   border-radius: 50%;
   cursor: pointer;
 }
+.marker-blue:hover, .marker-green:hover{
+  width: 25px;
+  height: 25px;
+}
 
 .marker-green {
   background-image: url('../../public/assets/icons/location-green.png');
