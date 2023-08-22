@@ -31,19 +31,19 @@ const BaseMap = (props) => {
 
       map.on('load', (event) => {
         setBaseMap(map);
-        if (props.locationData) {
-          props.locationData.features.forEach((feature) => {
-            // create a HTML element for each feature
-            const el = document.createElement('div');
-            if (feature.properties.level === 'Primary') {
-              el.className = 'marker-blue';
-            } else {
-              el.className = 'marker-green';
-            }
+        // if (props.locationData) {
+        //   props.locationData.features.forEach((feature) => {
+        //     // create a HTML element for each feature
+        //     const el = document.createElement('div');
+        //     if (feature.properties.level === 'Primary') {
+        //       el.className = 'marker-blue';
+        //     } else {
+        //       el.className = 'marker-green';
+        //     }
 
-            new mapbox.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
-          });
-        }
+        //     new mapbox.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+        //   });
+        // }
         if (props.onLoad) {
           props.onLoad(map, event);
         }
