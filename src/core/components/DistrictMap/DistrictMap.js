@@ -44,7 +44,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
         id={COLOURED_LAYER}
         source="composite"
         source-layer={layerConfig.sourceLayer}
-        maxzoom={layerConfig.maxZoom && layerConfig.maxZoom + 1}
+        maxzoom={layerConfig.maxZoom && layerConfig.maxZoom + 2}
         type="fill"
         paint={{
           'fill-color': {
@@ -67,7 +67,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
       id={COLOURED_LAYER}
       source="composite"
       source-layer={layerConfig.sourceLayer}
-      maxzoom={layerConfig.maxZoom && layerConfig.maxZoom + 1}
+      maxzoom={layerConfig.maxZoom && layerConfig.maxZoom + 2}
       type="fill"
       paint={{
         'fill-color': '#D1CBCF',
@@ -122,7 +122,7 @@ const DistrictMap = (props) => {
     props.location,
     props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer
   );
-
+  if (mapInstance) console.log(mapInstance.getStyle());
   useEffect(() => {
     // set map options using their caption values
     if (activeIndicator) {
