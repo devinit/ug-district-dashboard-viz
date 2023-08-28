@@ -95,7 +95,7 @@ export const processData = (data, indicator, year) => {
 const processCoordinates = (data) => {
   const coordinates = data.split(',')
 
-return coordinates.map((item) => Number(item))
+return coordinates.map((item) => parseFloat(item))
 }
 
 export const getSchoolMarkers =  (district) => {
@@ -109,21 +109,21 @@ export const getSchoolMarkers =  (district) => {
       if (item.gps_coordinates) {
         const itemCoordinates = processCoordinates(item.gps_coordinates)
 
-      if (itemCoordinates) {
-        finalGeoJSON.features.push({
-          type: 'Feature',
-          geometry: {
-            type: 'Point',
-            coordinates: [itemCoordinates[1], itemCoordinates[0]]
-          },
-          properties: {
-            level: item.level,
-            ownership: item.ownership,
-            name: item.school_name,
-            parish: item.parish
-          }
-        })
-      }
+        if (itemCoordinates) {
+          finalGeoJSON.features.push({
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [itemCoordinates[1], itemCoordinates[0]]
+            },
+            properties: {
+              level: item.level,
+              ownership: item.ownership,
+              name: item.school_name,
+              parish: item.parish
+            }
+          })
+        }
       }
     })
   }).catch((error) => {
