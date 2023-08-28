@@ -1,5 +1,5 @@
-import { Popup, Marker } from 'mapbox-gl';
-import { useEffect, useState, useCallback } from 'react';
+import { Popup } from 'mapbox-gl';
+import { useEffect, useState, useCallback} from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
 import fetchData from '../../../utils/data';
 import { processData, getSchoolMarkers } from '../DistrictMap/utils';
@@ -13,11 +13,9 @@ const useMap = (location, layer, defaultOptions = {}) => {
   const [map, setMap] = useState();
   const [options, setOptions] = useState(defaultOptions);
   const [data, setData] = useState([]);
-  const [locationData, setLocationData] = useState([]);
 
   const onHover = useCallback(
     (event) => {
-      // const markers = document.getElementsByClassName('marker')
       const canvas = map.getCanvas();
       canvas.style.cursor = 'pointer';
       showPopup(popup, map, event, { ...layer, data, ...options });
@@ -25,11 +23,48 @@ const useMap = (location, layer, defaultOptions = {}) => {
     [map, data, options]
   );
 
+
   const onBlur = useCallback(() => {
     const canvas = map.getCanvas();
     canvas.style.cursor = '';
     popup.remove();
   }, [map, location]);
+
+  const handleMarkerMove = useCallback(() => {
+    map.off('mousemove',COLOURED_LAYER,onHover)
+    popup.remove()
+  }, [map, location])
+
+  const handleMarkerLeave = useCallback(() => {
+    map.on('mousemove',COLOURED_LAYER,onHover)
+    popup.remove()
+  }, [map, location])
+
+  useEffect(() => {
+    const locationData = getSchoolMarkers(location.name)
+    if (map) {
+      if (locationData) {
+        map.loadImage('https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png', (error, image) => {
+          if (error) throw error;
+          map.addImage('custom-marker', image);
+          map.addSource('points', {
+            type: 'geojson',
+            data: locationData,
+          });
+          map.addLayer({
+            id: 'points',
+            type: 'symbol',
+            source: 'points',
+            layout: {
+              'icon-image': 'custom-marker',
+              'icon-size': 0.4,
+            },
+            minzoom: 8,
+          });
+        });
+      }
+    }
+  }, [map]);
 
   useEffect(() => {
     if (map) {
@@ -41,40 +76,25 @@ const useMap = (location, layer, defaultOptions = {}) => {
       });
       setZoomByContainerWidth(map, map.getContainer(), layer);
       // remove any existing listners
+      map.off('mousemove', 'points', handleMarkerMove)
       map.off('mouseleave', COLOURED_LAYER, onBlur);
       map.off('mouseover', COLOURED_LAYER, onHover);
       // add even listeners to show tooltip
-      map.on('mouseover', COLOURED_LAYER, onHover);
+
+      map.on('mousemove', COLOURED_LAYER, onHover);
       map.on('mouseleave', COLOURED_LAYER, onBlur);
+      map.on('mousemove', 'points', handleMarkerMove)
+      map.on('mouseleave', 'points', handleMarkerLeave)
+      }
+  }, [map, location, options, data,]);
 
-      if (locationData.features) {
-        locationData.features.forEach((feature) => {
-          // create a HTML element for each feature
-          const el = document.createElement('div');
-          if (feature.properties.level === 'Primary') {
-            el.className = 'marker marker-blue';
-          } else {
-            el.className = 'marker marker-green';
-          }
-          el.addEventListener('mouseover', () => {
-            console.log('herer')
-            if (popup.isOpen()){
-              popup.remove()
-            }
-          })
-          new Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
-
-
-        });}
-    }
-  }, [map, location, options, data, locationData]);
   useEffect(() => {
     const fetchIndicatorData = async (url) => {
       const indicatorData = await fetchData(url);
       setData(processData(indicatorData, options.indicator, options.year));
     };
     if (options.indicator && options.year) {
-      setLocationData(getSchoolMarkers(location.name))
+      // setLocationData(getSchoolMarkers(location.name))
       fetchIndicatorData(options.indicator.url);
     }
   }, [options.indicator, options.year]);
