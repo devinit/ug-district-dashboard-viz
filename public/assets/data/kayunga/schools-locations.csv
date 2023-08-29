@@ -1,0 +1,471 @@
+﻿district_id,county_id,subcounty_id,parish_id,village_id,district,county,subcounty,parish,village,year,level,ownership,name_of_school,staus,gps_cordinates
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Primary,Private,Agape Mission Primary School,Active,
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Primary,Private,Agape Nursery And Primary School Nakirubi,Closed,
+d102,c102,s106,p136,,Kayunga,Ntenjeru,Nazigo,Natteta,,2023,Primary,Private,Ali Islamic Primary School,Active,
+d102,c102,s107,p131,v230,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,Nakirubi,2023,Primary,Private,All Saints Nakirubi Primary School,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Aniswari Primary School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Arise And Hope Primary School Kamira,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Arise And Shine Primary School Nakirubi,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Aunt Anne Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Aunt Jane Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Aunt Vicky Primary School,Active,"0.684322530693626, 32.918241210976355"
+d102,c101,s102,p109,v101,Kayunga,Bbaale,Bbaale,Bbaale,Bbaale East,2023,Primary,Government,Bbaale CU  Primary School,Active,"1.0996100387808265, 32.886781641328966"
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Bbaale Moslem School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,BEMCO Primary School Kitatya,Active,
+d102,c102,s105,p115,v149,Kayunga,Ntenjeru,Busaana,Kasana,Bisaka,2023,Primary,Government,Bisaka Parents Primary School,Active,"0.8636823449034225, 32.9799503646428"
+d102,c101,s104,p144,v442,Kayunga,Bbaale,Kitimbwa,Nakivubo,Bisaka Central,2023,Primary,Government,Bisaka Primary School,Active,
+d102,c102,s105,p120,,Kayunga,Ntenjeru,Busaana,Namusaala,,2023,Primary,Private,Bisaka RC Primary School,Active,"0.847050603259814, 32.98255489931799"
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,Blessed Child Primary School,Closed,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Blue Sky Junior School,Active,
+d102,c101,s113,p169,,Kayunga,Bbaale,Kitimbwa Town Council,Kyerima Ward,,2023,Primary,Private,Brain Trust Primary School,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Bridges Of Glory Primary School Bukeka,Active,
+d102,c101,s113,,,Kayunga,Bbaale,Kitimbwa Town Council,,,2023,Primary,Private,Bright Angels Primary School Kitimbwa,Active,
+d102,c102,s107,p129,,Kayunga,Ntenjeru,Kangulumira,Kikwanya,,2023,Primary,Private,Bright Future Nursery And Primary School Kangulumira,Active,"0.6480018198191582, 33.067954719017955"
+d102,c102,s108,p105,,Kayunga,Ntenjeru,Kayunga,Buyobe,,2023,Primary,Private,Bright Future Primary School Kyanya,Active,
+d102,c102,s108,p103,,Kayunga,Ntenjeru,Kayunga,Bukolooto,,2023,Primary,Private,Bright Future Primary School Ntooke,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,Bright Light Academy Primary School,Active,"0.661992831453975, 32.94684038359046"
+d102,c102,s105,p118,,Kayunga,Ntenjeru,Busaana,Kiwangula,,2023,Primary,Private,Brilliant Primary School Ngeye,Active,
+d102,c102,s108,p101,,Kayunga,Ntenjeru,Kayunga,Bubajjwe,,2023,Primary,Private,Bubajjwe Nursery And Primary School,Active,
+d102,c102,s110,p159,v164,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,Bugaddu,2023,Primary,Government,Bugaddu CU Primary School,Active,
+d102,c101,s103,p152,v277,Kayunga,Bbaale,Kayonza,Kamusabi,Bugatto,2023,Primary,Government,Bugatto RC Primary School,Active,
+d102,c101,s102,,,Kayunga,Bbaale,Bbaale,,,2023,Primary,Private,Bugembo Primary School,Closed,
+d102,c102,s110,p159,,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,,2023,Primary,Private,Bugerere Parents School,Active,
+d102,c102,s112,p168,,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,,2023,Primary,Private,Bugiri Muslim Primary School,Active,
+d102,c101,s103,p154,v298,Kayunga,Bbaale,Kayonza,Kitwe,Bugoma,2023,Primary,Government,Bugoma Primary School,Active,
+d102,c101,s103,p152,v279,Kayunga,Bbaale,Kayonza,Kamusabi,Bugonya B,2023,Primary,Government,Bugonya CU Primary School,Active,
+d102,c102,s106,p132,,Kayunga,Ntenjeru,Nazigo,Bukamba,,2023,Primary,Private,Buguvu Ebenezer Primary School,Active,
+d102,c101,s103,p158,v332,Kayunga,Bbaale,Kayonza,Namizo,Bujwaya,2023,Primary,Government,Bujwaya CU Primary School,Active,
+d102,c102,s106,p132,,Kayunga,Ntenjeru,Nazigo,Bukamba,,2023,Primary,Private,Bukamba Noor Islamic Primary School,Active,
+d102,c102,s106,p132,v464,Kayunga,Ntenjeru,Nazigo,Bukamba,Bukamba A,2023,Primary,Government,Bukamba Primary School,Active,
+d102,c102,s107,p131,v228,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,Bukasa,2023,Primary,Government,Bukasa CU Primary School,Active,
+d102,c102,s107,p130,v222,Kayunga,Ntenjeru,Kangulumira,Kawomya,Bukeeka,2023,Primary,Government,Bukeeka COU Primary School,Active,"0.6491379826644111, 32.28387634476823"
+d102,c102,s108,p107,v384,Kayunga,Ntenjeru,Kayunga,Bukujju,Bukujju,2023,Primary,Government,Bukujju UMEA Primary School,Active,"0.7728005989611093, 32.9045661024412"
+d102,c101,s104,p143,v435,Kayunga,Bbaale,Kitimbwa,Nkokonjeru,Bulawula A,2023,Primary,Government,Bulawula Primary School,Active,
+d102,c102,s105,p116,v130,Kayunga,Ntenjeru,Busaana,Nabuganyi,Bumali,2023,Primary,Government,Bumaali CU Primary School,Active,
+d102,c102,s105,p116,v130,Kayunga,Ntenjeru,Busaana,Nabuganyi,Bumali,2023,Primary,Government,Bumali UMEA Primary School,Active,"0.8199151347600965, 32.99614075237335"
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Bunyumya Primary School,Active,
+d102,c102,s108,p102,v348,Kayunga,Ntenjeru,Kayunga,Busaale,Busaale,2023,Primary,Government,Busaale COU Primary School,Active,
+d102,c102,s108,p102,v348,Kayunga,Ntenjeru,Kayunga,Busaale,Busaale,2023,Primary,Government,Busaale RC Primary School,Active,
+d102,c102,s110,p159,v165,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,Busaana,2023,Primary,Government,Busaana CU Primary School,Active,"0.7801068675374347, 32.989717160969725"
+d102,c102,s110,p159,v165,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,Busaana,2023,Primary,Government,Busaana RC Primary School,Active,
+d102,c101,s103,p154,v299,Kayunga,Bbaale,Kayonza,Kitwe,Busabira,2023,Primary,Government,Busabira Parents Primary School,Active,
+d102,c102,s108,p105,v369,Kayunga,Ntenjeru,Kayunga,Buyobe,Buwungiro,2023,Primary,Government,Buwungiro Primary School,Active,"0.7825614868510309, 32.85095871778681"
+d102,c101,s103,p150,v269,Kayunga,Bbaale,Kayonza,Balisanga,Nzingu,2023,Primary,Government,Bwalala Primary School,Active,
+d102,c102,s108,p103,v354,Kayunga,Ntenjeru,Kayunga,Bukolooto,Bwetyaba,2023,Primary,Government,Bwetyaba RC Primary School,Active,"0.6874337134708148, 32.91213251793451"
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Catherine Primary School,Active,"0.5845059262780198, 33.02446607138843"
+d102,c101,s103,p155,,Kayunga,Bbaale,Kayonza,Nakyesa,,2023,Primary,Private,Chris David Primary School,Active,
+d102,c102,s106,p137,,Kayunga,Ntenjeru,Nazigo,Kimanya,,2023,Primary,Private,Christ Primary School,Active,
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Primary,Private,City Infant School,Closed,
+d102,c102,s108,p103,,Kayunga,Ntenjeru,Kayunga,Bukolooto,,2023,Primary,Private,Dartah Primary School,Active,
+d102,c101,s103,p155,,Kayunga,Bbaale,Kayonza,Nakyesa,,2023,Primary,Private,Dellan Primary School,Active,"0.9267184309043526, 32.86647227545974"
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Destiny Of Joy Nursery And Primary School,Active,"0.8495380821895692, 32.87603076034405"
+d102,c102,s106,p137,,Kayunga,Ntenjeru,Nazigo,Kimanya,,2023,Primary,Private,Destiny Primary School,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Divine Embassy Primary School ,Active,
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Primary,Private,Dream Primary School,Closed,
+d102,c102,s105,p121,,Kayunga,Ntenjeru,Busaana,Lusenke,,2023,Primary,Private,Ebenezer Infant School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Ebenezer Primary School Kalagala,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Ebenezer Primary School Kangulumira,Active,"0.7098023055348456, 32.903728763277165"
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Ebenezer Primary School Kiwugu,Active,
+d102,c102,s105,p115,,Kayunga,Ntenjeru,Busaana,Kasana,,2023,Primary,Private,Ebenezer Primary School Namatogonya,Active,
+d102,c102,s105,p122,,Kayunga,Ntenjeru,Busaana,Nampanyi,,2023,Primary,Private,Eden Primary School,Active,
+d102,c101,s103,p156,,Kayunga,Bbaale,Kayonza,Nakyesanja,,2023,Primary,Private,El Shadar Primary School,Active,
+d102,c102,s111,p165,,Kayunga,Ntenjeru,Nazigo Town Council,Kimanya Ward,,2023,Primary,Private,Exodus Primary School,Active,
+d102,c102,s108,p103,,Kayunga,Ntenjeru,Kayunga,Bukolooto,,2023,Primary,Private,Faith Education Centre,Active,"0.6906574763054144, 32.91141345052337"
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Faithi Islamic Primary School,Active,
+d102,c102,s108,p105,,Kayunga,Ntenjeru,Kayunga,Buyobe,,2023,Primary,Private,Faith Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Farouq Quran School,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Favour Community Junior School,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Fountain Of Hope Primary School,Active,
+d102,c102,s112,p168,,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,,2023,Primary,Private,Fresco Infant School,Active,
+d102,c102,s109,p147,,Kayunga,Ntenjeru,Kayunga Town Council,Central Ward,,2023,Primary,Private,Full Gospel Primary School,Active,
+d102,c101,s101,p123,v177,Kayunga,Bbaale,Galiraya,Galiraya,Galiraya,2023,Primary,Government,Galiraya  CU Primary School,Active,
+d102,c101,s102,p111,v113,Kayunga,Bbaale,Bbaale,Kavule,Gayaza,2023,Primary,Government,Gayaza  CU  Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Getu Education Centre,Active,"0.6903244806168662, 32.914446889180674"
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Global Primary School,Active,
+d102,c101,s101,p128,,Kayunga,Bbaale,Galiraya,Ntimba,,2023,Primary,Private,God Cares Nursery And Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,God Is Able Primary School,Closed,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Gods Glory Primary School,Active,
+d102,c102,s106,p137,,Kayunga,Ntenjeru,Nazigo,Kimanya,,2023,Primary,Private,Gods Grace Primary School,Active,
+d102,c102,s109,p146,,Kayunga,Ntenjeru,Kayunga Town Council,Ntenjeru Ward,,2023,Primary,Private,Gods Will Tente,Active,
+d102,c101,s103,p154,,Kayunga,Bbaale,Kayonza,Kitwe,,2023,Primary,Private,Golden Nursery And Primary School,Closed,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Primary,Private,Golden Junior School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Good Hope Primary School Kalagala,Active,
+d102,c101,s104,,,Kayunga,Bbaale,Kitimbwa,,,2023,Primary,Private,Good Hope Pre And Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Good Hope Primary School Wankyayiraki,Active,
+d102,c102,s106,p132,,Kayunga,Ntenjeru,Nazigo,Bukamba,,2023,Primary,Private,Good Mummy Junior School,Active,
+d102,c101,s102,,,Kayunga,Bbaale,Bbaale,,,2023,Primary,Private,Good Samaritan Primary School,Closed,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Good Shepherd Primary School,Active,
+d102,c102,s109,p148,,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Ward,,2023,Primary,Private,Gospel Valley Nursery Primary School,Active,"0.6987011960427731, 32.9088709736047"
+d102,c102,s111,p164,,Kayunga,Ntenjeru,Nazigo Town Council,Nazigo Ward,,2023,Primary,Private,Grace Primary School,Active,"0.6329580552616064, 32.99622659080483"
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Gramos Primary School,Active,"0.6394900598782212, 32.951696477799906"
+d102,c102,s112,p167,,Kayunga,Ntenjeru,Kangulumira Town Council,Kigayaza Ward,,2023,Primary,Private,Hands Of Grace Kangulumira,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Primary,Private,Headlight Infants Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Hidden Treasure Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Hillary Primary School,Active,
+d102,c101,s103,p157,,Kayunga,Bbaale,Kayonza,Namaliri,,2023,Primary,Private,Hillside Junior Academy,Active,
+d102,c102,s112,p167,,Kayunga,Ntenjeru,Kangulumira Town Council,Kigayaza Ward,,2023,Primary,Private,His Grace Primary School Kigayaza,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,His Grace Primary School,Active,
+d102,c102,s108,p105,,Kayunga,Ntenjeru,Kayunga,Buyobe,,2023,Primary,Private,His Grace Primary School Nfufu,Active,
+d102,c101,s102,p114,,Kayunga,Bbaale,Bbaale,Nakitokolo,,2023,Primary,Private,Hollyland Junior School,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Holyland Junior School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Holly Trinity Junior School Kangulumira,Active,"0.7042995044211089, 32.910432871372116"
+d102,c102,s105,p116,,Kayunga,Ntenjeru,Busaana,Nabuganyi,,2023,Primary,Private,Hope Infant Primary School Nabuganyi,Active,
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Primary,Private,Hope Kids Primary School Bukeeka,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Primary,Private,Hope Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Hope Primary School Magala,Active,
+d102,c101,s103,p154,,Kayunga,Bbaale,Kayonza,Kitwe,,2023,Primary,Private,HK Nursery And Primary School,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Imam Hassan Primary School Maligita,Active,"0.6140685983792824, 33.122593760432586"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Jesus Love Nursery Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Joy Of Christ Primary School,Active,"0.6491294649382684, 32.98513168134987"
+d102,c102,s110,p162,,Kayunga,Ntenjeru,Busaana Town Council,Namirembe Ward,,2023,Primary,Private,Joy Primary School Busaana,Active,
+d102,c102,s108,p101,,Kayunga,Ntenjeru,Kayunga,Bubajjwe,Kaazi B,2023,Primary,Private,Kaazi Quran Primary School,Active,"0.721840379516702, 32.938293311715434"
+d102,c101,s103,p156,v315,Kayunga,Bbaale,Kayonza,Nakyesanja,Kakiika A,2023,Primary,Government,Kakiika Parents Primary School,Active,
+d102,c102,s112,p168,v253,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,Kamuli,2023,Primary,Government,Kamuli COU Primary School,Active,
+d102,c102,s112,p168,v253,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,Kamuli,2023,Primary,Government,Kamuli UMEA Primary School,Active,
+d102,c101,s103,p152,v281,Kayunga,Bbaale,Kayonza,Kamusabi,Kamusabi,2023,Primary,Government,Kamusabi Primary School,Active,
+d102,c102,s112,p166,v247,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,Kibira,2023,Primary,Government,Kangulumira CU Primary School,Active,"0.5827934006975025, 33.035378046215776"
+d102,c102,s112,p166,v238,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,Kangulumira,2023,Primary,Government,Kangulumira Muslim Primary School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Kangulumira Parents Primary School,Active,
+d102,c102,s112,p166,v242,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,Kiwugu,2023,Primary,Government,Kangulumira RC Primary School,Active,
+d102,c102,s108,p105,v371,Kayunga,Ntenjeru,Kayunga,Buyobe,Kanjuki Wabusonko,2023,Primary,Government,Kanjuki COU Primary School,Active,"0.7453134189249868, 32.88614657767616"
+d102,c102,s108,p108,,Kayunga,Ntenjeru,Kayunga,Kiteredde,,2023,Primary,Private,Kanjuki Junior Primary School,Active,"0.7466752350996931, 32.89153060674765"
+d102,c102,s108,p105,v371,Kayunga,Ntenjeru,Kayunga,Buyobe,Kanjuki Wabusonko,2023,Primary,Government,Kanjuki RC Primary School,Active,
+d102,c102,s108,p105,v371,Kayunga,Ntenjeru,Kayunga,Buyobe,Kanjuki Wabusonko,2023,Primary,Government,Kanjuki UMEA Primary School,Active,"0.7449793256574752, 32.890409677983286"
+d102,c101,s103,p153,v289,Kayunga,Bbaale,Kayonza,Kanywero,Katugo,2023,Primary,Government,Kanywero Public Primary School,Active,
+d102,c102,s112,p166,v239,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,Kasambya,2023,Primary,Government,Kasambya Moslem Primary School,Active,
+d102,c102,s110,p159,v166,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,Kasana I,2023,Primary,Government,Kasana CU Primary School,Active,
+d102,c102,s105,p115,v127,Kayunga,Ntenjeru,Busaana,Kasana,Kasana II,2023,Primary,Government,Kasana RC Primary School,Active,
+d102,c101,s101,p125,v190,Kayunga,Bbaale,Galiraya,Kasokwe,Kasokwe A,2023,Primary,Government,Kasokwe CU Primary School,Active,"0.6435858715567773, 33.81278950626432"
+d102,c102,s106,p135,v483,Kayunga,Ntenjeru,Nazigo,Katikanyonyi,Katikanyonyi,2023,Primary,Government,Katikanyonyi COU Primary School,Active,
+d102,c102,s106,p135,,Kayunga,Ntenjeru,Nazigo,Katikanyonyi,,2023,Primary,Private,Katikanyonyi UMEA Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Katuba River Nile Primary School,Active,
+d102,c102,s110,p162,,Kayunga,Ntenjeru,Busaana Town Council,Namirembe Ward,,2023,Primary,Private,Kawawa Primary School Busaana,Active,
+d102,c101,s103,p157,v333,Kayunga,Bbaale,Kayonza,Namaliri,Kawolokota East,2023,Primary,Government,Kawolokota CU Primary School,Active,"0.8862707843319901, 32.90027908716962"
+d102,c101,s103,p157,v323,Kayunga,Bbaale,Kayonza,Namaliri,Kawolokota West,2023,Primary,Government,Kawolokota RC Primary School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,Kawuku Nursery And Primary School Buwungiro,Closed,
+d102,c102,s110,p161,v171,Kayunga,Ntenjeru,Busaana Town Council,Namukuma Ward,Kayonjo,2023,Primary,Government,Kayonjo UMEA Primary School,Active,
+d102,c101,s103,p157,v324,Kayunga,Bbaale,Kayonza,Namaliri,Kayonza,2023,Primary,Government,Kayonza Primary School,Active,"-1.8915308231398065, 30.51308829937454"
+d102,c102,s109,p148,v407,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Ward,Namagabi A,2023,Primary,Government,Kayunga Girls Primary School,Active,"0.7101727594197562, 32.907506413729514"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Primary,Private,Kayunga Islamic Primary School,Active,
+d102,c102,s109,p148,v407,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Ward,Namagabi A,2023,Primary,Government,Kayunga Mixed Primary School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,Kennedy Primary School,Closed,
+d102,c102,s105,p121,v158,Kayunga,Ntenjeru,Busaana,Lusenke,Kibuzi,2023,Primary,Government,Kibuzi CU Primary School,Active,
+d102,c102,s105,p121,v158,Kayunga,Ntenjeru,Busaana,Lusenke,Kibuzi,2023,Primary,Government,Kibuzi RC Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Primary,Private,Kids Care Nursery Primary School,Active,
+d102,c102,s112,p167,v250,Kayunga,Ntenjeru,Kangulumira Town Council,Kigayaza Ward,Kigayaza,2023,Primary,Government,Kigayaza COU Primary School,Active,
+d102,c102,s106,p133,v113,Kayunga,Ntenjeru,Nazigo,Kirindi,Gayaza,2023,Primary,Government,Kikonyogo Primary School,Active,
+d102,c102,s107,p129,v215,Kayunga,Ntenjeru,Kangulumira,Kikwanya,Kikwanya,2023,Primary,Government,Kikwanya COU Primary School,Active,
+d102,c102,s106,p137,v491,Kayunga,Ntenjeru,Nazigo,Kimanya,Kimanya,2023,Primary,Government,Kimanya COU Primary School,Active,"0.6679756119831004, 32.978127839445534"
+d102,c102,s106,p137,v491,Kayunga,Ntenjeru,Nazigo,Kimanya,Kimanya,2023,Primary,Government,Kimanya UMEA Primary School,Active,
+d102,c102,s107,p129,v216,Kayunga,Ntenjeru,Kangulumira,Kikwanya,Kimooli,2023,Primary,Government,Kimooli UMEA Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,King Jesus Nursery And Primary School,Active,"0.4418430478421916, 32.577859302440814"
+d102,c102,s110,p159,,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,,2023,Primary,Private,King Of Kings Primary School,Active,
+d102,c101,s101,p127,v203,Kayunga,Bbaale,Galiraya,Kirasa,Kirasa Central,2023,Primary,Government,Kirasa Primary School,Active,
+d102,c102,s105,p122,v161,Kayunga,Ntenjeru,Busaana,Nampanyi,Kireku Nampanyi,2023,Primary,Government,Kireku COU Primary School,Active,"0.749714698088032, 33.01310978512568"
+d102,c102,s106,p136,v488,Kayunga,Ntenjeru,Nazigo,Natteta,Kiribedda,2023,Primary,Government,Kiribedda CU Primary School,Active,
+d102,c101,s103,p156,v318,Kayunga,Bbaale,Kayonza,Nakyesanja,Kirimantogo,2023,Primary,Government,Kirimantoogo Primary School,Active,
+d102,c102,s106,p133,,Kayunga,Ntenjeru,Nazigo,Kirindi,,2023,Primary,Private,Kirindi Bright Future Primary School,Active,
+d102,c102,s106,p133,,Kayunga,Ntenjeru,Nazigo,Kirindi,,2023,Primary,Private,Kirindi CU Primary School,Active,"0.6808680136756656, 33.04166137237985"
+d102,c102,s106,p133,,Kayunga,Ntenjeru,Nazigo,Kirindi,,2023,Primary,Private,Kirindi Junior School,Active,"0.6880059521875981, 33.04187980477664"
+d102,c102,s106,p133,,Kayunga,Ntenjeru,Nazigo,Kirindi,,2023,Primary,Government,Kirindi RC Primary School,Active,
+d102,c101,s103,p150,v264,Kayunga,Bbaale,Kayonza,Balisanga,Kirisiru,2023,Primary,Government,Kirisiru COU Primary School,Active,
+d102,c102,s108,p104,,Kayunga,Ntenjeru,Kayunga,Nakaseeta,,2023,Primary,Private,Kiryamuli Nursery And Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Kisa Nursery And Primary School,Active,"0.643276515018429, 32.98506240357597"
+d102,c102,s109,p147,,Kayunga,Ntenjeru,Kayunga Town Council,Central Ward,,2023,Primary,Private,Kisawo Junior School,Active,
+d102,c102,s106,p137,v492,Kayunga,Ntenjeru,Nazigo,Kimanya,Kisoga,2023,Primary,Government,Kisoga RC Primary School,Active,"0.642806738933396, 32.95213652768954"
+d102,c102,s108,p104,v362,Kayunga,Ntenjeru,Kayunga,Nakaseeta,Kisombwa,2023,Primary,Government,Kisombwa Primary School,Active,"0.6993552230547185, 32.92585029263948"
+d102,c102,s106,p132,v468,Kayunga,Ntenjeru,Nazigo,Bukamba,Kiswa,2023,Primary,Government,Kiswa RC Primary School,Active,
+d102,c101,s104,p139,v415,Kayunga,Bbaale,Kitimbwa,Kitatya,Kitatya A,2023,Primary,Government,Kitatya CU  Primary School,Active,
+d102,c101,s104,p139,,Kayunga,Bbaale,Kitimbwa,Kitatya,,2023,Primary,Private,Kitatya Junior School,Active,"0.834395001158751, 32.92033240193434"
+d102,c101,s104,p139,v416,Kayunga,Bbaale,Kitimbwa,Kitatya,Kitatya B,2023,Primary,Government,Kitatya RC Primary School,Active,
+d102,c101,s113,p171,v456,Kayunga,Bbaale,Kitimbwa Town Council,Wabuyinja Ward,Kitimbwa I,2023,Primary,Government,Kitimbwa CU Primary School,Active,
+d102,c101,s113,p171,v457,Kayunga,Bbaale,Kitimbwa Town Council,Wabuyinja Ward,Kitimbwa II,2023,Primary,Government,Kitimbwa Light SDA Primary School,Active,"0.8406571224820423, 32.88156835049015"
+d102,c101,s113,p171,v457,Kayunga,Bbaale,Kitimbwa Town Council,Wabuyinja Ward,Kitimbwa II,2023,Primary,Government,Kitimbwa RC Primary School ,Active,
+d102,c101,s113,p171,v456,Kayunga,Bbaale,Kitimbwa Town Council,Wabuyinja Ward,Kitimbwa I,2023,Primary,Government,Kitimbwa UMEA Primary School,Active,
+d102,c102,s108,p102,,Kayunga,Ntenjeru,Kayunga,Busaale,,2023,Primary,Private,Kito Junior School,Active,
+d102,c101,s103,p154,v301,Kayunga,Bbaale,Kayonza,Kitwe,Kyamugongo A,2023,Primary,Government,Kitwe RC Primary School,Active,
+d102,c102,s105,p118,v141,Kayunga,Ntenjeru,Busaana,Kiwangula,Kiwangula,2023,Primary,Government,Kiwangula COU Primary School,Active,
+d102,c102,s105,p118,v141,Kayunga,Ntenjeru,Busaana,Kiwangula,Kiwangula,2023,Primary,Government,Kiwangula RC Primary School,Active,
+d102,c101,s101,p127,v204,Kayunga,Bbaale,Galiraya,Kirasa,Kiwenda,2023,Primary,Government,Kiwenda Primary School,Active,
+d102,c102,s108,p106,v382,Kayunga,Ntenjeru,Kayunga,Nsotoka,Kiwooza A,2023,Primary,Government,Kiwooza COU Primary School,Active,
+d102,c102,s108,p106,v380,Kayunga,Ntenjeru,Kayunga,Nsotoka,Kiwooza B,2023,Primary,Government,Kiwooza RC Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Kiwuba Prayer Palace Primary School,Active,
+d102,c102,s108,p102,,Kayunga,Ntenjeru,Kayunga,Busaale,,2023,Primary,Private,Kiyagi Nursery And Primary School,Active,
+d102,c102,s106,p137,v493,Kayunga,Ntenjeru,Nazigo,Kimanya,Kiziika,2023,Primary,Government,Kiziika CU Primary School,Active,
+d102,c102,s106,p134,,Kayunga,Ntenjeru,Nazigo,Nsiima,,2023,Primary,Private,Kotwe Taqua Islamic Primary School,Active,
+d102,c102,s107,p130,v224,Kayunga,Ntenjeru,Kangulumira,Kawomya,Kungu,2023,Primary,Government,Kungu CU Primary School,Active,"0.48512266581223507, 32.51475825900061"
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Kwanza Junior Primary School,Active,"0.520251042873247, 33.05103644722893"
+d102,c102,s107,p129,,Kayunga,Ntenjeru,Kangulumira,Kikwanya,,2023,Primary,Private,Kyabato Primary School,Active,"0.586245224064048, 33.02283167833339"
+d102,c102,s106,p138,v357,Kayunga,Ntenjeru,Nazigo,Nazigo,Kyampisi,2023,Primary,Government,Kyampisi COU Primary School,Active,
+d102,c102,s108,p105,v375,Kayunga,Ntenjeru,Kayunga,Buyobe,Kyanya,2023,Primary,Government,Kyanya COU Primary School,Active,"0.7792354797432582, 32.88113057589572"
+d102,c102,s110,p161,v172,Kayunga,Ntenjeru,Busaana Town Council,Namukuma Ward,Kyayaye,2023,Primary,Government,Kyayaye RC Primary School,Active,
+d102,c101,s103,p158,v297,Kayunga,Bbaale,Kayonza,Namizo,Wunga,2023,Primary,Government,Kyebuye RC Primary School,Active,
+d102,c102,s110,p160,v136,Kayunga,Ntenjeru,Busaana Town Council,Lusenke Ward,Kyengera,2023,Primary,Government,Kyengera CU Primary School,Active,
+d102,c101,s113,p169,v448,Kayunga,Bbaale,Kitimbwa Town Council,Kyerima Ward,Kyerima A,2023,Primary,Government,Kyerima CU Primary School,Active,
+d102,c101,s104,p142,,Kayunga,Bbaale,Kitimbwa,Kyerima,,2023,Primary,Private,Kyerima Islamic Academy,Active,
+d102,c101,s113,p169,v449,Kayunga,Bbaale,Kitimbwa Town Council,Kyerima Ward,Kyerima B,2023,Primary,Government,Kyerima UMEA Primary School,Active,"0.15083560992463804, 32.07067572508865"
+d102,c101,s113,p171,v459,Kayunga,Bbaale,Kitimbwa Town Council,Wabuyinja Ward,Kyetume A,2023,Primary,Government,Kyetume High Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Lady Eseza Primary School,Active,
+d102,c102,s109,p146,,Kayunga,Ntenjeru,Kayunga Town Council,Ntenjeru Ward,,2023,Primary,Private,Leaders Primary School,Active,
+d102,c102,s110,p159,,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,,2023,Primary,Private,Liande Junior School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Light Future Seeta Primary School,Active,
+d102,c101,s113,p169,,Kayunga,Bbaale,Kitimbwa Town Council,Kyerima Ward,,2023,Primary,Private,Light Of Hope Kyerima,Active,
+d102,c101,s103,p156,,Kayunga,Bbaale,Kayonza,Nakyesanja,,2023,Primary,Private,Light Star Nakyesanja Junior,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Lion Of Judah Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Little Stars Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Losira Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Love World Junior School,Active,
+d102,c101,s103,p157,v328,Kayunga,Bbaale,Kayonza,Namaliri,Lugasa East,2023,Primary,Government,Lugasa Primary School,Active,"0.27191462369276004, 33.03127527191558"
+d102,c101,s103,p152,v285,Kayunga,Bbaale,Kayonza,Kamusabi,Lukonda,2023,Primary,Government,Lukonda Public Primary School,Active,
+d102,c102,s105,p121,,Kayunga,Ntenjeru,Busaana,Lusenke,,2023,Primary,Private,Lusenke Junior School,Active,
+d102,c101,s103,p153,v293,Kayunga,Bbaale,Kayonza,Kanywero,Kiseeta B,2023,Primary,Government,Lwabyata Parents Primary School,Active,
+d102,c101,s104,p141,,Kayunga,Bbaale,Kitimbwa,Wabwoko,,2023,Primary,Private,Mafumbe CU Primary School,Active,
+d102,c102,s106,p138,v499,Kayunga,Ntenjeru,Nazigo,Nazigo,Magala,2023,Primary,Government,Magala RC Primary School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Makula Junior School,Active,
+d102,c102,s107,p130,v225,Kayunga,Ntenjeru,Kangulumira,Kawomya,Maligita,2023,Primary,Government,Maligita Primary School,Active,
+d102,c101,s104,p140,v420,Kayunga,Bbaale,Kitimbwa,Namulaba,Mansa A,2023,Primary,Government,Mansa Eden Revival Primary School,Active,
+d102,c101,s104,p140,,Kayunga,Bbaale,Kitimbwa,Namulaba,,2023,Primary,Private,Mansa Freedom Nursery And Primary School,Active,
+d102,c101,s104,,,Kayunga,Bbaale,Kitimbwa,,,2023,Primary,Private,Marker Kindergaten,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Martins Junior School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Mataba Muslim Quaran Primary School,Active,"0.6775713913553679, 32.96577505761663"
+d102,c101,s113,,,Kayunga,Bbaale,Kitimbwa Town Council,,,2023,Primary,Private,Merryland Primary School Kitimbwa,Active,"0.5823089517352454, 33.01900860850679"
+d102,c102,s106,p132,,Kayunga,Ntenjeru,Nazigo,Bukamba,,2023,Primary,Private,Mirembe Infant School,Active,"0.24049495508050042, 32.9517781175531"
+d102,c102,s106,p132,,Kayunga,Ntenjeru,Nazigo,Bukamba,,2023,Primary,Private,Mirembe Junior School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,Mirembe Standard Primary School,Active,
+d102,c101,s102,p110,v110,Kayunga,Bbaale,Bbaale,Misanga,Misanga B,2023,Primary,Government,Misanga COU Primary School,Active,
+d102,c101,s102,p110,,Kayunga,Bbaale,Bbaale,Misanga,,2023,Primary,Private,Misanga Junior Primary School,Active,"1.1741728185105937, 32.9142853616537"
+d102,c102,s112,p168,,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,,2023,Primary,Private,Moon Light Kisega Primary School,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Morning Star Primary School,Active,"1.0612384604540739, 31.531438975677734"
+d102,c102,s111,p164,,Kayunga,Ntenjeru,Nazigo Town Council,Nazigo Ward,,2023,Primary,Private,Mother Sanyu Primary School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Mother Theresa Primary School,Active,
+d102,c102,s108,p108,,Kayunga,Ntenjeru,Kayunga,Kiteredde,,2023,Primary,Private,Mpumudde Junior School,Active,
+d102,c101,s104,p142,,Kayunga,Bbaale,Kitimbwa,Kyerima,,2023,Primary,Private,Mt Carmel Primary School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Mt Zion Primary School,Active,
+d102,c102,s108,p101,v346,Kayunga,Ntenjeru,Kayunga,Bubajjwe,Kaazi B,2023,Primary,Government,Mugema Primary School,Active,"0.7207447839556075, 32.93654660691475"
+d102,c101,s102,p112,v118,Kayunga,Bbaale,Bbaale,Mugongo,Mugongo East,2023,Primary,Government,Mugongo Primary School,Active,
+d102,c102,s106,p134,v475,Kayunga,Ntenjeru,Nazigo,Nsiima,Zakaria Zone,2023,Primary,Government,Musiitwa UMEA Primary School,Active,"0.6983843356202765, 33.03395865479361"
+d102,c102,s105,p116,v131,Kayunga,Ntenjeru,Busaana,Nabuganyi,Nabuganyi,2023,Primary,Government,Nabuganyi RC Primary School,Active,
+d102,c102,s105,p116,v131,Kayunga,Ntenjeru,Busaana,Nabuganyi,Nabuganyi,2023,Primary,Government,Nabuganyi RC Primary School,Active,
+d102,c102,s105,p117,,Kayunga,Ntenjeru,Busaana,Namukuma,,2023,Primary,Private,Nabutono Nursery And Primary School,Active,
+d102,c102,s105,p122,v162,Kayunga,Ntenjeru,Busaana,Nampanyi,Nakakandwa,2023,Primary,Government,Nakakandwa COU Primary School,Active,"0.7514398809975731, 33.03617801514392"
+d102,c102,s105,p122,v162,Kayunga,Ntenjeru,Busaana,Nampanyi,Nakakandwa,2023,Primary,Government,Nakakandwa RC Primary School,Active,
+d102,c101,s104,p142,v433,Kayunga,Bbaale,Kitimbwa,Kyerima,Nakaseeta,2023,Primary,Government,Nakaseeta COU Primary School,Active,
+d102,c102,s108,p104,,Kayunga,Ntenjeru,Kayunga,Nakaseeta,,2023,Primary,Private,Nakaseeta Junior School,Active,
+d102,c102,s106,p135,v488,Kayunga,Ntenjeru,Nazigo,Katikanyonyi,Kiribedda,2023,Primary,Government,Nakatooke RC Primary School,Active,"0.7271908748776965, 33.03721234196787"
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Nakatooke Trinity Primary School,Active,
+d102,c102,s105,p118,v142,Kayunga,Ntenjeru,Busaana,Kiwangula,Nakatovu,2023,Primary,Government,Nakatovu COU Primary School,Active,
+d102,c101,s101,p126,v198,Kayunga,Bbaale,Galiraya,Namayuge,Nakatuli,2023,Primary,Government,Nakatuli Primary School,Active,
+d102,c102,s105,p117,,Kayunga,Ntenjeru,Busaana,Namukuma,,2023,Primary,Private,Nakayima Junior ,Active,
+d102,c102,s108,p104,v364,Kayunga,Ntenjeru,Kayunga,Nakaseeta,Nakaziba,2023,Primary,Government,Nakaziba COU Primary School,Active,
+d102,c102,s108,p104,,Kayunga,Ntenjeru,Kayunga,Nakaseeta,,2023,Primary,Private,Nakaziba Quran Primary School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Government,Nakirubi COU Primary School,Active,
+d102,c101,s104,p144,v444,Kayunga,Bbaale,Kitimbwa,Nakivubo,Nakivubo A,2023,Primary,Government,Nakivubo COU Primary School,Active,
+d102,c101,s104,p144,v445,Kayunga,Bbaale,Kitimbwa,Nakivubo,Nakivubo B,2023,Primary,Government,Nakivubo UMEA Primary School,Active,"0.8247704001450435, 32.96406129372287"
+d102,c101,s103,p155,v308,Kayunga,Bbaale,Kayonza,Nakyesa,Nakyesa IV,2023,Primary,Government,Nakyessa Bright Future Primary School,Active,
+d102,c101,s103,p155,v307,Kayunga,Bbaale,Kayonza,Nakyesa,Nakyesa III,2023,Primary,Government,Nakyessa CU Primary School,Active,
+d102,c101,s103,p155,,Kayunga,Bbaale,Kayonza,Nakyesa,,2023,Primary,Private,Nakyessa Day And Boarding Primary School,Active,
+d102,c101,s103,p155,v308,Kayunga,Bbaale,Kayonza,Nakyesa,Nakyesa IV,2023,Primary,Government,Nakyessa Moslem Primary School,Active,
+d102,c101,s104,p142,v434,Kayunga,Bbaale,Kitimbwa,Kyerima,Namabuga,2023,Primary,Government,Namabuga RC Primary School,Active,
+d102,c102,s109,p148,v407,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Ward,Namagabi A,2023,Primary,Government,Namagabi Bishop Brown Primary School,Active,"0.7040392730863546, 32.90773811904724"
+d102,c102,s109,p148,v408,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Ward,Namagabi B,2023,Primary,Government,Namagabi UMEA Primary School,Active,"0.6986525365888311, 32.91240379208575"
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Namakandwa Islamic Primary School,Active,
+d102,c101,s101,p124,v189,Kayunga,Bbaale,Galiraya,Namalere,Namalere,2023,Primary,Government,Namalere Primary School,Active,
+d102,c101,s102,p111,v116,Kayunga,Bbaale,Bbaale,Kavule,Namataala,2023,Primary,Government,Namataala Primary School,Active,
+d102,c101,s103,p155,v310,Kayunga,Bbaale,Kayonza,Nakyesa,Namatogonya II,2023,Primary,Government,Namatogonya CU Primary School,Active,
+d102,c101,s103,p158,v334,Kayunga,Bbaale,Kayonza,Namizo,Namavundu A,2023,Primary,Government,Namavundu Primary School,Active,
+d102,c101,s101,p126,v197,Kayunga,Bbaale,Galiraya,Namayuge,Nabityanka,2023,Primary,Government,Namayuge Primary School,Active,
+d102,c102,s110,p162,v174,Kayunga,Ntenjeru,Busaana Town Council,Namirembe Ward,Namirembe A,2023,Primary,Government,Namirembe COU Primary School,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Namirembe Community Primary School,Active,
+d102,c102,s110,p162,v147,Kayunga,Ntenjeru,Busaana Town Council,Namirembe Ward,Namirembe B,2023,Primary,Government,Namirembe Public Primary School,Active,
+d102,c101,s103,p158,v335,Kayunga,Bbaale,Kayonza,Namizo,Namizo A,2023,Primary,Government,Namiizo UMEA Primary School,Active,
+d102,c101,s104,p140,,Kayunga,Bbaale,Kitimbwa,Namulaba,Namulaba,2023,Primary,Government,Namulaba COU Primary School,Active,
+d102,c101,s104,p140,,Kayunga,Bbaale,Kitimbwa,Namulaba,Namulaba,2023,Primary,Government,Namulaba UMEA Primary School,Active,
+d102,c102,s108,p106,v376,Kayunga,Ntenjeru,Kayunga,Nsotoka,Namulanda,2023,Primary,Government,Namulanda COU Primary School,Active,"0.6496734277524199, 32.943061441193784"
+d102,c102,s108,p106,v376,Kayunga,Ntenjeru,Kayunga,Nsotoka,Namulanda,2023,Primary,Government,Namulanda RC Primary School,Active,"0.6568289526438593, 32.93475508210179"
+d102,c102,s105,p120,v152,Kayunga,Ntenjeru,Busaana,Namusaala,Namusaala,2023,Primary,Government,Namusaala COU Primary School,Active,
+d102,c102,s105,p120,v152,Kayunga,Ntenjeru,Busaana,Namusaala,Namusaala,2023,Primary,Government,Namusaala RC Primary School,Active,
+d102,c102,s105,p120,v150,Kayunga,Ntenjeru,Busaana,Namusaala,Namutya,2023,Primary,Government,Namutya COU Primary School,Active,"0.8693475873454607, 32.99584674291395"
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,Nanatogonya Primary School,Closed,
+d102,c102,s105,p117,v138,Kayunga,Ntenjeru,Busaana,Namukuma,Nangabo,2023,Primary,Government,Nangabo COU Primary School,Active,
+d102,c101,s104,p142,v432,Kayunga,Bbaale,Kitimbwa,Kyerima,Nanjwenge,2023,Primary,Government,Nanjwenge COU Primary School,Active,
+d102,c101,s103,p155,,Kayunga,Bbaale,Kayonza,Nakyesa,,2023,Primary,Private,Narins Junior School,Active,
+d102,c102,s106,p136,v488,Kayunga,Ntenjeru,Nazigo,Natteta,Kiribedda,2023,Primary,Government,Natteta CU Primary School,Active,
+d102,c102,s106,p136,,Kayunga,Ntenjeru,Nazigo,Natteta,,2023,Primary,Private,Natteta Islamic Primary School,Active,
+d102,c102,s108,p103,v358,Kayunga,Ntenjeru,Kayunga,Bukolooto,Nawandagala,2023,Primary,Government,Nawandagala RC Primary School,Active,
+d102,c101,s103,p158,v337,Kayunga,Bbaale,Kayonza,Namizo,Nawansama,2023,Primary,Government,Nawansama UMEA Koran Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Government,Nazigo Demonstration Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Nazigo Noor Primary School,Active,"0.6441962870168799, 32.98517111685999"
+d102,c102,s106,p134,,Kayunga,Ntenjeru,Nazigo,Nsiima,,2023,Primary,Government,Nazigo RC Primary School,Active,
+d102,c102,s109,,v359,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,Ndeeba,2023,Primary,Government,Ndeeba COU Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Ndeeba Primary School,Active,
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,New Abc Devine Foundation,Active,
+d102,c102,s108,p102,,Kayunga,Ntenjeru,Kayunga,Busaale,,2023,Primary,Private,New Hope Busolo Primary School,Active,
+d102,c101,s104,p143,,Kayunga,Bbaale,Kitimbwa,Nkokonjeru,,2023,Primary,Private,New Hope Junior School,Active,
+d102,c101,s103,p151,,Kayunga,Bbaale,Kayonza,Kafumba,,2023,Primary,Private,New Hope Nursery And Primary School,Active,
+d102,c102,s108,p102,,Kayunga,Ntenjeru,Kayunga,Busaale,,2023,Primary,Private,New Hope Preparatory Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,New Standard Nursery And Primary School,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,New Steps Primary School,Active,
+d102,c102,s105,p118,v143,Kayunga,Ntenjeru,Busaana,Kiwangula,Ngeye,2023,Primary,Government,Ngeye COU Primary School,Active,
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Primary,Private,Nile View Primary School,Closed,"0.6081948109646871, 33.073647720711264"
+d102,c101,s104,p143,v435,Kayunga,Bbaale,Kitimbwa,Nkokonjeru,Bulawula A,2023,Primary,Government,Nkokonjeru COU Primary School,Active,
+d102,c101,s104,p143,v437,Kayunga,Bbaale,Kitimbwa,Nkokonjeru,Bulawula C,2023,Primary,Government,Nkokonjeru RC Primary School,Active,
+d102,c102,s110,p159,,Kayunga,Ntenjeru,Busaana Town Council,Kasana Ward,,2023,Primary,Private,Noble Hill Primary School,Active,
+d102,c102,s112,p168,v424,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,Nongo,2023,Primary,Government,Nongo CU Primary School Kangulumira ,Active,
+d102,c101,s104,p140,v424,Kayunga,Bbaale,Kitimbwa,Namulaba,Nongo,2023,Primary,Government,Nongo CU Primary School Kitimbwa,Active,
+d102,c102,s106,p134,v478,Kayunga,Ntenjeru,Nazigo,Nsiima,Kotwe D,2023,Primary,Government,Nsiima COU Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Nsotoka Islamic Primary School,Active,
+d102,c101,s101,p128,v210,Kayunga,Bbaale,Galiraya,Ntimba,Kawongo B,2023,Primary,Government,Ntimba  Primary School,Active,
+d102,c102,s107,p131,v234,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,Wantayi,2023,Primary,Government,Nyiize CU Primary School,Active,
+d102,c102,s107,p131,v232,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,Nyiize,2023,Primary,Government,Nyiize RC Primary School,Active,"0.5339387820441909, 33.04737489664859"
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Nyiize SDA Primary School,Active,"0.5290899163637981, 33.051605044768245"
+d102,c101,s103,p151,v275,Kayunga,Bbaale,Kayonza,Kafumba,Nyondo A,2023,Primary,Government,Nyondo RC Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Obadia Sajjabi Community Primary School,Active,"0.6713591551722414, 32.960491105857564"
+d102,c102,s108,p103,,Kayunga,Ntenjeru,Kayunga,Bukolooto,,2023,Primary,Private,Orion Junior School,Active,"0.6808839381674778, 32.911729132728304"
+d102,c102,s112,p166,,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,,2023,Primary,Private,Precious Primary School Kangulumira,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Pride Junior School,Active,
+d102,c101,s103,p157,,Kayunga,Bbaale,Kayonza,Namaliri,,2023,Primary,Private,Quality Education Centre Primary School,Active,
+d102,c102,s108,p101,,Kayunga,Ntenjeru,Kayunga,Bubajjwe,,2023,Primary,Private,Quran Centre Primary School Bubajjwe,Active,
+d102,c102,s112,p167,,Kayunga,Ntenjeru,Kangulumira Town Council,Kigayaza Ward,,2023,Primary,Private,Ray Of Hope Primary School Kigayaza,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Renah Nursery And Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Red Star Primary School,Active,
+d102,c102,s108,p101,,Kayunga,Ntenjeru,Kayunga,Bubajjwe,,2023,Primary,Private,Rich Dad Nursery And Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,River Side Primary School,Active,
+d102,c102,s105,p120,,Kayunga,Ntenjeru,Busaana,Namusaala,,2023,Primary,Private,Rise And Shine Primary School Namusaala,Active,
+d102,c101,s101,p128,,Kayunga,Bbaale,Galiraya,Ntimba,,2023,Primary,Private,Rosal Primary School,Active,
+d102,c101,s103,p150,,Kayunga,Bbaale,Kayonza,Balisanga,,2023,Primary,Private,Sammy Junior School Kamwokya,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Santa Primary School nazigo,Active,
+d102,c102,s105,p121,,Kayunga,Ntenjeru,Busaana,Lusenke,,2023,Primary,Private,Savior Primary School Kibuzi,Active,
+d102,c102,s107,p130,,Kayunga,Ntenjeru,Kangulumira,Kawomya,,2023,Primary,Private,Seat Of Wisdom Primary School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Seeta Junior Primary School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Seeta Moslem Primary School,Active,"0.55732758972254, 33.03628714752352"
+d102,c101,s101,p126,v200,Kayunga,Bbaale,Galiraya,Namayuge,Sokoso,2023,Primary,Government,Sokoso Primary School,Active,"1.2526821520557858, 32.815708899842654"
+d102,c102,s112,p166,v243,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Ward,Soona,2023,Primary,Government,Soona RC Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Source Of Wisdom Junior School,Active,
+d102,c102,s108,p108,v392,Kayunga,Ntenjeru,Kayunga,Kiteredde,Kiteredde,2023,Primary,Government,Ssekagya Islamic Primary School,Active,
+d102,c102,s108,p103,v360,Kayunga,Ntenjeru,Kayunga,Bukolooto,Ntooke,2023,Primary,Government,Ssezibwa COU Primary School,Active,
+d102,c101,s101,p123,v176,Kayunga,Bbaale,Galiraya,Galiraya,Busungire,2023,Primary,Government,St Andrew Busungire RC Primary School,Active,
+d102,c102,s109,p146,v402,Kayunga,Ntenjeru,Kayunga Town Council,Ntenjeru Ward,Ntenjeru II,2023,Primary,Government,St Andrew Ntenjeru RC Primary School,Active,
+d102,c102,s108,p103,,Kayunga,Ntenjeru,Kayunga,Bukolooto,,2023,Primary,Private,St Anthony Junior School,Active,
+d102,c102,s106,p136,,Kayunga,Ntenjeru,Nazigo,Natteta,,2023,Primary,Private,St Anthony Nazigo Junior School,Active,"0.6395569720151669, 32.98944915217719"
+d102,c102,s106,p132,,Kayunga,Ntenjeru,Nazigo,Bukamba,,2023,Primary,Private,St Billon Primary School,Active,
+d102,c102,s105,p121,,Kayunga,Ntenjeru,Busaana,Lusenke,,2023,Primary,Private,St Gabriel Primary School School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Primary,Private,St Gonzaga Primary School Kyamimbi ,Active,
+d102,c102,s106,p133,,Kayunga,Ntenjeru,Nazigo,Kirindi,,2023,Primary,Private,St John Deo Balabyekkubo Primary School,Active,
+d102,c102,s105,p118,v140,Kayunga,Ntenjeru,Busaana,Kiwangula,Buyungirizi,2023,Primary,Government,St Josephs Buyungirizi RC Primary School,Active,
+d102,c101,s103,p157,v330,Kayunga,Bbaale,Kayonza,Namaliri,Nakabango,2023,Primary,Government,St Jude Kayonza RC Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,St Jude Primary School Ntooke,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,St Kana Primary School,Active,
+d102,c101,s101,p123,v178,Kayunga,Bbaale,Galiraya,Galiraya,Kidibya A,2023,Primary,Government,St Kizito Kidibya Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,St Kizito Primary School,Active,
+d102,c102,s108,p103,,Kayunga,Ntenjeru,Kayunga,Bukolooto,,2023,Primary,Private,St Lawrence Primary School,Active,
+d102,c102,s106,p133,v472,Kayunga,Ntenjeru,Nazigo,Kirindi,Kirindi,2023,Primary,Government,St Lwanga Kirindi Primary School,Active,
+d102,c102,s105,p118,,Kayunga,Ntenjeru,Busaana,Kiwangula,,2023,Primary,Private,St Mark Junior School Wantete,Active,
+d102,c101,s104,p140,v424,Kayunga,Bbaale,Kitimbwa,Namulaba,Nongo,2023,Primary,Government,St Martins Nongo RC Primary School,Active,
+d102,c102,s112,p168,,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,,2023,Primary,Private,St Marys Child Empowerment Primary School,Active,
+d102,c102,s109,p147,,Kayunga,Ntenjeru,Kayunga Town Council,Central Ward,,2023,Primary,Private,St Marys Infant Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,St Marys Primary School Nakakonge,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,St Marys Primary School Nakakonge,Active,
+d102,c102,s105,p115,,Kayunga,Ntenjeru,Busaana,Kasana,,2023,Primary,Private,St Noah Junior School,Active,
+d102,c101,s102,,,Kayunga,Bbaale,Bbaale,,,2023,Primary,Private,St Peters Primary School,Closed,
+d102,c102,s105,p121,v159,Kayunga,Ntenjeru,Busaana,Lusenke,Kireku Lusenke,2023,Primary,Government,St Peters Primary School Lusenke,Active,
+d102,c102,s105,p121,,Kayunga,Ntenjeru,Busaana,Lusenke,,2023,Primary,Private,St Peters RC Primary School Busaana,Active,
+d102,c102,s109,p146,,Kayunga,Ntenjeru,Kayunga Town Council,Ntenjeru Ward,,2023,Primary,Private,St Regina Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Standard High School,Active,
+d102,c101,s102,p111,,Kayunga,Bbaale,Bbaale,Kavule,,2023,Primary,Private,Star Academy Primary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,Bukolooto Ward,,2023,Primary,Private,Star Academy Primary School,Active,"0.6891528367761904, 32.9112410524412"
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Star Light Primary School Kiwooza,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Star Nursery And Primary School,Active,
+d102,c101,s103,p157,,Kayunga,Bbaale,Kayonza,Namaliri,,2023,Primary,Private,Step By Step Infant Primary School,Active,
+d102,c101,s103,p157,,Kayunga,Bbaale,Kayonza,Namaliri,,2023,Primary,Private,Step By Step Primary School,Active,
+d102,c102,s111,p164,,Kayunga,Ntenjeru,Nazigo Town Council,Nazigo Ward,,2023,Primary,Private,Sumaya Islamic Primary School,Active,
+d102,c102,s111,p164,,Kayunga,Ntenjeru,Nazigo Town Council,Nazigo Ward,,2023,Primary,Private,Talent Primary School,Active,
+d102,c101,s102,p113,v122,Kayunga,Bbaale,Bbaale,Kokotero,Tangoye,2023,Primary,Government,Tangoye Parents Primary School,Active,"1.1091475285945303, 32.81265646207889"
+d102,c102,s109,p146,v403,Kayunga,Ntenjeru,Kayunga Town Council,Ntenjeru Ward,Tente,2023,Primary,Government,Tente Primary School,Active,"0.7276503337782866, 32.889700904488556"
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,The Bright Morning Star Primary School,Active,
+d102,c101,s103,p153,v295,Kayunga,Bbaale,Kayonza,Kanywero,Tindian,2023,Primary,Government,Tindyani  Primary School,Active,
+d102,c102,s108,p104,,Kayunga,Ntenjeru,Kayunga,Nakaseeta,,2023,Primary,Private,Top Care Primary School Wajjanzi,Active,
+d102,c101,s102,p109,,Kayunga,Bbaale,Bbaale,Bbaale,,2023,Primary,Private,Trinity Centre Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Primary,Private,Tripple Star Primary School,Active,
+d102,c101,s104,p143,v440,Kayunga,Bbaale,Kitimbwa,Nkokonjeru,Tweyagalire A,2023,Primary,Government,Tweyagalire RC Primary School,Active,
+d102,c102,s112,p168,,Kayunga,Ntenjeru,Kangulumira Town Council,Nakatundu Ward,,2023,Primary,Private,Twinkle Star Primary School Nongo,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Primary,Private,Uthuman Islamic Primary School,Closed,
+d102,c101,s103,p154,,Kayunga,Bbaale,Kayonza,Kitwe,,2023,Primary,Private,Universal Fellowship N Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Victorious Primary School,Active,"0.6476706165403557, 32.998501360387586"
+d102,c102,s109,p148,,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Ward,,2023,Primary,Private,Victory Nursery School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Victory Nursery And Primary School,Active,
+d102,c102,s107,p131,,Kayunga,Ntenjeru,Kangulumira,Seeta Nyiize,,2023,Primary,Private,Victory Primary School,Active,
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,Vision Junior School,Active,
+d102,c102,s106,p136,v490,Kayunga,Ntenjeru,Nazigo,Natteta,Wabirongo,2023,Primary,Government,Wabirongo Primary School,Active,"0.630186550840618, 33.03123855960509"
+d102,c101,s103,p153,v287,Kayunga,Bbaale,Kayonza,Kanywero,Wabunyonyi,2023,Primary,Government,Wabunyonyi COU Primary School ,Active,
+d102,c101,s104,p141,v454,Kayunga,Bbaale,Kitimbwa,Wabwoko,Wabwoko B,2023,Primary,Government,Wabwoko CU Primary School,Active,
+d102,c101,s113,p169,,Kayunga,Bbaale,Kitimbwa Town Council,Kyerima Ward,,2023,Primary,Private,Way Forward Junior School,Active,"0.807964336857613, 32.88691589146216"
+d102,c102,s108,p106,,Kayunga,Ntenjeru,Kayunga,Nsotoka,,2023,Primary,Private,West Gate Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Will Of God Primary School,Active,
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Primary,Private,Winners Primary School,Closed,
+d102,c101,s103,p150,,Kayunga,Bbaale,Kayonza,Balisanga,,2023,Primary,Private,Wisdom Academy Wunga COU Primary School,Active,
+d102,c101,s103,p153,v297,Kayunga,Bbaale,Kayonza,Kanywero,Wunga,2023,Primary,Government,Wunga Primary School,Active,
+d102,c102,s106,p138,,Kayunga,Ntenjeru,Nazigo,Nazigo,,2023,Primary,Private,Zam Zam Primary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,,Active,
+d102,c101,s102,,,Kayunga,Bbaale,Bbaale,,,2023,Secondary,Private,Bbaale Parents Secondary School,Active,
+d102,c101,s102,,,Kayunga,Bbaale,Bbaale,,,2023,Secondary,Government,Bbaale Senior Secondary School,Active,
+d102,c101,s104,,,Kayunga,Bbaale,Kitimbwa,,,2023,Secondary,Private,Brain Set High School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Bridge Light College Secondary School Suuka,Active,"0.6589784098414436, 32.96031613003804"
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Bubajwe Senior Secondary School,Active,
+d102,c102,s110,,,Kayunga,Ntenjeru,Busaana Town Council,,,2023,Secondary,Private,Bugerere High School Busaana,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,Bukamba Nile Secondary School,Active,"0.712664674766081, 33.01848683500541"
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Busaale Senior Secondary School,Active,
+d102,c102,s110,,,Kayunga,Ntenjeru,Busaana Town Council,,,2023,Secondary,Private,Busaana Modern Senior Secondary School,Active,
+d102,c102,s110,,,Kayunga,Ntenjeru,Busaana Town Council,,,2023,Secondary,Government,Busaana Secondary School,Active,"0.7786675744610223, 32.988997428988405"
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Secondary,Private,Fountain Of Hope High School,Active,
+d102,c101,s101,,,Kayunga,Bbaale,Galiraya,,,2023,Secondary,Government,Galiraya Seed Secondary School,Active,"1.3739693567947748, 32.80314268894667"
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,Gods Way Senior Secondary School Bugiri,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Green Valley High School,Active,"0.6608816265142307, 32.956492664471064"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Private,Green Vine College,Active,"0.7055427818356442, 32.907934896632675"
+d102,c102,s105,,,Kayunga,Ntenjeru,Busaana,,,2023,Secondary,Private,Hope Christian High School,Active,"0.8305473355766089, 33.004855454055004"
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Hopeful Future Ntooke,Active,
+d102,c102,s112,,,Kayunga,Ntenjeru,Kangulumira Town Council,,,2023,Secondary,Private,Kangulumira Islamic Senior Secondary School,Active,
+d102,c102,s112,,,Kayunga,Ntenjeru,Kangulumira Town Council,,,2023,Secondary,Government,Kangulumira Public Secondary School,Active,"0.5891488978312917, 33.028075977263136"
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Government,Kanjuki Senior Secondary School,Active,"0.7478698063874785, 32.88734248895018"
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Secondary,Private,Kawolokoota Senior Secodnary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Private,Kayunga Light College Senior Secondary School,Active,"0.7091585431189451, 32.90335644966357"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Private,Kingstone Senior Secondary School,Active,"0.6861664243547332, 32.91983820495027"
+d102,c102,s112,,,Kayunga,Ntenjeru,Kangulumira Town Council,,,2023,Secondary,Private,Kisega High School,Active,"0.5895009091281181, 33.01880163157865"
+d102,c101,s104,,,Kayunga,Bbaale,Kitimbwa,,,2023,Secondary,Government,Kitatya Senior Secondary School,Active,
+d102,c101,s113,,,Kayunga,Bbaale,Kitimbwa Town Council,,,2023,Secondary,Private,Kitimbwa Bright Future Academy,Active,
+d102,c101,s113,,,Kayunga,Bbaale,Kitimbwa Town Council,,,2023,Secondary,Private,Kitimbwa High School,Active,"0.8500627309156522, 32.87452964847791"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Private,Lion Of Judah Senior Secondary School,Active,
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Secondary,Private,Marks Oasis Senior Secondary School,Active,
+d102,c101,s113,,,Kayunga,Bbaale,Kitimbwa Town Council,,,2023,Secondary,Private,Mt Carmel Education Centre,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Mugema Senior Secondary School,Active,"0.720436995036023, 32.93581617360647"
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Secondary,Private,Mukono Comprehensive School Kitwe,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Government,Musiitwa Seed Secondary School,Active,"0.6990940521003481, 33.03288293127737"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Private,Muyalen High School,Active,"0.7300182106892042, 32.89179480244106"
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Secondary,Government,Naalinya Irene Ndagire Secondary School,Active,
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Secondary,Private,Nakyessa Parents Senior Secondary School,Active,
+d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Secondary,Private,Nakyessa Senior Secondary School,Active,
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Government,Namagabi Senior Secondary School,Active,"0.7045891374988242, 32.909065802441106"
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,Nazigo Islamic Senior Seecondary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,Nazigo Nile Senior Secondary School,Active,
+d102,c102,s111,,,Kayunga,Ntenjeru,Nazigo Town Council,,,2023,Secondary,Private,Nazigo Noor Senior Secondary School,Active,
+d102,c102,s111,,,Kayunga,Ntenjeru,Nazigo Town Council,,,2023,Secondary,Private,Nazigo Town Senior Secondary School,Active,"0.644338651845536, 32.983645160113895"
+d102,c102,s109,,,Kayunga,Ntenjeru,Kayunga Town Council,,,2023,Secondary,Government,Ndeeba Senior Secondary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,Outspan Senior Secondary School Nazigo,Active,"0.6651990430204574, 33.02307319951237"
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Secondary,Private,Ronah High School,Active,
+d102,c101,s102,,,Kayunga,Bbaale,Bbaale,,,2023,Secondary,Private,Sekisinde Vocational School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,Suuka Islamic Secondary School,Active,"0.6625137453198205, 32.95340563169124"
+d102,c102,s105,,,Kayunga,Ntenjeru,Busaana,,,2023,Secondary,Private,Spring College Namusala,Active,
+d102,c102,s111,,,Kayunga,Ntenjeru,Nazigo Town Council,,,2023,Secondary,Private,St Apollo Senior Secondary School Nazigo,Active,"0.643978455117989, 32.98513524232806"
+d102,c101,s101,,,Kayunga,Bbaale,Galiraya,,,2023,Secondary,Private,St Boniface Secondary School Kasokwe,Active,
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Secondary,Private,St James Bukeeka Secondary School,Active,
+d102,c102,s106,,,Kayunga,Ntenjeru,Nazigo,,,2023,Secondary,Private,St John Apollo Secondary School,Active,
+d102,c102,s108,,,Kayunga,Ntenjeru,Kayunga,,,2023,Secondary,Private,St Johns Busaale Secondary School,Active,
+d102,c102,s111,,,Kayunga,Ntenjeru,Nazigo Town Council,,,2023,Secondary,Government,St Kalemba Senior Secondary School Nazigo,Active,"0.640504877401421, 32.99643002448961"
+d102,c101,s113,,,Kayunga,Bbaale,Kitimbwa Town Council,,,2023,Secondary,Private,St Mathias Mulumba Secondary School,Active,"-0.6810209726072183, 35.06388729435192"
+d102,c102,s105,,,Kayunga,Ntenjeru,Busaana,,,2023,Secondary,Private,St Mark High School,Active,
+d102,c102,s105,,,Kayunga,Ntenjeru,Busaana,,,2023,Secondary,Government,St Peters Kibuzi Senior Secondary School,Active,"0.7312827981029075, 32.98183625097558"
+d102,c102,s112,,,Kayunga,Ntenjeru,Kangulumira Town Council,,,2023,Secondary,Private,St Ponsion Ngondwe Secondary School,Active,
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Secondary,Private,Uganda Martrys Cen Senior Secondary School,Active,"0.5830639545284295, 33.03439032284931"
+d102,c102,s105,,,Kayunga,Ntenjeru,Busaana,,,2023,Secondary,Private,Uganda Martrys Secondary School Kayunga,Active,"0.7117983881901382, 32.90971160864815"
+d102,c102,s112,,,Kayunga,Ntenjeru,Kangulumira Town Council,,,2023,Secondary,Private,Uganda Martyrs Senior Secondary School Kangulumira,Active,
+d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Secondary,Private,Vision For Africa Senior Secondary School,Active,
+d102,c102,s111,,,Kayunga,Ntenjeru,Nazigo Town Council,,,2023,Secondary,Private,Yale High School,Active,"0.6317338083913996, 32.99612445386274"
