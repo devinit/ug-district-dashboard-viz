@@ -98,49 +98,85 @@ const processCoordinates = (data) => {
 return coordinates.map((item) => parseFloat(item))
 }
 
-export const getSchoolMarkers =  (district, level) => {
+export const getSchoolMarkers =  (district, schoolSpecs) => {
   const dataUrl = `https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/${activeBranch}/public/assets/data/${district.toLowerCase()}/schools-locations.csv`
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: []
   }
-  if (!level || !dataUrl) return finalGeoJSON
+  if (!schoolSpecs || !dataUrl) return finalGeoJSON
   if (dataUrl) {
     fetchData(dataUrl).then((data) => {
-      data.filter((d)=> d.level === level).forEach((item) => {
-        if (item.gps_coordinates) {
-          const itemCoordinates = processCoordinates(item.gps_coordinates)
+      if (schoolSpecs.ownership === 'all')
+      {
+        data.filter((d)=> d.level === schoolSpecs.level ).forEach((item) => {
+          if (item.gps_coordinates) {
+            const itemCoordinates = processCoordinates(item.gps_coordinates)
 
-          if (itemCoordinates) {
-            finalGeoJSON.features.push({
-              type: 'Feature',
-              geometry: {
-                type: 'Point',
-                coordinates: [itemCoordinates[1], itemCoordinates[0]]
-              },
-              properties: {
-                level: item.level,
-                ownership: item.ownership,
-                name: item.school_name,
-                parish: item.parish,
-              }
-            })
+            if (itemCoordinates) {
+              finalGeoJSON.features.push({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: [itemCoordinates[1], itemCoordinates[0]]
+                },
+                properties: {
+                  level: item.level,
+                  ownership: item.ownership,
+                  name: item.school_name,
+                  parish: item.parish,
+                }
+              })
+            }
           }
-        }
-      })
+        })
+      } else {
+        data.filter((d)=> d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership ).forEach((item) => {
+          if (item.gps_coordinates) {
+            const itemCoordinates = processCoordinates(item.gps_coordinates)
+
+            if (itemCoordinates) {
+              finalGeoJSON.features.push({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: [itemCoordinates[1], itemCoordinates[0]]
+                },
+                properties: {
+                  level: item.level,
+                  ownership: item.ownership,
+                  name: item.school_name,
+                  parish: item.parish,
+                }
+              })
+            }
+          }
+        })
+      }
+
     }).catch((error) => {
       console.log(error)
     })
 
   return finalGeoJSON
   }
-  
+
 return finalGeoJSON
 }
 
 export function schoolLevel(indicator) {
-  if (indicator === 'Number of Primary Schools') {return 'Primary'} if(indicator === 'Number of Secondary Schools')
-  {return 'Secondary'}
+  if (indicator === 'numberOfPrimarySchools')
+  {return {level:'Primary', ownership: 'all'}}
+  if(indicator === 'numberOfSecondarySchools')
+  {return {level:'Secondary', ownership: 'all'}}
+  if(indicator === 'numberOfGovernmentPrimarySchools')
+  {return {level:'Primary', ownership: 'Government'}}
+  if(indicator === 'numberOfPrivatePrimarySchools')
+  {return {level:'Primary', ownership: 'Private'}}
+  if(indicator === 'numberOfGovernmentSecondarySchools')
+  {return {level:'Secondary', ownership: 'Government'}}
+  if(indicator === 'numberOfPrivateSecondarySchools')
+  {return {level:'Secondary', ownership: 'Private'}}
 
 return ''
 

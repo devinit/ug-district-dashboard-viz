@@ -272,40 +272,125 @@
         dashboardUrl: 'https://google.com',
         dashboardButtonCaption: 'View Education Dashboard',
         indicators: [
-          {
-            id: 'numberOfSchools',
-            name: 'Number of Primary Schools',
-            description: 'Description Goes Here!',
-            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            range: [5, 10, 15, 20],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
-            yearRange: [2016, 2021],
-            mapping: {
-              location: 'SubCounty',
-              value: 'Value',
+        {
+          id: 'numberOfPrimarySchools',
+          name: 'Number of Primary Schools (All)',
+          description: 'All government and private schools in Masindi district, by sub-county',
+          //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+          colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+          range: [5, 10, 15, 20],
+          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
+          yearRange: [2014, 2022],
+          excludeYears: [2015, 2017, 2019, 2021],
+          mapping: {
+              location: 'subcounty',
+              value: 'value',
               year: 'year',
+          },
+          aggregator: 'sum', //either sum, avg
+          filters: {
+              level: ['Primary'],
+          },
+          },
+          {
+            id: 'numberOfGovernmentPrimarySchools',
+            name: 'Number of Primary Schools (Government)',
+            description: 'All government schools in Masindi district, by sub-county',
+            //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [5, 10, 15, 20],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
+            yearRange: [2014, 2022],
+            excludeYears: [2015, 2017, 2019, 2021],
+            mapping: {
+                location: 'subcounty',
+                value: 'value',
+                year: 'year',
             },
             aggregator: 'sum', //either sum, avg
             filters: {
-              level: ['primary'],
+                level: ['Primary'],
+                ownership: ['Government'],
+            },
+          },
+          {
+            id: 'numberOfPrivatePrimarySchools',
+            name: 'Number of Primary Schools (Private)',
+            description: 'All private schools in Masindi district, by sub-county',
+            //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+            range: [5, 10, 15, 20],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
+            yearRange: [2016, 2022],
+            excludeYears: [2017, 2019, 2021],
+            mapping: {
+                location: 'subcounty',
+                value: 'value',
+                year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+                level: ['Primary'],
+                ownership: ['Private'],
             },
           },
           {
             id: 'numberOfSecondarySchools',
-            name: 'Number of Secondary Schools',
-            description: 'Description Goes Here!',
+            name: 'Number of Secondary Schools (All)',
+            description: 'All secondary schools in Masindi district, by sub-county.',
             colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            range: [5, 10, 15, 20],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/numberOfSchools.json',
-            yearRange: [2016, 2021],
+            range: [2, 5, 10],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
+            yearRange: [2014, 2022],
+            excludeYears: [2015, 2017, 2019, 2021],
             mapping: {
-              location: 'SubCounty',
-              value: 'Value',
-              year: 'year',
+                location: 'subcounty',
+                value: 'value',
+                year: 'year',
             },
             aggregator: 'sum', //either sum, avg
             filters: {
-              level: ['secondary'],
+                level: ['Secondary'],
+            },
+          },
+          {
+            id: 'numberOfGovernmentSecondarySchools',
+            name: 'Number of Secondary Schools (Government)',
+            description: 'All government secondary schools in Masindi district, by sub-county.',
+            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            range: [2, 5, 10],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
+            yearRange: [2014, 2022],
+            excludeYears: [2015, 2017, 2019, 2021],
+            mapping: {
+                location: 'subcounty',
+                value: 'value',
+                year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+                level: ['Secondary'],
+                ownership: ['Government']
+            },
+          },
+          {
+            id: 'numberOfPrivateSecondarySchools',
+            name: 'Number of Secondary Schools (Private)',
+            description: 'All private secondary schools in Masindi district, by sub-county.',
+            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+            range: [2, 5, 10],
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
+            yearRange: [2014, 2022],
+            excludeYears: [2015, 2017, 2019, 2021],
+            mapping: {
+                location: 'subcounty',
+                value: 'value',
+                year: 'year',
+            },
+            aggregator: 'sum', //either sum, avg
+            filters: {
+                level: ['Secondary'],
+                ownership: ['Private']
             },
           },
           {
