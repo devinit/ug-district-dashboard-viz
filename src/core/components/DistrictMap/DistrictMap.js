@@ -122,7 +122,6 @@ const DistrictMap = (props) => {
     props.location,
     props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer
   );
-  if (mapInstance) console.log(mapInstance.getStyle());
   useEffect(() => {
     // set map options using their caption values
     if (activeIndicator) {
