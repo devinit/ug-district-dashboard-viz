@@ -37,13 +37,8 @@ const useMap = (location, layer, defaultOptions = {}) => {
     e.preventDefault()
     map.off('mousemove',COLOURED_LAYER,onHover)
     popup.remove()
-    if (e.features.length > 0) {
-      map.setFeatureState({
-        source: 'points',
-        id: e.features[0].id
-        }, {
-          hover: true
-        });
+    if (e.features.length){
+      map.setLayoutProperty('points', 'icon-size', ['match', ['get', 'name'], e.features[0].properties.name, 0.5, 0.3])
     }
 
   }, [map, locationData])
@@ -74,6 +69,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
   const handleMarkerLeave = useCallback(() => {
     map.on('mousemove',COLOURED_LAYER,onHover)
     popup.remove()
+    map.setLayoutProperty('points', 'icon-size', 0.3)
   }, [map, location])
 
   useEffect(() => {
@@ -102,7 +98,10 @@ const useMap = (location, layer, defaultOptions = {}) => {
             },
             paint: {
               'icon-color': [
-                'match',
+                'case',
+                ['boolean', ['feature-state', 'hover'], false],
+                'black',
+                ['match',
                 ['get', 'level'],
                 'Primary',
                 '#4287f5',
@@ -112,7 +111,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
                 '#17cf26',
                 'Tertiary',
                 '#f27916',
-                '#FF0000'
+                '#FF0000',],
               ]
             },
             minzoom: 8,
