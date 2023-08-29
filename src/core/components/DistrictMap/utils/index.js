@@ -98,14 +98,15 @@ const processCoordinates = (data) => {
 return coordinates.map((item) => parseFloat(item))
 }
 
-export const getSchoolMarkers =  (district) => {
+export const getSchoolMarkers =  (district, level) => {
   const dataUrl = `https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/${activeBranch}/public/assets/data/${district.toLowerCase()}/schools-locations.csv`
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: []
   }
+  if (!level) return finalGeoJSON
   fetchData(dataUrl).then((data) => {
-    data.forEach((item) => {
+    data.filter((d)=> d.level === level).forEach((item) => {
       if (item.gps_coordinates) {
         const itemCoordinates = processCoordinates(item.gps_coordinates)
 
@@ -131,4 +132,12 @@ export const getSchoolMarkers =  (district) => {
   })
 
 return finalGeoJSON
+}
+
+export function schoolLevel(indicator) {
+  if (indicator === 'Number of Primary Schools') {return 'Primary'} if(indicator === 'Number of Secondary Schools')
+  {return 'Secondary'}
+
+return ''
+
 }

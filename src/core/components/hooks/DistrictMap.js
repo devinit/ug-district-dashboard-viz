@@ -2,7 +2,7 @@ import { Popup } from 'mapbox-gl';
 import { useEffect, useState, useCallback} from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
 import fetchData from '../../../utils/data';
-import { processData, getSchoolMarkers } from '../DistrictMap/utils';
+import { processData, getSchoolMarkers, schoolLevel } from '../DistrictMap/utils';
 
 const showPopup = (popup, map, event, options) => {
   renderTooltipFromEvent(map, event, { ...options, popup });
@@ -16,6 +16,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
   const [options, setOptions] = useState(defaultOptions);
   const [data, setData] = useState([]);
   const [locationData, setLocationData] = useState()
+  const [level, setLevel] = useState('')
 
   const onHover = useCallback(
     (event) => {
@@ -38,7 +39,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
     map.off('mousemove',COLOURED_LAYER,onHover)
     popup.remove()
     if (e.features.length){
-      map.setLayoutProperty('points', 'icon-size', ['match', ['get', 'name'], e.features[0].properties.name, 0.5, 0.3])
+      map.setLayoutProperty('points', 'icon-size', ['match', ['get', 'name'], e.features[0].properties.name, 0.4, 0.2])
     }
 
   }, [map, locationData])
@@ -55,21 +56,21 @@ const useMap = (location, layer, defaultOptions = {}) => {
       }
 
     markerPopup.setLngLat(coordinates).setHTML(`
-    <div style="white-space: nowrap;">
-      <div style="font-size:1.6rem;padding-bottom:5px;font-weight:700;text-align:center;text-transform:capitalize;">
-        ${name}
+      <div style="white-space: nowrap;">
+        <div style="font-size:1.6rem;padding-bottom:5px;font-weight:700;text-align:center;text-transform:capitalize;">
+          ${name}
+        </div>
+        <p>Coordinates: ${coordinates}</p>
+        <p>Ownership: ${ownership}</p>
+        <p>Parish: ${parish}</p>
       </div>
-      <p>Coordinates: ${coordinates}</p>
-      <p>Ownership: ${ownership}</p>
-      <p>Parish: ${parish}</p>
-    </div>
     `).addTo(map)
   })
 
   const handleMarkerLeave = useCallback(() => {
     map.on('mousemove',COLOURED_LAYER,onHover)
     popup.remove()
-    map.setLayoutProperty('points', 'icon-size', 0.3)
+    map.setLayoutProperty('points', 'icon-size', 0.2)
   }, [map, location])
 
   useEffect(() => {
@@ -77,7 +78,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
       if(map.getLayer('points')){
         map.removeLayer('points')
       }
-      if (locationData) {
+      if (locationData.features.length) {
         map.loadImage('https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png', (error, image) => {
           if (error) throw error;
           if (!map.hasImage('custom-marker')) map.addImage('custom-marker', image, {sdf: true});
@@ -94,33 +95,19 @@ const useMap = (location, layer, defaultOptions = {}) => {
             layout: {
               'icon-image': 'custom-marker',
               'icon-anchor': 'bottom',
-              'icon-size': 0.3,
+              'icon-size': 0.2,
             },
             paint: {
-              'icon-color': [
-                'case',
-                ['boolean', ['feature-state', 'hover'], false],
-                'black',
-                ['match',
-                ['get', 'level'],
-                'Primary',
-                '#4287f5',
-                'Secondary',
-                '#5416f2',
-                'Nursery',
-                '#17cf26',
-                'Tertiary',
-                '#f27916',
-                '#FF0000',],
-              ]
+              'icon-color': '#4287f5',
             },
             minzoom: 8,
           });
+          map.getSource('points').setData(locationData)
 
         });
       }
     }
-  }, [map, data]);
+  }, [map, data, locationData, level]);
 
   useEffect(() => {
     if (map) {
@@ -152,7 +139,8 @@ const useMap = (location, layer, defaultOptions = {}) => {
       setData(processData(indicatorData, options.indicator, options.year));
     };
     if (options.indicator && options.year) {
-      setLocationData(getSchoolMarkers(location.name))
+      setLevel(schoolLevel(options.indicator.name))
+      setLocationData(getSchoolMarkers(location.name, schoolLevel(options.indicator.name)))
       fetchIndicatorData(options.indicator.url);
     }
   }, [options.indicator, options.year]);
