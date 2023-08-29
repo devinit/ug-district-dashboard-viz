@@ -104,33 +104,37 @@ export const getSchoolMarkers =  (district, level) => {
     type: 'FeatureCollection',
     features: []
   }
-  if (!level) return finalGeoJSON
-  fetchData(dataUrl).then((data) => {
-    data.filter((d)=> d.level === level).forEach((item) => {
-      if (item.gps_coordinates) {
-        const itemCoordinates = processCoordinates(item.gps_coordinates)
+  if (!level || !dataUrl) return finalGeoJSON
+  if (dataUrl) {
+    fetchData(dataUrl).then((data) => {
+      data.filter((d)=> d.level === level).forEach((item) => {
+        if (item.gps_coordinates) {
+          const itemCoordinates = processCoordinates(item.gps_coordinates)
 
-        if (itemCoordinates) {
-          finalGeoJSON.features.push({
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [itemCoordinates[1], itemCoordinates[0]]
-            },
-            properties: {
-              level: item.level,
-              ownership: item.ownership,
-              name: item.school_name,
-              parish: item.parish,
-            }
-          })
+          if (itemCoordinates) {
+            finalGeoJSON.features.push({
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [itemCoordinates[1], itemCoordinates[0]]
+              },
+              properties: {
+                level: item.level,
+                ownership: item.ownership,
+                name: item.school_name,
+                parish: item.parish,
+              }
+            })
+          }
         }
-      }
+      })
+    }).catch((error) => {
+      console.log(error)
     })
-  }).catch((error) => {
-    console.log(error)
-  })
 
+  return finalGeoJSON
+  }
+  
 return finalGeoJSON
 }
 
