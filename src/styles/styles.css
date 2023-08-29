@@ -187,25 +187,3 @@ button.button-outline,
 .tabs .tabs__content {
   height: 100%;
 }
-
-.marker-blue {
-  background-image: url('../../public/assets/icons/location-blue.png');
-  background-size: cover;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.marker-blue:hover, .marker-green:hover{
-  width: 25px;
-  height: 25px;
-}
-
-.marker-green {
-  background-image: url('../../public/assets/icons/location-green.png');
-  background-size: cover;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
