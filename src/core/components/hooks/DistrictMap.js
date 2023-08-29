@@ -98,7 +98,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
               'icon-size': 0.2,
             },
             paint: {
-              'icon-color': '#05cff7',
+              'icon-color': '#f55220',
             },
             minzoom: 8,
           });
@@ -139,8 +139,8 @@ const useMap = (location, layer, defaultOptions = {}) => {
       setData(processData(indicatorData, options.indicator, options.year));
     };
     if (options.indicator && options.year) {
-      setLevel(schoolLevel(options.indicator.name))
-      setLocationData(getSchoolMarkers(location.name, schoolLevel(options.indicator.name)))
+      setLevel(schoolLevel(options.indicator.id))
+      setLocationData(getSchoolMarkers(location.name, schoolLevel(options.indicator.id)))
       fetchIndicatorData(options.indicator.url);
     }
   }, [options.indicator, options.year]);
