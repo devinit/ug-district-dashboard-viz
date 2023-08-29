@@ -9,6 +9,8 @@ const showPopup = (popup, map, event, options) => {
 };
 
 const popup = new Popup({ offset: 5 });
+const markerPopup = new Popup({offset: 5});
+
 const useMap = (location, layer, defaultOptions = {}) => {
   const [map, setMap] = useState();
   const [options, setOptions] = useState(defaultOptions);
@@ -45,6 +47,29 @@ const useMap = (location, layer, defaultOptions = {}) => {
     }
 
   }, [map, locationData])
+
+  const onMarkerClick = useCallback((e) => {
+    const coordinates = e.features[0].geometry.coordinates.slice()
+    const {name, parish,ownership} = e.features[0].properties
+
+    // Ensure that if the map is zoomed out such that multiple
+    // copies of the feature are visible, the popup appears
+    // over the copy being pointed to.
+    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+
+    markerPopup.setLngLat(coordinates).setHTML(`
+    <div style="white-space: nowrap;">
+      <div style="font-size:1.6rem;padding-bottom:5px;font-weight:700;text-align:center;text-transform:capitalize;">
+        ${name}
+      </div>
+      <p>Coordinates: ${coordinates}</p>
+      <p>Ownership: ${ownership}</p>
+      <p>Parish: ${parish}</p>
+    </div>
+    `).addTo(map)
+  })
 
   const handleMarkerLeave = useCallback(() => {
     map.on('mousemove',COLOURED_LAYER,onHover)
@@ -111,12 +136,14 @@ const useMap = (location, layer, defaultOptions = {}) => {
       map.off('mousemove', 'points', handleMarkerMove)
       map.off('mouseleave', COLOURED_LAYER, onBlur);
       map.off('mouseover', COLOURED_LAYER, onHover);
+      map.off('click', 'points', onMarkerClick)
       // add even listeners to show tooltip
 
       map.on('mousemove', COLOURED_LAYER, onHover);
       map.on('mouseleave', COLOURED_LAYER, onBlur);
       map.on('mousemove', 'points', handleMarkerMove)
       map.on('mouseleave', 'points', handleMarkerLeave)
+      map.on('click', 'points', onMarkerClick)
       }
   }, [map, location, options, data,]);
 
