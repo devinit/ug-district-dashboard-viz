@@ -13,6 +13,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
   const [map, setMap] = useState();
   const [options, setOptions] = useState(defaultOptions);
   const [data, setData] = useState([]);
+  const [locationData, setLocationData] = useState()
 
   const onHover = useCallback(
     (event) => {
@@ -30,10 +31,20 @@ const useMap = (location, layer, defaultOptions = {}) => {
     popup.remove();
   }, [map, location]);
 
-  const handleMarkerMove = useCallback(() => {
+  const handleMarkerMove = useCallback((e) => {
+    e.preventDefault()
     map.off('mousemove',COLOURED_LAYER,onHover)
     popup.remove()
-  }, [map, location])
+    if (e.features.length > 0) {
+      map.setFeatureState({
+        source: 'points',
+        id: e.features[0].id
+        }, {
+          hover: true
+        });
+    }
+
+  }, [map, locationData])
 
   const handleMarkerLeave = useCallback(() => {
     map.on('mousemove',COLOURED_LAYER,onHover)
@@ -41,30 +52,51 @@ const useMap = (location, layer, defaultOptions = {}) => {
   }, [map, location])
 
   useEffect(() => {
-    const locationData = getSchoolMarkers(location.name)
     if (map) {
+      if(map.getLayer('points')){
+        map.removeLayer('points')
+      }
       if (locationData) {
         map.loadImage('https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png', (error, image) => {
           if (error) throw error;
-          map.addImage('custom-marker', image);
-          map.addSource('points', {
+          if (!map.hasImage('custom-marker')) map.addImage('custom-marker', image, {sdf: true});
+          if (!map.getSource('points')) map.addSource('points', {
             type: 'geojson',
             data: locationData,
+            'generateId': true
           });
-          map.addLayer({
+
+          if(!map.getLayer('points')) map.addLayer({
             id: 'points',
             type: 'symbol',
             source: 'points',
             layout: {
               'icon-image': 'custom-marker',
-              'icon-size': 0.4,
+              'icon-anchor': 'bottom',
+              'icon-size': 0.3,
+            },
+            paint: {
+              'icon-color': [
+                'match',
+                ['get', 'level'],
+                'Primary',
+                '#4287f5',
+                'Secondary',
+                '#5416f2',
+                'Nursery',
+                '#17cf26',
+                'Tertiary',
+                '#f27916',
+                '#FF0000'
+              ]
             },
             minzoom: 8,
           });
+
         });
       }
     }
-  }, [map]);
+  }, [map, data]);
 
   useEffect(() => {
     if (map) {
@@ -94,7 +126,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
       setData(processData(indicatorData, options.indicator, options.year));
     };
     if (options.indicator && options.year) {
-      // setLocationData(getSchoolMarkers(location.name))
+      setLocationData(getSchoolMarkers(location.name))
       fetchIndicatorData(options.indicator.url);
     }
   }, [options.indicator, options.year]);

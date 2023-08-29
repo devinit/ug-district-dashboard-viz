@@ -120,7 +120,7 @@ export const getSchoolMarkers =  (district) => {
               level: item.level,
               ownership: item.ownership,
               name: item.school_name,
-              parish: item.parish
+              parish: item.parish,
             }
           })
         }
