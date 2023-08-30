@@ -104,7 +104,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
                 'Primary',
                 '#ff9c1a',
                 'Secondary',
-                '#00cccc',
+                '#00b3b3',
                 '#ffffff'
               ],
             },
