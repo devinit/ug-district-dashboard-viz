@@ -98,7 +98,15 @@ const useMap = (location, layer, defaultOptions = {}) => {
               'icon-size': 0.2,
             },
             paint: {
-              'icon-color': '#df8000',
+              'icon-color': [
+                'match',
+                ['get', 'level'],
+                'Primary',
+                '#ff9c1a',
+                'Secondary',
+                '#00cccc',
+                '#ffffff'
+              ],
             },
             minzoom: 8,
           });
