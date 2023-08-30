@@ -1,4 +1,4 @@
-district_id,county_id,subcounty_id,district,county,subcounty,year,level,type,value
+district_id,county_id,subcounty_id,district,county,subcounty,year,level,ownership,value
 d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Nursery,Government,0
 d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Nursery,Private,5
 d101,c102,s111,Masindi,Bujenje,Budongo,2022,Nursery,Government,0
