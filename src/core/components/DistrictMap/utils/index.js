@@ -98,6 +98,11 @@ const processCoordinates = (data) => {
 return coordinates.map((item) => parseFloat(item))
 }
 
+const MASINDI_EXCLUDE_LIST = ['Waiga Primary School','Gods Mercy Primary School', 'Bukeeka COU Primary School',]
+const KAYUNGA_EXCLUDE_LIST = ['Bukeeka COU Primary School', 'Kungu CU Primary School', 'King Jesus Nursery And Primary School', 'Nile View Primary School',
+'Imam Hassan Primary School Maligita', 'Bright Future Nursery And Primary School Kangulumira'
+]
+
 export const getSchoolMarkers =  (district, schoolSpecs) => {
   const dataUrl = `https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/${activeBranch}/public/assets/data/${district.toLowerCase()}/schools-locations.csv`
   const finalGeoJSON = {
@@ -107,9 +112,10 @@ export const getSchoolMarkers =  (district, schoolSpecs) => {
   if (!schoolSpecs || !dataUrl) return finalGeoJSON
   if (dataUrl) {
     fetchData(dataUrl).then((data) => {
+      const filteredData = data.filter((row) => district === 'Masindi'? !MASINDI_EXCLUDE_LIST.includes(row.school_name) : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name) )
       if (schoolSpecs.ownership === 'all')
       {
-        data.filter((d)=> d.level === schoolSpecs.level ).forEach((item) => {
+        filteredData.filter((d)=> d.level === schoolSpecs.level ).forEach((item) => {
           if (item.gps_coordinates) {
             const itemCoordinates = processCoordinates(item.gps_coordinates)
 
@@ -131,7 +137,7 @@ export const getSchoolMarkers =  (district, schoolSpecs) => {
           }
         })
       } else {
-        data.filter((d)=> d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership ).forEach((item) => {
+        filterData.filter((d)=> d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership ).forEach((item) => {
           if (item.gps_coordinates) {
             const itemCoordinates = processCoordinates(item.gps_coordinates)
 
