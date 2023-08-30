@@ -137,7 +137,7 @@ export const getSchoolMarkers =  (district, schoolSpecs) => {
           }
         })
       } else {
-        filterData.filter((d)=> d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership ).forEach((item) => {
+        filteredData.filter((d)=> d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership ).forEach((item) => {
           if (item.gps_coordinates) {
             const itemCoordinates = processCoordinates(item.gps_coordinates)
 
