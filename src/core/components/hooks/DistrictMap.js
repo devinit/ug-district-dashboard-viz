@@ -62,7 +62,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
         </div>
         <p>Coordinates: ${coordinates}</p>
         <p>Ownership: ${ownership}</p>
-        <p>Parish: ${parish}</p>
+        <p>Parish: ${parish || 'No parish data'}</p>
       </div>
     `).addTo(map)
   })
