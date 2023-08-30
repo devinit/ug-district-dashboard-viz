@@ -1,4 +1,4 @@
-﻿district_id,county_id,subcounty_id,parish_id,village_id,district,county,subcounty,parish,village,year,level,ownership,name_of_school,staus,gps_cordinates
+﻿district_id,county_id,subcounty_id,parish_id,village_id,district,county,subcounty,parish,village,year,level,ownership,school_name,status,gps_coordinates
 d102,c101,s103,,,Kayunga,Bbaale,Kayonza,,,2023,Primary,Private,Agape Mission Primary School,Active,
 d102,c102,s107,,,Kayunga,Ntenjeru,Kangulumira,,,2023,Primary,Private,Agape Nursery And Primary School Nakirubi,Closed,
 d102,c102,s106,p136,,Kayunga,Ntenjeru,Nazigo,Natteta,,2023,Primary,Private,Ali Islamic Primary School,Active,
