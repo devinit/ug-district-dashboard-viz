@@ -96,6 +96,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
               'icon-image': 'custom-marker',
               'icon-anchor': 'bottom',
               'icon-size': 0.2,
+              'icon-allow-overlap': true
             },
             paint: {
               'icon-color': [
