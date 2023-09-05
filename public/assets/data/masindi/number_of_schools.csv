@@ -1,441 +1,1105 @@
-district_id,county_id,subcounty_id,district,county,subcounty,year,level,ownership,value
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Nursery,Government,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Nursery,Private,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Nursery,Government,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Nursery,Private,7
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Nursery,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Nursery,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Nursery,Government,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Nursery,Private,13
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Nursery,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Nursery,Private,7
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Nursery,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Nursery,Private,3
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Nursery,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Nursery,Private,3
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Nursery,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Nursery,Private,1
-d101,c101,s104,Masindi,Buruli,Kimengo,2022,Nursery,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2022,Nursery,Private,1
-d101,c101,s105,Masindi,Buruli,Kiruli,2022,Nursery,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2022,Nursery,Private,3
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Nursery,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Nursery,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2022,Nursery,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2022,Nursery,Private,9
-d101,c101,s109,Masindi,Buruli,Miirya,2022,Nursery,Government,0
-d101,c101,s109,Masindi,Buruli,Miirya,2022,Nursery,Private,6
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Nursery,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Nursery,Private,7
-d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Nursery,Government,0
-d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Nursery,Private,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Primary,Government,11
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Primary,Private,4
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Primary,Government,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Primary,Private,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Primary,Government,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Primary,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Primary,Government,12
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Primary,Private,14
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2022,Primary,Government,12
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2022,Primary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Primary,Government,2
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Primary,Private,5
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Primary,Government,8
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Primary,Private,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Primary,Government,4
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Primary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Primary,Government,2
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Primary,Private,5
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Primary,Government,
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Primary,Private,
-d101,c101,s104,Masindi,Buruli,Kimengo,2022,Primary,Government,2
-d101,c101,s104,Masindi,Buruli,Kimengo,2022,Primary,Private,3
-d101,c101,s105,Masindi,Buruli,Kiruli,2022,Primary,Government,4
-d101,c101,s105,Masindi,Buruli,Kiruli,2022,Primary,Private,4
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Primary,Government,2
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Primary,Private,5
-d101,c101,s107,Masindi,Buruli,Labongo,2022,Primary,Government,5
-d101,c101,s107,Masindi,Buruli,Labongo,2022,Primary,Private,6
-d101,c101,s109,Masindi,Buruli,Miirya,2022,Primary,Government,8
-d101,c101,s109,Masindi,Buruli,Miirya,2022,Primary,Private,3
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Primary,Government,5
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Primary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Primary,Government,7
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Primary,Private,9
-d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Primary,Government,8
-d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Primary,Private,9
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Secondary,Government,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Secondary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Secondary,Private,1
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Secondary,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Secondary,Private,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Secondary,Government,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Secondary,Private,3
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2022,Secondary,Government,4
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2022,Secondary,Private,10
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Secondary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Secondary,Private,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Secondary,Government,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Secondary,Private,1
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Secondary,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Secondary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Secondary,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Secondary,Private,2
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Secondary,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Secondary,Private,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2022,Secondary,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2022,Secondary,Private,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2022,Secondary,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2022,Secondary,Private,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Secondary,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Secondary,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2022,Secondary,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2022,Secondary,Private,0
-d101,c101,s109,Masindi,Buruli,Miirya,2022,Secondary,Government,1
-d101,c101,s109,Masindi,Buruli,Miirya,2022,Secondary,Private,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Secondary,Government,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Secondary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Secondary,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Secondary,Private,1
-d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Secondary,Government,2
-d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Tertiary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2022,Tertiary,Private,0
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2022,Tertiary,Government,1
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2022,Tertiary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Tertiary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Tertiary,Private,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Tertiary,Government,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Tertiary,Private,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Nursery,Government,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Nursery,Private,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Nursery,Government,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Nursery,Private,7
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Nursery,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Nursery,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Nursery,Government,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Nursery,Private,13
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Nursery,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Nursery,Private,7
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Nursery,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Nursery,Private,3
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Nursery,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Nursery,Private,3
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Nursery,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Nursery,Private,1
-d101,c101,s104,Masindi,Buruli,Kimengo,2021,Nursery,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2021,Nursery,Private,1
-d101,c101,s105,Masindi,Buruli,Kiruli,2021,Nursery,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2021,Nursery,Private,3
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2021,Nursery,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2021,Nursery,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2021,Nursery,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2021,Nursery,Private,9
-d101,c101,s109,Masindi,Buruli,Miirya,2021,Nursery,Government,0
-d101,c101,s109,Masindi,Buruli,Miirya,2021,Nursery,Private,6
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2021,Nursery,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2021,Nursery,Private,7
-d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Nursery,Government,0
-d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Nursery,Private,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Primary,Government,11
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Primary,Private,4
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Primary,Government,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Primary,Private,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Primary,Government,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Primary,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Primary,Government,12
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Primary,Private,14
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2021,Primary,Government,12
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2021,Primary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Primary,Government,2
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Primary,Private,5
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Primary,Government,8
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Primary,Private,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Primary,Government,4
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Primary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Primary,Government,2
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Primary,Private,5
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Primary,Government,
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Primary,Private,
-d101,c101,s104,Masindi,Buruli,Kimengo,2021,Primary,Government,2
-d101,c101,s104,Masindi,Buruli,Kimengo,2021,Primary,Private,3
-d101,c101,s105,Masindi,Buruli,Kiruli,2021,Primary,Government,4
-d101,c101,s105,Masindi,Buruli,Kiruli,2021,Primary,Private,4
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2021,Primary,Government,2
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2021,Primary,Private,5
-d101,c101,s107,Masindi,Buruli,Labongo,2021,Primary,Government,5
-d101,c101,s107,Masindi,Buruli,Labongo,2021,Primary,Private,6
-d101,c101,s109,Masindi,Buruli,Miirya,2021,Primary,Government,8
-d101,c101,s109,Masindi,Buruli,Miirya,2021,Primary,Private,3
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Primary,Government,5
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Primary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2021,Primary,Government,7
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2021,Primary,Private,9
-d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Primary,Government,8
-d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Primary,Private,9
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Secondary,Government,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Secondary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Secondary,Private,1
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Secondary,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Secondary,Private,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Secondary,Government,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Secondary,Private,3
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2021,Secondary,Government,4
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2021,Secondary,Private,10
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Secondary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Secondary,Private,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Secondary,Government,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Secondary,Private,1
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Secondary,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Secondary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Secondary,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Secondary,Private,2
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Secondary,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Secondary,Private,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2021,Secondary,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2021,Secondary,Private,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2021,Secondary,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2021,Secondary,Private,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2021,Secondary,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2021,Secondary,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2021,Secondary,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2021,Secondary,Private,0
-d101,c101,s109,Masindi,Buruli,Miirya,2021,Secondary,Government,1
-d101,c101,s109,Masindi,Buruli,Miirya,2021,Secondary,Private,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Secondary,Government,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Secondary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2021,Secondary,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2021,Secondary,Private,1
-d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Secondary,Government,2
-d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Tertiary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2021,Tertiary,Private,0
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2021,Tertiary,Government,1
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2021,Tertiary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Tertiary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Tertiary,Private,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Tertiary,Government,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Tertiary,Private,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Nursery,Government,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Nursery,Private,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Nursery,Government,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Nursery,Private,7
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Nursery,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Nursery,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Nursery,Government,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Nursery,Private,13
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Nursery,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Nursery,Private,7
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Nursery,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Nursery,Private,3
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Nursery,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Nursery,Private,3
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Nursery,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Nursery,Private,1
-d101,c101,s104,Masindi,Buruli,Kimengo,2020,Nursery,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2020,Nursery,Private,1
-d101,c101,s105,Masindi,Buruli,Kiruli,2020,Nursery,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2020,Nursery,Private,3
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2020,Nursery,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2020,Nursery,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2020,Nursery,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2020,Nursery,Private,9
-d101,c101,s109,Masindi,Buruli,Miirya,2020,Nursery,Government,0
-d101,c101,s109,Masindi,Buruli,Miirya,2020,Nursery,Private,6
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2020,Nursery,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2020,Nursery,Private,7
-d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Nursery,Government,0
-d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Nursery,Private,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Primary,Government,11
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Primary,Private,4
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Primary,Government,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Primary,Private,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Primary,Government,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Primary,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Primary,Government,12
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Primary,Private,14
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2020,Primary,Government,12
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2020,Primary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Primary,Government,2
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Primary,Private,5
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Primary,Government,8
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Primary,Private,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Primary,Government,4
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Primary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Primary,Government,2
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Primary,Private,5
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Primary,Government,
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Primary,Private,
-d101,c101,s104,Masindi,Buruli,Kimengo,2020,Primary,Government,2
-d101,c101,s104,Masindi,Buruli,Kimengo,2020,Primary,Private,3
-d101,c101,s105,Masindi,Buruli,Kiruli,2020,Primary,Government,4
-d101,c101,s105,Masindi,Buruli,Kiruli,2020,Primary,Private,4
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2020,Primary,Government,2
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2020,Primary,Private,5
-d101,c101,s107,Masindi,Buruli,Labongo,2020,Primary,Government,5
-d101,c101,s107,Masindi,Buruli,Labongo,2020,Primary,Private,6
-d101,c101,s109,Masindi,Buruli,Miirya,2020,Primary,Government,8
-d101,c101,s109,Masindi,Buruli,Miirya,2020,Primary,Private,3
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Primary,Government,5
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Primary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2020,Primary,Government,7
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2020,Primary,Private,9
-d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Primary,Government,8
-d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Primary,Private,9
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Secondary,Government,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Secondary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Secondary,Private,1
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Secondary,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Secondary,Private,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Secondary,Government,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Secondary,Private,3
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2020,Secondary,Government,4
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2020,Secondary,Private,10
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Secondary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Secondary,Private,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Secondary,Government,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Secondary,Private,1
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Secondary,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Secondary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Secondary,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Secondary,Private,2
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Secondary,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Secondary,Private,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2020,Secondary,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2020,Secondary,Private,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2020,Secondary,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2020,Secondary,Private,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2020,Secondary,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2020,Secondary,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2020,Secondary,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2020,Secondary,Private,0
-d101,c101,s109,Masindi,Buruli,Miirya,2020,Secondary,Government,1
-d101,c101,s109,Masindi,Buruli,Miirya,2020,Secondary,Private,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Secondary,Government,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Secondary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2020,Secondary,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2020,Secondary,Private,1
-d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Secondary,Government,2
-d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Tertiary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2020,Tertiary,Private,0
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2020,Tertiary,Government,1
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2020,Tertiary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Tertiary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Tertiary,Private,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Tertiary,Government,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Tertiary,Private,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Nursery,Government,0
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Nursery,Private,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Nursery,Government,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Nursery,Private,7
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Nursery,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Nursery,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Nursery,Government,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Nursery,Private,13
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Nursery,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Nursery,Private,7
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Nursery,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Nursery,Private,3
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Nursery,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Nursery,Private,3
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Nursery,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Nursery,Private,1
-d101,c101,s104,Masindi,Buruli,Kimengo,2019,Nursery,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2019,Nursery,Private,1
-d101,c101,s105,Masindi,Buruli,Kiruli,2019,Nursery,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2019,Nursery,Private,3
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2019,Nursery,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2019,Nursery,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2019,Nursery,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2019,Nursery,Private,9
-d101,c101,s109,Masindi,Buruli,Miirya,2019,Nursery,Government,0
-d101,c101,s109,Masindi,Buruli,Miirya,2019,Nursery,Private,6
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2019,Nursery,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2019,Nursery,Private,7
-d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Nursery,Government,0
-d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Nursery,Private,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Primary,Government,11
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Primary,Private,4
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Primary,Government,5
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Primary,Private,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Primary,Government,2
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Primary,Private,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Primary,Government,12
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Primary,Private,14
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2019,Primary,Government,12
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2019,Primary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Primary,Government,2
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Primary,Private,5
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Primary,Government,8
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Primary,Private,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Primary,Government,4
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Primary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Primary,Government,2
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Primary,Private,5
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Primary,Government,
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Primary,Private,
-d101,c101,s104,Masindi,Buruli,Kimengo,2019,Primary,Government,2
-d101,c101,s104,Masindi,Buruli,Kimengo,2019,Primary,Private,3
-d101,c101,s105,Masindi,Buruli,Kiruli,2019,Primary,Government,4
-d101,c101,s105,Masindi,Buruli,Kiruli,2019,Primary,Private,4
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2019,Primary,Government,2
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2019,Primary,Private,5
-d101,c101,s107,Masindi,Buruli,Labongo,2019,Primary,Government,5
-d101,c101,s107,Masindi,Buruli,Labongo,2019,Primary,Private,6
-d101,c101,s109,Masindi,Buruli,Miirya,2019,Primary,Government,8
-d101,c101,s109,Masindi,Buruli,Miirya,2019,Primary,Private,3
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Primary,Government,5
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Primary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2019,Primary,Government,7
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2019,Primary,Private,9
-d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Primary,Government,8
-d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Primary,Private,9
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Secondary,Government,1
-d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Secondary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Secondary,Private,1
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Secondary,Government,0
-d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Secondary,Private,0
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Secondary,Government,1
-d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Secondary,Private,3
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2019,Secondary,Government,4
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2019,Secondary,Private,10
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Secondary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Secondary,Private,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Secondary,Government,0
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Secondary,Private,1
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Secondary,Government,0
-d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Secondary,Private,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Secondary,Government,0
-d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Secondary,Private,2
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Secondary,Government,0
-d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Secondary,Private,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2019,Secondary,Government,0
-d101,c101,s104,Masindi,Buruli,Kimengo,2019,Secondary,Private,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2019,Secondary,Government,0
-d101,c101,s105,Masindi,Buruli,Kiruli,2019,Secondary,Private,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2019,Secondary,Government,0
-d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2019,Secondary,Private,2
-d101,c101,s107,Masindi,Buruli,Labongo,2019,Secondary,Government,0
-d101,c101,s107,Masindi,Buruli,Labongo,2019,Secondary,Private,0
-d101,c101,s109,Masindi,Buruli,Miirya,2019,Secondary,Government,1
-d101,c101,s109,Masindi,Buruli,Miirya,2019,Secondary,Private,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Secondary,Government,1
-d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Secondary,Private,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2019,Secondary,Government,0
-d101,c102,s108,Masindi,Bujenje,Nyantonzi,2019,Secondary,Private,1
-d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Secondary,Government,2
-d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Secondary,Private,0
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Tertiary,Government,1
-d101,c102,s111,Masindi,Bujenje,Budongo,2019,Tertiary,Private,0
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2019,Tertiary,Government,1
-d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2019,Tertiary,Private,3
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Tertiary,Government,0
-d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Tertiary,Private,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Tertiary,Government,1
-d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Tertiary,Private,0
+district_id,county_id,subcounty_id,district,county,subcounty,year,level,ownership,value,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Nursery,Private,5,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Primary,Government,11,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Primary,Private,4,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Secondary,Government,1,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Secondary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2023,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Nursery,Private,7,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Primary,Government,2,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Primary,Private,5,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Secondary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Secondary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2023,Tertiary,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2023,Nursery,Private,3,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2023,Primary,Government,2,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2023,Primary,Private,5,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2023,Secondary,Government,0,,,,,,,,, 
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2023,Secondary,Private,2,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2023,Tertiary,Private,0,,,,,,,,,
+d101,c102,s104,Masindi,Buruli,Kimengo,2023,Nursery,Government,0,,,,,,,,,
+d101,c102,s104,Masindi,Buruli,Kimengo,2023,Nursery,Private,1,,,,,,,,,
+d101,c103,s104,Masindi,Buruli,Kimengo,2023,Primary,Government,2,,,,,,,,,
+d101,c103,s104,Masindi,Buruli,Kimengo,2023,Primary,Private,3,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2023,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2023,Secondary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2023,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Nursery,Private,3,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Primary,Government,4,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Primary,Private,4,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Secondary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Secondary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Tertiary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2023,Nursery,Private,2,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2023,Primary,Government,2,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2023,Primary,Private,5,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2023,Secondary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2023,Secondary,Private,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2023,Nursery,Private,9,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2023,Primary,Government,5,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2023,Primary,Private,6,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2023,Secondary,Government,0,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2023,Secondary,Private,0,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2023,Tertiary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2023,Nursery,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2023,Nursery,Private,7,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2023,Primary,Government,7,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2023,Primary,Private,9,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2023,Secondary,Government,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2023,Secondary,Private,1,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2023,Tertiary,Government,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2023,Tertiary,Private,0,,,,,,,,,
+d101,c103,s109,Masindi,Buruli,Miirya,2023,Nursery,Government,0,,,,,,,,,
+d101,c103,s109,Masindi,Buruli,Miirya,2023,Nursery,Private,6,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2023,Primary,Government,8,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2023,Primary,Private,3,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2023,Secondary,Government,1,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2023,Secondary,Private,1,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2023,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Nursery,Private,1,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Primary,Government,8,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Primary,Private,9,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Secondary,Government,2,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Secondary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Tertiary,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2023,Nursery,Private,7,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2023,Primary,Government,5,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2023,Primary,Private,2,,,,,,,,,
+d101,c103,s111,Masindi,Bujenje,Budongo,2023,Secondary,Government,1,,,,,,,,,
+d101,c103,s111,Masindi,Bujenje,Budongo,2023,Secondary,Private,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2023,Tertiary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s112,Masindi,Bujenje,Buliima Town Council,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s112,Masindi,Bujenje,Buliima Town Council,2023,Nursery,Private,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Buliima Town Council,2023,Primary,Government,2,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Buliima Town Council,2023,Primary,Private,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Buliima Town Council,2023,Secondary,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Buliima Town Council,2023,Secondary,Private,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Buliima Town Council,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Buliima Town Council,2023,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2023,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2023,Nursery,Private,13,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2023,Primary,Government,12,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2023,Primary,Private,14,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2023,Secondary,Government,1,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2023,Secondary,Private,3,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2023,Tertiary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2023,Tertiary,Private,0,,,,,,,,,
+d101,c103,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Nursery,Government,0,,,,,,,,,
+d101,c103,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Nursery,Private,1,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Primary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Primary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Secondary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Secondary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Tertiary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2023,Tertiary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Nursery,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Primary,Government,12,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Primary,Private,3,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Secondary,Government,4,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Secondary,Private,10,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Tertiary,Government,1,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2023,Tertiary,Private,3,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Nursery,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Nursery,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Primary,Government,8,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Primary,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Secondary,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Secondary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Tertiary,Government,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2023,Tertiary,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Nursery,Government,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Nursery,Private,3,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Primary,Government,4,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Primary,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Secondary,Government,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Secondary,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Tertiary,Government,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2023,Tertiary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Nursery,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Nursery,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Primary,Government,5,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Primary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Secondary,Government,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Secondary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Tertiary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2023,Tertiary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Nursery,Private,5,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Primary,Government,11,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Primary,Private,4,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Secondary,Government,1,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Secondary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2022,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Nursery,Private,7,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Primary,Government,2,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Primary,Private,5,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Secondary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Secondary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2022,Tertiary,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2022,Nursery,Private,3,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2022,Primary,Government,0,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2022,Primary,Private,7,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2022,Secondary,Government,0,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2022,Secondary,Private,1,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s103,Masindi,Buruli,Kijunjubwa,2022,Tertiary,Private,0,,,,,,,,,
+d101,c102,s104,Masindi,Buruli,Kimengo,2022,Nursery,Government,0,,,,,,,,,
+d101,c102,s104,Masindi,Buruli,Kimengo,2022,Nursery,Private,13,,,,,,,,,
+d101,c103,s104,Masindi,Buruli,Kimengo,2022,Primary,Government,0,,,,,,,,,
+d101,c103,s104,Masindi,Buruli,Kimengo,2022,Primary,Private,3,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2022,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2022,Secondary,Private,1,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2022,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2022,Tertiary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Nursery,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Nursery,Private,1,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Primary,Private,3,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Secondary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Secondary,Private,2,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Tertiary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2022,Tertiary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Nursery,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Nursery,Private,9,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Primary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2022,Primary,Private,6,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2022,Secondary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2022,Secondary,Private,7,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2022,Tertiary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2022,Nursery,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2022,Nursery,Private,1,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2022,Primary,Government,5,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2022,Primary,Private,2,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2022,Secondary,Government,2,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2022,Secondary,Private,1,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2022,Tertiary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Nursery,Government,12,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2022,Nursery,Private,14,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2022,Primary,Government,12,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2022,Primary,Private,3,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2022,Secondary,Government,8,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2022,Secondary,Private,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2022,Tertiary,Government,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2022,Tertiary,Private,0,,,,,,,,,
+d101,c103,s109,Masindi,Buruli,Miirya,2022,Nursery,Government,4,,,,,,,,,
+d101,c103,s109,Masindi,Buruli,Miirya,2022,Nursery,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2022,Primary,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2022,Primary,Private,5,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2022,Secondary,Government,,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2022,Secondary,Private,,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2022,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2022,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Nursery,Government,2,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Nursery,Private,3,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Primary,Government,4,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Primary,Private,4,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Secondary,Government,2,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Secondary,Private,5,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Tertiary,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2022,Tertiary,Private,0,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2022,Nursery,Government,5,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2022,Nursery,Private,6,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2022,Primary,Government,8,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2022,Primary,Private,3,,,,,,,,,
+d101,c103,s111,Masindi,Bujenje,Budongo,2022,Secondary,Government,5,,,,,,,,,
+d101,c103,s111,Masindi,Bujenje,Budongo,2022,Secondary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2022,Tertiary,Government,7,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2022,Tertiary,Private,9,,,,,,,,,
+d101,c101,s112,Masindi,Bujenje,Bulima Town Council,2022,Nursery,Government,8,,,,,,,,,
+d101,c101,s112,Masindi,Bujenje,Bulima Town Council,2022,Nursery,Private,9,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Primary,Government,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Primary,Private,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Secondary,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Secondary,Private,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2022,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Nursery,Government,1,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2022,Nursery,Private,3,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2022,Primary,Government,4,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2022,Primary,Private,10,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2022,Secondary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2022,Secondary,Private,1,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2022,Tertiary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2022,Tertiary,Private,0,,,,,,,,,
+d101,c103,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Nursery,Government,0,,,,,,,,,
+d101,c103,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Nursery,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Primary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Primary,Private,2,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Secondary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Secondary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Tertiary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2022,Tertiary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Nursery,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Nursery,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Primary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Primary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Secondary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Secondary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Tertiary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2022,Tertiary,Private,2,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Nursery,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Nursery,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Primary,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Primary,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Secondary,Government,1,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Secondary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Tertiary,Government,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2022,Tertiary,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Nursery,Government,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Nursery,Private,1,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Primary,Government,2,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Primary,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Secondary,Government,1,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Secondary,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Tertiary,Government,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2022,Tertiary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Nursery,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Nursery,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Primary,Government,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Primary,Private,3,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Secondary,Government,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Secondary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Tertiary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2022,Tertiary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Nursery,Private,5,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Primary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Primary,Private,7,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Secondary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Secondary,Private,1,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Nursery,Private,13,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Primary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2021,Primary,Private,7,,,,,,,,,
+d101,c103,s102,Masindi,Bujenje,Kabango Town Council,2021,Secondary,Government,0,,,,,,,,,
+d101,c103,s102,Masindi,Bujenje,Kabango Town Council,2021,Secondary,Private,3,,,,,,,,,
+d101,c101,s102,Masindi,Bujenje,Kabango Town Council,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s102,Masindi,Bujenje,Kabango Town Council,2021,Tertiary,Private,3,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Nursery,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Primary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Primary,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Secondary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Secondary,Private,3,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2021,Tertiary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Nursery,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Nursery,Private,2,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Primary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Primary,Private,9,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Secondary,Private,6,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2021,Nursery,Government,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2021,Nursery,Private,7,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2021,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2021,Primary,Private,1,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2021,Secondary,Government,11,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2021,Secondary,Private,4,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2021,Tertiary,Government,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Nursery,Government,5,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Nursery,Private,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Primary,Government,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Primary,Private,1,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Secondary,Government,12,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Secondary,Private,14,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Tertiary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2021,Tertiary,Private,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2021,Nursery,Government,12,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2021,Nursery,Private,3,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2021,Primary,Government,2,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2021,Primary,Private,5,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2021,Secondary,Government,8,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2021,Secondary,Private,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2021,Tertiary,Government,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2021,Tertiary,Private,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2021,Nursery,Government,4,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2021,Nursery,Private,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2021,Primary,Government,2,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2021,Primary,Private,5,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2021,Secondary,Government,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2021,Secondary,Private,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2021,Tertiary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Nursery,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Nursery,Private,3,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Primary,Government,4,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Primary,Private,4,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Secondary,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Secondary,Private,5,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2021,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Nursery,Government,5,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Nursery,Private,6,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Primary,Government,8,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2021,Primary,Private,3,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2021,Secondary,Government,5,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2021,Secondary,Private,0,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2021,Tertiary,Government,0,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2021,Nursery,Government,7,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2021,Nursery,Private,9,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2021,Primary,Government,8,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2021,Primary,Private,9,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2021,Secondary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2021,Secondary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2021,Tertiary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2021,Tertiary,Private,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Nursery,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Nursery,Private,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Primary,Government,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2021,Primary,Private,3,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2021,Secondary,Government,4,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2021,Secondary,Private,10,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2021,Tertiary,Government,0,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2021,Nursery,Private,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2021,Primary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2021,Primary,Private,1,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2021,Secondary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2021,Secondary,Private,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2021,Tertiary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2021,Tertiary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Nursery,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Nursery,Private,2,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Primary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Primary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Secondary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Secondary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2021,Tertiary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Nursery,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Nursery,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Primary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Primary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Secondary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Secondary,Private,2,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Tertiary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2021,Tertiary,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Nursery,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Nursery,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Primary,Government,1,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Primary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Secondary,Government,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Secondary,Private,0,,,,,,,,,
+d101,c102,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Tertiary,Government,0,,,,,,,,,
+d101,c102,s116,Masindi,Masindi Municipal Council,Karujubu Division,2021,Tertiary,Private,1,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Nursery,Government,2,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Nursery,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Primary,Government,1,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Primary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Secondary,Government,1,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Secondary,Private,3,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Tertiary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Nursery,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Nursery,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Primary,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Primary,Private,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Secondary,Government,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Secondary,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Tertiary,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2021,Tertiary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Nursery,Private,5,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Primary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Primary,Private,7,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Secondary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Secondary,Private,1,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Nursery,Private,13,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Primary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2020,Primary,Private,7,,,,,,,,,
+d101,c103,s102,Masindi,Bujenje,Kabango Town Council,2020,Secondary,Government,0,,,,,,,,,
+d101,c103,s102,Masindi,Bujenje,Kabango Town Council,2020,Secondary,Private,3,,,,,,,,,
+d101,c101,s102,Masindi,Bujenje,Kabango Town Council,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s102,Masindi,Bujenje,Kabango Town Council,2020,Tertiary,Private,3,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Nursery,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Primary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Primary,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Secondary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Secondary,Private,3,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2020,Tertiary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Nursery,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Nursery,Private,2,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Primary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Primary,Private,9,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Secondary,Private,6,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2020,Nursery,Government,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2020,Nursery,Private,7,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2020,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2020,Primary,Private,1,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2020,Secondary,Government,11,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2020,Secondary,Private,4,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2020,Tertiary,Government,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Nursery,Government,5,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Nursery,Private,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Primary,Government,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Primary,Private,1,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Secondary,Government,12,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Secondary,Private,14,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Tertiary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2020,Tertiary,Private,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2020,Nursery,Government,12,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2020,Nursery,Private,3,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2020,Primary,Government,2,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2020,Primary,Private,5,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2020,Secondary,Government,8,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2020,Secondary,Private,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2020,Tertiary,Government,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2020,Tertiary,Private,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2020,Nursery,Government,4,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2020,Nursery,Private,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2020,Primary,Government,2,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2020,Primary,Private,5,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2020,Secondary,Government,,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2020,Secondary,Private,,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2020,Tertiary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Nursery,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Nursery,Private,3,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Primary,Government,4,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Primary,Private,4,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Secondary,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Secondary,Private,5,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2020,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Nursery,Government,5,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Nursery,Private,6,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Primary,Government,8,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2020,Primary,Private,3,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2020,Secondary,Government,5,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2020,Secondary,Private,0,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2020,Tertiary,Government,0,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2020,Nursery,Government,7,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2020,Nursery,Private,9,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2020,Primary,Government,8,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2020,Primary,Private,9,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2020,Secondary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2020,Secondary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2020,Tertiary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2020,Tertiary,Private,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Nursery,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Nursery,Private,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Primary,Government,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2020,Primary,Private,3,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2020,Secondary,Government,4,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2020,Secondary,Private,10,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2020,Tertiary,Government,0,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2020,Nursery,Private,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2020,Primary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2020,Primary,Private,1,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2020,Secondary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2020,Secondary,Private,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2020,Tertiary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2020,Tertiary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Nursery,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Nursery,Private,2,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Primary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Primary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Secondary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Secondary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2020,Tertiary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Nursery,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Nursery,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Primary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Primary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Secondary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Secondary,Private,2,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Tertiary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2020,Tertiary,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Nursery,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Nursery,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Primary,Government,1,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Primary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Secondary,Government,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Secondary,Private,0,,,,,,,,,
+d101,c102,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Tertiary,Government,0,,,,,,,,,
+d101,c102,s116,Masindi,Masindi Municipal Council,Karujubu Division,2020,Tertiary,Private,1,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Nursery,Government,2,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Nursery,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Primary,Government,1,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Primary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Secondary,Government,1,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Secondary,Private,3,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Tertiary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Nursery,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Nursery,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Primary,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Primary,Private,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Secondary,Government,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Secondary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Tertiary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2020,Tertiary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Nursery,Private,5,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Primary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Primary,Private,7,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Secondary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Secondary,Private,1,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2019,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Nursery,Private,13,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Primary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2019,Primary,Private,7,,,,,,,,,
+d101,c103,s102,Masindi,Bujenje,Kabango Town Council,2019,Secondary,Government,0,,,,,,,,,
+d101,c103,s102,Masindi,Bujenje,Kabango Town Council,2019,Secondary,Private,3,,,,,,,,,
+d101,c101,s102,Masindi,Bujenje,Kabango Town Council,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s102,Masindi,Bujenje,Kabango Town Council,2019,Tertiary,Private,3,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Nursery,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Primary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Primary,Private,1,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Secondary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Secondary,Private,3,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2019,Tertiary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Nursery,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Nursery,Private,2,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Primary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Primary,Private,9,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Secondary,Private,6,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2019,Tertiary,Private,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2019,Nursery,Government,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2019,Nursery,Private,7,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2019,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2019,Primary,Private,1,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2019,Secondary,Government,11,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2019,Secondary,Private,4,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2019,Tertiary,Government,0,,,,,,,,,
+d101,c102,s105,Masindi,Buruli,Kiruli,2019,Tertiary,Private,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Nursery,Government,5,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Nursery,Private,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Primary,Government,2,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Primary,Private,1,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Secondary,Government,12,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Secondary,Private,14,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Tertiary,Government,0,,,,,,,,,
+d101,c102,s106,Masindi,Buruli,Kyatiri Town Council,2019,Tertiary,Private,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2019,Nursery,Government,12,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2019,Nursery,Private,3,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2019,Primary,Government,2,,,,,,,,,
+d101,c102,s107,Masindi,Buruli,Labongo,2019,Primary,Private,5,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2019,Secondary,Government,8,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2019,Secondary,Private,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2019,Tertiary,Government,0,,,,,,,,,
+d101,c103,s107,Masindi,Buruli,Labongo,2019,Tertiary,Private,0,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2019,Nursery,Government,4,,,,,,,,,
+d101,c103,s108,Masindi,Bujenje,Nyantonzi,2019,Nursery,Private,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2019,Primary,Government,2,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2019,Primary,Private,5,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2019,Secondary,Government,,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2019,Secondary,Private,,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s108,Masindi,Bujenje,Nyantonzi,2019,Tertiary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Nursery,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Nursery,Private,3,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Primary,Government,4,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Primary,Private,4,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Secondary,Government,2,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Secondary,Private,5,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2019,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Nursery,Government,5,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Nursery,Private,6,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Primary,Government,8,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2019,Primary,Private,3,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2019,Secondary,Government,5,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2019,Secondary,Private,0,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2019,Tertiary,Government,0,,,,,,,,,
+d101,c103,s110,Masindi,Buruli,Pakanyi,2019,Tertiary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2019,Nursery,Government,7,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2019,Nursery,Private,9,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2019,Primary,Government,8,,,,,,,,,
+d101,c101,s111,Masindi,Bujenje,Budongo,2019,Primary,Private,9,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2019,Secondary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2019,Secondary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2019,Tertiary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2019,Tertiary,Private,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Nursery,Government,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Nursery,Private,0,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Primary,Government,1,,,,,,,,,
+d101,c102,s112,Masindi,Bujenje,Bulima Town Council,2019,Primary,Private,3,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2019,Secondary,Government,4,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2019,Secondary,Private,10,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2019,Tertiary,Government,0,,,,,,,,,
+d101,c103,s112,Masindi,Bujenje,Bulima Town Council,2019,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2019,Nursery,Private,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2019,Primary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2019,Primary,Private,1,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2019,Secondary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2019,Secondary,Private,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2019,Tertiary,Government,0,,,,,,,,,
+d101,c103,s113,Masindi,Bujenje,Bwijanga,2019,Tertiary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Nursery,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Nursery,Private,2,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Primary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Primary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Secondary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Secondary,Private,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s114,Masindi,Buruli,Kijunjubwa Town Council,2019,Tertiary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Nursery,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Nursery,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Primary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Primary,Private,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Secondary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Secondary,Private,2,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Tertiary,Government,0,,,,,,,,,
+d101,c101,s115,Masindi,Masindi Municipal Council,Central Division,2019,Tertiary,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Nursery,Government,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Nursery,Private,0,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Primary,Government,1,,,,,,,,,
+d101,c101,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Primary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Secondary,Government,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Secondary,Private,0,,,,,,,,,
+d101,c102,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Tertiary,Government,0,,,,,,,,,
+d101,c102,s116,Masindi,Masindi Municipal Council,Karujubu Division,2019,Tertiary,Private,1,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Nursery,Government,2,,,,,,,,,
+d101,c101,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Nursery,Private,0,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Primary,Government,1,,,,,,,,,
+d101,c102,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Primary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Secondary,Government,1,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Secondary,Private,3,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Tertiary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2019,Tertiary,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Nursery,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Nursery,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Primary,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Primary,Private,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Secondary,Government,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Secondary,Private,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Primary,Government,0,,,,,,,,,
+d101,c102,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2019,Primary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Nursery,Private,5,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Primary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Primary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Secondary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Secondary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2018,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Nursery,Private,1,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Primary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Primary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Secondary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Secondary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Tertiary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Nursery,Private,4,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Primary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Primary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Secondary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Secondary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Nursery,Private,1,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Primary,Government,4,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Primary,Private,8,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Secondary,Private,1,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Nursery,Private,4,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Primary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Secondary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Secondary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Nursery,Private,3,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Primary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Primary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Secondary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Secondary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Nursery,Private,9,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Primary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Primary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Secondary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Secondary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2018,Tertiary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Nursery,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Nursery,Private,7,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Primary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Primary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Secondary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Secondary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Tertiary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Nursery,Private,8,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Primary,Government,8,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Primary,Private,16,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Secondary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Secondary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2018,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Nursery,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Nursery,Private,15,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Primary,Government,18,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Primary,Private,45,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Secondary,Government,2,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Secondary,Private,3,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Tertiary,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2018,Tertiary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Nursery,Government,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Nursery,Private,13,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Primary,Government,13,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Primary,Private,19,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Secondary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Secondary,Private,2,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Tertiary,Government,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2018,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Nursery,Private,15,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Primary,Government,26,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Primary,Private,32,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Secondary,Government,2,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Secondary,Private,2,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Tertiary,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2018,Tertiary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Nursery,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Nursery,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Primary,Government,12,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Primary,Private,14,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Secondary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Secondary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Tertiary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2018,Tertiary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Nursery,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Nursery,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Primary,Government,7,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Primary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Secondary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Secondary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Tertiary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2018,Tertiary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Nursery,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Nursery,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Primary,Government,5,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Primary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Secondary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Secondary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Tertiary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2018,Tertiary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Nursery,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Nursery,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Primary,Government,5,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Primary,Private,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Secondary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Secondary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Tertiary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2018,Tertiary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Nursery,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Primary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Primary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Secondary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Secondary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2016,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Nursery,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Primary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Primary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Secondary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Secondary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Tertiary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Primary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Primary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Secondary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Secondary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Primary,Government,4,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Primary,Private,8,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Secondary,Private,1,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Primary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Secondary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Secondary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Primary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Primary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Secondary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Secondary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Primary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Primary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Secondary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Secondary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2016,Tertiary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Nursery,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Nursery,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Primary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Primary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Secondary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Secondary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Tertiary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Primary,Government,8,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Primary,Private,16,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Secondary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Secondary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2016,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Nursery,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Nursery,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Primary,Government,18,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Primary,Private,45,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Secondary,Government,2,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Secondary,Private,3,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Tertiary,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2016,Tertiary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Nursery,Government,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Nursery,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Primary,Government,13,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Primary,Private,19,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Secondary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Secondary,Private,2,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Tertiary,Government,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2016,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Nursery,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Primary,Government,26,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Primary,Private,32,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Secondary,Government,2,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Secondary,Private,2,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Tertiary,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2016,Tertiary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Nursery,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Nursery,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Primary,Government,12,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Primary,Private,14,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Secondary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Secondary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Tertiary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2016,Tertiary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Nursery,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Nursery,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Primary,Government,7,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Primary,Private,1,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Secondary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Secondary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Tertiary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2016,Tertiary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Nursery,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Nursery,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Primary,Government,5,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Primary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Secondary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Secondary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Tertiary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2016,Tertiary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Nursery,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Nursery,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Primary,Government,5,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Primary,Private,1,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Secondary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Secondary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Tertiary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2016,Tertiary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Nursery,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Nursery,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Primary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Primary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Secondary,Government,1,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Secondary,Private,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Tertiary,Government,0,,,,,,,,,
+d101,c102,s101,Masindi,Bujenje,Bikonzi,2014,Tertiary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Nursery,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Nursery,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Primary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Primary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Secondary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Secondary,Private,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Tertiary,Government,0,,,,,,,,,
+d101,c102,s102,Masindi,Bujenje,Kabango Town Council,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Primary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Secondary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s103,Masindi,Buruli,Kijunjubwa,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Primary,Government,4,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Secondary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s104,Masindi,Buruli,Kimengo,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Primary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Secondary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s105,Masindi,Buruli,Kiruli,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Primary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Secondary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s106,Masindi,Buruli,Kyatiri Town Council,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Primary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Secondary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s107,Masindi,Buruli,Labongo,2014,Tertiary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Nursery,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Nursery,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Primary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Primary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Secondary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Secondary,Private,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Tertiary,Government,0,,,,,,,,,
+d101,c102,s108,Masindi,Bujenje,Nyantonzi,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Primary,Government,8,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Secondary,Government,1,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s109,Masindi,Buruli,Miirya,2014,Tertiary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Nursery,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Nursery,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Primary,Government,17,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Primary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Secondary,Government,1,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Secondary,Private,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Tertiary,Government,0,,,,,,,,,
+d101,c101,s110,Masindi,Buruli,Pakanyi,2014,Tertiary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Nursery,Government,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Nursery,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Primary,Government,14,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Primary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Secondary,Government,1,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Secondary,Private,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Tertiary,Government,0,,,,,,,,,
+d101,c102,s111,Masindi,Bujenje,Budongo,2014,Tertiary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Nursery,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Nursery,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Primary,Government,25,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Primary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Secondary,Government,1,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Secondary,Private,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Tertiary,Government,0,,,,,,,,,
+d101,c102,s113,Masindi,Bujenje,Bwijanga,2014,Tertiary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Nursery,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Nursery,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Primary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Primary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Secondary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Secondary,Private,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Tertiary,Government,0,,,,,,,,,
+d101,c103,s115,Masindi,Masindi Municipal Council,Central Division,2014,Tertiary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Nursery,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Nursery,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Primary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Primary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Secondary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Secondary,Private,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Tertiary,Government,0,,,,,,,,,
+d101,c103,s116,Masindi,Masindi Municipal Council,Karujubu Division,2014,Tertiary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Nursery,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Nursery,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Primary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Primary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Secondary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Secondary,Private,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Tertiary,Government,0,,,,,,,,,
+d101,c103,s117,Masindi,Masindi Municipal Council,Kigulya Division,2014,Tertiary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Nursery,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Nursery,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Primary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Primary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Secondary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Secondary,Private,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Tertiary,Government,0,,,,,,,,,
+d101,c103,s118,Masindi,Masindi Municipal Council,Nyangahya Division,2014,Tertiary,Private,0,,,,,,,,,
