@@ -1,0 +1,337 @@
+district_id,county_id,subcounty_id,district,county,subcounty,school_name,ownership,year,gender,s1,s2,s3,s4,s5,s6,subtotal
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2019,Boys,30,35,28,24,0,0,117
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2019,Boys,0,0,0,0,0,0,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2019,Girls,55,40,12,14,0,0,121
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2019,Girls,0,0,0,0,0,0,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2019,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2019,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2019,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2019,Girls,,,,,,,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2019,Boys,135,139,144,77,0,0,495
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2019,Boys,0,0,0,0,0,0,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2019,Girls,144,126,124,83,0,0,477
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2019,Girls,0,0,0,0,0,0,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2019,Boys,78,80,65,41,10,13,287
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2019,Girls,89,72,51,43,2,5,262
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2019,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2019,Boys,0,0,0,0,0,0,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2019,Boys,39,20,25,17,5,0,106
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2019,Boys,0,0,0,0,0,0,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2019,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2019,Girls,0,0,0,0,0,0,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2019,Girls,38,32,19,13,7,0,109
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2019,Girls,0,0,0,0,0,0,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2019,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2019,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2019,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2019,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2019,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2019,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2019,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2019,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2019,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2019,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2019,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2019,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2019,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2019,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2019,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2019,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2019,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2019,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2019,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2019,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2019,Boys,74,68,76,84,78,71,451
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2019,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2019,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2019,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2019,Girls,82,68,71,84,55,57,417
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2019,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2019,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2019,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2019,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2019,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2019,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2019,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2019,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2019,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2019,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2019,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2019,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2019,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2019,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2019,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2019,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2019,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2019,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2019,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2019,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2019,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2019,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2019,Girls,,,,,,,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2020,Boys,40,35,35,24,0,0,134
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2020,Boys,,,,,,,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2020,Girls,56,40,18,14,0,0,128
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2020,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2020,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2020,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2020,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2020,Girls,,,,,,,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2020,Boys,177,176,168,91,0,0,612
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2020,Boys,0,0,0,0,0,0,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2020,Girls,168,162,161,69,0,0,560
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2020,Girls,0,0,0,0,0,0,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2020,Boys,108,82,80,75,17,10,372
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2020,Girls,112,112,72,60,10,2,368
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2020,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2020,Boys,52,44,24,24,9,8,161
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2020,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2020,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2020,Girls,62,39,30,13,6,7,157
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2020,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2020,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2020,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2020,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2020,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2020,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2020,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2020,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2020,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2020,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2020,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2020,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2020,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2020,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2020,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2020,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2020,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2020,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2020,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2020,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2020,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2020,Boys,81,63,75,84,55,54,412
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2020,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2020,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2020,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2020,Girls,64,58,69,74,68,71,404
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2020,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2020,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2020,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2020,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2020,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2020,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2020,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2020,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2020,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2020,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2020,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2020,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2020,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2020,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2020,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2020,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2020,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2020,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2020,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2020,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2020,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2020,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2020,Girls,,,,,,,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2022,Boys,49,37,35,26,,,147
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2022,Boys,,,,,,,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2022,Girls,55,40,28,18,,,141
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2022,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2022,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2022,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2022,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2022,Girls,,,,,,,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2022,Boys,194,187,178,88,,,647
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2022,Boys,,,,,,,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2022,Girls,207,184,186,72,,,649
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2022,Girls,,,,,,,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2022,Boys,111,99,67,71,13,7,368
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2022,Girls,79,123,82,66,9,7,366
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2022,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2022,Boys,74,45,44,18,13,4,198
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2022,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2022,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2022,Girls,76,53,41,27,7,11,215
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2022,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2022,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2022,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2022,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2022,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2022,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2022,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2022,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2022,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2022,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2022,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2022,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2022,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2022,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2022,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2022,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2022,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2022,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2022,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2022,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2022,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2022,Boys,134,94,99,59,81,47,514
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2022,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2022,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2022,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2022,Girls,187,116,112,89,70,53,627
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2022,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2022,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2022,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2022,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2022,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2022,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2022,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2022,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2022,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2022,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2022,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2022,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2022,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2022,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2022,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2022,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2022,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2022,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2022,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2022,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2022,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2022,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2022,Girls,,,,,,,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2023,Boys,50,46,44,50,,,190
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2023,Boys,,,,,,,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,Galiraya Seed Secondary School,Government,2023,Girls,72,58,21,44,,,195
+d102,c101,s101,Kayunga,Bbaale,Galiraya,St Boniface Secondary School Kasokwe,Private,2023,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2023,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2023,Boys,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Parents Secondary School,Private,2023,Girls,,,,,,,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,Bbaale Senior Secondary School,Government,2023,Girls,,,,,,,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2023,Boys,194,211,102,62,,,569
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2023,Boys,,,,,,,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Naalinya Irene Ndagire Secondary School,Government,2023,Girls,201,164,142,82,,,589
+d102,c101,s103,Kayunga,Bbaale,Kayonza,Nakyessa Senior Secondary School,Private,2023,Girls,,,,,,,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2023,Boys,128,98,78,58,16,11,389
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,Kitatya Senior Secondary School,Government,2023,Girls,111,79,73,74,10,7,354
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2023,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2023,Boys,101,64,33,33,6,9,246
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2023,Boys,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Hope Christian High School,Private,2023,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Musiitwa Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,St Peters Kibuzi Senior Secondary School,Government,2023,Girls,99,66,39,42,6,4,256
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,Uganda Martrys Secondary School Kayunga,Private,2023,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2023,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2023,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2023,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2023,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Agape Christian High School,Private,2023,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Bukamba Nile Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Lion Of Judah High School,Private,2023,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Musiitwa Seed Secondary School,Government,2023,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,Outspan Senior Secondary School Nazigo,Private,2023,Girls,,,,,,,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,St John Apollo Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2023,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2023,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Fountain Of Hope High School,Private,2023,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Rona College School,Private,2023,Girls,,,,,,,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,Uganda Martrys Cenursery Senior Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2023,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2023,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2023,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Bridge Light College Secondary School Suuka,Private,2023,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Busaale Senior Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Green Valley High School,Private,2023,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Kanjuki Senior Secondary School,Government,2023,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,Suuka Islamic Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,St Johns Busaale Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2023,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2023,Boys,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2023,Boys,178,166,115,111,99,97,766
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2023,Boys,136,142,96,77,49,23,523
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Green Vine College,Private,2023,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Kayunga Light College Senior Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Lion Of Juda High School,Private,2023,Girls,,,,,,,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Namagabi Senior Secondary School,Government,2023,Girls,210,165,136,116,52,72,751
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,Ndeeba Senior Secondary School,Government,2023,Girls,190,135,112,77,38,19,571
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2023,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2023,Boys,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Bugerere High School Busaana,Private,2023,Girls,,,,,,,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,Busaana Secondary School,Government,2023,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2023,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2023,Boys,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,St Kalemba Senior Secondary School,Government,2023,Girls,,,,,,,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,Yale High School,Private,2023,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2023,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2023,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2023,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2023,Boys,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kangulumira Public Secondary School,Government,2023,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Kisega High School,Private,2023,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,St Ponsion Ngondwe Secondary School,Private,2023,Girls,,,,,,,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,Uganda Martyrs Senior Secondary School Kangulumira,Private,2023,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2023,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2023,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2023,Boys,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Kitimbwa Bright Future Academy,Private,2023,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,Mt Carmel Education Centre,Private,2023,Girls,,,,,,,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,St Matia Mulumba Secondary School,Private,2023,Girls,,,,,,,0
