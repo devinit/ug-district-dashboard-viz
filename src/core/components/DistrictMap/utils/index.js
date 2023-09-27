@@ -1,7 +1,9 @@
 import { groupBy } from 'lodash';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
 import { filterData } from '../../../utils';
+import fetchData from '../../../../utils/data';
 
+const activeBranch = 'dev'
 export const COLOURED_LAYER = 'highlight';
 export const coreLayer = {
   type: 'shapefile',
@@ -89,3 +91,99 @@ export const processData = (data, indicator, year) => {
 
   return filteredData;
 };
+
+const processCoordinates = (data) => {
+  const coordinates = data.split(',')
+
+return coordinates.map((item) => parseFloat(item))
+}
+
+const MASINDI_EXCLUDE_LIST = ['Waiga Primary School','Gods Mercy Primary School', 'Bukeeka COU Primary School',]
+const KAYUNGA_EXCLUDE_LIST = ['Bukeeka COU Primary School', 'Kungu CU Primary School', 'King Jesus Nursery And Primary School', 'Nile View Primary School',
+'Imam Hassan Primary School Maligita', 'Bright Future Nursery And Primary School Kangulumira'
+]
+
+export const getSchoolMarkers =  (district, schoolSpecs) => {
+  const dataUrl = `https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/${activeBranch}/public/assets/data/${district.toLowerCase()}/schools-locations.csv`
+  const finalGeoJSON = {
+    type: 'FeatureCollection',
+    features: []
+  }
+  if (!schoolSpecs || !dataUrl) return finalGeoJSON
+  if (dataUrl) {
+    fetchData(dataUrl).then((data) => {
+      const filteredData = data.filter((row) => district === 'Masindi'? !MASINDI_EXCLUDE_LIST.includes(row.school_name) : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name) )
+      if (schoolSpecs.ownership === 'all')
+      {
+        filteredData.filter((d)=> d.level === schoolSpecs.level ).forEach((item) => {
+          if (item.gps_coordinates) {
+            const itemCoordinates = processCoordinates(item.gps_coordinates)
+
+            if (itemCoordinates) {
+              finalGeoJSON.features.push({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: [itemCoordinates[1], itemCoordinates[0]]
+                },
+                properties: {
+                  level: item.level,
+                  ownership: item.ownership,
+                  name: item.school_name,
+                  parish: item.parish,
+                }
+              })
+            }
+          }
+        })
+      } else {
+        filteredData.filter((d)=> d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership ).forEach((item) => {
+          if (item.gps_coordinates) {
+            const itemCoordinates = processCoordinates(item.gps_coordinates)
+
+            if (itemCoordinates) {
+              finalGeoJSON.features.push({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: [itemCoordinates[1], itemCoordinates[0]]
+                },
+                properties: {
+                  level: item.level,
+                  ownership: item.ownership,
+                  name: item.school_name,
+                  parish: item.parish,
+                }
+              })
+            }
+          }
+        })
+      }
+
+    }).catch((error) => {
+      console.log(error)
+    })
+
+  return finalGeoJSON
+  }
+
+return finalGeoJSON
+}
+
+export function schoolLevel(indicator) {
+  if (indicator === 'numberOfPrimarySchools')
+  {return {level:'Primary', ownership: 'all'}}
+  if(indicator === 'numberOfSecondarySchools')
+  {return {level:'Secondary', ownership: 'all'}}
+  if(indicator === 'numberOfGovernmentPrimarySchools')
+  {return {level:'Primary', ownership: 'Government'}}
+  if(indicator === 'numberOfPrivatePrimarySchools')
+  {return {level:'Primary', ownership: 'Private'}}
+  if(indicator === 'numberOfGovernmentSecondarySchools')
+  {return {level:'Secondary', ownership: 'Government'}}
+  if(indicator === 'numberOfPrivateSecondarySchools')
+  {return {level:'Secondary', ownership: 'Private'}}
+
+return ''
+
+}

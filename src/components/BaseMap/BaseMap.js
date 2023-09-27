@@ -111,6 +111,7 @@ BaseMap.propTypes = {
   onLoad: PropTypes.func,
   options: PropTypes.object,
   children: PropTypes.node,
+  locationData: PropTypes.object,
 };
 
 // eslint-disable-next-line import/prefer-default-export
