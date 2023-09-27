@@ -2,11 +2,11 @@ import { formatNumber, getYearsFromRange } from '../../utils/data';
 import { defaultSelectValue } from '.';
 
 export const parseTableData = (config, data, subCounty) => {
-  const { rows: COLUMN_CAPTIONS, mapping } = config;
+  const { rows: COLUMN_CAPTIONS, mapping, initialHeader } = config;
   const years = getYearsFromRange(config.yearRange).filter(
     (year) => !config.excludeYears || !config.excludeYears.includes(year)
   );
-  const headerRow = ['School Type'].concat(years);
+  const headerRow = [initialHeader].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((item) => {
     const valuesByYear = {};
     data
