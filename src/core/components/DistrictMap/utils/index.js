@@ -3,7 +3,7 @@ import { flyToLocation, getProperLocationName } from '../../../../components/Bas
 import { filterData } from '../../../utils';
 import fetchData from '../../../../utils/data';
 
-const activeBranch = 'feature/masindi-school-markers'
+const activeBranch = 'dev'
 export const COLOURED_LAYER = 'highlight';
 export const coreLayer = {
   type: 'shapefile',
