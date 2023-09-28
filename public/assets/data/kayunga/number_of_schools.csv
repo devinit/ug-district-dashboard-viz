@@ -1,20 +1,20 @@
 district_id,county_id,subcounty_id,district,county,subcounty,year,level,ownership,value
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Primary,Government,6
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Primary,Private,13
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Primary,Private,16
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Secondary,Government,1
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Secondary,Private,2
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Secondary,Private,1
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Tertiary,Government,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2022,Tertiary,Private,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Primary,Government,21
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Primary,Private,16
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Secondary,Government,1
-d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Secondary,Private,4
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Secondary,Private,2
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Tertiary,Government,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2022,Tertiary,Private,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Primary,Government,9
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Primary,Private,6
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Primary,Private,7
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Secondary,Government,1
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Secondary,Private,2
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Secondary,Private,1
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Tertiary,Government,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2022,Tertiary,Private,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2022,Primary,Government,11
@@ -24,75 +24,75 @@ d102,c101,s101,Kayunga,Bbaale,Galiraya,2022,Secondary,Private,1
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2022,Tertiary,Government,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2022,Tertiary,Private,0
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Primary,Government,9
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Primary,Private,28
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Primary,Private,24
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Secondary,Government,0
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Secondary,Private,6
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Secondary,Private,3
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Tertiary,Government,1
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2022,Tertiary,Private,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Primary,Government,9
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Primary,Private,21
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Secondary,Government,1
-d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Secondary,Private,4
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Secondary,Private,3
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Tertiary,Government,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2022,Tertiary,Private,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Primary,Government,31
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Primary,Private,16
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Primary,Private,21
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Secondary,Government,1
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Secondary,Private,4
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Secondary,Private,1
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Tertiary,Government,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2022,Tertiary,Private,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Primary,Government,19
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Primary,Private,41
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Primary,Private,45
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Secondary,Government,1
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Secondary,Private,8
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Secondary,Private,5
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Tertiary,Government,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2022,Tertiary,Private,1
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Primary,Government,7
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Primary,Private,24
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Primary,Private,25
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Secondary,Government,2
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Secondary,Private,5
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Secondary,Private,4
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Tertiary,Government,0
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2022,Tertiary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Primary,Government,18
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Primary,Private,8
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Secondary,Government,1
-d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Secondary,Private,1
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Secondary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Tertiary,Government,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2022,Tertiary,Private,1
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Primary,Government,8
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Primary,Private,5
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Secondary,Government,0
-d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Secondary,Private,4
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Secondary,Private,3
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Tertiary,Government,0
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2022,Tertiary,Private,0
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Primary,Government,19
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Primary,Private,49
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Primary,Government,15
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Primary,Private,50
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Secondary,Government,1
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Secondary,Private,7
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Secondary,Private,5
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Tertiary,Government,0
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2022,Tertiary,Private,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Primary,Government,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Primary,Government,4
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Primary,Private,5
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Secondary,Government,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Secondary,Private,4
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Secondary,Private,2
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Tertiary,Government,0
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2022,Tertiary,Private,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Primary,Government,6
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Primary,Private,13
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Primary,Private,16
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Secondary,Government,1
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Secondary,Private,2
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Secondary,Private,1
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Tertiary,Government,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Tertiary,Private,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Primary,Government,21
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Primary,Private,16
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Secondary,Government,1
-d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Secondary,Private,4
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Secondary,Private,2
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Tertiary,Government,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Tertiary,Private,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Primary,Government,9
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Primary,Private,6
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Primary,Private,7
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Secondary,Government,1
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Secondary,Private,2
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Secondary,Private,1
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Tertiary,Government,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2021,Tertiary,Private,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Primary,Government,11
@@ -102,75 +102,75 @@ d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Secondary,Private,1
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Tertiary,Government,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Tertiary,Private,0
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Primary,Government,9
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Primary,Private,28
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Primary,Private,24
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Secondary,Government,0
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Secondary,Private,6
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Secondary,Private,3
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Tertiary,Government,1
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Tertiary,Private,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Primary,Government,9
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Primary,Private,21
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Secondary,Government,1
-d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Secondary,Private,4
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Secondary,Private,3
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Tertiary,Government,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2021,Tertiary,Private,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Primary,Government,31
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Primary,Private,16
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Primary,Private,21
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Secondary,Government,1
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Secondary,Private,4
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Secondary,Private,1
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Tertiary,Government,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Tertiary,Private,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Primary,Government,19
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Primary,Private,41
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Primary,Private,45
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Secondary,Government,1
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Secondary,Private,8
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Secondary,Private,5
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Tertiary,Government,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2021,Tertiary,Private,1
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Primary,Government,7
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Primary,Private,24
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Primary,Private,25
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Secondary,Government,2
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Secondary,Private,5
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Secondary,Private,4
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Tertiary,Government,0
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2021,Tertiary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Primary,Government,18
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Primary,Private,8
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Secondary,Government,1
-d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Secondary,Private,1
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Secondary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Tertiary,Government,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2021,Tertiary,Private,1
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Primary,Government,8
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Primary,Private,5
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Secondary,Government,0
-d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Secondary,Private,4
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Secondary,Private,3
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Tertiary,Government,0
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2021,Tertiary,Private,0
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Primary,Government,19
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Primary,Private,49
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Primary,Government,15
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Primary,Private,50
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Secondary,Government,1
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Secondary,Private,7
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Secondary,Private,5
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Tertiary,Government,0
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Tertiary,Private,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Primary,Government,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Primary,Government,4
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Primary,Private,5
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Secondary,Government,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Secondary,Private,4
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Secondary,Private,2
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Tertiary,Government,0
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2021,Tertiary,Private,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Primary,Government,6
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Primary,Private,16
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Secondary,Government,1
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Secondary,Private,2
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Secondary,Private,1
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Tertiary,Government,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2020,Tertiary,Private,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Primary,Government,21
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Primary,Private,16
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Secondary,Government,1
-d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Secondary,Private,4
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Secondary,Private,2
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Tertiary,Government,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2020,Tertiary,Private,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Primary,Government,9
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Primary,Private,6
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Primary,Private,7
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Secondary,Government,1
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Secondary,Private,2
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Secondary,Private,1
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Tertiary,Government,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2020,Tertiary,Private,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2020,Primary,Government,11
@@ -180,75 +180,75 @@ d102,c101,s101,Kayunga,Bbaale,Galiraya,2020,Secondary,Private,1
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2020,Tertiary,Government,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2020,Tertiary,Private,0
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Primary,Government,9
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Primary,Private,29
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Primary,Private,24
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Secondary,Government,0
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Secondary,Private,6
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Secondary,Private,3
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Tertiary,Government,1
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2020,Tertiary,Private,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Primary,Government,9
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Primary,Private,21
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Secondary,Government,1
-d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Secondary,Private,4
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Secondary,Private,3
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Tertiary,Government,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2020,Tertiary,Private,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Primary,Government,31
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Primary,Private,21
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Secondary,Government,1
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Secondary,Private,4
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Secondary,Private,1
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Tertiary,Government,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2020,Tertiary,Private,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Primary,Government,19
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Primary,Private,45
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Secondary,Government,1
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Secondary,Private,8
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Secondary,Private,5
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Tertiary,Government,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2020,Tertiary,Private,1
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Primary,Government,7
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Primary,Private,25
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Secondary,Government,2
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Secondary,Private,5
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Secondary,Private,4
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Tertiary,Government,0
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2020,Tertiary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Primary,Government,18
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Primary,Private,8
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Secondary,Government,1
-d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Secondary,Private,1
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Secondary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Tertiary,Government,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2020,Tertiary,Private,1
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Primary,Government,8
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Primary,Private,5
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Secondary,Government,0
-d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Secondary,Private,4
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Secondary,Private,3
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Tertiary,Government,0
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2020,Tertiary,Private,0
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Primary,Government,19
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Primary,Government,15
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Primary,Private,50
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Secondary,Government,1
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Secondary,Private,7
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Secondary,Private,5
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Tertiary,Government,0
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2020,Tertiary,Private,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Primary,Government,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Primary,Government,4
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Primary,Private,5
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Secondary,Government,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Secondary,Private,4
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Secondary,Private,2
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Tertiary,Government,0
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2020,Tertiary,Private,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Primary,Government,6
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Primary,Private,16
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Secondary,Government,1
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Secondary,Private,2
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Secondary,Private,1
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Tertiary,Government,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2019,Tertiary,Private,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Primary,Government,21
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Primary,Private,16
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Secondary,Government,1
-d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Secondary,Private,4
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Secondary,Private,2
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Tertiary,Government,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2019,Tertiary,Private,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Primary,Government,9
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Primary,Private,6
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Secondary,Government,1
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Secondary,Private,2
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Secondary,Private,1
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Tertiary,Government,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2019,Tertiary,Private,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2019,Primary,Government,11
@@ -260,73 +260,73 @@ d102,c101,s101,Kayunga,Bbaale,Galiraya,2019,Tertiary,Private,0
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Primary,Government,9
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Primary,Private,29
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Secondary,Government,0
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Secondary,Private,6
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Secondary,Private,3
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Tertiary,Government,1
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2019,Tertiary,Private,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Primary,Government,9
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Primary,Private,21
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Secondary,Government,1
-d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Secondary,Private,4
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Secondary,Private,3
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Tertiary,Government,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2019,Tertiary,Private,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Primary,Government,31
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Primary,Private,21
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Secondary,Government,1
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Secondary,Private,4
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Secondary,Private,1
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Tertiary,Government,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2019,Tertiary,Private,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Primary,Government,19
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Primary,Private,45
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Secondary,Government,1
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Secondary,Private,8
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Secondary,Private,5
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Tertiary,Government,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2019,Tertiary,Private,1
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Primary,Government,7
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Primary,Private,25
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Secondary,Government,2
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Secondary,Private,5
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Secondary,Private,4
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Tertiary,Government,0
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2019,Tertiary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Primary,Government,18
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Primary,Private,8
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Secondary,Government,1
-d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Secondary,Private,1
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Secondary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Tertiary,Government,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2019,Tertiary,Private,1
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Primary,Government,8
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Primary,Private,5
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Secondary,Government,0
-d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Secondary,Private,4
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Secondary,Private,3
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Tertiary,Government,0
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2019,Tertiary,Private,0
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Primary,Government,19
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Primary,Government,15
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Primary,Private,50
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Secondary,Government,1
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Secondary,Private,7
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Secondary,Private,5
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Tertiary,Government,0
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2019,Tertiary,Private,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Primary,Government,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Primary,Government,4
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Primary,Private,5
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Secondary,Government,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Secondary,Private,4
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Secondary,Private,2
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Tertiary,Government,0
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2019,Tertiary,Private,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Primary,Government,6
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Primary,Private,16
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Secondary,Government,1
-d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Secondary,Private,2
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Secondary,Private,1
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Tertiary,Government,0
 d102,c101,s102,Kayunga,Bbaale,Bbaale,2018,Tertiary,Private,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Primary,Government,21
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Primary,Private,16
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Secondary,Government,1
-d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Secondary,Private,4
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Secondary,Private,2
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Tertiary,Government,0
 d102,c102,s105,Kayunga,Ntenjeru,Busaana,2018,Tertiary,Private,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Primary,Government,9
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Primary,Private,6
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Secondary,Government,1
-d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Secondary,Private,2
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Secondary,Private,1
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Tertiary,Government,0
 d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2018,Tertiary,Private,0
 d102,c101,s101,Kayunga,Bbaale,Galiraya,2018,Primary,Government,11
@@ -338,54 +338,132 @@ d102,c101,s101,Kayunga,Bbaale,Galiraya,2018,Tertiary,Private,0
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Primary,Government,9
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Primary,Private,29
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Secondary,Government,0
-d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Secondary,Private,6
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Secondary,Private,3
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Tertiary,Government,1
 d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2018,Tertiary,Private,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Primary,Government,9
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Primary,Private,21
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Secondary,Government,1
-d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Secondary,Private,4
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Secondary,Private,3
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Tertiary,Government,0
 d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2018,Tertiary,Private,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Primary,Government,31
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Primary,Private,21
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Secondary,Government,1
-d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Secondary,Private,4
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Secondary,Private,1
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Tertiary,Government,0
 d102,c101,s103,Kayunga,Bbaale,Kayonza,2018,Tertiary,Private,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Primary,Government,19
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Primary,Private,45
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Secondary,Government,1
-d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Secondary,Private,8
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Secondary,Private,5
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Tertiary,Government,0
 d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2018,Tertiary,Private,1
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Primary,Government,7
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Primary,Private,25
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Secondary,Government,2
-d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Secondary,Private,5
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Secondary,Private,4
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Tertiary,Government,0
 d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2018,Tertiary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Primary,Government,18
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Primary,Private,8
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Secondary,Government,1
-d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Secondary,Private,1
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Secondary,Private,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Tertiary,Government,0
 d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2018,Tertiary,Private,1
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Primary,Government,8
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Primary,Private,5
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Secondary,Government,0
-d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Secondary,Private,4
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Secondary,Private,3
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Tertiary,Government,0
 d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2018,Tertiary,Private,0
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Primary,Government,19
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Primary,Government,15
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Primary,Private,50
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Secondary,Government,1
-d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Secondary,Private,7
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Secondary,Private,5
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Tertiary,Government,0
 d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2018,Tertiary,Private,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Primary,Government,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Primary,Government,4
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Primary,Private,5
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Secondary,Government,1
-d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Secondary,Private,4
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Secondary,Private,2
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Tertiary,Government,0
 d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2018,Tertiary,Private,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2017,Primary,Government,6
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2017,Primary,Private,16
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2017,Secondary,Government,1
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2017,Secondary,Private,1
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2017,Tertiary,Government,0
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2017,Tertiary,Private,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2017,Primary,Government,21
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2017,Primary,Private,16
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2017,Secondary,Government,1
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2017,Secondary,Private,2
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2017,Tertiary,Government,0
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2017,Tertiary,Private,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2017,Primary,Government,9
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2017,Primary,Private,6
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2017,Secondary,Government,1
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2017,Secondary,Private,1
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2017,Tertiary,Government,0
+d102,c102,s110,Kayunga,Ntenjeru,Busaana Town Council,2017,Tertiary,Private,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2017,Primary,Government,11
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2017,Primary,Private,2
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2017,Secondary,Government,1
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2017,Secondary,Private,1
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2017,Tertiary,Government,0
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2017,Tertiary,Private,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2017,Primary,Government,9
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2017,Primary,Private,29
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2017,Secondary,Government,0
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2017,Secondary,Private,3
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2017,Tertiary,Government,1
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2017,Tertiary,Private,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2017,Primary,Government,9
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2017,Primary,Private,21
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2017,Secondary,Government,1
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2017,Secondary,Private,3
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2017,Tertiary,Government,0
+d102,c102,s112,Kayunga,Ntenjeru,Kangulumira Town Council,2017,Tertiary,Private,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2017,Primary,Government,31
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2017,Primary,Private,21
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2017,Secondary,Government,1
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2017,Secondary,Private,1
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2017,Tertiary,Government,0
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2017,Tertiary,Private,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2017,Primary,Government,19
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2017,Primary,Private,45
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2017,Secondary,Government,1
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2017,Secondary,Private,5
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2017,Tertiary,Government,0
+d102,c102,s108,Kayunga,Ntenjeru,Kayunga,2017,Tertiary,Private,1
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2017,Primary,Government,7
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2017,Primary,Private,25
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2017,Secondary,Government,2
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2017,Secondary,Private,4
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2017,Tertiary,Government,0
+d102,c102,s109,Kayunga,Ntenjeru,Kayunga Town Council,2017,Tertiary,Private,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2017,Primary,Government,18
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2017,Primary,Private,8
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2017,Secondary,Government,1
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2017,Secondary,Private,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2017,Tertiary,Government,0
+d102,c101,s104,Kayunga,Bbaale,Kitimbwa,2017,Tertiary,Private,1
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2017,Primary,Government,8
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2017,Primary,Private,5
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2017,Secondary,Government,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2017,Secondary,Private,3
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2017,Tertiary,Government,0
+d102,c101,s113,Kayunga,Bbaale,Kitimbwa Town Council,2017,Tertiary,Private,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2017,Primary,Government,15
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2017,Primary,Private,50
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2017,Secondary,Government,1
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2017,Secondary,Private,5
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2017,Tertiary,Government,0
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2017,Tertiary,Private,1
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2017,Primary,Government,4
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2017,Primary,Private,5
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2017,Secondary,Government,1
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2017,Secondary,Private,2
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2017,Tertiary,Government,0
+d102,c102,s111,Kayunga,Ntenjeru,Nazigo Town Council,2017,Tertiary,Private,0
