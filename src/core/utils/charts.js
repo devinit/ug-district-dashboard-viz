@@ -2,6 +2,7 @@ import deepMerge from 'deepmerge';
 import defaultOptions, { colorways } from '../../charts/echarts/index';
 import { formatNumber, getYearsFromRange } from '../../utils/data';
 import { combineMerge } from '../../utils';
+import { removeCommas } from '.';
 
 export const getYears = (data, config = {}) => {
   if (Array.isArray(config.yearRange) && config.yearRange.length) {
@@ -38,7 +39,7 @@ const getChartType = (type) => {
 const getPieSeriesValue = (data, seriesName, config) => {
   const sum = data.reduce((value, curr) => {
     if (curr[config.mapping.series] === seriesName) {
-      return value + Number(curr[config.mapping.value]);
+      return value + Number(removeCommas(curr[config.mapping.value]));
     }
 
     return value;
@@ -96,7 +97,7 @@ const getSeries = (config, data, years) => {
             `${item[mapping.year] || ''}` === `${year}` &&
             item[mapping.series].toLowerCase() === seriesName.toLowerCase()
           ) {
-            yearValues.push(Number(item[mapping.value]));
+            yearValues.push(Number(removeCommas(item[mapping.value])));
           }
         });
 

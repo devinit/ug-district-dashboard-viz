@@ -51,3 +51,12 @@ export const getDefaultFilters = (config, subCounty) => {
 
   return filterArray;
 };
+
+export const removeCommas = (value) => {
+  if ((typeof value === 'string' || value instanceof String) && value.includes(',')) {
+    return value.replace(',', '')
+  }
+
+return value
+
+}
