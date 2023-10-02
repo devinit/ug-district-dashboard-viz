@@ -75,6 +75,26 @@ const useMap = (location, layer, defaultOptions = {}) => {
 
   useEffect(() => {
     if (map) {
+      // hide secondary layers
+      map.getStyle().layers.forEach((_layer) => {
+        if (!['background', 'highlight'].includes(_layer.id)) {
+          map.setLayoutProperty(_layer.id, 'visibility', 'none');
+        }
+      });
+      setZoomByContainerWidth(map, map.getContainer(), layer);
+      // remove any existing listners
+      map.off('mousemove', 'points', handleMarkerMove)
+      map.off('mouseleave', COLOURED_LAYER, onBlur);
+      map.off('mouseover', COLOURED_LAYER, onHover);
+      map.off('click', 'points', onMarkerClick)
+      // add even listeners to show tooltip
+
+      map.on('mousemove', COLOURED_LAYER, onHover);
+      map.on('mouseleave', COLOURED_LAYER, onBlur);
+      map.on('mousemove', 'points', handleMarkerMove)
+      map.on('mouseleave', 'points', handleMarkerLeave)
+      map.on('click', 'points', onMarkerClick)
+
       if(map.getLayer('points')){
         map.removeLayer('points')
       }
@@ -115,32 +135,8 @@ const useMap = (location, layer, defaultOptions = {}) => {
 
         });
       }
-    }
-  }, [map, data, locationData, level]);
-
-  useEffect(() => {
-    if (map) {
-      // hide secondary layers
-      map.getStyle().layers.forEach((_layer) => {
-        if (!['background', 'highlight'].includes(_layer.id)) {
-          map.setLayoutProperty(_layer.id, 'visibility', 'none');
-        }
-      });
-      setZoomByContainerWidth(map, map.getContainer(), layer);
-      // remove any existing listners
-      map.off('mousemove', 'points', handleMarkerMove)
-      map.off('mouseleave', COLOURED_LAYER, onBlur);
-      map.off('mouseover', COLOURED_LAYER, onHover);
-      map.off('click', 'points', onMarkerClick)
-      // add even listeners to show tooltip
-
-      map.on('mousemove', COLOURED_LAYER, onHover);
-      map.on('mouseleave', COLOURED_LAYER, onBlur);
-      map.on('mousemove', 'points', handleMarkerMove)
-      map.on('mouseleave', 'points', handleMarkerLeave)
-      map.on('click', 'points', onMarkerClick)
       }
-  }, [map, location, options, data,]);
+  }, [map, location, options, data, level]);
 
   useEffect(() => {
     const fetchIndicatorData = async (url) => {
