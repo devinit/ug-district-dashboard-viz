@@ -70,6 +70,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
   const handleMarkerLeave = useCallback(() => {
     map.on('mousemove',COLOURED_LAYER,onHover)
     popup.remove()
+    markerPopup.remove()
     map.setLayoutProperty('points', 'icon-size', 0.2)
   }, [map, location])
 
