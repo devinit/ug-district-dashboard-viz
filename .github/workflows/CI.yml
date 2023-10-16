@@ -51,4 +51,4 @@ jobs:
     steps:
       - uses: fastify/github-action-merge-dependabot@v3.9.1
         with:
-          github-token: ${{secrets.PA_TOKEN}}
+          github-token: ${{secrets.PA_TOKEN || github.token}}
