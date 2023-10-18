@@ -1,4 +1,4 @@
-import { createElement } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import DataHandler from '../components/DataHandler';
 import { defaultSelectValue } from '../utils';
@@ -14,7 +14,7 @@ const validConfigs = (config) => {
     window.console.error(
       !config.series
         ? 'Invalid chart config: Series is required!'
-        : 'Invalid chart config: Invalid series config - expected an array!'
+        : 'Invalid chart config: Invalid series config - expected an array!',
     );
 
     return false;
@@ -68,14 +68,14 @@ const processConfig = (config) => {
           dichart.showLoading();
           let subCounty = defaultSelectValue;
           const root = createRoot(chartNode);
-          root.render(createElement(DataHandler, { config, subCounty }));
+          root.render(<DataHandler config={config} subCounty={subCounty} />);
 
           if (window.DIState) {
             window.DIState.addListener(() => {
               const { subCounty: selectedSubCounty } = window.DIState.getState;
               if (selectedSubCounty && selectedSubCounty !== subCounty) {
                 subCounty = selectedSubCounty;
-                root.render(createElement(DataHandler, { config, subCounty }));
+                root.render(<DataHandler config={config} subCounty={subCounty} />);
               }
             });
           }
