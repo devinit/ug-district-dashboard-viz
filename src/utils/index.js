@@ -1,17 +1,19 @@
 import deepMerge from 'deepmerge';
-import { createElement } from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import NoData from '../components/NoData';
 
 export const addNoData = (rootNode) => {
   rootNode.classList.add('no-data--wrapper');
-  unmountComponentAtNode(rootNode);
-  render(createElement(NoData), rootNode);
+  const root = createRoot(rootNode);
+  root.unmount();
+  root.render(<NoData />);
 };
 
 export const removeNoData = (rootNode) => {
   rootNode.classList.remove('no-data--wrapper');
-  unmountComponentAtNode(rootNode);
+  const root = createRoot(rootNode);
+  root.unmount();
 };
 
 export const combineMerge = (target, source, options) => {

@@ -1,4 +1,4 @@
-import { createElement } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import fetchData from '../../utils/data';
 import DistrictTable from '../components/DistrictTable';
@@ -30,7 +30,7 @@ const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorN
         }, data);
         // update table
         const rows = parseTableData(config, selectedData, subCounty);
-        tableRoot.render(createElement(DistrictTable, { rows }));
+        tableRoot.render(<DistrictTable rows={rows} />);
       }
     }
   };
@@ -71,12 +71,12 @@ const renderTable = (config) => {
                   ? filterDataBySubCounty(data, selectedSubCounty, config.mapping.subCounty)
                   : data;
               const rows = parseTableData(config, filteredData, selectedSubCounty);
-              root.render(createElement(DistrictTable, { rows }));
+              root.render(<DistrictTable rows={rows} />);
 
               if (config.selectors && config.selectors.length) {
                 handleSelectors(
                   { data: filteredData, subCounty: selectedSubCounty, config, tableRoot: root },
-                  selectors
+                  selectors,
                 ).then((updatedSelectors) => {
                   selectors = updatedSelectors;
                 });

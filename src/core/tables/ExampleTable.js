@@ -1,4 +1,4 @@
-import { createElement } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import ExampleTable from '../components/ExampleTable';
 import { formatNumber, getYearsFromRange } from '../../utils/data';
@@ -28,17 +28,17 @@ const renderTable = (reactRoot) => {
     }
 
     return formatNumber(
-      dataRows.reduce((total, current) => (typeof current[index] === 'number' ? total + current[index] : total), 0)
+      dataRows.reduce((total, current) => (typeof current[index] === 'number' ? total + current[index] : total), 0),
     );
   });
   // formatting is done after calculating the total to eliminate rounding errors
   const formattedDataRow = dataRows.map((row) =>
-    row.map((cell) => (typeof cell === 'number' ? formatNumber(cell) : cell))
+    row.map((cell) => (typeof cell === 'number' ? formatNumber(cell) : cell)),
   );
 
   const rows = [headerRow].concat(formattedDataRow, [totalsRow]);
 
-  reactRoot.render(createElement(ExampleTable, { rows }));
+  reactRoot.render(<ExampleTable rows={rows} />);
 };
 
 /**
