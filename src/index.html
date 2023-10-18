@@ -153,11 +153,33 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Learner's Enrolment</h3>
+          <h3 class="type-l type-l--trailer">Learner's Enrolment Primary</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
               <div class="dicharts--table--learners-enrolment"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Learner's Enrolment Secondary</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--learners-enrolment-secondary"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -239,6 +261,49 @@
           </div>
         </div>
       </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Primary teachers</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--primary-teachers"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Crop production</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dicharts--crop-production"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 
@@ -247,541 +312,1429 @@
   <script src="https://devinit.org/assets/js/app.bundle.0adecbc3ca7f.js"></script>
   <script src="https://devinit.org/assets/visualisation/js/dicharts.92c38e09499f.js"></script>
   <script>
+// Masindi configurations
+    // const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
+    // const mapMapping = {
+    //   'Karujubu': 'Karujubu Division',
+    //   'Nyangahya': 'Nyangahya Division',
+    //   'Central': 'Central Division',
+    //   'Kigulya': 'Kigulya Division',
+    //   'KARUJUBU DIVISION': 'Karujubu',
+    //   'NYANGAHYA DIVISION': 'Nyangahya',
+    //   'CENTRAL DIVISION': 'Central',
+    //   'KIGULYA DIVISION': 'Kigulya',
+    // }
+    // const mapFormatter = (value, target = 'map') => {
+    //   if (Object.keys(mapMapping).map((key) => key.toUpperCase()).includes(value.toUpperCase())) {
+    //     return mapMapping[value].toUpperCase();
+    //   }
 
-    const masindiSubCounties = ['Bwijanga', 'Karujubu', 'Kimengo', 'Masindi Town Council', 'Miirya', 'Nyangahya', 'Pakanyi'];
-    const mapMapping = {
-      'Karujubu': 'Karujubu Division',
-      'Nyangahya': 'Nyangahya Division',
-      'Masindi Town Council': 'Central Division',
-      'KARUJUBU DIVISION': 'Karujubu',
-      'NYANGAHYA DIVISION': 'Nyangahya',
-      'CENTRAL DIVISION': 'Masindi Town Council',
-    }
-    const mapFormatter = (value, target = 'map') => {
-      if (Object.keys(mapMapping).map((key) => key.toUpperCase()).includes(value.toUpperCase())) {
-        return mapMapping[value].toUpperCase();
-      }
+    //   return value.toUpperCase();
 
-      return value.toUpperCase();
-    }
-    const topics = [
-      {
-        id: 'education',
-        name: 'Education',
-        yearRange: [2016, 2021],
-        dashboardUrl: 'https://google.com',
-        dashboardButtonCaption: 'View Education Dashboard',
-        indicators: [
-        {
-          id: 'numberOfPrimarySchools',
-          name: 'Number of Primary Schools (All)',
-          description: 'All government and private schools in Masindi district, by sub-county',
-          //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-          colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
-          range: [5, 10, 15, 20],
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-          yearRange: [2014, 2022],
-          excludeYears: [2015, 2017, 2019, 2021],
-          mapping: {
-              location: 'subcounty',
-              value: 'value',
-              year: 'year',
-          },
-          aggregator: 'sum', //either sum, avg
-          filters: {
-              level: ['Primary'],
-          },
-          },
-          {
-            id: 'numberOfGovernmentPrimarySchools',
-            name: 'Number of Primary Schools (Government)',
-            description: 'All government schools in Masindi district, by sub-county',
-            //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
-            range: [5, 10, 15, 20],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-            yearRange: [2014, 2022],
-            excludeYears: [2015, 2017, 2019, 2021],
-            mapping: {
-                location: 'subcounty',
-                value: 'value',
-                year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-                level: ['Primary'],
-                ownership: ['Government'],
-            },
-          },
-          {
-            id: 'numberOfPrivatePrimarySchools',
-            name: 'Number of Primary Schools (Private)',
-            description: 'All private schools in Masindi district, by sub-county',
-            //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
-            range: [5, 10, 15, 20],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-            yearRange: [2016, 2022],
-            excludeYears: [2017, 2019, 2021],
-            mapping: {
-                location: 'subcounty',
-                value: 'value',
-                year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-                level: ['Primary'],
-                ownership: ['Private'],
-            },
-          },
-          {
-            id: 'numberOfSecondarySchools',
-            name: 'Number of Secondary Schools (All)',
-            description: 'All secondary schools in Masindi district, by sub-county.',
-            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            range: [2, 5, 10],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-            yearRange: [2014, 2022],
-            excludeYears: [2015, 2017, 2019, 2021],
-            mapping: {
-                location: 'subcounty',
-                value: 'value',
-                year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-                level: ['Secondary'],
-            },
-          },
-          {
-            id: 'numberOfGovernmentSecondarySchools',
-            name: 'Number of Secondary Schools (Government)',
-            description: 'All government secondary schools in Masindi district, by sub-county.',
-            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            range: [2, 5, 10],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-            yearRange: [2014, 2022],
-            excludeYears: [2015, 2017, 2019, 2021],
-            mapping: {
-                location: 'subcounty',
-                value: 'value',
-                year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-                level: ['Secondary'],
-                ownership: ['Government']
-            },
-          },
-          {
-            id: 'numberOfPrivateSecondarySchools',
-            name: 'Number of Secondary Schools (Private)',
-            description: 'All private secondary schools in Masindi district, by sub-county.',
-            colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-            range: [2, 5, 10],
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/masindi/raw/number_of_schools.csv',
-            yearRange: [2014, 2022],
-            excludeYears: [2015, 2017, 2019, 2021],
-            mapping: {
-                location: 'subcounty',
-                value: 'value',
-                year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-                level: ['Secondary'],
-                ownership: ['Private']
-            },
-          },
-          {
-            id: 'primaryEnrolment',
-            name: 'Primary School Enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
-            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
-            range: [50, 100, 200, 300],
-            yearRange: [2018, 2020],
-            mapping: {
-              location: 'subcounty',
-              value: 'value',
-              year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-              level: ['Primary'],
-            },
-          },
-          {
-            id: 'secondaryEnrolment',
-            name: 'Secondary School Enrolment',
-            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
-            colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
-            range: [50, 100, 200, 300],
-            yearRange: [2018, 2020],
-            mapping: {
-              location: 'subcounty',
-              value: 'value',
-              year: 'year',
-            },
-            aggregator: 'sum', //either sum, avg
-            filters: {
-              level: ['Secondary'],
-            },
-          },
-        ],
-      },
-    ];
+    // }
+    // const topics = [
+    //   {
+    //     id: 'education',
+    //     name: 'Education',
+    //     // yearRange: [2016, 2021],
+    //     dashboardUrl: 'https://google.com',
+    //     dashboardButtonCaption: 'View Education Dashboard',
+    //     indicators: [
+    //       {
+    //         id: 'numberOfSchools',
+    //         name: 'Number of Primary Schools (All)',
+    //         description: 'Description Goes Here!',
+    //         colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+    //         range: [5, 10, 15, 20],
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015,2017],
+    //         mapping: {
+    //           location: 'subcounty',
+    //           value: 'value',
+    //           year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //           level: ['Primary'],
+    //         },
+    //       },
+    //       {
+    //         id: 'numberOfGovernmentPrimarySchools',
+    //         name: 'Number of Primary Schools (Government)',
+    //         description: 'All government schools in Masindi district, by sub-county',
+    //         //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+    //         colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+    //         range: [5, 10, 15, 20],
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015,2017],
+    //         // excludeYears: [2015, 2017, 2019, 2021],
+    //         mapping: {
+    //             location: 'subcounty',
+    //             value: 'value',
+    //             year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //             level: ['Primary'],
+    //             ownership: ['Government'],
+    //         },
+    //       },
+    //       {
+    //         id: 'numberOfPrivatePrimarySchools',
+    //         name: 'Number of Primary Schools (Private)',
+    //         description: 'All private schools in Masindi district, by sub-county',
+    //         //colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+    //         colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+    //         range: [5, 10, 15, 20],
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015,2017],
+    //         // excludeYears: [2017, 2019, 2021],
+    //         mapping: {
+    //             location: 'subcounty',
+    //             value: 'value',
+    //             year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //             level: ['Primary'],
+    //             ownership: ['Private'],
+    //         },
+    //     },
+    //       {
+    //         id: 'numberOfSecondarySchools',
+    //         name: 'Number of Secondary Schools (All)',
+    //         description: 'Description Goes Here!',
+    //         colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+    //         range: [2, 5, 10, 15],
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015,2017],
+    //         mapping: {
+    //           location: 'subcounty',
+    //           value: 'value',
+    //           year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //           level: ['Secondary'],
+    //         },
+    //       },
+    //       {
+    //         id: 'numberOfGovernmentSecondarySchools',
+    //         name: 'Number of Secondary Schools (Government)',
+    //         description: 'All government secondary schools in Masindi district, by sub-county.',
+    //         colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+    //         range: [2, 5, 10],
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015,2017],
+    //         mapping: {
+    //             location: 'subcounty',
+    //             value: 'value',
+    //             year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //             level: ['Secondary'],
+    //             ownership: ['Government']
+    //         },
+    //       },
+    //       {
+    //         id: 'numberOfPrivateSecondarySchools',
+    //         name: 'Number of Secondary Schools (Private)',
+    //         description: 'All private secondary schools in Masindi district, by sub-county.',
+    //         colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+    //         range: [2, 5, 10],
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015,2017],
+    //         mapping: {
+    //             location: 'subcounty',
+    //             value: 'value',
+    //             year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //             level: ['Secondary'],
+    //             ownership: ['Private']
+    //         },
+    //       },
+    //       {
+    //         id: 'primaryEnrolment',
+    //         name: 'Primary School Enrolment',
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/learner_enrollment.csv',
+    //         colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+    //         range: [2000, 3000, 5000, 8000,],
+    //         yearRange: [2014, 2023],
+    //         excludeYears:[2015, 2016,2017,2018,2019],
+    //         mapping: {
+    //           location: 'subcounty',
+    //           value: 'value',
+    //           year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //         filters: {
+    //           level: ['Primary'],
+    //         },
+    //       },
+    //       {
+    //         id: 'secondaryEnrolment',
+    //         name: 'Secondary School Enrolment',
+    //         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/secondary_school_enrolment.csv',
+    //         colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+    //         range: [500, 600, 700, 800],
+    //         yearRange: [2014, 2014],
+    //         // excludeYears: [2015,2016,2017,2018,2019,2020,2021],
+    //         mapping: {
+    //           location: 'subcounties',
+    //           value: 'subtotal',
+    //           year: 'year',
+    //         },
+    //         aggregator: 'sum', //either sum, avg
+    //       },
+    //     ],
+    //   },
+    // ];
 
-    const barChartSeries = [
-      { stack: undefined, barGap: 0 },
-      { stack: undefined },
-      { stack: undefined },
-      { stack: undefined, label: { show: false } }
-    ];
+    // const barChartSeries = [
+    //   { stack: undefined, barGap: 0 },
+    //   { stack: undefined },
+    //   { stack: undefined },
+    //   { stack: undefined, label: { show: false } }
+    // ];
 
-    const kayungaSubCounties = ['Galiraya', 'Bbaale', 'Kayonza', 'Kitimbwa', 'Busaana', 'Kayunga', 'Kayunga Town Council', 'Nazigo', 'Kangulumira'];
-    const state = {
-      location: {
-        // name: 'Masindi',
-        // fullName: 'Masindi District',
-        // coordinates: [31.766240227362417, 1.8818134163990712],
-        name: 'Kayunga',
-        fullName: 'Kayunga District',
-        coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
-      },
-      selectors: [
-        {
-          id: 'subcounty',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/sub-counties.csv',
-          label: 'Select sub-county',
-          defaultValue: { value: 'all', label: 'All sub-counties' },
-          stateProperty: 'subCounty',
-          valueProperty: 'Name',
-          labelProperty: 'Name',
-        },
-      ],
-      map: {
-        filters: {
-          topicLabel: 'Select a topic to explore',
-          indicatorLabel: 'Choose an indicator',
-          yearLabel: 'Choose a year',
-        },
-        data: topics,
-        options: {
-          zoom: 10,
-          maxZoom: 12,
-        },
-        formatter: mapFormatter,
-      },
-      keyFacts: {
-        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
-        tabs: [
+    // const kayungaSubCounties = ['Galiraya', 'Bbaale', 'Kayonza', 'Kitimbwa', 'Busaana', 'Kayunga', 'Kayunga Town Council', 'Nazigo', 'Kangulumira'];
+    // const subCounties = ['Bikonzi', 'Bwijanga', 'Budongo', 'Bulima Town Council', 'Kabango Town Council', 'Kijunjubwa', 'Kijunjubwa Town Council',
+    //     'Karujubu Division', 'Kigulya Division', 'Kimengo', 'Kiruli', 'Kyatiri Town Council', 'Labongo', 'Central Division', 'Miirya',
+    //     'Nyangahya Division', 'Nyantonzi', 'Pakanyi',
+    // ]
+    // const state = {
+    //   location: {
+    //     name: 'Masindi',
+    //     fullName: 'Masindi District',
+    //     coordinates: [31.766240227362417, 1.8818134163990712],
+    //     // coordinates: [32.86415441783307, 0.9460935176075392], // Kayunga coordinates
+    //   },
+    //   selectors: [
+    //     {
+    //       id: 'subcounty',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/sub-counties.csv',
+    //       label: 'Select sub-county',
+    //       defaultValue: { value: 'all', label: 'All sub-counties' },
+    //       stateProperty: 'subCounty',
+    //       valueProperty: 'Name',
+    //       labelProperty: 'Name',
+    //     },
+    //   ],
+    //   map: {
+    //     filters: {
+    //       topicLabel: 'Select a topic to explore',
+    //       indicatorLabel: 'Choose an indicator',
+    //       yearLabel: 'Choose a year',
+    //     },
+    //     data: topics,
+    //     options: {
+    //       zoom: 10,
+    //       maxZoom: 12,
+    //     },
+    //     // formatter: mapFormatter,
+    //   },
+    //   keyFacts: {
+    //     url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/District%20Profile.csv',
+    //     tabs: [
+    //       {
+    //         id: 'overview',
+    //         show: true, // defaults to true
+    //         label: 'Overview Tab',
+    //       },
+    //       {
+    //         id: 'education',
+    //         dashboardURL: 'https://google.com/', // when undefined, button is not shown
+    //         dashboardButtonCaption: 'View Education Dashboard',
+    //       },
+    //       {
+    //         id: 'production',
+    //         show: false,
+    //         dashboardURL: 'https://google.com/',
+    //         dashboardButtonCaption: 'View Production Dashboard',
+    //       },
+    //     ],
+    //   },
+    //   charts: [
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--number-of-schools',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //       type: 'bar',
+    //       typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
+    //       yearRange: [2014, 2023],
+    //       excludeYears:[2015,2017],
+    //       series: ['Government', 'Private'],
+    //       mapping: {
+    //         series: 'ownership',
+    //         year: 'year',
+    //         value: 'value',
+    //         subCounty: 'subcounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         subcounty: subCounties,
+    //       },
+    //       options: {
+    //         legend: { show: true },
+    //         yAxis: { name: 'Number of schools'}
+    //       },
+    //       selectorClassName: 'dicharts--number-of-schools__selectors',
+    //       selectors: [
+    //         {
+    //           data: [
+    //             { value: 'Primary', label: 'Primary' },
+    //             { value: 'Secondary', label: 'Secondary' }
+    //           ],
+    //           label: 'Select level',
+    //           defaultValue: { value: 'all', label: 'Primary and secondary' },
+    //           valueProperty: 'value',
+    //           labelProperty: 'label',
+    //           dataProperty: 'level'
+    //         },
+    //       ],
+    //       table: {
+    //         target: 'education',
+    //         yearRange: [2014, 2023],
+    //         excludeYears:[2015,2017],
+    //         rows: ['Government', 'Private',],
+    //         mapping: {
+    //           rows: 'ownership',
+    //           year: 'year',
+    //           value: 'value',
+    //           subCounty: 'subcounty',
+    //           level: 'level',
+    //         },
+    //       },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--learners-enrolment',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/primary_school_enrolment.csv',
+    //       type: 'bar-stacked',
+    //       typeOptions: [{
+    //           value: 'bar-stacked',
+    //           label: 'Bar Chart (Stacked)'
+    //       }, {
+    //           value: 'bar',
+    //           label: 'Bar Chart'
+    //       }, {
+    //           value: 'line',
+    //           label: 'Line Chart'
+    //       }, {
+    //           value: 'area',
+    //           label: 'Area Chart'
+    //       }],
+    //       series: ['Boys', 'Girls'],
+    //       mapping: {
+    //         series: 'gender',
+    //         year: 'year',
+    //         value: 'subtotal',
+    //         subCounty: 'subcounty',
+    //       },
+    //       filters: {
+    //         subcounty: subCounties,
+    //       },
+    //       options: {
+    //         yAxis: { name: 'Pupils enrolled' },
+    //       },
+    //       table: {
+    //         yearRange: [2014, 2023],
+    //         excludeYears: [2015, 2016, 2017, 2018, 2019],
+    //         rows: ['Boys', 'Girls'],
+    //         mapping: {
+    //             rows: 'gender',
+    //             year: 'year',
+    //             value: 'subtotal',
+    //             subCounty: 'subcounty'
+    //         },
+    //       },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--learners-enrolment-secondary',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/secondary_school_enrolment.csv',
+    //       type: 'bar-stacked',
+    //       typeOptions: [{
+    //           value: 'bar-stacked',
+    //           label: 'Bar Chart (Stacked)'
+    //       }, {
+    //           value: 'bar',
+    //           label: 'Bar Chart'
+    //       }, {
+    //           value: 'line',
+    //           label: 'Line Chart'
+    //       }, {
+    //           value: 'area',
+    //           label: 'Area Chart'
+    //       }],
+    //       series: ['Boys', 'Girls'],
+    //       mapping: {
+    //         series: 'gender',
+    //         year: 'year',
+    //         value: 'subtotal',
+    //         subCounty: 'subcounties',
+    //       },
+    //       options: {
+    //         yAxis: { name: 'Students enrolled' },
+    //       },
+    //       table: {
+    //         yearRange: [2014,2023],
+    //         excludeYears: [2015, 2016, 2017, 2018, 2019, 2020,2021],
+    //         rows: ['Boys', 'Girls'],
+    //         mapping: {
+    //             rows: 'gender',
+    //             year: 'year',
+    //             value: 'subtotal',
+    //             subCounty: 'subcounties'
+    //         },
+    //       },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--classroom-learners-ratio',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+    //       type: 'area',
+    //       yearRange: [2018, 2021],
+    //       series: ['Government', 'Private'],
+    //       mapping: {
+    //         series: 'type',
+    //         year: 'year',
+    //         value: 'classroom_capacity',
+    //         subCounty: 'subcounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         SubCounty: subCounties,
+    //       },
+    //       aggregator: 'avg',
+    //       options: {
+    //         xAxis: {
+    //           boundaryGap: false,
+    //         },
+    //         series: [{ label: { show: false } }, { label: { show: false } }],
+    //       },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--ple-performance-analysis',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/ple_analysis.csv',
+    //       yearRange: [2018, 2020],
+    //       series: ['Division 1', 'Division 2', 'Division 3', 'Division 4', 'Division U', 'Division X'],
+    //       mapping: {
+    //         series: 'grade',
+    //         year: 'year',
+    //         value: 'value',
+    //         subCounty: 'subcounty',
+    //       },
+    //       aggregator: 'sum',
+    //       type: 'bar',
+    //       typeOptions: [{
+    //                 value: 'bar',
+    //                 label: 'Bar Chart'
+    //             }, {
+    //                 value: 'bar-stacked',
+    //                 label: 'Bar Chart (Stacked)'
+    //             }, {
+    //                 value: 'area',
+    //                 label: 'Area Chart'
+    //             }, {
+    //                 value: 'line',
+    //                 label: 'Line Chart'
+    //             }],
+    //       options: {
+    //         yAxis: { name: 'PLE Performance' },
+    //         series:  [{
+    //                         barGap: 0
+    //                     },
+    //                     {},
+    //                     {},
+    //                     {
+    //                         label: {
+    //                             show: false
+    //                         }
+    //                     }
+    //                 ]
+    //       },
+    //       selectorClassName: 'dicharts--ple-performance-selectors',
+    //       selectors: [
+    //         {
+    //           label: 'Select gender',
+    //           defaultValue: { value: 'all', label: 'All' },
+    //           dataProperty: 'gender',
+    //           valueProperty: 'value',
+    //           labelProperty: 'label',
+    //           data: [
+    //             { value: 'Male', label: 'Male' },
+    //             { value: 'Female', label: 'Female' },
+    //           ],
+    //         },
+    //         {
+    //           label: 'Select ownership',
+    //           defaultValue: { value: 'all', label: 'All' },
+    //           dataProperty: 'ownership',
+    //           valueProperty: 'value',
+    //           labelProperty: 'label',
+    //           data: [
+    //             { value: 'Government', label: 'Government' },
+    //             { value: 'Private', label: 'Private' },
+    //           ],
+    //         },
+    //       ],
+    //       table: {
+    //                 yearRange: [2018, 2020],
+    //                 rows: ['Division 1', 'Division 2', 'Division 3', 'Division 4', 'Division U', 'Division X'],
+    //                 mapping: {
+    //                     rows: 'grade',
+    //                     year: 'year',
+    //                     value: 'value',
+    //                     subCounty: 'subcounty'
+    //                 },
+    //             },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--education-institutions',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/education_institutions.csv',
+    //       series: ['Primary', 'Nursery', 'Secondary', 'Tertiary'],
+    //       mapping: {
+    //         series: 'level',
+    //         value: 'value',
+    //         subCounty: 'subcounty',
+    //         year: 'year'
+    //       },
+    //       filters: {
+    //         year: ['2023'],
+    //       },
+    //       aggregator: 'sum',
+    //       type: 'pie',
+    //       options: {
+    //         yAxis: { show: false },
+    //         xAxis: { show: false },
+    //         tooltip: { trigger: 'item' },
+    //         legend: {
+    //           orient: 'vertical',
+    //           left: 20,
+    //           top: 'middle',
+    //           selectedMode: true,
+    //         },
+    //         series: [
+    //           {
+    //             label: { formatter: '{b} ({c})' }
+    //           }
+    //         ]
+    //       },
+    //     },
+    //   ],
+    //   tables: [
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--table--number-of-schools',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+    //       yearRange: [2019, 2022],
+    //       rows: ['Government', 'Private'],
+    //       mapping: {
+    //         rows: 'ownership',
+    //         year: 'year',
+    //         value: 'value',
+    //         subCounty: 'subcounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         subCounties: subCounties,
+    //       },
+    //       selectorClassName: 'dicharts--table--number-of-schools-selectors',
+    //       selectors: [
+    //         {
+    //           label: 'Select level',
+    //           defaultValue: { value: 'all', label: 'Primary and Secondary' },
+    //           dataProperty: 'level',
+    //           valueProperty: 'value',
+    //           labelProperty: 'label',
+    //           data: [
+    //             { value: 'primary', label: 'Primary' },
+    //             { value: 'secondary', label: 'Secondary' },
+    //           ],
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--table--classroom-learners-ratio',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+    //       yearRange: [2018, 2021],
+    //       rows: ['Government', 'Private'],
+    //       mapping: {
+    //         rows: 'type',
+    //         year: 'year',
+    //         value: 'classroom_capacity',
+    //         subCounty: 'subcounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         subCounties: kayungaSubCounties,
+    //       },
+    //       aggregator: 'avg',
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--table--number-of-schools',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
+    //       yearRange: [2016, 2021],
+    //       rows: ['Government', 'Private'],
+    //       mapping: {
+    //         rows: 'Type',
+    //         year: 'year',
+    //         value: 'Value',
+    //         subCounty: 'SubCounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         subCounties: kayungaSubCounties,
+    //       },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--table--learners-enrolment',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learner_enrollment.csv',
+    //       yearRange: [2018, 2021],
+    //       rows: ['Government', 'Private'],
+    //       mapping: {
+    //         rows: 'type',
+    //         year: 'year',
+    //         value: 'value',
+    //         subCounty: 'subcounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         subCounties: kayungaSubCounties,
+    //       },
+    //     },
+    //     {
+    //       target: 'education',
+    //       className: 'dicharts--table--classroom-learners-ratio',
+    //       url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
+    //       yearRange: [2018, 2021],
+    //       rows: ['Government', 'Private'],
+    //       mapping: {
+    //         rows: 'type',
+    //         year: 'year',
+    //         value: 'classroom_capacity',
+    //         subCounty: 'subcounty',
+    //         level: 'level',
+    //       },
+    //       filters: {
+    //         subCounties: kayungaSubCounties,
+    //       },
+    //       aggregator: 'avg',
+    //     },
+    //   ],
+    // };
+
+    // Kayunga configurations
+    const kayungaSubCounties = ['Galiraya', 'Bbaale', 'Kayonza', 'Kitimbwa', 'Kitimbwa Town Council', 'Busaana', 'Busaana Town Council', 'Kayunga', 'Kayunga', 'Kayunga Town Council', 'Nazigo', 'Nazigo Town Council', 'Kangulumira', 'Kangulumira Town Council'];
+    const topics = [{
+                id: 'education',
+                name: 'Education',
+                yearRange: [2016, 2021],
+                dashboardUrl: 'https://datahub.go.ug/dashboards/education/',
+                dashboardButtonCaption: 'View Education Dashboard',
+                indicators: [{
+                        id: 'numberOfPrimarySchools',
+                        name: 'Number of Primary Schools',
+                        description: 'Description Goes Here!',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [25, 50, 75, 100],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
+                        yearRange: [2018, 2022],
+                        // excludeYears: [2019, 2020, 2021],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            level: ['Primary'],
+                        },
+                    },
+                    {
+                        id: 'numberOfSecondarySchools',
+                        name: 'Number of Secondary Schools',
+                        description: 'Description Goes Here!',
+                        colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
+                        range: [3, 6, 10],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
+                        yearRange: [2018, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            level: ['Secondary'],
+                        },
+                    },
+                    {
+                        id: 'primaryEnrolment',
+                        name: 'Primary School Enrolment',
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/primary_and_kindergaten_enrolment.csv',
+                        colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+                        range: [ 1000, 5000,10000, 20000],
+                        yearRange: [2020, 2023],
+                        excludeYears: [2021],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'subtotal',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        // filters: {
+                        //     level: ['Primary'],
+                        // },
+                    },
+                    {
+                        id: 'secondaryEnrolment',
+                        name: 'Secondary School Enrolment',
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learners_enrolment_secondary.csv',
+                        colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+                        range: [250, 600, 1000, 1500],
+                        yearRange: [2019, 2022],
+                        excludeYears:[2021],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'subtotal',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                    },
+                    {
+                        id: 'numberOfPrimaryTeachers',
+                        name: 'Primary School Teachers (All)',
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_teachers.csv',
+                        colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+                        range: [50, 100, 200, 300],
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                          level: ['Primary'],
+                          title: ['Education Assistant', 'Senior Education Assistant'],
+                        }
+                    },
+                    {
+                        id: 'numberOfMalePrimaryTeachers',
+                        name: 'Primary School Teachers (Male)',
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_teachers.csv',
+                        colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+                        range: [20, 50, 100, 150],
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                          level: ['Primary'],
+                          title: ['Education Assistant', 'Senior Education Assistant'],
+                          gender: ['Male']
+                        }
+                    },
+                    {
+                        id: 'numberOfFemalePrimaryTeachers',
+                        name: 'Primary School Teachers (Female)',
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_teachers.csv',
+                        colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+                        range: [20, 50, 100, 150],
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                          level: ['Primary'],
+                          title: ['Education Assistant', 'Senior Education Assistant'],
+                          gender: ['Female']
+                        }
+                    },
+                    {
+                        id: 'numberOfSecondaryTeachers',
+                        name: 'Secondary School Teachers (All)',
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_teachers.csv',
+                        colours: ['#fdeee7', '#faccb8', '#f6a988', '#f38758', '#f06529'],
+                        range: [10, 20, 40, 80 ],
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                          level: ['Secondary'],
+                          title: ['Education Assistant', 'Senior Education Assistant'],
+                        }
+                    },
+                ],
+            },
+            {
+                id: 'production',
+                name: 'Production',
+                dashboardUrl: 'https://datahub.go.ug/dashboards/production/',
+                dashboardButtonCaption: 'View Production Dashboard',
+                indicators: [{
+                        id: 'maizeProduction',
+                        name: 'Maize Production (in tons)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [25, 50, 75, 100],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/crop_production_levels.csv',
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'quantity_in_tonns_or_banches_or_boxes_or_numbers',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Maize'],
+                        },
+                    },
+                    {
+                        id: 'bananaProduction',
+                        name: 'Banana Production (in bunches)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [10, 50, 100, 200],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/crop_production_levels.csv',
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'quantity_in_tonns_or_banches_or_boxes_or_numbers',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Banana'],
+                        },
+                    },
+                    {
+                        id: 'cassaveProduction',
+                        name: 'Cassava Production (in tons)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [10, 20, 30, 40],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/crop_production_levels.csv',
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'quantity_in_tonns_or_banches_or_boxes_or_numbers',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Cassava'],
+                        },
+                    },
+                    {
+                        id: 'beansProduction',
+                        name: 'Beans Production (in tons)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [4, 8, 12, 16],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/crop_production_levels.csv',
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'quantity_in_tonns_or_banches_or_boxes_or_numbers',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Beans'],
+                        },
+                    },
+                    {
+                        id: 'cattleProduction',
+                        name: 'Number of Cattle (local)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [15000, 30000, 50000, 80000],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+                        yearRange: [2013, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Local cattle'],
+                        },
+                    },
+                    {
+                        id: 'exoticCattleProduction',
+                        name: 'Number of Cattle (exotic)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [15000, 30000, 50000, 80000],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+                        yearRange: [2013, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Exotic cross Breed Cattle'],
+                        },
+                    },
+                    {
+                        id: 'goalProduction',
+                        name: 'Number of Goats (local)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [15000, 30000, 50000, 80000],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+                        yearRange: [2013, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Local Goats'],
+                        },
+                    },
+                    {
+                        id: 'pigProduction',
+                        name: 'Number of Pigs',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [15000, 30000, 50000, 80000],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+                        yearRange: [2013, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Pigs'],
+                        },
+                    },
+                    {
+                        id: 'chickenProduction',
+                        name: 'Number of Chicken (local)',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [15000, 30000, 50000, 80000],
+                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/number%20of%20livestock.json',
+                        yearRange: [2013, 2022],
+                        mapping: {
+                            location: 'subcounty',
+                            value: 'value',
+                            year: 'year',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {
+                            crop: ['Local Chicken'],
+                        },
+                    },
+                ]
+            }
+        ];
+        const barChartSeries = [{
+          barGap: 0
+          },
+          {},
+          {},
           {
-            id: 'overview',
-            show: true, // defaults to true
-            label: 'Overview Tab',
-          },
-          {
-            id: 'education',
-            dashboardURL: 'https://google.com/', // when undefined, button is not shown
-            dashboardButtonCaption: 'View Education Dashboard',
-          },
-          {
-            id: 'production',
-            show: false,
-            dashboardURL: 'https://google.com/',
-            dashboardButtonCaption: 'View Production Dashboard',
-          },
-        ],
-      },
-      charts: [
-        {
-          target: 'education',
-          className: 'dicharts--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
-          type: 'bar',
-          typeOptions: [{ value: 'bar', label: 'Bar Chart' }, { value: 'line', label: 'Line Chart' }, { value: 'area', label: 'Area Chart' }],
-          yearRange: [2016, 2021],
-          series: ['Government', 'Private'],
-          mapping: {
-            series: 'Type',
-            year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
-            level: 'level',
-          },
-          filters: {
-            SubCounty: kayungaSubCounties,
-          },
-          options: {
-            legend: { show: true },
-            yAxis: { name: 'Number of schools'}
-          },
-          selectorClassName: 'dicharts--number-of-schools__selectors',
-          selectors: [
-            {
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' }
-              ],
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and secondary' },
-              valueProperty: 'value',
-              labelProperty: 'label',
-              dataProperty: 'level'
+            label: {
+                show: false
+            }
+          }
+        ];
+        const state = {
+            location: {
+                name: 'Kayunga',
+                fullName: 'Kayunga District',
+                coordinates: [32.86415441783307, 0.9460935176075392]
             },
-          ],
-          table: {
-            target: 'education',
-            yearRange: [2016, 2021],
-            rows: ['Government', 'Private'],
-            mapping: {
-              rows: 'Type',
-              year: 'year',
-              value: 'Value',
-              subCounty: 'SubCounty',
-              level: 'level',
+            selectors: [{
+            id: 'subcounty',
+            url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/sub-counties.csv',
+            label: 'Select sub-county',
+            defaultValue: {
+                value: 'all',
+                label: 'All sub-counties'
             },
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learner_enrollment.csv',
-          yearRange: [2018, 2021],
-          series: ['Government', 'Private'],
-          mapping: {
-            series: 'type',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subcounty: kayungaSubCounties,
-          },
-          options: {
-            yAxis: { name: 'Learners enrolled' },
-          },
-          selectorClassName: 'dicharts--learners-enrolment-selectors',
-          selectors: [
-            {
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and Secondary' },
-              dataProperty: 'level',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' },
-              ],
-            },
-          ],
-        },
-        {
-          target: 'education',
-          className: 'dicharts--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
-          type: 'area',
-          yearRange: [2018, 2021],
-          series: ['Government', 'Private'],
-          mapping: {
-            series: 'type',
-            year: 'year',
-            value: 'classroom_capacity',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            SubCounty: kayungaSubCounties,
-          },
-          aggregator: 'avg',
-          options: {
-            xAxis: {
-              boundaryGap: false,
-            },
-            series: [{ label: { show: false } }, { label: { show: false } }],
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--ple-performance-analysis',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/ple_performance.json',
-          yearRange: [2018, 2020],
-          series: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
-          mapping: {
-            series: 'grade',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-          },
-          aggregator: 'sum',
-          type: 'bar',
-          options: {
-            yAxis: { name: 'PLE Performance' },
-            series: barChartSeries
-          },
-          selectorClassName: 'dicharts--ple-performance-selectors',
-          selectors: [
-            {
-              label: 'Select gender',
-              defaultValue: { value: 'all', label: 'All' },
-              dataProperty: 'gender',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'male', label: 'Male' },
-                { value: 'female', label: 'Female' },
-              ],
+            stateProperty: 'subCounty',
+            valueProperty: 'Name',
+            labelProperty: 'Name',
+            }],
+            charts: [{
+                target: 'education',
+                className: 'dicharts--number-of-schools',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
+                type: 'area',
+                typeOptions: [{
+                    value: 'area',
+                    label: 'Area Chart'
+                }, {
+                    value: 'bar-stacked',
+                    label: 'Bar Chart (Stacked)'
+                }, {
+                    value: 'bar',
+                    label: 'Bar Chart'
+                }, {
+                    value: 'line',
+                    label: 'Line Chart'
+                }],
+                yearRange: [2018, 2022],
+                series: ['Government', 'Private'],
+                mapping: {
+                    series: 'ownership',
+                    year: 'year',
+                    value: 'value',
+                    subCounty: 'subcounty',
+                    level: 'level',
+                },
+                filters: {
+                    subcounty: kayungaSubCounties,
+                    level: ['Primary', 'Secondary']
+                },
+                options: {
+                    legend: {
+                        show: true
+                    },
+                    yAxis: {
+                        name: 'Number of schools'
+                    },
+                    series: [{
+                        symbol: 'circle',
+                        label: {
+                            show: false
+                        }
+                    }, {
+                        symbol: 'circle',
+                        label: {
+                            show: false
+                        }
+                    }]
+                },
+                selectorClassName: 'dicharts--number-of-schools__selectors',
+                selectors: [{
+                    data: [{
+                            value: 'Primary',
+                            label: 'Primary'
+                        },
+                        {
+                            value: 'Secondary',
+                            label: 'Secondary'
+                        },
+                    ],
+                    label: 'Select level',
+                    defaultValue: {
+                        value: 'all',
+                        label: 'Primary and Secondary'
+                    },
+                    valueProperty: 'value',
+                    labelProperty: 'label',
+                    dataProperty: 'level'
+                }, ],
+                table: {
+                    target: 'education',
+                    yearRange: [2018, 2022],
+                    rows: ['Government', 'Private'],
+                    mapping: {
+                        rows: 'ownership',
+                        year: 'year',
+                        value: 'value',
+                        subCounty: 'subcounty',
+                        level: 'level',
+                    },
+                },
             },
             {
-              label: 'Select ownership',
-              defaultValue: { value: 'all', label: 'All' },
-              dataProperty: 'ownership',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'government', label: 'Government' },
-                { value: 'private', label: 'Private' },
-              ],
+                target: 'education',
+                className: 'dicharts--learners-enrolment',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/primary_and_kindergaten_enrolment.csv',
+                yearRange: [2020, 2023],
+                excludeYears: [2021],
+                type: 'bar-stacked',
+                typeOptions: [{
+                    value: 'bar-stacked',
+                    label: 'Bar Chart (Stacked)'
+                }, {
+                    value: 'bar',
+                    label: 'Bar Chart'
+                }, {
+                    value: 'area',
+                    label: 'Area Chart'
+                }, {
+                    value: 'line',
+                    label: 'Line Chart'
+                }],
+                series: ['Government', 'Private'],
+                mapping: {
+                    series: 'ownership',
+                    year: 'year',
+                    value: 'subtotal',
+                    subCounty: 'subcounty',
+                },
+                filters: {
+                    subcounty: kayungaSubCounties,
+                },
+                options: {
+                    legend: {
+                        show: true
+                    },
+                    tooltip: {
+                        show: true
+                    },
+                    yAxis: {
+                        name: 'Number of pupils'
+                    },
+                },
+                table: {
+                    target: 'education',
+                    yearRange: [2020, 2023],
+                    excludeYears: [2021],
+                    rows: ['Government', 'Private'],
+                    mapping: {
+                        rows: 'ownership',
+                        year: 'year',
+                        value: 'subtotal',
+                        subCounty: 'subcounty',
+                    },
+                },
+                selectorClassName: 'dicharts--primary-enrolment-selectors',
+                selectors: [{
+                        label: 'Select gender',
+                        defaultValue: {
+                            value: 'all',
+                            label: 'All'
+                        },
+                        dataProperty: 'gender',
+                        valueProperty: 'value',
+                        labelProperty: 'label',
+                        data: [{
+                                value: 'Boys',
+                                label: 'Male'
+                            },
+                            {
+                                value: 'Girls',
+                                label: 'Female'
+                            },
+                        ],
+                    },]
             },
-          ],
-        },
-        {
-          target: 'education',
-          className: 'dicharts--education-institutions',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/update/data/public/assets/data/masindi/number_of_education_institutions.csv',
-          yearRange: [],
-          series: ['Pre-Primary Schools', 'Primary Schools', 'Secondary Schools', 'Teacher Training Colleges', 'Technical Colleges', 'Technical Schools', 'Universities'],
-          mapping: {
-            series: 'institution',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-          },
-          aggregator: 'sum',
-          type: 'pie',
-          options: {
-            yAxis: { show: false },
-            xAxis: { show: false },
-            tooltip: { trigger: 'item' },
-            legend: {
-              orient: 'vertical',
-              left: 20,
-              top: 'middle',
-              selectedMode: true,
+            {
+                target: 'education',
+                className: 'dicharts--learners-enrolment-secondary',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learners_enrolment_secondary.csv',
+                yearRange: [2019, 2023],
+                excludeYears:[2021],
+                type: 'bar-stacked',
+                typeOptions: [{
+                    value: 'bar-stacked',
+                    label: 'Bar Chart (Stacked)'
+                }, {
+                    value: 'bar',
+                    label: 'Bar Chart'
+                }, {
+                    value: 'area',
+                    label: 'Area Chart'
+                }, {
+                    value: 'line',
+                    label: 'Line Chart'
+                }],
+                series: ['Boys', 'Girls'],
+                mapping: {
+                    series: 'gender',
+                    year: 'year',
+                    value: 'subtotal',
+                    subCounty: 'subcounty',
+                },
+                filters: {
+                    subcounty: kayungaSubCounties,
+                },
+                options: {
+                    legend: {
+                        show: true
+                    },
+                    tooltip: {
+                        show: true
+                    },
+                    yAxis: {
+                        name: 'Number of students'
+                    },
+                },
+                table: {
+                    target: 'education',
+                    yearRange: [2019, 2023],
+                    excludeYears: [2021],
+                    rows: ['Boys', 'Girls'],
+                    mapping: {
+                        rows: 'gender',
+                        year: 'year',
+                        value: 'subtotal',
+                        subCounty: 'subcounty',
+                    },
+                },
             },
-            series: [
+            {
+                target: 'education',
+                className: 'dicharts--teacher-student-ratio-secondary',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/secondary_ratio_of_teachers_to_students.json',
+                yearRange: [2016, 2018],
+                type: 'bar',
+                series: ['Government'],
+                mapping: {
+                    series: 'ownership',
+                    year: 'year',
+                    value: 'ratio',
+                    subCounty: 'subcounty',
+                },
+                filters: {
+                    subcounty: kayungaSubCounties,
+                },
+                options: {
+                    legend: {
+                        show: false
+                    },
+                    tooltip: {
+                        show: false
+                    },
+                    yAxis: {
+                        name: 'Teacher to student ratio'
+                    },
+                },
+                aggregator: 'avg',
+            },
+            {
+                target: 'education',
+                className: 'dicharts--primary-teachers',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_teachers.csv',
+                yearRange: [2022, 2022],
+                type: 'bar',
+                series: ['Male', 'Female'],
+                mapping: {
+                    series: 'gender',
+                    year: 'year',
+                    value: 'value',
+                    subCounty: 'subcounty',
+                },
+                filters: {
+                    subcounty: kayungaSubCounties,
+                    title: ['Education Assistant', 'Senior Education Assistant' ],
+                    level: ['Primary']
+                },
+                options: {
+                    yAxis: {
+                        name: 'Number of teachers'
+                    },
+                    series: [{
+                        stack: undefined
+                    }]
+                },
+                aggregator: 'avg',
+            },
+            {
+                target: 'education',
+                className: 'dicharts--ple-performance-analysis',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/main/public/assets/data/kayunga/ple_performance.json',
+                yearRange: [2018, 2022],
+                series: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
+                mapping: {
+                    series: 'grade',
+                    year: 'year',
+                    value: 'value',
+                    subCounty: 'subcounty',
+                },
+                aggregator: 'sum',
+                type: 'bar',
+                typeOptions: [{
+                    value: 'bar',
+                    label: 'Bar Chart'
+                }, {
+                    value: 'bar-stacked',
+                    label: 'Bar Chart (Stacked)'
+                }, {
+                    value: 'line',
+                    label: 'Line Chart'
+                }, {
+                    value: 'area',
+                    label: 'Area Chart'
+                }],
+                options: {
+                    yAxis: {
+                        name: 'PLE Performance'
+                    },
+                    series: barChartSeries
+                },
+                selectorClassName: 'dicharts--ple-performance-selectors',
+                selectors: [{
+                        label: 'Select gender',
+                        defaultValue: {
+                            value: 'all',
+                            label: 'All'
+                        },
+                        dataProperty: 'gender',
+                        valueProperty: 'value',
+                        labelProperty: 'label',
+                        data: [{
+                                value: 'male',
+                                label: 'Male'
+                            },
+                            {
+                                value: 'female',
+                                label: 'Female'
+                            },
+                        ],
+                    },
+                    {
+                        label: 'Select ownership',
+                        defaultValue: {
+                            value: 'all',
+                            label: 'All'
+                        },
+                        dataProperty: 'ownership',
+                        valueProperty: 'value',
+                        labelProperty: 'label',
+                        data: [{
+                                value: 'government',
+                                label: 'Government'
+                            },
+                            {
+                                value: 'private',
+                                label: 'Private'
+                            },
+                        ],
+                    },
+                ],
+                table: {
+                    yearRange: [2018, 2022],
+                    rows: ['Division 1', 'Division 2', 'Division 3', 'Division 4'],
+                    mapping: {
+                        rows: 'grade',
+                        year: 'year',
+                        value: 'value',
+                        subCounty: 'subcounty',
+                    },
+                },
+              },
               {
-                label: { formatter: '{b} ({c})' }
-              }
-            ]
-          },
-        },
-      ],
-      tables: [
-        {
-          target: 'education',
-          className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
-          yearRange: [2016, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'Type',
-            year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-          selectorClassName: 'dicharts--table--number-of-schools-selectors',
-          selectors: [
-            {
-              label: 'Select level',
-              defaultValue: { value: 'all', label: 'Primary and Secondary' },
-              dataProperty: 'level',
-              valueProperty: 'value',
-              labelProperty: 'label',
-              data: [
-                { value: 'primary', label: 'Primary' },
-                { value: 'secondary', label: 'Secondary' },
-              ],
+                target: 'production',
+                className: 'dicharts--crop-production',
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/crop_production_levels.csv',
+                type: 'bar-stacked',
+                typeOptions: [{
+                    value: 'bar-stacked',
+                    label: 'Bar Chart (Stacked)'
+                }, {
+                    value: 'bar',
+                    label: 'Bar Chart'
+                }],
+                yearRange: [2022, 2022],
+                // series: ['Maize', 'Cassava', 'Beans', 'Bananas', 'Groundnuts', 'Rice', 'Sweet Potatoes'],
+                series: ['Maize', 'Cassava', 'Banana', 'Rice', 'Sweet Potato'],
+                mapping: {
+                    series: 'crop',
+                    year: 'year',
+                    value: 'quantity_in_tonns_or_banches_or_boxes_or_numbers',
+                    subCounty: 'subcounty',
+                },
+                filters: {
+                    subcounty: kayungaSubCounties,
+                },
+                options: {
+                    legend: {
+                        show: true
+                    },
+                    yAxis: {
+                        name: 'Crop production'
+                    },
+                    series: [{
+                        symbol: 'circle',
+                        label: {
+                            show: false
+                        }
+                    }, {
+                        symbol: 'circle',
+                        label: {
+                            show: false
+                        }
+                    }]
+                },
+                table: {
+                    target: 'production',
+                    yearRange: [2022, 2022],
+                    rows: ['Maize', 'Cassava', 'Banana', 'Rice', 'Sweet Potato'],
+                    mapping: {
+                        rows: 'crop',
+                        year: 'year',
+                        value: 'quantity_in_tonns_or_banches_or_boxes_or_numbers',
+                        subCounty: 'subcounty',
+                    },
+                    initialHeader: 'Crop'
+                },
             },
-          ],
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
-          yearRange: [2018, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'type',
-            year: 'year',
-            value: 'classroom_capacity',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-          aggregator: 'avg',
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--number-of-schools',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/numberOfSchools.json',
-          yearRange: [2016, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'Type',
-            year: 'year',
-            value: 'Value',
-            subCounty: 'SubCounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--learners-enrolment',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learner_enrollment.csv',
-          yearRange: [2018, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'type',
-            year: 'year',
-            value: 'value',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-        },
-        {
-          target: 'education',
-          className: 'dicharts--table--classroom-learners-ratio',
-          url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/classroom_to_pupil_ratio.csv',
-          yearRange: [2018, 2021],
-          rows: ['Government', 'Private'],
-          mapping: {
-            rows: 'type',
-            year: 'year',
-            value: 'classroom_capacity',
-            subCounty: 'subcounty',
-            level: 'level',
-          },
-          filters: {
-            subCounties: kayungaSubCounties,
-          },
-          aggregator: 'avg',
-        },
-      ],
+            ],
+            map: {
+                filters: {
+                    topicLabel: 'Select a topic to explore',
+                    indicatorLabel: 'Choose an indicator',
+                    yearLabel: 'Choose a year',
+                },
+                data: topics,
+                options: {
+                    zoom: 10,
+                    maxZoom: 12,
+                }
+            },
+            keyFacts: {
+                url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/District%20Profile.csv',
+                tabs: [{
+                        id: 'overview',
+                        show: true, // defaults to true
+                        label: 'Overview',
+                    },
+                    {
+                        id: 'education',
+                        dashboardURL: 'https://datahub.go.ug/dashboards/education/', // when undefined, button is not shown
+                        dashboardButtonCaption: 'View Education Dashboard',
+                    },
+                    {
+                        id: 'production',
+                        show: true,
+                        dashboardURL: 'https://datahub.go.ug/dashboards/production/',
+                        dashboardButtonCaption: 'View Production Dashboard',
+                    },
+                ],
+            },
     };
+
     if (window.DIState) {
       window.DIState.setState(state);
     } else {

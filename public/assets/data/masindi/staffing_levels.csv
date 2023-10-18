@@ -1,0 +1,1416 @@
+district_id,county_id,subcounty_id,parish_id,district,county,subcounty,parish,year,level,school_name,ownership,role,gender,value
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Education Assistant,Male,13
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Education Assistant,Female,3
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Alimugonza Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Education Assistant,Male,5
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Education Assistant,Female,6
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Head Teacher,Male,1
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2023,Primary,Bokwe Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Education Assistant,Male,2
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Education Assistant,Female,6
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Head Teacher,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Budongo Saw Mill Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Education Assistant,Female,8
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Head Teacher,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Primary School,Government,Senior Education Assistant,Female,1
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Deputy Head Teacher,Male,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Deputy Head Teacher,Female,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Education Assistant,Male,5
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Education Assistant,Female,6
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Head Teacher,Male,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Head Teacher,Female,1
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Senior Education Assistant,Male,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2023,Primary,Bulyango Public Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Education Assistant,Male,6
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Education Assistant,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Byerima Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Education Assistant,Male,3
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Education Assistant,Female,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Boys Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Education Assistant,Female,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Ikoba Girls Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Education Assistant,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Education Assistant,Female,3
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Head Teacher,Female,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Isagara Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Deputy Head Teacher,Female,2
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Education Assistant,Female,2
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Isimba Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Education Assistant,Male,7
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Education Assistant,Female,15
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Head Teacher,Male,1
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Head Teacher,Female,1
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Kabango Primary School,Government,Senior Education Assistant,Female,5
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Education Assistant,Male,2
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Education Assistant,Female,4
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Head Teacher,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Senior Education Assistant,Male,2
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kahaara Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Education Assistant,Male,5
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Education Assistant,Female,7
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Head Teacher,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Primary,Karongo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Education Assistant,Male,5
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Education Assistant,Female,7
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Head Teacher,Female,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Karungi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Education Assistant,Male,8
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Education Assistant,Female,2
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Head Teacher,Male,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Kasenene Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Education Assistant,Male,4
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Education Assistant,Female,3
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Head Teacher,Male,1
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2023,Primary,Kasongoire Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Education Assistant,Male,2
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Education Assistant,Female,5
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Head Teacher,Male,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Head Teacher,Female,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2023,Primary,Kayera Primary School,Government,Senior Education Assistant,Female,2
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Education Assistant,Male,4
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Education Assistant,Female,3
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Head Teacher,Male,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2023,Primary,Kibali Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Education Assistant,Male,6
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Education Assistant,Female,3
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Senior Education Assistant,Male,2
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kibamba Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Education Assistant,Male,5
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Education Assistant,Female,4
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Kibibira Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Education Assistant,Female,5
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kichandi Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Deputy Head Teacher,Female,2
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Education Assistant,Male,3
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Education Assistant,Female,5
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kigezi Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Education Assistant,Female,4
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Kihagani Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Education Assistant,Male,3
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Kihoole Primary School,Government,Education Assistant,Female,3
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Education Assistant,Male,3
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kiina Primary School,Government,Education Assistant,Female,4
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Education Assistant,Male,8
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Head Teacher,Female,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kijogoro Primary School,Government,Education Assistant,Female,2
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Head Teacher,Male,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Education Assistant,Male,5
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Head Teacher,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Primary,Kijunjubwa Primary School,Government,Education Assistant,Female,2
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Education Assistant,Male,5
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Head Teacher,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Primary School,Government,Education Assistant,Female,5
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Education Assistant,Male,2
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kikuube Primary School,Government,Education Assistant,Female,4
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Education Assistant,Male,2
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Muslim Primary School,Government,Education Assistant,Female,6
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Education Assistant,Male,3
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Senior Education Assistant,Female,2
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Kilanyi Primary School,Government,Education Assistant,Female,3
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Education Assistant,Male,2
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Primary School,Government,Education Assistant,Female,2
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Head Teacher,Male,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Education Assistant,Male,7
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2023,Primary,Kimanya Upper Primary School,Government,Education Assistant,Female,1
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Head Teacher,Male,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Education Assistant,Male,2
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Head Teacher,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2023,Primary,Kimengo Primary School,Government,Education Assistant,Female,6
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Education Assistant,Male,6
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Senior Education Assistant,Female,2
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kinumi Primary School,Government,Education Assistant,Female,5
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Head Teacher,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Education Assistant,Male,3
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Head Teacher,Female,1
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2023,Primary,Kinuuma Primary School,Government,Education Assistant,Female,5
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Head Teacher,Male,1
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Senior Education Assistant,Male,3
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Education Assistant,Male,9
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Head Teacher,Female,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Senior Education Assistant,Female,6
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2023,Primary,Kinyara Sugar Works Primary School,Government,Education Assistant,Female,10
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Education Assistant,Male,2
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2023,Primary,Kinywamurara Primary School,Government,Education Assistant,Female,2
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Head Teacher,Male,1
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Education Assistant,Male,2
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Head Teacher,Female,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2023,Primary,Kisalizi Primary School,Government,Education Assistant,Female,5
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Head Teacher,Male,1
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Education Assistant,Male,2
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2023,Primary,Kisindizi II Primary School,Government,Education Assistant,Female,5
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Education Assistant,Male,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kisindizi Public Primary School,Government,Education Assistant,Female,6
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Education Assistant,Male,4
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kitamba Primary School,Government,Education Assistant,Female,3
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Head Teacher,Male,1
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Education Assistant,Male,5
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Kitanyata Primary School,Government,Education Assistant,Female,9
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Head Teacher,Female,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Kitonozi Primary School,Government,Education Assistant,Female,3
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Education Assistant,Male,2
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2023,Primary,Kitwetwe Primary School,Government,Education Assistant,Female,4
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Education Assistant,Male,6
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Kiyuya Primary School,Government,Education Assistant,Female,2
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Head Teacher,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Education Assistant,Male,3
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Head Teacher,Female,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Kyabaswa Primary School,Government,Education Assistant,Female,5
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Head Teacher,Male,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Education Assistant,Male,2
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Head Teacher,Female,1
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2023,Primary,Marongo Primary School,Government,Education Assistant,Female,5
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Education Assistant,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Senior Education Assistant,Female,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Masindi Centre For The Handcapped,Government,Education Assistant,Female,9
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Head Teacher,Male,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Education Assistant,Male,3
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Head Teacher,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Miduuma Primary School,Government,Education Assistant,Female,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Mihembero Primary School,Government,Education Assistant,Female,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Miramura Primary School,Government,Education Assistant,Female,3
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Education Assistant,Male,4
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Murro Primary School,Government,Education Assistant,Female,3
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Education Assistant,Male,4
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Head Teacher,Female,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Primary School,Government,Education Assistant,Female,6
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Education Assistant,Male,4
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Nyabubale Primary School,Government,Education Assistant,Female,2
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Head Teacher,Male,1
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Education Assistant,Male,6
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Senior Education Assistant,Female,2
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2023,Primary,Nyabyeya Primary School,Government,Education Assistant,Female,10
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Education Assistant,Male,6
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Head Teacher,Female,1
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2023,Primary,Nyakarongo Primary School,Government,Education Assistant,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Education Assistant,Male,4
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Primary,Nyakatoogo Primary School,Government,Education Assistant,Female,5
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Education Assistant,Male,5
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Head Teacher,Female,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Nyakyanika Primary School,Government,Education Assistant,Female,8
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Head Teacher,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Education Assistant,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Head Teacher,Female,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Nyambindo Primary School,Government,Education Assistant,Female,7
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Education Assistant,Male,3
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Head Teacher,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Nyantonzi Primary School,Government,Education Assistant,Female,4
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Senior Education Assistant,Female,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2023,Primary,Rukondwa Primary School,Government,Education Assistant,Female,4
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Education Assistant,Male,6
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,Rwempisi Primary School,Government,Education Assistant,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Education Assistant,Male,4
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Head Teacher,Female,2
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Siiba Primary School,Government,Education Assistant,Female,4
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,St Kizito Murro Primary School,Government,Education Assistant,Female,4
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Head Teacher,Male,1
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Deputy Head Teacher,Male,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Senior Education Assistant,Male,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Education Assistant,Male,6
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Head Teacher,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Deputy Head Teacher,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Senior Education Assistant,Female,2
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Marys Primary School Kyatiri,Government,Education Assistant,Female,10
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Education Assistant,Male,3
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Head Teacher,Female,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Senior Education Assistant,Female,2
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Pauls Pakanyi Primary School,Government,Education Assistant,Female,4
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Education Assistant,Male,9
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Waiga Primary School,Government,Education Assistant,Female,4
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Education Assistant,Male,9
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Senior Education Assistant,Female,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2023,Primary,Walyoba Primary School,Government,Education Assistant,Female,5
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Montessori N And Primary School,Private,Teachers,Male,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Montessori N And Primary School,Private,Teachers,Female,6
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Rutindo Primary School,Private,Teachers,Male,2
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Rutindo Primary School,Private,Teachers,Female,10
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,New Star Parents Primary School,Private,Teachers,Male,5
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,New Star Parents Primary School,Private,Teachers,Female,4
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Rusangura Community Primary School,Private,Teachers,Male,3
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Rusangura Community Primary School,Private,Teachers,Female,3
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Christ Star Infants Primary School,Private,Teachers,Male,4
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,Christ Star Infants Primary School,Private,Teachers,Female,4
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,New Hope Primary School,Private,Teachers,Male,5
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,New Hope Primary School,Private,Teachers,Female,8
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Walyoba Brilliant Primary School,Private,Teachers,Male,14
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Primary,Walyoba Brilliant Primary School,Private,Teachers,Female,14
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,St Philip Primary School,Private,Teachers,Male,7
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2023,Primary,St Philip Primary School,Private,Teachers,Female,5
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Kababito Community Nursery And Primary School,Private,Teachers,Male,7
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Kababito Community Nursery And Primary School,Private,Teachers,Female,4
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Trinity Primary School,Private,Teachers,Male,5
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,Trinity Primary School,Private,Teachers,Female,4
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,New Hope Nursery And Primary School,Private,Teachers,Male,5
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2023,Primary,New Hope Nursery And Primary School,Private,Teachers,Female,4
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Kizito Primary School,Private,Teachers,Male,7
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,St Kizito Primary School,Private,Teachers,Female,5
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,2023,Primary,Seven Gifts Primary School,Private,Teachers,Male,6
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,2023,Primary,Seven Gifts Primary School,Private,Teachers,Female,4
+d101,c103,s118,p148,Masindi,Masindi Municipal Council,Nyangahya Division,Kikwanana Ward,2023,Primary,Shine Childrens Foundation Primary School,Private,Teachers,Male,1
+d101,c103,s118,p148,Masindi,Masindi Municipal Council,Nyangahya Division,Kikwanana Ward,2023,Primary,Shine Childrens Foundation Primary School,Private,Teachers,Female,6
+d101,,,,,,,,2023,Primary,St Francis Primary School,Private,Teachers,Male,5
+d101,,,,,,,,2023,Primary,St Francis Primary School,Private,Teachers,Female,8
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Cornerstone Infant Development School,Private,Teachers,Male,6
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Cornerstone Infant Development School,Private,Teachers,Female,6
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,St Simon COU Nursery And Primary School,Private,Teachers,Male,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,St Simon COU Nursery And Primary School,Private,Teachers,Female,9
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Progressive Nursery And Primary School,Private,Teachers,Male,6
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Progressive Nursery And Primary School,Private,Teachers,Female,5
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,Blessed Damian Primary School,Private,Teachers,Male,10
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Primary,Blessed Damian Primary School,Private,Teachers,Female,8
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Gods Will Primary School,Private,Teachers,Male,6
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2023,Primary,Gods Will Primary School,Private,Teachers,Female,8
+d101,,,,,,,,2023,Primary,Pride Junior Primary School,Private,Teachers,Male,6
+d101,,,,,,,,2023,Primary,Pride Junior Primary School,Private,Teachers,Female,4
+d101,,,,,,,,2023,Primary,Loyal Nursery And Primary School,Private,Teachers,Male,6
+d101,,,,,,,,2023,Primary,Loyal Nursery And Primary School,Private,Teachers,Female,5
+d101,,,,,,,,2023,Primary,St Gabriel Junior School,Private,Teachers,Male,3
+d101,,,,,,,,2023,Primary,St Gabriel Junior School,Private,Teachers,Female,6
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Kaikuku Community Primary School,Private,Teachers,Male,3
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2023,Primary,Kaikuku Community Primary School,Private,Teachers,Female,0
+d101,,,,,,,,2023,Primary,Kasongoire High Side Primary School,Private,Teachers,Male,3
+d101,,,,,,,,2023,Primary,Kasongoire High Side Primary School,Private,Teachers,Female,4
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kaborogota Parents Primary School,Private,Teachers,Male,6
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2023,Primary,Kaborogota Parents Primary School,Private,Teachers,Female,3
+d101,,,,,,,,2023,Primary,Boomu Nursery And Primary School,Private,Teachers,Male,7
+d101,,,,,,,,2023,Primary,Boomu Nursery And Primary School,Private,Teachers,Female,5
+d101,,,,,,,,2023,Primary,Bwijanga Junior Academy,Private,Teachers,Male,3
+d101,,,,,,,,2023,Primary,Bwijanga Junior Academy,Private,Teachers,Female,4
+d101,,,,,,,,2023,Primary,Marylyne Nursery And Primary School,Private,Teachers,Male,3
+d101,,,,,,,,2023,Primary,Marylyne Nursery And Primary School,Private,Teachers,Female,4
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Sun Light Primary School,Private,Teachers,Male,5
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Sun Light Primary School,Private,Teachers,Female,5
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Bright Junior School,Private,Teachers,Male,6
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Primary,Kikingura Bright Junior School,Private,Teachers,Female,3
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Lords Will Primary School,Private,Teachers,Male,6
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Primary,Lords Will Primary School,Private,Teachers,Female,10
+d101,,,,,,,,2023,Primary,Bright Future Nursery And Primary School,Private,Teachers,Male,7
+d101,,,,,,,,2023,Primary,Bright Future Nursery And Primary School,Private,Teachers,Female,5
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,New Hope Primary School,Private,Teachers,Male,5
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,New Hope Primary School,Private,Teachers,Female,5
+d101,,,,,,,,2023,Primary,3 Star Nursery And Primary School,Private,Teachers,Male,2
+d101,,,,,,,,2023,Primary,3 Star Nursery And Primary School,Private,Teachers,Female,3
+d101,,,,,,,,2023,Primary,Zion Primary School,Private,Teachers,Male,5
+d101,,,,,,,,2023,Primary,Zion Primary School,Private,Teachers,Female,6
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Valley Primary School,Private,Teachers,Male,10
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Primary,Bulima Valley Primary School,Private,Teachers,Female,5
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Ebenezer Christian School,Private,Teachers,Male,11
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Ebenezer Christian School,Private,Teachers,Female,23
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,2023,Primary,Happy Hours Primary School,Private,Teachers,Male,7
+d101,c101,s107,p140,Masindi,Buruli,Labongo,Labongo,2023,Primary,Happy Hours Primary School,Private,Teachers,Female,6
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Top Care Primary School,Private,Teachers,Male,4
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2023,Primary,Top Care Primary School,Private,Teachers,Female,7
+d101,,,,,,,,2023,Primary,Bright Junior School,Private,Teachers,Male,3
+d101,,,,,,,,2023,Primary,Bright Junior School,Private,Teachers,Female,7
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,St Peters COU Onadra Nursery School,Private,Teachers,Male,3
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,St Peters COU Onadra Nursery School,Private,Teachers,Female,3
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Gold View Primary School,Private,Teachers,Male,7
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Primary,Gold View Primary School,Private,Teachers,Female,2
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Modern Nursery School,Private,Teachers,Male,5
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2023,Primary,Ntooma Modern Nursery School,Private,Teachers,Female,3
+d101,,,,,,,,2023,Primary,True Light Model Nursery And Primary School,Private,Teachers,Male,2
+d101,,,,,,,,2023,Primary,True Light Model Nursery And Primary School,Private,Teachers,Female,4
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Paul Memorial Alimugonza Primary School,Private,Teachers,Male,7
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2023,Primary,St Paul Memorial Alimugonza Primary School,Private,Teachers,Female,3
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Head Teacher,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Education Officer,Male,6
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Education Officer,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Assistant Education Officer,Male,8
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Assistant Education Officer,Female,4
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Senior Accounts Assistant,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Senior Accounts Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Stenographer Secretary,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Stenographer Secretary,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Librarian,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Librarian,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Nurse,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Nurse,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Laboratory Assistant,Male,2
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Secondary,Budongo Secondary School,Government,Laboratory Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Education Officer,Male,2
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Education Officer,Female,3
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Assistant Education Officer,Male,8
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Assistant Education Officer,Female,2
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Senior Accounts Assistant,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,Bwijanga Secondary School,Government,Senior Accounts Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Education Officer,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Education Officer,Female,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Assistant Education Officer,Male,10
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Assistant Education Officer,Female,4
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Senior Accounts Assistant,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Secondary,Ikoba Girls Secondary School,Government,Senior Accounts Assistant,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Head Teacher,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Education Officer,Male,3
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Education Officer,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Assistant Education Officer,Male,9
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Assistant Education Officer,Female,3
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Senior Accounts Assistant,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara Senior Secondary School,Government,Senior Accounts Assistant,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Head Teacher,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Head Teacher,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Education Officer,Male,6
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Education Officer,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Assistant Education Officer,Male,9
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Assistant Education Officer,Female,3
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Senior Accounts Assistant,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Secondary,Kiyuya Seed Secondary School,Government,Senior Accounts Assistant,Female,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Head Teacher,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Deputy Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Education Officer,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Education Officer,Female,2
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Assistant Education Officer,Male,6
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,Secondary,St Pauls Secondary School Pakanyi,Government,Assistant Education Officer,Female,4
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,Lampstand Comprehensive Secondary School,Private,Teachers,Male,7
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,Lampstand Comprehensive Secondary School,Private,Teachers,Female,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,Lampstand Comprehensive Secondary School,Private,Cleaners,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,Lampstand Comprehensive Secondary School,Private,Cleaners,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,Lampstand Comprehensive Secondary School,Private,Security Guards,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,Lampstand Comprehensive Secondary School,Private,Security Guards,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Teachers,Male,6
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Teachers,Female,4
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Assistant Bursar,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Assistant Bursar,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Secretary,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Secretary,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Librarian,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Librarian,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Patron,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Matron,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Cooks,Male,2
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Cooks,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Cleaners,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Cleaners,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Drivers,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Drivers,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Security Guards,Male,2
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,Kinyara High School,Private,Security Guards,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Teachers,Male,5
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Teachers,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Store Keeper,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Store Keeper,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Laboratory Assistant,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Laboratory Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Cooks,Male,2
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Cooks,Female,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Security Guards,Male,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Security Guards,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Cleaners,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2023,Secondary,St Joseph Senior Secondary School Kikingura,Private,Cleaners,Female,1
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Teachers,Male,10
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Teachers,Female,5
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Nurse,Male,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Nurse,Female,1
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Cleaners,Male,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Cleaners,Female,1
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Security Guards,Male,1
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2023,Secondary,Kijunjubwa Community Secondary School,Private,Security Guards,Female,0
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Teachers,Male,9
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Teachers,Female,7
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Cooks,Male,1
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Cooks,Female,1
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Cleaners,Male,0
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Cleaners,Female,1
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Patron,Male,0
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Matron,Female,1
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Security Guards,Male,1
+d101,,,,,,,,2023,Secondary,St Gabriel High School,Private,Security Guards,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,St Kizito Murro Secondary School,Private,Teachers,Male,7
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,St Kizito Murro Secondary School,Private,Teachers,Female,2
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,St Kizito Murro Secondary School,Private,Cooks,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Secondary,St Kizito Murro Secondary School,Private,Cooks,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,St Joseph College Nyabigoma,Private,Teachers,Male,5
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Secondary,St Joseph College Nyabigoma,Private,Teachers,Female,1
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,St Marys Kyatiri Secondary School,Private,Teachers,Male,7
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,St Marys Kyatiri Secondary School,Private,Teachers,Female,4
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,Blessed Damian Secondary School,Private,Teachers,Male,11
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,Blessed Damian Secondary School,Private,Teachers,Female,2
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,Blessed Damian Secondary School,Private,Librarian,Male,1
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,Blessed Damian Secondary School,Private,Librarian,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2023,Secondary,Blessed Damian Secondary School,Private,Matron,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Education Tutors,Male,3
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Education Tutors,Female,4
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,ECD Tutors,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,ECD Tutors,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,"Tutors for other disciplines like Accounting, Procurement, Secretary Studies, Human Resource, Economics",Male,6
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,"Tutors for other disciplines like Accounting, Procurement, Secretary Studies, Human Resource, Economics",Female,6
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Secretary to Principal,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Secretary to Principal,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Chaplain,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Chaplain,Female,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Registrar,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Registrar,Female,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Deputy Registrar,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Deputy Registrar,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Secretary to Registrar,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Secretary to Registrar,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Stores Assistant,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Stores Assistant,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Bursar,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Bursar,Female,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Accounts Assistant,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Accounts Assistant,Female,2
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Librarian,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Librarian,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Assistant Librarian,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Assistant Librarian,Female,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Library Systems Administrator,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Library Systems Administrator,Female,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Library Attendant,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Library Attendant,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Laboratory Attendant,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Laboratory Attendant,Female,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Nurse,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Nurse,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Senior Stores Assistant,Male,0
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Senior Stores Assistant,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Cooks,Male,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Cooks,Female,1
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Other Support Staff like Waitress Estate Officer Caterer Electrician Receptionist Groundsman,Male,6
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Other Support Staff like Waitress Estate Officer Caterer Electrician Receptionist Groundsman,Female,3
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Cleaners,Male,2
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Cleaners,Female,7
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Security Guards,Male,4
+d101,c103,s115,p117,Masindi,Masindi Municipal Council,Central Division,Western Ward,2023,Tertiary,Kabalega College,Government,Security Guards,Female,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Head Teacher,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Education Assistant,Male,13
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Alimugonza Primary School,Government,Education Assistant,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Head Teacher,Male,2
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Education Assistant,Male,15
+d101,c101,s107,p142,Masindi,Buruli,Labongo,Kasenyi,2019,Primary,Bokwe Primary School,Government,Education Assistant,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Head Teacher,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Education Assistant,Male,7
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Budongo Saw Mill Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Senior Education Assistant,Male,3
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Education Assistant,Male,11
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Bulima Primary School,Government,Education Assistant,Female,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Head Teacher,Male,1
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Head Teacher,Female,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Deputy Head Teacher,Male,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Deputy Head Teacher,Female,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Senior Education Assistant,Male,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Senior Education Assistant,Female,0
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Education Assistant,Male,10
+d101,c103,s116,p123,Masindi,Masindi Municipal Council,Karujubu Division,Kibwona Ward,2019,Primary,Bulyango Public Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Education Assistant,Male,7
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Byerima Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Education Assistant,Male,5
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Boys Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Ikoba Girls Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Education Assistant,Male,10
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Isagara Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Senior Education Assistant,Male,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Education Assistant,Male,3
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Isimba Primary School,Government,Education Assistant,Female,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Head Teacher,Male,1
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Head Teacher,Female,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Senior Education Assistant,Male,7
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Education Assistant,Male,23
+d101,c102,s102,p119,Masindi,Bujenje,Kabango Town Council,Kabango Ward,2019,Primary,Kabango Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Senior Education Assistant,Male,2
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Education Assistant,Male,8
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kahaara Primary School,Government,Education Assistant,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Head Teacher,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Education Assistant,Male,13
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Primary,Karongo Primary School,Government,Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Education Assistant,Male,8
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Karungi Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Education Assistant,Male,12
+d101,c102,s108,p149,Masindi,Bujenje,Nyantonzi,Kasenene,2019,Primary,Kasenene Primary School,Government,Education Assistant,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Head Teacher,Male,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Education Assistant,Male,5
+d101,c102,s111,p106,Masindi,Bujenje,Budongo,Kasongoire,2019,Primary,Kasongoire Primary School,Government,Education Assistant,Female,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Head Teacher,Male,1
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Head Teacher,Female,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Education Assistant,Male,7
+d101,c101,s104,p134,Masindi,Buruli,Kimengo,Kibangya,2019,Primary,Kayera Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Education Assistant,Male,10
+d101,c102,s108,p153,Masindi,Bujenje,Nyantonzi,Kajura,2019,Primary,Kibali Primary School,Government,Education Assistant,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Education Assistant,Male,4
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kibamba Primary School,Government,Education Assistant,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Education Assistant,Male,10
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Kibibira Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Education Assistant,Male,9
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kichandi Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Senior Education Assistant,Male,2
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Education Assistant,Male,5
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kigezi Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Education Assistant,Male,7
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Kihagani Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Education Assistant,Male,7
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Kihoole Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Deputy Head Teacher,Male,2
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Education Assistant,Male,6
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kiina Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Senior Education Assistant,Male,3
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Education Assistant,Male,9
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kijogoro Primary School,Government,Education Assistant,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Head Teacher,Male,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Head Teacher,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Education Assistant,Male,7
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2019,Primary,Kijunjubwa Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Education Assistant,Male,14
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kikingura Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kikuube Primary School,Government,Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Education Assistant,Male,7
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Muslim Primary School,Government,Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Education Assistant,Male,7
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Kilanyi Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Education Assistant,Male,4
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Education Assistant,Male,10
+d101,c102,s108,p151,Masindi,Bujenje,Nyantonzi,Kimanya,2019,Primary,Kimanya Upper Primary School,Government,Education Assistant,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Head Teacher,Male,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Head Teacher,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Education Assistant,Male,7
+d101,c101,s104,p133,Masindi,Buruli,Kimengo,Kimengo,2019,Primary,Kimengo Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Senior Education Assistant,Male,3
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Education Assistant,Male,9
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kinumi Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Education Assistant,Male,6
+d101,c101,s109,p144,Masindi,Buruli,Miirya,Bigando,2019,Primary,Kinuuma Primary School,Government,Education Assistant,Female,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Head Teacher,Male,1
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Head Teacher,Female,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Senior Education Assistant,Male,12
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Education Assistant,Male,15
+d101,c102,s102,p118,Masindi,Bujenje,Kabango Town Council,Kinyara Sugar Ltd,2019,Primary,Kinyara Sugar Works Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Head Teacher,Male,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Senior Education Assistant,Male,3
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Education Assistant,Male,6
+d101,c102,s101,p104,Masindi,Bujenje,Bikonzi,Kikube,2019,Primary,Kinywamurara Primary School,Government,Education Assistant,Female,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Head Teacher,Male,1
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Head Teacher,Female,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Education Assistant,Male,9
+d101,c102,s112,p110,Masindi,Bujenje,Bulima Town Council,Kisalizi Ward,2019,Primary,Kisalizi Primary School,Government,Education Assistant,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Head Teacher,Male,1
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Education Assistant,Male,8
+d101,c101,s105,p136,Masindi,Buruli,Kiruli,Katuugo,2019,Primary,Kisindizi II Primary School,Government,Education Assistant,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Education Assistant,Male,8
+d101,c101,s110,p154,Masindi,Buruli,Pakanyi,Kyakamese West,2019,Primary,Kisindizi Public Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Education Assistant,Male,7
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Kitamba Primary School,Government,Education Assistant,Female,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Head Teacher,Male,1
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Education Assistant,Male,18
+d101,c101,s105,p135,Masindi,Buruli,Kiruli,Kiruli,2019,Primary,Kitanyata Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Education Assistant,Male,8
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Kitonozi Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Education Assistant,Male,8
+d101,c101,s109,p146,Masindi,Buruli,Miirya,Kiguulya,2019,Primary,Kitwetwe Primary School,Government,Education Assistant,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Head Teacher,Male,2
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Education Assistant,Male,7
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Kiyuya Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Education Assistant,Male,8
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Kyabaswa Primary School,Government,Education Assistant,Female,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Head Teacher,Male,1
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Head Teacher,Female,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Education Assistant,Male,6
+d101,c102,s112,p111,Masindi,Bujenje,Bulima Town Council,Marongo Ward,2019,Primary,Marongo Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Senior Education Assistant,Male,2
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Education Assistant,Male,7
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2019,Primary,Masindi Centre For The Handcapped,Government,Education Assistant,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Head Teacher,Male,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Head Teacher,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Education Assistant,Male,5
+d101,c101,s103,p127,Masindi,Buruli,Kijunjubwa,Miduma,2019,Primary,Miduuma Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Education Assistant,Male,5
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Mihembero Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Education Assistant,Male,7
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2019,Primary,Miramura Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Education Assistant,Male,7
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,Murro Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Education Assistant,Male,6
+d101,c102,s113,p114,Masindi,Bujenje,Bwijanga,Ntoma,2019,Primary,Nyabubale Primary School,Government,Education Assistant,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Head Teacher,Male,1
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Education Assistant,Male,12
+d101,c102,s111,p107,Masindi,Bujenje,Budongo,Nyabyeya,2019,Primary,Nyabyeya Primary School,Government,Education Assistant,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Education Assistant,Male,8
+d101,c101,s105,p137,Masindi,Buruli,Kiruli,Kibibira,2019,Primary,Nyakarongo Primary School,Government,Education Assistant,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Education Assistant,Male,5
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Primary,Nyakatoogo Primary School,Government,Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Education Assistant,Male,10
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Nyakyanika Primary School,Government,Education Assistant,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Education Assistant,Male,8
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Primary,Nyambindo Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Education Assistant,Male,9
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Nyantonzi Primary School,Government,Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Education Assistant,Male,4
+d101,c102,s101,p102,Masindi,Bujenje,Bikonzi,Rukondwa,2019,Primary,Rukondwa Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Head Teacher,Male,1
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Senior Education Assistant,Male,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Education Assistant,Male,8
+d101,c102,s108,p152,Masindi,Bujenje,Nyantonzi,Rwempisi,2019,Primary,Rwempisi Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Senior Education Assistant,Male,2
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Education Assistant,Male,6
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Primary,Siiba Primary School,Government,Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Head Teacher,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Deputy Head Teacher,Male,2
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Senior Education Assistant,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Senior Education Assistant,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Education Assistant,Male,5
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Primary,St Kizito Murro Primary School,Government,Education Assistant,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Head Teacher,Male,1
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Head Teacher,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Deputy Head Teacher,Male,1
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Deputy Head Teacher,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Senior Education Assistant,Male,3
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Senior Education Assistant,Female,0
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Education Assistant,Male,17
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2019,Primary,St Marys Primary School Kyatiri,Government,Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Senior Education Assistant,Male,2
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Education Assistant,Male,9
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,St Pauls Pakanyi Primary School,Government,Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Deputy Head Teacher,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Senior Education Assistant,Male,1
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Education Assistant,Male,11
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2019,Primary,Waiga Primary School,Government,Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Head Teacher,Male,1
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Deputy Head Teacher,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Senior Education Assistant,Male,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Senior Education Assistant,Female,0
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Education Assistant,Male,14
+d101,c101,s107,p143,Masindi,Buruli,Labongo,Kihonda,2019,Primary,Walyoba Primary School,Government,Education Assistant,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Head Teacher,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Head Teacher,Female,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Deputy Head Teacher,Male,0
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Deputy Head Teacher,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Education Officer,Male,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Education Officer,Female,1
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Assistant Education Officer,Male,12
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Assistant Education Officer,Female,4
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Other Support Staff,Male,4
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2019,Secondary,Budongo Secondary School,Government,Other Support Staff,Female,3
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Head Teacher,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Head Teacher,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Education Officer,Male,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Education Officer,Female,1
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Assistant Education Officer,Male,7
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Assistant Education Officer,Female,2
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Other Support Staff,Male,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2019,Secondary,Bwijanga Secondary School,Government,Other Support Staff,Female,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Head Teacher,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Deputy Head Teacher,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Deputy Head Teacher,Female,0
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Education Officer,Male,8
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Education Officer,Female,3
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Assistant Education Officer,Male,4
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Assistant Education Officer,Female,2
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Other Support Staff,Male,1
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2019,Secondary,Kinyara Senior Secondary School,Government,Other Support Staff,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Head Teacher,Male,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Head Teacher,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Deputy Head Teacher,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Deputy Head Teacher,Female,1
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Education Officer,Male,3
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Education Officer,Female,2
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Assistant Education Officer,Male,8
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Assistant Education Officer,Female,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Other Support Staff,Male,0
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2019,Secondary,Kiyuya Seed Secondary School,Government,Other Support Staff,Female,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Deputy Head Teacher,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Deputy Head Teacher,Female,0
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Education Officer,Male,2
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Education Officer,Female,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Assistant Education Officer,Male,6
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Assistant Education Officer,Female,4
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Other Support Staff,Male,1
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2019,Secondary,St Pauls Secondary School Pakanyi,Government,Other Support Staff,Female,0

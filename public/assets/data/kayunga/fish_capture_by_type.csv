@@ -1,0 +1,17 @@
+district_id,county_id,subcounty_id,district,county,subcounty,year,type_of_fish,estimated_quantity_harvested_tons
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Nile perch,245.688
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Nile perch,245.688
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Nile Tilapia,503.295
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Nile Tilapia,503.295
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Silver fish,29.035
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Lung fish,88.971
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Lung fish,88.971
+d102,c101,s101,Kayunga,Bbaale,Galiraya,2021,Cat fish,8.571
+d102,c101,s102,Kayunga,Bbaale,Bbaale,2021,Cat fish,8.571
+d102,c102,s105,Kayunga,Ntenjeru,Busaana,2021,Farmed Tilapia fish,7.5
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Farmed Tilapia fish,7.5
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Farmed Tilapia fish,7.5
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Farmed Tilapia fish,7.5
+d102,c102,s106,Kayunga,Ntenjeru,Nazigo,2021,Farmed Cat fish,1.53
+d102,c101,s103,Kayunga,Bbaale,Kayonza,2021,Farmed Cat fish,1.53
+d102,c102,s107,Kayunga,Ntenjeru,Kangulumira,2021,Farmed Cat fish,1.53

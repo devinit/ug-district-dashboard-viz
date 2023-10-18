@@ -1,0 +1,53 @@
+district_id,county_id,subcounty_id,parish_id,district,county,subcounties,parish,year,school_name,ownership,gender,s1,s2,s3,s4,s5,s6,subtotal
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2014,Ikoba Girls Secondary School,Government,Boys,0,0,0,0,0,0,0
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2014,Bwijanga Secondary School,Government,Boys,73,90,80,73,2,6,324
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2014,Kinyara Senior Secondary School,Government,Boys,125,120,93,89,45,28,500
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2014,Kiyuya Seed Secondary School,Government,Boys,132,92,99,71,16,16,426
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2014,St Pauls Secondary School Pakanyi,Government,Boys,71,71,49,118,7,10,326
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2014,Ikoba Girls Secondary School,Government,Girls,70,71,46,51,7,10,255
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2014,Bwijanga Secondary School,Government,Girls,76,68,53,39,1,6,237
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2014,Kinyara Senior Secondary School,Government,Girls,96,75,64,71,16,35,329
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2014,Kiyuya Seed Secondary School,Government,Girls,57,54,34,28,2,19,178
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2014,St Pauls Secondary School Pakanyi,Government,Girls,48,50,32,58,2,11,191
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2022,Kinyara Senior Secondary School,Government,Boys,,,,,,,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2022,Bwijanga Secondary School,Government,Boys,,,,,,,
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2022,Ikoba Girls Secondary School,Government,Boys,,,,,,,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2022,St Pauls Secondary School Pakanyi,Government,Boys,,,,,,,
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2022,Kiyuya Seed Secondary School,Government,Boys,,,,,,,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2022,Kinyara High School,Private,Boys,,,,,,,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2022,Blessed Damian Secondary School,Private,Boys,,,,,,,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2022,Budongo Secondary School,Private,Boys,,,,,,,
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2022,Kijunjubwa Community Secondary School,Private,Boys,,,,,,,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2022,St Joseph Senior Secondary School Kikingura,Private,Boys,,,,,,,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2022,Lampstand Comprehensive Secondary School,Private,Boys,,,,,,,
+d101,,,,Masindi,,,,2022,Sacred Senior Secondary School,,Boys,,,,,,,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2022,St Marys Kyatiri Secondary School,Private,Boys,,,,,,,
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2022,Pakanyi Senior Secondary School,Government,Boys,,,,,,,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2022,St Kizito Murro Secondary School,Private,Boys,,,,,,,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2022,Kinyara Senior Secondary School,Government,Girls,,,,,,,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2022,Bwijanga Secondary School,Government,Girls,,,,,,,
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2022,Ikoba Girls Secondary School,Government,Girls,92,83,80,70,0,0,325
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2022,St Pauls Secondary School Pakanyi,Government,Girls,,,,,,,
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2022,Kiyuya Seed Secondary School,Government,Girls,,,,,,,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2022,Kinyara High School,Private,Girls,,,,,,,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2022,Blessed Damian Secondary School,Private,Girls,,,,,,,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2022,Budongo Secondary School,Private,Girls,,,,,,,
+d101,c101,s103,p128,Masindi,Buruli,Kijunjubwa,Kijunjubwa,2022,Kijunjubwa Community Secondary School,Private,Girls,,,,,,,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2022,St Joseph Senior Secondary School Kikingura,Private,Girls,,,,,,,
+d101,c102,s113,p113,Masindi,Bujenje,Bwijanga,Kitamba,2022,Lampstand Comprehensive Secondary School,Private,Girls,,,,,,,
+d101,,,,Masindi,,,,2022,Sacred Senior Secondary School,,Girls,,,,,,,
+d101,c101,s106,p139,Masindi,Buruli,Kyatiri Town Council,Kyatiri East Ward,2022,St Marys Kyatiri Secondary School,Private,Girls,,,,,,,
+d101,c101,s110,p155,Masindi,Buruli,Pakanyi,Kyakamese Central,2022,Pakanyi Senior Secondary School,Government,Girls,,,,,,,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2022,St Kizito Murro Secondary School,Private,Girls,,,,,,,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Kinyara Senior Secondary School,Government,Boys,,,,,,,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Budongo Secondary School,Private,Boys,,,,,,,
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Ikoba Girls Secondary School,Government,Boys,,,,,,,
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Bwijanga Secondary School,Government,Boys,,,,,,,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,St Pauls Secondary School Pakanyi,Government,Boys,,,,,,,
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Kiyuya Seed Secondary School,Government,Boys,,,,,,,
+d101,c102,s111,p108,Masindi,Bujenje,Budongo,Karongo,2023,Kinyara Senior Secondary School,Government,Girls,,,,,,,
+d101,c102,s108,p150,Masindi,Bujenje,Nyantonzi,Nyantonzi,2023,Budongo Secondary School,Private,Girls,,,,,,,
+d101,c102,s101,p101,Masindi,Bujenje,Bikonzi,Bikonzi,2023,Ikoba Girls Secondary School,Government,Girls,92,83,80,70,0,0,325
+d101,c102,s113,p112,Masindi,Bujenje,Bwijanga,Kahembe,2023,Bwijanga Secondary School,Government,Girls,,,,,,,
+d101,c101,s109,p145,Masindi,Buruli,Miirya,Isimba,2023,St Pauls Secondary School Pakanyi,Government,Girls,,,,,,,
+d101,c101,s110,p157,Masindi,Buruli,Pakanyi,Kyakamese East,2023,Kiyuya Seed Secondary School,Government,Girls,,,,,,,
