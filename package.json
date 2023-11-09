@@ -16,7 +16,7 @@
     "nvm": "bash ./nvm.sh"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-react": "^7.23.3",
     "@emotion/eslint-plugin": "^11.11.0",
     "@types/d3": "^7.4.3",
     "eslint": "^8.53.0",
