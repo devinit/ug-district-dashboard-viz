@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { parse } from 'papaparse';
 
 const fetchCSVData = (url) =>
@@ -44,5 +45,11 @@ const fetchData = (url) => {
 
   return window.fetch(url).then((response) => response.json());
 };
+
+export const fetchDataFromAPI = (dataID) =>
+  axios
+    .get(`https://api.datahub.go.ug/document/data/${dataID}`)
+    .then((response) => response.data.results)
+    .catch((error) => error);
 
 export default fetchData;
