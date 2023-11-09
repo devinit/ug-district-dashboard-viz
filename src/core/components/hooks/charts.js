@@ -1,19 +1,21 @@
 import { useMemo, useState } from 'react';
 import useSWR from 'swr';
-import fetchData from '../../../utils/data';
+import fetchData, { fetchDataFromAPI } from '../../../utils/data';
 import { filterData, filterDataByProperty } from '../../utils';
 import { getYears } from '../../utils/charts';
 
 const useData = (config, defaultFilters = []) => {
-  const { url, yearRange } = config;
-  const { data, error } = useSWR(url || config.className, () => {
+  const { url, yearRange, dataID } = config;
+  const { data, error } = useSWR(url || config.className || dataID, async () => {
     if (config.data && Array.isArray(config.data)) {
       return config.data;
     }
 
-    if (url) {
-      return fetchData(url).then((originalData) =>
-        config.filters ? filterData(originalData, config.filters) : originalData
+    if (url || dataID) {
+      const dataFetchFunction = url ? fetchData : fetchDataFromAPI;
+
+      return dataFetchFunction(url || dataID).then((originalData) =>
+        config.filters ? filterData(originalData, config.filters) : originalData,
       );
     }
 
@@ -57,7 +59,7 @@ const useData = (config, defaultFilters = []) => {
           }
 
           return filter;
-        })
+        }),
       );
     }
   };
