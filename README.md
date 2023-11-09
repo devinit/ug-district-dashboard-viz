@@ -6,9 +6,9 @@ A starting point for creating charts & maps (D3, Plotly, ECharts)
 
 ### Pre-requisites
 
-	npm install -g nwb
-	
-	npm install papaparse
+    npm install -g nwb
+
+    npm install papaparse
 
 You must also ensure that your node.js/npm directory is on PATH.
 
@@ -24,7 +24,7 @@ This starts the dev environment, compiling the javascript and css. Changes to JS
 
 Build files are copied into the `dist` folder. It is from these files that the contents of the assets folder are updated
 
-To update the assets, copy the contents of the relevant files from the dist folder (`app.*.js`, `app.*.css`, `runtime.*.js`) into their 
+To update the assets, copy the contents of the relevant files from the dist folder (`app.*.js`, `app.*.css`, `runtime.*.js`) into their
 respective destinations in the assets folder
 
 ### Copy Bundled Assets
@@ -33,15 +33,14 @@ respective destinations in the assets folder
 
 This copies the required assets from the generated dist folder to the assets folder
 
-
 ## Configuring visualisations & other dashboard widgets
 
 The current codebase allows users to configure:
+
 - Basic charts (bar, line, pie, area). It's probably possible to configure more advanced chart types, when the need arises.
 - A Ugandan map, with the capability to focus on specific regions e.g. districts
 - A tabbed view of statistics.
 - A global dropdown selector that can be used to control the context of a page's visualisations.
-
 
 Visualisations are configured through the global state.
 
@@ -49,6 +48,7 @@ Visualisations are configured through the global state.
         window.DIState.setState(state);
 
 The code expects data to be contain the following key properties:
+
 1. Each row must reference data of a particular year
 2. One column should correspond to a series e.g. a column `ownership` with two possible values `Government` & `Private` will create 2 series, one for each value.
 3. Each row must have a data value. This shall correspond to comparable points on the visualisation.
@@ -77,7 +77,6 @@ e.g. to create a simple bar chart
         };
         window.DIState.setState(state);
 
-
 ### Charts Config
 
 Here a full configuration for charts, with a provision to toggle between a chart and a table.
@@ -85,8 +84,9 @@ Here a full configuration for charts, with a provision to toggle between a chart
         const state = {
                 charts: {
                         className: '', // a class on the DOM element you want to render the chart on
-                        data: [], // an object array - optional. Take precendence over `url`
-                        url: '', // a data URL. Can be anything from CSV to JSON, or an API endpoint that returns JSON. Ignored if the data property is provided.
+                        data: [], // an object array - optional. Take precendence over `url` or `dataID`
+                        url: '', // a data URL. Can be anything from CSV to JSON, or an API endpoint that returns JSON. Ignored if the data or dataID property is provided.
+                        dataID: '' // an ID used to fetcch the data file from an API. Ignored if the url or data property is provided.
                         type: '', // type of chart. Options are `bar`, `area`, `line`, `column`. This can be overwritten in the options config.
                         series: [], // specifies the series rendered by this chart. The series mapping must have matching values (see mapping property).
                         mapping: { // used to map the provided data to expected properties. It removes the limitation of column names.
@@ -127,7 +127,6 @@ Here a full configuration for charts, with a provision to toggle between a chart
                         },
                 }
         }
-
 
 ### Map Config
 
@@ -176,7 +175,6 @@ Here a full configuration for the maps.
                 }
         }
 
-
 ## Selector Config
 
 Here is a full configuration for global selectors/dropdowns/filters.
@@ -195,7 +193,6 @@ Here is a full configuration for global selectors/dropdowns/filters.
                         },
                 ]
         }
-
 
 ## Key Facts config
 
