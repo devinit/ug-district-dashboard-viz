@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import fetchData from '../../utils/data';
+import fetchData, { fetchDataFromAPI } from '../../utils/data';
 import DistrictTable from '../components/DistrictTable';
 import renderSelectors from '../SelectorDropdowns';
 import { defaultSelectValue, filterDataByProperty, filterDataBySubCounty } from '../utils';
@@ -50,7 +50,8 @@ const renderTable = (config) => {
     className: config.className,
     d3: {
       onAdd: (tableNodes) => {
-        fetchData(config.url).then((data) => {
+        const dataFetchFunction = config.url ? fetchData : fetchDataFromAPI;
+        dataFetchFunction(config.url || config.dataID).then((data) => {
           Array.prototype.forEach.call(tableNodes, (tableNode) => {
             const dichart = new window.DICharts.Chart(tableNode.parentElement);
             dichart.showLoading();
