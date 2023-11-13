@@ -1,7 +1,7 @@
 import { Popup } from 'mapbox-gl';
 import { useEffect, useState, useCallback } from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
-import fetchData from '../../../utils/data';
+import fetchData, { fetchDataFromAPI } from '../../../utils/data';
 import { processData, getSchoolMarkers, schoolLevel } from '../DistrictMap/utils';
 
 const showPopup = (popup, map, event, options) => {
@@ -148,14 +148,15 @@ const useMap = (location, layer, defaultOptions = {}) => {
   }, [map, location, options, data]);
 
   useEffect(() => {
-    const fetchIndicatorData = async (url) => {
-      const indicatorData = await fetchData(url);
+    const fetchIndicatorData = async (url, dataID) => {
+      const dataFetchFunction = url ? fetchData : fetchDataFromAPI;
+      const indicatorData = await dataFetchFunction(url || dataID);
       setData(processData(indicatorData, options.indicator, options.year));
     };
     if (options.indicator && options.year) {
       setLevel(schoolLevel(options.indicator.id));
       setLocationData(getSchoolMarkers(location.name, schoolLevel(options.indicator.id)));
-      fetchIndicatorData(options.indicator.url);
+      fetchIndicatorData(options.indicator.url, options.indicator.dataID);
     }
   }, [options.indicator, options.year]);
 
