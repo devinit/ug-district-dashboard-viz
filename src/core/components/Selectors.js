@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ChartFilters from '../../components/ChartFilters';
 import Select from '../../components/Select';
-import fetchData from '../../utils/data';
+import fetchData, { fetchDataFromAPI } from '../../utils/data';
 
 const Selectors = (props) => {
   const [selectors, setSelectors] = useState([]);
@@ -21,8 +21,9 @@ const Selectors = (props) => {
           };
           item.options = selector.defaultValue ? [selector.defaultValue] : [];
           let data = selector.data || [];
-          if (selector.url) {
-            data = await fetchData(selector.url);
+          if (selector.url || selector.dataID) {
+            const dataFetchFunction = selector.url ? fetchData : fetchDataFromAPI;
+            data = await dataFetchFunction(selector.url || selector.dataID);
           }
           item.options = item.options.concat(
             data.reduce((options, curr) => {
@@ -34,11 +35,11 @@ const Selectors = (props) => {
               }
 
               return options;
-            }, [])
+            }, []),
           );
 
           return item;
-        })
+        }),
       )
         .then(setSelectors)
         .catch((error) => window.console.log(error));
@@ -77,7 +78,7 @@ Selectors.propTypes = {
       defaultValue: PropTypes.shape({ value: PropTypes.string, label: PropTypes.string }),
       labelProperty: PropTypes.string.isRequired,
       valueProperty: PropTypes.string.isRequired,
-    })
+    }),
   ),
   onChange: PropTypes.func,
   className: PropTypes.string,
