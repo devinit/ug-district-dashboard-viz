@@ -156,6 +156,8 @@ Here a full configuration for the maps.
                                                         name: 'Number of Primary Schools', // name of indicator as will appear in dropdown, tooltips and legend
                                                         description: 'Description Goes Here!', // a brief description of the indicator - appears above the legend.
                                                         url: '', // data source URL - CSV, JSON or API endpoint that returns JSON data
+                                                        schoolLocationUrl: '', // school geolocation data source URL - CSV or JSON. Takes precedence over schoolLocationdataID if both are set.
+                                                        schoolLocationdataID: '', // data source dataID to be used for fetching data via an API endpoint.
                                                         yearRange: [2016, 2021], // max and min year range - use to generate years for the year filter.
                                                         colours: ['#faa2c1', '#f06595', '#d6336c'],  // a list of hex colours for each range of data
                                                         range: [5, 10, 15, 20], // groups values into sepecified ranges e.g < 5, 5 - 10, 10 - 15, 15 - 20, > 20 - the specified colours map to these ranges and highlight different values on the map.
