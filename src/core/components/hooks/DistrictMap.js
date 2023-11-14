@@ -155,7 +155,14 @@ const useMap = (location, layer, defaultOptions = {}) => {
     };
     if (options.indicator && options.year) {
       setLevel(schoolLevel(options.indicator.id));
-      setLocationData(getSchoolMarkers(location.name, schoolLevel(options.indicator.id)));
+      setLocationData(
+        getSchoolMarkers(
+          location.name,
+          schoolLevel(options.indicator.id),
+          options.indicator.schoolLocationUrl,
+          options.indicator.schoolLocationdataID,
+        ),
+      );
       fetchIndicatorData(options.indicator.url, options.indicator.dataID);
     }
   }, [options.indicator, options.year]);
