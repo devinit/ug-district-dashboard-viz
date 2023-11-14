@@ -156,6 +156,7 @@ Here a full configuration for the maps.
                                                         name: 'Number of Primary Schools', // name of indicator as will appear in dropdown, tooltips and legend
                                                         description: 'Description Goes Here!', // a brief description of the indicator - appears above the legend.
                                                         url: '', // data source URL - CSV, JSON or API endpoint that returns JSON data
+                                                        dataID: '', // data source ID - to fetch indicator data from API. The url property has precedence over dataID property
                                                         schoolLocationUrl: '', // school geolocation data source URL - CSV or JSON. Takes precedence over schoolLocationdataID if both are set.
                                                         schoolLocationdataID: '', // data source dataID to be used for fetching data via an API endpoint.
                                                         yearRange: [2016, 2021], // max and min year range - use to generate years for the year filter.
