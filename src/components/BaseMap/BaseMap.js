@@ -40,7 +40,7 @@ const BaseMap = (props) => {
 
   const renderLayers = () =>
     Children.map(props.children, (child) =>
-      isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null
+      isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null,
     );
 
   return (
@@ -111,7 +111,6 @@ BaseMap.propTypes = {
   onLoad: PropTypes.func,
   options: PropTypes.object,
   children: PropTypes.node,
-  locationData: PropTypes.object,
 };
 
 // eslint-disable-next-line import/prefer-default-export
