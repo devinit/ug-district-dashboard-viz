@@ -8,14 +8,7 @@ import { getLocationStyles } from '../../../components/BaseMap/utils';
 import { DistrictMapContext } from '../../context';
 import DistrictMapSidebar from '../DistrictMapSidebar';
 import useMap from '../hooks/DistrictMap';
-import {
-  COLOURED_LAYER,
-  coreLayer,
-  getRawFilterOptions,
-  getTopicById,
-  onAddLayer,
-  getSchoolMarkers,
-} from './utils/index';
+import { COLOURED_LAYER, coreLayer, getRawFilterOptions, getTopicById, onAddLayer } from './utils/index';
 
 const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
   const hiddenLayers = [layerConfig].map((layer) => (
@@ -57,7 +50,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
           'fill-outline-color': '#ffffff',
         }}
         onAdd={onAddHighlightLayer}
-      />
+      />,
     );
   }
 
@@ -75,7 +68,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
         'fill-outline-color': '#ffffff',
       }}
       onAdd={onAddHighlightLayer}
-    />
+    />,
   );
 };
 
@@ -120,7 +113,7 @@ const DistrictMap = (props) => {
     setOptions,
   } = useMap(
     props.location,
-    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer
+    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
   );
   useEffect(() => {
     // set map options using their caption values
@@ -182,7 +175,6 @@ const DistrictMap = (props) => {
           {renderDashboardButton()}
           <BaseMap
             accessToken="pk.eyJ1IjoiZWR3aW5tcCIsImEiOiJjazFsdHVtcG0wOG9mM2RueWJscHhmcXZqIn0.cDR43UvfMaOY9cNJsEKsvg"
-            locationData={getSchoolMarkers(props.location.name)}
             options={{
               style: coreLayer.style,
               center: coreLayer.center,
@@ -200,7 +192,7 @@ const DistrictMap = (props) => {
               data,
               props.location,
               props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
-              activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {}
+              activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {},
             )}
           </BaseMap>
         </div>
