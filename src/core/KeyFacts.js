@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import fetchData from '../utils/data';
+import fetchData, { fetchDataFromAPI } from '../utils/data';
 import KeyFacts from './components/KeyFacts';
 import NoDataCentered from './components/NoDataCentered';
 
@@ -22,8 +22,9 @@ const renderViz = (className) => {
               dichart.showLoading();
               const { keyFacts, location } = window.DIState.getState;
 
-              if (keyFacts && keyFacts.url) {
-                fetchData(keyFacts.url)
+              if (keyFacts?.url || keyFacts?.dataID) {
+                const dataFetchFunction = keyFacts?.url ? fetchData : fetchDataFromAPI;
+                dataFetchFunction(keyFacts?.url || keyFacts?.dataID)
                   .then((data) => {
                     if (Array.isArray(data)) {
                       root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
@@ -32,7 +33,7 @@ const renderViz = (className) => {
                     } else {
                       window.console.error(
                         'Invalid data shape. Expected an array or an object with a results property.',
-                        data
+                        data,
                       );
                       root.render(<NoDataCentered />);
                     }
