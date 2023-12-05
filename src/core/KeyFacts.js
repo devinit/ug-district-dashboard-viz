@@ -20,11 +20,13 @@ const renderViz = (className) => {
             const root = createRoot(chartNode);
             window.DIState.addListener(() => {
               dichart.showLoading();
-              const { keyFacts, location } = window.DIState.getState;
+              const { keyFacts, location, baseAPIUrl } = window.DIState.getState;
 
-              if (keyFacts?.url || keyFacts?.dataID) {
-                const dataFetchFunction = keyFacts?.url ? fetchData : fetchDataFromAPI;
-                dataFetchFunction(keyFacts?.url || keyFacts?.dataID)
+              if (keyFacts?.url || (keyFacts?.dataID && baseAPIUrl)) {
+                const dataFetchPromise = keyFacts?.url
+                  ? fetchData(keyFacts?.url)
+                  : fetchDataFromAPI(keyFacts?.dataID, baseAPIUrl);
+                dataFetchPromise
                   .then((data) => {
                     if (Array.isArray(data)) {
                       root.render(<KeyFacts data={data} options={keyFacts} location={location} />);
