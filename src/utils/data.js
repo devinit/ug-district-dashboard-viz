@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { parse } from 'papaparse';
-import { BASE_DATA_API_URL } from './constants';
 
 const fetchCSVData = (url) =>
   new Promise((resolve) => {
@@ -47,10 +46,14 @@ const fetchData = (url) => {
   return window.fetch(url).then((response) => response.json());
 };
 
-export const fetchDataFromAPI = (dataID) =>
+export const fetchDataFromAPI = (dataID, baseAPIUrl) =>
   axios
-    .get(`${BASE_DATA_API_URL}${dataID}`)
-    .then((response) => response.data.results)
+    .get(`${baseAPIUrl}${dataID}`)
+    .then((response) => {
+      console.log(response.data.results);
+
+      return response.data.results;
+    })
     .catch((error) => error);
 
 export default fetchData;
