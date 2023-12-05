@@ -114,6 +114,7 @@ const DistrictMap = (props) => {
   } = useMap(
     props.location,
     props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
+    props.baseAPIUrl,
   );
   useEffect(() => {
     // set map options using their caption values
@@ -214,6 +215,7 @@ DistrictMap.propTypes = {
     fullName: PropTypes.string,
     coordinates: PropTypes.array,
   }),
+  baseAPIUrl: PropTypes.string,
 };
 
 export default DistrictMap;

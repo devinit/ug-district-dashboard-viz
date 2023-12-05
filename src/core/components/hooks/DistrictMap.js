@@ -11,7 +11,7 @@ const showPopup = (popup, map, event, options) => {
 const popup = new Popup({ offset: 5 });
 const markerPopup = new Popup({ offset: 5 });
 
-const useMap = (location, layer, defaultOptions = {}) => {
+const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
   const [map, setMap] = useState();
   const [options, setOptions] = useState(defaultOptions);
   const [data, setData] = useState([]);
@@ -149,9 +149,11 @@ const useMap = (location, layer, defaultOptions = {}) => {
 
   useEffect(() => {
     const fetchIndicatorData = async (url, dataID) => {
-      const dataFetchFunction = url ? fetchData : fetchDataFromAPI;
-      const indicatorData = await dataFetchFunction(url || dataID);
-      setData(processData(indicatorData, options.indicator, options.year));
+      if (url || (dataID && baseAPIUrl)) {
+        const dataFetchPromise = url ? fetchData(url) : fetchDataFromAPI(dataID, baseAPIUrl);
+        const indicatorData = await dataFetchPromise;
+        setData(processData(indicatorData, options.indicator, options.year));
+      }
     };
     if (options.indicator && options.year) {
       setLevel(schoolLevel(options.indicator.id));
@@ -161,6 +163,7 @@ const useMap = (location, layer, defaultOptions = {}) => {
           schoolLevel(options.indicator.id),
           options.indicator.schoolLocationUrl,
           options.indicator.schoolLocationdataID,
+          baseAPIUrl,
         ),
       );
       fetchIndicatorData(options.indicator.url, options.indicator.dataID);
