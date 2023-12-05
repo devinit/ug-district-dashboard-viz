@@ -48,7 +48,7 @@ const fetchData = (url) => {
 
 export const fetchDataFromAPI = (dataID, baseAPIUrl) =>
   axios
-    .get(`${baseAPIUrl}${dataID}`)
+    .get(`${baseAPIUrl}document/data/${dataID}`)
     .then((response) => {
       console.log(response.data.results);
 
