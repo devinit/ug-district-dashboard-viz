@@ -53,7 +53,7 @@ const validConfigs = (config) => {
   return true;
 };
 
-const processConfig = (config) => {
+const processConfig = (config, baseAPIUrl) => {
   if (!validConfigs(config)) return;
 
   window.DICharts.handler.addChart({
@@ -68,14 +68,14 @@ const processConfig = (config) => {
           dichart.showLoading();
           let subCounty = defaultSelectValue;
           const root = createRoot(chartNode);
-          root.render(<DataHandler config={config} subCounty={subCounty} />);
+          root.render(<DataHandler config={config} subCounty={subCounty} baseAPIUrl={baseAPIUrl} />);
 
           if (window.DIState) {
             window.DIState.addListener(() => {
               const { subCounty: selectedSubCounty } = window.DIState.getState;
               if (selectedSubCounty && selectedSubCounty !== subCounty) {
                 subCounty = selectedSubCounty;
-                root.render(<DataHandler config={config} subCounty={subCounty} />);
+                root.render(<DataHandler config={config} subCounty={subCounty} baseAPIUrl={baseAPIUrl} />);
               }
             });
           }
@@ -91,12 +91,12 @@ const initCharts = () => {
   if (window.DIState) {
     let configs = [];
     window.DIState.addListener(() => {
-      const { charts: chartConfigs } = window.DIState.getState;
+      const { charts: chartConfigs, baseAPIUrl } = window.DIState.getState;
 
       // ensures that the state update that renders the charts only runs once
       if (chartConfigs && configs.length !== chartConfigs.length) {
         configs = chartConfigs;
-        configs.forEach(processConfig);
+        configs.forEach((config) => processConfig(config, baseAPIUrl));
       }
     });
   } else {
