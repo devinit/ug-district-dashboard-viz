@@ -50,44 +50,47 @@ const renderTable = (config) => {
     className: config.className,
     d3: {
       onAdd: (tableNodes) => {
-        const dataFetchFunction = config.url ? fetchData : fetchDataFromAPI;
-        dataFetchFunction(config.url || config.dataID).then((data) => {
-          Array.prototype.forEach.call(tableNodes, (tableNode) => {
-            const dichart = new window.DICharts.Chart(tableNode.parentElement);
-            dichart.showLoading();
-
-            const defaultSubCounty = defaultSelectValue;
-            const root = createRoot(tableNode);
-            let selectedSubCounty = defaultSubCounty;
-            let selectors = [];
-
-            window.DIState.addListener(() => {
+        if (window.DIState) {
+          const { baseAPIUrl } = window.DIState.getState;
+          const dataFetchPromise = config.url ? fetchData(config.url) : fetchDataFromAPI(config.dataID, baseAPIUrl);
+          dataFetchPromise.then((data) => {
+            Array.prototype.forEach.call(tableNodes, (tableNode) => {
+              const dichart = new window.DICharts.Chart(tableNode.parentElement);
               dichart.showLoading();
-              const { subCounty } = window.DIState.getState;
-              if (subCounty === selectedSubCounty) return;
 
-              selectedSubCounty = subCounty || defaultSubCounty;
-              const filteredData =
-                config.filters && config.filters.subCounties
-                  ? filterDataBySubCounty(data, selectedSubCounty, config.mapping.subCounty)
-                  : data;
-              const rows = parseTableData(config, filteredData, selectedSubCounty);
-              root.render(<DistrictTable rows={rows} />);
+              const defaultSubCounty = defaultSelectValue;
+              const root = createRoot(tableNode);
+              let selectedSubCounty = defaultSubCounty;
+              let selectors = [];
 
-              if (config.selectors && config.selectors.length) {
-                handleSelectors(
-                  { data: filteredData, subCounty: selectedSubCounty, config, tableRoot: root },
-                  selectors,
-                ).then((updatedSelectors) => {
-                  selectors = updatedSelectors;
-                });
-              }
+              window.DIState.addListener(() => {
+                dichart.showLoading();
+                const { subCounty } = window.DIState.getState;
+                if (subCounty === selectedSubCounty) return;
 
-              dichart.hideLoading();
-              tableNode.parentElement.classList.add('auto-height');
+                selectedSubCounty = subCounty || defaultSubCounty;
+                const filteredData =
+                  config.filters && config.filters.subCounties
+                    ? filterDataBySubCounty(data, selectedSubCounty, config.mapping.subCounty)
+                    : data;
+                const rows = parseTableData(config, filteredData, selectedSubCounty);
+                root.render(<DistrictTable rows={rows} />);
+
+                if (config.selectors && config.selectors.length) {
+                  handleSelectors(
+                    { data: filteredData, subCounty: selectedSubCounty, config, tableRoot: root },
+                    selectors,
+                  ).then((updatedSelectors) => {
+                    selectors = updatedSelectors;
+                  });
+                }
+
+                dichart.hideLoading();
+                tableNode.parentElement.classList.add('auto-height');
+              });
             });
           });
-        });
+        }
       },
     },
   });
