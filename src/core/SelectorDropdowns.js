@@ -20,10 +20,10 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
       promises.push(
         new Promise((resolve) => {
           selectorNode.render(
-            <Selectors key={uuidv4()} configs={options.selectors} onChange={options.onChange || onChange} />
+            <Selectors key={uuidv4()} configs={options.selectors} onChange={options.onChange || onChange} />,
           );
           resolve(selectorNode);
-        })
+        }),
       );
     });
 
@@ -50,6 +50,7 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
             dichart.showLoading();
             // if not explicitly provided, get selector configs from state
             const { selectors } = options.selectors ? options : window.DIState.getState;
+            const { baseAPIUrl } = window.DIState.getState;
 
             if (!selectors) {
               window.console.log('Waiting on state update ...');
@@ -59,10 +60,12 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
 
             if (!Array.isArray(selectors)) {
               window.console.log(
-                'Invalid value for selectors - an Array is expected. Please review the documentation!'
+                'Invalid value for selectors - an Array is expected. Please review the documentation!',
               );
             }
-            rootElement.render(<Selectors configs={selectors} onChange={options.onChange || onChange} />);
+            rootElement.render(
+              <Selectors configs={selectors} onChange={options.onChange || onChange} baseAPIUrl={baseAPIUrl} />,
+            );
           });
         } else {
           window.console.log('State is not defined');
@@ -72,7 +75,7 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
         selectorNode.parentElement.classList.add('auto-height');
 
         resolve(rootElement);
-      })
+      }),
     );
   });
 

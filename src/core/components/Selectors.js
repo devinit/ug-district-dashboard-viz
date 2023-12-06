@@ -21,9 +21,11 @@ const Selectors = (props) => {
           };
           item.options = selector.defaultValue ? [selector.defaultValue] : [];
           let data = selector.data || [];
-          if (selector.url || selector.dataID) {
-            const dataFetchFunction = selector.url ? fetchData : fetchDataFromAPI;
-            data = await dataFetchFunction(selector.url || selector.dataID);
+          if (selector.url || (selector.dataID && props.baseAPIUrl)) {
+            const dataFetchPromise = selector.url
+              ? fetchData(selector.url)
+              : fetchDataFromAPI(selector.dataID, props.baseAPIUrl);
+            data = await dataFetchPromise;
           }
           item.options = item.options.concat(
             data.reduce((options, curr) => {
@@ -83,6 +85,7 @@ Selectors.propTypes = {
   onChange: PropTypes.func,
   className: PropTypes.string,
   children: PropTypes.node,
+  baseAPIUrl: PropTypes.string,
 };
 
 export default Selectors;
