@@ -46,14 +46,15 @@ const fetchData = (url) => {
   return window.fetch(url).then((response) => response.json());
 };
 
-export const fetchDataFromAPI = (dataID, baseAPIUrl) =>
-  axios
-    .get(`${baseAPIUrl}document/data/${dataID}`)
-    .then((response) => {
-      console.log(response.data.results);
+export const fetchDataFromAPI = (dataID, baseAPIUrl) => {
+  if (dataID && baseAPIUrl) {
+    return axios
+      .get(`${baseAPIUrl}document/data/${dataID}`)
+      .then((response) => response.data.results)
+      .catch((error) => error);
+  }
 
-      return response.data.results;
-    })
-    .catch((error) => error);
+  return [];
+};
 
 export default fetchData;
