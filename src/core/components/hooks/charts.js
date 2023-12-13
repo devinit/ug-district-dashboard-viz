@@ -4,17 +4,17 @@ import fetchData, { fetchDataFromAPI } from '../../../utils/data';
 import { filterData, filterDataByProperty } from '../../utils';
 import { getYears } from '../../utils/charts';
 
-const useData = (config, defaultFilters = []) => {
+const useData = (config, baseAPIUrl, defaultFilters = []) => {
   const { url, yearRange, dataID } = config;
   const { data, error } = useSWR(url || config.className || dataID, async () => {
     if (config.data && Array.isArray(config.data)) {
       return config.data;
     }
 
-    if (url || dataID) {
-      const dataFetchFunction = url ? fetchData : fetchDataFromAPI;
+    if (url || (dataID && baseAPIUrl)) {
+      const dataFetchPromise = url ? fetchData(url) : fetchDataFromAPI(dataID, baseAPIUrl);
 
-      return dataFetchFunction(url || dataID).then((originalData) =>
+      return dataFetchPromise.then((originalData) =>
         config.filters ? filterData(originalData, config.filters) : originalData,
       );
     }

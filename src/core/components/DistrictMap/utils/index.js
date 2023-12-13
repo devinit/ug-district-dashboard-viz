@@ -107,16 +107,16 @@ const KAYUNGA_EXCLUDE_LIST = [
   'Bright Future Nursery And Primary School Kangulumira',
 ];
 
-export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID) => {
+export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
   };
-  const dataVariable = dataUrl || dataID;
-  const dataFetchFunction = dataUrl ? fetchData : fetchDataFromAPI;
+  const dataVariable = dataUrl || (dataID && baseAPIUrl);
   if (!schoolSpecs || !dataVariable) return finalGeoJSON;
-  if (dataVariable) {
-    dataFetchFunction(dataVariable)
+  if (dataUrl || (dataID && baseAPIUrl)) {
+    const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
+    dataFetchPromise
       .then((data) => {
         const filteredData = data.filter((row) =>
           district === 'Masindi'

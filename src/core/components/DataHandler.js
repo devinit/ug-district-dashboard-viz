@@ -11,7 +11,7 @@ import Selectors from './Selectors';
 import TableChartToggler from './TableChartToggler';
 
 const DataHandler = (props) => {
-  const { data, years, setFilters, updateFilter } = useData(props.config);
+  const { data, years, setFilters, updateFilter } = useData(props.config, props.baseAPIUrl);
   const [showing, setShowing] = useState('chart'); // alternative is "table"
   const [chartType, setChartType] = useState(props.config.type || 'bar');
 
@@ -68,6 +68,7 @@ const DataHandler = (props) => {
 DataHandler.propTypes = {
   config: PropTypes.object,
   subCounty: PropTypes.string,
+  baseAPIUrl: PropTypes.string,
 };
 
 DataHandler.defaultProps = {

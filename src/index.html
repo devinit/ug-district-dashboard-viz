@@ -954,8 +954,9 @@
                         colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
                         range: [25, 50, 75, 100],
                         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
+                        // dataID: '12763',
+                        schoolLocationUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/schools-locations.csv',
                         yearRange: [2018, 2022],
-                        // excludeYears: [2019, 2020, 2021],
                         mapping: {
                             location: 'subcounty',
                             value: 'value',
@@ -971,8 +972,10 @@
                         name: 'Number of Secondary Schools',
                         description: 'Description Goes Here!',
                         colours: ['#faa2c1', '#f06595', '#d6336c', '#c2255c', '#a61e4d'],
-                        range: [3, 6, 10],
+                        range:[5, 10, 15, 20],
                         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
+                        schoolLocationUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/schools-locations.csv',
+                        // schoolLocationdataID: '12763',
                         yearRange: [2018, 2022],
                         mapping: {
                             location: 'subcounty',
@@ -1280,9 +1283,11 @@
                 fullName: 'Kayunga District',
                 coordinates: [32.86415441783307, 0.9460935176075392]
             },
+            baseAPIUrl: 'https://api.datahub.go.ug/kayunga/',
             selectors: [{
             id: 'subcounty',
             url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/sub-counties.csv',
+            // dataID: '9693',
             label: 'Select sub-county',
             defaultValue: {
                 value: 'all',
@@ -1296,6 +1301,7 @@
                 target: 'education',
                 className: 'dicharts--number-of-schools',
                 url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
+                // dataID: '12763',
                 type: 'area',
                 typeOptions: [{
                     value: 'area',
