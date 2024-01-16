@@ -4,17 +4,17 @@ import { defaultSelectValue } from '.';
 export const parseTableData = (config, data, subCounty) => {
   const { rows: COLUMN_CAPTIONS, mapping, initialHeader } = config;
   const years = getYearsFromRange(config.yearRange).filter(
-    (year) => !config.excludeYears || !config.excludeYears.includes(year)
+    (year) => !config.excludeYears || !config.excludeYears.includes(year),
   );
   const headerRow = [initialHeader].concat(years);
   const dataRows = COLUMN_CAPTIONS.map((item) => {
     const valuesByYear = {};
     data
       .filter(
-        (row) => years.includes(Number(row[mapping.year])) && row[mapping.rows].toLowerCase() === item.toLowerCase()
+        (row) => years.includes(Number(row[mapping.year])) && row[mapping.rows].toLowerCase() === item.toLowerCase(),
       )
       .filter((row) =>
-        subCounty !== defaultSelectValue ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true
+        subCounty !== defaultSelectValue ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true,
       )
       .forEach((row) => {
         const yearValues = valuesByYear[row[mapping.year]] || [];
@@ -43,13 +43,13 @@ export const parseTableData = (config, data, subCounty) => {
     }
 
     return formatNumber(
-      dataRows.reduce((total, current) => (typeof current[index] === 'number' ? total + current[index] : total), 0)
+      dataRows.reduce((total, current) => (typeof current[index] === 'number' ? total + current[index] : total), 0),
     );
   });
 
   // formatting is done after calculating the total to eliminate rounding errors
   const formattedDataRow = dataRows.map((row) =>
-    row.map((cell) => (typeof cell === 'number' ? formatNumber(cell) : cell))
+    row.map((cell) => (typeof cell === 'number' ? formatNumber(cell) : cell)),
   );
 
   return [headerRow].concat(formattedDataRow, [totalsRow]);
