@@ -15,6 +15,10 @@
     "pre-commit": "lint-staged",
     "nvm": "bash ./nvm.sh"
   },
+  "engines": {
+    "node": ">=16 <17",
+    "npm": ">=8"
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.23.3",
     "@emotion/eslint-plugin": "^11.11.0",
