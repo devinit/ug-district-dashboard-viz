@@ -67,7 +67,7 @@
     "react-dom": "^18.2.0",
     "react-select": "^5.8.0",
     "reactjs-popup": "^2.0.6",
-    "swr": "^2.2.4",
+    "swr": "^2.2.5",
     "uuid": "^9.0.1"
   }
 }
