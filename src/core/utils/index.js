@@ -25,7 +25,9 @@ export const filterData = (data, filters) => {
 
   let filteredData = data;
   Object.keys(filters).forEach((column) => {
-    filteredData = filteredData.filter((item) => filters[column].includes(item[column]));
+    filteredData = filteredData.filter((item) =>
+      filters[column].includes(typeof item[column] === 'string' ? item[column] : item[column].toString()),
+    );
   });
 
   return filteredData;
@@ -54,9 +56,8 @@ export const getDefaultFilters = (config, subCounty) => {
 
 export const removeCommas = (value) => {
   if ((typeof value === 'string' || value instanceof String) && value.includes(',')) {
-    return value.replace(',', '')
+    return value.replace(',', '');
   }
 
-return value
-
-}
+  return value;
+};
