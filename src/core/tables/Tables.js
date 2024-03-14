@@ -4,13 +4,14 @@ import fetchData, { fetchDataFromAPI } from '../../utils/data';
 import DistrictTable from '../components/DistrictTable';
 import renderSelectors from '../SelectorDropdowns';
 import { defaultSelectValue, filterDataByProperty, filterDataBySubCounty } from '../utils';
-import { parseTableData, validConfigs } from '../utils/tables';
+import { parseScoreCardTableData, parseTableData, validConfigs } from '../utils/tables';
+import ScoreCardTable from '../components/ScoreCardTable';
 
-const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorNodes) => {
+const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorNodes, tableType, thresholds) => {
   // keep track of the current value of all available selectors
   const selectors = config.selectors.map((selector) => ({
     property: selector.dataProperty,
-    value: defaultSelectValue,
+    value: defaultSelectValue
   }));
 
   const onChangeSelector = (selector, item) => {
@@ -29,8 +30,13 @@ const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorN
           return filterDataByProperty(filteredData, curr.property, curr.value);
         }, data);
         // update table
-        const rows = parseTableData(config, selectedData, subCounty);
-        tableRoot.render(<DistrictTable rows={rows} />);
+        if (tableType === 'scoreCard') {
+          const rows = parseScoreCardTableData(config, selectedData, subCounty);
+          tableRoot.render(<ScoreCardTable rows={rows} thresholds={thresholds} />);
+        } else {
+          const rows = parseTableData(config, selectedData, subCounty);
+          tableRoot.render(<DistrictTable rows={rows} />);
+        }
       }
     }
   };
@@ -39,7 +45,7 @@ const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorN
     selectors: config.selectors,
     onChange: onChangeSelector,
     makeSticky: false,
-    nodes: selectorNodes,
+    nodes: selectorNodes
   });
 };
 
@@ -66,6 +72,7 @@ const renderTable = (config) => {
               window.DIState.addListener(() => {
                 dichart.showLoading();
                 const { subCounty } = window.DIState.getState;
+                const { tableType, thresholds } = config;
                 if (subCounty === selectedSubCounty) return;
 
                 selectedSubCounty = subCounty || defaultSubCounty;
@@ -73,13 +80,20 @@ const renderTable = (config) => {
                   config.filters && config.filters.subCounties
                     ? filterDataBySubCounty(data, selectedSubCounty, config.mapping.subCounty)
                     : data;
-                const rows = parseTableData(config, filteredData, selectedSubCounty);
-                root.render(<DistrictTable rows={rows} />);
+                if (tableType === 'scoreCard') {
+                  const rows = parseScoreCardTableData(config, filteredData, selectedSubCounty);
+                  root.render(<ScoreCardTable rows={rows} thresholds={thresholds} />);
+                } else {
+                  const rows = parseTableData(config, filteredData, selectedSubCounty);
+                  root.render(<DistrictTable rows={rows} />);
+                }
 
                 if (config.selectors && config.selectors.length) {
                   handleSelectors(
                     { data: filteredData, subCounty: selectedSubCounty, config, tableRoot: root },
                     selectors,
+                    tableType,
+                    thresholds
                   ).then((updatedSelectors) => {
                     selectors = updatedSelectors;
                   });
@@ -91,8 +105,8 @@ const renderTable = (config) => {
             });
           });
         }
-      },
-    },
+      }
+    }
   });
 };
 
