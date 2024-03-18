@@ -147,6 +147,9 @@ export const getTableCellColor = (() => {
     if (Object.keys(config).includes(value)) {
       currentIndicator = value;
     }
+    if (!value || Number(value) === 0) {
+      return '#cdcfd1';
+    }
 
     if (Number(value) >= config[currentIndicator]) {
       return '#3b8c62';
