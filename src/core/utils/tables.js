@@ -154,7 +154,10 @@ export const getTableCellColor = (() => {
     if (Number(value) >= config[currentIndicator]) {
       return '#3b8c62';
     }
-    if (Number(value) < config[currentIndicator]) {
+    if (Number(value) >= 0.75 * config[currentIndicator] && Number(value) <= 0.99 * config[currentIndicator]) {
+      return '#f7a838';
+    }
+    if (Number(value) < 0.74 * config[currentIndicator]) {
       return '#cd2b2a';
     }
 
