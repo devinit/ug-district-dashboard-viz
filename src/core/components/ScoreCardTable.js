@@ -7,9 +7,10 @@ import { getTableCellColor } from '../utils/tables';
 
 const ScoreCardTable = (props) => {
   const scoreCardLegendData = [
-    { color: '#3b8c62', caption: 'On target' },
-    { color: '#cd2b2a', caption: 'Below target' },
-    { color: '#cdcfd1', caption: 'No data' }
+    { color: '#3b8c62', caption: 'Achieved' },
+    { color: '#f7a838', caption: 'Moderately satisfactory' },
+    { color: '#cd2b2a', caption: 'Not achieved' },
+    { color: '#cdcfd1', caption: 'Not assessed' }
   ];
   useEffect(() => {
     const legendContainer = document.createElement('div');
@@ -64,12 +65,13 @@ const ScoreCardTable = (props) => {
     <div className="score-table-container">
       <Table>
         <thead>
-          {renderRows(
-            props.rows.filter((row, index) => index === 0),
-            true
-          )}
+          {props.rows &&
+            renderRows(
+              props.rows.filter((row, index) => index === 0),
+              true
+            )}
         </thead>
-        <tbody>{renderRows(props.rows.filter((row, index) => index > 0))}</tbody>
+        <tbody>{props.rows && renderRows(props.rows.filter((row, index) => index > 0))}</tbody>
       </Table>
     </div>
   );
