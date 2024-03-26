@@ -187,3 +187,19 @@ button.button-outline,
 .tabs .tabs__content {
   height: 100%;
 }
+
+.score-table-legend {
+  padding-top: 5%;
+}
+.score-table-legend > span {
+  display: flex
+}
+
+.score-table-legend > span > i {
+  height: 20px;
+}
+
+.score-table-legend > span > label {
+  padding-left: 5px;
+  padding-right: 10px;
+}
