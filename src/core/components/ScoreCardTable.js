@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
-import { useEffect } from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Table from '../../components/Table';
 import { getTableCellColor } from '../utils/tables';
@@ -13,7 +14,8 @@ const ScoreCardTable = (props) => {
     { color: '#cdcfd1', caption: 'Not assessed' }
   ];
   useEffect(() => {
-    const legendContainer = document.createElement('div');
+    const legendContainer = document.querySelector('.score-table-legend');
+
     const legendContent = `${scoreCardLegendData
       .map(
         (item) =>
@@ -23,21 +25,7 @@ const ScoreCardTable = (props) => {
           </span>`
       )
       .join('')}`;
-    legendContainer.classList.add('custom-legend', 'score-table-legend');
     legendContainer.innerHTML = legendContent;
-    const tableContainer = document.querySelector('.score-table-container');
-    const { firstChild } = tableContainer;
-    if (firstChild) {
-      tableContainer.insertBefore(legendContainer, firstChild);
-    } else {
-      tableContainer.appendChild(legendContainer);
-    }
-
-    return () => {
-      if (tableContainer) {
-        tableContainer.removeChild(legendContainer);
-      }
-    };
   });
 
   const renderRows = (rows, header = false) =>
@@ -62,7 +50,8 @@ const ScoreCardTable = (props) => {
     ));
 
   return (
-    <div className="score-table-container">
+    <>
+      <div className="score-table-legend custom-legend"></div>
       <Table>
         <thead>
           {props.rows &&
@@ -73,7 +62,7 @@ const ScoreCardTable = (props) => {
         </thead>
         <tbody>{props.rows && renderRows(props.rows.filter((row, index) => index > 0))}</tbody>
       </Table>
-    </div>
+    </>
   );
 };
 
