@@ -87,7 +87,19 @@ export const validConfigs = (config) => {
   }
 
   if (!config.mapping.subCounty) {
-    window.console.error('Invalid table config: mapping.subCounty is required!');
+    window.console.warn('Potentially invalid table config: mapping.subCounty may be required!');
+
+    return true;
+  }
+
+  if (config.dataID && !config.baseAPIUrl) {
+    window.console.error('Invalid table config: baseAPIUrl is required!');
+
+    return false;
+  }
+
+  if (!(config.data || config.url || config.dataID)) {
+    window.console.error('Invalid table config: one of data/url/dataID is required!');
 
     return false;
   }

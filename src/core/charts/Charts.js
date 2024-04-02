@@ -14,7 +14,7 @@ const validConfigs = (config) => {
     window.console.error(
       !config.series
         ? 'Invalid chart config: Series is required!'
-        : 'Invalid chart config: Invalid series config - expected an array!',
+        : 'Invalid chart config: Invalid series config - expected an array!'
     );
 
     return false;
@@ -40,6 +40,18 @@ const validConfigs = (config) => {
 
   if (!config.mapping.value) {
     window.console.error('Invalid chart config: mapping.value is required!');
+
+    return false;
+  }
+
+  if (config.dataID && !config.baseAPIUrl) {
+    window.console.error('Invalid chart config: baseAPIUrl is required!');
+
+    return false;
+  }
+
+  if (!(config.data || config.url || config.dataID)) {
+    window.console.error('Invalid chart config: one of data/url/dataID is required!');
 
     return false;
   }
@@ -82,8 +94,8 @@ const processConfig = (config, baseAPIUrl) => {
 
           dichart.hideLoading();
         });
-      },
-    },
+      }
+    }
   });
 };
 
