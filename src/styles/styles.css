@@ -189,7 +189,10 @@ button.button-outline,
 }
 
 .score-table-legend {
-  padding-top: 5%;
+  display: flex;
+  position: relative;
+  padding: 1em 2em 2rem 2em;
+  min-height: 95px;
 }
 .score-table-legend > span {
   display: flex
@@ -202,4 +205,5 @@ button.button-outline,
 .score-table-legend > span > label {
   padding-left: 5px;
   padding-right: 10px;
+  height: fit-content;
 }

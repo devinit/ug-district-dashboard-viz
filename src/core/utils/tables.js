@@ -92,12 +92,6 @@ export const validConfigs = (config) => {
     return false;
   }
 
-  if (!config.mapping.level) {
-    window.console.error('Invalid table config: mapping[mapping.level] is required!');
-
-    return false;
-  }
-
   return true;
 };
 
