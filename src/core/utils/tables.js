@@ -55,7 +55,7 @@ export const parseTableData = (config, data, subCounty) => {
   return [headerRow].concat(formattedDataRow, [totalsRow]);
 };
 
-export const validConfigs = (config) => {
+export const validConfigs = (config, baseAPIUrl) => {
   if (!config.className) {
     window.console.error('Invalid table config: className is required!');
 
@@ -92,7 +92,7 @@ export const validConfigs = (config) => {
     return true;
   }
 
-  if (config.dataID && !config.baseAPIUrl) {
+  if (config.dataID && !baseAPIUrl) {
     window.console.error('Invalid table config: baseAPIUrl is required!');
 
     return false;
