@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import DataHandler from '../components/DataHandler';
 import { defaultSelectValue } from '../utils';
 
-const validConfigs = (config) => {
+const validConfigs = (config, baseAPIUrl) => {
   if (!config.className) {
     window.console.error('Invalid chart config: className is required!');
 
@@ -44,7 +44,7 @@ const validConfigs = (config) => {
     return false;
   }
 
-  if (config.dataID && !config.baseAPIUrl) {
+  if (config.dataID && !baseAPIUrl) {
     window.console.error('Invalid chart config: baseAPIUrl is required!');
 
     return false;
@@ -66,7 +66,7 @@ const validConfigs = (config) => {
 };
 
 const processConfig = (config, baseAPIUrl) => {
-  if (!validConfigs(config)) return;
+  if (!validConfigs(config, baseAPIUrl)) return;
 
   window.DICharts.handler.addChart({
     className: config.className,

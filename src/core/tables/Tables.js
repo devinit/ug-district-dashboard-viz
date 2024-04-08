@@ -49,15 +49,14 @@ const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorN
   });
 };
 
-const renderTable = (config) => {
-  if (!validConfigs(config)) return;
+const renderTable = (config, baseAPIUrl) => {
+  if (!validConfigs(config, baseAPIUrl)) return;
 
   window.DICharts.handler.addChart({
     className: config.className,
     d3: {
       onAdd: (tableNodes) => {
         if (window.DIState) {
-          const { baseAPIUrl } = window.DIState.getState;
           const dataFetchPromise = config.url ? fetchData(config.url) : fetchDataFromAPI(config.dataID, baseAPIUrl);
           dataFetchPromise.then((data) => {
             Array.prototype.forEach.call(tableNodes, (tableNode) => {
@@ -114,14 +113,14 @@ const initTables = () => {
   if (window.DIState) {
     let configs = [];
     window.DIState.addListener(() => {
-      const { tables: tableConfigs } = window.DIState.getState;
+      const { tables: tableConfigs, baseAPIUrl } = window.DIState.getState;
 
       // ensures that the state update that renders the charts only runs once
       if (tableConfigs && configs.length !== tableConfigs.length) {
         configs = tableConfigs;
 
         configs.forEach((config) => {
-          renderTable(config);
+          renderTable(config, baseAPIUrl);
         });
       }
     });
