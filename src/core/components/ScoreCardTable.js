@@ -20,7 +20,7 @@ const ScoreCardTable = (props) => {
       .map(
         (item) =>
           `<span>
-            <i style="background:${item.color};border-radius:1px;width:40px;"></i>
+            <i style="background:${item.color};border-radius:50%;width:23px;height:23px;"></i>
             <label>${item.caption}</label>
           </span>`
       )
