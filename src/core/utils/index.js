@@ -17,7 +17,11 @@ export const filterDataBySubCounty = (data, subCounty, subCountyProperty) =>
 
 export const filterDataByProperty = (data, propertyName, propertyValue) =>
   propertyName && propertyValue
-    ? data.filter((item) => item[propertyName].toLowerCase() === propertyValue.toLowerCase())
+    ? data.filter((item) =>
+        typeof item[propertyName] === 'string'
+          ? item[propertyName].toLowerCase() === propertyValue.toLowerCase()
+          : item[propertyName].toString().toLowerCase() === propertyValue.toString().toLowerCase()
+      )
     : data;
 
 export const filterData = (data, filters) => {
@@ -26,7 +30,7 @@ export const filterData = (data, filters) => {
   let filteredData = data;
   Object.keys(filters).forEach((column) => {
     filteredData = filteredData.filter((item) =>
-      filters[column].includes(typeof item[column] === 'string' ? item[column] : item[column].toString()),
+      filters[column].includes(typeof item[column] === 'string' ? item[column] : item[column].toString())
     );
   });
 
@@ -39,14 +43,14 @@ export const getDefaultFilters = (config, subCounty) => {
   if (mapping.subCounty && subCounty) {
     filterArray.push({
       dataProperty: mapping.subCounty,
-      value: 'all',
+      value: 'all'
     });
   }
   if (selectors) {
     selectors.forEach((selector) => {
       filterArray.push({
         dataProperty: selector.dataProperty,
-        value: selector.defaultValue ? selector.defaultValue.value : 'all',
+        value: selector.defaultValue ? selector.defaultValue.value : 'all'
       });
     });
   }
