@@ -34,10 +34,12 @@ const DataHandler = (props) => {
     <>
       <div
         className={classNames('spotlight-banner data-selector--wrapper dicharts--actions', {
-          'align-left': !props.config.selectors,
+          'align-left': !props.config.selectors
         })}
       >
-        {props.config.selectors ? <Selectors configs={props.config.selectors} onChange={onChangeSelector} /> : null}
+        {props.config.selectors ? (
+          <Selectors configs={props.config.selectors} onChange={() => onChangeSelector} />
+        ) : null}
         <TableChartToggler
           show={!!props.config.table}
           onClickChart={() => setShowing('chart')}
@@ -68,11 +70,11 @@ const DataHandler = (props) => {
 DataHandler.propTypes = {
   config: PropTypes.object,
   subCounty: PropTypes.string,
-  baseAPIUrl: PropTypes.string,
+  baseAPIUrl: PropTypes.string
 };
 
 DataHandler.defaultProps = {
-  subCounty: 'all',
+  subCounty: 'all'
 };
 
 export default DataHandler;
