@@ -17,7 +17,7 @@ const Selectors = (props) => {
             label: selector.label,
             defaultValue: selector.defaultValue,
             config: selector,
-            dataProperty: selector.dataProperty,
+            dataProperty: selector.dataProperty
           };
           item.options = selector.defaultValue ? [selector.defaultValue] : [];
           let data = selector.data || [];
@@ -32,16 +32,16 @@ const Selectors = (props) => {
               if (!options.find((i) => i[selector.valueProperty] === curr[selector.valueProperty])) {
                 options.push({
                   value: curr[selector.valueProperty],
-                  label: curr[selector.labelProperty],
+                  label: curr[selector.labelProperty]
                 });
               }
 
               return options;
-            }, []),
+            }, [])
           );
 
           return item;
-        }),
+        })
       )
         .then(setSelectors)
         .catch((error) => window.console.log(error));
@@ -79,13 +79,13 @@ Selectors.propTypes = {
       label: PropTypes.string.isRequired,
       defaultValue: PropTypes.shape({ value: PropTypes.string, label: PropTypes.string }),
       labelProperty: PropTypes.string.isRequired,
-      valueProperty: PropTypes.string.isRequired,
-    }),
+      valueProperty: PropTypes.string.isRequired
+    })
   ),
   onChange: PropTypes.func,
   className: PropTypes.string,
   children: PropTypes.node,
-  baseAPIUrl: PropTypes.string,
+  baseAPIUrl: PropTypes.string
 };
 
 export default Selectors;
