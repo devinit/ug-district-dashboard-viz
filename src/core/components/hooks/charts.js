@@ -15,7 +15,7 @@ const useData = (config, baseAPIUrl, defaultFilters = []) => {
       const dataFetchPromise = url ? fetchData(url) : fetchDataFromAPI(dataID, baseAPIUrl);
 
       return dataFetchPromise.then((originalData) =>
-        config.filters ? filterData(originalData, config.filters) : originalData,
+        config.filters ? filterData(originalData, config.filters) : originalData
       );
     }
 
@@ -59,7 +59,7 @@ const useData = (config, baseAPIUrl, defaultFilters = []) => {
           }
 
           return filter;
-        }),
+        })
       );
     }
   };
