@@ -27,7 +27,9 @@ const DataHandler = (props) => {
   }, [props.subCounty]);
 
   const onChangeSelector = (selector, item) => {
-    updateFilter(selector.dataProperty, item.value);
+    if (item.value) {
+      updateFilter(selector.dataProperty, item.value);
+    }
   };
 
   return (
@@ -37,9 +39,7 @@ const DataHandler = (props) => {
           'align-left': !props.config.selectors
         })}
       >
-        {props.config.selectors ? (
-          <Selectors configs={props.config.selectors} onChange={() => onChangeSelector} />
-        ) : null}
+        {props.config.selectors ? <Selectors configs={props.config.selectors} onChange={onChangeSelector} /> : null}
         <TableChartToggler
           show={!!props.config.table}
           onClickChart={() => setShowing('chart')}
