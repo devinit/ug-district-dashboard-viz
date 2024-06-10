@@ -47,7 +47,7 @@
     "@emotion/styled": "^11.11.5",
     "@turf/center": "^7.0.0",
     "@turf/center-of-mass": "^7.0.0",
-    "@turf/helpers": "^6.5.0",
+    "@turf/helpers": "^7.0.0",
     "axios": "^1.7.2",
     "classnames": "^2.5.1",
     "color": "^4.2.3",
