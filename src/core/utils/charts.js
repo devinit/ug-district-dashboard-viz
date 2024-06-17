@@ -73,8 +73,8 @@ const getSeries = (config, data, years) => {
         focus: 'series',
         label: {
           show: true,
-          formatter: (params) => formatNumber(params.value),
-        },
+          formatter: (params) => formatNumber(params.value)
+        }
       },
       symbol: 'circle', // only used for line charts
       label: {
@@ -88,7 +88,7 @@ const getSeries = (config, data, years) => {
           }
 
           return formatNumber(total, '', { notation: 'compact' });
-        },
+        }
       },
       data: years.map((year) => {
         const yearValues = [];
@@ -111,7 +111,7 @@ const getSeries = (config, data, years) => {
         }
 
         throw new Error('Invalid aggregator: ', config.aggregator);
-      }),
+      })
     }));
 
     return series;
@@ -124,17 +124,20 @@ const getSeries = (config, data, years) => {
       radius: '50%',
       data: seriesNames.map((seriesName) => ({
         name: seriesName,
-        value: getPieSeriesValue(data, seriesName, config),
+        value: getPieSeriesValue(data, seriesName, config)
       })),
       emphasis: {
         itemStyle: {
           shadowBlur: 10,
           shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 0, 0, 0.5)',
-        },
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
       },
-      label: { fontFamily: 'Geomanist Regular,sans-serif' },
-    },
+      label: {
+        fontFamily: 'Geomanist Regular,sans-serif',
+        formatter: (params) => `${params.name} (${formatNumber(params.value)})`
+      }
+    }
   ];
 
   return series;
@@ -144,37 +147,37 @@ export const updateChart = ({ data, years, config, chart }) => {
   const options = deepMerge(defaultOptions, {
     responsive: false,
     legend: {
-      selectedMode: true,
+      selectedMode: true
     },
     grid: {
       top: 60,
-      bottom: 60,
+      bottom: 60
     },
     xAxis: {
       data: years,
       nameTextStyle: {
-        verticalAlign: 'top',
+        verticalAlign: 'top'
       },
       name: 'Years',
-      boundaryGap: config.type !== 'area',
+      boundaryGap: config.type !== 'area'
     },
     yAxis: {
       type: 'value',
       nameLocation: 'middle',
       nameGap: 50,
       axisLabel: {
-        formatter: (value) => formatNumber(value, '', { notation: 'compact' }),
-      },
+        formatter: (value) => formatNumber(value, '', { notation: 'compact' })
+      }
     },
     toolbox: {
       showTitle: false,
       feature: {
         saveAsImage: {
-          show: false,
-        },
-      },
+          show: false
+        }
+      }
     },
-    series: getSeries(config, data, years),
+    series: getSeries(config, data, years)
   });
   // set colour - has to be done after the options merge above or it won't stick
   options.color = colorways.cerulean;
