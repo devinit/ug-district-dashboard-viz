@@ -43,7 +43,7 @@
     "src/**/*.js": "eslint --cache --fix"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.5",
+    "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.13.5",
     "@turf/center": "^7.1.0",
     "@turf/center-of-mass": "^7.1.0",
