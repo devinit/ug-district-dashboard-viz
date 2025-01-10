@@ -60,7 +60,7 @@
     "mapbox-gl": "^3.9.2",
     "mobx": "^6.13.5",
     "nanoid": "^5.0.9",
-    "papaparse": "^5.4.1",
+    "papaparse": "^5.5.0",
     "prettier": "^3.4.2",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
