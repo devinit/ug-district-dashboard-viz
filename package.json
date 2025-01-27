@@ -65,7 +65,7 @@
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-select": "^5.9.0",
+    "react-select": "^5.10.0",
     "reactjs-popup": "^2.0.6",
     "swr": "^2.3.0",
     "uuid": "^11.0.5"
