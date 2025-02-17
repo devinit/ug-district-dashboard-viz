@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, Global, jsx } from '@emotion/react';
-import mapbox from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
 import PropTypes from 'prop-types';
 import { Children, cloneElement, isValidElement, useEffect, useRef, useState } from 'react';
 import { BaseMapLayer } from './BaseMapLayer';
@@ -10,23 +10,23 @@ const defaultStyles = {
   position: 'absolute',
   top: 0,
   bottom: 0,
-  background: '#F3F3F3', // spotlights default
+  background: '#F3F3F3' // spotlights default
 };
 
 const BaseMap = (props) => {
-  mapbox.accessToken = props.accessToken;
+  mapboxgl.accessToken = props.accessToken;
   const mapNode = useRef(null);
   const [baseMap, setBaseMap] = useState(undefined);
 
   useEffect(() => {
     if (mapNode && mapNode.current) {
-      const map = new mapbox.Map({
+      const map = new mapboxgl.Map({
         container: mapNode.current,
-        ...props.options,
+        ...props.options
       });
 
       if (props.showNavigationControls) {
-        map.addControl(new mapbox.NavigationControl());
+        map.addControl(new mapboxgl.NavigationControl());
       }
 
       map.on('load', (event) => {
@@ -40,7 +40,7 @@ const BaseMap = (props) => {
 
   const renderLayers = () =>
     Children.map(props.children, (child) =>
-      isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null,
+      isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null
     );
 
   return (
@@ -97,10 +97,10 @@ BaseMap.defaultProps = {
   style: defaultStyles,
   options: {
     minZoom: 6,
-    zoom: 6.1,
+    zoom: 6.1
   },
   showNavigationControls: true,
-  background: 'inherit',
+  background: 'inherit'
 };
 
 BaseMap.propTypes = {
@@ -110,7 +110,7 @@ BaseMap.propTypes = {
   showNavigationControls: PropTypes.bool,
   onLoad: PropTypes.func,
   options: PropTypes.object,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 // eslint-disable-next-line import/prefer-default-export
