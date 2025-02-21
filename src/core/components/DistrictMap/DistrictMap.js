@@ -132,14 +132,13 @@ const DistrictMap = (props) => {
   function onLoad(_map) {
     setLoading(false);
     setMap(_map);
-    // This class may change in subsequent versions of mapbox-gl. There's probably a better way to handle click event on
-    // the zoom out button
+    // There's probably a better way to handle click event on the zoom out button
     document.querySelector('.mapboxgl-ctrl-zoom-out').addEventListener('click', () => {
       setTimeout(() => {
         const currentZoom = _map.getZoom();
         if (currentZoom < 10) {
           // Only center if zoomed out below level 10
-          _map.flyTo({ center: [32.86415441783307, 0.9460935176075392], duration: 3000 });
+          _map.flyTo({ center: props.location.coordinates, duration: 3000 });
         }
       }, 500);
     });
