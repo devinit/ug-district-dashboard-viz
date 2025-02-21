@@ -85,6 +85,13 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
     map.setLayoutProperty('points', 'icon-size', 0.2);
   }, [map, location]);
 
+  const onZoomend = useCallback(() => {
+    const currentZoom = map.getZoom();
+    if (currentZoom < 10) {
+      map.flyTo({ center: location.coordinates, duration: 3000 });
+    }
+  }, [map, location]);
+
   useEffect(() => {
     if (map) {
       if (map.getLayer('clusters')) {
@@ -177,12 +184,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
           // description HTML from its properties.
           map.on('click', 'unclustered-point', onMarkerClick);
 
-          map.on('zoomend', () => {
-            const currentZoom = map.getZoom();
-            if (currentZoom < 10) {
-              map.flyTo({ center: location.coordinates, duration: 3000 });
-            }
-          });
+          map.on('zoomend', onZoomend);
 
           map.getSource('points').setData(locationData);
         });
