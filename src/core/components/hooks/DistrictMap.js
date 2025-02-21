@@ -177,6 +177,13 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
           // description HTML from its properties.
           map.on('click', 'unclustered-point', onMarkerClick);
 
+          map.on('zoomend', () => {
+            const currentZoom = map.getZoom();
+            if (currentZoom < 10) {
+              map.flyTo({ center: location.coordinates, duration: 3000 });
+            }
+          });
+
           map.getSource('points').setData(locationData);
         });
       }

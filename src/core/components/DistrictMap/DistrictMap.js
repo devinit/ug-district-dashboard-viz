@@ -132,16 +132,6 @@ const DistrictMap = (props) => {
   function onLoad(_map) {
     setLoading(false);
     setMap(_map);
-    // There's probably a better way to handle click event on the zoom out button
-    document.querySelector('.mapboxgl-ctrl-zoom-out').addEventListener('click', () => {
-      setTimeout(() => {
-        const currentZoom = _map.getZoom();
-        if (currentZoom < 10) {
-          // Only center if zoomed out below level 10
-          _map.flyTo({ center: props.location.coordinates, duration: 3000 });
-        }
-      }, 500);
-    });
   }
   const updateFilterOptions = (options, merge = true) => {
     const { topic, indicator, year } = getRawFilterOptions(props.configs.data, { ...filterOptions, ...options });
