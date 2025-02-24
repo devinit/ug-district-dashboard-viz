@@ -14,9 +14,19 @@ You must also ensure that your node.js/npm directory is on PATH.
 
 ### Dev
 
+Install [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) node manager and node 16. [nwb](https://github.com/insin/nwb/tree/master) is deprecated and depends on this version. After installing `nvm`
+
+        nvm install 16
+
+Set node 16 as active version
+
+        nvm use 16
+
+Start the dev environment
+
         npm start
 
-This starts the dev environment, compiling the javascript and css. Changes to JS & CSS files trigger a page refresh in the browser
+This compiles javascript and css. Changes to JS & CSS files trigger a page refresh in the browser
 
 ### Build
 
