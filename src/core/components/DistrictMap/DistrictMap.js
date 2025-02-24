@@ -24,7 +24,7 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
   function onAddHighlightLayer(map, layerID) {
     onAddLayer(map, layerID, location, {
       ...layerConfig,
-      nameProperty: layerConfig.districtNameProperty // since we want to highlight the district at this point
+      nameProperty: layerConfig.districtNameProperty, // since we want to highlight the district at this point
     });
   }
 
@@ -44,13 +44,13 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
             property: layerConfig.nameProperty,
             type: 'categorical',
             default: '#D1CBCF',
-            stops
+            stops,
           },
           'fill-opacity': 0.9,
-          'fill-outline-color': '#ffffff'
+          'fill-outline-color': '#ffffff',
         }}
         onAdd={onAddHighlightLayer}
-      />
+      />,
     );
   }
 
@@ -65,10 +65,10 @@ const renderLayers = (loading, data, location, layerConfig, mapConfig) => {
       paint={{
         'fill-color': '#D1CBCF',
         'fill-opacity': 0.75,
-        'fill-outline-color': '#ffffff'
+        'fill-outline-color': '#ffffff',
       }}
       onAdd={onAddHighlightLayer}
-    />
+    />,
   );
 };
 
@@ -88,7 +88,7 @@ function mapReducer(state, action) {
         filterOptions: action.merge ? { ...state.filterOptions, ...action.filterOptions } : action.filterOptions,
         activeTopic: action.activeTopic,
         activeIndicator: action.activeIndicator,
-        activeYear: action.activeYear
+        activeYear: action.activeYear,
       };
     case 'SET_DATA':
       return { ...state, data: action.data };
@@ -99,7 +99,7 @@ function mapReducer(state, action) {
   }
 }
 const initialState = {
-  filterOptions: defaultFilterOptions
+  filterOptions: defaultFilterOptions,
 };
 
 const DistrictMap = (props) => {
@@ -110,11 +110,11 @@ const DistrictMap = (props) => {
     data,
     map: mapInstance,
     setMap,
-    setOptions
+    setOptions,
   } = useMap(
     props.location,
     props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
-    props.baseAPIUrl
+    props.baseAPIUrl,
   );
   useEffect(() => {
     // set map options using their caption values
@@ -124,7 +124,7 @@ const DistrictMap = (props) => {
         dataPrefix: `${activeIndicator.name}: `,
         dataSuffix: year && ` in ${year}`,
         indicator: activeIndicator,
-        year
+        year,
       });
     }
   }, [activeIndicator, filterOptions.year, mapInstance]);
@@ -141,7 +141,7 @@ const DistrictMap = (props) => {
       filterOptions: options,
       activeTopic: topic,
       activeIndicator: indicator,
-      activeYear: year
+      activeYear: year,
     });
   };
   const activeTopicOptions = getTopicById(props.configs.data, filterOptions.topic);
@@ -162,7 +162,7 @@ const DistrictMap = (props) => {
     updateFilterOptions,
     activeTopic,
     activeIndicator,
-    activeYear
+    activeYear,
   }));
 
   return (
@@ -183,7 +183,7 @@ const DistrictMap = (props) => {
               zoom: coreLayer.zoom || 6.1,
               maxZoom: coreLayer.maxZoom || 14,
               scrollZoom: false,
-              ...props.configs.options
+              ...props.configs.options,
             }}
             style={{ width: '100%', background: '#ffffff' }}
             onLoad={onLoad}
@@ -193,7 +193,7 @@ const DistrictMap = (props) => {
               data,
               props.location,
               props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
-              activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {}
+              activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {},
             )}
           </BaseMap>
         </div>
@@ -203,7 +203,7 @@ const DistrictMap = (props) => {
 };
 
 DistrictMap.defaultProps = {
-  data: []
+  data: [],
 };
 
 DistrictMap.propTypes = {
@@ -213,9 +213,9 @@ DistrictMap.propTypes = {
   location: PropTypes.shape({
     name: PropTypes.string,
     fullName: PropTypes.string,
-    coordinates: PropTypes.array
+    coordinates: PropTypes.array,
   }),
-  baseAPIUrl: PropTypes.string
+  baseAPIUrl: PropTypes.string,
 };
 
 export default DistrictMap;

@@ -10,7 +10,7 @@ const defaultStyles = {
   position: 'absolute',
   top: 0,
   bottom: 0,
-  background: '#F3F3F3' // spotlights default
+  background: '#F3F3F3', // spotlights default
 };
 
 const BaseMap = (props) => {
@@ -22,7 +22,7 @@ const BaseMap = (props) => {
     if (mapNode && mapNode.current) {
       const map = new mapboxgl.Map({
         container: mapNode.current,
-        ...props.options
+        ...props.options,
       });
 
       if (props.showNavigationControls) {
@@ -40,7 +40,7 @@ const BaseMap = (props) => {
 
   const renderLayers = () =>
     Children.map(props.children, (child) =>
-      isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null
+      isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null,
     );
 
   return (
@@ -97,10 +97,10 @@ BaseMap.defaultProps = {
   style: defaultStyles,
   options: {
     minZoom: 6,
-    zoom: 6.1
+    zoom: 6.1,
   },
   showNavigationControls: true,
-  background: 'inherit'
+  background: 'inherit',
 };
 
 BaseMap.propTypes = {
@@ -110,7 +110,7 @@ BaseMap.propTypes = {
   showNavigationControls: PropTypes.bool,
   onLoad: PropTypes.func,
   options: PropTypes.object,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 // eslint-disable-next-line import/prefer-default-export

@@ -13,7 +13,7 @@ const markerPopup = new Popup({ offset: 5 });
 
 const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
   const [map, setMap] = useState();
-  const [options, setOptions] = useState(defaultOptions); // Popup options
+  const [options, setOptions] = useState(defaultOptions);
   const [data, setData] = useState([]);
   const [locationData, setLocationData] = useState();
   const [level, setLevel] = useState('');
@@ -24,7 +24,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
       canvas.style.cursor = 'pointer';
       showPopup(popup, map, event, { ...layer, data, ...options });
     },
-    [map, data, options]
+    [map, data, options],
   );
 
   const onBlur = useCallback(() => {
@@ -44,11 +44,11 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
           ['get', 'name'],
           e.features[0].properties.name,
           0.4,
-          0.2
+          0.2,
         ]);
       }
     },
-    [map, locationData]
+    [map, locationData],
   );
 
   const onMarkerClick = useCallback((e) => {
@@ -74,7 +74,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
         <p>Ownership: ${ownership}</p>
         <p>Parish: ${parish || 'No parish data'}</p>
       </div>
-    `
+    `,
       )
       .addTo(map);
   });
@@ -114,7 +114,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               generateId: true,
               cluster: true,
               clusterMaxZoom: 11,
-              clusterRadius: 50
+              clusterRadius: 50,
             });
 
           if (!map.getLayer('clusters')) {
@@ -125,8 +125,8 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               filter: ['has', 'point_count'],
               paint: {
                 'circle-color': ['step', ['get', 'point_count'], '#51bbd6', 100, '#f1f075', 750, '#f28cb1'],
-                'circle-radius': ['step', ['get', 'point_count'], 20, 100, 30, 750, 40]
-              }
+                'circle-radius': ['step', ['get', 'point_count'], 20, 100, 30, 750, 40],
+              },
             });
           }
 
@@ -139,8 +139,8 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               layout: {
                 'text-field': ['get', 'point_count_abbreviated'],
                 'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-                'text-size': 12
-              }
+                'text-size': 12,
+              },
             });
           }
 
@@ -151,29 +151,29 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               source: 'points',
               filter: ['!', ['has', 'point_count']],
               paint: {
-                'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ffffff']
+                'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ffffff'],
               },
               layout: {
                 'icon-image': 'custom-marker',
                 'icon-anchor': 'bottom',
                 'icon-size': 0.3,
-                'icon-allow-overlap': true
+                'icon-allow-overlap': true,
               },
-              minzoom: 8.5
+              minzoom: 8.5,
             });
           }
 
           // inspect a cluster on click
           map.on('click', 'clusters', (e) => {
             const features = map.queryRenderedFeatures(e.point, {
-              layers: ['clusters']
+              layers: ['clusters'],
             });
             const clusterId = features[0].properties.cluster_id;
             map.getSource('points').getClusterExpansionZoom(clusterId, (err, zoom) => {
               if (err) return;
               map.easeTo({
                 center: features[0].geometry.coordinates,
-                zoom
+                zoom,
               });
             });
           });
@@ -232,8 +232,8 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
           schoolLevel(options.indicator.id),
           options.indicator.schoolLocationUrl,
           options.indicator.schoolLocationdataID,
-          baseAPIUrl
-        )
+          baseAPIUrl,
+        ),
       );
       fetchIndicatorData(options.indicator.url, options.indicator.dataID);
     }
