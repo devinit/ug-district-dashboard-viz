@@ -16,6 +16,7 @@ const renderViz = (className) => {
             window.DIState.addListener(() => {
               dichart.showLoading();
               const { map, location, baseAPIUrl } = window.DIState.getState;
+
               if (map) {
                 root.render(
                   <DistrictMap configs={map} location={location} filters={map.filters} baseAPIUrl={baseAPIUrl} />,
