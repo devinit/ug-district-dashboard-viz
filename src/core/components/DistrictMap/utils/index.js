@@ -17,7 +17,7 @@ export const coreLayer = {
   nameProperty: 'Subcounty', // 'ADM1_EN',
   codeProperty: 'scode2019',
   // eslint-disable-next-line no-unused-vars
-  formatter: (value, target = 'map') => value.toUpperCase()
+  formatter: (value, target = 'map') => value.toUpperCase(),
 };
 
 export const onAddLayer = (map, layerID, location, layerConfig) => {
@@ -25,7 +25,7 @@ export const onAddLayer = (map, layerID, location, layerConfig) => {
     map.setFilter(layerID, [
       '==',
       layerConfig.nameProperty,
-      getProperLocationName(location.name, layerConfig.formatter)
+      getProperLocationName(location.name, layerConfig.formatter),
     ]);
     setTimeout(() => {
       if (location.coordinates) {
@@ -66,7 +66,7 @@ export const aggregateValues = (data, aggregate) => {
 
     return {
       name: key,
-      value: aggregate === 'sum' ? sum : avg
+      value: aggregate === 'sum' ? sum : avg,
     };
   });
 };
@@ -104,13 +104,13 @@ const KAYUNGA_EXCLUDE_LIST = [
   'King Jesus Nursery And Primary School',
   'Nile View Primary School',
   'Imam Hassan Primary School Maligita',
-  'Bright Future Nursery And Primary School Kangulumira'
+  'Bright Future Nursery And Primary School Kangulumira',
 ];
 
 export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
-    features: []
+    features: [],
   };
   const dataVariable = dataUrl || (dataID && baseAPIUrl);
   if (!schoolSpecs || !dataVariable) return finalGeoJSON;
@@ -121,7 +121,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
         const filteredData = data.filter((row) =>
           district === 'Masindi'
             ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
-            : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name)
+            : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
         );
         if (schoolSpecs.ownership === 'all') {
           filteredData
@@ -135,14 +135,14 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                     type: 'Feature',
                     geometry: {
                       type: 'Point',
-                      coordinates: [itemCoordinates[1], itemCoordinates[0]]
+                      coordinates: [itemCoordinates[1], itemCoordinates[0]],
                     },
                     properties: {
                       level: item.level,
                       ownership: item.ownership,
                       name: item.school_name,
-                      parish: item.parish
-                    }
+                      parish: item.parish,
+                    },
                   });
                 }
               }
@@ -159,14 +159,14 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                     type: 'Feature',
                     geometry: {
                       type: 'Point',
-                      coordinates: [itemCoordinates[1], itemCoordinates[0]]
+                      coordinates: [itemCoordinates[1], itemCoordinates[0]],
                     },
                     properties: {
                       level: item.level,
                       ownership: item.ownership,
                       name: item.school_name,
-                      parish: item.parish
-                    }
+                      parish: item.parish,
+                    },
                   });
                 }
               }
