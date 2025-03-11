@@ -26,7 +26,6 @@ const renderViz = (className) => {
               }
 
               dichart.hideLoading();
-              chartNode.parentElement.classList.remove('chart-container--loading');
             });
           } else {
             window.console.log('State is not defined');
