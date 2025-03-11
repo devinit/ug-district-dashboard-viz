@@ -66,12 +66,12 @@ const renderSelectors = (className, options = { makeSticky: false }) => {
             rootElement.render(
               <Selectors configs={selectors} onChange={options.onChange || onChange} baseAPIUrl={baseAPIUrl} />,
             );
-            dichart.hideLoading();
           });
         } else {
           window.console.log('State is not defined');
         }
 
+        dichart.hideLoading();
         selectorNode.parentElement.classList.add('auto-height');
 
         resolve(rootElement);
