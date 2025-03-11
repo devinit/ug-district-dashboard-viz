@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, Global, jsx } from '@emotion/react';
-import mapbox from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 import PropTypes from 'prop-types';
 import { Children, cloneElement, isValidElement, useEffect, useRef, useState } from 'react';
 import { BaseMapLayer } from './BaseMapLayer';
@@ -14,19 +14,19 @@ const defaultStyles = {
 };
 
 const BaseMap = (props) => {
-  mapbox.accessToken = props.accessToken;
+  mapboxgl.accessToken = props.accessToken;
   const mapNode = useRef(null);
   const [baseMap, setBaseMap] = useState(undefined);
 
   useEffect(() => {
     if (mapNode && mapNode.current) {
-      const map = new mapbox.Map({
+      const map = new mapboxgl.Map({
         container: mapNode.current,
         ...props.options,
       });
 
       if (props.showNavigationControls) {
-        map.addControl(new mapbox.NavigationControl());
+        map.addControl(new mapboxgl.NavigationControl());
       }
 
       map.on('load', (event) => {
