@@ -22,9 +22,44 @@ module.exports = {
         d3: 'd3',
       },
       devtool: process.env.NODE_ENV === 'production' ? 'none' : 'source-map',
+      module: {
+        rules: [
+          {
+            test: /\.m?js$/, // Handle both .js and .mjs files
+            exclude: /node_modules\/(?!uuid|swr|mapbox-gl|color-convert)/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env', '@babel/preset-react'],
+                plugins: [
+                  '@babel/plugin-transform-runtime',
+                  '@babel/plugin-proposal-class-properties',
+                  '@babel/plugin-proposal-optional-chaining',
+                  '@babel/plugin-proposal-nullish-coalescing-operator',
+                  '@babel/plugin-proposal-logical-assignment-operators',
+                  '@babel/plugin-proposal-numeric-separator',
+                ],
+              },
+            },
+          },
+          {
+            test: /\.mjs$/, // Ensure Babel handles .mjs files
+            include: /node_modules/,
+            type: 'javascript/auto', // This tells Webpack to process `.mjs` files correctly
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env', '@babel/preset-react'],
+                plugins: ['@babel/plugin-transform-runtime'],
+              },
+            },
+          },
+        ],
+      },
     },
   },
   babel: {
-    presets: ['@babel/preset-react'],
+    presets: ['@babel/preset-env', '@babel/preset-react'],
+    plugins: ['@babel/plugin-transform-runtime'],
   },
 };
