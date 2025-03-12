@@ -48,7 +48,7 @@
     "@turf/center": "^7.2.0",
     "@turf/center-of-mass": "^7.2.0",
     "@turf/helpers": "^7.1.0",
-    "axios": "^1.8.1",
+    "axios": "^1.8.3",
     "classnames": "^2.5.1",
     "color": "^5.0.0",
     "core-js": "^3.41.0",
