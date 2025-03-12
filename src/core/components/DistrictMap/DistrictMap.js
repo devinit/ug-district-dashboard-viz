@@ -179,9 +179,9 @@ const DistrictMap = (props) => {
             options={{
               style: coreLayer.style,
               center: coreLayer.center,
-              minZoom: coreLayer.minZoom || 6,
+              minZoom: coreLayer.minZoom || 8.5,
               zoom: coreLayer.zoom || 6.1,
-              maxZoom: coreLayer.maxZoom || 7,
+              maxZoom: coreLayer.maxZoom || 14,
               scrollZoom: false,
               ...props.configs.options,
             }}

@@ -85,10 +85,23 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
     map.setLayoutProperty('points', 'icon-size', 0.2);
   }, [map, location]);
 
+  const onZoomend = useCallback(() => {
+    const currentZoom = map.getZoom();
+    if (currentZoom < 10) {
+      map.flyTo({ center: location.coordinates, duration: 3000 });
+    }
+  }, [map, location]);
+
   useEffect(() => {
     if (map) {
-      if (map.getLayer('points')) {
-        map.removeLayer('points');
+      if (map.getLayer('clusters')) {
+        map.removeLayer('clusters');
+      }
+      if (map.getLayer('cluster-count')) {
+        map.removeLayer('cluster-count');
+      }
+      if (map.getLayer('unclustered-point')) {
+        map.removeLayer('unclustered-point');
       }
       if (locationData) {
         map.loadImage('https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png', (error, image) => {
@@ -99,24 +112,80 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               type: 'geojson',
               data: locationData,
               generateId: true,
+              cluster: true,
+              clusterMaxZoom: 11,
+              clusterRadius: 50,
             });
 
-          if (!map.getLayer('points'))
+          if (!map.getLayer('clusters')) {
             map.addLayer({
-              id: 'points',
+              id: 'clusters',
+              type: 'circle',
+              source: 'points',
+              filter: ['has', 'point_count'],
+              paint: {
+                'circle-color': ['step', ['get', 'point_count'], '#51bbd6', 100, '#f1f075', 750, '#f28cb1'],
+                'circle-radius': ['step', ['get', 'point_count'], 20, 100, 30, 750, 40],
+              },
+            });
+          }
+
+          if (!map.getLayer('cluster-count')) {
+            map.addLayer({
+              id: 'cluster-count',
               type: 'symbol',
               source: 'points',
+              filter: ['has', 'point_count'],
               layout: {
-                'icon-image': 'custom-marker',
-                'icon-anchor': 'bottom',
-                'icon-size': 0.2,
-                'icon-allow-overlap': true,
+                'text-field': ['get', 'point_count_abbreviated'],
+                'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+                'text-size': 12,
               },
+            });
+          }
+
+          if (!map.getLayer('unclustered-point')) {
+            map.addLayer({
+              id: 'unclustered-point',
+              type: 'symbol',
+              source: 'points',
+              filter: ['!', ['has', 'point_count']],
               paint: {
                 'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ffffff'],
               },
-              minzoom: 8,
+              layout: {
+                'icon-image': 'custom-marker',
+                'icon-anchor': 'bottom',
+                'icon-size': 0.3,
+                'icon-allow-overlap': true,
+              },
+              minzoom: 8.5,
             });
+          }
+
+          // inspect a cluster on click
+          map.on('click', 'clusters', (e) => {
+            const features = map.queryRenderedFeatures(e.point, {
+              layers: ['clusters'],
+            });
+            const clusterId = features[0].properties.cluster_id;
+            map.getSource('points').getClusterExpansionZoom(clusterId, (err, zoom) => {
+              if (err) return;
+              map.easeTo({
+                center: features[0].geometry.coordinates,
+                zoom,
+              });
+            });
+          });
+
+          // When a click event occurs on a feature in
+          // the unclustered-point layer, open a popup at
+          // the location of the feature, with
+          // description HTML from its properties.
+          map.on('click', 'unclustered-point', onMarkerClick);
+
+          map.on('zoomend', onZoomend);
+
           map.getSource('points').setData(locationData);
         });
       }
