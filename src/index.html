@@ -286,11 +286,32 @@
       </section>
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Crop production</h3>
+          <h3 class="type-l type-l--trailer">Score card</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
               <div class="dicharts--crop-production"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Crop production</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="score-card-container"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
               <div class="chart-loading">
@@ -1706,6 +1727,36 @@
                     },
                     initialHeader: 'Crop'
                 },
+            },
+            ],
+            // Use the below for both regular tables (i.e tables only without charts) and Score card
+            tables: [{
+              target: 'education',
+              className: 'score-card-container',
+              dataID: 14482,
+              yearRange: [2016, 2023],
+              excludeYears: [2017, 2019],
+              rows: ['Pupil to latrine stance ratio', 'Pupil to desk ratio', 'Pupil to teacher ratio', 'Pupil to textbook ratio', 'Primary school availability per parish', 'Secondary school availability per subcounty', ],
+              initialHeader: 'Indicator',
+              mapping: {
+                  rows: 'indicator',
+                  year: 'year',
+                  value: 'value',
+              },
+              // tableType and thresholds are needed only for scorecard tables
+              /**
+              Endeavour to add <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devinit/ug-district-dashboard-viz@0.8.7-beta.2/assets/styles.css" />
+              in the header section for the corresponding dashboard to pick correct styles for scorecard
+              **/
+              tableType: 'scoreCard',
+              thresholds: {
+                  'Pupil to latrine stance ratio': 40,
+                  'Pupil to desk ratio': 3,
+                  'Pupil to teacher ratio': 53,
+                  'Pupil to textbook ratio': 1,
+                  'Primary school availability per parish': 71,
+                  'Secondary school availability per subcounty': 13,
+              },
             },
             ],
             map: {
