@@ -32,5 +32,12 @@ export const combineMerge = (target, source, options) => {
   return destination;
 };
 
+export const normalizeWhitespace = (str) =>
+  // Trim leading/trailing whitespace and replace multiple spaces with a single space
+  str.trim().replace(/\s+/g, ' ');
+
+export const compareStringsIgnoreCase = (str1, str2) =>
+  normalizeWhitespace(str1).toLowerCase() === normalizeWhitespace(str2).toLowerCase();
+
 export * from './chart';
 export * from './constants';
