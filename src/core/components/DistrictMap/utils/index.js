@@ -2,6 +2,13 @@ import { groupBy } from 'lodash';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
 import { filterData } from '../../../utils';
 import fetchData, { fetchDataFromAPI } from '../../../../utils/data';
+import {
+  MASINDI_PRIMARY_ENROLLMENT_URL,
+  MASINDI_SECONDARY_ENROLLMENT_URL,
+  KAYUNGA_PRIMARY_ENROLLMENT_URL,
+  KAYUNGA_SECONDARY_ENROLLMENT_URL,
+} from '../../../../utils/constants';
+import { compareStringsIgnoreCase } from '../../../../utils';
 
 export const COLOURED_LAYER = 'highlight';
 export const coreLayer = {
@@ -107,6 +114,34 @@ const KAYUNGA_EXCLUDE_LIST = [
   'Bright Future Nursery And Primary School Kangulumira',
 ];
 
+export function getSchoolEnrollmentUrl(district, level) {
+  if (district === 'Masindi') {
+    return level === 'Primary' ? MASINDI_PRIMARY_ENROLLMENT_URL : MASINDI_SECONDARY_ENROLLMENT_URL;
+  }
+
+  return level === 'Primary' ? KAYUNGA_PRIMARY_ENROLLMENT_URL : KAYUNGA_SECONDARY_ENROLLMENT_URL;
+}
+
+function parseEnrollmentData(enrollmentData, feature) {
+  const boysEntry = enrollmentData.find(
+    (item) =>
+      item.gender === 'Boys' &&
+      item.year === feature.year &&
+      compareStringsIgnoreCase(item.school_name, feature.school_name),
+  );
+  const girlsEntry = enrollmentData.find(
+    (item) =>
+      item.gender === 'Girls' &&
+      item.year === feature.year &&
+      compareStringsIgnoreCase(item.school_name, feature.school_name),
+  );
+
+  return {
+    boys: parseInt(boysEntry?.subtotal, 10) || 'No Data',
+    girls: parseInt(girlsEntry?.subtotal, 10) || 'No Data',
+  };
+}
+
 export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
@@ -116,14 +151,23 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
   if (!schoolSpecs || !dataVariable) return finalGeoJSON;
   if (dataUrl || (dataID && baseAPIUrl)) {
     const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
-    dataFetchPromise
-      .then((data) => {
+    const schoolEnrollmentUrl = getSchoolEnrollmentUrl(district, schoolSpecs.level);
+    const fetchSchoolEnrollmentPromise = fetchData(schoolEnrollmentUrl);
+
+    Promise.all([dataFetchPromise, fetchSchoolEnrollmentPromise])
+      .then(([data, schoolEnrollment]) => {
         const filteredData = data.filter((row) =>
           district === 'Masindi'
             ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
             : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
         );
         if (schoolSpecs.ownership === 'all') {
+          const excludeEnrollmentData = schoolEnrollment.filter((row) =>
+            district === 'Masindi'
+              ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
+              : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
+          );
+
           filteredData
             .filter((d) => d.level === schoolSpecs.level)
             .forEach((item) => {
@@ -131,6 +175,8 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                 const itemCoordinates = processCoordinates(item.gps_coordinates);
 
                 if (itemCoordinates) {
+                  const enrollment = parseEnrollmentData(excludeEnrollmentData, item);
+
                   finalGeoJSON.features.push({
                     type: 'Feature',
                     geometry: {
@@ -142,6 +188,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                       ownership: item.ownership,
                       name: item.school_name,
                       parish: item.parish,
+                      enrollment,
                     },
                   });
                 }
@@ -155,6 +202,8 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                 const itemCoordinates = processCoordinates(item.gps_coordinates);
 
                 if (itemCoordinates) {
+                  const filteredEnrollment = schoolEnrollment.filter((d) => d.school_name === item.school_name);
+
                   finalGeoJSON.features.push({
                     type: 'Feature',
                     geometry: {
@@ -166,6 +215,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                       ownership: item.ownership,
                       name: item.school_name,
                       parish: item.parish,
+                      enrollment: parseEnrollmentData(filteredEnrollment, item),
                     },
                   });
                 }
