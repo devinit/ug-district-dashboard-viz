@@ -35,7 +35,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
 
   const showMarkerPopup = (e) => {
     const coordinates = e.features[0].geometry.coordinates.slice();
-    const { name, parish, ownership } = e.features[0].properties;
+    const { name, enrollment } = e.features[0].properties;
 
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
@@ -43,6 +43,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
+    const enrollmentData = JSON.parse(enrollment);
 
     markerPopup
       .setLngLat(coordinates)
@@ -52,9 +53,9 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
         <div style="font-size:1.6rem;padding-bottom:5px;font-weight:700;text-align:center;text-transform:capitalize;">
           ${name}
         </div>
-        <p>Coordinates: ${coordinates}</p>
-        <p>Ownership: ${ownership}</p>
-        <p>Parish: ${parish || 'No parish data'}</p>
+        <p>Number of boys: ${enrollmentData.boys}</p>
+        <p>Number of girls: ${enrollmentData.girls}</p>
+        <p>Total pupils: ${enrollmentData.boys !== 'No Data' && enrollmentData.girls !== 'No Data' ? parseInt(enrollmentData.boys, 10) + parseInt(enrollmentData.girls, 10) : 'No Data'}</p>
       </div>
     `,
       )
