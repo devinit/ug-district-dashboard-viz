@@ -1,13 +1,8 @@
 import { groupBy } from 'lodash';
+import { toJS } from 'mobx';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
 import { filterData } from '../../../utils';
 import fetchData, { fetchDataFromAPI } from '../../../../utils/data';
-import {
-  MASINDI_PRIMARY_ENROLLMENT_URL,
-  MASINDI_SECONDARY_ENROLLMENT_URL,
-  KAYUNGA_PRIMARY_ENROLLMENT_URL,
-  KAYUNGA_SECONDARY_ENROLLMENT_URL,
-} from '../../../../utils/constants';
 import { compareStringsIgnoreCase } from '../../../../utils';
 
 export const COLOURED_LAYER = 'highlight';
@@ -114,35 +109,31 @@ const KAYUNGA_EXCLUDE_LIST = [
   'Bright Future Nursery And Primary School Kangulumira',
 ];
 
-export function getSchoolEnrollmentUrl(district, level) {
-  if (district === 'Masindi') {
-    return level === 'Primary' ? MASINDI_PRIMARY_ENROLLMENT_URL : MASINDI_SECONDARY_ENROLLMENT_URL;
-  }
-
-  return level === 'Primary' ? KAYUNGA_PRIMARY_ENROLLMENT_URL : KAYUNGA_SECONDARY_ENROLLMENT_URL;
+export function getSchoolEnrollmentUrl(enrollmentConfig, level) {
+  return enrollmentConfig.find((item) => item.id.includes(level.toLowerCase()));
 }
 
-function parseEnrollmentData(enrollmentData, feature) {
+function parseEnrollmentData(enrollmentData, feature, enrollmentConfig) {
   const boysEntry = enrollmentData.find(
     (item) =>
-      item.gender === 'Boys' &&
-      item.year === feature.year &&
+      item[enrollmentConfig.mapping.gender] === 'Boys' &&
+      item[enrollmentConfig.mapping.year] === feature.year &&
       compareStringsIgnoreCase(item.school_name, feature.school_name),
   );
   const girlsEntry = enrollmentData.find(
     (item) =>
-      item.gender === 'Girls' &&
-      item.year === feature.year &&
+      item[enrollmentConfig.mapping.gender] === 'Girls' &&
+      item[enrollmentConfig.mapping.year] === feature.year &&
       compareStringsIgnoreCase(item.school_name, feature.school_name),
   );
 
   return {
-    boys: parseInt(boysEntry?.subtotal, 10) || 'No Data',
-    girls: parseInt(girlsEntry?.subtotal, 10) || 'No Data',
+    boys: (boysEntry && parseInt(boysEntry[enrollmentConfig.mapping.total], 10)) || 'No Data',
+    girls: (girlsEntry && parseInt(girlsEntry[enrollmentConfig.mapping.total], 10)) || 'No Data',
   };
 }
 
-export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl) => {
+export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, additionalConfigData) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
@@ -150,9 +141,10 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
   const dataVariable = dataUrl || (dataID && baseAPIUrl);
   if (!schoolSpecs || !dataVariable) return finalGeoJSON;
   if (dataUrl || (dataID && baseAPIUrl)) {
+    const enrollmentConfig = toJS(additionalConfigData);
     const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
-    const schoolEnrollmentUrl = getSchoolEnrollmentUrl(district, schoolSpecs.level);
-    const fetchSchoolEnrollmentPromise = fetchData(schoolEnrollmentUrl);
+    const schoolEnrollmentConfig = getSchoolEnrollmentUrl(enrollmentConfig, schoolSpecs.level);
+    const fetchSchoolEnrollmentPromise = fetchData(schoolEnrollmentConfig.url);
 
     Promise.all([dataFetchPromise, fetchSchoolEnrollmentPromise])
       .then(([data, schoolEnrollment]) => {
@@ -175,7 +167,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                 const itemCoordinates = processCoordinates(item.gps_coordinates);
 
                 if (itemCoordinates) {
-                  const enrollment = parseEnrollmentData(excludeEnrollmentData, item);
+                  const enrollment = parseEnrollmentData(excludeEnrollmentData, item, schoolEnrollmentConfig);
 
                   finalGeoJSON.features.push({
                     type: 'Feature',
@@ -215,7 +207,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                       ownership: item.ownership,
                       name: item.school_name,
                       parish: item.parish,
-                      enrollment: parseEnrollmentData(filteredEnrollment, item),
+                      enrollment: parseEnrollmentData(filteredEnrollment, item, schoolEnrollmentConfig),
                     },
                   });
                 }

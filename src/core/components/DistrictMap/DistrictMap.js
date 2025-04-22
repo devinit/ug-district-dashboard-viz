@@ -113,7 +113,9 @@ const DistrictMap = (props) => {
     setOptions,
   } = useMap(
     props.location,
-    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
+    props.configs.formatter
+      ? { ...coreLayer, formatter: props.configs.formatter, additionalData: props.configs.additionalData }
+      : { ...coreLayer, additionalData: props.configs.additionalData },
     props.baseAPIUrl,
   );
   useEffect(() => {

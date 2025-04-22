@@ -236,6 +236,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
           options.indicator.schoolLocationUrl,
           options.indicator.schoolLocationdataID,
           baseAPIUrl,
+          layer.additionalData,
         ),
       );
       fetchIndicatorData(options.indicator.url, options.indicator.dataID);
