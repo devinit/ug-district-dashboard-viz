@@ -150,7 +150,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               source: 'points',
               filter: ['!', ['has', 'point_count']],
               paint: {
-                'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ffffff'],
+                'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ff9c1a'],
               },
               layout: {
                 'icon-image': 'custom-marker',
