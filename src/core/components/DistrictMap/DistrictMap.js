@@ -121,6 +121,7 @@ const DistrictMap = (props) => {
     if (activeIndicator) {
       const { year } = filterOptions;
       setOptions({
+        topic: filterOptions.topic,
         dataPrefix: `${activeIndicator.name}: `,
         dataSuffix: year && ` in ${year}`,
         indicator: activeIndicator,

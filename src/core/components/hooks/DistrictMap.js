@@ -2,7 +2,7 @@ import { Popup } from 'mapbox-gl';
 import { useEffect, useState, useCallback } from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
 import fetchData, { fetchDataFromAPI } from '../../../utils/data';
-import { processData, getSchoolMarkers, schoolLevel } from '../DistrictMap/utils';
+import { processData, getMarkers, schoolLevel } from '../DistrictMap/utils';
 
 const showPopup = (popup, map, event, options) => {
   renderTooltipFromEvent(map, event, { ...options, popup });
@@ -33,27 +33,9 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
     popup.remove();
   }, [map, location]);
 
-  const handleMarkerMove = useCallback(
-    (e) => {
-      e.preventDefault();
-      map.off('mousemove', COLOURED_LAYER, onHover);
-      popup.remove();
-      if (e.features.length) {
-        map.setLayoutProperty('points', 'icon-size', [
-          'match',
-          ['get', 'name'],
-          e.features[0].properties.name,
-          0.4,
-          0.2,
-        ]);
-      }
-    },
-    [map, locationData],
-  );
-
-  const onMarkerClick = useCallback((e) => {
+  const showMarkerPopup = (e) => {
     const coordinates = e.features[0].geometry.coordinates.slice();
-    const { name, parish, ownership } = e.features[0].properties;
+    const { name, markerPopupData } = e.features[0].properties;
 
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
@@ -70,19 +52,36 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
         <div style="font-size:1.6rem;padding-bottom:5px;font-weight:700;text-align:center;text-transform:capitalize;">
           ${name}
         </div>
-        <p>Coordinates: ${coordinates}</p>
-        <p>Ownership: ${ownership}</p>
-        <p>Parish: ${parish || 'No parish data'}</p>
+        ${markerPopupData}
       </div>
     `,
       )
       .addTo(map);
-  });
+  };
+
+  const handleMarkerMove = useCallback(
+    (e) => {
+      e.preventDefault();
+      map.off('mousemove', COLOURED_LAYER, onHover);
+      popup.remove();
+
+      if (e.features.length) {
+        map.setLayoutProperty('unclustered-point', 'icon-size', [
+          'match',
+          ['get', 'name'],
+          e.features[0].properties.name,
+          0.4,
+          0.3,
+        ]);
+      }
+      showMarkerPopup(e);
+    },
+    [map, locationData],
+  );
 
   const handleMarkerLeave = useCallback(() => {
-    map.on('mousemove', COLOURED_LAYER, onHover);
-    popup.remove();
-    map.setLayoutProperty('points', 'icon-size', 0.2);
+    map.setLayoutProperty('unclustered-point', 'icon-size', 0.3);
+    markerPopup.remove();
   }, [map, location]);
 
   const onZoomend = useCallback(() => {
@@ -151,7 +150,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
               source: 'points',
               filter: ['!', ['has', 'point_count']],
               paint: {
-                'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ffffff'],
+                'icon-color': ['match', ['get', 'level'], 'Primary', '#ff9c1a', 'Secondary', '#00b3b3', '#ff9c1a'],
               },
               layout: {
                 'icon-image': 'custom-marker',
@@ -182,7 +181,6 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
           // the unclustered-point layer, open a popup at
           // the location of the feature, with
           // description HTML from its properties.
-          map.on('click', 'unclustered-point', onMarkerClick);
 
           map.on('zoomend', onZoomend);
 
@@ -201,18 +199,20 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
         }
       });
       setZoomByContainerWidth(map, map.getContainer(), layer);
-      // remove any existing listners
-      map.off('mousemove', 'points', handleMarkerMove);
-      map.off('mouseleave', COLOURED_LAYER, onBlur);
-      map.off('mouseover', COLOURED_LAYER, onHover);
-      map.off('click', 'points', onMarkerClick);
-      // add even listeners to show tooltip
 
+      // Remove any existing listners
+      map.off('mousemove', 'unclustered-point', handleMarkerMove);
+      map.off('mouseleave', 'unclustered-point', handleMarkerLeave);
+
+      map.off('mousemove', COLOURED_LAYER, onHover);
+      map.off('mouseleave', COLOURED_LAYER, onBlur);
+
+      // Add event listeners to show tooltip
       map.on('mousemove', COLOURED_LAYER, onHover);
       map.on('mouseleave', COLOURED_LAYER, onBlur);
-      map.on('mousemove', 'points', handleMarkerMove);
-      map.on('mouseleave', 'points', handleMarkerLeave);
-      map.on('click', 'points', onMarkerClick);
+
+      map.on('mousemove', 'unclustered-point', handleMarkerMove);
+      map.on('mouseleave', 'unclustered-point', handleMarkerLeave);
     }
   }, [map, location, options, data]);
 
@@ -226,15 +226,7 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
     };
     if (options.indicator && options.year) {
       setLevel(schoolLevel(options.indicator.id));
-      setLocationData(
-        getSchoolMarkers(
-          location.name,
-          schoolLevel(options.indicator.id),
-          options.indicator.schoolLocationUrl,
-          options.indicator.schoolLocationdataID,
-          baseAPIUrl,
-        ),
-      );
+      setLocationData(getMarkers(location.name, schoolLevel(options.indicator.id), options, baseAPIUrl));
       fetchIndicatorData(options.indicator.url, options.indicator.dataID);
     }
   }, [options.indicator, options.year]);
