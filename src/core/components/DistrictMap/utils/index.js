@@ -133,10 +133,14 @@ function parseEnrollmentData(enrollmentData, feature, mapping) {
       compareStringsIgnoreCase(item.school_name, feature.school_name),
   );
 
-  return {
-    boys: (boysEntry && parseInt(boysEntry[mapping.total], 10)) || 'No Data',
-    girls: (girlsEntry && parseInt(girlsEntry[mapping.total], 10)) || 'No Data',
-  };
+  const boysCount = boysEntry ? parseInt(boysEntry[mapping.total], 10) : 'No Data';
+  const girlsCount = girlsEntry ? parseInt(girlsEntry[mapping.total], 10) : 'No Data';
+
+  return `
+    <p>Number of boys: ${boysCount}</p>
+    <p>Number of girls: ${girlsCount}</p>
+    <p>Total pupils: ${boysCount !== 'No Data' && girlsCount !== 'No Data' ? boysCount + girlsCount : 'No Data'}</p>
+  `;
 }
 
 export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping) => {
@@ -171,7 +175,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                 const itemCoordinates = processCoordinates(item.gps_coordinates);
 
                 if (itemCoordinates) {
-                  const enrollment = parseEnrollmentData(excludeEnrollmentData, item, mapping);
+                  const markerPopupData = parseEnrollmentData(excludeEnrollmentData, item, mapping);
 
                   finalGeoJSON.features.push({
                     type: 'Feature',
@@ -184,7 +188,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                       ownership: item.ownership,
                       name: item.school_name,
                       parish: item.parish,
-                      enrollment,
+                      markerPopupData,
                     },
                   });
                 }
@@ -199,6 +203,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
 
                 if (itemCoordinates) {
                   const filteredEnrollment = schoolEnrollment.filter((d) => d.school_name === item.school_name);
+                  const markerPopupData = parseEnrollmentData(filteredEnrollment, item, mapping);
 
                   finalGeoJSON.features.push({
                     type: 'Feature',
@@ -211,7 +216,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                       ownership: item.ownership,
                       name: item.school_name,
                       parish: item.parish,
-                      enrollment: parseEnrollmentData(filteredEnrollment, item, mapping),
+                      markerPopupData,
                     },
                   });
                 }
@@ -228,6 +233,13 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
 
   return finalGeoJSON;
 };
+
+function getHealthCenterMarkerPopupText(level, ownership) {
+  return `
+    <p>Health Center Level: ${level}</p>
+    <p>Ownership: ${ownership}</p>
+  `;
+}
 
 export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
   const finalGeoJSON = {
@@ -253,8 +265,12 @@ export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
                 },
                 properties: {
                   ownership: item['Facility Ownership'],
-                  name: item['Subcounty/Towncouncil'],
+                  name: item['Name of the health facility/Clinic'],
                   parish: item['Parish Name/ Ward'],
+                  markerPopupData: getHealthCenterMarkerPopupText(
+                    item['Healthy center level'],
+                    item['Facility Ownership'],
+                  ),
                 },
               });
             }
