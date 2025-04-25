@@ -229,7 +229,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
   return finalGeoJSON;
 };
 
-export const getHealthMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, mapping) => {
+export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
@@ -278,9 +278,9 @@ export const getMarkers = (district, schoolSpecs, options, baseAPIUrl) => {
     return getSchoolMarkers(district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping);
   }
   if (options.topic.includes('health')) {
-    const { healthFacilitiesUrl: dataUrl, mapping } = options.indicator;
+    const { url: dataUrl, mapping } = options.indicator;
 
-    return getHealthMarkers(district, schoolSpecs, dataUrl, '', baseAPIUrl, mapping);
+    return getHealthMarkers(dataUrl, '', baseAPIUrl, mapping);
   }
 
   return {
