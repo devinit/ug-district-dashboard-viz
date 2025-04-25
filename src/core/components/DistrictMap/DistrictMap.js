@@ -113,9 +113,7 @@ const DistrictMap = (props) => {
     setOptions,
   } = useMap(
     props.location,
-    props.configs.formatter
-      ? { ...coreLayer, formatter: props.configs.formatter, additionalData: props.configs.additionalData }
-      : { ...coreLayer, additionalData: props.configs.additionalData },
+    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
     props.baseAPIUrl,
   );
   useEffect(() => {
@@ -123,6 +121,7 @@ const DistrictMap = (props) => {
     if (activeIndicator) {
       const { year } = filterOptions;
       setOptions({
+        topic: filterOptions.topic,
         dataPrefix: `${activeIndicator.name}: `,
         dataSuffix: year && ` in ${year}`,
         indicator: activeIndicator,

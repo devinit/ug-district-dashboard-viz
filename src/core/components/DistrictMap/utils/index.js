@@ -1,5 +1,4 @@
 import { groupBy } from 'lodash';
-import { toJS } from 'mobx';
 import { flyToLocation, getProperLocationName } from '../../../../components/BaseMap/utils';
 import { filterData } from '../../../utils';
 import fetchData, { fetchDataFromAPI } from '../../../../utils/data';
@@ -60,7 +59,13 @@ export const getRawFilterOptions = (topics, options) => {
 };
 
 export const aggregateValues = (data, aggregate) => {
-  const groupedData = groupBy(data, (item) => item.name);
+  const groupedData = groupBy(data, (item) => {
+    const formatTownCouncilString = item.name && item.name.replace(/Towncouncil/g, 'Town Council');
+    // Remove "Subcounty" and "subcounty" from the name case insensitively
+    const removeSubcountyString = formatTownCouncilString && formatTownCouncilString.replace(/subcounty/gi, '').trim();
+
+    return removeSubcountyString;
+  });
 
   return Object.keys(groupedData).map((key) => {
     const sum = groupedData[key].reduce((partialSum, a) => partialSum + a.value, 0);
@@ -81,11 +86,12 @@ export const processData = (data, indicator, year) => {
   const { location, value, year: yearField } = indicator.mapping;
 
   let filteredData = filterData(data, indicator.filters);
-  filteredData = year
-    ? filteredData
-        .filter((item) => `${item[yearField]}` === `${year}`)
-        .map((item) => ({ name: item[location], value: Number(item[value]) }))
-    : filteredData.map((item) => ({ name: item[location], value: Number(item[value]) }));
+  filteredData =
+    year && yearField
+      ? filteredData
+          .filter((item) => `${item[yearField]}` === `${year}`)
+          .map((item) => ({ name: item[location], value: Number(item[value]) }))
+      : filteredData.map((item) => ({ name: item[location], value: value ? Number(item[value]) : 1 }));
   if (indicator.aggregator) {
     return aggregateValues(filteredData, indicator.aggregator);
   }
@@ -113,27 +119,27 @@ export function getSchoolEnrollmentUrl(enrollmentConfig, level) {
   return enrollmentConfig.find((item) => item.id.includes(level.toLowerCase()));
 }
 
-function parseEnrollmentData(enrollmentData, feature, enrollmentConfig) {
+function parseEnrollmentData(enrollmentData, feature, mapping) {
   const boysEntry = enrollmentData.find(
     (item) =>
-      item[enrollmentConfig.mapping.gender] === 'Boys' &&
-      item[enrollmentConfig.mapping.year] === feature.year &&
+      item[mapping.gender] === 'Boys' &&
+      item[mapping.year] === feature.year &&
       compareStringsIgnoreCase(item.school_name, feature.school_name),
   );
   const girlsEntry = enrollmentData.find(
     (item) =>
-      item[enrollmentConfig.mapping.gender] === 'Girls' &&
-      item[enrollmentConfig.mapping.year] === feature.year &&
+      item[mapping.gender] === 'Girls' &&
+      item[mapping.year] === feature.year &&
       compareStringsIgnoreCase(item.school_name, feature.school_name),
   );
 
   return {
-    boys: (boysEntry && parseInt(boysEntry[enrollmentConfig.mapping.total], 10)) || 'No Data',
-    girls: (girlsEntry && parseInt(girlsEntry[enrollmentConfig.mapping.total], 10)) || 'No Data',
+    boys: (boysEntry && parseInt(boysEntry[mapping.total], 10)) || 'No Data',
+    girls: (girlsEntry && parseInt(girlsEntry[mapping.total], 10)) || 'No Data',
   };
 }
 
-export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, additionalConfigData) => {
+export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
@@ -141,10 +147,8 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
   const dataVariable = dataUrl || (dataID && baseAPIUrl);
   if (!schoolSpecs || !dataVariable) return finalGeoJSON;
   if (dataUrl || (dataID && baseAPIUrl)) {
-    const enrollmentConfig = toJS(additionalConfigData);
     const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
-    const schoolEnrollmentConfig = getSchoolEnrollmentUrl(enrollmentConfig, schoolSpecs.level);
-    const fetchSchoolEnrollmentPromise = fetchData(schoolEnrollmentConfig.url);
+    const fetchSchoolEnrollmentPromise = fetchData(enrollmentUrl);
 
     Promise.all([dataFetchPromise, fetchSchoolEnrollmentPromise])
       .then(([data, schoolEnrollment]) => {
@@ -167,7 +171,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                 const itemCoordinates = processCoordinates(item.gps_coordinates);
 
                 if (itemCoordinates) {
-                  const enrollment = parseEnrollmentData(excludeEnrollmentData, item, schoolEnrollmentConfig);
+                  const enrollment = parseEnrollmentData(excludeEnrollmentData, item, mapping);
 
                   finalGeoJSON.features.push({
                     type: 'Feature',
@@ -207,7 +211,7 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
                       ownership: item.ownership,
                       name: item.school_name,
                       parish: item.parish,
-                      enrollment: parseEnrollmentData(filteredEnrollment, item, schoolEnrollmentConfig),
+                      enrollment: parseEnrollmentData(filteredEnrollment, item, mapping),
                     },
                   });
                 }
@@ -223,6 +227,66 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
   }
 
   return finalGeoJSON;
+};
+
+export const getHealthMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, mapping) => {
+  const finalGeoJSON = {
+    type: 'FeatureCollection',
+    features: [],
+  };
+  const dataVariable = dataUrl || (dataID && baseAPIUrl);
+  if (!dataVariable) return finalGeoJSON;
+  if (dataUrl || (dataID && baseAPIUrl)) {
+    const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
+
+    dataFetchPromise
+      .then((data) => {
+        data.forEach((item) => {
+          if (item[mapping.latitude] && item[mapping.longitude]) {
+            const itemCoordinates = [parseFloat(item[mapping.longitude]), parseFloat(item[mapping.latitude])];
+            if (itemCoordinates) {
+              finalGeoJSON.features.push({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: itemCoordinates,
+                },
+                properties: {
+                  ownership: item['Facility Ownership'],
+                  name: item['Subcounty/Towncouncil'],
+                  parish: item['Parish Name/ Ward'],
+                },
+              });
+            }
+          }
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    return finalGeoJSON;
+  }
+
+  return finalGeoJSON;
+};
+
+export const getMarkers = (district, schoolSpecs, options, baseAPIUrl) => {
+  if (options.topic.includes('education')) {
+    const { schoolLocationdataID: dataID, schoolLocationUrl: dataUrl, enrollmentUrl, mapping } = options.indicator;
+
+    return getSchoolMarkers(district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping);
+  }
+  if (options.topic.includes('health')) {
+    const { healthFacilitiesUrl: dataUrl, mapping } = options.indicator;
+
+    return getHealthMarkers(district, schoolSpecs, dataUrl, '', baseAPIUrl, mapping);
+  }
+
+  return {
+    type: 'FeatureCollection',
+    features: [],
+  };
 };
 
 export function schoolLevel(indicator) {

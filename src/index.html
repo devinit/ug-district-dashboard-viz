@@ -978,11 +978,14 @@
                         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
                         // dataID: '12763',
                         schoolLocationUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/schools-locations.csv',
+                        enrollmentUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/primary_and_kindergaten_enrolment.csv',
                         yearRange: [2018, 2022],
                         mapping: {
                             location: 'subcounty',
                             value: 'value',
                             year: 'year',
+                            gender: 'gender',
+                            total: 'subtotal',
                         },
                         aggregator: 'sum', //either sum, avg
                         filters: {
@@ -997,12 +1000,15 @@
                         range:[5, 10, 15, 20],
                         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
                         schoolLocationUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/schools-locations.csv',
+                        enrollmentUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learners_enrolment_secondary.csv',
                         // schoolLocationdataID: '12763',
                         yearRange: [2018, 2022],
                         mapping: {
                             location: 'subcounty',
                             value: 'value',
                             year: 'year',
+                            gender: 'gender',
+                            total: 'subtotal',
                         },
                         aggregator: 'sum', //either sum, avg
                         filters: {
@@ -1284,6 +1290,32 @@
                         filters: {
                             crop: ['Local Chicken'],
                         },
+                    },
+                ]
+            },
+            {
+                id: 'health',
+                name: 'Health',
+                dashboardUrl: 'https://datahub.go.ug/dashboards/health/',
+                dashboardButtonCaption: 'View Health Dashboard',
+                indicators: [{
+                        id: 'numberOfHealthFacilities',
+                        name: 'Number of Health Facilities',
+                        //description: 'All government and private schools in Masindi district, by sub-county',
+                        colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
+                        range: [2, 4, 8, 15],
+                        url: 'http://localhost:3000/assets/data/kayunga/number_of_health_facilities.csv',
+                        healthFacilitiesUrl: 'http://localhost:3000/assets/data/kayunga/number_of_health_facilities.csv',
+                        yearRange: [2022, 2022],
+                        mapping: {
+                            location: 'Subcounty/Towncouncil',
+                            value: '',
+                            latitude: '_Geo points_latitude',
+                            longitude: '_Geo points_longitude',
+                            year: '',
+                        },
+                        aggregator: 'sum', //either sum, avg
+                        filters: {},
                     },
                 ]
             }
@@ -1770,26 +1802,6 @@
                     zoom: 10,
                     maxZoom: 12,
                 },
-                additionalData: [
-                  {
-                      id: 'primary-school-enrollment',
-                      url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/primary_and_kindergaten_enrolment.csv',
-                      mapping: {
-                          gender: 'gender',
-                          total: 'subtotal',
-                          year: 'year',
-                      },
-                  },
-                  {
-                      id: 'secondary-school-enrollment',
-                      url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/learners_enrolment_secondary.csv',
-                      mapping: {
-                          gender: 'gender',
-                          total: 'subtotal',
-                          year: 'year',
-                      },
-                  }
-                ],
             },
             keyFacts: {
                 url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/District%20Profile.csv',
