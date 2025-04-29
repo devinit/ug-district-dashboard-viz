@@ -9,14 +9,14 @@ export const renderLegendItems = (range, colours) => {
   if (range && colours) {
     return range
       .map((rnge, index) => (
-        <LegendItem className={`item-${rnge}`} bgColor={colours[index]} key={rnge}>
+        <LegendItem className={`item-${rnge}`} bgColor={colours[index]} key={`${index}-${rnge}`}>
           {index === 0 ? `< ${range[0]}` : `${range[index - 1]}-${rnge}`}
         </LegendItem>
       ))
       .concat([
         <LegendItem className={`item-last`} bgColor={colours[colours.length - 1]} key={range.length}>
           {`> ${range[range.length - 1]}`}
-        </LegendItem>,
+        </LegendItem>
       ]);
   }
 

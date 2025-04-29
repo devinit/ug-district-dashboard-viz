@@ -115,194 +115,143 @@ const KAYUNGA_EXCLUDE_LIST = [
   'Bright Future Nursery And Primary School Kangulumira',
 ];
 
-export function getSchoolEnrollmentUrl(enrollmentConfig, level) {
-  return enrollmentConfig.find((item) => item.id.includes(level.toLowerCase()));
+function getMarkerPopupText(topic, feature, mapping, enrollmentData) {
+  if (topic.includes('education')) {
+    const boysEntry = enrollmentData?.find(
+      (row) =>
+        row[mapping.gender] === 'Boys' &&
+        row[mapping.year] === feature.year &&
+        compareStringsIgnoreCase(row.school_name, feature.school_name),
+    );
+    const girlsEntry = enrollmentData?.find(
+      (row) =>
+        row[mapping.gender] === 'Girls' &&
+        row[mapping.year] === feature.year &&
+        compareStringsIgnoreCase(row.school_name, feature.school_name),
+    );
+
+    const boysCount = boysEntry ? parseInt(boysEntry[mapping.total], 10) : 'No Data';
+    const girlsCount = girlsEntry ? parseInt(girlsEntry[mapping.total], 10) : 'No Data';
+
+    return `
+      <p>Number of boys: ${boysCount}</p>
+      <p>Number of girls: ${girlsCount}</p>
+      <p>Total pupils: ${boysCount !== 'No Data' && girlsCount !== 'No Data' ? boysCount + girlsCount : 'No Data'}</p>
+    `;
+  }
+
+  if (topic.includes('health')) {
+    return `
+      <p>Health Center Level: ${feature['Healthy center level']}</p>
+      <p>Ownership: ${feature['Facility Ownership']}</p>
+    `;
+  }
+
+  return '<p>No data available</p>';
 }
 
-function parseEnrollmentData(enrollmentData, feature, mapping) {
-  const boysEntry = enrollmentData.find(
-    (item) =>
-      item[mapping.gender] === 'Boys' &&
-      item[mapping.year] === feature.year &&
-      compareStringsIgnoreCase(item.school_name, feature.school_name),
-  );
-  const girlsEntry = enrollmentData.find(
-    (item) =>
-      item[mapping.gender] === 'Girls' &&
-      item[mapping.year] === feature.year &&
-      compareStringsIgnoreCase(item.school_name, feature.school_name),
-  );
-
-  const boysCount = boysEntry ? parseInt(boysEntry[mapping.total], 10) : 'No Data';
-  const girlsCount = girlsEntry ? parseInt(girlsEntry[mapping.total], 10) : 'No Data';
-
-  return `
-    <p>Number of boys: ${boysCount}</p>
-    <p>Number of girls: ${girlsCount}</p>
-    <p>Total pupils: ${boysCount !== 'No Data' && girlsCount !== 'No Data' ? boysCount + girlsCount : 'No Data'}</p>
-  `;
-}
-
-export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping) => {
+export const getMarkers = (district, schoolSpecs, options, baseAPIUrl) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
   };
-  const dataVariable = dataUrl || (dataID && baseAPIUrl);
-  if (!schoolSpecs || !dataVariable) return finalGeoJSON;
-  if (dataUrl || (dataID && baseAPIUrl)) {
-    const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
-    const fetchSchoolEnrollmentPromise = fetchData(enrollmentUrl);
 
-    Promise.all([dataFetchPromise, fetchSchoolEnrollmentPromise])
-      .then(([data, schoolEnrollment]) => {
+  if (options.topic.includes('education')) {
+    const { schoolLocationdataID: dataID, schoolLocationUrl: dataUrl, enrollmentUrl, mapping } = options.indicator;
+
+    const dataVariable = dataUrl || (dataID && baseAPIUrl);
+    if (!schoolSpecs || !dataVariable) return finalGeoJSON;
+    if (dataUrl || (dataID && baseAPIUrl)) {
+      const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
+      const fetchSchoolEnrollmentPromise = fetchData(enrollmentUrl);
+
+      Promise.all([dataFetchPromise, fetchSchoolEnrollmentPromise]).then(([data, schoolEnrollment]) => {
         const filteredData = data.filter((row) =>
           district === 'Masindi'
             ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
             : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
         );
-        if (schoolSpecs.ownership === 'all') {
-          const excludeEnrollmentData = schoolEnrollment.filter((row) =>
-            district === 'Masindi'
-              ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
-              : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
-          );
+        const excludeEnrollmentData = schoolEnrollment.filter((row) =>
+          district === 'Masindi'
+            ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
+            : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
+        );
 
-          filteredData
-            .filter((d) => d.level === schoolSpecs.level)
-            .forEach((item) => {
-              if (item.gps_coordinates) {
-                const itemCoordinates = processCoordinates(item.gps_coordinates);
+        filteredData
+          .filter(
+            (d) =>
+              (d.level === schoolSpecs.level && schoolSpecs.ownership === 'all') ||
+              (d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership),
+          )
+          .forEach((item) => {
+            if (item.gps_coordinates) {
+              const itemCoordinates = processCoordinates(item.gps_coordinates);
 
-                if (itemCoordinates) {
-                  const markerPopupData = parseEnrollmentData(excludeEnrollmentData, item, mapping);
+              if (itemCoordinates) {
+                const markerPopupData = getMarkerPopupText('education', item, mapping, excludeEnrollmentData);
 
-                  finalGeoJSON.features.push({
-                    type: 'Feature',
-                    geometry: {
-                      type: 'Point',
-                      coordinates: [itemCoordinates[1], itemCoordinates[0]],
-                    },
-                    properties: {
-                      level: item.level,
-                      ownership: item.ownership,
-                      name: item.school_name,
-                      parish: item.parish,
-                      markerPopupData,
-                    },
-                  });
-                }
+                finalGeoJSON.features.push({
+                  type: 'Feature',
+                  geometry: {
+                    type: 'Point',
+                    coordinates: [itemCoordinates[1], itemCoordinates[0]],
+                  },
+                  properties: {
+                    level: item.level,
+                    ownership: item.ownership,
+                    name: item.school_name,
+                    parish: item.parish,
+                    markerPopupData,
+                  },
+                });
               }
-            });
-        } else {
-          filteredData
-            .filter((d) => d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership)
-            .forEach((item) => {
-              if (item.gps_coordinates) {
-                const itemCoordinates = processCoordinates(item.gps_coordinates);
-
-                if (itemCoordinates) {
-                  const filteredEnrollment = schoolEnrollment.filter((d) => d.school_name === item.school_name);
-                  const markerPopupData = parseEnrollmentData(filteredEnrollment, item, mapping);
-
-                  finalGeoJSON.features.push({
-                    type: 'Feature',
-                    geometry: {
-                      type: 'Point',
-                      coordinates: [itemCoordinates[1], itemCoordinates[0]],
-                    },
-                    properties: {
-                      level: item.level,
-                      ownership: item.ownership,
-                      name: item.school_name,
-                      parish: item.parish,
-                      markerPopupData,
-                    },
-                  });
-                }
-              }
-            });
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
-    return finalGeoJSON;
-  }
-
-  return finalGeoJSON;
-};
-
-function getHealthCenterMarkerPopupText(level, ownership) {
-  return `
-    <p>Health Center Level: ${level}</p>
-    <p>Ownership: ${ownership}</p>
-  `;
-}
-
-export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
-  const finalGeoJSON = {
-    type: 'FeatureCollection',
-    features: [],
-  };
-  const dataVariable = dataUrl || (dataID && baseAPIUrl);
-  if (!dataVariable) return finalGeoJSON;
-  if (dataUrl || (dataID && baseAPIUrl)) {
-    const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
-
-    dataFetchPromise
-      .then((data) => {
-        data.forEach((item) => {
-          if (item[mapping.latitude] && item[mapping.longitude]) {
-            const itemCoordinates = [parseFloat(item[mapping.longitude]), parseFloat(item[mapping.latitude])];
-            if (itemCoordinates) {
-              finalGeoJSON.features.push({
-                type: 'Feature',
-                geometry: {
-                  type: 'Point',
-                  coordinates: itemCoordinates,
-                },
-                properties: {
-                  ownership: item['Facility Ownership'],
-                  name: item['Name of the health facility/Clinic'],
-                  parish: item['Parish Name/ Ward'],
-                  markerPopupData: getHealthCenterMarkerPopupText(
-                    item['Healthy center level'],
-                    item['Facility Ownership'],
-                  ),
-                },
-              });
             }
-          }
-        });
-      })
-      .catch((error) => {
-        console.log(error);
+          });
+
+        return finalGeoJSON;
       });
-
-    return finalGeoJSON;
-  }
-
-  return finalGeoJSON;
-};
-
-export const getMarkers = (district, schoolSpecs, options, baseAPIUrl) => {
-  if (options.topic.includes('education')) {
-    const { schoolLocationdataID: dataID, schoolLocationUrl: dataUrl, enrollmentUrl, mapping } = options.indicator;
-
-    return getSchoolMarkers(district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping);
+    }
   }
   if (options.topic.includes('health')) {
-    const { url: dataUrl, mapping } = options.indicator;
+    const { url: dataUrl, dataID, mapping } = options.indicator;
 
-    return getHealthMarkers(dataUrl, '', baseAPIUrl, mapping);
+    const dataVariable = dataUrl || (dataID && baseAPIUrl);
+    if (!dataVariable) return finalGeoJSON;
+    if (dataUrl || (dataID && baseAPIUrl)) {
+      const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
+
+      dataFetchPromise
+        .then((data) => {
+          data.forEach((item) => {
+            if (item[mapping.latitude] && item[mapping.longitude]) {
+              const itemCoordinates = [parseFloat(item[mapping.longitude]), parseFloat(item[mapping.latitude])];
+              if (itemCoordinates) {
+                finalGeoJSON.features.push({
+                  type: 'Feature',
+                  geometry: {
+                    type: 'Point',
+                    coordinates: itemCoordinates,
+                  },
+                  properties: {
+                    ownership: item['Facility Ownership'],
+                    name: item['Name of the health facility/Clinic'],
+                    parish: item['Parish Name/ Ward'],
+                    markerPopupData: getMarkerPopupText('health', item),
+                  },
+                });
+              }
+            }
+          });
+
+          return finalGeoJSON;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   }
 
-  return {
-    type: 'FeatureCollection',
-    features: [],
-  };
+  return finalGeoJSON;
 };
 
 export function schoolLevel(indicator) {
