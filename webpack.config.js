@@ -52,7 +52,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/index.html', // adjust if yours is elsewhere
+      template: 'src/index.html', // adjust if yours is elsewhere
     }),
     ...(isProd
       ? [
