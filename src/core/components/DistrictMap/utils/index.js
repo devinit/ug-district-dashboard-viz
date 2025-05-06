@@ -108,6 +108,18 @@ const processCoordinates = (item, mapping) => {
   return coordinates.map((coordinate) => parseFloat(coordinate));
 };
 
+function formatImgTag(url) {
+
+  try {
+    const urlObj = new URL(url);
+    if (urlObj.protocol === 'http:' || urlObj.protocol === 'https:') return `<img src="${url}" alt="" width="50" height="60">`;
+
+    return url;
+  } catch (err) {
+
+    return url;
+  }
+}
 
 function otherDetailsData(otherData, feature, mapping, otherDetailsFilters, mappingFilters, markerPopupData) {
 
