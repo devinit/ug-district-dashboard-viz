@@ -108,7 +108,7 @@ const processCoordinates = (item, mapping) => {
   return coordinates.map((coordinate) => parseFloat(coordinate));
 };
 
-function formatImgTag(url) {
+/* function formatImgTag(url) {
 
   try {
     const urlObj = new URL(url);
@@ -119,7 +119,7 @@ function formatImgTag(url) {
 
     return url;
   }
-}
+} */
 
 function otherDetailsData(otherData, feature, mapping, otherDetailsFilters, mappingFilters, markerPopupData) {
 
