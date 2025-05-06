@@ -977,8 +977,10 @@
                         range: [25, 50, 75, 100],
                         url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_schools.csv',
                         // dataID: '12763',
-                        schoolLocationUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/schools-locations.csv',
-                        enrollmentUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/primary_and_kindergaten_enrolment.csv',
+                        locationDataUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/schools-locations.csv',
+                        // locationDataId: 32532,
+                        otherDetailsUrl: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/primary_and_kindergaten_enrolment.csv',
+                        // \: 4656,
                         yearRange: [2018, 2022],
                         mapping: {
                             location: 'subcounty',
@@ -986,10 +988,35 @@
                             year: 'year',
                             gender: 'gender',
                             total: 'subtotal',
+                            coordinates: 'gps_coordinates',
+                            joiningColumn: 'school_name',
+                            totalLabel: 'Total Pupils',
                         },
                         aggregator: 'sum', //either sum, avg
                         filters: {
                             level: ['Primary'],
+                        },
+                        properties: {
+                          level: 'level',
+                          ownership: 'ownership',
+                          name: 'school_name',
+                          parish: 'parish',
+                        },
+                        levelAndOwnership: {
+                          level: 'Primary',
+                          ownership: 'all',
+                        },
+                        otherDetailsFilters: {
+                          Boys: 'gender',
+                          Girls: 'gender',
+                        },
+                        mappingFilters: {
+                          year: 'year',
+                        },
+                        markerPopupData: {
+                          // Label as will appear on browser : column/key to get data from
+                          Boys: 'Number of boys: ',
+                          Girls: 'Number of girls: ',
                         },
                     },
                     {
@@ -1014,6 +1041,10 @@
                         filters: {
                             level: ['Secondary'],
                         },
+                        levelAndOwnership: {
+                          level: 'Secondary',
+                          ownership: 'all',
+                        },
                     },
                     {
                         id: 'primaryEnrolment',
@@ -1032,6 +1063,9 @@
                         // filters: {
                         //     level: ['Primary'],
                         // },
+                        levelAndOwnership: {
+
+                        },
                     },
                     {
                         id: 'secondaryEnrolment',
@@ -1304,7 +1338,8 @@
                         //description: 'All government and private schools in Masindi district, by sub-county',
                         colours: ['#1a3e53', '#2b6587', '#357ba5', '#78b1d4', '#ecf4f9'].reverse(),
                         range: [2, 4, 8, 15],
-                        url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_health_facilities.csv',
+                        dataID: 26673,
+                        //url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/kayunga/number_of_health_facilities.csv',
                         yearRange: [2022, 2022],
                         mapping: {
                             location: 'Subcounty/Towncouncil',
@@ -1315,6 +1350,16 @@
                         },
                         aggregator: 'sum', //either sum, avg
                         filters: {},
+                        properties: {
+                          ownership: 'Facility Ownership',
+                          name: 'Name of the health facility/Clinic',
+                          parish: 'Parish Name/ Ward',
+                        },
+                        markerPopupData: {
+                          // Label as will appear on browser : column/key to get data from
+                          'Health Center Level': 'Healthy center level',
+                          'Ownership': 'Facility Ownership',
+                        },
                     },
                 ]
             }
