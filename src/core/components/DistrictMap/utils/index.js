@@ -99,130 +99,105 @@ export const processData = (data, indicator, year) => {
   return filteredData;
 };
 
-const processCoordinates = (data) => {
-  const coordinates = data.split(',');
+const processCoordinates = (item, mapping) => {
 
-  return coordinates.map((item) => parseFloat(item));
+  const data = item[mapping.coordinates];
+  if (!data && (!item[mapping.longitude] || !item[mapping.latitude])) return null;
+  const coordinates = data ? data.split(',') : [item[mapping.longitude], item[mapping.latitude]];
+
+  return coordinates.map((coordinate) => parseFloat(coordinate));
 };
 
-const MASINDI_EXCLUDE_LIST = ['Waiga Primary School', 'Gods Mercy Primary School', 'Bukeeka COU Primary School'];
-const KAYUNGA_EXCLUDE_LIST = [
-  'Bukeeka COU Primary School',
-  'Kungu CU Primary School',
-  'King Jesus Nursery And Primary School',
-  'Nile View Primary School',
-  'Imam Hassan Primary School Maligita',
-  'Bright Future Nursery And Primary School Kangulumira',
-];
+/* function formatImgTag(url) {
 
-export function getSchoolEnrollmentUrl(enrollmentConfig, level) {
-  return enrollmentConfig.find((item) => item.id.includes(level.toLowerCase()));
-}
+  try {
+    const urlObj = new URL(url);
+    if (urlObj.protocol === 'http:' || urlObj.protocol === 'https:') return `<img src="${url}" alt="" width="50" height="60">`;
 
-function parseEnrollmentData(enrollmentData, feature, mapping) {
-  const boysEntry = enrollmentData.find(
-    (item) =>
-      item[mapping.gender] === 'Boys' &&
-      item[mapping.year] === feature.year &&
-      compareStringsIgnoreCase(item.school_name, feature.school_name),
-  );
-  const girlsEntry = enrollmentData.find(
-    (item) =>
-      item[mapping.gender] === 'Girls' &&
-      item[mapping.year] === feature.year &&
-      compareStringsIgnoreCase(item.school_name, feature.school_name),
-  );
+    return url;
+  } catch (err) {
 
-  const boysCount = boysEntry ? parseInt(boysEntry[mapping.total], 10) : 'No Data';
-  const girlsCount = girlsEntry ? parseInt(girlsEntry[mapping.total], 10) : 'No Data';
+    return url;
+  }
+} */
+
+function otherDetailsData(otherData, feature, mapping, otherDetailsFilters, mappingFilters, markerPopupData) {
+
+  const mappingFilter = (item, featured, filters) => {
+    const filterKeys = Object.keys(mappingFilters);
+
+    return filterKeys.reduce((accumulator, currentValue) => accumulator && item[currentValue] === featured[filters[currentValue]], true);
+  };
+  const entries = {};
+  const otherDetailsKeys = Object.keys(otherDetailsFilters);
+  otherDetailsKeys.forEach((key) => {
+    entries[key] = otherData.find(
+        (item) =>
+          key === item[otherDetailsFilters[key]] &&
+          mappingFilter(item, feature, mappingFilters) &&
+          compareStringsIgnoreCase(item[mapping.joiningColumn], feature[mapping.joiningColumn]),
+      );
+  });
+
+  const counts = {};
+  const popupHtml = [];
+  otherDetailsKeys.forEach((key) => {
+    counts[key] = entries[key] ? parseInt(entries[key][mapping.total], 10) : 'No Data';
+    popupHtml.push(`<p>${markerPopupData[key]} ${counts[key]}</p>`);
+  });
+
+
+  const totalCount = otherDetailsKeys.reduce((total, curr) => {
+    const parsed = counts[curr] ? counts[curr] : parseInt(counts[curr], 10);
+
+    return total + parsed;
+  }, 0);
 
   return `
-    <p>Number of boys: ${boysCount}</p>
-    <p>Number of girls: ${girlsCount}</p>
-    <p>Total pupils: ${boysCount !== 'No Data' && girlsCount !== 'No Data' ? boysCount + girlsCount : 'No Data'}</p>
+    ${popupHtml.join('')}
+    <p>${mapping.totalLabel} ${ !Number.isNaN(totalCount) ? totalCount : 'No Data'}</p>
   `;
 }
 
-export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping) => {
+export const getMarkersFromMultipleFiles = (indicatorSpecs, locationDataUrl, locationDataId, baseAPIUrl, otherDetailsUrl, otherDetailsDataId, mapping, properties, otherDetailsFilters, mappingFilters, markerPopupData) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
   };
-  const dataVariable = dataUrl || (dataID && baseAPIUrl);
-  if (!schoolSpecs || !dataVariable) return finalGeoJSON;
-  if (dataUrl || (dataID && baseAPIUrl)) {
-    const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
-    const fetchSchoolEnrollmentPromise = fetchData(enrollmentUrl);
+  const dataVariable = locationDataUrl || (locationDataId && baseAPIUrl);
+  if (!indicatorSpecs || !dataVariable) return finalGeoJSON;
+  if (locationDataUrl || (locationDataId && baseAPIUrl)) {
+    const dataFetchPromise = locationDataUrl ? fetchData(locationDataUrl) : fetchDataFromAPI(locationDataId, baseAPIUrl);
+    const otherDetailsPromise = otherDetailsUrl ? fetchData(otherDetailsUrl) : fetchDataFromAPI(otherDetailsDataId, baseAPIUrl);;
+    const propertiesKeys = properties ? Object.keys(properties) : [];
 
-    Promise.all([dataFetchPromise, fetchSchoolEnrollmentPromise])
-      .then(([data, schoolEnrollment]) => {
-        const filteredData = data.filter((row) =>
-          district === 'Masindi'
-            ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
-            : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
-        );
-        if (schoolSpecs.ownership === 'all') {
-          const excludeEnrollmentData = schoolEnrollment.filter((row) =>
-            district === 'Masindi'
-              ? !MASINDI_EXCLUDE_LIST.includes(row.school_name)
-              : !KAYUNGA_EXCLUDE_LIST.includes(row.school_name),
-          );
+    Promise.all([dataFetchPromise, otherDetailsPromise])
+      .then(([data, otherDetails]) => {
 
-          filteredData
-            .filter((d) => d.level === schoolSpecs.level)
-            .forEach((item) => {
-              if (item.gps_coordinates) {
-                const itemCoordinates = processCoordinates(item.gps_coordinates);
+        data
+          .filter((d) => indicatorSpecs.ownership === 'all' ? d.level === indicatorSpecs.level : d.level === indicatorSpecs.level && d.ownership === indicatorSpecs.ownership)
+          .forEach((item) => {
+            const itemCoordinates = processCoordinates(item, mapping);
+            if (itemCoordinates) {
 
-                if (itemCoordinates) {
-                  const markerPopupData = parseEnrollmentData(excludeEnrollmentData, item, mapping);
+              const filteredDetails = otherDetails.filter((d) => d.school_name === item.school_name);
+              const markerPopupHtml = otherDetailsData(filteredDetails, item, mapping, otherDetailsFilters, mappingFilters, markerPopupData);
+              const propertiesData = Object.fromEntries(propertiesKeys.map((k) => [k, item[properties[k]]]));
 
-                  finalGeoJSON.features.push({
-                    type: 'Feature',
-                    geometry: {
-                      type: 'Point',
-                      coordinates: [itemCoordinates[1], itemCoordinates[0]],
-                    },
-                    properties: {
-                      level: item.level,
-                      ownership: item.ownership,
-                      name: item.school_name,
-                      parish: item.parish,
-                      markerPopupData,
-                    },
-                  });
-                }
-              }
-            });
-        } else {
-          filteredData
-            .filter((d) => d.level === schoolSpecs.level && d.ownership === schoolSpecs.ownership)
-            .forEach((item) => {
-              if (item.gps_coordinates) {
-                const itemCoordinates = processCoordinates(item.gps_coordinates);
+              finalGeoJSON.features.push({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: [itemCoordinates[1], itemCoordinates[0]],
+                },
+                properties: {
+                  ...propertiesData,
+                  markerPopupData: markerPopupHtml,
+                },
+              });
+            }
+          });
 
-                if (itemCoordinates) {
-                  const filteredEnrollment = schoolEnrollment.filter((d) => d.school_name === item.school_name);
-                  const markerPopupData = parseEnrollmentData(filteredEnrollment, item, mapping);
-
-                  finalGeoJSON.features.push({
-                    type: 'Feature',
-                    geometry: {
-                      type: 'Point',
-                      coordinates: [itemCoordinates[1], itemCoordinates[0]],
-                    },
-                    properties: {
-                      level: item.level,
-                      ownership: item.ownership,
-                      name: item.school_name,
-                      parish: item.parish,
-                      markerPopupData,
-                    },
-                  });
-                }
-              }
-            });
-        }
       })
       .catch((error) => {
         console.log(error);
@@ -234,14 +209,13 @@ export const getSchoolMarkers = (district, schoolSpecs, dataUrl, dataID, baseAPI
   return finalGeoJSON;
 };
 
-function getHealthCenterMarkerPopupText(level, ownership) {
-  return `
-    <p>Health Center Level: ${level}</p>
-    <p>Ownership: ${ownership}</p>
-  `;
+function getMarkerPopupText(labels, markerPopupData, item) {
+  const mappedData = labels.map((label) => `<p>${label}: ${item[markerPopupData[label]]}</p>`);
+
+  return mappedData.join("");
 }
 
-export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
+export const getMarkersFromOneFile = (dataUrl, dataID, baseAPIUrl, mapping, markerPopupData, properties) => {
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
@@ -249,31 +223,31 @@ export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
   const dataVariable = dataUrl || (dataID && baseAPIUrl);
   if (!dataVariable) return finalGeoJSON;
   if (dataUrl || (dataID && baseAPIUrl)) {
+    const markerPopupLabels = markerPopupData ? Object.keys(markerPopupData) : [];
+    const propertiesKeys = properties ? Object.keys(properties) : [];
     const dataFetchPromise = dataUrl ? fetchData(dataUrl) : fetchDataFromAPI(dataID, baseAPIUrl);
 
     dataFetchPromise
       .then((data) => {
         data.forEach((item) => {
-          if (item[mapping.latitude] && item[mapping.longitude]) {
-            const itemCoordinates = [parseFloat(item[mapping.longitude]), parseFloat(item[mapping.latitude])];
-            if (itemCoordinates) {
-              finalGeoJSON.features.push({
-                type: 'Feature',
-                geometry: {
-                  type: 'Point',
-                  coordinates: itemCoordinates,
-                },
-                properties: {
-                  ownership: item['Facility Ownership'],
-                  name: item['Name of the health facility/Clinic'],
-                  parish: item['Parish Name/ Ward'],
-                  markerPopupData: getHealthCenterMarkerPopupText(
-                    item['Healthy center level'],
-                    item['Facility Ownership'],
-                  ),
-                },
-              });
-            }
+          const itemCoordinates = processCoordinates(item, mapping);
+          if (itemCoordinates) {
+            const propertiesData = Object.fromEntries(propertiesKeys.map((k) => [k, item[properties[k]]]));
+            finalGeoJSON.features.push({
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: itemCoordinates,
+              },
+              properties: {
+                ...propertiesData,
+                markerPopupData: getMarkerPopupText(
+                  markerPopupLabels,
+                  markerPopupData,
+                  item,
+                ),
+              },
+            });
           }
         });
       })
@@ -287,16 +261,15 @@ export const getHealthMarkers = (dataUrl, dataID, baseAPIUrl, mapping) => {
   return finalGeoJSON;
 };
 
-export const getMarkers = (district, schoolSpecs, options, baseAPIUrl) => {
-  if (options.topic.includes('education')) {
-    const { schoolLocationdataID: dataID, schoolLocationUrl: dataUrl, enrollmentUrl, mapping } = options.indicator;
+export const getMarkers = (indicatorSpecs, options, baseAPIUrl) => {
+  const { url, dataID, locationDataId, locationDataUrl, otherDetailsUrl, otherDetailsDataId, mapping, markerPopupData, properties, otherDetailsFilters, mappingFilters } = options.indicator;
+  if (locationDataUrl || otherDetailsUrl) {
 
-    return getSchoolMarkers(district, schoolSpecs, dataUrl, dataID, baseAPIUrl, enrollmentUrl, mapping);
+    return getMarkersFromMultipleFiles(indicatorSpecs, locationDataUrl, locationDataId, baseAPIUrl, otherDetailsUrl, otherDetailsDataId, mapping, properties, otherDetailsFilters, mappingFilters, markerPopupData);
   }
-  if (options.topic.includes('health')) {
-    const { url: dataUrl, mapping } = options.indicator;
+  if (url || dataID) {
 
-    return getHealthMarkers(dataUrl, '', baseAPIUrl, mapping);
+    return getMarkersFromOneFile(url, dataID, baseAPIUrl, mapping, markerPopupData, properties);
   }
 
   return {
@@ -304,26 +277,3 @@ export const getMarkers = (district, schoolSpecs, options, baseAPIUrl) => {
     features: [],
   };
 };
-
-export function schoolLevel(indicator) {
-  if (indicator === 'numberOfPrimarySchools') {
-    return { level: 'Primary', ownership: 'all' };
-  }
-  if (indicator === 'numberOfSecondarySchools') {
-    return { level: 'Secondary', ownership: 'all' };
-  }
-  if (indicator === 'numberOfGovernmentPrimarySchools') {
-    return { level: 'Primary', ownership: 'Government' };
-  }
-  if (indicator === 'numberOfPrivatePrimarySchools') {
-    return { level: 'Primary', ownership: 'Private' };
-  }
-  if (indicator === 'numberOfGovernmentSecondarySchools') {
-    return { level: 'Secondary', ownership: 'Government' };
-  }
-  if (indicator === 'numberOfPrivateSecondarySchools') {
-    return { level: 'Secondary', ownership: 'Private' };
-  }
-
-  return '';
-}

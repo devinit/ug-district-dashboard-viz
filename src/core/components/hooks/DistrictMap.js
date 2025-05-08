@@ -2,7 +2,7 @@ import { Popup } from 'mapbox-gl';
 import { useEffect, useState, useCallback } from 'react';
 import { COLOURED_LAYER, renderTooltipFromEvent, setZoomByContainerWidth } from '../../../components/BaseMap/utils';
 import fetchData, { fetchDataFromAPI } from '../../../utils/data';
-import { processData, getMarkers, schoolLevel } from '../DistrictMap/utils';
+import { processData, getMarkers } from '../DistrictMap/utils';
 
 const showPopup = (popup, map, event, options) => {
   renderTooltipFromEvent(map, event, { ...options, popup });
@@ -225,8 +225,8 @@ const useMap = (location, layer, baseAPIUrl, defaultOptions = {}) => {
       }
     };
     if (options.indicator && options.year) {
-      setLevel(schoolLevel(options.indicator.id));
-      setLocationData(getMarkers(location.name, schoolLevel(options.indicator.id), options, baseAPIUrl));
+      setLevel(options.indicator.levelAndOwnership);
+      setLocationData(getMarkers(options.indicator.levelAndOwnership, options, baseAPIUrl));
       fetchIndicatorData(options.indicator.url, options.indicator.dataID);
     }
   }, [options.indicator, options.year]);
