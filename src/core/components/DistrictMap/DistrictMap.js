@@ -102,7 +102,7 @@ const initialState = {
   filterOptions: defaultFilterOptions,
 };
 
-const DistrictMap = (props) => {
+const DistrictMap = ({ configs, filters, location, baseAPIUrl }) => {
   const [loading, setLoading] = useState(true);
   const [state, dispatch] = useReducer(mapReducer, initialState);
   const { filterOptions, activeIndicator, activeTopic, activeYear } = state;
@@ -111,13 +111,8 @@ const DistrictMap = (props) => {
     map: mapInstance,
     setMap,
     setOptions,
-  } = useMap(
-    props.location,
-    props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
-    props.baseAPIUrl,
-  );
+  } = useMap(location, configs.formatter ? { ...coreLayer, formatter: configs.formatter } : coreLayer, baseAPIUrl);
   useEffect(() => {
-    // set map options using their caption values
     if (activeIndicator) {
       const { year } = filterOptions;
       setOptions({
@@ -135,7 +130,7 @@ const DistrictMap = (props) => {
     setMap(_map);
   }
   const updateFilterOptions = (options, merge = true) => {
-    const { topic, indicator, year } = getRawFilterOptions(props.configs.data, { ...filterOptions, ...options });
+    const { topic, indicator, year } = getRawFilterOptions(configs.data, { ...filterOptions, ...options });
     dispatch({
       type: 'UPDATE_FILTERS',
       merge,
@@ -145,7 +140,7 @@ const DistrictMap = (props) => {
       activeYear: year,
     });
   };
-  const activeTopicOptions = getTopicById(props.configs.data, filterOptions.topic);
+  const activeTopicOptions = getTopicById(configs.data, filterOptions.topic);
 
   const renderDashboardButton = () =>
     activeTopicOptions && activeTopicOptions.dashboardUrl ? (
@@ -157,8 +152,8 @@ const DistrictMap = (props) => {
     ) : null;
 
   const contextValue = useMemo(() => ({
-    filters: props.filters,
-    topics: props.configs.data,
+    filters,
+    topics: configs.data,
     filterOptions,
     updateFilterOptions,
     activeTopic,
@@ -184,7 +179,7 @@ const DistrictMap = (props) => {
               zoom: coreLayer.zoom || 6.1,
               maxZoom: coreLayer.maxZoom || 14,
               scrollZoom: false,
-              ...props.configs.options,
+              ...configs.options,
             }}
             style={{ width: '100%', background: '#ffffff' }}
             onLoad={onLoad}
@@ -192,8 +187,8 @@ const DistrictMap = (props) => {
             {renderLayers(
               loading,
               data,
-              props.location,
-              props.configs.formatter ? { ...coreLayer, formatter: props.configs.formatter } : coreLayer,
+              location,
+              configs.formatter ? { ...coreLayer, formatter: configs.formatter } : coreLayer,
               activeIndicator ? { range: activeIndicator.range, colours: activeIndicator.colours } : {},
             )}
           </BaseMap>
@@ -201,10 +196,6 @@ const DistrictMap = (props) => {
       </div>
     </DistrictMapContext.Provider>
   );
-};
-
-DistrictMap.defaultProps = {
-  data: [],
 };
 
 DistrictMap.propTypes = {
