@@ -33,7 +33,15 @@ const selectStyles = {
   indicatorsContainer: (styles) => ({ ...styles, pointerEvents: 'none' }), // activates select to mobile touch events
 };
 
-const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelectOptions, className, ...props }) => {
+const Select = ({
+  label,
+  onError,
+  maxSelectedOptions = 2,
+  defaultValue,
+  singleSelectOptions = [],
+  className,
+  ...props
+}) => {
   const [values, setValues] = useState(defaultValue);
   useEffect(() => {
     if (props.onChange) props.onChange(values);
@@ -61,7 +69,7 @@ const Select = ({ label, onError, maxSelectedOptions, defaultValue, singleSelect
 
     // handle options that should not be compared
     const singleSelectOptionIndex = _values.findIndex((item) =>
-      singleSelectOptions.find((option) => option.value === item.value)
+      singleSelectOptions.find((option) => option.value === item.value),
     );
     if (props.isMulti && _values.length > 1 && singleSelectOptionIndex !== -1) {
       setValues(singleSelectOptionIndex === 0 ? _values.slice(1) : [_values[singleSelectOptionIndex]]);
@@ -113,7 +121,5 @@ Select.propTypes = {
   className: PropTypes.string,
   value: PropTypes.array,
 };
-
-Select.defaultProps = { maxSelectedOptions: 2, singleSelectOptions: [] };
 
 export default Select;
