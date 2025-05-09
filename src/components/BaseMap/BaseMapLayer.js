@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const BaseMapLayer = ({ map, show, onAdd, ...options }) => {
+const BaseMapLayer = ({ map, show = true, onAdd, ...options }) => {
   if (map) {
     if (map.getLayer(options.id)) {
       map.removeLayer(options.id);
@@ -16,7 +16,6 @@ const BaseMapLayer = ({ map, show, onAdd, ...options }) => {
   return null;
 };
 
-BaseMapLayer.defaultProps = { show: true };
 BaseMapLayer.propTypes = {
   map: PropTypes.object,
   show: PropTypes.bool,
