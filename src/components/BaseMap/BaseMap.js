@@ -13,8 +13,19 @@ const defaultStyles = {
   background: '#F3F3F3', // spotlights default
 };
 
-const BaseMap = (props) => {
-  mapboxgl.accessToken = props.accessToken;
+const BaseMap = ({
+  accessToken,
+  style = defaultStyles,
+  background = 'inherit',
+  options = {
+    minZoom: 6,
+    zoom: 6.1,
+  },
+  showNavigationControls = true,
+  onLoad,
+  children,
+}) => {
+  mapboxgl.accessToken = accessToken;
   const mapNode = useRef(null);
   const [baseMap, setBaseMap] = useState(undefined);
 
@@ -22,33 +33,33 @@ const BaseMap = (props) => {
     if (mapNode && mapNode.current) {
       const map = new mapboxgl.Map({
         container: mapNode.current,
-        ...props.options,
+        ...options,
       });
 
-      if (props.showNavigationControls) {
+      if (showNavigationControls) {
         map.addControl(new mapboxgl.NavigationControl());
       }
 
       map.on('load', (event) => {
         setBaseMap(map);
-        if (props.onLoad) {
-          props.onLoad(map, event);
+        if (onLoad) {
+          onLoad(map, event);
         }
       });
     }
   }, []);
 
   const renderLayers = () =>
-    Children.map(props.children, (child) =>
+    Children.map(children, (child) =>
       isValidElement(child) && child.type === BaseMapLayer ? cloneElement(child, { map: baseMap }) : null,
     );
 
   return (
     <div
       ref={mapNode}
-      style={{ ...defaultStyles, ...props.style }}
+      style={{ ...defaultStyles, ...style }}
       css={css`
-        background: ${props.background};
+        background: ${background};
         font-family: geomanist, sans-serif;
       `}
     >
@@ -91,16 +102,6 @@ const BaseMap = (props) => {
       />
     </div>
   );
-};
-
-BaseMap.defaultProps = {
-  style: defaultStyles,
-  options: {
-    minZoom: 6,
-    zoom: 6.1,
-  },
-  showNavigationControls: true,
-  background: 'inherit',
 };
 
 BaseMap.propTypes = {
