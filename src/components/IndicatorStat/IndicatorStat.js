@@ -12,7 +12,6 @@ const IndicatorStat = ({ meta = {}, heading, children }) => (
   </div>
 );
 
-IndicatorStat.defaultProps = { meta: {} };
 IndicatorStat.propTypes = {
   heading: PropTypes.string,
   meta: PropTypes.shape({

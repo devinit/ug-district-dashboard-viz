@@ -34,8 +34,4 @@ DistrictChart.propTypes = {
   type: PropTypes.string, // chart type e.g bar, line, area, pie
 };
 
-DistrictChart.defaultProps = {
-  subCounty: 'all',
-};
-
 export default DistrictChart;

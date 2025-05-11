@@ -10,21 +10,20 @@ import useData from './hooks/charts';
 import Selectors from './Selectors';
 import TableChartToggler from './TableChartToggler';
 
-const DataHandler = (props) => {
-  const { data, years, setFilters, updateFilter } = useData(props.config, props.baseAPIUrl);
+const DataHandler = ({ subCounty = 'all', config, baseAPIUrl }) => {
+  const { data, years, setFilters, updateFilter } = useData(config, baseAPIUrl);
   const [showing, setShowing] = useState('chart'); // alternative is "table"
-  const [chartType, setChartType] = useState(props.config.type || 'bar');
+  const [chartType, setChartType] = useState(config.type || 'bar');
 
   useEffect(() => {
-    setFilters(getDefaultFilters(props.config, props.subCounty));
+    setFilters(getDefaultFilters(config, subCounty));
   }, []);
 
   useEffect(() => {
-    const { subCounty, config } = props;
     if (subCounty && config.mapping.subCounty) {
-      updateFilter(config.mapping.subCounty, props.subCounty);
+      updateFilter(config.mapping.subCounty, subCounty);
     }
-  }, [props.subCounty]);
+  }, [subCounty]);
 
   const onChangeSelector = (selector, item) => {
     if (item.value) {
@@ -36,32 +35,33 @@ const DataHandler = (props) => {
     <>
       <div
         className={classNames('spotlight-banner data-selector--wrapper dicharts--actions', {
-          'align-left': !props.config.selectors
+          'align-left': !config.selectors,
         })}
       >
-        {props.config.selectors ? <Selectors configs={props.config.selectors} onChange={onChangeSelector} /> : null}
+        {config.selectors ? <Selectors configs={config.selectors} onChange={onChangeSelector} /> : null}
         <TableChartToggler
-          show={!!props.config.table}
+          show={!!config.table}
           onClickChart={() => setShowing('chart')}
           onClickTable={() => setShowing('table')}
           activeButton={showing}
         />
-        {showing === 'chart' && props.config.typeOptions ? (
-          <ChartTypeSelector options={props.config.typeOptions} onChange={setChartType} />
+        {showing === 'chart' && config.typeOptions ? (
+          <ChartTypeSelector options={config.typeOptions} onChange={setChartType} />
         ) : null}
       </div>
       {showing === 'chart' ? (
         <DistrictChart
-          className={classNames({ 'dicharts--padding-top': !props.config.selectors })}
-          {...props}
+          className={classNames({ 'dicharts--padding-top': !config.selectors })}
+          config={config}
+          subCounty={subCounty}
           data={data}
           years={years}
-          height={props.config.height}
+          height={config.height}
           type={chartType}
         />
       ) : null}
-      {showing === 'table' && props.config.table ? (
-        <DistrictTable rows={parseTableData(props.config.table, data, props.subCounty)} />
+      {showing === 'table' && config.table ? (
+        <DistrictTable rows={parseTableData(config.table, data, subCounty)} />
       ) : null}
     </>
   );
@@ -70,11 +70,7 @@ const DataHandler = (props) => {
 DataHandler.propTypes = {
   config: PropTypes.object,
   subCounty: PropTypes.string,
-  baseAPIUrl: PropTypes.string
-};
-
-DataHandler.defaultProps = {
-  subCounty: 'all'
+  baseAPIUrl: PropTypes.string,
 };
 
 export default DataHandler;
