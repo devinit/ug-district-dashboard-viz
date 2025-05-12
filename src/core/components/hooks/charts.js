@@ -6,6 +6,7 @@ import { getYears } from '../../utils/charts';
 
 const useData = (config, baseAPIUrl, defaultFilters = []) => {
   const { url, yearRange, dataID } = config;
+  const [filters, setFilters] = useState(defaultFilters);
   const { data, error } = useSWR(url || config.className || dataID, async () => {
     if (config.data && Array.isArray(config.data)) {
       return config.data;
@@ -21,7 +22,6 @@ const useData = (config, baseAPIUrl, defaultFilters = []) => {
 
     return [];
   });
-  const [filters, setFilters] = useState(defaultFilters);
 
   if (error) {
     return { data: [], years: [] };
