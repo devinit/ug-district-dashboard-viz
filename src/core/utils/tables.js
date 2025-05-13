@@ -68,20 +68,26 @@ export const validConfigs = (config, baseAPIUrl) => {
     return false;
   }
 
-  if (!config.mapping.rows) {
-    window.console.error('Invalid table config: mapping.series is required!');
+  if (!config.mapping.rows && !config.mapping.columns) {
+    window.console.error('Invalid table config: mapping.series or mapping.columns is required!');
 
     return false;
   }
 
-  if (!config.mapping.year) {
-    window.console.error('Invalid table config: mapping.year is required!');
+  if (!config.mapping.year && !config.mapping.columns) {
+    window.console.error('Invalid table config: mapping.year or mapping.columns is required!');
 
     return false;
   }
 
-  if (!config.mapping.value) {
-    window.console.error('Invalid table config: mapping.value is required!');
+  if (!config.mapping.value && !config.mapping.columns) {
+    window.console.error('Invalid table config: mapping.value or mapping.columns is required!');
+
+    return false;
+  }
+
+  if (config.tableType && (config.tableType === 'dumbTable' && !config.mapping.columns)) {
+    window.console.error('Invalid table config: mapping.columns is required when tableType === dumbTable!');
 
     return false;
   }
@@ -170,3 +176,16 @@ export const getTableCellColor = (() => {
     return '';
   };
 })();
+
+
+export const parseDumbTableData = (config, data, subCounty) => {
+  const { mapping } = config;
+
+  const tableColumns = mapping.columns.map((column) => Object.keys(column)[0]);
+  const headerRow = mapping.columns.map((column, index) => column[tableColumns[index]]);
+  const dataRows = data.filter((row) =>
+      subCounty !== defaultSelectValue ? row[mapping.subCounty].toLowerCase() === subCounty.toLowerCase() : true
+    ).map((item) => tableColumns.map((column) => item[column]));
+
+  return [headerRow].concat(dataRows);
+};
