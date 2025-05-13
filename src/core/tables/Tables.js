@@ -4,7 +4,7 @@ import fetchData, { fetchDataFromAPI } from '../../utils/data';
 import DistrictTable from '../components/DistrictTable';
 import renderSelectors from '../SelectorDropdowns';
 import { defaultSelectValue, filterDataByProperty, filterDataBySubCounty } from '../utils';
-import { parseScoreCardTableData, parseTableData, validConfigs } from '../utils/tables';
+import { parseScoreCardTableData, parseTableData, validConfigs, parseDumbTableData } from '../utils/tables';
 import ScoreCardTable from '../components/ScoreCardTable';
 
 const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorNodes, tableType, thresholds) => {
@@ -82,6 +82,9 @@ const renderTable = (config, baseAPIUrl) => {
                 if (tableType === 'scoreCard') {
                   const rows = parseScoreCardTableData(config, filteredData, selectedSubCounty);
                   root.render(<ScoreCardTable rows={rows} thresholds={thresholds} />);
+                } else if (tableType === 'dumbTable') {
+                  const rows = parseDumbTableData(config, filteredData, selectedSubCounty);
+                  root.render(<DistrictTable rows={rows} />);
                 } else {
                   const rows = parseTableData(config, filteredData, selectedSubCounty);
                   root.render(<DistrictTable rows={rows} />);

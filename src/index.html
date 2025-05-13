@@ -326,6 +326,28 @@
           </div>
         </div>
       </section>
+
+      <section class="section">
+        <div class="row row--narrow">
+          <h3 class="type-l type-l--trailer">Dumb Table</h3>
+          <div class="chart-container chart-container--full">
+            <div class="charts__chart">
+              <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+              <div class="dumb-table-container"></div>
+              <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
+
+              <div class="chart-loading">
+                <div class="chart-loading__block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 
@@ -1807,6 +1829,7 @@
             ],
             // Use the below for both regular tables (i.e tables only without charts) and Score card
             tables: [{
+              // scoreCard
               target: 'education',
               className: 'score-card-container',
               dataID: 14482,
@@ -1819,12 +1842,13 @@
                   year: 'year',
                   value: 'value',
               },
-              // tableType and thresholds are needed only for scorecard tables
+              // tableType is needed only for scorecard tables and dumbTables
               /**
-              Endeavour to add <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devinit/ug-district-dashboard-viz@0.8.7-beta.2/assets/styles.css" />
+              Endeavour to add <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devinit/ug-district-dashboard-viz@0.8.8/assets/styles.css" />
               in the header section for the corresponding dashboard to pick correct styles for scorecard
               **/
               tableType: 'scoreCard',
+              // thresholds are needed only for scorecard tables
               thresholds: {
                   'Pupil to latrine stance ratio': 40,
                   'Pupil to desk ratio': 3,
@@ -1833,6 +1857,27 @@
                   'Primary school availability per parish': 71,
                   'Secondary school availability per subcounty': 13,
               },
+            },
+            {
+              // dumbTable - Used to display data as seen in an excel sheet without any modifications to it
+              target: 'education',
+              className: 'dumb-table-container',
+              dataID: 26883,
+              mapping: {
+                  //subCounty: 'Column for Sub-County',
+                  // columns is compulsory for dumbTables and ignored for rest
+                  columns: [
+                    { 'Name of the health facility/Clinic': 'Name of the Health Facility/Clinic'},
+                    { 'Healthy center level': 'Healthy Center Level'},
+                    { ' Immunization Services': ' Immunization Services'},
+                  ],
+              },
+              // tableType is needed only for scorecard tables and dumbTables. Can be scoreCard or dumbTable
+              /**
+              Endeavour to add <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devinit/ug-district-dashboard-viz@0.8.8/assets/styles.css" />
+              in the header section for the corresponding dashboard to pick correct styles for scorecard
+              **/
+              tableType: 'dumbTable',
             },
             ],
             map: {
