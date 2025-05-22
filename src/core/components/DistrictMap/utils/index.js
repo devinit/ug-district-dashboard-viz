@@ -90,7 +90,7 @@ export const processData = (data, indicator, year) => {
     year && yearField
       ? filteredData
           .filter((item) => `${item[yearField]}` === `${year}`)
-          .map((item) => ({ name: item[location], value: Number(item[value]) }))
+          .map((item) => ({ name: item[location], value: value ? Number(item[value]) : 1 }))
       : filteredData.map((item) => ({ name: item[location], value: value ? Number(item[value]) : 1 }));
   if (indicator.aggregator) {
     return aggregateValues(filteredData, indicator.aggregator);
@@ -123,10 +123,10 @@ const processCoordinates = (item, mapping) => {
 
 function otherDetailsData(otherData, feature, mapping, otherDetailsFilters, mappingFilters, markerPopupData) {
 
-  const mappingFilter = (item, featured, filters) => {
+  const mappingFilter = (item) => {
     const filterKeys = Object.keys(mappingFilters);
 
-    return filterKeys.reduce((accumulator, currentValue) => accumulator && item[currentValue] === featured[filters[currentValue]], true);
+    return filterKeys.filter((currentValue) => Number(item[currentValue]) === Number(feature[mappingFilters[currentValue]]) );
   };
   const entries = {};
   const otherDetailsKeys = Object.keys(otherDetailsFilters);
@@ -134,15 +134,15 @@ function otherDetailsData(otherData, feature, mapping, otherDetailsFilters, mapp
     entries[key] = otherData.find(
         (item) =>
           key === item[otherDetailsFilters[key]] &&
-          mappingFilter(item, feature, mappingFilters) &&
-          compareStringsIgnoreCase(item[mapping.joiningColumn], feature[mapping.joiningColumn]),
+          mappingFilter(item) &&
+          compareStringsIgnoreCase(item[mapping.joiningColumn], feature[mapping.joiningColumn])
       );
   });
 
   const counts = {};
   const popupHtml = [];
   otherDetailsKeys.forEach((key) => {
-    counts[key] = entries[key] ? parseInt(entries[key][mapping.total], 10) : 'No Data';
+    counts[key] = entries[key] ? parseInt(entries[key][mapping.total], 10) : 0;
     popupHtml.push(`<p>${markerPopupData[key]} ${counts[key]}</p>`);
   });
 
@@ -159,7 +159,8 @@ function otherDetailsData(otherData, feature, mapping, otherDetailsFilters, mapp
   `;
 }
 
-export const getMarkersFromMultipleFiles = (indicatorSpecs, locationDataUrl, locationDataId, baseAPIUrl, otherDetailsUrl, otherDetailsDataId, mapping, properties, otherDetailsFilters, mappingFilters, markerPopupData) => {
+export const getMarkersFromMultipleFiles = (indicatorSpecs, locationDataUrl, locationDataId, baseAPIUrl, otherDetailsUrl, otherDetailsDataId, year, mapping, properties, otherDetailsFilters, mappingFilters, markerPopupData) => {
+  const { year: yearField } = mapping;
   const finalGeoJSON = {
     type: 'FeatureCollection',
     features: [],
@@ -179,8 +180,11 @@ export const getMarkersFromMultipleFiles = (indicatorSpecs, locationDataUrl, loc
           .forEach((item) => {
             const itemCoordinates = processCoordinates(item, mapping);
             if (itemCoordinates) {
-
-              const filteredDetails = otherDetails.filter((d) => d.school_name === item.school_name);
+              const filteredDetails = otherDetails.filter((d) =>
+                year && yearField ?
+                d[mapping.joiningColumn] === item[mapping.joiningColumn] && Number(d[yearField]) === year :
+                d[mapping.joiningColumn] === item[mapping.joiningColumn]
+              );
               const markerPopupHtml = otherDetailsData(filteredDetails, item, mapping, otherDetailsFilters, mappingFilters, markerPopupData);
               const propertiesData = Object.fromEntries(propertiesKeys.map((k) => [k, item[properties[k]]]));
 
@@ -263,9 +267,10 @@ export const getMarkersFromOneFile = (dataUrl, dataID, baseAPIUrl, mapping, mark
 
 export const getMarkers = (indicatorSpecs, options, baseAPIUrl) => {
   const { url, dataID, locationDataId, locationDataUrl, otherDetailsUrl, otherDetailsDataId, mapping, markerPopupData, properties, otherDetailsFilters, mappingFilters } = options.indicator;
-  if (locationDataUrl || otherDetailsUrl) {
+  const { year } = options;
+  if (locationDataUrl || otherDetailsUrl || locationDataId || otherDetailsDataId) {
 
-    return getMarkersFromMultipleFiles(indicatorSpecs, locationDataUrl, locationDataId, baseAPIUrl, otherDetailsUrl, otherDetailsDataId, mapping, properties, otherDetailsFilters, mappingFilters, markerPopupData);
+    return getMarkersFromMultipleFiles(indicatorSpecs, locationDataUrl, locationDataId, baseAPIUrl, otherDetailsUrl, otherDetailsDataId, year, mapping, properties, otherDetailsFilters, mappingFilters, markerPopupData);
   }
   if (url || dataID) {
 
