@@ -33,6 +33,9 @@ const handleSelectors = async ({ data, config, subCounty, tableRoot }, selectorN
         if (tableType === 'scoreCard') {
           const rows = parseScoreCardTableData(config, selectedData, subCounty);
           tableRoot.render(<ScoreCardTable rows={rows} thresholds={thresholds} />);
+        } else if (tableType === 'dumbTable') {
+          const rows = parseDumbTableData(config, selectedData, subCounty);
+          tableRoot.render(<DistrictTable rows={rows} />);
         } else {
           const rows = parseTableData(config, selectedData, subCounty);
           tableRoot.render(<DistrictTable rows={rows} />);

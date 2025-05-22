@@ -131,7 +131,7 @@
 
       <section class="section">
         <div class="row row--narrow">
-          <h3 class="type-l type-l--trailer">Number of Schools</h3>
+          <h3 class="type-l type-l--trailer">Number of Schools Table</h3>
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
@@ -333,6 +333,7 @@
           <div class="chart-container chart-container--full">
             <div class="charts__chart">
               <!-- CODE TO COPY STARTS HERE {% endcomment %} -->
+               <div class="dicharts--health-table__selectors"></div>
               <div class="dumb-table-container"></div>
               <!-- CODE TO COPY ENDS HERE {% endcomment %} -->
 
@@ -1479,7 +1480,7 @@
                             label: 'Secondary'
                         },
                     ],
-                    label: 'Select level',
+                    label: 'Select levels',
                     defaultValue: {
                         value: 'all',
                         label: 'Primary and Secondary'
@@ -1863,8 +1864,30 @@
               target: 'education',
               className: 'dumb-table-container',
               dataID: 26883,
+              yearRange: [2025, 2025],
+              selectorClassName: 'dicharts--health-table__selectors',
+              selectors: [{
+                  data: [{
+                          value: 'HCIII',
+                          label: 'HCIII'
+                      },
+                      {
+                          value: 'HCII',
+                          label: 'HCII'
+                      }
+                  ],
+                  label: 'Select level',
+                  defaultValue: {
+                      value: 'all',
+                      label: 'HCIII and HCII'
+                  },
+                  valueProperty: 'value',
+                  labelProperty: 'label',
+                  dataProperty: 'Healthy center level'
+              }, ],
               mapping: {
                   //subCounty: 'Column for Sub-County',
+                  level: 'Healthy center level',
                   // columns is compulsory for dumbTables and ignored for rest
                   columns: [
                     { 'Name of the health facility/Clinic': 'Name of the Health Facility/Clinic'},
@@ -1878,6 +1901,34 @@
               in the header section for the corresponding dashboard to pick correct styles for scorecard
               **/
               tableType: 'dumbTable',
+            },
+            {
+              target: 'education',
+              className: 'dicharts--table--number-of-schools',
+              url: 'https://raw.githubusercontent.com/devinit/ug-district-dashboard-viz/dev/public/assets/data/masindi/number_of_schools.csv',
+              yearRange: [2019, 2022],
+              rows: ['Government', 'Private'],
+              mapping: {
+                rows: 'ownership',
+                year: 'year',
+                value: 'value',
+                subCounty: 'subcounty',
+                level: 'level',
+              },
+              selectorClassName: 'dicharts--table--number-of-schools-selectors',
+              selectors: [
+                {
+                  label: 'Select level',
+                  defaultValue: { value: 'all', label: 'Primary and Secondary' },
+                  dataProperty: 'level',
+                  valueProperty: 'value',
+                  labelProperty: 'label',
+                  data: [
+                    { value: 'primary', label: 'Primary' },
+                    { value: 'secondary', label: 'Secondary' },
+                  ],
+                },
+              ],
             },
             ],
             map: {
