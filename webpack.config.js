@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -77,6 +78,19 @@ module.exports = {
     minimize: true,
     minimizer: [
       new CssMinimizerPlugin(), // Add CSS minifier
+      new TerserPlugin({
+        // JavaScript minifier
+        extractComments: false, // Do not extract comments to a separate file
+        parallel: true,
+        terserOptions: {
+          compress: {
+            drop_console: true, // removes console.* in prod
+          },
+          format: {
+            comments: false, // Remove comments in production
+          },
+        },
+      }),
     ],
   },
 
