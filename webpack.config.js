@@ -1,11 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  entry: './src/index.js', // Adjust if your entry point is different
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: isProd ? '[name].[contenthash:8].js' : '[name].js',
@@ -33,15 +34,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          isProd ? MiniCssExtractPlugin.loader : 'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: false,
-            },
-          },
-        ],
+        use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
       },
     ],
   },
@@ -65,6 +58,26 @@ module.exports = {
 
   externals: {
     d3: 'd3',
+  },
+
+  optimization: {
+    splitChunks: {
+      chunks: 'all', // Split all types of chunks (async and initial)
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor',
+          chunks: 'all',
+        },
+      },
+    },
+    runtimeChunk: {
+      name: 'runtime', // Extract Webpack's runtime into a separate file
+    },
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin(), // Add CSS minifier
+    ],
   },
 
   devServer: {
