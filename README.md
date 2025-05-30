@@ -18,6 +18,10 @@ Set node 16 as active version
 
         nvm use 16
 
+Install dependencies
+
+        npm install
+
 Start the dev environment
 
         npm start
