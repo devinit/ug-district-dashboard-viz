@@ -8,12 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js && gulp",
     "lint": "eslint 'src/**/*.js' --quiet",
     "prepare": "husky install",
-    "pre-commit": "lint-staged",
-    "nvm": "bash ./nvm.sh"
-  },
-  "engines": {
-    "node": ">=16 <17",
-    "npm": ">=8"
+    "pre-commit": "lint-staged"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
