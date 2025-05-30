@@ -6,15 +6,11 @@ A starting point for creating charts & maps (D3, Plotly, ECharts)
 
 ### Pre-requisites
 
-    npm install -g nwb
-
-    npm install papaparse
-
-You must also ensure that your node.js/npm directory is on PATH.
+Ensure that your node.js/npm directory is on PATH.
 
 ### Dev
 
-Install [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) node manager and node 16. [nwb](https://github.com/insin/nwb/tree/master) is deprecated and depends on this version. After installing `nvm`
+Install [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) node manager and node 16. After installing `nvm`
 
         nvm install 16
 
@@ -34,14 +30,13 @@ This compiles javascript and css. Changes to JS & CSS files trigger a page refre
 
 Build files are copied into the `dist` folder. It is from these files that the contents of the assets folder are updated
 
-To update the assets, copy the contents of the relevant files from the dist folder (`app.*.js`, `app.*.css`, `runtime.*.js`) into their
-respective destinations in the assets folder
+To update the assets, copy the contents of the relevant files from the dist folder (`main.*.js`, `main.*.css`, `vendor.*.js`, `runtime.*.js`) into the assets folder.
 
 ### Copy Bundled Assets
 
         gulp
 
-This copies the required assets from the generated dist folder to the assets folder
+This copies the required assets from the generated dist folder to the assets folder. It is run within the `npm run build` command after build files are generated.
 
 ## Configuring visualisations & other dashboard widgets
 
