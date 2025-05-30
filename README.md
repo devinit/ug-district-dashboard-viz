@@ -10,14 +10,6 @@ Ensure that your node.js/npm directory is on PATH.
 
 ### Dev
 
-Install [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) node manager and node 16. After installing `nvm`
-
-        nvm install 16
-
-Set node 16 as active version
-
-        nvm use 16
-
 Install dependencies
 
         npm install
