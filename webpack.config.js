@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: isProd ? '[name].[contenthash:8].js' : '[name].js',
-    clean: true
+    clean: true,
   },
   mode: isProd ? 'production' : 'development',
   devtool: isProd ? false : 'source-map',
@@ -24,36 +24,36 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
       },
       {
         test: /\.css$/,
-        use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader']
-      }
-    ]
+        use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
+      },
+    ],
   },
 
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html' // adjust if yours is elsewhere
+      template: 'src/index.html',
     }),
     ...(isProd
       ? [
           new MiniCssExtractPlugin({
-            filename: '[name].[contenthash:8].css'
-          })
+            filename: '[name].[contenthash:8].css',
+          }),
         ]
-      : [])
+      : []),
   ],
 
   externals: {
-    d3: 'd3'
+    d3: 'd3',
   },
 
   optimization: {
@@ -63,12 +63,12 @@ module.exports = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
-          chunks: 'all'
-        }
-      }
+          chunks: 'all',
+        },
+      },
     },
     runtimeChunk: {
-      name: 'runtime' // Extract Webpack's runtime into a separate file
+      name: 'runtime', // Extract Webpack's runtime into a separate file
     },
     minimize: true,
     minimizer: [
@@ -79,23 +79,23 @@ module.exports = {
         parallel: true,
         terserOptions: {
           compress: {
-            drop_console: true // removes console.* in prod
+            drop_console: true, // removes console.* in prod
           },
           format: {
-            comments: false // Remove comments in production
-          }
-        }
-      })
-    ]
+            comments: false, // Remove comments in production
+          },
+        },
+      }),
+    ],
   },
 
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'public')
+      directory: path.resolve(__dirname, 'public'),
     },
     hot: true,
     open: true,
     historyApiFallback: true,
-    port: 3000
-  }
+    port: 3000,
+  },
 };
