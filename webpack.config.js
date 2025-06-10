@@ -25,11 +25,6 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: [
-              '@babel/plugin-proposal-class-properties',
-              '@babel/plugin-proposal-optional-chaining',
-              '@babel/plugin-proposal-nullish-coalescing-operator',
-            ],
           },
         },
       },
@@ -46,7 +41,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html', // adjust if yours is elsewhere
+      template: 'src/index.html',
     }),
     ...(isProd
       ? [

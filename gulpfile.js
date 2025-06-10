@@ -1,13 +1,12 @@
 const { dest, series, src } = require('gulp');
-const clean = require('gulp-clean');
 const rename = require('gulp-rename');
 
 function cleaning(cb) {
-  ['assets/**/*.js', 'assets/**/*.css'].forEach((_path) => {
-    src(_path, { read: false }).pipe(clean());
-  });
-
-  cb();
+  import('del').then(({ deleteAsync }) =>
+    deleteAsync(['assets/**/*.js', 'assets/**/*.css'])
+      .then(() => cb())
+      .catch(cb),
+  );
 }
 
 function copy(cb) {
