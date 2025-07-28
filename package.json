@@ -37,7 +37,7 @@
     "gulp-rename": "^2.0.0",
     "html-webpack-plugin": "^5.6.3",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
+    "lint-staged": "^16.1.2",
     "mini-css-extract-plugin": "^2.9.2",
     "rimraf": "^6.0.1",
     "style-loader": "^4.0.0",
