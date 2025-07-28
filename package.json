@@ -71,7 +71,7 @@
     "mobx": "^6.13.6",
     "nanoid": "^5.1.4",
     "papaparse": "^5.5.2",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "prop-types": "^15.8.1",
     "react": "19.1.1",
     "react-dom": "19.1.1",
