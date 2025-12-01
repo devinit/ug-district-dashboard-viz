@@ -77,7 +77,7 @@
     "react-dom": "19.2.0",
     "react-select": "^5.10.2",
     "reactjs-popup": "^2.0.6",
-    "swr": "^2.3.6",
+    "swr": "^2.3.7",
     "uuid": "^11.1.0"
   },
   "browserslist": {
