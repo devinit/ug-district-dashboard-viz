@@ -74,7 +74,7 @@
     "prettier": "^3.7.4",
     "prop-types": "^15.8.1",
     "react": "19.2.3",
-    "react-dom": "19.2.1",
+    "react-dom": "19.2.3",
     "react-select": "^5.10.2",
     "reactjs-popup": "^2.0.6",
     "swr": "^2.3.8",
